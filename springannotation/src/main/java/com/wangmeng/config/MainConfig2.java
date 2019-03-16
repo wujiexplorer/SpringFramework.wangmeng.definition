@@ -1,13 +1,18 @@
 package com.wangmeng.config;
 
+import com.wangmeng.bean.Color;
 import com.wangmeng.bean.Person;
+import com.wangmeng.bean.Red;
+import com.wangmeng.condition.LinuxCondition;
+import com.wangmeng.condition.WindowsCondition;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.Lazy;
-import org.springframework.context.annotation.Scope;
+import org.springframework.context.annotation.*;
 
+//类中组件统一设置，满足当前条件，这个类中配置的所有bean注册才能生效
+@Conditional({WindowsCondition.class})
 @Configuration
+@Import({Color.class, Red.class})
+//@Import导入组件，id默认是组件的全类名
 public class MainConfig2 {
     /**
      *	 * {@link ConfigurableBeanFactory#SCOPE_SINGLETON SCOPE_SINGLETON}.
@@ -37,4 +42,30 @@ public class MainConfig2 {
         System.out.println("给容器中添加Person...");
         return  new Person("张三",25);
     }
+
+    /**
+     * @Conditional ({Condition}):按照一定的条件判断，满足条件给容器中注册bean
+     * 如果系统是windows,给容器中注册("bill")
+     * 如果系统是linux，给容器中注册("linus")
+
+     */
+    //@Conditional({WindowsCondition.class})
+    @Bean("bill")
+    public Person person01(){
+        return new Person("Bill Gates",62);
+    }
+
+    @Conditional(LinuxCondition.class)
+    @Bean("linus")
+    public Person person02(){
+        return new Person("linus",48);
+    }
+
+    /**
+     * 给容器中注册组件：
+     * 1）、包扫描+组件标注注解(@Controller/@Service/@Repository/@Component)[自己写的类]
+     * 2）、@Bean[导入的第三方包里面的组件]
+     * 3）、@Import[快速给容器中导入一个组件]
+     *              1)、@Import(要导入到容器中的组件)；容器中就会自动注册这个组件，id默认是全类名
+     */
 }
