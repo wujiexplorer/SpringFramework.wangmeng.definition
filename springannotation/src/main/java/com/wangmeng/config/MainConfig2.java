@@ -4,6 +4,8 @@ import com.wangmeng.bean.Color;
 import com.wangmeng.bean.Person;
 import com.wangmeng.bean.Red;
 import com.wangmeng.condition.LinuxCondition;
+import com.wangmeng.condition.MyImportBeanDefinitionRegistrar;
+import com.wangmeng.condition.MyImportSelector;
 import com.wangmeng.condition.WindowsCondition;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.*;
@@ -11,7 +13,7 @@ import org.springframework.context.annotation.*;
 //类中组件统一设置，满足当前条件，这个类中配置的所有bean注册才能生效
 @Conditional({WindowsCondition.class})
 @Configuration
-@Import({Color.class, Red.class})
+@Import({Color.class, Red.class, MyImportSelector.class, MyImportBeanDefinitionRegistrar.class})
 //@Import导入组件，id默认是组件的全类名
 public class MainConfig2 {
     /**
@@ -67,5 +69,7 @@ public class MainConfig2 {
      * 2）、@Bean[导入的第三方包里面的组件]
      * 3）、@Import[快速给容器中导入一个组件]
      *              1)、@Import(要导入到容器中的组件)；容器中就会自动注册这个组件，id默认是全类名
+     *              2）、ImportSelector:返回需要导入的组件的全类名数组
+     *              3)、ImportBeanDefinitionRegistrar:手动注册bean到容器中
      */
 }

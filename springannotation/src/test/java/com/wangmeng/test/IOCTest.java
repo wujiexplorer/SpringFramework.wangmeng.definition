@@ -1,5 +1,6 @@
 package com.wangmeng.test;
 
+import com.wangmeng.bean.Blue;
 import com.wangmeng.bean.Person;
 import com.wangmeng.config.MainConfig;
 import com.wangmeng.config.MainConfig2;
@@ -17,6 +18,8 @@ public class IOCTest {
     @Test
     public void testImport(){
         printBeans(annotationConfigApplicationContext);
+        Blue bean  = annotationConfigApplicationContext.getBean(Blue.class);
+        System.out.println(bean);
     }
 
     private void printBeans(AnnotationConfigApplicationContext annotationConfigApplicationContext){
