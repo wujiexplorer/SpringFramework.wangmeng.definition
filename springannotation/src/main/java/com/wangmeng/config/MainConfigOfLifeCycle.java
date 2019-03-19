@@ -2,6 +2,7 @@ package com.wangmeng.config;
 
 import com.wangmeng.bean.Car;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
@@ -14,11 +15,12 @@ import org.springframework.context.annotation.Scope;
  *      指定init-method和destroy-method
  */
 
+@ComponentScan("com.wangmeng.bean")
 @Configuration
 public class MainConfigOfLifeCycle {
 
     @Bean(initMethod = "init",destroyMethod = "destroy")
-    @Scope("prototype")
+    //@Scope("prototype")
     public Car car(){
         return new Car();
     }
