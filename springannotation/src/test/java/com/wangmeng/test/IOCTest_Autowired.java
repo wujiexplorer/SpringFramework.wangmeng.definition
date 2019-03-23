@@ -1,5 +1,8 @@
 package com.wangmeng.test;
 
+import com.wangmeng.bean.Boss;
+import com.wangmeng.bean.Car;
+import com.wangmeng.bean.Color;
 import com.wangmeng.config.MainConfigOfAutowired;
 import com.wangmeng.config.MainConfigOfLifeCycle;
 import com.wangmeng.dao.BookDao;
@@ -17,6 +20,14 @@ public class IOCTest_Autowired {
         System.out.println(bookService);
         //BookDao bookDao = applicationContext.getBean(BookDao.class);
        // System.out.println(bookDao);
+        Boss boss = applicationContext.getBean(Boss.class);
+        System.out.println(boss);
+        Car car = applicationContext.getBean(Car.class);
+        System.out.println(car);
+
+        Color color = applicationContext.getBean(Color.class);
+        System.out.println(color);
+        System.out.println(applicationContext);
         applicationContext.close();
     }
 }

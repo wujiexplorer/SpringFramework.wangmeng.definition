@@ -2,18 +2,22 @@ package com.wangmeng.service;
 
 import com.wangmeng.dao.BookDao;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
-import javax.xml.ws.Action;
+import javax.annotation.Resource;
+import javax.inject.Inject;
+
 
 @Service
 public class BookService {
 
-    @Qualifier("bookDao")
-    @Autowired(required = false)
+    //@Qualifier("bookDao")
+    //@Autowired(required = false)
+    //@Resource(name="bookDao2")
+    @Inject
     private BookDao bookDao;
-
     public void print(){
         System.out.println(bookDao);
     }
