@@ -27,7 +27,7 @@ public class MainConfigOfProfile implements EmbeddedValueResolverAware {
 
     @Bean
     public Yellow yellow(){
-        return new Yellow();
+        return new Yellow("yellow");
     }
 
     @Profile("test")

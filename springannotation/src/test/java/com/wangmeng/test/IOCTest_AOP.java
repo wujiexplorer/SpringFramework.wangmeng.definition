@@ -19,7 +19,8 @@ public class IOCTest_AOP {
 //        MathCalculator mathCalculator = new MathCalculator();
 //        mathCalculator.div(1,1);
         MathCalculator mathCalculator = applicationContext.getBean(MathCalculator.class);
-        mathCalculator.div(1,0);
+        //容器保存了组件的代理对象（cglib增强后的对象）
+        mathCalculator.div(1,2);
         applicationContext.close();
     }
 }
