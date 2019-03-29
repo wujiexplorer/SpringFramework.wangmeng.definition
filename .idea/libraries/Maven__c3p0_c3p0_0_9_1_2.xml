@@ -2,6 +2,7 @@
   <library name="Maven: c3p0:c3p0:0.9.1.2">
     <CLASSES>
       <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://D:/apache-tomcat-7.0.72/lib/servlet-api.jar!/" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$MAVEN_REPOSITORY$/c3p0/c3p0/0.9.1.2/c3p0-0.9.1.2-javadoc.jar!/" />
