@@ -4,6 +4,10 @@ public class Yellow {
 
     private String color;
 
+    public Yellow(){
+
+    }
+
     public Yellow(String color){
         this.color = color;
     }

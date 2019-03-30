@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SpringFramework.wangmeng.definition:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/SpringFramework_wangmeng_definition_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="SpringFramework.wangmeng.definition/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SpringFramework.wangmeng.definition" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>
