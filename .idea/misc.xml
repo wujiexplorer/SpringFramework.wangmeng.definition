@@ -11,6 +11,7 @@
       <list>
         <option value="$PROJECT_DIR$/springannotation/pom.xml" />
         <option value="$PROJECT_DIR$/springmvcannotation/pom.xml" />
+        <option value="$PROJECT_DIR$/springcore/pom.xml" />
       </list>
     </option>
   </component>
