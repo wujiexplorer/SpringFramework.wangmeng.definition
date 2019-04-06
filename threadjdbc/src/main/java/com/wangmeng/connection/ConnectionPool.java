@@ -61,7 +61,8 @@ public class ConnectionPool implements IConnectionPool {
                 }
             }else{
                 wait(dbBean.getConnTimeOut());
-                connection = getConnection();//递归，重试
+                connection = getConnection();
+                //递归，重试
             }
             return connection;
         }catch(Exception e){

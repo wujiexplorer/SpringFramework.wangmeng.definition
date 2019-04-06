@@ -2,11 +2,9 @@ package com.wangmeng.ext.springmvc;
 
 import com.wangmeng.spring.extannotation.ExtResource;
 import com.wangmeng.spring.extannotation.ExtService;
-import com.wangmeng.utils.ClassUtils;
+import com.wangmeng.orm.utils.ClassUtils;
 import org.apache.commons.lang.StringUtils;
 
-import javax.jnlp.ExtendedService;
-import javax.swing.text.html.parser.Entity;
 import java.lang.reflect.Field;
 import java.util.List;
 import java.util.Map;

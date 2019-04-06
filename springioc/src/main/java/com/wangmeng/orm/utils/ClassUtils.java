@@ -1,4 +1,4 @@
-package com.wangmeng.utils;
+package com.wangmeng.orm.utils;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -186,19 +186,5 @@ public class ClassUtils {
                 }
             }
         }
-    }
-
-    // 首字母转小写
-    public static String toLowerCaseFirstOne(String s) {
-        if (Character.isLowerCase(s.charAt(0)))
-            return s;
-        else
-            return (new StringBuilder()).append(Character.toLowerCase(s.charAt(0))).append(s.substring(1)).toString();
-    }
-
-    // 初始化对象
-    public static Object newInstance(Class<?> classInfo)
-            throws ClassNotFoundException, InstantiationException, IllegalAccessException {
-        return classInfo.newInstance();
     }
 }

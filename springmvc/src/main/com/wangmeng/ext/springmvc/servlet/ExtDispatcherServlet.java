@@ -2,7 +2,7 @@ package com.wangmeng.ext.springmvc.servlet;
 
 import com.wangmeng.ext.springmvc.extannotation.ExtController;
 import com.wangmeng.ext.springmvc.extannotation.ExtRequestMapping;
-import com.wangmeng.utils.ClassUtils;
+import com.wangmeng.orm.utils.ClassUtils;
 import org.apache.commons.lang.StringUtils;
 
 import javax.servlet.ServletException;
@@ -10,7 +10,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
 import java.util.List;
 import java.util.Map;

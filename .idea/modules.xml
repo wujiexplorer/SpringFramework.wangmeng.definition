@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" filepath="$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mybatisorm/mybatisorm.iml" filepath="$PROJECT_DIR$/mybatisorm/mybatisorm.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" filepath="$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/springannotation/springannotation.iml" filepath="$PROJECT_DIR$/springannotation/springannotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/springaop/springaop.iml" filepath="$PROJECT_DIR$/springaop/springaop.iml" />

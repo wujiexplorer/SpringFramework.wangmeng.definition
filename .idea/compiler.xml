@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="mybatisorm" />
         <module name="springannotation" />
         <module name="springaop" />
         <module name="springcore" />
@@ -16,6 +17,7 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="mybatisorm" target="8" />
       <module name="springannotation" target="1.5" />
       <module name="springaop" target="8" />
       <module name="springcore" target="1.5" />
