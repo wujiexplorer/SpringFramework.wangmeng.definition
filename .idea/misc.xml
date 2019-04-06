@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/springmvcannotation" />
   </component>
   <component name="JavaScriptSettings">
@@ -12,6 +13,10 @@
         <option value="$PROJECT_DIR$/springannotation/pom.xml" />
         <option value="$PROJECT_DIR$/springmvcannotation/pom.xml" />
         <option value="$PROJECT_DIR$/springcore/pom.xml" />
+        <option value="$PROJECT_DIR$/springaop/pom.xml" />
+        <option value="$PROJECT_DIR$/springioc/pom.xml" />
+        <option value="$PROJECT_DIR$/springmvc/pom.xml" />
+        <option value="$PROJECT_DIR$/threadjdbc/pom.xml" />
       </list>
     </option>
   </component>

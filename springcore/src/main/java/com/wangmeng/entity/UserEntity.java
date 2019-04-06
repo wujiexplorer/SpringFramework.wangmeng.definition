@@ -1,6 +1,12 @@
 package com.wangmeng.entity;
 
-public class UserEntity {
+import org.springframework.beans.BeansException;
+import org.springframework.beans.factory.*;
+import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.ApplicationContextAware;
+
+public class UserEntity implements BeanNameAware, BeanFactoryAware, ApplicationContextAware, DisposableBean , InitializingBean {
 
     private String useName;
     private Integer age;
@@ -20,6 +26,7 @@ public class UserEntity {
     }
 
     public void setUseName(String useName) {
+        System.out.println("setUserName:"+useName);
         this.useName = useName;
     }
 
@@ -37,5 +44,27 @@ public class UserEntity {
                 "useName='" + useName + '\'' +
                 ", age=" + age +
                 '}';
+    }
+
+    public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
+        System.out.println("set BeanFactory ");
+    }
+
+    public void setBeanName(String name) {
+        System.out.println("setBeanName,name:"+name);
+    }
+
+    public void destroy() throws Exception {
+        System.out.println("销毁bean");
+    }
+
+
+
+    public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
+        System.out.println("setApplicationContext");
+    }
+
+    public void afterPropertiesSet() throws Exception {
+        System.out.println("初始化Bean中。。。。");
     }
 }

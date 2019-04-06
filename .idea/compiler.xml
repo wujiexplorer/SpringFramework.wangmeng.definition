@@ -7,14 +7,22 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="springannotation" />
+        <module name="springaop" />
         <module name="springcore" />
+        <module name="springioc" />
+        <module name="springmvc" />
         <module name="springmvcannotation" />
+        <module name="threadjdbc" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="springannotation" target="1.5" />
+      <module name="springaop" target="8" />
       <module name="springcore" target="1.5" />
+      <module name="springioc" target="1.5" />
+      <module name="springmvc" target="8" />
       <module name="springmvcannotation" target="1.7" />
+      <module name="threadjdbc" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
