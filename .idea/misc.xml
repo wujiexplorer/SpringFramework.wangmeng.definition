@@ -18,6 +18,7 @@
         <option value="$PROJECT_DIR$/springmvc/pom.xml" />
         <option value="$PROJECT_DIR$/threadjdbc/pom.xml" />
         <option value="$PROJECT_DIR$/mybatisorm/pom.xml" />
+        <option value="$PROJECT_DIR$/extarraylist/pom.xml" />
       </list>
     </option>
   </component>
