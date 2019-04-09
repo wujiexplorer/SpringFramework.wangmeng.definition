@@ -19,6 +19,8 @@
         <option value="$PROJECT_DIR$/threadjdbc/pom.xml" />
         <option value="$PROJECT_DIR$/mybatisorm/pom.xml" />
         <option value="$PROJECT_DIR$/extarraylist/pom.xml" />
+        <option value="$PROJECT_DIR$/extlinkedlist/pom.xml" />
+        <option value="$PROJECT_DIR$/extHashMap/pom.xml" />
       </list>
     </option>
   </component>

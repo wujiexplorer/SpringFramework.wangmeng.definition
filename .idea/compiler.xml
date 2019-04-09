@@ -7,6 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="extarraylist" />
+        <module name="extHashMap" />
+        <module name="extlinkedlist" />
         <module name="mybatisorm" />
         <module name="springannotation" />
         <module name="springaop" />
@@ -19,6 +21,8 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="extarraylist" target="8" />
+      <module name="extHashMap" target="7" />
+      <module name="extlinkedlist" target="1.5" />
       <module name="mybatisorm" target="8" />
       <module name="springannotation" target="1.5" />
       <module name="springaop" target="8" />
