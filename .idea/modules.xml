@@ -2,14 +2,24 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" filepath="$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" filepath="$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloud2EurekaServer9001/SpringCloud2EurekaServer9001.iml" filepath="$PROJECT_DIR$/SpringCloud2EurekaServer9001/SpringCloud2EurekaServer9001.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloud2Member2/SpringCloud2Member2.iml" filepath="$PROJECT_DIR$/SpringCloud2Member2/SpringCloud2Member2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" filepath="$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" filepath="$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHashMap/extHashMap.iml" filepath="$PROJECT_DIR$/extHashMap/extHashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" filepath="$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" filepath="$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/extarraylist/extarraylist.iml" filepath="$PROJECT_DIR$/extarraylist/extarraylist.iml" />
       <module fileurl="file://$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" filepath="$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisorm/mybatisorm.iml" filepath="$PROJECT_DIR$/mybatisorm/mybatisorm.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" filepath="$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/springannotation/springannotation.iml" filepath="$PROJECT_DIR$/springannotation/springannotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/springaop/springaop.iml" filepath="$PROJECT_DIR$/springaop/springaop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springcloud20eurekaserver/springcloud20eurekaserver.iml" filepath="$PROJECT_DIR$/springcloud20eurekaserver/springcloud20eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcore/springcore.iml" filepath="$PROJECT_DIR$/springcore/springcore.iml" />
       <module fileurl="file://$PROJECT_DIR$/springioc/springioc.iml" filepath="$PROJECT_DIR$/springioc/springioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/springmvc/springmvc.iml" />

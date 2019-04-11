@@ -1,0 +1,23 @@
+###服务端口号
+server:
+  port: 8100
+##定义服务名称
+#spring:
+#  application:
+#    name: app-wangmeng-eureka
+eureka:
+  instance:
+    ###注册中心ip地址
+    hostname: 127.0.0.1
+  client:
+    serviceUrl:
+    ##注册地址
+      defaultZone: http://${eureka.instance.hostname}:8100/eureka/
+    ####因为自己是注册中心，是否需要将自己注册给自己的注册中心（集群的时候是需要是为true）
+    register-with-eureka: false
+    ###因为自己是注册中心， 不需要去检索服务信息
+    fetch-registry: false
+#  server:
+    # 测试时关闭自我保护机制，保证不可用服务及时踢出
+#    enable-self-preservation: false
+ #   eviction-interval-timer-in-ms: 2000

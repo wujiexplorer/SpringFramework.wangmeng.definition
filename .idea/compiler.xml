@@ -9,9 +9,19 @@
         <module name="extarraylist" />
         <module name="extHashMap" />
         <module name="extlinkedlist" />
+        <module name="extSpringBoot" />
+        <module name="extSpringBootJavaTomcat" />
         <module name="mybatisorm" />
         <module name="springannotation" />
         <module name="springaop" />
+        <module name="SpringBoot20EurekaServer" />
+        <module name="SpringBoot2EurekaMember" />
+        <module name="SpringBoot2EurekaOrder" />
+        <module name="springcloud20eurekaserver" />
+        <module name="SpringCloud20Order" />
+        <module name="SpringCloud2EurekaServer9001" />
+        <module name="SpringCloud2Member2" />
+        <module name="SpringCloudMember" />
         <module name="springcore" />
         <module name="springioc" />
         <module name="springmvc" />
@@ -23,14 +33,38 @@
       <module name="extarraylist" target="8" />
       <module name="extHashMap" target="7" />
       <module name="extlinkedlist" target="1.5" />
+      <module name="extSpringBoot" target="1.7" />
+      <module name="extSpringBootJavaTomcat" target="1.7" />
+      <module name="extSpringBootJavaTomcatMaven" target="1.7" />
       <module name="mybatisorm" target="8" />
       <module name="springannotation" target="1.5" />
       <module name="springaop" target="8" />
+      <module name="SpringBoot20EurekaServer" target="1.8" />
+      <module name="SpringBoot2EurekaMember" target="1.8" />
+      <module name="SpringBoot2EurekaOrder" target="1.8" />
+      <module name="springcloud20eurekaserver" target="1.8" />
+      <module name="SpringCloud20Order" target="1.8" />
+      <module name="SpringCloud2EurekaServer9001" target="1.8" />
+      <module name="SpringCloud2Member2" target="1.8" />
+      <module name="SpringCloudMember" target="1.8" />
       <module name="springcore" target="1.5" />
       <module name="springioc" target="1.5" />
       <module name="springmvc" target="8" />
       <module name="springmvcannotation" target="1.7" />
       <module name="threadjdbc" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringBoot20EurekaServer" options="-parameters" />
+      <module name="SpringBoot2EurekaMember" options="-parameters" />
+      <module name="SpringBoot2EurekaOrder" options="-parameters" />
+      <module name="SpringCloud20Order" options="-parameters" />
+      <module name="SpringCloud2EurekaServer9001" options="-parameters" />
+      <module name="SpringCloud2Member2" options="-parameters" />
+      <module name="SpringCloudMember" options="-parameters" />
+      <module name="extSpringBoot" options="-parameters" />
+      <module name="springcloud20eurekaserver" options="-parameters" />
+    </option>
   </component>
 </project>

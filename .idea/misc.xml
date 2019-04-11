@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/extSpringBoot" />
+    <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcat" />
+    <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcatMaven" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/springmvcannotation" />
   </component>
@@ -21,6 +24,16 @@
         <option value="$PROJECT_DIR$/extarraylist/pom.xml" />
         <option value="$PROJECT_DIR$/extlinkedlist/pom.xml" />
         <option value="$PROJECT_DIR$/extHashMap/pom.xml" />
+        <option value="$PROJECT_DIR$/extSpringBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/extSpringBootJavaTomcat/pom.xml" />
+        <option value="$PROJECT_DIR$/springcloud20eurekaserver/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudMember/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud20Order/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2Member2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2EurekaServer9001/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot20EurekaServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot2EurekaMember/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot2EurekaOrder/pom.xml" />
       </list>
     </option>
   </component>

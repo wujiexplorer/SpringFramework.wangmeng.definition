@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="extSpringBootJavaTomcat:war">
+    <output-path>$PROJECT_DIR$/extSpringBootJavaTomcat/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>extSpringBootJavaTomcat</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="extSpringBootJavaTomcat.war">
+      <element id="artifact" artifact-name="extSpringBootJavaTomcat:war exploded" />
+    </root>
+  </artifact>
+</component>
