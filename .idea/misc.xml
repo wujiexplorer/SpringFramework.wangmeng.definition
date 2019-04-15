@@ -34,6 +34,14 @@
         <option value="$PROJECT_DIR$/SpringBoot20EurekaServer/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot2EurekaMember/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot2EurekaOrder/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot2EurekaMember2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2ZookeeperMember/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2ZookeeperMember2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2ZookeeperOrder/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2ConsulMember/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2wangmengParent/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2ConfigServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCLoud2ConfigClient/pom.xml" />
       </list>
     </option>
   </component>

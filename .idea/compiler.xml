@@ -16,11 +16,24 @@
         <module name="springaop" />
         <module name="SpringBoot20EurekaServer" />
         <module name="SpringBoot2EurekaMember" />
+        <module name="SpringBoot2EurekaMember2" />
         <module name="SpringBoot2EurekaOrder" />
         <module name="springcloud20eurekaserver" />
         <module name="SpringCloud20Order" />
+        <module name="SpringCLoud2ConfigClient" />
+        <module name="SpringCloud2ConfigServer" />
+        <module name="SpringCloud2ConsulMember" />
         <module name="SpringCloud2EurekaServer9001" />
         <module name="SpringCloud2Member2" />
+        <module name="SpringCloud2wangmengApiMemberService" />
+        <module name="SpringCloud2wangmengApiMemberServiceImpl" />
+        <module name="SpringCloud2wangmengApiMemberServiceImpl2" />
+        <module name="SpringCloud2wangmengApiOrderService" />
+        <module name="SpringCloud2wangmengApiOrderServiceImpl" />
+        <module name="SpringCloud2wangmengCommon" />
+        <module name="SpringCloud2ZookeeperMember" />
+        <module name="SpringCloud2ZookeeperMember2" />
+        <module name="SpringCloud2ZookeeperOrder" />
         <module name="SpringCloudMember" />
         <module name="springcore" />
         <module name="springioc" />
@@ -41,11 +54,27 @@
       <module name="springaop" target="8" />
       <module name="SpringBoot20EurekaServer" target="1.8" />
       <module name="SpringBoot2EurekaMember" target="1.8" />
+      <module name="SpringBoot2EurekaMember2" target="1.8" />
       <module name="SpringBoot2EurekaOrder" target="1.8" />
       <module name="springcloud20eurekaserver" target="1.8" />
       <module name="SpringCloud20Order" target="1.8" />
+      <module name="SpringCLoud2ConfigClient" target="1.8" />
+      <module name="SpringCloud2ConfigServer" target="1.8" />
+      <module name="SpringCloud2ConsulMember" target="1.8" />
       <module name="SpringCloud2EurekaServer9001" target="1.8" />
       <module name="SpringCloud2Member2" target="1.8" />
+      <module name="SpringCloud2wangmengApiMemberService" target="1.8" />
+      <module name="SpringCloud2wangmengApiMemberServiceImpl" target="1.8" />
+      <module name="SpringCloud2wangmengApiMemberServiceImpl2" target="1.8" />
+      <module name="SpringCloud2wangmengApiOrderService" target="1.8" />
+      <module name="SpringCloud2wangmengApiOrderServiceImpl" target="1.8" />
+      <module name="SpringCloud2wangmengApiService" target="1.8" />
+      <module name="SpringCloud2wangmengCommon" target="1.8" />
+      <module name="SpringCloud2wangmengOrderApiService" target="1.5" />
+      <module name="SpringCloud2wangmengParent" target="1.8" />
+      <module name="SpringCloud2ZookeeperMember" target="1.8" />
+      <module name="SpringCloud2ZookeeperMember2" target="1.8" />
+      <module name="SpringCloud2ZookeeperOrder" target="1.8" />
       <module name="SpringCloudMember" target="1.8" />
       <module name="springcore" target="1.5" />
       <module name="springioc" target="1.5" />
@@ -58,10 +87,23 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBoot20EurekaServer" options="-parameters" />
       <module name="SpringBoot2EurekaMember" options="-parameters" />
+      <module name="SpringBoot2EurekaMember2" options="-parameters" />
       <module name="SpringBoot2EurekaOrder" options="-parameters" />
+      <module name="SpringCLoud2ConfigClient" options="-parameters" />
       <module name="SpringCloud20Order" options="-parameters" />
+      <module name="SpringCloud2ConfigServer" options="-parameters" />
+      <module name="SpringCloud2ConsulMember" options="-parameters" />
       <module name="SpringCloud2EurekaServer9001" options="-parameters" />
       <module name="SpringCloud2Member2" options="-parameters" />
+      <module name="SpringCloud2ZookeeperMember" options="-parameters" />
+      <module name="SpringCloud2ZookeeperMember2" options="-parameters" />
+      <module name="SpringCloud2ZookeeperOrder" options="-parameters" />
+      <module name="SpringCloud2wangmengApiMemberService" options="-parameters" />
+      <module name="SpringCloud2wangmengApiMemberServiceImpl" options="-parameters" />
+      <module name="SpringCloud2wangmengApiMemberServiceImpl2" options="-parameters" />
+      <module name="SpringCloud2wangmengApiOrderService" options="-parameters" />
+      <module name="SpringCloud2wangmengApiOrderServiceImpl" options="-parameters" />
+      <module name="SpringCloud2wangmengCommon" options="-parameters" />
       <module name="SpringCloudMember" options="-parameters" />
       <module name="extSpringBoot" options="-parameters" />
       <module name="springcloud20eurekaserver" options="-parameters" />

@@ -1,6 +1,7 @@
 package com.wangmeng.api.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -21,6 +22,8 @@ import org.springframework.web.client.RestTemplate;
 @EnableEurekaClient
 @RestController//没有加@RestController，会报404错误
 public class EurekaOrderController {
+
+
 
     @Autowired
     private RestTemplate restTemplate;

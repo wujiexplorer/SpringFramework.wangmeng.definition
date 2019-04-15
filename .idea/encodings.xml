@@ -3,10 +3,25 @@
   <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/SpringBoot20EurekaServer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot2EurekaMember" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBoot2EurekaMember2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot2EurekaOrder" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCLoud2ConfigClient" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud20Order" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2ConfigServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2ConsulMember" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud2EurekaServer9001" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud2Member2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2ZookeeperMember" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2ZookeeperMember2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2ZookeeperOrder" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2wangmengParent" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl2" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiOrderServiceImpl" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiMemberService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiOrderService" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengCommon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudMember" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extSpringBoot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extSpringBootJavaTomcat" charset="UTF-8" />
