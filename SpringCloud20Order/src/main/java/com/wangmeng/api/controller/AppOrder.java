@@ -1,5 +1,6 @@
 package com.wangmeng.api.controller;
 
+import com.spring4all.swagger.EnableSwagger2Doc;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -18,14 +19,19 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 @EnableEurekaClient
 @EnableFeignClients
+@EnableSwagger2Doc
 public class AppOrder {
 
     public static void main(String[] args) {
         SpringApplication.run(AppOrder.class,args);
     }
 
+    /**
+     *   @LoadBalanced不加的话，会出现UnknownHostException
+     * @return
+     */
     @Bean
-   // @LoadBalanced
+    @LoadBalanced
     RestTemplate restTemplate(){
         return new RestTemplate();
     }

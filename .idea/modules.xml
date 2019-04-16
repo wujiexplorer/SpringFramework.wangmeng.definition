@@ -6,15 +6,18 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaMember2/SpringBoot2EurekaMember2.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaMember2/SpringBoot2EurekaMember2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" filepath="$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" filepath="$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" filepath="$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2ConfigServer/SpringCloud2ConfigServer.iml" filepath="$PROJECT_DIR$/SpringCloud2ConfigServer/SpringCloud2ConfigServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2ConsulMember/SpringCloud2ConsulMember.iml" filepath="$PROJECT_DIR$/SpringCloud2ConsulMember/SpringCloud2ConsulMember.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2EurekaServer9001/SpringCloud2EurekaServer9001.iml" filepath="$PROJECT_DIR$/SpringCloud2EurekaServer9001/SpringCloud2EurekaServer9001.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2Member2/SpringCloud2Member2.iml" filepath="$PROJECT_DIR$/SpringCloud2Member2/SpringCloud2Member2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloud2Pay/SpringCloud2Pay.iml" filepath="$PROJECT_DIR$/SpringCloud2Pay/SpringCloud2Pay.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2ZookeeperMember/SpringCloud2ZookeeperMember.iml" filepath="$PROJECT_DIR$/SpringCloud2ZookeeperMember/SpringCloud2ZookeeperMember.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2ZookeeperMember2/SpringCloud2ZookeeperMember2.iml" filepath="$PROJECT_DIR$/SpringCloud2ZookeeperMember2/SpringCloud2ZookeeperMember2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2ZookeeperOrder/SpringCloud2ZookeeperOrder.iml" filepath="$PROJECT_DIR$/SpringCloud2ZookeeperOrder/SpringCloud2ZookeeperOrder.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloud2ZuulGateway2/SpringCloud2ZuulGateway2.iml" filepath="$PROJECT_DIR$/SpringCloud2ZuulGateway2/SpringCloud2ZuulGateway2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiMemberService/SpringCloud2wangmengApiMemberService.iml" filepath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiMemberService/SpringCloud2wangmengApiMemberService.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl/SpringCloud2wangmengApiMemberServiceImpl.iml" filepath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl/SpringCloud2wangmengApiMemberServiceImpl.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl2/SpringCloud2wangmengApiMemberServiceImpl2.iml" filepath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl2/SpringCloud2wangmengApiMemberServiceImpl2.iml" />
@@ -24,6 +27,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengCommon/SpringCloud2wangmengCommon.iml" filepath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengCommon/SpringCloud2wangmengCommon.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengParent.iml" filepath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengParent.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" filepath="$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringCloudZuulGateway/SpringCloudZuulGateway.iml" filepath="$PROJECT_DIR$/SpringCloudZuulGateway/SpringCloudZuulGateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" filepath="$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHashMap/extHashMap.iml" filepath="$PROJECT_DIR$/extHashMap/extHashMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" filepath="$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" />

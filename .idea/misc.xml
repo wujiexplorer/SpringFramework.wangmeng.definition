@@ -42,6 +42,10 @@
         <option value="$PROJECT_DIR$/SpringCloud2wangmengParent/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCloud2ConfigServer/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCLoud2ConfigClient/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloudZuulGateway/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2Pay/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringCloud2ZuulGateway2/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot2Swagger/pom.xml" />
       </list>
     </option>
   </component>

@@ -36,6 +36,12 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
         </dependency>
+        <!-- swagger-spring-boot -->
+        <dependency>
+            <groupId>com.spring4all</groupId>
+            <artifactId>swagger-spring-boot-starter</artifactId>
+            <version>1.7.0.RELEASE</version>
+        </dependency>
     </dependencies>
     <!-- 注意： 这里必须要添加， 否者各种依赖有问题 -->
     <repositories>

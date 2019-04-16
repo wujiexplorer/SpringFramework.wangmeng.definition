@@ -1,0 +1,38 @@
+###注册 中心
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8100/eureka/
+server:
+  port: 82
+    ###网关名称
+    #spring:
+    # application:
+    #  name: service-zuul
+    # cloud:
+    #   config:
+    ####读取后缀
+    #     profile: dev
+  ####读取config-server注册地址
+  #     discovery:
+  #      service-id: config-server
+#        enabled: true
+#### 配置网关反向代理    
+zuul:
+  routes:
+    api-a:
+      ### 以 /api-member/访问转发到会员服务
+      path: /api-member/**
+      serviceId: app-wangmeng-member
+    api-b:
+      ### 以 /api-order/访问转发到订单服务
+      path: /api-order/**
+      serviceId: app-wangmeng-order
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+ribbon:
+  eureka:
+    enabled: true

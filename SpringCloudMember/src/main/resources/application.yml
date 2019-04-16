@@ -14,3 +14,5 @@ eureka:
       defaultZone: http://localhost:8100/eureka,http://localhost:9100/eureka
     register-with-eureka: true
     fetch-registry: true
+swagger:
+  base-package: com.wangmeng.api.controller
