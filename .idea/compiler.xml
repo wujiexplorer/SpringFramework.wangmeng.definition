@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -15,6 +16,7 @@
         <module name="springannotation" />
         <module name="springaop" />
         <module name="SpringBoot20EurekaServer" />
+        <module name="SpringBoot2ElasticSearch" />
         <module name="SpringBoot2EurekaMember" />
         <module name="SpringBoot2EurekaMember2" />
         <module name="SpringBoot2EurekaOrder" />
@@ -44,6 +46,9 @@
         <module name="springmvc" />
         <module name="springmvcannotation" />
         <module name="threadjdbc" />
+        <module name="wangmengmemberdubboapiservice" />
+        <module name="wangmengmemberpublicdubboapi" />
+        <module name="wangmengorderdubboservice" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -57,6 +62,7 @@
       <module name="springannotation" target="1.5" />
       <module name="springaop" target="8" />
       <module name="SpringBoot20EurekaServer" target="1.8" />
+      <module name="SpringBoot2ElasticSearch" target="1.8" />
       <module name="SpringBoot2EurekaMember" target="1.8" />
       <module name="SpringBoot2EurekaMember2" target="1.8" />
       <module name="SpringBoot2EurekaOrder" target="1.8" />
@@ -89,11 +95,16 @@
       <module name="springmvc" target="8" />
       <module name="springmvcannotation" target="1.7" />
       <module name="threadjdbc" target="1.5" />
+      <module name="wangmengmemberdubboapiservice" target="1.5" />
+      <module name="wangmengmemberpublicdubboapi" target="1.5" />
+      <module name="wangmengMemberPublicDubboApi" target="1.5" />
+      <module name="wangmengorderdubboservice" target="1.5" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringBoot20EurekaServer" options="-parameters" />
+      <module name="SpringBoot2ElasticSearch" options="-parameters" />
       <module name="SpringBoot2EurekaMember" options="-parameters" />
       <module name="SpringBoot2EurekaMember2" options="-parameters" />
       <module name="SpringBoot2EurekaOrder" options="-parameters" />

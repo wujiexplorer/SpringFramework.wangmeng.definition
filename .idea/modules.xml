@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" filepath="$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBoot2ElasticSearch/SpringBoot2ElasticSearch.iml" filepath="$PROJECT_DIR$/SpringBoot2ElasticSearch/SpringBoot2ElasticSearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaMember2/SpringBoot2EurekaMember2.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaMember2/SpringBoot2EurekaMember2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" />
@@ -44,6 +45,9 @@
       <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/springmvc/springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvcannotation/springmvcannotation.iml" filepath="$PROJECT_DIR$/springmvcannotation/springmvcannotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadjdbc/threadjdbc.iml" filepath="$PROJECT_DIR$/threadjdbc/threadjdbc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wangmengmemberdubboapiservice/wangmengmemberdubboapiservice.iml" filepath="$PROJECT_DIR$/wangmengmemberdubboapiservice/wangmengmemberdubboapiservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wangmengmemberpublicdubboapi/wangmengmemberpublicdubboapi.iml" filepath="$PROJECT_DIR$/wangmengmemberpublicdubboapi/wangmengmemberpublicdubboapi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wangmengorderdubboservice/wangmengorderdubboservice.iml" filepath="$PROJECT_DIR$/wangmengorderdubboservice/wangmengorderdubboservice.iml" />
     </modules>
   </component>
 </project>
