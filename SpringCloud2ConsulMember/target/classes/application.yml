@@ -1,0 +1,20 @@
+###服务端口号
+server:
+  port: 8502
+spring:
+### 服务名称
+  application:
+    name: consul-member
+####consul注册中心地址
+  cloud:
+    consul:
+    ### consul地址
+      host: localhost
+          ###     ### consul端口号
+      port: 8500
+      discovery:
+      ##服务地址直接为ip地址
+        hostname: 192.168.18.220
+###默认情况下 服务注册到注册中心 地址随机生成英文 pc-yushengjun：
+
+### 换不同注册中心的时候，接口调用方式都不变  无非变化 配置文件和maven依赖信息

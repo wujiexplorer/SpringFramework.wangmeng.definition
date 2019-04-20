@@ -1,0 +1,11 @@
+###服务端口号
+server:
+  port: 8020
+###服务名称
+spring:
+  application:
+    name: zk-member
+  cloud:
+    zookeeper:
+      ###注册到zookeeper地址
+      connect-string: 127.0.0.1:2181
