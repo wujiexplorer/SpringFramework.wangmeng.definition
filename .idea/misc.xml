@@ -46,6 +46,10 @@
         <option value="$PROJECT_DIR$/SpringCloud2Pay/pom.xml" />
         <option value="$PROJECT_DIR$/SpringCloud2ZuulGateway2/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot2Swagger/pom.xml" />
+        <option value="$PROJECT_DIR$/wangmengmemberpublicdubboapi/pom.xml" />
+        <option value="$PROJECT_DIR$/wangmengmemberdubboapiservice/pom.xml" />
+        <option value="$PROJECT_DIR$/wangmengorderdubboservice/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBoot2ElasticSearch/pom.xml" />
       </list>
     </option>
   </component>

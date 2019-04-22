@@ -1,0 +1,16 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: app-wangmeng-member
+#eureka:
+#  client:
+#    service-url:
+#      defaultZone: http://localhost:8100/eureka
+###集群地址 各个标签都是tab键，不是空格键，这是yaml语法规定的
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8100/eureka,http://localhost:9100/eureka
+    register-with-eureka: true
+    fetch-registry: true

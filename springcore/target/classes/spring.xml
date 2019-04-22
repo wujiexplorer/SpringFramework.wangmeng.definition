@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <bean id="userEntity001" class="com.wangmeng.entity.UserEntity" scope="prototype"></bean>
+
+    <bean id="userEntity002" class="com.wangmeng.entity.UserEntity" scope="singleton">
+        <constructor-arg name="useName" value="yushengjun"></constructor-arg>
+        <constructor-arg name="age" value="20"></constructor-arg>
+    </bean>
+    <!--反射调用有参构造器-->
+
+    <!--<bean id="userEntity001" class="com.wangmeng.entity.UserEntity"></bean>
+    Caused by: org.xml.sax.SAXParseException; lineNumber: 8; columnNumber: 69; cvc-id.2: ID 值 'userEntity001' 出现了多次。
+    -->
+
+    <bean id="userDao" class="com.wangmeng02.dao.UserDao"></bean>
+    <bean id="userService" class="com.wangmeng.service.UserService">
+        <property name="userDao" ref="userDao"></property>
+    </bean>
+
+    <context:component-scan base-package="com.wangmeng02"></context:component-scan>
+
+    <aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+
+    <bean id="aop" class="com.wangmeng02.Aop02"></bean>
+    <aop:config>
+        <aop:pointcut id="pt" expression="execution(* com.wangmeng02.service.*.*(..))"/>
+        <aop:aspect ref="aop">
+            <aop:around method="around" pointcut-ref="pt"></aop:around>
+            <aop:before method="bean" pointcut-ref="pt"></aop:before>
+            <aop:after method="commit" pointcut-ref="pt"></aop:after>
+            <aop:after-returning method="afterRun" pointcut-ref="pt"></aop:after-returning>
+            <aop:after-throwing method="afterException" pointcut-ref="pt"></aop:after-throwing>
+        </aop:aspect>
+    </aop:config>
+
+    <!-- 1. 数据源对象: C3P0连接池 -->
+    <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
+        <property name="driverClass" value="com.mysql.jdbc.Driver"></property>
+        <property name="jdbcUrl" value="jdbc:mysql://localhost:3306/test"></property>
+        <property name="user" value="root"></property>
+        <property name="password" value="123456"></property>
+    </bean>
+
+    <!-- 2. JdbcTemplate工具类实例 -->
+    <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+    <!-- 配置事物 -->
+    <bean id="dataSourceTransactionManager"
+          class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"></property>
+    </bean>
+
+</beans>
