@@ -1,0 +1,80 @@
+#!/bin/bash 
+# chkconfig: 2345  80 70
+# description: KC MicroService  Bootstrap Script for Linux
+#
+#
+
+. /etc/init.d/functions
+
+KC_MODULE=benefits-mall
+KC_MODULE_VERSION=dev
+
+KC_DEPLOY_HOME=/opt/deployes/benefits
+# echo function library
+
+KC_MODULE_HOME=$KC_DEPLOY_HOME/$KC_MODULE
+JAVA_OPTS="-server -Xms512m -Xmx1024m -Xss256k -XX:-UseParallelGC -XX:ParallelGCThreads=3" 
+
+PROC_NAME="${KC_MODULE}_${KC_MODULE_VERSION}_run" 
+PROC_NUM=`ps -ef |grep "procname=$PROC_NAME" |grep -v grep |wc -l`
+PID=`ps -ef |grep "procname=$PROC_NAME" |grep -v grep |awk '{print $2}'`
+
+case "$1" in
+'start')
+        echo "START $PROC_NAME \c" 
+
+        if [ $PROC_NUM -eq 0 ]; then
+           cd  $KC_MODULE_HOME
+           nohup java -Dprocname=$PROC_NAME  $JAVA_OPTS -jar ${KC_MODULE}-${KC_MODULE_VERSION}.jar  > /dev/null 2>&1 &
+
+           sleep 10
+
+           PROC_NUM=`ps -ef |grep "procname=$PROC_NAME" |grep -v grep |wc -l`
+           if [ $PROC_NUM -gt 0 ]; then
+              echo_success
+           else
+              echo_failure
+           fi
+        else
+         echo_warning "ALREADY RUNNING " 
+        fi
+        ;;
+
+'stop')
+        echo "STOP $PROC_NAME \c" 
+
+        if [ $PROC_NUM -gt 0 ]; then
+           kill $PID
+           sleep 2
+
+           PROC_NUM=`ps -ef |grep "procname=$PROC_NAME" |grep -v grep |wc -l`
+           if [ $PROC_NUM -eq 0 ]; then
+              echo_success
+           else
+              echo_failure
+           fi
+        else
+              echo_warning "NOT RUNNING" 
+        fi
+        ;;
+
+'status')
+        echo "  $PROC_NAME  ----- "$PID"\c" 
+
+        if [ $PROC_NUM -gt 0 ]; then
+           echo_success "RUNNING" 
+        else
+           echo_failure "STOPPED" 
+        fi
+        ;;
+
+*)
+        echo
+        echo " Usage:" 
+        echo " service     $0 { start | stop | status }" 
+        echo
+        exit 1
+        ;;
+esac
+exit 0
+
