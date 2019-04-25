@@ -50,6 +50,7 @@
         <option value="$PROJECT_DIR$/wangmengmemberdubboapiservice/pom.xml" />
         <option value="$PROJECT_DIR$/wangmengorderdubboservice/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot2ElasticSearch/pom.xml" />
+        <option value="$PROJECT_DIR$/extDubbo/pom.xml" />
       </list>
     </option>
   </component>

@@ -2,6 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/extDubbo/AppClient/AppClient.iml" filepath="$PROJECT_DIR$/extDubbo/AppClient/AppClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extDubbo/AppCommon/AppCommon.iml" filepath="$PROJECT_DIR$/extDubbo/AppCommon/AppCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extDubbo/AppServer/AppServer.iml" filepath="$PROJECT_DIR$/extDubbo/AppServer/AppServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extDubbo/DubboCommon/DubboCommon.iml" filepath="$PROJECT_DIR$/extDubbo/DubboCommon/DubboCommon.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extDubbo/DubboRegistry/DubboRegistry.iml" filepath="$PROJECT_DIR$/extDubbo/DubboRegistry/DubboRegistry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extDubbo/RpcClient/RpcClient.iml" filepath="$PROJECT_DIR$/extDubbo/RpcClient/RpcClient.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extDubbo/RpcServer/RpcServer.iml" filepath="$PROJECT_DIR$/extDubbo/RpcServer/RpcServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" filepath="$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2ElasticSearch/SpringBoot2ElasticSearch.iml" filepath="$PROJECT_DIR$/SpringBoot2ElasticSearch/SpringBoot2ElasticSearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" />
@@ -30,6 +37,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" filepath="$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloudZuulGateway/SpringCloudZuulGateway.iml" filepath="$PROJECT_DIR$/SpringCloudZuulGateway/SpringCloudZuulGateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" filepath="$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extDubbo/extDubbo.iml" filepath="$PROJECT_DIR$/extDubbo/extDubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHashMap/extHashMap.iml" filepath="$PROJECT_DIR$/extHashMap/extHashMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" filepath="$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" filepath="$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" />
