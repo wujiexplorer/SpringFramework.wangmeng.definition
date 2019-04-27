@@ -12,94 +12,86 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f18c59f8-fc8b-4f9a-a4c2-c62de22503fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_api_1_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_collectionschema_1_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_core_1_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_dyuproject_protostuff_protostuff_runtime_1_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_24_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_17.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_collections4_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppClient/AppClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppClient/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppClient/src/main/java/com/wangmeng/app/client/APP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppClient/src/main/resources/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppClient/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppClient/src/main/resources/rpc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppCommon/AppCommon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppCommon/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppCommon/src/main/java/com/wangmeng/app/common/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppCommon/src/main/java/com/wangmeng/app/common/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppServer/AppServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppServer/src/main/java/com/wangmeng/app/server/BootAppServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppServer/src/main/java/com/wangmeng/app/server/ProductServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppServer/src/main/resources/application.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppServer/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/AppServer/src/main/resources/rpc.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboCommon/DubboCommon.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboCommon/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboCommon/src/main/java/com/wangmeng/rpc/common/RpcDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboCommon/src/main/java/com/wangmeng/rpc/common/RpcEncoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboCommon/src/main/java/com/wangmeng/rpc/common/RpcRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboCommon/src/main/java/com/wangmeng/rpc/common/RpcResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboCommon/src/main/java/com/wangmeng/rpc/common/SerializationUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboRegistry/DubboRegistry.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboRegistry/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboRegistry/src/main/java/com/wangmeng/rpc/registry/Constant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboRegistry/src/main/java/com/wangmeng/rpc/registry/RpcDiscover.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/DubboRegistry/src/main/java/com/wangmeng/rpc/registry/RpcRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/RpcClient/RpcClient.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/RpcClient/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/RpcClient/src/main/java/com/wangmeng/rpc/client/RpcClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/RpcClient/src/main/java/com/wangmeng/rpc/client/RpcProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/RpcServer/RpcServer.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/RpcServer/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/RpcServer/src/main/java/com/wangmeng/rpc/server/RpcServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/RpcServer/src/main/java/com/wangmeng/rpc/server/RpcServerHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/RpcServer/src/main/java/com/wangmeng/rpc/server/RpcService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/extDubbo.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/extDubbo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/artifacts/springmvc_annotation_war.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/artifacts/springmvc_annotation_war_exploded.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__javax_servlet_servlet_api_3_0_alpha_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__org_springframework_spring_aop_4_3_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__org_springframework_spring_beans_4_3_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__org_springframework_spring_context_4_3_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__org_springframework_spring_core_4_3_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__org_springframework_spring_expression_4_3_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__org_springframework_spring_web_4_3_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_11_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/springmvcannotation/springmvc-annotation.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_h2database_h2_1_4_196.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_cache_cache_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ignite_ignite_core_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ignite_ignite_indexing_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ignite_ignite_spring_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_ignite_ignite_spring_data_2_3_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_5_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_27.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_gridgain_ignite_shmem_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_13_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_14_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/UsersApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/IgniteCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/JwtCfg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/controller/PersonController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/controller/SecureController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/Person.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/ReqPerson.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/RespResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/PersonService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/impl/PersonServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SpringBootJWT/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SpringBoot2ElasticSearch/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot2ElasticSearch/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/springannotation/target/" />
     <ignored path="$PROJECT_DIR$/springmvcannotation/target/" />
@@ -156,6 +148,7 @@
     <ignored path="$PROJECT_DIR$/extDubbo/AppCommon/target/" />
     <ignored path="$PROJECT_DIR$/extDubbo/AppServer/target/" />
     <ignored path="$PROJECT_DIR$/extDubbo/AppClient/target/" />
+    <ignored path="$PROJECT_DIR$/SpringBootJWT/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +176,66 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/UsersApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+              <folding>
+                <element signature="e#990#991#0" expanded="true" />
+                <element signature="e#1048#1049#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/dao/PersonRepository.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/JwtCfg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/controller/SecureController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/IgniteCfg.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="120">
+              <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -223,19 +275,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/SpringBoot2Swagger/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/SpringBoot2Swagger/src/main/java/com/wangmeng/controller/SwaggerController.java" />
-        <option value="$PROJECT_DIR$/SpringCloudMember/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringCloudMember/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/SpringCloudMember/src/main/java/com/wangmeng/api/controller/AppMember.java" />
-        <option value="$PROJECT_DIR$/SpringCloudMember/src/main/java/com/wangmeng/api/controller/MemberApiController.java" />
-        <option value="$PROJECT_DIR$/SpringCloud20Order/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringCloud20Order/src/main/java/com/wangmeng/api/controller/AppOrder.java" />
-        <option value="$PROJECT_DIR$/SpringCloud20Order/src/main/java/com/wangmeng/api/controller/OrderController.java" />
-        <option value="$PROJECT_DIR$/SpringCloudZuulGateway/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringCloudZuulGateway/src/main/java/com/wangmeng/AppGateway.java" />
-        <option value="$PROJECT_DIR$/SpringCloudZuulGateway/src/main/java/com/wangmeng/filter/TokenFilter.java" />
-        <option value="$PROJECT_DIR$/wangmengMemberPublicDubboAp/pom.xml" />
         <option value="$PROJECT_DIR$/wangmengmemberpublicdubboapi/pom.xml" />
         <option value="$PROJECT_DIR$/wangmengmemberpublicdubboapi/src/main/java/com/wangmeng/api/member/MemberService.java" />
         <option value="$PROJECT_DIR$/wangmengmemberdubboapiservice/src/main/java/com/wangmeng/api/member/service/impl/MemberServiceImpl.java" />
@@ -274,6 +313,19 @@
         <option value="$PROJECT_DIR$/extDubbo/AppClient/src/main/resources/application.xml" />
         <option value="$PROJECT_DIR$/extDubbo/AppClient/src/main/resources/rpc.properties" />
         <option value="$PROJECT_DIR$/extDubbo/AppClient/src/main/java/com/wangmeng/app/client/APP.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/PersonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/dao/PersonRepository.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/impl/PersonServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/PersonService.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/UsersApplication.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/JwtFilter.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/Person.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/ReqPerson.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/Role.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/controller/PersonController.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/IgniteCfg.java" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/JwtCfg.java" />
       </list>
     </option>
   </component>
@@ -335,7 +387,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -344,10 +395,107 @@
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="config" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootJWT" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="jwt" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -357,9 +505,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556206776276" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556358981272" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SpringBoot-Ignite/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -369,22 +517,22 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\code\SpringFramework.wangmeng.definition\extDubbo\AppClient\src\main\resources" />
-      <recent name="E:\code\SpringFramework.wangmeng.definition\extDubbo\AppServer\src\main\resources" />
-      <recent name="E:\code\SpringFramework.wangmeng.definition\extDubbo\AppServer\src\main\java\com\wangmeng\app\server" />
-      <recent name="E:\code\SpringFramework.wangmeng.definition\extDubbo\AppCommon\src\main\java\com\wangmeng\app\common" />
-      <recent name="E:\code\SpringFramework.wangmeng.definition\extDubbo\RpcClient\src\main\java\com\wangmeng\rpc\client" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.wangmeng.app.client" />
-      <recent name="com.wangmeng" />
-      <recent name="com.wangmeng.filter" />
-      <recent name="com.wangmeng.api.service.impl" />
-      <recent name="com.wangmeng.api.controller" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\code\SpringFramework.wangmeng.definition\extSpringBootJavaTomcat\target\extSpringBootJavaTomcat\WEB-INF\classes" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.wangmeng.jwt" />
+      <recent name="com.wangmeng.jwt.service.impl" />
+      <recent name="com.wangmeng.jwt.service" />
+      <recent name="com.wangmeng.jwt.dao" />
+      <recent name="com.wangmeng.app.client" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootJWT\src\main\resources" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootJWT\src\main\java\com\wangmeng\jwt\model" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootJWT\src\main\java\com\wangmeng\jwt\controller" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootJWT\src\main\java\com\wangmeng\jwt\config" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\extDubbo\AppClient\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -399,20 +547,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.APP.testGet">
-    <configuration name="BootAppServer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.wangmeng.app.server.BootAppServer" />
-      <module name="AppServer" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangmeng.app.server.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.UsersApplication">
     <configuration name="APP.testDelete" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AppClient" />
       <extension name="coverage">
@@ -473,6 +608,19 @@
       <option name="MAIN_CLASS_NAME" value="com.wangmeng.app.client.APP" />
       <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UsersApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootJWT" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangmeng.jwt.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.jwt.UsersApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -563,20 +711,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Tomcat Server.Tomcat 7.0" />
-      <item itemvalue="Application.BootAppServer" />
       <item itemvalue="JUnit.APP.testSave" />
       <item itemvalue="JUnit.APP.testDelete" />
       <item itemvalue="JUnit.APP.testUpdate" />
       <item itemvalue="JUnit.APP.testGet" />
+      <item itemvalue="Tomcat Server.Tomcat 7.0" />
+      <item itemvalue="Spring Boot.UsersApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.UsersApplication" />
         <item itemvalue="JUnit.APP.testGet" />
         <item itemvalue="JUnit.APP.testUpdate" />
         <item itemvalue="JUnit.APP.testDelete" />
         <item itemvalue="JUnit.APP.testSave" />
-        <item itemvalue="Application.BootAppServer" />
       </list>
     </recent_temporary>
   </component>
@@ -659,7 +807,8 @@
       <workItem from="1556025790038" duration="602000" />
       <workItem from="1556117048243" duration="3669000" />
       <workItem from="1556196924292" duration="6918000" />
-      <workItem from="1556204536307" duration="2239000" />
+      <workItem from="1556204536307" duration="3242000" />
+      <workItem from="1556342614876" duration="7111000" />
     </task>
     <task id="LOCAL-00001" summary="Spring annotation application">
       <created>1552661452000</created>
@@ -829,7 +978,14 @@
       <option name="project" value="LOCAL" />
       <updated>1555782613527</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="手动写一个dubbo框架，一次请求一次scoket连接 动态代理 发请求 编解码 序列化反序列化 requestId methodName parameterType args className(request),requestId,responseId,Object(response)">
+      <created>1556207133766</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1556207133766</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -865,7 +1021,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="539889000" />
+    <option name="totallyTimeSpent" value="548003000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -884,7 +1040,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.48487142" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.4924357" />
       <window_info id="Structure" order="6" sideWeight="0.5954198" side_tool="true" weight="0.39788198" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="0" />
@@ -899,7 +1055,7 @@
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Run" order="11" weight="0.32569557" />
-      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" visible="true" weight="0.36497545" />
+      <window_info active="true" anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" visible="true" weight="0.36497545" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.3289689" />
@@ -1029,7 +1185,8 @@
     <MESSAGE value="Spring Boot整合Swagger，单体架构的，微服务架构（整合Zuul）不要有传递相应的Token" />
     <MESSAGE value="Spring Boot整合Dubbo，配置文件dubbo application,protocol,register,service,reference;Spring Boot 整合ElasticSearch，@EnableElasticSearchRepository" />
     <MESSAGE value="test git commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="test git commit" />
+    <MESSAGE value="手动写一个dubbo框架，一次请求一次scoket连接 动态代理 发请求 编解码 序列化反序列化 requestId methodName parameterType args className(request),requestId,responseId,Object(response)" />
+    <option name="LAST_COMMIT_MESSAGE" value="手动写一个dubbo框架，一次请求一次scoket连接 动态代理 发请求 编解码 序列化反序列化 requestId methodName parameterType args className(request),requestId,responseId,Object(response)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1088,137 +1245,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/wangmengorderdubboservice/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="6" column="48" selection-start-line="6" selection-start-column="48" selection-end-line="6" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBoot2ElasticSearch/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBoot2ElasticSearch/src/main/java/com/wangmeng/AppEs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#524#525#0" expanded="true" />
-            <element signature="e#556#557#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBoot2ElasticSearch/src/main/java/com/wangmeng/controller/EsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#644#645#0" expanded="true" />
-            <element signature="e#673#674#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBoot2ElasticSearch/src/main/java/com/wangmeng/repository/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="12" column="65" selection-start-line="12" selection-start-column="65" selection-end-line="12" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBoot2ElasticSearch/src/main/java/com/wangmeng/entity/UserEntity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wangmengmemberpublicdubboapi/src/main/java/com/wangmeng/api/member/service/MemberService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="11" column="39" selection-start-line="11" selection-start-column="39" selection-end-line="11" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wangmengmemberdubboapiservice/src/main/java/com/wangmeng/api/member/service/impl/MemberServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="14" column="26" selection-start-line="14" selection-start-column="26" selection-end-line="14" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wangmengmemberdubboapiservice/src/main/java/com/wangmeng/api/member/service/impl/AppMember.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wangmengorderdubboservice/src/main/java/com/wangmeng/test/OrderToMemberTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wangmengmemberdubboapiservice/src/main/resources/dubbo-provider.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="17" column="52" selection-start-line="17" selection-start-column="52" selection-end-line="17" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/wangmengorderdubboservice/src/main/resources/consumer.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="31" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBoot2ElasticSearch/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="59" selection-start-line="5" selection-start-column="59" selection-end-line="5" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/idea64.exe.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="30" selection-start-line="12" selection-start-column="30" selection-end-line="12" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extDubbo/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="12" column="14" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extDubbo/DubboRegistry/src/main/java/com/wangmeng/rpc/registry/Constant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="11" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/System.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-38">
@@ -1234,9 +1260,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/extDubbo/DubboCommon/src/main/java/com/wangmeng/rpc/common/RpcRequest.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extDubbo/DubboCommon/src/main/java/com/wangmeng/rpc/common/RpcResponse.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/extDubbo/DubboCommon/pom.xml">
@@ -1469,6 +1492,139 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="243">
           <caret line="20" column="30" lean-forward="true" selection-start-line="20" selection-start-column="30" selection-end-line="20" selection-end-column="30" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extDubbo/DubboCommon/src/main/java/com/wangmeng/rpc/common/RpcResponse.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="62" selection-start-line="62" selection-end-line="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/PersonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/impl/PersonServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="20" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1051#1052#0" expanded="true" />
+            <element signature="e#1111#1112#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/PersonService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/JwtFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="18" column="20" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/Person.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="9" column="20" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/ReqPerson.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/RespResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="20" selection-start-line="4" selection-start-column="20" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/controller/PersonController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1007">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3668#3674#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/UsersApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="e#990#991#0" expanded="true" />
+            <element signature="e#1048#1049#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/IgniteCfg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/JwtCfg.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/controller/SecureController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/dao/PersonRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

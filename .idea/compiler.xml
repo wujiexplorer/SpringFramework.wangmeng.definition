@@ -28,6 +28,7 @@
         <module name="SpringBoot2EurekaMember2" />
         <module name="SpringBoot2EurekaOrder" />
         <module name="SpringBoot2Swagger" />
+        <module name="SpringBootJWT" />
         <module name="springcloud20eurekaserver" />
         <module name="SpringCloud20Order" />
         <module name="SpringCLoud2ConfigClient" />
@@ -82,6 +83,7 @@
       <module name="SpringBoot2EurekaMember2" target="1.8" />
       <module name="SpringBoot2EurekaOrder" target="1.8" />
       <module name="SpringBoot2Swagger" target="1.8" />
+      <module name="SpringBootJWT" target="1.8" />
       <module name="springcloud20eurekaserver" target="1.8" />
       <module name="SpringCloud20Order" target="1.8" />
       <module name="SpringCLoud2ConfigClient" target="1.8" />

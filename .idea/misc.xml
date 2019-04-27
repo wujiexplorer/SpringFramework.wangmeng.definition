@@ -51,6 +51,7 @@
         <option value="$PROJECT_DIR$/wangmengorderdubboservice/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBoot2ElasticSearch/pom.xml" />
         <option value="$PROJECT_DIR$/extDubbo/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootJWT/pom.xml" />
       </list>
     </option>
   </component>
