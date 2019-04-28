@@ -3,5 +3,5 @@ spring:
     elasticsearch:
     ####集群名称
      cluster-name: myes
-    ####地址 
+    ####地址 es 客户端连接 es服务器，用9300，http client连接 es 服务器请，用92..
      cluster-nodes: 192.168.1.36:9300

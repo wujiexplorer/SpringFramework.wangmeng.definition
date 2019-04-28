@@ -7,12 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="AppClient" />
+        <module name="AppCommon" />
+        <module name="AppServer" />
+        <module name="DubboCommon" />
+        <module name="DubboRegistry" />
         <module name="extarraylist" />
         <module name="extHashMap" />
         <module name="extlinkedlist" />
         <module name="extSpringBoot" />
         <module name="extSpringBootJavaTomcat" />
         <module name="mybatisorm" />
+        <module name="RpcClient" />
+        <module name="RpcServer" />
         <module name="springannotation" />
         <module name="springaop" />
         <module name="SpringBoot20EurekaServer" />
@@ -21,6 +28,7 @@
         <module name="SpringBoot2EurekaMember2" />
         <module name="SpringBoot2EurekaOrder" />
         <module name="SpringBoot2Swagger" />
+        <module name="SpringBootJWT" />
         <module name="springcloud20eurekaserver" />
         <module name="SpringCloud20Order" />
         <module name="SpringCLoud2ConfigClient" />
@@ -52,13 +60,21 @@
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="AppClient" target="1.8" />
+      <module name="AppCommon" target="1.8" />
+      <module name="AppServer" target="1.8" />
+      <module name="DubboCommon" target="1.8" />
+      <module name="DubboRegistry" target="1.8" />
       <module name="extarraylist" target="8" />
+      <module name="extDubbo" target="1.8" />
       <module name="extHashMap" target="7" />
       <module name="extlinkedlist" target="1.5" />
       <module name="extSpringBoot" target="1.7" />
       <module name="extSpringBootJavaTomcat" target="1.7" />
       <module name="extSpringBootJavaTomcatMaven" target="1.7" />
       <module name="mybatisorm" target="8" />
+      <module name="RpcClient" target="1.8" />
+      <module name="RpcServer" target="1.8" />
       <module name="springannotation" target="1.5" />
       <module name="springaop" target="8" />
       <module name="SpringBoot20EurekaServer" target="1.8" />
@@ -67,6 +83,7 @@
       <module name="SpringBoot2EurekaMember2" target="1.8" />
       <module name="SpringBoot2EurekaOrder" target="1.8" />
       <module name="SpringBoot2Swagger" target="1.8" />
+      <module name="SpringBootJWT" target="1.8" />
       <module name="springcloud20eurekaserver" target="1.8" />
       <module name="SpringCloud20Order" target="1.8" />
       <module name="SpringCLoud2ConfigClient" target="1.8" />
@@ -96,8 +113,8 @@
       <module name="springmvcannotation" target="1.7" />
       <module name="threadjdbc" target="1.5" />
       <module name="wangmengmemberdubboapiservice" target="1.5" />
-      <module name="wangmengmemberpublicdubboapi" target="1.5" />
       <module name="wangmengMemberPublicDubboApi" target="1.5" />
+      <module name="wangmengmemberpublicdubboapi" target="1.5" />
       <module name="wangmengorderdubboservice" target="1.5" />
     </bytecodeTargetLevel>
   </component>
