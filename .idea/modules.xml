@@ -7,6 +7,9 @@
       <module fileurl="file://$PROJECT_DIR$/extDubbo/AppServer/AppServer.iml" filepath="$PROJECT_DIR$/extDubbo/AppServer/AppServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/extDubbo/DubboCommon/DubboCommon.iml" filepath="$PROJECT_DIR$/extDubbo/DubboCommon/DubboCommon.iml" />
       <module fileurl="file://$PROJECT_DIR$/extDubbo/DubboRegistry/DubboRegistry.iml" filepath="$PROJECT_DIR$/extDubbo/DubboRegistry/DubboRegistry.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LicenseParent/LicenseAppServer/LicenseAppServer.iml" filepath="$PROJECT_DIR$/LicenseParent/LicenseAppServer/LicenseAppServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LicenseParent/LicenseParent.iml" filepath="$PROJECT_DIR$/LicenseParent/LicenseParent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LicenseParent/LicenseServer/LicenseServer.iml" filepath="$PROJECT_DIR$/LicenseParent/LicenseServer/LicenseServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/extDubbo/RpcClient/RpcClient.iml" filepath="$PROJECT_DIR$/extDubbo/RpcClient/RpcClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/extDubbo/RpcServer/RpcServer.iml" filepath="$PROJECT_DIR$/extDubbo/RpcServer/RpcServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" filepath="$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" />

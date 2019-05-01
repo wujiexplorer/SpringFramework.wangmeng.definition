@@ -123,8 +123,11 @@ public class PersonController {
         }
 
         // Create Twt token
+        /**
+         * setExpiration(Date)可设置过期时间
+         */
         String jwtToken = Jwts.builder().setSubject(reqPerson.getUsername()).claim("roles", "member").setIssuedAt(new Date())
-                .signWith(SignatureAlgorithm.HS256, "secretkey").compact();
+                .setExpiration(new Date(System.currentTimeMillis()+30000)).signWith(SignatureAlgorithm.HS256, "secretkey").compact();
 
         RespResult result = new RespResult();
         result.setStatuscode("200 OK");
