@@ -29,6 +29,8 @@
         <module name="SpringBoot2EurekaOrder" />
         <module name="SpringBoot2Swagger" />
         <module name="SpringBootJWT" />
+        <module name="SpringBootPayUnionWxAlipay" />
+        <module name="springbootsqlite" />
         <module name="springcloud20eurekaserver" />
         <module name="SpringCloud20Order" />
         <module name="SpringCLoud2ConfigClient" />
@@ -84,6 +86,8 @@
       <module name="SpringBoot2EurekaOrder" target="1.8" />
       <module name="SpringBoot2Swagger" target="1.8" />
       <module name="SpringBootJWT" target="1.8" />
+      <module name="SpringBootPayUnionWxAlipay" target="1.6" />
+      <module name="springbootsqlite" target="1.8" />
       <module name="springcloud20eurekaserver" target="1.8" />
       <module name="SpringCloud20Order" target="1.8" />
       <module name="SpringCLoud2ConfigClient" target="1.8" />
@@ -120,6 +124,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="LicenseAppServer" options="-parameters" />
+      <module name="LicenseServer" options="-parameters" />
       <module name="SpringBoot20EurekaServer" options="-parameters" />
       <module name="SpringBoot2ElasticSearch" options="-parameters" />
       <module name="SpringBoot2EurekaMember" options="-parameters" />
@@ -146,6 +152,7 @@
       <module name="SpringCloudMember" options="-parameters" />
       <module name="SpringCloudZuulGateway" options="-parameters" />
       <module name="extSpringBoot" options="-parameters" />
+      <module name="springbootsqlite" options="-parameters" />
       <module name="springcloud20eurekaserver" options="-parameters" />
     </option>
   </component>
