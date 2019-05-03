@@ -30,6 +30,7 @@
         <module name="SpringBoot2Swagger" />
         <module name="SpringBootJWT" />
         <module name="SpringBootPayUnionWxAlipay" />
+        <module name="SpringBootSeckill" />
         <module name="springbootsqlite" />
         <module name="springcloud20eurekaserver" />
         <module name="SpringCloud20Order" />
@@ -87,6 +88,7 @@
       <module name="SpringBoot2Swagger" target="1.8" />
       <module name="SpringBootJWT" target="1.8" />
       <module name="SpringBootPayUnionWxAlipay" target="1.6" />
+      <module name="SpringBootSeckill" target="1.6" />
       <module name="springbootsqlite" target="1.8" />
       <module name="springcloud20eurekaserver" target="1.8" />
       <module name="SpringCloud20Order" target="1.8" />

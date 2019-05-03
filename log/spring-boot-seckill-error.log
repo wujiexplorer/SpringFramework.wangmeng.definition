@@ -1,0 +1,568 @@
+2019-05-04 01:00:39.120 ERROR org.springframework.boot.SpringApplication Line:771 - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.jcache.config.ProxyJCacheConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:237)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wangmeng.seckill.Application.main(Application.java:24)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.jcache.config.ProxyJCacheConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 14 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.jcache.config.ProxyJCacheConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 78 common frames omitted
+2019-05-04 01:04:55.613 ERROR org.springframework.boot.SpringApplication Line:771 - Application startup failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'objectMapperConfigurer' defined in class path resource [springfox/documentation/spring/web/SpringfoxWebMvcConfiguration.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.jcache.config.ProxyJCacheConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:237)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:703)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:528)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:122)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at com.wangmeng.seckill.Application.main(Application.java:24)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.annotation.ProxyCachingConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.jcache.config.ProxyJCacheConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 14 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.cache.jcache.config.ProxyJCacheConfiguration': BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:479)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:564)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:197)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:372)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1173)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1067)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:513)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:483)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:306)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:230)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:92)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:102)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:88)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:103)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:248)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1037)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1011)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:473)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalArgumentException: error Type referred to is not an annotation type: com$itstyle$seckill$common$aop$ServiceLimit
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:217)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.checkReadyToMatch(AspectJExpressionPointcut.java:190)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:169)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:220)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:279)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:311)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:119)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:89)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:70)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:346)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:298)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:423)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1633)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:555)
+	... 78 common frames omitted
+2019-05-04 01:09:19.240 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;2' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:09:19.242 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;0' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:09:19.244 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;1' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:09:19.240 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;3' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:10:19.490 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;6' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:10:19.491 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;5' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:10:19.491 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;4' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:10:19.491 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;7' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:11:19.500 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;9' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:11:19.501 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;8' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:11:19.502 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;10' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:11:19.504 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;11' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:12:19.505 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;13' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:12:19.509 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;14' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:12:19.516 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;15' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:12:19.525 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;12' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:13:19.525 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;18' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:13:19.526 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;16' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:13:19.526 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;17' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:13:19.532 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;19' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:14:19.532 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;20' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:14:19.536 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;23' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:14:19.547 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;22' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:14:19.549 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;21' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:14:56.054 ERROR org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/seckill].[dispatcherServlet] Line:182 - Servlet.service() for servlet [dispatcherServlet] in context with path [/seckill] threw exception [Request processing failed; nested exception is java.util.concurrent.RejectedExecutionException: Task com.wangmeng.seckill.web.SeckillController$8@7da99646 rejected from java.util.concurrent.ThreadPoolExecutor@7e05ab30[Running, pool size = 5, active threads = 5, queued tasks = 1000, completed tasks = 0]] with root cause
+java.util.concurrent.RejectedExecutionException: Task com.wangmeng.seckill.web.SeckillController$8@7da99646 rejected from java.util.concurrent.ThreadPoolExecutor@7e05ab30[Running, pool size = 5, active threads = 5, queued tasks = 1000, completed tasks = 0]
+	at java.util.concurrent.ThreadPoolExecutor$AbortPolicy.rejectedExecution(ThreadPoolExecutor.java:2047)
+	at java.util.concurrent.ThreadPoolExecutor.reject(ThreadPoolExecutor.java:823)
+	at java.util.concurrent.ThreadPoolExecutor.execute(ThreadPoolExecutor.java:1369)
+	at com.wangmeng.seckill.web.SeckillController.startDisruptorQueue(SeckillController.java:272)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:827)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:738)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:872)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:661)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.web.filter.ApplicationContextHeaderFilter.doFilterInternal(ApplicationContextHeaderFilter.java:55)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.trace.WebRequestTraceFilter.doFilterInternal(WebRequestTraceFilter.java:110)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.session.web.http.SessionRepositoryFilter.doFilterInternal(SessionRepositoryFilter.java:167)
+	at org.springframework.session.web.http.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:80)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.autoconfigure.MetricsFilter.doFilterInternal(MetricsFilter.java:106)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-04 01:15:19.537 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;24' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:15:19.542 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;25' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:15:19.555 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;27' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:15:19.564 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;26' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:16:19.545 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;28' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:16:19.554 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;29' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:16:19.564 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;30' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:16:19.571 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;31' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:17:19.554 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;32' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:17:19.562 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;33' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:17:19.575 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;34' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:17:19.578 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;35' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:18:19.562 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;36' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:18:19.567 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;37' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:18:19.579 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;38' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:18:19.582 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;39' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:19:19.566 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;40' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:19:19.571 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;41' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:19:19.582 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;42' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:19:19.586 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;43' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:20:19.579 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;44' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:20:19.583 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;45' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:20:19.591 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;46' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:20:19.593 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;47' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:21:19.585 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;48' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:21:19.608 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;49' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:21:19.623 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;51' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:21:19.624 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;50' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:22:19.624 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;52' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:22:19.624 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;53' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:22:19.629 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;54' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:22:19.632 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;55' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:23:19.634 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;57' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:23:19.634 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;58' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:23:19.638 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;56' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:23:19.641 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;59' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:24:19.639 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;60' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:24:19.645 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;61' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:24:19.647 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;62' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:24:19.648 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;63' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:25:19.645 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;64' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:25:19.651 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;65' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:25:19.652 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;66' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:25:19.653 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;67' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:26:19.649 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;68' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:26:19.658 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;71' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:26:19.658 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;70' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:26:19.658 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1001;69' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:26:34.720 ERROR org.apache.activemq.broker.BrokerService Line:627 - Failed to start Apache ActiveMQ ([localhost, null], {})
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:211)
+	at org.apache.activemq.broker.BrokerService.addShutdownHook(BrokerService.java:2502)
+	at org.apache.activemq.broker.BrokerService.doStartBroker(BrokerService.java:728)
+	at org.apache.activemq.broker.BrokerService.startBroker(BrokerService.java:721)
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:624)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56)
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:65)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:331)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:346)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:304)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:244)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:180)
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.createSharedConnection(AbstractJmsListeningContainer.java:413)
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.refreshSharedConnection(AbstractJmsListeningContainer.java:398)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:925)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer.recoverAfterListenerSetupFailure(DefaultMessageListenerContainer.java:899)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1077)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-04 01:26:34.764 ERROR org.springframework.jms.listener.DefaultMessageListenerContainer Line:947 - Could not refresh JMS Connection for destination 'seckill.queue' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: Could not create Transport. Reason: java.lang.IllegalStateException: Shutdown in progress
+2019-05-04 01:29:52.287 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;3' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:29:52.287 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;1' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:29:52.287 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;2' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:29:52.287 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;0' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:30:52.307 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;5' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:30:52.310 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;6' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:30:52.313 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;7' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:30:52.316 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;4' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:31:52.317 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;8' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:31:52.317 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;9' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:31:52.317 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;10' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:31:52.325 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;11' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:32:52.348 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;15' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:32:52.349 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;12' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:32:52.350 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;14' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:32:52.350 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;13' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:33:52.386 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;17' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:33:52.390 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;16' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:33:52.400 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;19' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:33:52.403 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;18' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:34:52.395 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;20' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:34:52.398 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;21' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:34:52.407 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;22' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:34:52.409 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;23' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:35:52.402 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;24' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:35:52.404 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;25' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:35:52.415 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;26' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:35:52.420 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;27' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:36:52.413 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;28' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:36:52.417 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;29' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:36:52.422 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;30' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:36:52.426 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;31' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:37:52.421 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;32' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:37:52.426 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;33' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:37:52.430 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;34' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:37:52.434 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;35' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:38:52.437 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;37' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:38:52.437 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;36' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:38:52.440 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;39' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:38:52.441 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;38' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:39:52.444 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;41' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:39:52.448 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;42' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:39:52.449 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;40' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:39:52.452 ERROR org.springframework.kafka.support.LoggingProducerListener Line:76  - Exception thrown when sending a message with key='null' and payload='1002;43' to topic seckill:
+org.apache.kafka.common.errors.TimeoutException: Failed to update metadata after 60000 ms.
+2019-05-04 01:40:50.632 ERROR org.apache.activemq.broker.BrokerService Line:627 - Failed to start Apache ActiveMQ ([localhost, null], {})
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.add(ApplicationShutdownHooks.java:66)
+	at java.lang.Runtime.addShutdownHook(Runtime.java:211)
+	at org.apache.activemq.broker.BrokerService.addShutdownHook(BrokerService.java:2502)
+	at org.apache.activemq.broker.BrokerService.doStartBroker(BrokerService.java:728)
+	at org.apache.activemq.broker.BrokerService.startBroker(BrokerService.java:721)
+	at org.apache.activemq.broker.BrokerService.start(BrokerService.java:624)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doCompositeConnect(VMTransportFactory.java:127)
+	at org.apache.activemq.transport.vm.VMTransportFactory.doConnect(VMTransportFactory.java:56)
+	at org.apache.activemq.transport.TransportFactory.connect(TransportFactory.java:65)
+	at org.apache.activemq.ActiveMQConnectionFactory.createTransport(ActiveMQConnectionFactory.java:331)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:346)
+	at org.apache.activemq.ActiveMQConnectionFactory.createActiveMQConnection(ActiveMQConnectionFactory.java:304)
+	at org.apache.activemq.ActiveMQConnectionFactory.createConnection(ActiveMQConnectionFactory.java:244)
+	at org.springframework.jms.support.JmsAccessor.createConnection(JmsAccessor.java:180)
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.createSharedConnection(AbstractJmsListeningContainer.java:413)
+	at org.springframework.jms.listener.AbstractJmsListeningContainer.refreshSharedConnection(AbstractJmsListeningContainer.java:398)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer.refreshConnectionUntilSuccessful(DefaultMessageListenerContainer.java:925)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer.recoverAfterListenerSetupFailure(DefaultMessageListenerContainer.java:899)
+	at org.springframework.jms.listener.DefaultMessageListenerContainer$AsyncMessageListenerInvoker.run(DefaultMessageListenerContainer.java:1077)
+	at java.lang.Thread.run(Thread.java:745)
+2019-05-04 01:40:50.643 ERROR org.springframework.jms.listener.DefaultMessageListenerContainer Line:947 - Could not refresh JMS Connection for destination 'seckill.queue' - retrying using FixedBackOff{interval=5000, currentAttempts=0, maxAttempts=unlimited}. Cause: Could not create Transport. Reason: java.lang.IllegalStateException: Shutdown in progress

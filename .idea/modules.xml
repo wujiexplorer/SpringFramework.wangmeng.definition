@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" filepath="$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" filepath="$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootPayUnionWxAlipay/SpringBootPayUnionWxAlipay.iml" filepath="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/SpringBootPayUnionWxAlipay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootSeckill/SpringBootSeckill.iml" filepath="$PROJECT_DIR$/SpringBootSeckill/SpringBootSeckill.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" filepath="$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" filepath="$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud2ConfigServer/SpringCloud2ConfigServer.iml" filepath="$PROJECT_DIR$/SpringCloud2ConfigServer/SpringCloud2ConfigServer.iml" />

@@ -1,0 +1,1355 @@
+2019-05-04 01:00:34.024 INFO  com.wangmeng.seckill.Application Line:48  - Starting Application on PC-201703251007 with PID 18224 (E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill\target\classes started by Administrator in E:\code\SpringFramework.wangmeng.definition)
+2019-05-04 01:00:34.031 INFO  com.wangmeng.seckill.Application Line:593 - No active profile set, falling back to default profiles: default
+2019-05-04 01:00:34.342 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70ab2d48: startup date [Sat May 04 01:00:34 CST 2019]; root of context hierarchy
+2019-05-04 01:00:37.023 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-04 01:00:37.184 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-04 01:00:37.385 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Line:270 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.wangmeng.seckill.repository.SeckillRepository.
+2019-05-04 01:00:37.608 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory Line:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2019-05-04 01:00:38.749 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$e3399557] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:00:38.905 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f8783d4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:00:39.102 INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer Line:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-05-04 01:04:51.350 INFO  com.wangmeng.seckill.Application Line:48  - Starting Application on PC-201703251007 with PID 24292 (E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill\target\classes started by Administrator in E:\code\SpringFramework.wangmeng.definition)
+2019-05-04 01:04:51.360 INFO  com.wangmeng.seckill.Application Line:593 - No active profile set, falling back to default profiles: default
+2019-05-04 01:04:51.774 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@54dcfa5a: startup date [Sat May 04 01:04:51 CST 2019]; root of context hierarchy
+2019-05-04 01:04:54.100 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-04 01:04:54.196 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-04 01:04:54.251 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Line:270 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.wangmeng.seckill.repository.SeckillRepository.
+2019-05-04 01:04:54.315 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory Line:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2019-05-04 01:04:55.252 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a8fbf75c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:04:55.419 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d549e5d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:04:55.586 INFO  org.springframework.boot.autoconfigure.logging.AutoConfigurationReportLoggingInitializer Line:101 - 
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.
+2019-05-04 01:06:31.924 INFO  com.wangmeng.seckill.Application Line:48  - Starting Application on PC-201703251007 with PID 17744 (E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill\target\classes started by Administrator in E:\code\SpringFramework.wangmeng.definition)
+2019-05-04 01:06:31.931 INFO  com.wangmeng.seckill.Application Line:593 - No active profile set, falling back to default profiles: default
+2019-05-04 01:06:32.355 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca33c24: startup date [Sat May 04 01:06:32 CST 2019]; root of context hierarchy
+2019-05-04 01:06:34.988 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-04 01:06:35.095 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-04 01:06:35.155 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Line:270 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.wangmeng.seckill.repository.SeckillRepository.
+2019-05-04 01:06:35.217 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory Line:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2019-05-04 01:06:36.032 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$a79b24c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:06:36.152 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$36c7a0c9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:06:36.414 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'redisConfig' of type [com.wangmeng.seckill.common.redis.RedisConfig$$EnhancerBySpringCGLIB$$478d61] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:06:36.435 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'keyGenerator' of type [com.wangmeng.seckill.common.redis.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:06:36.439 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.cache.jcache.config.ProxyJCacheConfiguration' of type [org.springframework.cache.jcache.config.ProxyJCacheConfiguration$$EnhancerBySpringCGLIB$$590f6347] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:06:36.553 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$7fd9d6e7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:06:37.402 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 8080 (http)
+2019-05-04 01:06:37.416 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2019-05-04 01:06:37.418 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-05-04 01:06:37.641 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/seckill] Line:180 - Initializing Spring embedded WebApplicationContext
+2019-05-04 01:06:37.642 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 5287 ms
+2019-05-04 01:06:38.606 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-04 01:06:38.618 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'metricsFilter' to: [/*]
+2019-05-04 01:06:38.620 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-04 01:06:38.621 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2019-05-04 01:06:38.622 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-04 01:06:38.623 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-04 01:06:38.624 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-04 01:06:38.625 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-05-04 01:06:38.625 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-05-04 01:06:39.449 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:356 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-05-04 01:06:39.473 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-04 01:06:39.612 INFO  org.hibernate.Version Line:37  - HHH000412: Hibernate Core {5.0.12.Final}
+2019-05-04 01:06:39.617 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2019-05-04 01:06:39.619 INFO  org.hibernate.cfg.Environment Line:317 - HHH000021: Bytecode provider name : javassist
+2019-05-04 01:06:39.710 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-05-04 01:06:40.574 INFO  org.hibernate.dialect.Dialect Line:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-05-04 01:06:41.276 INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate Line:105 - HHH000228: Running hbm2ddl schema update
+2019-05-04 01:06:42.028 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:392 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-04 01:06:43.221 INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer Line:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-05-04 01:06:44.180 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{url}.shtml]}" onto public java.lang.String com.wangmeng.seckill.common.config.IndexController.page(java.lang.String)
+2019-05-04 01:06:44.184 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{module}/{url}.shtml]}" onto public java.lang.String com.wangmeng.seckill.common.config.IndexController.page(java.lang.String,java.lang.String)
+2019-05-04 01:06:44.189 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/createHtml/start],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.CreateHtmlController.start()
+2019-05-04 01:06:44.193 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/redPacket/start],methods=[POST]}" onto public static com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.RedPacketController.start(long)
+2019-05-04 01:06:44.197 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/start],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.start(long)
+2019-05-04 01:06:44.199 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startLock],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startLock(long)
+2019-05-04 01:06:44.200 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startAopLock],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startAopLock(long)
+2019-05-04 01:06:44.201 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startDBPCC_ONE],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startDBPCC_ONE(long)
+2019-05-04 01:06:44.202 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startDPCC_TWO],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startDPCC_TWO(long)
+2019-05-04 01:06:44.204 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startDBOCC],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startDBOCC(long)
+2019-05-04 01:06:44.205 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startQueue(long)
+2019-05-04 01:06:44.206 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startDisruptorQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startDisruptorQueue(long)
+2019-05-04 01:06:44.209 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startRedisQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startRedisQueue(long)
+2019-05-04 01:06:44.211 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startRedisLock],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startRedisLock(long)
+2019-05-04 01:06:44.214 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startZkLock],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startZkLock(long)
+2019-05-04 01:06:44.216 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startKafkaQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startKafkaQueue(long)
+2019-05-04 01:06:44.218 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startActiveMQQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startActiveMQQueue(long)
+2019-05-04 01:06:44.226 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillPage/list],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillPageController.list()
+2019-05-04 01:06:44.228 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillPage/startSeckill]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillPageController.startSeckill(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-05-04 01:06:44.236 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-04 01:06:44.239 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-04 01:06:44.241 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-04 01:06:44.247 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-04 01:06:44.249 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-04 01:06:44.620 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-04 01:06:45.065 INFO  org.redisson.Version Line:41  - Redisson 2.11.5
+2019-05-04 01:06:46.822 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:145 - 1 connections initialized for /127.0.0.1:6379
+2019-05-04 01:06:46.822 INFO  org.redisson.connection.pool.MasterConnectionPool Line:145 - 10 connections initialized for /127.0.0.1:6379
+2019-05-04 01:06:47.512 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca33c24: startup date [Sat May 04 01:06:32 CST 2019]; root of context hierarchy
+2019-05-04 01:06:47.607 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:349 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-04 01:06:47.650 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:06:47.651 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:06:47.814 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:06:50.608 INFO  org.springframework.web.socket.server.standard.ServerEndpointExporter Line:143 - Registering @ServerEndpoint class: class com.wangmeng.seckill.common.webSocket.WebSocketServer
+2019-05-04 01:06:50.647 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:431 - Registering beans for JMX exposure on startup
+2019-05-04 01:06:50.670 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d4b09c7: startup date [Sat May 04 01:06:50 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca33c24
+2019-05-04 01:06:50.759 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory Line:828 - Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2019-05-04 01:06:50.845 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 28806 (http)
+2019-05-04 01:06:50.846 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2019-05-04 01:06:50.847 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-05-04 01:06:50.909 INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+2019-05-04 01:06:50.910 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 241 ms
+2019-05-04 01:06:50.916 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-04 01:06:51.126 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.129 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-05-04 01:06:51.130 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.131 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.133 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.135 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-05-04 01:06:51.136 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.139 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.141 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-05-04 01:06:51.143 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.146 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-05-04 01:06:51.147 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-05-04 01:06:51.148 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.151 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/shutdown || /shutdown.json],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2019-05-04 01:06:51.154 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-05-04 01:06:51.156 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-05-04 01:06:51.156 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.157 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:06:51.192 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2019-05-04 01:06:51.203 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:349 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-04 01:06:51.210 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:06:51.211 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:06:51.243 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d4b09c7: startup date [Sat May 04 01:06:50 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca33c24
+2019-05-04 01:06:51.499 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:201 - Tomcat started on port(s): 28806 (http)
+2019-05-04 01:06:51.527 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:343 - Starting beans in phase 0
+2019-05-04 01:06:51.653 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:343 - Starting beans in phase 2147483547
+2019-05-04 01:06:51.809 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:165 - Initializing ExecutorService 
+2019-05-04 01:06:51.819 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:343 - Starting beans in phase 2147483647
+2019-05-04 01:06:51.819 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-04 01:06:51.957 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2019-05-04 01:06:52.111 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-04 01:06:52.401 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_1
+2019-05-04 01:06:52.434 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_2
+2019-05-04 01:06:52.443 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_3
+2019-05-04 01:06:52.450 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_4
+2019-05-04 01:06:52.457 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_5
+2019-05-04 01:06:52.463 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_6
+2019-05-04 01:06:52.469 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_7
+2019-05-04 01:06:52.474 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_8
+2019-05-04 01:06:52.479 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_9
+2019-05-04 01:06:52.486 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_10
+2019-05-04 01:06:52.492 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_11
+2019-05-04 01:06:52.498 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_12
+2019-05-04 01:06:52.504 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_13
+2019-05-04 01:06:52.510 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_14
+2019-05-04 01:06:52.730 INFO  org.apache.activemq.broker.BrokerService Line:671 - Using Persistence Adapter: MemoryPersistenceAdapter
+2019-05-04 01:06:52.907 INFO  org.apache.activemq.broker.jmx.ManagementContext Line:155 - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2019-05-04 01:06:52.941 INFO  org.apache.activemq.broker.BrokerService Line:734 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-51707-1556903212751-0:1) is starting
+2019-05-04 01:06:52.951 INFO  org.apache.activemq.broker.BrokerService Line:761 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-51707-1556903212751-0:1) started
+2019-05-04 01:06:52.952 INFO  org.apache.activemq.broker.BrokerService Line:762 - For help or more information please see: http://activemq.apache.org
+2019-05-04 01:06:53.040 INFO  org.apache.activemq.broker.TransportConnector Line:263 - Connector vm://localhost started
+2019-05-04 01:06:53.123 INFO  org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor Line:268 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-05-04 01:06:53.224 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:201 - Tomcat started on port(s): 8080 (http)
+2019-05-04 01:07:11.084 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/seckill] Line:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-04 01:07:11.085 INFO  org.springframework.web.servlet.DispatcherServlet Line:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-04 01:07:11.139 INFO  org.springframework.web.servlet.DispatcherServlet Line:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 53 ms
+2019-05-04 01:07:12.810 INFO  com.wangmeng.seckill.common.webSocket.WebSocketServer Line:34  - 有新窗口开始监听:1,当前在线人数为1
+2019-05-04 01:07:12.925 INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator Line:47  - HHH000397: Using ASTQueryTranslatorFactory
+2019-05-04 01:08:18.795 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:139 - 开始秒杀四
+2019-05-04 01:08:28.919 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:159 - 一共秒杀出0件商品
+2019-05-04 01:14:55.895 INFO  com.wangmeng.seckill.web.SeckillController Line:260 - 开始秒杀八(正常)
+2019-05-04 01:14:55.983 INFO  com.wangmeng.seckill.web.SeckillController Line:260 - 开始秒杀八(正常)
+2019-05-04 01:15:05.908 INFO  com.wangmeng.seckill.web.SeckillController Line:277 - 一共秒杀出52件商品
+2019-05-04 01:17:29.145 INFO  com.wangmeng.seckill.web.SeckillController Line:260 - 开始秒杀八(正常)
+2019-05-04 01:17:39.151 INFO  com.wangmeng.seckill.web.SeckillController Line:277 - 一共秒杀出55件商品
+2019-05-04 01:18:34.100 INFO  com.wangmeng.seckill.web.SeckillController Line:260 - 开始秒杀八(正常)
+2019-05-04 01:18:44.107 INFO  com.wangmeng.seckill.web.SeckillController Line:277 - 一共秒杀出48件商品
+2019-05-04 01:24:10.563 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:55  - 开始秒杀一
+2019-05-04 01:24:25.576 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:70  - 一共秒杀出0件商品
+2019-05-04 01:25:18.649 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:55  - 开始秒杀一
+2019-05-04 01:25:33.654 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:70  - 一共秒杀出0件商品
+2019-05-04 01:26:34.378 INFO  org.apache.activemq.broker.BrokerService Line:808 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-51707-1556903212751-0:1) is shutting down
+2019-05-04 01:26:34.391 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca33c24: startup date [Sat May 04 01:06:32 CST 2019]; root of context hierarchy
+2019-05-04 01:26:34.438 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6d4b09c7: startup date [Sat May 04 01:06:50 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7ca33c24
+2019-05-04 01:26:34.567 INFO  org.apache.activemq.broker.TransportConnector Line:294 - Connector vm://localhost stopped
+2019-05-04 01:26:34.699 INFO  org.apache.activemq.broker.BrokerService Line:671 - Using Persistence Adapter: MemoryPersistenceAdapter
+2019-05-04 01:26:34.730 INFO  org.apache.activemq.broker.BrokerService Line:808 - Apache ActiveMQ 5.14.5 (localhost, null) is shutting down
+2019-05-04 01:26:34.759 INFO  org.apache.activemq.broker.BrokerService Line:869 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-51707-1556903212751-0:1) uptime 19 minutes
+2019-05-04 01:26:34.760 INFO  org.apache.activemq.broker.BrokerService Line:871 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-51707-1556903212751-0:1) is shutdown
+2019-05-04 01:26:34.762 INFO  org.apache.activemq.broker.BrokerService Line:869 - Apache ActiveMQ 5.14.5 (localhost, null) uptime 0.063 seconds
+2019-05-04 01:26:34.763 INFO  org.apache.activemq.broker.BrokerService Line:871 - Apache ActiveMQ 5.14.5 (localhost, null) is shutdown
+2019-05-04 01:26:35.965 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:358 - Stopping beans in phase 2147483647
+2019-05-04 01:26:36.010 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:358 - Stopping beans in phase 2147483547
+2019-05-04 01:26:36.016 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:202 - Shutting down ExecutorService
+2019-05-04 01:26:36.019 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer Line:693 - Consumer stopped
+2019-05-04 01:26:36.020 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:358 - Stopping beans in phase 0
+2019-05-04 01:26:36.023 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:449 - Unregistering JMX-exposed beans on shutdown
+2019-05-04 01:26:36.233 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:563 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2019-05-04 01:26:36.794 INFO  com.wangmeng.seckill.common.webSocket.WebSocketServer Line:50  - 有一连接关闭！当前在线人数为0
+2019-05-04 01:26:54.231 INFO  com.wangmeng.seckill.Application Line:48  - Starting Application on PC-201703251007 with PID 26400 (E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill\target\classes started by Administrator in E:\code\SpringFramework.wangmeng.definition)
+2019-05-04 01:26:54.458 INFO  com.wangmeng.seckill.Application Line:593 - No active profile set, falling back to default profiles: default
+2019-05-04 01:26:54.789 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65fe9e33: startup date [Sat May 04 01:26:54 CST 2019]; root of context hierarchy
+2019-05-04 01:26:57.102 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-04 01:26:57.202 INFO  org.springframework.data.repository.config.RepositoryConfigurationDelegate Line:165 - Multiple Spring Data modules found, entering strict repository configuration mode!
+2019-05-04 01:26:57.260 INFO  org.springframework.data.repository.config.RepositoryConfigurationExtensionSupport Line:270 - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.wangmeng.seckill.repository.SeckillRepository.
+2019-05-04 01:26:57.321 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory Line:828 - Overriding bean definition for bean 'propertySourcesPlaceholderConfigurer' with a different definition: replacing [Root bean: class [org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/context/PropertyPlaceholderAutoConfiguration.class]] with [Root bean: class [org.springframework.boot.autoconfigure.session.RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=propertySourcesPlaceholderConfigurer; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/session/RedisSessionConfiguration$SpringBootRedisHttpSessionConfiguration.class]]
+2019-05-04 01:26:57.975 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$813bd22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:26:58.085 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3461ab9f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:26:58.354 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'redisConfig' of type [com.wangmeng.seckill.common.redis.RedisConfig$$EnhancerBySpringCGLIB$$fde19837] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:26:58.373 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'keyGenerator' of type [com.wangmeng.seckill.common.redis.RedisConfig$1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:26:58.376 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.cache.jcache.config.ProxyJCacheConfiguration' of type [org.springframework.cache.jcache.config.ProxyJCacheConfiguration$$EnhancerBySpringCGLIB$$56a96e1d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:26:58.466 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:327 - Bean 'org.springframework.cache.annotation.ProxyCachingConfiguration' of type [org.springframework.cache.annotation.ProxyCachingConfiguration$$EnhancerBySpringCGLIB$$7d73e1bd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-04 01:26:59.098 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 8080 (http)
+2019-05-04 01:26:59.112 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2019-05-04 01:26:59.114 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-05-04 01:26:59.346 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/seckill] Line:180 - Initializing Spring embedded WebApplicationContext
+2019-05-04 01:26:59.347 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 4558 ms
+2019-05-04 01:27:00.261 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-04 01:27:00.268 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'metricsFilter' to: [/*]
+2019-05-04 01:27:00.269 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-04 01:27:00.270 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'springSessionRepositoryFilter' to: [/*]
+2019-05-04 01:27:00.271 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-04 01:27:00.271 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-04 01:27:00.272 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-04 01:27:00.273 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2019-05-04 01:27:00.273 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'applicationContextIdFilter' to: [/*]
+2019-05-04 01:27:01.036 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:356 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-05-04 01:27:01.050 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-04 01:27:01.146 INFO  org.hibernate.Version Line:37  - HHH000412: Hibernate Core {5.0.12.Final}
+2019-05-04 01:27:01.150 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2019-05-04 01:27:01.152 INFO  org.hibernate.cfg.Environment Line:317 - HHH000021: Bytecode provider name : javassist
+2019-05-04 01:27:01.218 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-05-04 01:27:02.944 INFO  org.hibernate.dialect.Dialect Line:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-05-04 01:27:03.548 INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate Line:105 - HHH000228: Running hbm2ddl schema update
+2019-05-04 01:27:04.347 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:392 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-04 01:27:06.075 INFO  org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer Line:127 - ClassTemplateLoader for Spring macros added to FreeMarker configuration
+2019-05-04 01:27:06.903 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{url}.shtml]}" onto public java.lang.String com.wangmeng.seckill.common.config.IndexController.page(java.lang.String)
+2019-05-04 01:27:06.906 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/{module}/{url}.shtml]}" onto public java.lang.String com.wangmeng.seckill.common.config.IndexController.page(java.lang.String,java.lang.String)
+2019-05-04 01:27:06.909 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/createHtml/start],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.CreateHtmlController.start()
+2019-05-04 01:27:06.910 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/redPacket/start],methods=[POST]}" onto public static com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.RedPacketController.start(long)
+2019-05-04 01:27:06.916 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/start],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.start(long)
+2019-05-04 01:27:06.917 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startLock],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startLock(long)
+2019-05-04 01:27:06.918 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startAopLock],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startAopLock(long)
+2019-05-04 01:27:06.919 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startDBPCC_ONE],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startDBPCC_ONE(long)
+2019-05-04 01:27:06.920 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startDPCC_TWO],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startDPCC_TWO(long)
+2019-05-04 01:27:06.921 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startDBOCC],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startDBOCC(long)
+2019-05-04 01:27:06.922 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startQueue(long)
+2019-05-04 01:27:06.922 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckill/startDisruptorQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillController.startDisruptorQueue(long)
+2019-05-04 01:27:06.924 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startRedisQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startRedisQueue(long)
+2019-05-04 01:27:06.925 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startRedisLock],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startRedisLock(long)
+2019-05-04 01:27:06.925 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startZkLock],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startZkLock(long)
+2019-05-04 01:27:06.926 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startKafkaQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startKafkaQueue(long)
+2019-05-04 01:27:06.927 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillDistributed/startActiveMQQueue],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillDistributedController.startActiveMQQueue(long)
+2019-05-04 01:27:06.930 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillPage/list],methods=[POST]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillPageController.list()
+2019-05-04 01:27:06.931 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/seckillPage/startSeckill]}" onto public com.wangmeng.seckill.common.entity.Result com.wangmeng.seckill.web.SeckillPageController.startSeckill(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-05-04 01:27:06.936 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/swagger-resources/configuration/ui]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.UiConfiguration> springfox.documentation.swagger.web.ApiResourceController.uiConfiguration()
+2019-05-04 01:27:06.938 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/swagger-resources]}" onto public org.springframework.http.ResponseEntity<java.util.List<springfox.documentation.swagger.web.SwaggerResource>> springfox.documentation.swagger.web.ApiResourceController.swaggerResources()
+2019-05-04 01:27:06.940 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/swagger-resources/configuration/security]}" onto public org.springframework.http.ResponseEntity<springfox.documentation.swagger.web.SecurityConfiguration> springfox.documentation.swagger.web.ApiResourceController.securityConfiguration()
+2019-05-04 01:27:06.944 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-04 01:27:06.945 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-04 01:27:07.349 INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2019-05-04 01:27:07.740 INFO  org.redisson.Version Line:41  - Redisson 2.11.5
+2019-05-04 01:27:09.398 INFO  org.redisson.connection.pool.MasterConnectionPool Line:145 - 10 connections initialized for /127.0.0.1:6379
+2019-05-04 01:27:09.404 INFO  org.redisson.connection.pool.MasterPubSubConnectionPool Line:145 - 1 connections initialized for /127.0.0.1:6379
+2019-05-04 01:27:09.947 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65fe9e33: startup date [Sat May 04 01:26:54 CST 2019]; root of context hierarchy
+2019-05-04 01:27:10.041 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:349 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-04 01:27:10.083 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:27:10.084 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:27:10.196 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:27:12.841 INFO  org.springframework.web.socket.server.standard.ServerEndpointExporter Line:143 - Registering @ServerEndpoint class: class com.wangmeng.seckill.common.webSocket.WebSocketServer
+2019-05-04 01:27:12.876 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:431 - Registering beans for JMX exposure on startup
+2019-05-04 01:27:12.898 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:583 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70c6c6a7: startup date [Sat May 04 01:27:12 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65fe9e33
+2019-05-04 01:27:12.945 INFO  org.springframework.beans.factory.support.DefaultListableBeanFactory Line:828 - Overriding bean definition for bean 'handlerExceptionResolver' with a different definition: replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration; factoryMethodName=handlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.web.servlet.config.annotation.DelegatingWebMvcConfiguration] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=endpointWebMvcChildContextConfiguration; factoryMethodName=compositeHandlerExceptionResolver; initMethodName=null; destroyMethodName=(inferred); defined in org.springframework.boot.actuate.autoconfigure.EndpointWebMvcChildContextConfiguration]
+2019-05-04 01:27:13.019 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 28806 (http)
+2019-05-04 01:27:13.020 INFO  org.apache.catalina.core.StandardService Line:180 - Starting service [Tomcat]
+2019-05-04 01:27:13.021 INFO  org.apache.catalina.core.StandardEngine Line:180 - Starting Servlet Engine: Apache Tomcat/8.5.27
+2019-05-04 01:27:13.075 INFO  org.apache.catalina.core.ContainerBase.[Tomcat-1].[localhost].[/] Line:180 - Initializing Spring embedded WebApplicationContext
+2019-05-04 01:27:13.075 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 177 ms
+2019-05-04 01:27:13.080 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-04 01:27:13.260 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/auditevents || /auditevents.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public org.springframework.http.ResponseEntity<?> org.springframework.boot.actuate.endpoint.mvc.AuditEventsMvcEndpoint.findByPrincipalAndAfterAndType(java.lang.String,java.util.Date,java.lang.String)
+2019-05-04 01:27:13.262 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/dump || /dump.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.264 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/heapdump || /heapdump.json],methods=[GET],produces=[application/octet-stream]}" onto public void org.springframework.boot.actuate.endpoint.mvc.HeapdumpMvcEndpoint.invoke(boolean,javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException,javax.servlet.ServletException
+2019-05-04 01:27:13.266 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/health || /health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2019-05-04 01:27:13.267 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/beans || /beans.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.271 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/loggers/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.get(java.lang.String)
+2019-05-04 01:27:13.272 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/loggers/{name:.*}],methods=[POST],consumes=[application/vnd.spring-boot.actuator.v1+json || application/json],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.LoggersMvcEndpoint.set(java.lang.String,java.util.Map<java.lang.String, java.lang.String>)
+2019-05-04 01:27:13.274 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/loggers || /loggers.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.280 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2019-05-04 01:27:13.281 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/metrics || /metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.283 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/mappings || /mappings.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.285 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/trace || /trace.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.308 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/autoconfig || /autoconfig.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.311 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/env/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EnvironmentMvcEndpoint.value(java.lang.String)
+2019-05-04 01:27:13.312 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/env || /env.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.315 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/shutdown || /shutdown.json],methods=[POST],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.ShutdownMvcEndpoint.invoke()
+2019-05-04 01:27:13.316 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/info || /info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.317 INFO  org.springframework.boot.actuate.endpoint.mvc.EndpointHandlerMapping Line:543 - Mapped "{[/configprops || /configprops.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2019-05-04 01:27:13.355 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.boot.actuate.endpoint.mvc.ManagementErrorEndpoint.invoke()
+2019-05-04 01:27:13.362 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:349 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-04 01:27:13.373 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:27:13.374 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-04 01:27:13.441 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70c6c6a7: startup date [Sat May 04 01:27:12 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65fe9e33
+2019-05-04 01:27:13.693 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:201 - Tomcat started on port(s): 28806 (http)
+2019-05-04 01:27:13.724 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:343 - Starting beans in phase 0
+2019-05-04 01:27:13.838 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:343 - Starting beans in phase 2147483547
+2019-05-04 01:27:13.967 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:165 - Initializing ExecutorService 
+2019-05-04 01:27:13.973 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:343 - Starting beans in phase 2147483647
+2019-05-04 01:27:13.974 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2019-05-04 01:27:13.999 INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2019-05-04 01:27:14.070 INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2019-05-04 01:27:14.283 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_1
+2019-05-04 01:27:14.308 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_2
+2019-05-04 01:27:14.317 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_3
+2019-05-04 01:27:14.332 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_4
+2019-05-04 01:27:14.344 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_5
+2019-05-04 01:27:14.351 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_6
+2019-05-04 01:27:14.358 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_7
+2019-05-04 01:27:14.364 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_8
+2019-05-04 01:27:14.369 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_9
+2019-05-04 01:27:14.375 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_10
+2019-05-04 01:27:14.380 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_11
+2019-05-04 01:27:14.385 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_12
+2019-05-04 01:27:14.391 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_13
+2019-05-04 01:27:14.396 INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: 科帮网_14
+2019-05-04 01:27:14.628 INFO  org.apache.activemq.broker.BrokerService Line:671 - Using Persistence Adapter: MemoryPersistenceAdapter
+2019-05-04 01:27:14.737 INFO  org.apache.activemq.broker.jmx.ManagementContext Line:155 - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2019-05-04 01:27:14.780 INFO  org.apache.activemq.broker.BrokerService Line:734 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-54740-1556904434641-0:1) is starting
+2019-05-04 01:27:14.787 INFO  org.apache.activemq.broker.BrokerService Line:761 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-54740-1556904434641-0:1) started
+2019-05-04 01:27:14.787 INFO  org.apache.activemq.broker.BrokerService Line:762 - For help or more information please see: http://activemq.apache.org
+2019-05-04 01:27:14.835 INFO  org.apache.activemq.broker.TransportConnector Line:263 - Connector vm://localhost started
+2019-05-04 01:27:14.985 INFO  org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProcessor Line:268 - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2019-05-04 01:27:15.040 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:201 - Tomcat started on port(s): 8080 (http)
+2019-05-04 01:27:19.780 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/seckill] Line:180 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-04 01:27:19.781 INFO  org.springframework.web.servlet.DispatcherServlet Line:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-04 01:27:19.818 INFO  org.springframework.web.servlet.DispatcherServlet Line:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 36 ms
+2019-05-04 01:27:39.632 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:55  - 开始秒杀一
+2019-05-04 01:27:40.355 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:0SUCCESS
+2019-05-04 01:27:40.508 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:1SUCCESS
+2019-05-04 01:27:40.622 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:2SUCCESS
+2019-05-04 01:27:40.653 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:5SUCCESS
+2019-05-04 01:27:40.721 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:4SUCCESS
+2019-05-04 01:27:40.807 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:3SUCCESS
+2019-05-04 01:27:40.854 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:7SUCCESS
+2019-05-04 01:27:40.854 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:6SUCCESS
+2019-05-04 01:27:40.919 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:8SUCCESS
+2019-05-04 01:27:40.920 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:9SUCCESS
+2019-05-04 01:27:40.964 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:11SUCCESS
+2019-05-04 01:27:40.968 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:10SUCCESS
+2019-05-04 01:27:41.014 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:12SUCCESS
+2019-05-04 01:27:41.067 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:13SUCCESS
+2019-05-04 01:27:41.102 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:15SUCCESS
+2019-05-04 01:27:41.103 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:14SUCCESS
+2019-05-04 01:27:41.169 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:16SUCCESS
+2019-05-04 01:27:41.208 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:17SUCCESS
+2019-05-04 01:27:41.208 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:19SUCCESS
+2019-05-04 01:27:41.242 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:18SUCCESS
+2019-05-04 01:27:41.244 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:20SUCCESS
+2019-05-04 01:27:41.276 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:21SUCCESS
+2019-05-04 01:27:41.319 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:22SUCCESS
+2019-05-04 01:27:41.391 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:23SUCCESS
+2019-05-04 01:27:41.442 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:24SUCCESS
+2019-05-04 01:27:41.442 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:25SUCCESS
+2019-05-04 01:27:41.462 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:26SUCCESS
+2019-05-04 01:27:41.524 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:27SUCCESS
+2019-05-04 01:27:41.556 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:30SUCCESS
+2019-05-04 01:27:41.559 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:29SUCCESS
+2019-05-04 01:27:41.560 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:28SUCCESS
+2019-05-04 01:27:41.613 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:31SUCCESS
+2019-05-04 01:27:41.656 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:32SUCCESS
+2019-05-04 01:27:41.770 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:34SUCCESS
+2019-05-04 01:27:41.771 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:33SUCCESS
+2019-05-04 01:27:41.994 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:35SUCCESS
+2019-05-04 01:27:42.014 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:36SUCCESS
+2019-05-04 01:27:42.085 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:37SUCCESS
+2019-05-04 01:27:42.086 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:38SUCCESS
+2019-05-04 01:27:42.221 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:39SUCCESS
+2019-05-04 01:27:42.224 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:40SUCCESS
+2019-05-04 01:27:42.321 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:41SUCCESS
+2019-05-04 01:27:42.322 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:42SUCCESS
+2019-05-04 01:27:42.511 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:44SUCCESS
+2019-05-04 01:27:42.511 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:43SUCCESS
+2019-05-04 01:27:42.665 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:45SUCCESS
+2019-05-04 01:27:42.665 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:46SUCCESS
+2019-05-04 01:27:42.712 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:48SUCCESS
+2019-05-04 01:27:42.712 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:47SUCCESS
+2019-05-04 01:27:42.754 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:50SUCCESS
+2019-05-04 01:27:42.796 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:49SUCCESS
+2019-05-04 01:27:42.841 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:53SUCCESS
+2019-05-04 01:27:42.841 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:52SUCCESS
+2019-05-04 01:27:42.887 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:54SUCCESS
+2019-05-04 01:27:42.887 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:51SUCCESS
+2019-05-04 01:27:42.956 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:55SUCCESS
+2019-05-04 01:27:42.997 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:56SUCCESS
+2019-05-04 01:27:42.997 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:57SUCCESS
+2019-05-04 01:27:42.999 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:58SUCCESS
+2019-05-04 01:27:43.075 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:59SUCCESS
+2019-05-04 01:27:43.142 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:60SUCCESS
+2019-05-04 01:27:43.142 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:62SUCCESS
+2019-05-04 01:27:43.142 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:61SUCCESS
+2019-05-04 01:27:43.209 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:63SUCCESS
+2019-05-04 01:27:43.253 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:66SUCCESS
+2019-05-04 01:27:43.253 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:64SUCCESS
+2019-05-04 01:27:43.296 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:65SUCCESS
+2019-05-04 01:27:43.296 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:67SUCCESS
+2019-05-04 01:27:43.331 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:69SUCCESS
+2019-05-04 01:27:43.386 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:70SUCCESS
+2019-05-04 01:27:43.386 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:68SUCCESS
+2019-05-04 01:27:43.480 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:72SUCCESS
+2019-05-04 01:27:43.488 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:71SUCCESS
+2019-05-04 01:27:43.554 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:74SUCCESS
+2019-05-04 01:27:43.555 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:73SUCCESS
+2019-05-04 01:27:43.589 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:75SUCCESS
+2019-05-04 01:27:43.589 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:76SUCCESS
+2019-05-04 01:27:43.634 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:78SUCCESS
+2019-05-04 01:27:43.743 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:77SUCCESS
+2019-05-04 01:27:43.797 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:80SUCCESS
+2019-05-04 01:27:43.797 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:79SUCCESS
+2019-05-04 01:27:43.797 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:81SUCCESS
+2019-05-04 01:27:43.845 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:82SUCCESS
+2019-05-04 01:27:43.886 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:84SUCCESS
+2019-05-04 01:27:43.952 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:83SUCCESS
+2019-05-04 01:27:43.957 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:85SUCCESS
+2019-05-04 01:27:43.998 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:87SUCCESS
+2019-05-04 01:27:44.005 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:86SUCCESS
+2019-05-04 01:27:44.049 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:88SUCCESS
+2019-05-04 01:27:44.108 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:89SUCCESS
+2019-05-04 01:27:44.108 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:90SUCCESS
+2019-05-04 01:27:44.152 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:91SUCCESS
+2019-05-04 01:27:44.152 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:92SUCCESS
+2019-05-04 01:27:44.201 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:93SUCCESS
+2019-05-04 01:27:44.201 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:94SUCCESS
+2019-05-04 01:27:44.243 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:96SUCCESS
+2019-05-04 01:27:44.285 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:97SUCCESS
+2019-05-04 01:27:44.285 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:95SUCCESS
+2019-05-04 01:27:44.304 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:100END
+2019-05-04 01:27:44.318 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:101END
+2019-05-04 01:27:44.331 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:102END
+2019-05-04 01:27:44.333 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:99SUCCESS
+2019-05-04 01:27:44.333 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:98SUCCESS
+2019-05-04 01:27:44.341 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:103END
+2019-05-04 01:27:44.358 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:104END
+2019-05-04 01:27:44.378 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:105END
+2019-05-04 01:27:44.393 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:108END
+2019-05-04 01:27:44.414 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:109END
+2019-05-04 01:27:44.426 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:110END
+2019-05-04 01:27:44.443 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:111END
+2019-05-04 01:27:44.456 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:112END
+2019-05-04 01:27:44.480 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:113END
+2019-05-04 01:27:44.490 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:114END
+2019-05-04 01:27:44.504 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:107END
+2019-05-04 01:27:44.518 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:106END
+2019-05-04 01:27:44.532 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:115END
+2019-05-04 01:27:44.547 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:116END
+2019-05-04 01:27:44.556 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:119END
+2019-05-04 01:27:44.566 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:118END
+2019-05-04 01:27:44.581 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:121END
+2019-05-04 01:27:44.594 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:122END
+2019-05-04 01:27:44.605 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:123END
+2019-05-04 01:27:44.619 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:124END
+2019-05-04 01:27:44.630 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:125END
+2019-05-04 01:27:44.639 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:126END
+2019-05-04 01:27:44.659 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:127END
+2019-05-04 01:27:44.676 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:128END
+2019-05-04 01:27:44.685 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:117END
+2019-05-04 01:27:44.701 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:130END
+2019-05-04 01:27:44.713 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:131END
+2019-05-04 01:27:44.726 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:132END
+2019-05-04 01:27:44.738 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:133END
+2019-05-04 01:27:44.751 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:134END
+2019-05-04 01:27:44.773 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:120END
+2019-05-04 01:27:44.786 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:136END
+2019-05-04 01:27:44.812 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:137END
+2019-05-04 01:27:44.822 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:138END
+2019-05-04 01:27:44.843 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:139END
+2019-05-04 01:27:44.859 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:140END
+2019-05-04 01:27:44.873 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:135END
+2019-05-04 01:27:44.884 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:141END
+2019-05-04 01:27:44.901 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:142END
+2019-05-04 01:27:44.920 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:129END
+2019-05-04 01:27:44.934 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:145END
+2019-05-04 01:27:44.955 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:146END
+2019-05-04 01:27:44.972 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:143END
+2019-05-04 01:27:44.996 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:148END
+2019-05-04 01:27:45.003 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:149END
+2019-05-04 01:27:45.022 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:144END
+2019-05-04 01:27:45.034 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:151END
+2019-05-04 01:27:45.050 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:152END
+2019-05-04 01:27:45.068 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:153END
+2019-05-04 01:27:45.086 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:154END
+2019-05-04 01:27:45.104 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:155END
+2019-05-04 01:27:45.116 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:156END
+2019-05-04 01:27:45.126 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:157END
+2019-05-04 01:27:45.135 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:158END
+2019-05-04 01:27:45.145 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:159END
+2019-05-04 01:27:45.156 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:160END
+2019-05-04 01:27:45.168 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:161END
+2019-05-04 01:27:45.178 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:162END
+2019-05-04 01:27:45.189 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:163END
+2019-05-04 01:27:45.200 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:164END
+2019-05-04 01:27:45.212 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:165END
+2019-05-04 01:27:45.226 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:166END
+2019-05-04 01:27:45.241 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:167END
+2019-05-04 01:27:45.256 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:168END
+2019-05-04 01:27:45.271 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:169END
+2019-05-04 01:27:45.286 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:170END
+2019-05-04 01:27:45.300 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:171END
+2019-05-04 01:27:45.316 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:172END
+2019-05-04 01:27:45.328 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:173END
+2019-05-04 01:27:45.341 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:174END
+2019-05-04 01:27:45.350 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:175END
+2019-05-04 01:27:45.366 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:176END
+2019-05-04 01:27:45.376 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:177END
+2019-05-04 01:27:45.386 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:178END
+2019-05-04 01:27:45.404 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:179END
+2019-05-04 01:27:45.418 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:180END
+2019-05-04 01:27:45.435 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:181END
+2019-05-04 01:27:45.448 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:182END
+2019-05-04 01:27:45.461 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:183END
+2019-05-04 01:27:45.475 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:184END
+2019-05-04 01:27:45.486 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:185END
+2019-05-04 01:27:45.501 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:186END
+2019-05-04 01:27:45.516 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:187END
+2019-05-04 01:27:45.526 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:188END
+2019-05-04 01:27:45.539 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:189END
+2019-05-04 01:27:45.554 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:190END
+2019-05-04 01:27:45.562 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:191END
+2019-05-04 01:27:45.579 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:192END
+2019-05-04 01:27:45.596 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:193END
+2019-05-04 01:27:45.609 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:194END
+2019-05-04 01:27:45.625 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:195END
+2019-05-04 01:27:45.640 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:196END
+2019-05-04 01:27:45.657 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:197END
+2019-05-04 01:27:45.666 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:198END
+2019-05-04 01:27:45.685 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:199END
+2019-05-04 01:27:45.699 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:200END
+2019-05-04 01:27:45.711 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:147END
+2019-05-04 01:27:45.723 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:202END
+2019-05-04 01:27:45.734 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:203END
+2019-05-04 01:27:45.743 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:204END
+2019-05-04 01:27:45.755 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:205END
+2019-05-04 01:27:45.765 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:206END
+2019-05-04 01:27:45.774 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:207END
+2019-05-04 01:27:45.787 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:208END
+2019-05-04 01:27:45.802 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:209END
+2019-05-04 01:27:45.818 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:210END
+2019-05-04 01:27:45.833 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:211END
+2019-05-04 01:27:45.848 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:212END
+2019-05-04 01:27:45.859 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:213END
+2019-05-04 01:27:45.872 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:214END
+2019-05-04 01:27:45.882 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:215END
+2019-05-04 01:27:45.899 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:216END
+2019-05-04 01:27:45.917 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:217END
+2019-05-04 01:27:45.932 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:218END
+2019-05-04 01:27:45.944 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:219END
+2019-05-04 01:27:45.954 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:220END
+2019-05-04 01:27:45.964 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:221END
+2019-05-04 01:27:45.973 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:222END
+2019-05-04 01:27:45.983 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:223END
+2019-05-04 01:27:45.998 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:224END
+2019-05-04 01:27:46.005 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:225END
+2019-05-04 01:27:46.019 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:226END
+2019-05-04 01:27:46.031 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:227END
+2019-05-04 01:27:46.058 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:228END
+2019-05-04 01:27:46.070 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:229END
+2019-05-04 01:27:46.098 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:230END
+2019-05-04 01:27:46.115 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:231END
+2019-05-04 01:27:46.137 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:232END
+2019-05-04 01:27:46.150 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:233END
+2019-05-04 01:27:46.173 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:150END
+2019-05-04 01:27:46.187 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:234END
+2019-05-04 01:27:46.212 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:236END
+2019-05-04 01:27:46.228 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:237END
+2019-05-04 01:27:46.241 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:238END
+2019-05-04 01:27:46.252 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:239END
+2019-05-04 01:27:46.269 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:240END
+2019-05-04 01:27:46.288 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:201END
+2019-05-04 01:27:46.298 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:242END
+2019-05-04 01:27:46.310 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:243END
+2019-05-04 01:27:46.327 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:244END
+2019-05-04 01:27:46.338 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:245END
+2019-05-04 01:27:46.362 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:235END
+2019-05-04 01:27:46.373 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:247END
+2019-05-04 01:27:46.392 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:248END
+2019-05-04 01:27:46.409 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:249END
+2019-05-04 01:27:46.423 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:250END
+2019-05-04 01:27:46.440 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:241END
+2019-05-04 01:27:46.462 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:246END
+2019-05-04 01:27:46.481 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:251END
+2019-05-04 01:27:46.500 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:254END
+2019-05-04 01:27:46.514 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:255END
+2019-05-04 01:27:46.531 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:256END
+2019-05-04 01:27:46.545 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:257END
+2019-05-04 01:27:46.568 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:258END
+2019-05-04 01:27:46.581 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:253END
+2019-05-04 01:27:46.591 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:252END
+2019-05-04 01:27:46.601 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:261END
+2019-05-04 01:27:46.614 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:262END
+2019-05-04 01:27:46.624 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:263END
+2019-05-04 01:27:46.639 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:264END
+2019-05-04 01:27:46.650 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:265END
+2019-05-04 01:27:46.662 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:266END
+2019-05-04 01:27:46.684 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:267END
+2019-05-04 01:27:46.695 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:268END
+2019-05-04 01:27:46.709 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:259END
+2019-05-04 01:27:46.721 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:270END
+2019-05-04 01:27:46.730 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:271END
+2019-05-04 01:27:46.748 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:272END
+2019-05-04 01:27:46.758 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:273END
+2019-05-04 01:27:46.771 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:274END
+2019-05-04 01:27:46.784 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:275END
+2019-05-04 01:27:46.800 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:276END
+2019-05-04 01:27:46.813 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:277END
+2019-05-04 01:27:46.820 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:278END
+2019-05-04 01:27:46.833 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:279END
+2019-05-04 01:27:46.842 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:280END
+2019-05-04 01:27:46.853 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:281END
+2019-05-04 01:27:46.863 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:282END
+2019-05-04 01:27:46.879 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:283END
+2019-05-04 01:27:46.891 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:284END
+2019-05-04 01:27:46.905 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:285END
+2019-05-04 01:27:46.922 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:286END
+2019-05-04 01:27:46.933 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:287END
+2019-05-04 01:27:46.944 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:288END
+2019-05-04 01:27:46.955 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:289END
+2019-05-04 01:27:46.970 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:290END
+2019-05-04 01:27:46.987 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:291END
+2019-05-04 01:27:47.004 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:260END
+2019-05-04 01:27:47.022 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:269END
+2019-05-04 01:27:47.032 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:294END
+2019-05-04 01:27:47.043 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:295END
+2019-05-04 01:27:47.056 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:296END
+2019-05-04 01:27:47.067 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:297END
+2019-05-04 01:27:47.080 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:298END
+2019-05-04 01:27:47.091 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:299END
+2019-05-04 01:27:47.109 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:292END
+2019-05-04 01:27:47.123 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:300END
+2019-05-04 01:27:47.137 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:302END
+2019-05-04 01:27:47.149 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:303END
+2019-05-04 01:27:47.161 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:304END
+2019-05-04 01:27:47.173 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:305END
+2019-05-04 01:27:47.183 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:306END
+2019-05-04 01:27:47.198 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:307END
+2019-05-04 01:27:47.208 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:308END
+2019-05-04 01:27:47.224 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:309END
+2019-05-04 01:27:47.240 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:310END
+2019-05-04 01:27:47.254 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:311END
+2019-05-04 01:27:47.264 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:312END
+2019-05-04 01:27:47.280 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:313END
+2019-05-04 01:27:47.294 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:293END
+2019-05-04 01:27:47.315 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:315END
+2019-05-04 01:27:47.326 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:316END
+2019-05-04 01:27:47.352 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:317END
+2019-05-04 01:27:47.367 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:318END
+2019-05-04 01:27:47.389 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:319END
+2019-05-04 01:27:47.409 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:320END
+2019-05-04 01:27:47.429 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:321END
+2019-05-04 01:27:47.447 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:322END
+2019-05-04 01:27:47.459 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:323END
+2019-05-04 01:27:47.476 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:314END
+2019-05-04 01:27:47.495 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:325END
+2019-05-04 01:27:47.504 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:326END
+2019-05-04 01:27:47.523 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:327END
+2019-05-04 01:27:47.549 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:328END
+2019-05-04 01:27:47.557 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:329END
+2019-05-04 01:27:47.581 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:330END
+2019-05-04 01:27:47.603 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:331END
+2019-05-04 01:27:47.610 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:332END
+2019-05-04 01:27:47.622 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:301END
+2019-05-04 01:27:47.636 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:333END
+2019-05-04 01:27:47.652 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:335END
+2019-05-04 01:27:47.664 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:336END
+2019-05-04 01:27:47.677 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:337END
+2019-05-04 01:27:47.713 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:338END
+2019-05-04 01:27:47.724 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:339END
+2019-05-04 01:27:47.739 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:340END
+2019-05-04 01:27:47.751 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:341END
+2019-05-04 01:27:47.766 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:342END
+2019-05-04 01:27:47.778 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:343END
+2019-05-04 01:27:47.798 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:344END
+2019-05-04 01:27:47.811 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:345END
+2019-05-04 01:27:47.820 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:346END
+2019-05-04 01:27:47.831 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:347END
+2019-05-04 01:27:47.847 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:324END
+2019-05-04 01:27:47.860 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:349END
+2019-05-04 01:27:47.878 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:350END
+2019-05-04 01:27:47.886 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:351END
+2019-05-04 01:27:47.901 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:352END
+2019-05-04 01:27:47.916 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:353END
+2019-05-04 01:27:47.928 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:354END
+2019-05-04 01:27:47.936 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:355END
+2019-05-04 01:27:47.953 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:356END
+2019-05-04 01:27:47.973 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:357END
+2019-05-04 01:27:47.981 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:358END
+2019-05-04 01:27:47.999 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:359END
+2019-05-04 01:27:48.011 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:360END
+2019-05-04 01:27:48.025 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:361END
+2019-05-04 01:27:48.039 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:362END
+2019-05-04 01:27:48.051 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:363END
+2019-05-04 01:27:48.061 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:364END
+2019-05-04 01:27:48.073 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:365END
+2019-05-04 01:27:48.086 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:366END
+2019-05-04 01:27:48.096 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:334END
+2019-05-04 01:27:48.105 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:368END
+2019-05-04 01:27:48.115 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:369END
+2019-05-04 01:27:48.126 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:370END
+2019-05-04 01:27:48.134 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:371END
+2019-05-04 01:27:48.147 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:372END
+2019-05-04 01:27:48.155 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:373END
+2019-05-04 01:27:48.166 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:374END
+2019-05-04 01:27:48.179 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:375END
+2019-05-04 01:27:48.194 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:348END
+2019-05-04 01:27:48.207 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:367END
+2019-05-04 01:27:48.222 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:378END
+2019-05-04 01:27:48.234 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:379END
+2019-05-04 01:27:48.253 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:380END
+2019-05-04 01:27:48.267 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:381END
+2019-05-04 01:27:48.281 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:382END
+2019-05-04 01:27:48.291 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:383END
+2019-05-04 01:27:48.305 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:384END
+2019-05-04 01:27:48.320 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:385END
+2019-05-04 01:27:48.338 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:376END
+2019-05-04 01:27:48.352 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:387END
+2019-05-04 01:27:48.370 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:388END
+2019-05-04 01:27:48.379 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:389END
+2019-05-04 01:27:48.392 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:390END
+2019-05-04 01:27:48.412 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:391END
+2019-05-04 01:27:48.424 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:392END
+2019-05-04 01:27:48.439 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:393END
+2019-05-04 01:27:48.449 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:394END
+2019-05-04 01:27:48.466 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:395END
+2019-05-04 01:27:48.476 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:396END
+2019-05-04 01:27:48.486 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:397END
+2019-05-04 01:27:48.495 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:398END
+2019-05-04 01:27:48.507 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:399END
+2019-05-04 01:27:48.518 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:400END
+2019-05-04 01:27:48.528 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:401END
+2019-05-04 01:27:48.537 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:402END
+2019-05-04 01:27:48.550 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:403END
+2019-05-04 01:27:48.559 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:404END
+2019-05-04 01:27:48.573 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:377END
+2019-05-04 01:27:48.589 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:406END
+2019-05-04 01:27:48.603 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:407END
+2019-05-04 01:27:48.625 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:386END
+2019-05-04 01:27:48.653 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:405END
+2019-05-04 01:27:48.672 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:410END
+2019-05-04 01:27:48.694 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:409END
+2019-05-04 01:27:48.716 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:412END
+2019-05-04 01:27:48.732 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:413END
+2019-05-04 01:27:48.746 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:414END
+2019-05-04 01:27:48.767 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:415END
+2019-05-04 01:27:48.789 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:416END
+2019-05-04 01:27:48.802 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:417END
+2019-05-04 01:27:48.834 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:418END
+2019-05-04 01:27:48.845 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:419END
+2019-05-04 01:27:48.865 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:411END
+2019-05-04 01:27:48.877 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:420END
+2019-05-04 01:27:48.897 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:422END
+2019-05-04 01:27:48.909 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:423END
+2019-05-04 01:27:48.929 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:424END
+2019-05-04 01:27:48.940 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:425END
+2019-05-04 01:27:48.955 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:408END
+2019-05-04 01:27:48.965 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:427END
+2019-05-04 01:27:48.976 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:426END
+2019-05-04 01:27:48.988 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:429END
+2019-05-04 01:27:49.000 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:430END
+2019-05-04 01:27:49.017 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:421END
+2019-05-04 01:27:49.026 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:432END
+2019-05-04 01:27:49.040 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:433END
+2019-05-04 01:27:49.056 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:428END
+2019-05-04 01:27:49.067 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:434END
+2019-05-04 01:27:49.082 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:436END
+2019-05-04 01:27:49.091 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:437END
+2019-05-04 01:27:49.103 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:438END
+2019-05-04 01:27:49.114 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:439END
+2019-05-04 01:27:49.122 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:440END
+2019-05-04 01:27:49.133 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:441END
+2019-05-04 01:27:49.145 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:442END
+2019-05-04 01:27:49.163 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:443END
+2019-05-04 01:27:49.173 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:444END
+2019-05-04 01:27:49.183 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:445END
+2019-05-04 01:27:49.195 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:446END
+2019-05-04 01:27:49.206 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:447END
+2019-05-04 01:27:49.219 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:448END
+2019-05-04 01:27:49.238 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:449END
+2019-05-04 01:27:49.251 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:450END
+2019-05-04 01:27:49.263 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:451END
+2019-05-04 01:27:49.277 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:452END
+2019-05-04 01:27:49.287 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:453END
+2019-05-04 01:27:49.296 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:454END
+2019-05-04 01:27:49.307 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:455END
+2019-05-04 01:27:49.324 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:456END
+2019-05-04 01:27:49.337 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:457END
+2019-05-04 01:27:49.346 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:458END
+2019-05-04 01:27:49.361 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:459END
+2019-05-04 01:27:49.373 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:460END
+2019-05-04 01:27:49.395 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:461END
+2019-05-04 01:27:49.407 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:462END
+2019-05-04 01:27:49.426 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:431END
+2019-05-04 01:27:49.442 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:464END
+2019-05-04 01:27:49.460 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:465END
+2019-05-04 01:27:49.481 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:466END
+2019-05-04 01:27:49.500 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:467END
+2019-05-04 01:27:49.514 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:468END
+2019-05-04 01:27:49.528 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:469END
+2019-05-04 01:27:49.549 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:470END
+2019-05-04 01:27:49.567 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:471END
+2019-05-04 01:27:49.582 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:472END
+2019-05-04 01:27:49.611 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:463END
+2019-05-04 01:27:49.620 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:474END
+2019-05-04 01:27:49.639 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:475END
+2019-05-04 01:27:49.655 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:476END
+2019-05-04 01:27:49.674 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:477END
+2019-05-04 01:27:49.688 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:478END
+2019-05-04 01:27:49.710 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:473END
+2019-05-04 01:27:49.734 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:480END
+2019-05-04 01:27:49.755 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:479END
+2019-05-04 01:27:49.763 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:482END
+2019-05-04 01:27:49.780 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:481END
+2019-05-04 01:27:49.789 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:484END
+2019-05-04 01:27:49.802 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:483END
+2019-05-04 01:27:49.817 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:435END
+2019-05-04 01:27:49.833 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:487END
+2019-05-04 01:27:49.847 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:488END
+2019-05-04 01:27:49.868 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:489END
+2019-05-04 01:27:49.880 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:486END
+2019-05-04 01:27:49.897 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:491END
+2019-05-04 01:27:49.909 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:492END
+2019-05-04 01:27:49.927 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:493END
+2019-05-04 01:27:49.942 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:494END
+2019-05-04 01:27:49.954 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:495END
+2019-05-04 01:27:49.979 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:496END
+2019-05-04 01:27:49.998 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:497END
+2019-05-04 01:27:50.012 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:498END
+2019-05-04 01:27:50.040 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:499END
+2019-05-04 01:27:50.053 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:500END
+2019-05-04 01:27:50.093 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:501END
+2019-05-04 01:27:50.114 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:502END
+2019-05-04 01:27:50.142 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:503END
+2019-05-04 01:27:50.158 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:490END
+2019-05-04 01:27:50.171 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:505END
+2019-05-04 01:27:50.182 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:506END
+2019-05-04 01:27:50.200 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:507END
+2019-05-04 01:27:50.210 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:508END
+2019-05-04 01:27:50.221 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:509END
+2019-05-04 01:27:50.233 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:510END
+2019-05-04 01:27:50.251 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:485END
+2019-05-04 01:27:50.272 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:512END
+2019-05-04 01:27:50.284 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:513END
+2019-05-04 01:27:50.296 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:511END
+2019-05-04 01:27:50.308 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:514END
+2019-05-04 01:27:50.325 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:515END
+2019-05-04 01:27:50.335 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:516END
+2019-05-04 01:27:50.347 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:517END
+2019-05-04 01:27:50.359 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:518END
+2019-05-04 01:27:50.373 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:519END
+2019-05-04 01:27:50.380 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:520END
+2019-05-04 01:27:50.410 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:521END
+2019-05-04 01:27:50.425 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:504END
+2019-05-04 01:27:50.443 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:523END
+2019-05-04 01:27:50.456 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:522END
+2019-05-04 01:27:50.467 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:526END
+2019-05-04 01:27:50.485 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:527END
+2019-05-04 01:27:50.497 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:528END
+2019-05-04 01:27:50.521 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:529END
+2019-05-04 01:27:50.527 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:530END
+2019-05-04 01:27:50.541 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:525END
+2019-05-04 01:27:50.554 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:531END
+2019-05-04 01:27:50.572 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:533END
+2019-05-04 01:27:50.591 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:534END
+2019-05-04 01:27:50.599 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:535END
+2019-05-04 01:27:50.613 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:532END
+2019-05-04 01:27:50.624 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:537END
+2019-05-04 01:27:50.633 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:538END
+2019-05-04 01:27:50.644 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:539END
+2019-05-04 01:27:50.656 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:540END
+2019-05-04 01:27:50.665 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:541END
+2019-05-04 01:27:50.675 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:542END
+2019-05-04 01:27:50.688 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:543END
+2019-05-04 01:27:50.702 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:544END
+2019-05-04 01:27:50.717 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:545END
+2019-05-04 01:27:50.734 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:546END
+2019-05-04 01:27:50.750 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:547END
+2019-05-04 01:27:50.759 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:548END
+2019-05-04 01:27:50.771 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:549END
+2019-05-04 01:27:50.783 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:550END
+2019-05-04 01:27:50.794 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:551END
+2019-05-04 01:27:50.812 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:552END
+2019-05-04 01:27:50.825 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:553END
+2019-05-04 01:27:50.834 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:554END
+2019-05-04 01:27:50.843 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:555END
+2019-05-04 01:27:50.855 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:556END
+2019-05-04 01:27:50.867 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:557END
+2019-05-04 01:27:50.883 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:558END
+2019-05-04 01:27:50.898 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:524END
+2019-05-04 01:27:50.908 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:560END
+2019-05-04 01:27:50.935 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:561END
+2019-05-04 01:27:50.946 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:562END
+2019-05-04 01:27:50.958 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:559END
+2019-05-04 01:27:50.975 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:564END
+2019-05-04 01:27:50.988 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:565END
+2019-05-04 01:27:50.999 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:566END
+2019-05-04 01:27:51.010 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:567END
+2019-05-04 01:27:51.029 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:568END
+2019-05-04 01:27:51.039 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:569END
+2019-05-04 01:27:51.050 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:536END
+2019-05-04 01:27:51.067 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:571END
+2019-05-04 01:27:51.082 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:572END
+2019-05-04 01:27:51.094 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:573END
+2019-05-04 01:27:51.109 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:574END
+2019-05-04 01:27:51.123 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:575END
+2019-05-04 01:27:51.140 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:570END
+2019-05-04 01:27:51.153 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:577END
+2019-05-04 01:27:51.169 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:578END
+2019-05-04 01:27:51.181 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:579END
+2019-05-04 01:27:51.194 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:580END
+2019-05-04 01:27:51.207 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:581END
+2019-05-04 01:27:51.224 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:582END
+2019-05-04 01:27:51.242 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:583END
+2019-05-04 01:27:51.259 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:584END
+2019-05-04 01:27:51.284 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:585END
+2019-05-04 01:27:51.292 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:586END
+2019-05-04 01:27:51.314 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:576END
+2019-05-04 01:27:51.324 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:588END
+2019-05-04 01:27:51.342 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:587END
+2019-05-04 01:27:51.352 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:590END
+2019-05-04 01:27:51.373 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:563END
+2019-05-04 01:27:51.404 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:592END
+2019-05-04 01:27:51.429 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:591END
+2019-05-04 01:27:51.453 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:594END
+2019-05-04 01:27:51.475 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:595END
+2019-05-04 01:27:51.501 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:589END
+2019-05-04 01:27:51.509 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:597END
+2019-05-04 01:27:51.535 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:598END
+2019-05-04 01:27:51.547 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:599END
+2019-05-04 01:27:51.571 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:600END
+2019-05-04 01:27:51.582 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:601END
+2019-05-04 01:27:51.602 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:596END
+2019-05-04 01:27:51.607 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:603END
+2019-05-04 01:27:51.623 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:604END
+2019-05-04 01:27:51.642 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:593END
+2019-05-04 01:27:51.664 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:606END
+2019-05-04 01:27:51.676 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:607END
+2019-05-04 01:27:51.688 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:608END
+2019-05-04 01:27:51.705 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:602END
+2019-05-04 01:27:51.714 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:610END
+2019-05-04 01:27:51.727 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:611END
+2019-05-04 01:27:51.744 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:612END
+2019-05-04 01:27:51.760 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:613END
+2019-05-04 01:27:51.772 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:614END
+2019-05-04 01:27:51.794 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:609END
+2019-05-04 01:27:51.807 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:615END
+2019-05-04 01:27:51.814 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:616END
+2019-05-04 01:27:51.832 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:617END
+2019-05-04 01:27:51.849 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:619END
+2019-05-04 01:27:51.862 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:620END
+2019-05-04 01:27:51.876 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:621END
+2019-05-04 01:27:51.895 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:618END
+2019-05-04 01:27:51.908 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:623END
+2019-05-04 01:27:51.928 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:622END
+2019-05-04 01:27:51.936 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:625END
+2019-05-04 01:27:51.951 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:624END
+2019-05-04 01:27:51.963 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:626END
+2019-05-04 01:27:51.984 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:627END
+2019-05-04 01:27:51.996 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:628END
+2019-05-04 01:27:52.001 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:629END
+2019-05-04 01:27:52.022 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:630END
+2019-05-04 01:27:52.042 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:631END
+2019-05-04 01:27:52.059 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:632END
+2019-05-04 01:27:52.077 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:605END
+2019-05-04 01:27:52.097 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:634END
+2019-05-04 01:27:52.113 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:636END
+2019-05-04 01:27:52.133 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:637END
+2019-05-04 01:27:52.144 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:638END
+2019-05-04 01:27:52.159 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:635END
+2019-05-04 01:27:52.177 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:633END
+2019-05-04 01:27:52.207 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:641END
+2019-05-04 01:27:52.222 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:642END
+2019-05-04 01:27:52.241 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:643END
+2019-05-04 01:27:52.259 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:644END
+2019-05-04 01:27:52.274 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:645END
+2019-05-04 01:27:52.291 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:646END
+2019-05-04 01:27:52.304 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:647END
+2019-05-04 01:27:52.317 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:648END
+2019-05-04 01:27:52.330 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:649END
+2019-05-04 01:27:52.342 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:650END
+2019-05-04 01:27:52.360 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:651END
+2019-05-04 01:27:52.374 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:652END
+2019-05-04 01:27:52.390 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:653END
+2019-05-04 01:27:52.414 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:654END
+2019-05-04 01:27:52.434 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:655END
+2019-05-04 01:27:52.449 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:656END
+2019-05-04 01:27:52.472 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:657END
+2019-05-04 01:27:52.533 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:658END
+2019-05-04 01:27:52.563 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:659END
+2019-05-04 01:27:52.595 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:640END
+2019-05-04 01:27:52.615 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:661END
+2019-05-04 01:27:52.629 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:662END
+2019-05-04 01:27:52.647 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:663END
+2019-05-04 01:27:52.664 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:639END
+2019-05-04 01:27:52.682 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:665END
+2019-05-04 01:27:52.708 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:664END
+2019-05-04 01:27:52.727 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:667END
+2019-05-04 01:27:52.749 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:668END
+2019-05-04 01:27:52.766 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:669END
+2019-05-04 01:27:52.779 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:670END
+2019-05-04 01:27:52.800 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:660END
+2019-05-04 01:27:52.810 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:672END
+2019-05-04 01:27:52.829 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:673END
+2019-05-04 01:27:52.848 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:674END
+2019-05-04 01:27:52.859 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:675END
+2019-05-04 01:27:52.886 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:666END
+2019-05-04 01:27:52.911 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:671END
+2019-05-04 01:27:52.933 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:678END
+2019-05-04 01:27:52.953 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:679END
+2019-05-04 01:27:52.972 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:676END
+2019-05-04 01:27:52.992 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:681END
+2019-05-04 01:27:53.002 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:682END
+2019-05-04 01:27:53.028 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:683END
+2019-05-04 01:27:53.049 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:680END
+2019-05-04 01:27:53.063 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:685END
+2019-05-04 01:27:53.079 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:686END
+2019-05-04 01:27:53.095 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:687END
+2019-05-04 01:27:53.104 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:688END
+2019-05-04 01:27:53.119 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:677END
+2019-05-04 01:27:53.149 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:690END
+2019-05-04 01:27:53.156 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:691END
+2019-05-04 01:27:53.176 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:684END
+2019-05-04 01:27:53.197 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:692END
+2019-05-04 01:27:53.205 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:693END
+2019-05-04 01:27:53.231 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:695END
+2019-05-04 01:27:53.248 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:696END
+2019-05-04 01:27:53.259 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:697END
+2019-05-04 01:27:53.275 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:694END
+2019-05-04 01:27:53.289 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:699END
+2019-05-04 01:27:53.318 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:700END
+2019-05-04 01:27:53.323 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:701END
+2019-05-04 01:27:53.351 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:698END
+2019-05-04 01:27:53.377 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:689END
+2019-05-04 01:27:53.387 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:704END
+2019-05-04 01:27:53.401 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:703END
+2019-05-04 01:27:53.418 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:706END
+2019-05-04 01:27:53.442 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:707END
+2019-05-04 01:27:53.460 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:708END
+2019-05-04 01:27:53.471 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:709END
+2019-05-04 01:27:53.483 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:702END
+2019-05-04 01:27:53.504 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:711END
+2019-05-04 01:27:53.525 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:712END
+2019-05-04 01:27:53.540 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:713END
+2019-05-04 01:27:53.556 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:714END
+2019-05-04 01:27:53.575 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:715END
+2019-05-04 01:27:53.587 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:716END
+2019-05-04 01:27:53.613 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:717END
+2019-05-04 01:27:53.636 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:710END
+2019-05-04 01:27:53.649 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:719END
+2019-05-04 01:27:53.669 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:718END
+2019-05-04 01:27:53.674 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:721END
+2019-05-04 01:27:53.688 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:722END
+2019-05-04 01:27:53.706 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:723END
+2019-05-04 01:27:53.728 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:720END
+2019-05-04 01:27:53.738 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:725END
+2019-05-04 01:27:53.751 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:724END
+2019-05-04 01:27:53.770 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:727END
+2019-05-04 01:27:53.788 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:728END
+2019-05-04 01:27:53.803 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:729END
+2019-05-04 01:27:53.823 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:730END
+2019-05-04 01:27:53.852 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:731END
+2019-05-04 01:27:53.870 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:732END
+2019-05-04 01:27:53.884 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:733END
+2019-05-04 01:27:53.892 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:726END
+2019-05-04 01:27:53.920 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:735END
+2019-05-04 01:27:53.930 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:736END
+2019-05-04 01:27:53.959 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:705END
+2019-05-04 01:27:53.970 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:738END
+2019-05-04 01:27:53.994 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:739END
+2019-05-04 01:27:54.019 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:740END
+2019-05-04 01:27:54.042 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:737END
+2019-05-04 01:27:54.053 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:742END
+2019-05-04 01:27:54.077 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:734END
+2019-05-04 01:27:54.090 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:741END
+2019-05-04 01:27:54.109 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:744END
+2019-05-04 01:27:54.131 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:746END
+2019-05-04 01:27:54.152 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:747END
+2019-05-04 01:27:54.175 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:748END
+2019-05-04 01:27:54.195 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:749END
+2019-05-04 01:27:54.223 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:750END
+2019-05-04 01:27:54.238 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:751END
+2019-05-04 01:27:54.252 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:743END
+2019-05-04 01:27:54.270 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:753END
+2019-05-04 01:27:54.291 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:754END
+2019-05-04 01:27:54.303 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:745END
+2019-05-04 01:27:54.316 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:756END
+2019-05-04 01:27:54.326 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:757END
+2019-05-04 01:27:54.336 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:758END
+2019-05-04 01:27:54.347 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:759END
+2019-05-04 01:27:54.365 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:760END
+2019-05-04 01:27:54.377 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:761END
+2019-05-04 01:27:54.395 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:752END
+2019-05-04 01:27:54.410 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:755END
+2019-05-04 01:27:54.434 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:764END
+2019-05-04 01:27:54.449 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:765END
+2019-05-04 01:27:54.465 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:766END
+2019-05-04 01:27:54.484 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:767END
+2019-05-04 01:27:54.498 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:768END
+2019-05-04 01:27:54.517 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:762END
+2019-05-04 01:27:54.527 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:769END
+2019-05-04 01:27:54.538 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:763END
+2019-05-04 01:27:54.551 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:772END
+2019-05-04 01:27:54.567 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:771END
+2019-05-04 01:27:54.574 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:773END
+2019-05-04 01:27:54.595 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:770END
+2019-05-04 01:27:54.605 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:775END
+2019-05-04 01:27:54.619 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:777END
+2019-05-04 01:27:54.634 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:778END
+2019-05-04 01:27:54.648 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:70  - 一共秒杀出100件商品
+2019-05-04 01:27:54.652 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:779END
+2019-05-04 01:27:54.674 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:780END
+2019-05-04 01:27:54.696 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:781END
+2019-05-04 01:27:54.715 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:776END
+2019-05-04 01:27:54.737 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:783END
+2019-05-04 01:27:54.757 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:784END
+2019-05-04 01:27:54.773 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:785END
+2019-05-04 01:27:54.792 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:786END
+2019-05-04 01:27:54.809 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:782END
+2019-05-04 01:27:54.824 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:788END
+2019-05-04 01:27:54.845 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:789END
+2019-05-04 01:27:54.863 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:790END
+2019-05-04 01:27:54.902 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:791END
+2019-05-04 01:27:54.923 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:774END
+2019-05-04 01:27:54.947 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:793END
+2019-05-04 01:27:54.966 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:794END
+2019-05-04 01:27:54.993 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:795END
+2019-05-04 01:27:55.020 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:796END
+2019-05-04 01:27:55.043 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:797END
+2019-05-04 01:27:55.059 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:798END
+2019-05-04 01:27:55.073 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:799END
+2019-05-04 01:27:55.101 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:800END
+2019-05-04 01:27:55.124 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:801END
+2019-05-04 01:27:55.136 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:802END
+2019-05-04 01:27:55.153 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:787END
+2019-05-04 01:27:55.164 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:804END
+2019-05-04 01:27:55.178 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:805END
+2019-05-04 01:27:55.188 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:806END
+2019-05-04 01:27:55.197 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:807END
+2019-05-04 01:27:55.211 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:808END
+2019-05-04 01:27:55.228 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:809END
+2019-05-04 01:27:55.236 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:810END
+2019-05-04 01:27:55.258 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:803END
+2019-05-04 01:27:55.276 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:812END
+2019-05-04 01:27:55.295 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:813END
+2019-05-04 01:27:55.309 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:814END
+2019-05-04 01:27:55.324 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:815END
+2019-05-04 01:27:55.335 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:816END
+2019-05-04 01:27:55.348 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:817END
+2019-05-04 01:27:55.357 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:818END
+2019-05-04 01:27:55.376 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:811END
+2019-05-04 01:27:55.387 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:819END
+2019-05-04 01:27:55.405 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:792END
+2019-05-04 01:27:55.427 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:822END
+2019-05-04 01:27:55.451 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:821END
+2019-05-04 01:27:55.466 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:824END
+2019-05-04 01:27:55.480 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:823END
+2019-05-04 01:27:55.492 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:825END
+2019-05-04 01:27:55.507 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:827END
+2019-05-04 01:27:55.519 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:828END
+2019-05-04 01:27:55.536 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:829END
+2019-05-04 01:27:55.548 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:830END
+2019-05-04 01:27:55.560 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:831END
+2019-05-04 01:27:55.579 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:832END
+2019-05-04 01:27:55.589 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:826END
+2019-05-04 01:27:55.599 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:834END
+2019-05-04 01:27:55.615 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:835END
+2019-05-04 01:27:55.624 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:820END
+2019-05-04 01:27:55.636 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:837END
+2019-05-04 01:27:55.646 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:838END
+2019-05-04 01:27:55.661 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:839END
+2019-05-04 01:27:55.671 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:840END
+2019-05-04 01:27:55.686 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:841END
+2019-05-04 01:27:55.699 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:842END
+2019-05-04 01:27:55.712 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:843END
+2019-05-04 01:27:55.719 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:844END
+2019-05-04 01:27:55.728 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:845END
+2019-05-04 01:27:55.738 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:846END
+2019-05-04 01:27:55.746 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:847END
+2019-05-04 01:27:55.756 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:848END
+2019-05-04 01:27:55.771 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:849END
+2019-05-04 01:27:55.784 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:850END
+2019-05-04 01:27:55.799 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:851END
+2019-05-04 01:27:55.812 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:852END
+2019-05-04 01:27:55.821 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:853END
+2019-05-04 01:27:55.838 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:836END
+2019-05-04 01:27:55.846 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:855END
+2019-05-04 01:27:55.860 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:856END
+2019-05-04 01:27:55.868 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:857END
+2019-05-04 01:27:55.884 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:854END
+2019-05-04 01:27:55.898 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:859END
+2019-05-04 01:27:55.906 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:860END
+2019-05-04 01:27:55.920 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:861END
+2019-05-04 01:27:55.929 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:862END
+2019-05-04 01:27:55.938 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:863END
+2019-05-04 01:27:55.950 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:864END
+2019-05-04 01:27:55.959 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:865END
+2019-05-04 01:27:55.969 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:866END
+2019-05-04 01:27:55.979 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:867END
+2019-05-04 01:27:55.990 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:868END
+2019-05-04 01:27:55.998 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:869END
+2019-05-04 01:27:56.012 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:870END
+2019-05-04 01:27:56.023 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:871END
+2019-05-04 01:27:56.031 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:872END
+2019-05-04 01:27:56.048 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:873END
+2019-05-04 01:27:56.061 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:874END
+2019-05-04 01:27:56.075 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:875END
+2019-05-04 01:27:56.086 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:876END
+2019-05-04 01:27:56.091 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:877END
+2019-05-04 01:27:56.110 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:858END
+2019-05-04 01:27:56.120 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:879END
+2019-05-04 01:27:56.139 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:880END
+2019-05-04 01:27:56.149 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:881END
+2019-05-04 01:27:56.162 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:882END
+2019-05-04 01:27:56.174 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:883END
+2019-05-04 01:27:56.185 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:884END
+2019-05-04 01:27:56.199 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:885END
+2019-05-04 01:27:56.215 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:886END
+2019-05-04 01:27:56.228 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:887END
+2019-05-04 01:27:56.250 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:888END
+2019-05-04 01:27:56.262 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:833END
+2019-05-04 01:27:56.283 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:890END
+2019-05-04 01:27:56.295 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:891END
+2019-05-04 01:27:56.311 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:892END
+2019-05-04 01:27:56.323 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:893END
+2019-05-04 01:27:56.343 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:894END
+2019-05-04 01:27:56.355 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:895END
+2019-05-04 01:27:56.376 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:889END
+2019-05-04 01:27:56.392 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:897END
+2019-05-04 01:27:56.417 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:898END
+2019-05-04 01:27:56.428 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:899END
+2019-05-04 01:27:56.452 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:900END
+2019-05-04 01:27:56.468 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:901END
+2019-05-04 01:27:56.487 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:902END
+2019-05-04 01:27:56.499 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:903END
+2019-05-04 01:27:56.514 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:904END
+2019-05-04 01:27:56.528 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:905END
+2019-05-04 01:27:56.541 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:906END
+2019-05-04 01:27:56.558 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:907END
+2019-05-04 01:27:56.573 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:908END
+2019-05-04 01:27:56.586 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:909END
+2019-05-04 01:27:56.596 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:910END
+2019-05-04 01:27:56.612 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:911END
+2019-05-04 01:27:56.632 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:896END
+2019-05-04 01:27:56.648 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:878END
+2019-05-04 01:27:56.667 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:914END
+2019-05-04 01:27:56.683 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:915END
+2019-05-04 01:27:56.703 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:916END
+2019-05-04 01:27:56.712 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:917END
+2019-05-04 01:27:56.728 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:918END
+2019-05-04 01:27:56.742 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:919END
+2019-05-04 01:27:56.753 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:913END
+2019-05-04 01:27:56.768 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:920END
+2019-05-04 01:27:56.789 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:922END
+2019-05-04 01:27:56.799 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:923END
+2019-05-04 01:27:56.809 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:924END
+2019-05-04 01:27:56.818 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:925END
+2019-05-04 01:27:56.827 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:926END
+2019-05-04 01:27:56.836 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:927END
+2019-05-04 01:27:56.850 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:928END
+2019-05-04 01:27:56.858 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:929END
+2019-05-04 01:27:56.871 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:930END
+2019-05-04 01:27:56.890 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:931END
+2019-05-04 01:27:56.903 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:921END
+2019-05-04 01:27:56.918 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:933END
+2019-05-04 01:27:56.929 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:934END
+2019-05-04 01:27:56.942 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:935END
+2019-05-04 01:27:56.955 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:936END
+2019-05-04 01:27:56.971 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:937END
+2019-05-04 01:27:56.981 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:938END
+2019-05-04 01:27:56.994 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:912END
+2019-05-04 01:27:57.009 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:932END
+2019-05-04 01:27:57.019 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:941END
+2019-05-04 01:27:57.031 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:942END
+2019-05-04 01:27:57.040 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:943END
+2019-05-04 01:27:57.055 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:944END
+2019-05-04 01:27:57.063 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:945END
+2019-05-04 01:27:57.077 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:946END
+2019-05-04 01:27:57.094 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:947END
+2019-05-04 01:27:57.105 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:948END
+2019-05-04 01:27:57.118 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:949END
+2019-05-04 01:27:57.132 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:940END
+2019-05-04 01:27:57.143 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:951END
+2019-05-04 01:27:57.158 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:952END
+2019-05-04 01:27:57.168 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:953END
+2019-05-04 01:27:57.177 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:954END
+2019-05-04 01:27:57.190 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:955END
+2019-05-04 01:27:57.201 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:956END
+2019-05-04 01:27:57.213 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:957END
+2019-05-04 01:27:57.224 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:958END
+2019-05-04 01:27:57.235 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:959END
+2019-05-04 01:27:57.246 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:960END
+2019-05-04 01:27:57.259 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:961END
+2019-05-04 01:27:57.267 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:950END
+2019-05-04 01:27:57.277 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:963END
+2019-05-04 01:27:57.290 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:964END
+2019-05-04 01:27:57.301 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:965END
+2019-05-04 01:27:57.312 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:966END
+2019-05-04 01:27:57.324 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:967END
+2019-05-04 01:27:57.337 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:968END
+2019-05-04 01:27:57.347 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:939END
+2019-05-04 01:27:57.360 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:970END
+2019-05-04 01:27:57.374 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:971END
+2019-05-04 01:27:57.390 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:972END
+2019-05-04 01:27:57.407 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:973END
+2019-05-04 01:27:57.420 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:974END
+2019-05-04 01:27:57.438 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:975END
+2019-05-04 01:27:57.446 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:962END
+2019-05-04 01:27:57.456 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:977END
+2019-05-04 01:27:57.466 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:978END
+2019-05-04 01:27:57.481 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:979END
+2019-05-04 01:27:57.496 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:980END
+2019-05-04 01:27:57.512 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:981END
+2019-05-04 01:27:57.522 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:982END
+2019-05-04 01:27:57.533 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:983END
+2019-05-04 01:27:57.549 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:984END
+2019-05-04 01:27:57.566 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:985END
+2019-05-04 01:27:57.581 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:986END
+2019-05-04 01:27:57.601 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:969END
+2019-05-04 01:27:57.613 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:988END
+2019-05-04 01:27:57.631 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:989END
+2019-05-04 01:27:57.644 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:990END
+2019-05-04 01:27:57.658 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:991END
+2019-05-04 01:27:57.665 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:992END
+2019-05-04 01:27:57.676 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:987END
+2019-05-04 01:27:57.686 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:994END
+2019-05-04 01:27:57.697 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:993END
+2019-05-04 01:27:57.707 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:996END
+2019-05-04 01:27:57.721 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:997END
+2019-05-04 01:27:57.735 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:998END
+2019-05-04 01:27:57.744 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:999END
+2019-05-04 01:27:57.756 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:976END
+2019-05-04 01:27:57.768 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:62  - 用户:995END
+2019-05-04 01:28:52.206 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:139 - 开始秒杀四
+2019-05-04 01:29:02.218 INFO  com.wangmeng.seckill.web.SeckillDistributedController Line:159 - 一共秒杀出0件商品
+2019-05-04 01:40:50.570 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65fe9e33: startup date [Sat May 04 01:26:54 CST 2019]; root of context hierarchy
+2019-05-04 01:40:50.572 INFO  org.apache.activemq.broker.BrokerService Line:808 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-54740-1556904434641-0:1) is shutting down
+2019-05-04 01:40:50.579 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:984 - Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@70c6c6a7: startup date [Sat May 04 01:27:12 CST 2019]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@65fe9e33
+2019-05-04 01:40:50.617 INFO  org.apache.activemq.broker.TransportConnector Line:294 - Connector vm://localhost stopped
+2019-05-04 01:40:50.630 INFO  org.apache.activemq.broker.BrokerService Line:671 - Using Persistence Adapter: MemoryPersistenceAdapter
+2019-05-04 01:40:50.633 INFO  org.apache.activemq.broker.BrokerService Line:808 - Apache ActiveMQ 5.14.5 (localhost, null) is shutting down
+2019-05-04 01:40:50.641 INFO  org.apache.activemq.broker.BrokerService Line:869 - Apache ActiveMQ 5.14.5 (localhost, null) uptime 0.013 seconds
+2019-05-04 01:40:50.641 INFO  org.apache.activemq.broker.BrokerService Line:871 - Apache ActiveMQ 5.14.5 (localhost, null) is shutdown
+2019-05-04 01:40:50.642 INFO  org.apache.activemq.broker.BrokerService Line:869 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-54740-1556904434641-0:1) uptime 13 minutes
+2019-05-04 01:40:50.643 INFO  org.apache.activemq.broker.BrokerService Line:871 - Apache ActiveMQ 5.14.5 (localhost, ID:PC-201703251007-54740-1556904434641-0:1) is shutdown
+2019-05-04 01:40:50.651 INFO  org.apache.activemq.broker.jmx.ManagementContext Line:155 - JMX consoles can connect to service:jmx:rmi:///jndi/rmi://localhost:1099/jmxrmi
+2019-05-04 01:40:51.476 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:358 - Stopping beans in phase 2147483647
+2019-05-04 01:40:51.487 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:358 - Stopping beans in phase 2147483547
+2019-05-04 01:40:51.494 INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler Line:202 - Shutting down ExecutorService
+2019-05-04 01:40:51.499 INFO  org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer Line:693 - Consumer stopped
+2019-05-04 01:40:51.499 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:358 - Stopping beans in phase 0
+2019-05-04 01:40:51.501 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:449 - Unregistering JMX-exposed beans on shutdown
+2019-05-04 01:40:51.548 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:563 - Closing JPA EntityManagerFactory for persistence unit 'default'
