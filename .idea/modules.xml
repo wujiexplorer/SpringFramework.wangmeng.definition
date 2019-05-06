@@ -15,6 +15,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaMember2/SpringBoot2EurekaMember2.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaMember2/SpringBoot2EurekaMember2.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" filepath="$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" filepath="$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootElasticsearch/SpringBootElasticsearch.iml" filepath="$PROJECT_DIR$/SpringBootElasticsearch/SpringBootElasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" filepath="$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" filepath="$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" filepath="$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" />
