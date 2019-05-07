@@ -11,6 +11,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="f18c59f8-fc8b-4f9a-a4c2-c62de22503fb" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_6.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_6_6.xml" afterDir="false" />
@@ -151,6 +152,9 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wangmengorderdubboservice/wangmengorderdubboservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wangmengorderdubboservice/wangmengorderdubboservice.iml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="f18c59f8-fc8b-4f9a-a4c2-c62de22503fb" name="Default Changelist" comment="spring.freemarker.template-loader-path=classpath:/static/template/ suffix .flt,freemarker模板，Spring task Spring3.0引进的 freemarker比thymeleaf性能好点，" />
+>>>>>>> origin/master
     <ignored path="$PROJECT_DIR$/springannotation/target/" />
     <ignored path="$PROJECT_DIR$/springmvcannotation/target/" />
     <ignored path="$PROJECT_DIR$/springcore/target/" />
@@ -208,7 +212,13 @@
     <ignored path="$PROJECT_DIR$/extDubbo/AppClient/target/" />
     <ignored path="$PROJECT_DIR$/SpringBootJWT/target/" />
     <ignored path="$PROJECT_DIR$/springbootsqlite/target/" />
+<<<<<<< HEAD
     <ignored path="$PROJECT_DIR$/SpringBootElasticsearch/target/" />
+=======
+    <ignored path="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/target/" />
+    <ignored path="$PROJECT_DIR$/SpringBootSeckill/target/" />
+    <ignored path="$PROJECT_DIR$/springbootmail/target/" />
+>>>>>>> origin/master
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,17 +247,6 @@
         <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
         <item name="myDb" type="feb32156:DbDataSourceImpl" />
       </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="myDb" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-      </path>
-      <path>
-        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
-        <item name="myDb" type="feb32156:DbDataSourceImpl" />
-        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
-        <item name="main: schema" type="981a47c2:SqliteImplModel$Schema" />
-      </path>
     </expand>
     <select />
   </component>
@@ -256,6 +255,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/Application.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -332,6 +332,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-120">
               <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+=======
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/springbootmail/src/main/resources/application-dev.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="66" />
+>>>>>>> origin/master
             </state>
           </provider>
         </entry>
@@ -376,6 +383,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/extDubbo/DubboRegistry/src/main/java/com/wangmeng/rpc/registry/RpcDiscover.java" />
         <option value="$PROJECT_DIR$/extDubbo/RpcClient/src/main/java/com/wangmeng/rpc/client/RpcClient.java" />
         <option value="$PROJECT_DIR$/extDubbo/AppCommon/src/main/java/com/wangmeng/app/common/Product.java" />
@@ -427,6 +435,59 @@
         <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/controller/LogController.java" />
         <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/controller/AreaController.java" />
         <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/entity/Area.java" />
+=======
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/unionpay/controller/UnionPayController.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/unionpay/service/IUnionPayService.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/unionpay/service/impl/UnionPayServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/web/controller/PayController.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/weixinpay/controller/WeixinMobilePayController.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/weixinpay/service/IWeixinPayService.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/weixinpay/service/impl/WeixinPayServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/test/java/com/itstyle/test/AppAliPay.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/test/java/com/itstyle/test/AliPayTest.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/weixinpay/util/mobile/MobileUtil.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/unionpay/util/HttpClient.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/unionpay/util/CertUtil.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/weixinpay/controller/WeixinPayController.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/weixinpay/util/ClientCustomSSL.java" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/resources/application-dev.properties" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/common/config/Swagger2.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/common/dynamicquery/DynamicQueryImpl.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/ISeckillDistributedService.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/repository/SeckillRepository.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/kafka/KafkaConsumer.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/ISeckillService.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/activemq/ActiveMQConsumer.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/disruptor/SeckillEventConsumer.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/jvm/SeckillQueue.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/jvm/TaskRunner.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/redis/RedisConsumer.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/ICreateHtmlService.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/impl/CreateHtmlServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/impl/SeckillDistributedServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/impl/SeckillServiceImpl.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/web/CreateHtmlController.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/web/RedPacketController.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/web/SeckillController.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/web/SeckillDistributedController.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/web/SeckillPageController.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/common/api/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/common/aop/LimitAspect.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/common/aop/LockAspect.java" />
+        <option value="$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/kafka/KafkaSender.java" />
+        <option value="$PROJECT_DIR$/springbootmail/pom.xml" />
+        <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/web/mailController.java" />
+        <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/api/SwaggerConfig.java" />
+        <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/queue/MailQueue.java" />
+        <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/queue/ConsumeMailQueue.java" />
+        <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/service/IMailService.java" />
+        <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/redis/Receiver.java" />
+        <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/entity/OaEmail.java" />
+        <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/repository/MailRepository.java" />
+        <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/service/impl/MailServiceImpl.java" />
+>>>>>>> origin/master
       </list>
     </option>
   </component>
@@ -458,7 +519,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
     <option name="width" value="1346" />
@@ -481,6 +542,7 @@
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -495,37 +557,59 @@
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="es" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="area" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -533,10 +617,18 @@
               <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="area" type="462c0819:PsiDirectoryNode" />
               <item name="controller" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -544,10 +636,19 @@
               <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="area" type="462c0819:PsiDirectoryNode" />
               <item name="repository" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminLTE" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -555,10 +656,20 @@
               <item name="es" type="462c0819:PsiDirectoryNode" />
               <item name="area" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminLTE" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -567,10 +678,21 @@
               <item name="area" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="impl" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminLTE" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="alt" type="462c0819:PsiDirectoryNode" />
+>>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
               <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -626,11 +748,26 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="webapp" type="462c0819:PsiDirectoryNode" />
               <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
+=======
+              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminLTE" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+              <item name="AdminLTE.css" type="620a8d5e:NestingTreeNode" />
+>>>>>>> origin/master
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+<<<<<<< HEAD
+=======
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+>>>>>>> origin/master
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -643,10 +780,14 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556358981272" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556960166974" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringBootElasticsearch/src/main" />
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-mail/pom.xml" />
+>>>>>>> origin/master
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -667,11 +808,19 @@
       <recent name="com.wangmeng.jwt.service.impl" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+<<<<<<< HEAD
       <recent name="D:\code\SpringFramework.wangmeng.definition\SpringBootElasticsearch\src\main" />
       <recent name="D:\code\SpringFramework.wangmeng.definition\SpringBootElasticsearch\src\main\resources" />
       <recent name="D:\code\SpringFramework.wangmeng.definition\SpringBootElasticsearch\src\main\java\com\wangmeng\es" />
       <recent name="D:\code\SpringFramework.wangmeng.definition\springbootsqlite\src\main\java\com\wangmeng\model" />
       <recent name="D:\code\SpringFramework.wangmeng.definition\springbootsqlite\src\main\java\com\wangmeng\config" />
+=======
+      <recent name="E:\code\SpringFramework.wangmeng.definition\springbootmail\src\main" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\springbootmail\src\main\resources" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\springbootmail\src\main\java\com\wangmeng\mail" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill\src\main\resources" />
+>>>>>>> origin/master
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -700,7 +849,11 @@
       </list>
     </option>
   </component>
+<<<<<<< HEAD
   <component name="RunManager" selected="Spring Boot.Application">
+=======
+  <component name="RunManager" selected="Spring Boot.Application (2)">
+>>>>>>> origin/master
     <configuration name="APP.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AppClient" />
       <extension name="coverage">
@@ -717,22 +870,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="APP.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="AppClient" />
+=======
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springbootsqlite" />
+>>>>>>> origin/master
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangmeng.app.client.*" />
+          <option name="PATTERN" value="com.wangmeng.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+<<<<<<< HEAD
       <option name="PACKAGE_NAME" value="com.wangmeng.app.client" />
       <option name="MAIN_CLASS_NAME" value="com.wangmeng.app.client.APP" />
       <option name="METHOD_NAME" value="testUpdate" />
       <option name="TEST_OBJECT" value="method" />
+=======
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.App" />
+>>>>>>> origin/master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springbootsqlite" />
       <extension name="coverage">
@@ -742,10 +905,22 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.App" />
+=======
+    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootSeckill" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangmeng.seckill.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.seckill.Application" />
+>>>>>>> origin/master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="SpringBootElasticsearch" />
       <extension name="coverage">
@@ -755,6 +930,24 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.es.Application" />
+=======
+    <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="springbootmail" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangmeng.mail.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.mail.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="SpringBootPayUnionWxAlipay" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.Application" />
+>>>>>>> origin/master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -865,12 +1058,18 @@
       </method>
     </configuration>
     <list>
+<<<<<<< HEAD
       <item itemvalue="JUnit.APP.testUpdate" />
+=======
+>>>>>>> origin/master
       <item itemvalue="JUnit.APP.testGet" />
       <item itemvalue="Spring Boot.SpringbootsqliteApplication" />
+      <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.UsersApplication" />
       <item itemvalue="Spring Boot.App" />
+      <item itemvalue="Spring Boot.Application (1)" />
       <item itemvalue="Tomcat Server.Tomcat 7.0" />
+<<<<<<< HEAD
       <item itemvalue="Spring Boot.Application" />
     </list>
     <recent_temporary>
@@ -880,6 +1079,17 @@
         <item itemvalue="Spring Boot.UsersApplication" />
         <item itemvalue="JUnit.APP.testGet" />
         <item itemvalue="JUnit.APP.testUpdate" />
+=======
+      <item itemvalue="Spring Boot.Application (2)" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.Application (2)" />
+        <item itemvalue="Spring Boot.Application (1)" />
+        <item itemvalue="Spring Boot.App" />
+        <item itemvalue="Spring Boot.UsersApplication" />
+        <item itemvalue="JUnit.APP.testGet" />
+>>>>>>> origin/master
       </list>
     </recent_temporary>
   </component>
@@ -965,10 +1175,18 @@
       <workItem from="1556204536307" duration="3242000" />
       <workItem from="1556342614876" duration="7111000" />
       <workItem from="1556501319202" duration="4598000" />
+<<<<<<< HEAD
       <workItem from="1556518354937" duration="2826000" />
       <workItem from="1557148210391" duration="29000" />
       <workItem from="1557148275091" duration="30000" />
       <workItem from="1557148320993" duration="1476000" />
+=======
+      <workItem from="1556518354937" duration="572000" />
+      <workItem from="1556726273442" duration="6761000" />
+      <workItem from="1556806350078" duration="2867000" />
+      <workItem from="1556882432845" duration="6358000" />
+      <workItem from="1556945244604" duration="4892000" />
+>>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="Spring annotation application">
       <created>1552661452000</created>
@@ -1145,6 +1363,7 @@
       <option name="project" value="LOCAL" />
       <updated>1556207133766</updated>
     </task>
+<<<<<<< HEAD
     <task id="LOCAL-00026" summary="SpringBoot整合sqlite,嵌入式关系数据库，create digram database">
       <created>1556519311960</created>
       <option name="number" value="00026" />
@@ -1153,6 +1372,23 @@
       <updated>1556519311960</updated>
     </task>
     <option name="localTasksCounter" value="27" />
+=======
+    <task id="LOCAL-00026" summary="支付服务 支付宝 SDK 微信 http 银联 http maven 从中央库下载不下来，可以本地下载 然后再工作空间引用">
+      <created>1556808614613</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1556808614613</updated>
+    </task>
+    <task id="LOCAL-00027" summary="秒杀案例，redisTemplate默认的connectionFactory的HOST 一定要写localhost 不能写ip，否则报get not resource pool,disruptor队列 不需要加锁，但是会出现少卖，性能高，kafkaTemplate好像不太行，总是报错，用JmsTemplate可以的">
+      <created>1556905662571</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1556905662571</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
+>>>>>>> origin/master
     <servers />
   </component>
   <component name="TestHistory">
@@ -1188,7 +1424,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="556962000" />
+=======
+    <option name="totallyTimeSpent" value="574051000" />
+>>>>>>> origin/master
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1200,15 +1440,18 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
+<<<<<<< HEAD
       <window_info content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.45439914" />
+=======
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.3267776" />
+>>>>>>> origin/master
       <window_info id="Structure" order="6" sideWeight="0.5954198" side_tool="true" weight="0.39788198" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="0" />
@@ -1217,13 +1460,17 @@
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50226927" side_tool="true" weight="0.36497545" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Messages" order="6" sideWeight="0.49924356" weight="0.33626375" />
+      <window_info anchor="bottom" id="Messages" order="6" sideWeight="0.49924356" weight="0.33551556" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Run" order="11" weight="0.32569557" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" visible="true" weight="0.36483517" />
+=======
+      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" weight="0.3633388" />
+>>>>>>> origin/master
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.3289689" />
@@ -1236,7 +1483,11 @@
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Key Promoter X" order="3" weight="0.3290469" />
+<<<<<<< HEAD
       <window_info anchor="right" id="Database" order="4" weight="0.10354077" />
+=======
+      <window_info anchor="right" id="Database" order="4" weight="0.102874435" />
+>>>>>>> origin/master
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -1252,7 +1503,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.46217853" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.3214826" />
       <window_info id="Structure" order="6" sideWeight="0.5954198" side_tool="true" weight="0.39788198" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="0" />
@@ -1261,31 +1512,34 @@
       <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="4" sideWeight="0.50226927" side_tool="true" weight="0.36497545" />
       <window_info anchor="bottom" id="Database Changes" order="5" />
-      <window_info anchor="bottom" id="Messages" order="6" sideWeight="0.49924356" weight="0.3371522" />
+      <window_info anchor="bottom" id="Messages" order="6" sideWeight="0.49924356" weight="0.33551556" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
       <window_info anchor="bottom" id="Spring" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Run" order="11" weight="0.32569557" />
-      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" weight="0.36497545" />
+      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" weight="0.3633388" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.3289689" />
       <window_info anchor="bottom" id="Application Servers" order="16" weight="0.32767403" />
       <window_info anchor="bottom" id="Java Enterprise" order="17" weight="0.3293718" />
       <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.3289689" />
+      <window_info anchor="bottom" id="Database Console" order="19" weight="0.32967034" />
+      <window_info anchor="bottom" id="Statistic" order="20" />
       <window_info anchor="right" id="Coverage" order="0" sideWeight="0.50252527" side_tool="true" weight="0.24886535" />
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Key Promoter X" order="3" weight="0.3290469" />
-      <window_info anchor="right" id="Database" order="4" weight="0.3290469" />
+      <window_info anchor="right" id="Database" order="4" weight="0.102874435" />
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" sideWeight="0.49747476" weight="0.24886535" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.24962178" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.3290469" />
+      <window_info anchor="right" id="Maven" order="10" weight="0.32886267" />
       <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="RestServices" order="12" weight="0.20171674" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -1332,8 +1586,11 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+<<<<<<< HEAD
     <MESSAGE value="Spring annotation application add @ComponentScan @Filter FilterType.CUSTOM  implements TypeFilter,@Scope--》prototype,singleton,调用方法创建对象的时机" />
     <MESSAGE value="Spring annotation application add @Lazy @Bean 懒加载，不在IOC容器启动时加载，而是在第一次获取时加载，并初始化" />
+=======
+>>>>>>> origin/master
     <MESSAGE value="Spring annotation application add @Conditional implements Condition Type and Method,@Import类似于@Bean，都是导入第三方包的组件，id默认是全类名" />
     <MESSAGE value="Spring annotation application add @Import implements ImportSelector 返回类的全类名，还是容器注册，implements ImportBeanDefinitionRegistrar 手动注册" />
     <MESSAGE value="Spring annotation application add @Bean implements FactoryBean ===&gt;getObject getObjectType isSingleton &amp;colorFactoryBean" />
@@ -1356,8 +1613,15 @@
     <MESSAGE value="Spring Boot整合Dubbo，配置文件dubbo application,protocol,register,service,reference;Spring Boot 整合ElasticSearch，@EnableElasticSearchRepository" />
     <MESSAGE value="test git commit" />
     <MESSAGE value="手动写一个dubbo框架，一次请求一次scoket连接 动态代理 发请求 编解码 序列化反序列化 requestId methodName parameterType args className(request),requestId,responseId,Object(response)" />
+<<<<<<< HEAD
     <MESSAGE value="SpringBoot整合sqlite,嵌入式关系数据库，create digram database" />
     <option name="LAST_COMMIT_MESSAGE" value="SpringBoot整合sqlite,嵌入式关系数据库，create digram database" />
+=======
+    <MESSAGE value="支付服务 支付宝 SDK 微信 http 银联 http maven 从中央库下载不下来，可以本地下载 然后再工作空间引用" />
+    <MESSAGE value="秒杀案例，redisTemplate默认的connectionFactory的HOST 一定要写localhost 不能写ip，否则报get not resource pool,disruptor队列 不需要加锁，但是会出现少卖，性能高，kafkaTemplate好像不太行，总是报错，用JmsTemplate可以的" />
+    <MESSAGE value="spring.freemarker.template-loader-path=classpath:/static/template/ suffix .flt,freemarker模板，Spring task Spring3.0引进的 freemarker比thymeleaf性能好点，" />
+    <option name="LAST_COMMIT_MESSAGE" value="spring.freemarker.template-loader-path=classpath:/static/template/ suffix .flt,freemarker模板，Spring task Spring3.0引进的 freemarker比thymeleaf性能好点，" />
+>>>>>>> origin/master
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1365,7 +1629,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.java</url>
           <line>240</line>
-          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
+          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator" method="postProcessBeforeInstantiation">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
@@ -1373,7 +1637,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.java</url>
           <line>293</line>
-          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
+          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator" method="postProcessAfterInitialization">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="4" />
@@ -1381,7 +1645,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.java</url>
           <line>203</line>
-          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
+          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator" method="setBeanFactory">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="6" />
@@ -1389,7 +1653,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAdvisorAutoProxyCreator.java</url>
           <line>53</line>
-          <properties class="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator">
+          <properties class="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator" method="setBeanFactory">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="7" />
@@ -1397,7 +1661,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/AnnotationAwareAspectJAutoProxyCreator.java</url>
           <line>74</line>
-          <properties class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator">
+          <properties class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" method="initBeanFactory">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="10" />
@@ -1416,6 +1680,7 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/controller/SecureController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -1437,12 +1702,33 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
+=======
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/common/aop/LockAspect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/kafka/spring-kafka/1.3.5.RELEASE/spring-kafka-1.3.5.RELEASE.jar!/org/springframework/kafka/core/KafkaTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-285">
+          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/web/SeckillController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="268" column="40" lean-forward="true" selection-start-line="268" selection-start-column="40" selection-end-line="268" selection-end-column="40" />
+>>>>>>> origin/master
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/out/artifacts/servlet_3_0_war_exploded/WEB-INF/classes/META-INF/services/javax.servlet.ServletContainerInitializer">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -1516,16 +1802,118 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="600">
           <caret line="35" selection-start-line="35" selection-end-line="35" />
+=======
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1368" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/activemq/ActiveMQConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-50">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/web/SeckillDistributedController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1133">
+          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/activemq/ActiveMQSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="93">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/redis/RedisSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/redis/RedisConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/disruptor/SeckillEventConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/ISeckillService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/impl/SeckillServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/disruptor/SeckillEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-98">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/disruptor/DisruptorUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
+>>>>>>> origin/master
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/App.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="418">
           <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+=======
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/kafka/KafkaConsumer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
+>>>>>>> origin/master
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#324#325#0" expanded="true" />
@@ -1534,6 +1922,7 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="das://3d9b07b8-0252-4d30-9372-ddd6df71f987/schema/main/table/hello">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1554,10 +1943,48 @@
           <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/kafka/KafkaSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/templates/1000.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/static/template/goods.flt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/logback-spring.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1368" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/static/goods/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1732">
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#span#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#b#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#b#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#p#0;n#!!top" expanded="true" />
+>>>>>>> origin/master
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/config/MyBatisMapperScannerConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -1608,12 +2035,53 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="98">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+=======
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/static/iview/iview.min.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/static/js/webSocket.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/redis/RedisConfig.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/api/SwaggerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/dynamicquery/DynamicQuery.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/dynamicquery/DynamicQueryImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="356">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+>>>>>>> origin/master
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/entity/City.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
@@ -1656,12 +2124,54 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/dynamicquery/NativeQueryResultEntity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/spring-core/4.3.13.RELEASE/spring-core-4.3.13.RELEASE.jar!/org/springframework/core/Ordered.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="8" column="8" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/interceptor/MyAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="16" column="48" selection-start-line="16" selection-start-column="48" selection-end-line="16" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/model/Email.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/model/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/queue/ConsumeMailQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+>>>>>>> origin/master
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/redis/Receiver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -1707,10 +2217,56 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2235#2244#0" expanded="true" />
+=======
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/queue/MailQueue.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="186">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#424#431#0" expanded="true" />
+            <element signature="e#783#784#0" expanded="true" />
+            <element signature="e#827#828#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/redis/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/data/spring-data-redis/1.8.9.RELEASE/spring-data-redis-1.8.9.RELEASE.jar!/org/springframework/data/redis/listener/adapter/MessageListenerAdapter.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="30" column="13" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/redis/RedisListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/util/MailUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+>>>>>>> origin/master
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/service/LogService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1755,25 +2311,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
+=======
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/util/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/util/CommonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/entity/OaEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/service/impl/AreaServiceImpl.java">
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/repository/MailRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/controller/LogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2020">
+        <state relative-caret-position="19">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -1781,6 +2346,62 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/service/IMailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-418">
+          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+>>>>>>> origin/master
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/service/impl/AreaServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+=======
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/service/impl/MailServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
+>>>>>>> origin/master
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/controller/LogController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2020">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+=======
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/web/IndexController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/web/mailController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+>>>>>>> origin/master
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/repository/ElasticCityRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1807,6 +2428,28 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+=======
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/resources/sql/mail.sql">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/resources/static/AdminLTE/css/adminlte.css.map">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/resources/application-dev.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="66" />
+>>>>>>> origin/master
         </state>
       </provider>
     </entry>
@@ -1864,7 +2507,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>Spring|wangmengmemberdubboapiservice</last-edited>
+          <last-edited>SpringBootPayUnionWxAlipay</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

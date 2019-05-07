@@ -1,0 +1,5 @@
+com\wangmeng\rpc\common\RpcRequest.class
+com\wangmeng\rpc\common\RpcEncoder.class
+com\wangmeng\rpc\common\SerializationUtil.class
+com\wangmeng\rpc\common\RpcDecoder.class
+com\wangmeng\rpc\common\RpcResponse.class

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$/LicenseParent/LicenseAppServer" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/LicenseParent/LicenseServer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot20EurekaServer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot2ElasticSearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot2EurekaMember" charset="UTF-8" />
@@ -9,6 +11,8 @@
     <file url="file://$PROJECT_DIR$/SpringBoot2Swagger" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBootElasticsearch" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBootJWT" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBootPayUnionWxAlipay" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/SpringBootSeckill" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCLoud2ConfigClient" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud20Order" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloud2ConfigServer" charset="UTF-8" />
@@ -32,6 +36,7 @@
     <file url="file://$PROJECT_DIR$/SpringCloudZuulGateway" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extSpringBoot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extSpringBootJavaTomcat" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/springbootmail" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springbootsqlite" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud20eurekaserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvc" charset="UTF-8" />

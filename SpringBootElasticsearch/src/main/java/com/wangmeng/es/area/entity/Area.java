@@ -1,6 +1,7 @@
 package com.wangmeng.es.area.entity;
 
-import org.springframework.data.annotation.Id;
+
+import com.sun.javafx.beans.IDProperty;
 import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.GeoPointField;
@@ -10,6 +11,7 @@ import org.springframework.data.elasticsearch.annotations.GeoPointField;
  */
 @Document(indexName="elasticsearch",type="area",indexStoreType="fs",shards=5,replicas=1,refreshInterval="-1")
 public class Area {
+
 	@Id
 	private Long id; 
 	private Long pid;//父id
