@@ -1,7 +1,6 @@
 <component name="libraryTable">
   <library name="Maven: ognl:ognl:3.0.8">
     <CLASSES>
-<<<<<<< HEAD
       <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.8/ognl-3.0.8.jar!/" />
     </CLASSES>
     <JAVADOC>
@@ -9,15 +8,6 @@
     </JAVADOC>
     <SOURCES>
       <root url="jar://$MAVEN_REPOSITORY$/ognl/ognl/3.0.8/ognl-3.0.8-sources.jar!/" />
-=======
-      <root url="jar://$USER_HOME$/.m2/repository/ognl/ognl/3.0.8/ognl-3.0.8.jar!/" />
-    </CLASSES>
-    <JAVADOC>
-      <root url="jar://$USER_HOME$/.m2/repository/ognl/ognl/3.0.8/ognl-3.0.8-javadoc.jar!/" />
-    </JAVADOC>
-    <SOURCES>
-      <root url="jar://$USER_HOME$/.m2/repository/ognl/ognl/3.0.8/ognl-3.0.8-sources.jar!/" />
->>>>>>> origin/master
     </SOURCES>
   </library>
 </component>

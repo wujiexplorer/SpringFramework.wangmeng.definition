@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="SpringCloud2ConfigServer" />
         <module name="SpringCloud2ZookeeperOrder" />
         <module name="extSpringBoot" />
         <module name="SpringCloud2wangmengApiOrderService" />
@@ -20,45 +21,45 @@
         <module name="DubboCommon" />
         <module name="RpcServer" />
         <module name="SpringCloud2ZookeeperMember2" />
-        <module name="springcloud20eurekaserver" />
         <module name="SpringCloud2ConsulMember" />
         <module name="SpringCloud20Order" />
         <module name="springcore" />
         <module name="SpringBoot2ElasticSearch" />
+        <module name="SpringCloud2Pay" />
         <module name="SpringCloud2ZookeeperMember" />
+        <module name="DubboRegistry" />
         <module name="SpringCLoud2ConfigClient" />
         <module name="wangmengmemberpublicdubboapi" />
         <module name="springannotation" />
         <module name="threadjdbc" />
-        <module name="SpringBootElasticsearch" />
         <module name="SpringCloud2EurekaServer9001" />
         <module name="springioc" />
-        <module name="wangmengmemberdubboapiservice" />
         <module name="SpringBoot2Swagger" />
         <module name="SpringBoot2EurekaOrder" />
         <module name="extlinkedlist" />
+        <module name="springbootsqlite" />
         <module name="SpringCloud2ZuulGateway2" />
         <module name="springaop" />
-        <module name="DubboRegistry" />
-        <module name="wangmengorderdubboservice" />
+        <module name="wangmengmemberdubboapiservice" />
         <module name="AppCommon" />
         <module name="extarraylist" />
         <module name="SpringCloud2wangmengApiOrderServiceImpl" />
         <module name="SpringBoot20EurekaServer" />
         <module name="SpringBoot2EurekaMember2" />
+        <module name="SpringBootElasticsearch" />
         <module name="SpringCloud2wangmengApiMemberServiceImpl2" />
         <module name="SpringCloud2wangmengApiMemberServiceImpl" />
         <module name="SpringBoot2EurekaMember" />
-        <module name="AppServer" />
-        <module name="springbootsqlite" />
-        <module name="SpringCloud2Member2" />
-        <module name="extHashMap" />
-        <module name="SpringCloud2wangmengApiMemberService" />
-        <module name="SpringCloudZuulGateway" />
         <module name="springmvc" />
-        <module name="SpringCloud2Pay" />
+        <module name="AppServer" />
+        <module name="SpringCloud2Member2" />
+        <module name="SpringCloud2wangmengApiMemberService" />
+        <module name="SpringBootQuartz" />
+        <module name="SpringCloudZuulGateway" />
+        <module name="springcloud20eurekaserver" />
+        <module name="wangmengorderdubboservice" />
         <module name="SpringCloudMember" />
-        <module name="SpringCloud2ConfigServer" />
+        <module name="extHashMap" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -87,6 +88,7 @@
       <module name="SpringBoot2Swagger" target="1.8" />
       <module name="SpringBootElasticsearch" target="1.8" />
       <module name="SpringBootJWT" target="1.8" />
+      <module name="SpringBootQuartz" target="1.8" />
       <module name="springbootsqlite" target="1.8" />
       <module name="springcloud20eurekaserver" target="1.8" />
       <module name="SpringCloud20Order" target="1.8" />
