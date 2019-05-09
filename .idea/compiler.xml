@@ -36,6 +36,7 @@
         <module name="springioc" />
         <module name="SpringBoot2Swagger" />
         <module name="SpringBoot2EurekaOrder" />
+        <module name="SpringBootDoc" />
         <module name="extlinkedlist" />
         <module name="springbootsqlite" />
         <module name="SpringCloud2ZuulGateway2" />
@@ -86,6 +87,7 @@
       <module name="SpringBoot2EurekaMember2" target="1.8" />
       <module name="SpringBoot2EurekaOrder" target="1.8" />
       <module name="SpringBoot2Swagger" target="1.8" />
+      <module name="SpringBootDoc" target="1.8" />
       <module name="SpringBootElasticsearch" target="1.8" />
       <module name="SpringBootJWT" target="1.8" />
       <module name="SpringBootQuartz" target="1.8" />

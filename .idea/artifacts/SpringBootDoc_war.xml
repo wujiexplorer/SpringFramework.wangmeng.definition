@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpringBootDoc:war">
+    <output-path>$PROJECT_DIR$/SpringBootDoc/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SpringBootDoc</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="spring-boot-doc.war">
+      <element id="artifact" artifact-name="SpringBootDoc:war exploded" />
+    </root>
+  </artifact>
+</component>

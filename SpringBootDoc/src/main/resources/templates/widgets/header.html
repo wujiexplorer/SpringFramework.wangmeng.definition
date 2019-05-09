@@ -1,0 +1,80 @@
+<header class="navbar navbar-static-top navbar-fixed-top manual-header" role="banner" th:fragment="header">
+    <div class="container">
+        <div class="navbar-header col-sm-12 col-md-7 col-lg-6">
+            <a href="/" class="navbar-brand" th:utext=${SITE_NAME}></a>
+            <nav class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="/" title="首页" >首页</a>
+                    </li>
+                    <li>
+                        <a href="{{urlfor "LabelController.List" }}" title="标签">标签</a>
+                    </li>
+                </ul>
+                <div class="searchbar pull-left visible-lg-inline-block visible-md-inline-block">
+                    <form class="form-inline" action="{{urlfor "SearchController.Index"}}" method="get">
+                        <input class="form-control" name="keyword" type="search" style="width: 230px;" placeholder="请输入关键词..." value="">
+                        <button class="search-btn">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </form>
+                </div>
+            </nav>
+            <div class="btn-group dropdown-menu-right pull-right slidebar visible-xs-inline-block visible-sm-inline-block">
+                <button class="btn btn-default dropdown-toggle hidden-lg" type="button" data-toggle="dropdown"><i class="fa fa-align-justify"></i></button>
+                <ul class="dropdown-menu" role="menu" th:if="${session.user}">
+                            <li>
+                                <a href="{{urlfor "SettingController.Index"}}" title="个人中心"><i class="fa fa-user" aria-hidden="true"></i> 个人中心</a>
+                            </li>
+                            <li>
+                                <a href="{{urlfor "BookController.Index"}}" title="我的项目"><i class="fa fa-book" aria-hidden="true"></i> 我的项目</a>
+                            </li>
+                            <!-- 管理员可见 判断role -->
+                            <li>
+                                <a href="{{urlfor "ManagerController.Index"}}" title="管理后台"><i class="fa fa-university" aria-hidden="true"></i> 管理后台</a>
+                            </li>
+                            <li>
+                                <a href="{{urlfor "AccountController.Logout"}}" title="退出登录"><i class="fa fa-sign-out"></i> 退出登录</a>
+                            </li>
+                    <li><a href="{{urlfor "AccountController.Login"}}" title="用户登录">登录</a></li>
+                </ul>
+                <ul class="dropdown-menu" role="menu" th:if="${session.user == null}">
+                    <li><a href="" title="用户登录">登录</a></li>
+                </ul>
+            </div>
+
+        </div>
+        <nav class="navbar-collapse hidden-xs hidden-sm" role="navigation">
+            <ul class="nav navbar-nav navbar-right" th:if="${session.member}">
+                <li>
+                    <div class="img user-info" data-toggle="dropdown">
+                        <img th:src="${session.member.avatar}" class="img-circle userbar-avatar" th:alt="${session.member.account}">
+                        <div class="userbar-content">
+                            <span th:text="${session.member.account}"></span>
+                            <div></div>
+                        </div>
+                        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                    </div>
+                    <ul class="dropdown-menu user-info-dropdown" role="menu">
+                        <li>
+                            <a href="/setting" title="个人中心"><i class="fa fa-user" aria-hidden="true"></i> 个人中心</a>
+                        </li>
+                        <li>
+                            <a href="/book" title="我的项目"><i class="fa fa-book" aria-hidden="true"></i> 我的项目</a>
+                        </li>
+                         <!-- 管理员可见 判断role -->
+                        <li>
+                            <a href="/manager" title="管理后台"><i class="fa fa-university" aria-hidden="true"></i> 管理后台</a>
+                        </li>
+                        <li>
+                            <a href="/logout" title="退出登录"><i class="fa fa-sign-out"></i> 退出登录</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right" role="menu" th:if="${session.member == null}">
+                <li><a href="login" title="用户登录">登录</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>

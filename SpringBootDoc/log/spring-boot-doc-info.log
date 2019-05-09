@@ -1,0 +1,143 @@
+2019-05-08 19:23:15.510 INFO  com.wangmeng.doc.Application Line:48  - Starting Application on ABC-PC with PID 56628 (D:\code\SpringFramework.wangmeng.definition\SpringBootDoc\target\classes started by ABC in D:\code\SpringFramework.wangmeng.definition\SpringBootDoc)
+2019-05-08 19:23:15.514 INFO  com.wangmeng.doc.Application Line:641 - The following profiles are active: dev
+2019-05-08 19:23:15.815 INFO  org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext Line:582 - Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e178745: startup date [Wed May 08 19:23:15 CST 2019]; root of context hierarchy
+2019-05-08 19:23:16.462 INFO  org.springframework.beans.factory.xml.XmlBeanDefinitionReader Line:317 - Loading XML bean definitions from class path resource [kaptcha.xml]
+2019-05-08 19:23:17.312 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:325 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2332906] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2019-05-08 19:23:17.699 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:89  - Tomcat initialized with port(s): 8080 (http)
+2019-05-08 19:23:17.712 INFO  org.apache.catalina.core.StandardService Line:179 - Starting service Tomcat
+2019-05-08 19:23:17.714 INFO  org.apache.catalina.core.StandardEngine Line:179 - Starting Servlet Engine: Apache Tomcat/8.5.11
+2019-05-08 19:23:17.806 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:179 - Initializing Spring embedded WebApplicationContext
+2019-05-08 19:23:17.807 INFO  org.springframework.web.context.ContextLoader Line:276 - Root WebApplicationContext: initialization completed in 1992 ms
+2019-05-08 19:23:17.950 INFO  org.springframework.boot.web.servlet.ServletRegistrationBean Line:190 - Mapping servlet: 'dispatcherServlet' to [/]
+2019-05-08 19:23:17.955 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'characterEncodingFilter' to: [/*]
+2019-05-08 19:23:17.956 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2019-05-08 19:23:17.956 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2019-05-08 19:23:17.957 INFO  org.springframework.boot.web.servlet.FilterRegistrationBean Line:258 - Mapping filter: 'requestContextFilter' to: [/*]
+2019-05-08 19:23:18.295 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:349 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2019-05-08 19:23:18.313 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2019-05-08 19:23:18.389 INFO  org.hibernate.Version Line:37  - HHH000412: Hibernate Core {5.0.12.Final}
+2019-05-08 19:23:18.391 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2019-05-08 19:23:18.392 INFO  org.hibernate.cfg.Environment Line:317 - HHH000021: Bytecode provider name : javassist
+2019-05-08 19:23:18.438 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-05-08 19:23:19.019 INFO  org.hibernate.dialect.Dialect Line:156 - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+2019-05-08 19:23:19.437 INFO  org.hibernate.tool.hbm2ddl.SchemaUpdate Line:105 - HHH000228: Running hbm2ddl schema update
+2019-05-08 19:23:19.683 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:379 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2019-05-08 19:23:20.360 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:534 - Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1e178745: startup date [Wed May 08 19:23:15 CST 2019]; root of context hierarchy
+2019-05-08 19:23:20.437 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.AccountController.login(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.439 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/login],methods=[POST]}" onto public com.wangmeng.doc.common.utils.Result com.wangmeng.doc.web.AccountController.login(com.wangmeng.doc.model.Member,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-05-08 19:23:20.440 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/register],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.AccountController.register(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.441 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/register],methods=[POST]}" onto public com.wangmeng.doc.common.utils.Result com.wangmeng.doc.web.AccountController.register(com.wangmeng.doc.model.Member,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-05-08 19:23:20.442 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/find_password],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.AccountController.findPassword(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.443 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/find_password],methods=[POST]}" onto public com.wangmeng.doc.common.utils.Result com.wangmeng.doc.web.AccountController.findPassword(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-05-08 19:23:20.443 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/logout],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.AccountController.logout(javax.servlet.http.HttpServletRequest)
+2019-05-08 19:23:20.450 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/book],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.BookController.book(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.451 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/book/{identify}/dashboard],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.BookController.dashboard(java.lang.String,org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.453 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/book/{identify}/setting],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.BookController.setting(java.lang.String,org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.454 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/book/saveBook],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.BookController.saveBook(com.wangmeng.doc.model.Books,org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.454 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/book/{identify}/users],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.BookController.users(java.lang.String,org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.457 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/docs/{identify}],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.DocsController.login(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.459 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.IndexController.index(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.461 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/defaultKaptcha]}" onto public void com.wangmeng.doc.web.IndexController.defaultKaptcha(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.lang.Exception
+2019-05-08 19:23:20.468 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/manager],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.ManagerController.manager(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.469 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/manager/users],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.ManagerController.users(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.470 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/manager/createMember],methods=[POST]}" onto public com.wangmeng.doc.common.utils.Result com.wangmeng.doc.web.ManagerController.createMember(com.wangmeng.doc.model.Member,org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.471 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/manager/setting],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.ManagerController.setting(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.471 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/manager/setting],methods=[POST]}" onto public com.wangmeng.doc.common.utils.Result com.wangmeng.doc.web.ManagerController.setting(com.wangmeng.doc.model.Member,org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.472 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/manager/attach/list],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.ManagerController.attachList(com.wangmeng.doc.model.Member,org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.473 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/manager/books],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.ManagerController.books(org.springframework.ui.ModelMap)
+2019-05-08 19:23:20.475 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/setting],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.SettingController.setting()
+2019-05-08 19:23:20.476 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/setting/password],methods=[GET]}" onto public java.lang.String com.wangmeng.doc.web.SettingController.password()
+2019-05-08 19:23:20.479 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/setting/password],methods=[POST]}" onto public com.wangmeng.doc.common.utils.Result com.wangmeng.doc.web.SettingController.password(java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-05-08 19:23:20.481 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/setting/modfiyUser],methods=[POST]}" onto public com.wangmeng.doc.common.utils.Result com.wangmeng.doc.web.SettingController.modfiyUser(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest)
+2019-05-08 19:23:20.481 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/setting/upload]}" onto public com.wangmeng.doc.common.utils.Result com.wangmeng.doc.web.SettingController.upload(org.springframework.web.multipart.MultipartFile[],javax.servlet.http.HttpServletRequest)
+2019-05-08 19:23:20.486 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-08 19:23:20.486 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:543 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-08 19:23:20.504 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:349 - Root mapping to handler of type [class org.springframework.web.servlet.mvc.ParameterizableViewController]
+2019-05-08 19:23:20.515 INFO  com.wangmeng.doc.Application Line:28  - 自定义静态资源目录
+2019-05-08 19:23:20.522 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/uploads/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 19:23:20.522 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 19:23:20.523 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:362 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2019-05-08 19:23:21.025 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:431 - Registering beans for JMX exposure on startup
+2019-05-08 19:23:21.079 INFO  org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer Line:198 - Tomcat started on port(s): 8080 (http)
+2019-05-08 19:23:21.082 INFO  com.wangmeng.doc.common.utils.DataInitConfig Line:24  - 初始化加载数据
+2019-05-08 19:23:21.108 INFO  org.hibernate.hql.internal.QueryTranslatorFactoryInitiator Line:47  - HHH000397: Using ASTQueryTranslatorFactory
+2019-05-08 19:23:21.217 INFO  com.wangmeng.doc.Application Line:57  - Started Application in 6.391 seconds (JVM running for 6.943)
+2019-05-08 19:23:21.217 INFO  com.wangmeng.doc.Application Line:33  - 项目启动 
+2019-05-08 19:23:28.924 INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] Line:179 - Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-05-08 19:23:28.925 INFO  org.springframework.web.servlet.DispatcherServlet Line:489 - FrameworkServlet 'dispatcherServlet': initialization started
+2019-05-08 19:23:28.950 INFO  org.springframework.web.servlet.DispatcherServlet Line:508 - FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2019-05-08 19:23:28.985 INFO  com.wangmeng.doc.web.ManagerController Line:91  - 附件管理
+2019-05-08 19:23:34.810 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:23:35.969 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:23:36.642 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:23:37.524 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:24:02.689 INFO  com.wangmeng.doc.web.IndexController Line:42  - 首页
+2019-05-08 19:24:05.923 INFO  com.wangmeng.doc.web.AccountController Line:30  - 用户登陆 
+2019-05-08 19:24:12.216 INFO  com.wangmeng.doc.web.AccountController Line:39  - 用户登陆 
+2019-05-08 19:24:12.418 INFO  com.wangmeng.doc.web.IndexController Line:42  - 首页
+2019-05-08 19:24:15.483 INFO  com.wangmeng.doc.web.SettingController Line:40  - 用户中心 
+2019-05-08 19:24:18.678 INFO  com.wangmeng.doc.web.BookController Line:34  - 我的项目
+2019-05-08 19:24:22.154 INFO  com.wangmeng.doc.web.ManagerController Line:39  - 管理后台 
+2019-05-08 19:24:24.240 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:24:26.226 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:24:28.889 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:24:30.317 INFO  com.wangmeng.doc.web.ManagerController Line:91  - 附件管理
+2019-05-08 19:24:36.920 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:24:37.842 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:24:38.765 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:24:43.759 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:24:44.582 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:24:45.682 INFO  com.wangmeng.doc.web.ManagerController Line:91  - 附件管理
+2019-05-08 19:24:46.335 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:24:46.961 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:24:47.721 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:24:48.480 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:24:50.167 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:24:56.240 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:24:58.010 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:24:58.954 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:24:59.879 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:01.010 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:01.907 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:02.995 INFO  com.wangmeng.doc.web.ManagerController Line:91  - 附件管理
+2019-05-08 19:25:09.862 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:11.446 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:12.313 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:13.131 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:14.850 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:15.783 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:16.629 INFO  com.wangmeng.doc.web.ManagerController Line:91  - 附件管理
+2019-05-08 19:25:17.401 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:18.121 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:19.018 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:20.195 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:21.117 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:22.270 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:23.418 INFO  com.wangmeng.doc.web.ManagerController Line:91  - 附件管理
+2019-05-08 19:25:24.392 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:25.171 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:25.992 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:26.945 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:28.009 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:30.536 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:32.867 INFO  com.wangmeng.doc.web.ManagerController Line:91  - 附件管理
+2019-05-08 19:25:34.837 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:35.522 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:36.224 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:37.097 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:37.826 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:38.393 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:39.598 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:40.536 INFO  com.wangmeng.doc.web.ManagerController Line:91  - 附件管理
+2019-05-08 19:25:41.272 INFO  com.wangmeng.doc.web.ManagerController Line:75  - 用户管理 
+2019-05-08 19:25:41.958 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:25:42.700 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:25:43.616 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:26:26.426 INFO  com.wangmeng.doc.web.ManagerController Line:61  - 创建用户
+2019-05-08 19:26:28.824 INFO  com.wangmeng.doc.web.ManagerController Line:61  - 创建用户
+2019-05-08 19:27:37.224 INFO  com.wangmeng.doc.web.ManagerController Line:61  - 创建用户
+2019-05-08 19:27:41.910 INFO  com.wangmeng.doc.web.ManagerController Line:53  - 用户管理 
+2019-05-08 19:27:51.818 INFO  com.wangmeng.doc.web.ManagerController Line:99  - 项目管理
+2019-05-08 19:28:00.701 INFO  com.wangmeng.doc.web.DocsController Line:22  - 查看项目
