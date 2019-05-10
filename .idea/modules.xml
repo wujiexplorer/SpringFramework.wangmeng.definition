@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" filepath="$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootDoc/SpringBootDoc.iml" filepath="$PROJECT_DIR$/SpringBootDoc/SpringBootDoc.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootElasticsearch/SpringBootElasticsearch.iml" filepath="$PROJECT_DIR$/SpringBootElasticsearch/SpringBootElasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootFastdfs/SpringBootFastdfs.iml" filepath="$PROJECT_DIR$/SpringBootFastdfs/SpringBootFastdfs.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" filepath="$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootPayUnionWxAlipay/SpringBootPayUnionWxAlipay.iml" filepath="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/SpringBootPayUnionWxAlipay.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootQuartz/SpringBootQuartz.iml" filepath="$PROJECT_DIR$/SpringBootQuartz/SpringBootQuartz.iml" />
@@ -58,6 +59,7 @@
       <module fileurl="file://$PROJECT_DIR$/springannotation/springannotation.iml" filepath="$PROJECT_DIR$/springannotation/springannotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/springaop/springaop.iml" filepath="$PROJECT_DIR$/springaop/springaop.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootmail/springbootmail.iml" filepath="$PROJECT_DIR$/springbootmail/springbootmail.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springbootsqlite/springbootsqlite.iml" filepath="$PROJECT_DIR$/springbootsqlite/springbootsqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootsqlite/springbootsqlite.iml" filepath="$PROJECT_DIR$/springbootsqlite/springbootsqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud20eurekaserver/springcloud20eurekaserver.iml" filepath="$PROJECT_DIR$/springcloud20eurekaserver/springcloud20eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcore/springcore.iml" filepath="$PROJECT_DIR$/springcore/springcore.iml" />
