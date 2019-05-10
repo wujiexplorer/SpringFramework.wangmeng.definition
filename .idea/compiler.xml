@@ -7,7 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringCloud2ConfigServer" />
+        <module name="SpringBootQuartz" />
         <module name="SpringCloud2ZookeeperOrder" />
         <module name="extSpringBoot" />
         <module name="SpringCloud2wangmengApiOrderService" />
@@ -21,44 +21,50 @@
         <module name="DubboCommon" />
         <module name="RpcServer" />
         <module name="SpringCloud2ZookeeperMember2" />
+        <module name="springcloud20eurekaserver" />
+        <module name="SpringBootPayUnionWxAlipay" />
         <module name="SpringCloud2ConsulMember" />
         <module name="SpringCloud20Order" />
         <module name="springcore" />
         <module name="SpringBoot2ElasticSearch" />
-        <module name="SpringCloud2Pay" />
+        <module name="wangmengorderdubboservice" />
         <module name="SpringCloud2ZookeeperMember" />
-        <module name="DubboRegistry" />
+        <module name="LicenseAppServer" />
         <module name="SpringCLoud2ConfigClient" />
         <module name="wangmengmemberpublicdubboapi" />
         <module name="springannotation" />
         <module name="threadjdbc" />
+        <module name="SpringBootElasticsearch" />
         <module name="SpringCloud2EurekaServer9001" />
         <module name="springioc" />
+        <module name="wangmengmemberdubboapiservice" />
         <module name="SpringBoot2Swagger" />
         <module name="SpringBoot2EurekaOrder" />
+        <module name="SpringBootFastdfs" />
         <module name="SpringBootDoc" />
         <module name="extlinkedlist" />
-        <module name="springbootsqlite" />
+        <module name="AppCommon" />
+        <module name="SpringBootSeckill" />
         <module name="SpringCloud2ZuulGateway2" />
         <module name="springaop" />
-        <module name="wangmengmemberdubboapiservice" />
-        <module name="AppCommon" />
+        <module name="DubboRegistry" />
+        <module name="SpringCloud2Pay" />
+        <module name="SpringCloud2ConfigServer" />
         <module name="extarraylist" />
         <module name="SpringCloud2wangmengApiOrderServiceImpl" />
         <module name="SpringBoot20EurekaServer" />
+        <module name="LicenseServer" />
         <module name="SpringBoot2EurekaMember2" />
-        <module name="SpringBootElasticsearch" />
         <module name="SpringCloud2wangmengApiMemberServiceImpl2" />
         <module name="SpringCloud2wangmengApiMemberServiceImpl" />
+        <module name="springbootmail" />
         <module name="SpringBoot2EurekaMember" />
-        <module name="springmvc" />
         <module name="AppServer" />
+        <module name="springbootsqlite" />
         <module name="SpringCloud2Member2" />
         <module name="SpringCloud2wangmengApiMemberService" />
-        <module name="SpringBootQuartz" />
+        <module name="springmvc" />
         <module name="SpringCloudZuulGateway" />
-        <module name="springcloud20eurekaserver" />
-        <module name="wangmengorderdubboservice" />
         <module name="SpringCloudMember" />
         <module name="extHashMap" />
       </profile>
@@ -76,6 +82,9 @@
       <module name="extSpringBoot" target="1.8" />
       <module name="extSpringBootJavaTomcat" target="1.8" />
       <module name="extSpringBootJavaTomcatMaven" target="1.7" />
+      <module name="LicenseAppServer" target="1.8" />
+      <module name="LicenseParent" target="1.8" />
+      <module name="LicenseServer" target="1.8" />
       <module name="mybatisorm" target="8" />
       <module name="RpcClient" target="1.8" />
       <module name="RpcServer" target="1.8" />
@@ -89,8 +98,12 @@
       <module name="SpringBoot2Swagger" target="1.8" />
       <module name="SpringBootDoc" target="1.8" />
       <module name="SpringBootElasticsearch" target="1.8" />
+      <module name="SpringBootFastdfs" target="1.8" />
       <module name="SpringBootJWT" target="1.8" />
+      <module name="springbootmail" target="1.8" />
+      <module name="SpringBootPayUnionWxAlipay" target="1.8" />
       <module name="SpringBootQuartz" target="1.8" />
+      <module name="SpringBootSeckill" target="1.8" />
       <module name="springbootsqlite" target="1.8" />
       <module name="springcloud20eurekaserver" target="1.8" />
       <module name="SpringCloud20Order" target="1.8" />
@@ -128,6 +141,8 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="LicenseAppServer" options="-parameters" />
+      <module name="LicenseServer" options="-parameters" />
       <module name="SpringBoot20EurekaServer" options="-parameters" />
       <module name="SpringBoot2ElasticSearch" options="-parameters" />
       <module name="SpringBoot2EurekaMember" options="-parameters" />

@@ -11,150 +11,358 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
     <list default="true" id="f18c59f8-fc8b-4f9a-a4c2-c62de22503fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_6_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_8_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_8_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_8_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_1_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_spatial4j_spatial4j_0_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jna_jna_3_0_9.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_jsr166e_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_0_10_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_5_5_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_2_4_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_securesm_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_elasticsearch_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_redis_1_4_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_elasticsearch_2_1_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_1_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/SpringBootElasticsearch.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/Application.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/controller/AreaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/entity/Area.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/repository/ElasticAreaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/service/AreaService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/service/impl/AreaServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/entity/City.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/repository/ElasticCityRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/service/CityService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/service/impl/CityServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/constant/PageConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/interceptor/MyAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/kafka/KafkaConsumerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/kafka/KafkaProducerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/kafka/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/redis/Receiver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/redis/RedisListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/utils/JsonMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/controller/LogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/entity/Pages.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/entity/SysLogs.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/repository/ElasticLogRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/service/LogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/service/impl/LogServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/application-prod.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/application-test.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/file/area.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/spring-context-dubbo.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/static/iview/fonts/ionicons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/static/iview/fonts/ionicons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/static/iview/fonts/ionicons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/static/iview/fonts/ionicons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/static/iview/iview.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/static/iview/iview.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/static/jquery/jquery-3.2.1.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/static/vue/vue.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/templates/area/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/resources/templates/log/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SpringBootElasticsearch/src/main/webapp/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_9.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_oschina_zcx7878_fastdfs_client_java_1_27_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_22.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_1_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_6_RELEASE.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_1_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_101tec_zkclient_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_6_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_dubbo_2_6_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_7_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_carrotsearch_hppc_0_7_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_8_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_8_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_8_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_8_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_cbor_2_8_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_8_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_smile_2_8_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_8_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_dataformat_jackson_dataformat_yaml_2_8_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_9_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_penggle_kaptcha_2_3_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_18_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_javaewah_JavaEWAH_1_1_6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_2_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jsch_0_1_54.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jhlabs_filters_2_0_235_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_c3p0_0_9_5_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_mchange_mchange_commons_java_0_2_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_zuul_zuul_core_1_3_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_1_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ning_compress_lzf_1_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_spatial4j_spatial4j_0_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_spatial4j_spatial4j_0_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jna_jna_3_0_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_jna_jna_3_0_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_tdunning_t_digest_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_tdunning_t_digest_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_jsr166e_1_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_twitter_jsr166e_1_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_vaadin_external_google_android_json_0_0_20131108_vaadin1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_3_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_3_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_collections_commons_collections_3_2_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__dom4j_dom4j_1_6_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_9_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_9_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_java8_9_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_9_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_3_7_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_reactivex_rxjava_reactive_streams_1_2_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_core_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_schema_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spi_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_spring_web_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger2_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_common_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_7_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_swagger_ui_2_7_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_annotations_1_5_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_swagger_swagger_models_1_5_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_javax_servlet_api_3_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_javax_transaction_api_1_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jline_jline_0_9_94.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__log4j_log4j_1_2_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_41.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_6_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_jpountz_lz4_lz4_1_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_ezmorph_ezmorph_1_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_json_lib_json_lib_jdk15_2_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sourceforge_nekohtml_nekohtml_1_9_22.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__nz_net_ultraq_thymeleaf_thymeleaf_layout_dialect_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ognl_ognl_3_0_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_5.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_client_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_framework_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_recipes_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_curator_curator_x_discovery_2_11_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_0_10_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_kafka_kafka_clients_0_10_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_backward_codecs_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_grouping_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_misc_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial3d_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_spatial_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_5_5_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_suggest_5_5_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_8_5_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_8_5_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_8_5_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_annotations_api_8_5_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_8_5_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_8_5_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_zookeeper_zookeeper_3_4_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_8_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_2_6_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_groovy_groovy_2_4_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_asl_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_asl_1_9_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_4_8_0_201706111038_r.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_2_4_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_elasticsearch_2_4_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_securesm_1_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_elasticsearch_securesm_1_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_library_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hdrhistogram_HdrHistogram_2_1_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_0_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_0_12_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_entitymanager_5_0_12_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_4_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_4_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_3_6_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_javax_persistence_hibernate_jpa_2_1_api_1_0_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_21_0_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_22_0_GA.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_1_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_netty_netty_3_2_5_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_1_0_Final.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mapstruct_mapstruct_1_1_0_Final.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_1_10_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_2_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_quartz_scheduler_quartz_2_3_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reflections_reflections_0_9_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_4_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jcl_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_log4j_over_slf4j_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_24.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_log4j12_1_7_25.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_elasticsearch_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_elasticsearch_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_jpa_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_redis_1_4_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_redis_1_4_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_2_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_2_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_1_5_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_0_0_M7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_2_0_0_M7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_0_0_M7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_0_0_M1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_zuul_2_0_0_M7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zookeeper_2_0_0_M6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_zookeeper_discovery_2_0_0_M6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_zookeeper_core_2_0_0_M6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_zookeeper_discovery_2_0_0_M6.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_1_13_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_elasticsearch_2_1_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_elasticsearch_2_1_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_1_11_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_1_2_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_9_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_1_8_9_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_1_1_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_kafka_spring_kafka_1_1_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_core_1_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_plugin_spring_plugin_metadata_1_2_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_1_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_1_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aspects_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_13_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_7_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_springloaded_1_2_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_springloaded_1_2_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_2_1_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_5_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_6_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_thymeleaf_spring4_2_1_6_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_unbescape_unbescape_1_1_0_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_xerial_snappy_snappy_java_1_1_2_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xerces_xercesImpl_2_11_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__xml_apis_xml_apis_1_4_01.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LicenseParent/LicenseParent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/LicenseParent/LicenseParent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot20EurekaServer/SpringBoot20EurekaServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot2ElasticSearch/SpringBoot2ElasticSearch.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot2ElasticSearch/SpringBoot2ElasticSearch.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot2EurekaMember/SpringBoot2EurekaMember.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot2EurekaMember2/SpringBoot2EurekaMember2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot2EurekaMember2/SpringBoot2EurekaMember2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot2EurekaOrder/SpringBoot2EurekaOrder.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBoot2Swagger/SpringBoot2Swagger.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootDoc/SpringBootDoc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootDoc/SpringBootDoc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/SpringBootPayUnionWxAlipay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/SpringBootPayUnionWxAlipay.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootQuartz/SpringBootQuartz.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootQuartz/SpringBootQuartz.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringBootSeckill/SpringBootSeckill.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringBootSeckill/SpringBootSeckill.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud20Order/SpringCloud20Order.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2ConfigServer/SpringCloud2ConfigServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2ConfigServer/SpringCloud2ConfigServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2ConsulMember/SpringCloud2ConsulMember.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2ConsulMember/SpringCloud2ConsulMember.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2EurekaServer9001/SpringCloud2EurekaServer9001.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2EurekaServer9001/SpringCloud2EurekaServer9001.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2Member2/SpringCloud2Member2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2Member2/SpringCloud2Member2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2Pay/SpringCloud2Pay.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2Pay/SpringCloud2Pay.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2ZookeeperMember/SpringCloud2ZookeeperMember.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2ZookeeperMember/SpringCloud2ZookeeperMember.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2ZookeeperMember2/SpringCloud2ZookeeperMember2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2ZookeeperMember2/SpringCloud2ZookeeperMember2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2ZookeeperOrder/SpringCloud2ZookeeperOrder.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2ZookeeperOrder/SpringCloud2ZookeeperOrder.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2ZuulGateway2/SpringCloud2ZuulGateway2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2ZuulGateway2/SpringCloud2ZuulGateway2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl/SpringCloud2wangmengApiMemberServiceImpl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl/SpringCloud2wangmengApiMemberServiceImpl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl2/SpringCloud2wangmengApiMemberServiceImpl2.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiMemberServiceImpl2/SpringCloud2wangmengApiMemberServiceImpl2.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiOrderServiceImpl/SpringCloud2wangmengApiOrderServiceImpl.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiOrderServiceImpl/SpringCloud2wangmengApiOrderServiceImpl.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiMemberService/SpringCloud2wangmengApiMemberService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiMemberService/SpringCloud2wangmengApiMemberService.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiOrderService/SpringCloud2wangmengApiOrderService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiOrderService/SpringCloud2wangmengApiOrderService.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiService.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/SpringCloud2wangmengApiService.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengCommon/SpringCloud2wangmengCommon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengCommon/SpringCloud2wangmengCommon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengParent.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengParent.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SpringCloudZuulGateway/SpringCloudZuulGateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SpringCloudZuulGateway/SpringCloudZuulGateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extDubbo/AppClient/AppClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extDubbo/AppClient/AppClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extDubbo/AppCommon/AppCommon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extDubbo/AppCommon/AppCommon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extDubbo/AppServer/AppServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extDubbo/AppServer/AppServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extDubbo/DubboCommon/DubboCommon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extDubbo/DubboCommon/DubboCommon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extDubbo/DubboRegistry/DubboRegistry.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extDubbo/DubboRegistry/DubboRegistry.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extDubbo/RpcClient/RpcClient.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extDubbo/RpcClient/RpcClient.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extDubbo/RpcServer/RpcServer.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extDubbo/RpcServer/RpcServer.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extDubbo/extDubbo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extDubbo/extDubbo.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extHashMap/extHashMap.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extHashMap/extHashMap.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extarraylist/extarraylist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extarraylist/extarraylist.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" beforeDir="false" afterPath="$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mybatisorm/mybatisorm.iml" beforeDir="false" afterPath="$PROJECT_DIR$/mybatisorm/mybatisorm.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springannotation/springannotation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springannotation/springannotation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springaop/springaop.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springaop/springaop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/springbootmail.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/springbootmail.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/Application.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/Application.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/api/SwaggerConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/api/SwaggerConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/dynamicquery/DynamicQuery.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/dynamicquery/DynamicQuery.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/dynamicquery/DynamicQueryImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/dynamicquery/DynamicQueryImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/dynamicquery/NativeQueryResultEntity.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/dynamicquery/NativeQueryResultEntity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/interceptor/MyAdapter.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/interceptor/MyAdapter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/model/Email.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/model/Email.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/model/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/model/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/ConsumeMailQueue$PollMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/ConsumeMailQueue$PollMail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/ConsumeMailQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/ConsumeMailQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/MailQueue$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/MailQueue$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/MailQueue$SingletonHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/MailQueue$SingletonHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/MailQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/queue/MailQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/redis/Receiver.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/redis/Receiver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/redis/RedisConfig$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/redis/RedisConfig$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/redis/RedisConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/redis/RedisConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/redis/RedisListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/redis/RedisListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/task/SendMail.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/task/SendMail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/CommonUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/CommonUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/Constants.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/Constants.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/MailUtil$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/MailUtil$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/MailUtil$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/MailUtil$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/MailUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/common/util/MailUtil.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/entity/OaEmail.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/entity/OaEmail.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/repository/MailRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/repository/MailRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/service/IMailService.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/service/IMailService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/service/impl/MailServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/service/impl/MailServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/web/IndexController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/web/IndexController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/web/mailController.class" beforeDir="false" afterPath="$PROJECT_DIR$/springbootmail/target/classes/com/wangmeng/mail/web/mailController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcloud20eurekaserver/springcloud20eurekaserver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springcloud20eurekaserver/springcloud20eurekaserver.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springcore/springcore.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springcore/springcore.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springioc/springioc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springioc/springioc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvc/springmvc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvc/springmvc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springmvcannotation/springmvcannotation.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springmvcannotation/springmvcannotation.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/threadjdbc/threadjdbc.iml" beforeDir="false" afterPath="$PROJECT_DIR$/threadjdbc/threadjdbc.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wangmengmemberdubboapiservice/wangmengmemberdubboapiservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wangmengmemberdubboapiservice/wangmengmemberdubboapiservice.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wangmengmemberpublicdubboapi/wangmengmemberpublicdubboapi.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wangmengmemberpublicdubboapi/wangmengmemberpublicdubboapi.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wangmengorderdubboservice/wangmengorderdubboservice.iml" beforeDir="false" afterPath="$PROJECT_DIR$/wangmengorderdubboservice/wangmengorderdubboservice.iml" afterDir="false" />
     </list>
-=======
-    <list default="true" id="f18c59f8-fc8b-4f9a-a4c2-c62de22503fb" name="Default Changelist" comment="spring.freemarker.template-loader-path=classpath:/static/template/ suffix .flt,freemarker模板，Spring task Spring3.0引进的 freemarker比thymeleaf性能好点，" />
->>>>>>> origin/master
     <ignored path="$PROJECT_DIR$/springannotation/target/" />
     <ignored path="$PROJECT_DIR$/springmvcannotation/target/" />
     <ignored path="$PROJECT_DIR$/springcore/target/" />
@@ -212,13 +420,10 @@
     <ignored path="$PROJECT_DIR$/extDubbo/AppClient/target/" />
     <ignored path="$PROJECT_DIR$/SpringBootJWT/target/" />
     <ignored path="$PROJECT_DIR$/springbootsqlite/target/" />
-<<<<<<< HEAD
     <ignored path="$PROJECT_DIR$/SpringBootElasticsearch/target/" />
-=======
     <ignored path="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/target/" />
     <ignored path="$PROJECT_DIR$/SpringBootSeckill/target/" />
     <ignored path="$PROJECT_DIR$/springbootmail/target/" />
->>>>>>> origin/master
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,90 +460,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-<<<<<<< HEAD
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/Application.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/controller/LogController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2020">
-              <caret line="1" selection-start-line="1" selection-end-line="1" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/repository/ElasticCityRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/controller/AreaController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="29" column="36" lean-forward="true" selection-start-line="29" selection-start-column="36" selection-end-line="29" selection-end-column="36" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#986#987#0" expanded="true" />
-                <element signature="e#1009#1010#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/repository/ElasticAreaRepository.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/service/impl/AreaServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="303">
-              <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/entity/Area.java">
+        <entry file="file://$PROJECT_DIR$/SpringBootFastdfs/src/main/java/com/wangmeng/fastdfs/FastDFSClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-120">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-=======
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/springbootmail/src/main/resources/application-dev.properties">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="66" />
->>>>>>> origin/master
+            <state relative-caret-position="2232">
+              <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -383,60 +509,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-<<<<<<< HEAD
-        <option value="$PROJECT_DIR$/extDubbo/DubboRegistry/src/main/java/com/wangmeng/rpc/registry/RpcDiscover.java" />
-        <option value="$PROJECT_DIR$/extDubbo/RpcClient/src/main/java/com/wangmeng/rpc/client/RpcClient.java" />
-        <option value="$PROJECT_DIR$/extDubbo/AppCommon/src/main/java/com/wangmeng/app/common/Product.java" />
-        <option value="$PROJECT_DIR$/extDubbo/AppServer/pom.xml" />
-        <option value="$PROJECT_DIR$/extDubbo/AppServer/src/main/java/com/wangmeng/app/server/ProductServiceImpl.java" />
-        <option value="$PROJECT_DIR$/extDubbo/AppServer/src/main/resources/application.xml" />
-        <option value="$PROJECT_DIR$/extDubbo/AppServer/src/main/resources/rpc.properties" />
-        <option value="$PROJECT_DIR$/extDubbo/AppClient/pom.xml" />
-        <option value="$PROJECT_DIR$/extDubbo/AppClient/src/main/resources/application.xml" />
-        <option value="$PROJECT_DIR$/extDubbo/AppClient/src/main/resources/rpc.properties" />
-        <option value="$PROJECT_DIR$/extDubbo/AppClient/src/main/java/com/wangmeng/app/client/APP.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/PersonServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/dao/PersonRepository.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/impl/PersonServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/service/PersonService.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/UsersApplication.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/JwtFilter.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/Person.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/ReqPerson.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/model/Role.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/controller/PersonController.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/IgniteCfg.java" />
-        <option value="$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/JwtCfg.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/3d9b07b8-0252-4d30-9372-ddd6df71f987/console.sql" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
-        <option value="$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/config/MyBatisConfig.java" />
-        <option value="$PROJECT_DIR$/springbootsqlite/pom.xml" />
-        <option value="$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/model/HelloModel.java" />
-        <option value="$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/service/HelloService.java" />
-        <option value="$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/App.java" />
-        <option value="$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/controller/HelloWorld.java" />
-        <option value="$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/config/MyBatisMapperScannerConfig.java" />
-        <option value="$PROJECT_DIR$/springbootsqlite/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/mapper/HelloMapper.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/pom.xml" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/entity/SysLogs.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/service/AreaService.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/repository/ElasticAreaRepository.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/service/impl/AreaServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/repository/ElasticCityRepository.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/service/CityService.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/service/impl/CityServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/kafka/Listener.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/redis/Receiver.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/service/LogService.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/repository/ElasticLogRepository.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/service/impl/LogServiceImpl.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/controller/LogController.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/controller/AreaController.java" />
-        <option value="$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/entity/Area.java" />
-=======
-        <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/unionpay/controller/UnionPayController.java" />
         <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/unionpay/service/IUnionPayService.java" />
         <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/unionpay/service/impl/UnionPayServiceImpl.java" />
         <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/src/main/java/com/wangmeng/modules/web/controller/PayController.java" />
@@ -487,7 +559,7 @@
         <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/entity/OaEmail.java" />
         <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/repository/MailRepository.java" />
         <option value="$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/service/impl/MailServiceImpl.java" />
->>>>>>> origin/master
+        <option value="$PROJECT_DIR$/SpringBootFastdfs/src/main/java/com/wangmeng/fastdfs/FastDFSClient.java" />
       </list>
     </option>
   </component>
@@ -519,11 +591,11 @@
       </map>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="85" />
+    <option name="y" value="25" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -531,7 +603,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -542,232 +613,51 @@
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootFastdfs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootFastdfs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootFastdfs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
->>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootFastdfs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
->>>>>>> origin/master
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootFastdfs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
->>>>>>> origin/master
+              <item name="fastdfs" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-              <item name="area" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
+              <item name="SpringBootFastdfs" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
->>>>>>> origin/master
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-              <item name="area" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
->>>>>>> origin/master
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-              <item name="area" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminLTE" type="462c0819:PsiDirectoryNode" />
->>>>>>> origin/master
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-              <item name="area" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminLTE" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
->>>>>>> origin/master
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-              <item name="area" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminLTE" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="alt" type="462c0819:PsiDirectoryNode" />
->>>>>>> origin/master
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-<<<<<<< HEAD
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-              <item name="city" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-              <item name="city" type="462c0819:PsiDirectoryNode" />
-              <item name="repository" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-              <item name="city" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="es" type="462c0819:PsiDirectoryNode" />
-              <item name="common" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="SpringBootElasticsearch" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-              <item name="WEB-INF" type="462c0819:PsiDirectoryNode" />
-=======
-              <item name="springbootmail" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminLTE" type="462c0819:PsiDirectoryNode" />
-              <item name="css" type="462c0819:PsiDirectoryNode" />
-              <item name="AdminLTE.css" type="620a8d5e:NestingTreeNode" />
->>>>>>> origin/master
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-<<<<<<< HEAD
-=======
       <pane id="PackagesPane" />
-      <pane id="Scope" />
->>>>>>> origin/master
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -783,11 +673,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556960166974" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/SpringBootElasticsearch/src/main" />
-=======
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-boot-mail/pom.xml" />
->>>>>>> origin/master
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -797,8 +683,17 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.annotationProcessors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="E:\code\SpringFramework.wangmeng.definition\extSpringBootJavaTomcat\target\extSpringBootJavaTomcat\WEB-INF\classes" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\code\SpringFramework.wangmeng.definition\SpringBootElasticsearch\src\main" />
+      <recent name="D:\code\SpringFramework.wangmeng.definition\SpringBootElasticsearch\src\main\resources" />
+      <recent name="D:\code\SpringFramework.wangmeng.definition\SpringBootElasticsearch\src\main\java\com\wangmeng\es" />
+      <recent name="D:\code\SpringFramework.wangmeng.definition\springbootsqlite\src\main\java\com\wangmeng\model" />
+      <recent name="D:\code\SpringFramework.wangmeng.definition\springbootsqlite\src\main\java\com\wangmeng\config" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\springbootmail\src\main" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\springbootmail\src\main\resources" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\springbootmail\src\main\java\com\wangmeng\mail" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill" />
+      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill\src\main\resources" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.wangmeng.service" />
@@ -807,20 +702,8 @@
       <recent name="com.wangmeng.jwt" />
       <recent name="com.wangmeng.jwt.service.impl" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-<<<<<<< HEAD
-      <recent name="D:\code\SpringFramework.wangmeng.definition\SpringBootElasticsearch\src\main" />
-      <recent name="D:\code\SpringFramework.wangmeng.definition\SpringBootElasticsearch\src\main\resources" />
-      <recent name="D:\code\SpringFramework.wangmeng.definition\SpringBootElasticsearch\src\main\java\com\wangmeng\es" />
-      <recent name="D:\code\SpringFramework.wangmeng.definition\springbootsqlite\src\main\java\com\wangmeng\model" />
-      <recent name="D:\code\SpringFramework.wangmeng.definition\springbootsqlite\src\main\java\com\wangmeng\config" />
-=======
-      <recent name="E:\code\SpringFramework.wangmeng.definition\springbootmail\src\main" />
-      <recent name="E:\code\SpringFramework.wangmeng.definition\springbootmail\src\main\resources" />
-      <recent name="E:\code\SpringFramework.wangmeng.definition\springbootmail\src\main\java\com\wangmeng\mail" />
-      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill" />
-      <recent name="E:\code\SpringFramework.wangmeng.definition\SpringBootSeckill\src\main\resources" />
->>>>>>> origin/master
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\code\SpringFramework.wangmeng.definition\extSpringBootJavaTomcat\target\extSpringBootJavaTomcat\WEB-INF\classes" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -849,53 +732,20 @@
       </list>
     </option>
   </component>
-<<<<<<< HEAD
-  <component name="RunManager" selected="Spring Boot.Application">
-=======
-  <component name="RunManager" selected="Spring Boot.Application (2)">
->>>>>>> origin/master
-    <configuration name="APP.testGet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AppClient" />
+  <component name="RunManager" selected="Application.FastDFSClient">
+    <configuration name="FastDFSClient" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.wangmeng.fastdfs.FastDFSClient" />
+      <module name="SpringBootFastdfs" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.wangmeng.app.client.*" />
+          <option name="PATTERN" value="com.wangmeng.fastdfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.wangmeng.app.client" />
-      <option name="MAIN_CLASS_NAME" value="com.wangmeng.app.client.APP" />
-      <option name="METHOD_NAME" value="testGet" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="APP.testUpdate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="AppClient" />
-=======
-    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="springbootsqlite" />
->>>>>>> origin/master
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangmeng.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-<<<<<<< HEAD
-      <option name="PACKAGE_NAME" value="com.wangmeng.app.client" />
-      <option name="MAIN_CLASS_NAME" value="com.wangmeng.app.client.APP" />
-      <option name="METHOD_NAME" value="testUpdate" />
-      <option name="TEST_OBJECT" value="method" />
-=======
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.App" />
->>>>>>> origin/master
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
     <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springbootsqlite" />
       <extension name="coverage">
@@ -905,32 +755,11 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.App" />
-=======
-    <configuration name="Application (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootSeckill" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangmeng.seckill.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.seckill.Application" />
->>>>>>> origin/master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="SpringBootElasticsearch" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.wangmeng.es.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.es.Application" />
-=======
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true" />
     <configuration name="Application (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springbootmail" />
       <extension name="coverage">
@@ -944,10 +773,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="SpringBootElasticsearch" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.wangmeng.es.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.es.Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="SpringBootPayUnionWxAlipay" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.wangmeng.Application" />
->>>>>>> origin/master
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1058,38 +899,21 @@
       </method>
     </configuration>
     <list>
-<<<<<<< HEAD
-      <item itemvalue="JUnit.APP.testUpdate" />
-=======
->>>>>>> origin/master
-      <item itemvalue="JUnit.APP.testGet" />
       <item itemvalue="Spring Boot.SpringbootsqliteApplication" />
-      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Spring Boot.Application (2)" />
       <item itemvalue="Spring Boot.UsersApplication" />
       <item itemvalue="Spring Boot.App" />
-      <item itemvalue="Spring Boot.Application (1)" />
-      <item itemvalue="Tomcat Server.Tomcat 7.0" />
-<<<<<<< HEAD
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Tomcat Server.Tomcat 7.0" />
+      <item itemvalue="Application.FastDFSClient" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.FastDFSClient" />
+        <item itemvalue="Spring Boot.Application (2)" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="Spring Boot.App" />
         <item itemvalue="Spring Boot.UsersApplication" />
-        <item itemvalue="JUnit.APP.testGet" />
-        <item itemvalue="JUnit.APP.testUpdate" />
-=======
-      <item itemvalue="Spring Boot.Application (2)" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Spring Boot.Application (2)" />
-        <item itemvalue="Spring Boot.Application (1)" />
-        <item itemvalue="Spring Boot.App" />
-        <item itemvalue="Spring Boot.UsersApplication" />
-        <item itemvalue="JUnit.APP.testGet" />
->>>>>>> origin/master
       </list>
     </recent_temporary>
   </component>
@@ -1175,18 +999,15 @@
       <workItem from="1556204536307" duration="3242000" />
       <workItem from="1556342614876" duration="7111000" />
       <workItem from="1556501319202" duration="4598000" />
-<<<<<<< HEAD
       <workItem from="1556518354937" duration="2826000" />
       <workItem from="1557148210391" duration="29000" />
       <workItem from="1557148275091" duration="30000" />
       <workItem from="1557148320993" duration="1476000" />
-=======
       <workItem from="1556518354937" duration="572000" />
       <workItem from="1556726273442" duration="6761000" />
       <workItem from="1556806350078" duration="2867000" />
       <workItem from="1556882432845" duration="6358000" />
       <workItem from="1556945244604" duration="4892000" />
->>>>>>> origin/master
     </task>
     <task id="LOCAL-00001" summary="Spring annotation application">
       <created>1552661452000</created>
@@ -1363,16 +1184,6 @@
       <option name="project" value="LOCAL" />
       <updated>1556207133766</updated>
     </task>
-<<<<<<< HEAD
-    <task id="LOCAL-00026" summary="SpringBoot整合sqlite,嵌入式关系数据库，create digram database">
-      <created>1556519311960</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1556519311960</updated>
-    </task>
-    <option name="localTasksCounter" value="27" />
-=======
     <task id="LOCAL-00026" summary="支付服务 支付宝 SDK 微信 http 银联 http maven 从中央库下载不下来，可以本地下载 然后再工作空间引用">
       <created>1556808614613</created>
       <option name="number" value="00026" />
@@ -1387,8 +1198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556905662571</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
->>>>>>> origin/master
+    <task id="LOCAL-00028" summary="SpringBootFastdfs,分布式文件系统，可以把jpg转化为png，因为它底层采用二进制流处理，nginx整合fastdfs，如果遇到文件格式不对的情况的，可能是mod_nginx_fastdfs的配置文件，有个参数url_have_group=true,要设置true，否则报400,Bad Request错误">
+      <created>1557456056295</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1557456056295</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1424,11 +1241,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-<<<<<<< HEAD
-    <option name="totallyTimeSpent" value="556962000" />
-=======
-    <option name="totallyTimeSpent" value="574051000" />
->>>>>>> origin/master
+    <option name="totallyTimeSpent" value="574693000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1440,18 +1253,14 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-<<<<<<< HEAD
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.45439914" />
-=======
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.3267776" />
->>>>>>> origin/master
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.25" />
       <window_info id="Structure" order="6" sideWeight="0.5954198" side_tool="true" weight="0.39788198" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="0" />
@@ -1466,15 +1275,11 @@
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Run" order="11" weight="0.32569557" />
-<<<<<<< HEAD
-      <window_info active="true" anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" visible="true" weight="0.36483517" />
-=======
-      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" weight="0.3633388" />
->>>>>>> origin/master
+      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" visible="true" weight="0.36260623" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.3289689" />
-      <window_info anchor="bottom" id="Application Servers" order="16" weight="0.32767403" />
+      <window_info anchor="bottom" id="Application Servers" order="16" weight="0.32719547" />
       <window_info anchor="bottom" id="Java Enterprise" order="17" weight="0.3293718" />
       <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Console" order="19" weight="0.32967034" />
@@ -1483,11 +1288,7 @@
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Key Promoter X" order="3" weight="0.3290469" />
-<<<<<<< HEAD
-      <window_info anchor="right" id="Database" order="4" weight="0.10354077" />
-=======
       <window_info anchor="right" id="Database" order="4" weight="0.102874435" />
->>>>>>> origin/master
       <window_info anchor="right" id="Palette&#9;" order="5" />
       <window_info anchor="right" id="Theme Preview" order="6" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
@@ -1586,11 +1387,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-<<<<<<< HEAD
-    <MESSAGE value="Spring annotation application add @ComponentScan @Filter FilterType.CUSTOM  implements TypeFilter,@Scope--》prototype,singleton,调用方法创建对象的时机" />
     <MESSAGE value="Spring annotation application add @Lazy @Bean 懒加载，不在IOC容器启动时加载，而是在第一次获取时加载，并初始化" />
-=======
->>>>>>> origin/master
     <MESSAGE value="Spring annotation application add @Conditional implements Condition Type and Method,@Import类似于@Bean，都是导入第三方包的组件，id默认是全类名" />
     <MESSAGE value="Spring annotation application add @Import implements ImportSelector 返回类的全类名，还是容器注册，implements ImportBeanDefinitionRegistrar 手动注册" />
     <MESSAGE value="Spring annotation application add @Bean implements FactoryBean ===&gt;getObject getObjectType isSingleton &amp;colorFactoryBean" />
@@ -1613,15 +1410,12 @@
     <MESSAGE value="Spring Boot整合Dubbo，配置文件dubbo application,protocol,register,service,reference;Spring Boot 整合ElasticSearch，@EnableElasticSearchRepository" />
     <MESSAGE value="test git commit" />
     <MESSAGE value="手动写一个dubbo框架，一次请求一次scoket连接 动态代理 发请求 编解码 序列化反序列化 requestId methodName parameterType args className(request),requestId,responseId,Object(response)" />
-<<<<<<< HEAD
     <MESSAGE value="SpringBoot整合sqlite,嵌入式关系数据库，create digram database" />
-    <option name="LAST_COMMIT_MESSAGE" value="SpringBoot整合sqlite,嵌入式关系数据库，create digram database" />
-=======
     <MESSAGE value="支付服务 支付宝 SDK 微信 http 银联 http maven 从中央库下载不下来，可以本地下载 然后再工作空间引用" />
     <MESSAGE value="秒杀案例，redisTemplate默认的connectionFactory的HOST 一定要写localhost 不能写ip，否则报get not resource pool,disruptor队列 不需要加锁，但是会出现少卖，性能高，kafkaTemplate好像不太行，总是报错，用JmsTemplate可以的" />
     <MESSAGE value="spring.freemarker.template-loader-path=classpath:/static/template/ suffix .flt,freemarker模板，Spring task Spring3.0引进的 freemarker比thymeleaf性能好点，" />
-    <option name="LAST_COMMIT_MESSAGE" value="spring.freemarker.template-loader-path=classpath:/static/template/ suffix .flt,freemarker模板，Spring task Spring3.0引进的 freemarker比thymeleaf性能好点，" />
->>>>>>> origin/master
+    <MESSAGE value="SpringBootFastdfs,分布式文件系统，可以把jpg转化为png，因为它底层采用二进制流处理，nginx整合fastdfs，如果遇到文件格式不对的情况的，可能是mod_nginx_fastdfs的配置文件，有个参数url_have_group=true,要设置true，否则报400,Bad Request错误" />
+    <option name="LAST_COMMIT_MESSAGE" value="SpringBootFastdfs,分布式文件系统，可以把jpg转化为png，因为它底层采用二进制流处理，nginx整合fastdfs，如果遇到文件格式不对的情况的，可能是mod_nginx_fastdfs的配置文件，有个参数url_have_group=true,要设置true，否则报400,Bad Request错误" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1629,7 +1423,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.java</url>
           <line>240</line>
-          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator" method="postProcessBeforeInstantiation">
+          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="3" />
@@ -1637,7 +1431,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.java</url>
           <line>293</line>
-          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator" method="postProcessAfterInitialization">
+          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="4" />
@@ -1645,7 +1439,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAutoProxyCreator.java</url>
           <line>203</line>
-          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator" method="setBeanFactory">
+          <properties class="org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="6" />
@@ -1653,7 +1447,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/framework/autoproxy/AbstractAdvisorAutoProxyCreator.java</url>
           <line>53</line>
-          <properties class="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator" method="setBeanFactory">
+          <properties class="org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="7" />
@@ -1661,7 +1455,7 @@
         <line-breakpoint type="java-method">
           <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-aop/4.3.12.RELEASE/spring-aop-4.3.12.RELEASE-sources.jar!/org/springframework/aop/aspectj/annotation/AnnotationAwareAspectJAutoProxyCreator.java</url>
           <line>74</line>
-          <properties class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator" method="initBeanFactory">
+          <properties class="org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator">
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="10" />
@@ -1680,439 +1474,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/controller/SecureController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/config/IgniteCfg.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="23" column="13" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootJWT/src/main/java/com/wangmeng/jwt/dao/PersonRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-=======
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/common/aop/LockAspect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="34" column="40" selection-start-line="34" selection-start-column="40" selection-end-line="34" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.m2/repository/org/springframework/kafka/spring-kafka/1.3.5.RELEASE/spring-kafka-1.3.5.RELEASE.jar!/org/springframework/kafka/core/KafkaTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-285">
-          <caret line="34" column="13" selection-start-line="34" selection-start-column="13" selection-end-line="34" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/web/SeckillController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="268" column="40" lean-forward="true" selection-start-line="268" selection-start-column="40" selection-end-line="268" selection-end-column="40" />
->>>>>>> origin/master
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/out/artifacts/servlet_3_0_war_exploded/WEB-INF/classes/META-INF/services/javax.servlet.ServletContainerInitializer">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringCloud2Pay/src/main/java/com/wangmeng/api/pay/AppPay.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/springbootsqlite/springbootsqlite/SpringbootsqliteApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/test/java/springbootsqlite/springbootsqlite/SpringbootsqliteApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/3d9b07b8-0252-4d30-9372-ddd6df71f987/console.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3d9b07b8-0252-4d30-9372-ddd6df71f987/schema/main/table/hello.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="13" selection-start-line="1" selection-start-column="13" selection-end-line="1" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="41" column="21" selection-start-line="41" selection-start-column="21" selection-end-line="41" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.1.4.RELEASE/spring-boot-autoconfigure-2.1.4.RELEASE.jar!/org/springframework/boot/autoconfigure/jdbc/DataSourceProperties.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/config/MyBatisConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="23" lean-forward="true" selection-start-line="15" selection-start-column="23" selection-end-line="15" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/model/ReqBody.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/model/HelloModel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/service/HelloService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-=======
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1368" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/activemq/ActiveMQConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/web/SeckillDistributedController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1133">
-          <caret line="27" column="13" selection-start-line="27" selection-start-column="13" selection-end-line="27" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/activemq/ActiveMQSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="93">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/redis/RedisSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/redis/RedisConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/disruptor/SeckillEventConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="16" column="29" lean-forward="true" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/ISeckillService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="40" column="11" selection-start-line="40" selection-start-column="11" selection-end-line="40" selection-end-column="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/service/impl/SeckillServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="61" column="18" selection-start-line="61" selection-start-column="18" selection-end-line="61" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/disruptor/SeckillEvent.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-98">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/disruptor/DisruptorUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="25" column="53" selection-start-line="25" selection-start-column="53" selection-end-line="25" selection-end-column="53" />
->>>>>>> origin/master
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/App.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-=======
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/kafka/KafkaConsumer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="30" column="50" selection-start-line="30" selection-start-column="50" selection-end-line="30" selection-end-column="50" />
->>>>>>> origin/master
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#324#325#0" expanded="true" />
-            <element signature="e#377#378#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="das://3d9b07b8-0252-4d30-9372-ddd6df71f987/schema/main/table/hello">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" column="109" selection-start-line="1" selection-start-column="109" selection-end-line="1" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/mapper/HelloMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="15" column="60" selection-start-line="15" selection-start-column="60" selection-end-line="15" selection-end-column="60" />
-          <folding>
-            <element signature="imports" expanded="true" />
-=======
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/java/com/wangmeng/seckill/queue/kafka/KafkaSender.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="226">
-          <caret line="16" column="50" lean-forward="true" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/templates/1000.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/static/template/goods.flt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/logback-spring.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1368" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/static/goods/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1732">
-          <folding>
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#span#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#b#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#b#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#img#0;n#p#0;n#!!top" expanded="true" />
->>>>>>> origin/master
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/config/MyBatisMapperScannerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="16" column="62" selection-start-line="16" selection-start-column="62" selection-end-line="16" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://3d9b07b8-0252-4d30-9372-ddd6df71f987/schema/main/table/sqlite_master">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootsqlite/src/main/java/com/wangmeng/controller/HelloWorld.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="30" column="28" selection-start-line="30" selection-start-column="28" selection-end-line="30" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#871#872#0" expanded="true" />
-            <element signature="e#918#919#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/doc/jenkins">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5116" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4440">
-          <caret line="148" column="12" selection-start-line="148" selection-start-column="12" selection-end-line="148" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/entity/Pages.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/entity/SysLogs.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/service/AreaService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-=======
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/static/iview/iview.min.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootSeckill/src/main/resources/static/js/webSocket.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="33" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootmail/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="504">
-          <caret line="125" column="20" lean-forward="true" selection-start-line="125" selection-start-column="20" selection-end-line="125" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/redis/RedisConfig.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/api/SwaggerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="19" column="71" selection-start-line="19" selection-start-column="71" selection-end-line="19" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/dynamicquery/DynamicQuery.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/dynamicquery/DynamicQueryImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="356">
-          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
->>>>>>> origin/master
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-<<<<<<< HEAD
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/entity/City.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/service/impl/CityServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/service/CityService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/constant/PageConstant.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/interceptor/MyAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -2124,7 +1485,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="720">
           <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
-=======
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/dynamicquery/NativeQueryResultEntity.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="95">
@@ -2164,14 +1527,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" selection-start-line="2" selection-end-line="2" />
->>>>>>> origin/master
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/common/redis/Receiver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -2217,7 +1578,10 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2235#2244#0" expanded="true" />
-=======
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/queue/MailQueue.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="186">
@@ -2261,12 +1625,11 @@
           <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
->>>>>>> origin/master
+            &gt;&gt;&gt;&gt;&gt;&gt;&gt; origin/master
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/service/LogService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2311,7 +1674,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="6" column="74" selection-start-line="6" selection-start-column="74" selection-end-line="6" selection-end-column="74" />
-=======
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/common/util/Constants.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -2350,36 +1715,36 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-418">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
->>>>>>> origin/master
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/area/service/impl/AreaServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
           <caret line="37" column="28" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-=======
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/service/impl/MailServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="205">
           <caret line="33" column="8" lean-forward="true" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="8" />
->>>>>>> origin/master
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/log/controller/LogController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2020">
           <caret line="1" selection-start-line="1" selection-end-line="1" />
-=======
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springbootmail/src/main/java/com/wangmeng/mail/web/IndexController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
@@ -2394,14 +1759,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="285">
           <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
->>>>>>> origin/master
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/SpringBootElasticsearch/src/main/java/com/wangmeng/es/city/repository/ElasticCityRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -2428,7 +1791,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-120">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-=======
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/springbootmail/src/main/resources/sql/mail.sql">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -2449,7 +1814,145 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="28" selection-start-line="28" selection-end-line="28" selection-end-column="66" />
->>>>>>> origin/master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/misc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="58" column="63" selection-start-line="58" selection-start-column="63" selection-end-line="58" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-174">
+          <caret line="2351" column="12" selection-start-line="2351" selection-start-column="12" selection-end-line="2351" selection-end-column="12" />
+          <folding>
+            <element signature="e#19311#19315#0" expanded="true" />
+            <element signature="e#19315#19319#0" expanded="true" />
+            <element signature="e#19319#19323#0" expanded="true" />
+            <element signature="e#19323#19327#0" expanded="true" />
+            <element signature="e#19327#19331#0" expanded="true" />
+            <element signature="e#19331#19335#0" expanded="true" />
+            <element signature="e#19335#19339#0" expanded="true" />
+            <element signature="e#43410#43414#0" expanded="true" />
+            <element signature="e#43414#43418#0" expanded="true" />
+            <element signature="e#43418#43422#0" expanded="true" />
+            <element signature="e#43422#43426#0" expanded="true" />
+            <element signature="e#43426#43430#0" expanded="true" />
+            <element signature="e#43430#43434#0" expanded="true" />
+            <element signature="e#43434#43438#0" expanded="true" />
+            <element signature="e#58306#58310#0" expanded="true" />
+            <element signature="e#58310#58314#0" expanded="true" />
+            <element signature="e#58314#58318#0" expanded="true" />
+            <element signature="e#58318#58322#0" expanded="true" />
+            <element signature="e#58322#58326#0" expanded="true" />
+            <element signature="e#58326#58330#0" expanded="true" />
+            <element signature="e#58330#58334#0" expanded="true" />
+            <element signature="e#61825#61829#0" expanded="true" />
+            <element signature="e#61829#61833#0" expanded="true" />
+            <element signature="e#61833#61837#0" expanded="true" />
+            <element signature="e#61837#61841#0" expanded="true" />
+            <element signature="e#61841#61845#0" expanded="true" />
+            <element signature="e#61845#61849#0" expanded="true" />
+            <element signature="e#61849#61853#0" expanded="true" />
+            <element signature="e#88159#88163#0" expanded="true" />
+            <element signature="e#88163#88167#0" expanded="true" />
+            <element signature="e#88167#88171#0" expanded="true" />
+            <element signature="e#88171#88175#0" expanded="true" />
+            <element signature="e#88175#88179#0" expanded="true" />
+            <element signature="e#88179#88183#0" expanded="true" />
+            <element signature="e#88183#88187#0" expanded="true" />
+            <element signature="e#102902#102906#0" expanded="true" />
+            <element signature="e#102906#102910#0" expanded="true" />
+            <element signature="e#102910#102914#0" expanded="true" />
+            <element signature="e#102914#102918#0" expanded="true" />
+            <element signature="e#102918#102922#0" expanded="true" />
+            <element signature="e#102922#102926#0" expanded="true" />
+            <element signature="e#102926#102930#0" expanded="true" />
+            <element signature="e#109165#109169#0" expanded="true" />
+            <element signature="e#109169#109173#0" expanded="true" />
+            <element signature="e#109173#109177#0" expanded="true" />
+            <element signature="e#109177#109181#0" expanded="true" />
+            <element signature="e#109181#109185#0" expanded="true" />
+            <element signature="e#109185#109189#0" expanded="true" />
+            <element signature="e#109189#109193#0" expanded="true" />
+            <element signature="e#119152#119156#0" expanded="true" />
+            <element signature="e#119156#119160#0" expanded="true" />
+            <element signature="e#119160#119164#0" expanded="true" />
+            <element signature="e#119164#119168#0" expanded="true" />
+            <element signature="e#119168#119172#0" expanded="true" />
+            <element signature="e#119172#119176#0" expanded="true" />
+            <element signature="e#119176#119180#0" expanded="true" />
+            <element signature="e#120127#120131#0" expanded="true" />
+            <element signature="e#120131#120135#0" expanded="true" />
+            <element signature="e#120135#120139#0" expanded="true" />
+            <element signature="e#120139#120143#0" expanded="true" />
+            <element signature="e#120143#120147#0" expanded="true" />
+            <element signature="e#120147#120151#0" expanded="true" />
+            <element signature="e#120151#120155#0" expanded="true" />
+            <element signature="e#129109#129113#0" expanded="true" />
+            <element signature="e#129113#129117#0" expanded="true" />
+            <element signature="e#129117#129121#0" expanded="true" />
+            <element signature="e#129121#129125#0" expanded="true" />
+            <element signature="e#129125#129129#0" expanded="true" />
+            <element signature="e#129129#129133#0" expanded="true" />
+            <element signature="e#129133#129137#0" expanded="true" />
+            <element signature="e#134360#134364#0" expanded="true" />
+            <element signature="e#134364#134368#0" expanded="true" />
+            <element signature="e#134368#134372#0" expanded="true" />
+            <element signature="e#134372#134376#0" expanded="true" />
+            <element signature="e#134376#134380#0" expanded="true" />
+            <element signature="e#134380#134384#0" expanded="true" />
+            <element signature="e#134384#134388#0" expanded="true" />
+            <element signature="e#139863#139867#0" expanded="true" />
+            <element signature="e#139867#139871#0" expanded="true" />
+            <element signature="e#139871#139875#0" expanded="true" />
+            <element signature="e#139875#139879#0" expanded="true" />
+            <element signature="e#139879#139883#0" expanded="true" />
+            <element signature="e#139883#139887#0" expanded="true" />
+            <element signature="e#139887#139891#0" expanded="true" />
+            <element signature="e#144805#144809#0" expanded="true" />
+            <element signature="e#144809#144813#0" expanded="true" />
+            <element signature="e#144813#144817#0" expanded="true" />
+            <element signature="e#144817#144821#0" expanded="true" />
+            <element signature="e#144821#144825#0" expanded="true" />
+            <element signature="e#144825#144829#0" expanded="true" />
+            <element signature="e#144829#144833#0" expanded="true" />
+            <element signature="e#150242#150246#0" expanded="true" />
+            <element signature="e#150246#150250#0" expanded="true" />
+            <element signature="e#150250#150254#0" expanded="true" />
+            <element signature="e#150254#150258#0" expanded="true" />
+            <element signature="e#150258#150262#0" expanded="true" />
+            <element signature="e#150262#150266#0" expanded="true" />
+            <element signature="e#150266#150270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootFastdfs/src/main/resources/fdfs_client.conf">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootFastdfs/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="16" column="36" selection-start-line="14" selection-start-column="26" selection-end-line="16" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.m2/settings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1367" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootFastdfs/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SpringBootFastdfs/src/main/java/com/wangmeng/fastdfs/FastDFSClient.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2232">
+          <caret line="140" column="13" lean-forward="true" selection-start-line="140" selection-start-column="13" selection-end-line="140" selection-end-column="13" />
         </state>
       </provider>
     </entry>
