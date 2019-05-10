@@ -1,0 +1,28 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="SpringBootXunfeiMsi:war exploded">
+    <output-path>$PROJECT_DIR$/SpringBootXunfeiMsi/target/xufei_msc</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <exploded>true</exploded>
+        <module>SpringBootXunfeiMsi</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="SpringBootXunfeiMsi" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: com.youbenzi:MDTool:1.2.0" />
+          <element id="library" level="project" name="Maven: org.apache.commons:commons-lang3:3.4" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.41" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/SpringBootXunfeiMsi/target/xufei_msc/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="SpringBootXunfeiMsi/web/Web" />
+    </root>
+  </artifact>
+</component>

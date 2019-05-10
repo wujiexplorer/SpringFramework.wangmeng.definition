@@ -53,13 +53,11 @@
         <option value="$PROJECT_DIR$/extDubbo/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootJWT/pom.xml" />
         <option value="$PROJECT_DIR$/springbootsqlite/pom.xml" />
-<<<<<<< HEAD
         <option value="$PROJECT_DIR$/SpringBootElasticsearch/pom.xml" />
-=======
+
         <option value="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootSeckill/pom.xml" />
         <option value="$PROJECT_DIR$/springbootmail/pom.xml" />
->>>>>>> origin/master
       </list>
     </option>
   </component>

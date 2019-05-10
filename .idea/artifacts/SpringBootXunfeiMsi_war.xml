@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="SpringBootXunfeiMsi:war">
+    <output-path>$PROJECT_DIR$/SpringBootXunfeiMsi/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>SpringBootXunfeiMsi</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="xufei_msc.war">
+      <element id="artifact" artifact-name="SpringBootXunfeiMsi:war exploded" />
+    </root>
+  </artifact>
+</component>
