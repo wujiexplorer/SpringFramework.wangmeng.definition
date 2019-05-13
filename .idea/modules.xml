@@ -50,6 +50,7 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" filepath="$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" />
       <module fileurl="file://$PROJECT_DIR$/extDubbo/extDubbo.iml" filepath="$PROJECT_DIR$/extDubbo/extDubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHashMap/extHashMap.iml" filepath="$PROJECT_DIR$/extHashMap/extHashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extHttpServer/extHttpServer.iml" filepath="$PROJECT_DIR$/extHttpServer/extHttpServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" filepath="$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" filepath="$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/extarraylist/extarraylist.iml" filepath="$PROJECT_DIR$/extarraylist/extarraylist.iml" />
@@ -59,7 +60,6 @@
       <module fileurl="file://$PROJECT_DIR$/springannotation/springannotation.iml" filepath="$PROJECT_DIR$/springannotation/springannotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/springaop/springaop.iml" filepath="$PROJECT_DIR$/springaop/springaop.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootmail/springbootmail.iml" filepath="$PROJECT_DIR$/springbootmail/springbootmail.iml" />
-      <module fileurl="file://$PROJECT_DIR$/springbootsqlite/springbootsqlite.iml" filepath="$PROJECT_DIR$/springbootsqlite/springbootsqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootsqlite/springbootsqlite.iml" filepath="$PROJECT_DIR$/springbootsqlite/springbootsqlite.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcloud20eurekaserver/springcloud20eurekaserver.iml" filepath="$PROJECT_DIR$/springcloud20eurekaserver/springcloud20eurekaserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/springcore/springcore.iml" filepath="$PROJECT_DIR$/springcore/springcore.iml" />

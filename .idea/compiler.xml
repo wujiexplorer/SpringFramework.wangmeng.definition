@@ -55,6 +55,7 @@
         <module name="SpringCloud2wangmengApiMemberServiceImpl2" />
         <module name="LicenseAppServer" />
         <module name="SpringBoot2EurekaMember" />
+        <module name="extHttpServer" />
         <module name="LicenseServer" />
         <module name="AppServer" />
         <module name="springbootmail" />
@@ -78,6 +79,7 @@
       <module name="extarraylist" target="8" />
       <module name="extDubbo" target="1.8" />
       <module name="extHashMap" target="7" />
+      <module name="extHttpServer" target="8" />
       <module name="extlinkedlist" target="1.8" />
       <module name="extSpringBoot" target="1.8" />
       <module name="extSpringBootJavaTomcat" target="1.8" />
