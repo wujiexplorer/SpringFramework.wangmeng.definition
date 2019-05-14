@@ -7,67 +7,70 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringCloud2ZookeeperOrder" />
-        <module name="extSpringBoot" />
-        <module name="SpringCloud2wangmengApiOrderService" />
-        <module name="RpcClient" />
-        <module name="SpringCloud2wangmengCommon" />
-        <module name="mybatisorm" />
-        <module name="springmvcannotation" />
-        <module name="AppClient" />
-        <module name="extSpringBootJavaTomcat" />
         <module name="SpringBootJWT" />
-        <module name="DubboCommon" />
-        <module name="RpcServer" />
-        <module name="SpringCloud2ZookeeperMember2" />
-        <module name="SpringBoot2EurekaMember2" />
-        <module name="SpringCloud2ConsulMember" />
-        <module name="SpringCloud2wangmengApiMemberServiceImpl" />
-        <module name="wangmengorderdubboservice" />
-        <module name="SpringBoot2ElasticSearch" />
-        <module name="SpringCloud2Pay" />
-        <module name="SpringCloud2ZookeeperMember" />
-        <module name="DubboRegistry" />
-        <module name="SpringCloud20Order" />
-        <module name="wangmengmemberpublicdubboapi" />
-        <module name="springannotation" />
-        <module name="threadjdbc" />
-        <module name="SpringCloud2EurekaServer9001" />
-        <module name="springioc" />
-        <module name="SpringBoot2Swagger" />
-        <module name="SpringBoot2EurekaOrder" />
-        <module name="SpringCLoud2ConfigClient" />
-        <module name="SpringBootDoc" />
-        <module name="SpringBootQuartz" />
-        <module name="springmvc" />
-        <module name="springbootsqlite" />
-        <module name="SpringCloud2wangmengApiMemberService" />
-        <module name="SpringCloud2ZuulGateway2" />
-        <module name="springaop" />
-        <module name="wangmengmemberdubboapiservice" />
-        <module name="SpringBootXunfeiMsi" />
-        <module name="AppCommon" />
-        <module name="extarraylist" />
-        <module name="SpringCloud2wangmengApiOrderServiceImpl" />
-        <module name="SpringBoot20EurekaServer" />
-        <module name="SpringBootPayUnionWxAlipay" />
-        <module name="SpringBootElasticsearch" />
-        <module name="SpringCloud2wangmengApiMemberServiceImpl2" />
+        <module name="springbootstarter" />
         <module name="LicenseAppServer" />
-        <module name="SpringBoot2EurekaMember" />
-        <module name="extHttpServer" />
-        <module name="LicenseServer" />
         <module name="AppServer" />
-        <module name="springbootmail" />
-        <module name="extHashMap" />
-        <module name="SpringBootSeckill" />
-        <module name="SpringCloud2Member2" />
-        <module name="SpringCloudZuulGateway" />
-        <module name="extlinkedlist" />
-        <module name="springcloud20eurekaserver" />
+        <module name="extarraylist" />
+        <module name="SpringCloud2Pay" />
+        <module name="springbootstarterconfigurer" />
+        <module name="springbootstartertest" />
+        <module name="SpringCLoud2ConfigClient" />
+        <module name="LicenseServer" />
         <module name="springcore" />
-        <module name="SpringCloudMember" />
+        <module name="RpcClient" />
+        <module name="SpringBoot2Swagger" />
+        <module name="extSpringBoot" />
+        <module name="threadjdbc" />
+        <module name="springioc" />
+        <module name="springcloud20eurekaserver" />
+        <module name="SpringCloud2wangmengApiMemberServiceImpl2" />
+        <module name="extlinkedlist" />
+        <module name="SpringCloud2wangmengCommon" />
+        <module name="wangmengmemberpublicdubboapi" />
+        <module name="SpringBoot20EurekaServer" />
+        <module name="wangmengorderdubboservice" />
+        <module name="springaop" />
+        <module name="SpringCloudZuulGateway" />
+        <module name="springbootmail" />
+        <module name="SpringCloud2ZookeeperMember" />
+        <module name="SpringBoot2EurekaMember" />
+        <module name="DubboCommon" />
+        <module name="AppClient" />
+        <module name="SpringBoot2EurekaMember2" />
+        <module name="wangmengmemberdubboapiservice" />
+        <module name="SpringCloud2wangmengApiMemberServiceImpl" />
+        <module name="SpringBootPayUnionWxAlipay" />
+        <module name="DubboRegistry" />
+        <module name="SpringBootQuartz" />
         <module name="SpringCloud2ConfigServer" />
+        <module name="mybatisorm" />
+        <module name="SpringCloud2ZookeeperOrder" />
+        <module name="SpringCloudMember" />
+        <module name="SpringBootXunfeiMsi" />
+        <module name="SpringCloud2wangmengApiOrderServiceImpl" />
+        <module name="extHttpServer" />
+        <module name="springmvc" />
+        <module name="SpringCloud2EurekaServer9001" />
+        <module name="SpringCloud2ConsulMember" />
+        <module name="springannotation" />
+        <module name="springmvcannotation" />
+        <module name="SpringBootDoc" />
+        <module name="SpringBoot2EurekaOrder" />
+        <module name="SpringCloud2ZookeeperMember2" />
+        <module name="RpcServer" />
+        <module name="SpringCloud2Member2" />
+        <module name="SpringCloud2wangmengApiMemberService" />
+        <module name="SpringBoot2ElasticSearch" />
+        <module name="SpringCloud2ZuulGateway2" />
+        <module name="SpringCloud20Order" />
+        <module name="SpringBootSeckill" />
+        <module name="SpringCloud2wangmengApiOrderService" />
+        <module name="springbootsqlite" />
+        <module name="extHashMap" />
+        <module name="extSpringBootJavaTomcat" />
+        <module name="AppCommon" />
+        <module name="SpringBootElasticsearch" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -106,6 +109,9 @@
       <module name="SpringBootQuartz" target="1.8" />
       <module name="SpringBootSeckill" target="1.8" />
       <module name="springbootsqlite" target="1.8" />
+      <module name="springbootstarter" target="1.8" />
+      <module name="springbootstarterconfigurer" target="1.8" />
+      <module name="springbootstartertest" target="1.8" />
       <module name="SpringBootXunfeiMsi" target="1.8" />
       <module name="springcloud20eurekaserver" target="1.8" />
       <module name="SpringCloud20Order" target="1.8" />
@@ -172,6 +178,8 @@
       <module name="SpringCloudZuulGateway" options="-parameters" />
       <module name="extSpringBoot" options="-parameters" />
       <module name="springbootsqlite" options="-parameters" />
+      <module name="springbootstarterconfigurer" options="-parameters" />
+      <module name="springbootstartertest" options="" />
       <module name="springcloud20eurekaserver" options="-parameters" />
     </option>
   </component>

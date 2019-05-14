@@ -49,7 +49,7 @@ public class ITreeConfig {
     public static void init() {
         Properties properties = new Properties();
         try {
-            InputStream in = APPLICATION_CLASS.getResourceAsStream("D:/code/SpringFramework.wangmeng.definition/extHttpServer/src/main/resources/config/itree-config.properties");
+            InputStream in = APPLICATION_CLASS.getResourceAsStream(DEFAULT_LOCALTION);
             if (in != null) {
                 properties.load(in);
                 if (properties.getProperty(INDEX_PAGE_KEY) != null) {
