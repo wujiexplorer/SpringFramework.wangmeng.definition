@@ -56,6 +56,7 @@
         <module name="springannotation" />
         <module name="springmvcannotation" />
         <module name="SpringBootDoc" />
+        <module name="extTomcat" />
         <module name="SpringBoot2EurekaOrder" />
         <module name="SpringCloud2ZookeeperMember2" />
         <module name="RpcServer" />
@@ -87,6 +88,7 @@
       <module name="extSpringBoot" target="1.8" />
       <module name="extSpringBootJavaTomcat" target="1.8" />
       <module name="extSpringBootJavaTomcatMaven" target="1.7" />
+      <module name="extTomcat" target="1.8" />
       <module name="LicenseAppServer" target="1.8" />
       <module name="LicenseParent" target="1.8" />
       <module name="LicenseServer" target="1.8" />
