@@ -61,6 +61,7 @@
         <option value="$PROJECT_DIR$/springbootstarter/pom.xml" />
         <option value="$PROJECT_DIR$/springbootstartertest/pom.xml" />
         <option value="$PROJECT_DIR$/extTomcat/pom.xml" />
+        <option value="$PROJECT_DIR$/extNettyServer/pom.xml" />
       </list>
     </option>
   </component>

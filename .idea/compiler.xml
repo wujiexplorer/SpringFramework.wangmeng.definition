@@ -17,6 +17,7 @@
         <module name="springbootstartertest" />
         <module name="SpringCLoud2ConfigClient" />
         <module name="LicenseServer" />
+        <module name="extNettyServer" />
         <module name="springcore" />
         <module name="RpcClient" />
         <module name="SpringBoot2Swagger" />
@@ -85,6 +86,7 @@
       <module name="extHashMap" target="7" />
       <module name="extHttpServer" target="8" />
       <module name="extlinkedlist" target="1.8" />
+      <module name="extNettyServer" target="1.8" />
       <module name="extSpringBoot" target="1.8" />
       <module name="extSpringBootJavaTomcat" target="1.8" />
       <module name="extSpringBootJavaTomcatMaven" target="1.7" />

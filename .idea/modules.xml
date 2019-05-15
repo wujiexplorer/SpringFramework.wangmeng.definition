@@ -51,6 +51,7 @@
       <module fileurl="file://$PROJECT_DIR$/extDubbo/extDubbo.iml" filepath="$PROJECT_DIR$/extDubbo/extDubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHashMap/extHashMap.iml" filepath="$PROJECT_DIR$/extHashMap/extHashMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHttpServer/extHttpServer.iml" filepath="$PROJECT_DIR$/extHttpServer/extHttpServer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extNettyServer/extNettyServer.iml" filepath="$PROJECT_DIR$/extNettyServer/extNettyServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" filepath="$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" filepath="$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/extTomcat/extTomcat.iml" filepath="$PROJECT_DIR$/extTomcat/extTomcat.iml" />
