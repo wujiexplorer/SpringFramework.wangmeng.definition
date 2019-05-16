@@ -24,6 +24,7 @@
       <module fileurl="file://$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" filepath="$PROJECT_DIR$/SpringBootJWT/SpringBootJWT.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootPayUnionWxAlipay/SpringBootPayUnionWxAlipay.iml" filepath="$PROJECT_DIR$/SpringBootPayUnionWxAlipay/SpringBootPayUnionWxAlipay.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootQuartz/SpringBootQuartz.iml" filepath="$PROJECT_DIR$/SpringBootQuartz/SpringBootQuartz.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SpringBootScaffolding/SpringBootScaffolding.iml" filepath="$PROJECT_DIR$/SpringBootScaffolding/SpringBootScaffolding.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootSeckill/SpringBootSeckill.iml" filepath="$PROJECT_DIR$/SpringBootSeckill/SpringBootSeckill.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringBootXunfeiMsi/SpringBootXunfeiMsi.iml" filepath="$PROJECT_DIR$/SpringBootXunfeiMsi/SpringBootXunfeiMsi.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" filepath="$PROJECT_DIR$/SpringCLoud2ConfigClient/SpringCLoud2ConfigClient.iml" />

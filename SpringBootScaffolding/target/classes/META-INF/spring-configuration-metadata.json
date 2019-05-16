@@ -1,0 +1,36 @@
+{
+  "hints": [],
+  "groups": [
+    {
+      "sourceType": "com.wangmeng.test.common.conf.V2Config",
+      "name": "fuce",
+      "type": "com.wangmeng.test.common.conf.V2Config"
+    }
+  ],
+  "properties": [
+    {
+      "sourceType": "com.wangmeng.test.common.conf.V2Config",
+      "name": "fuce.copyright-year",
+      "description": "版权年份",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.wangmeng.test.common.conf.V2Config",
+      "name": "fuce.name",
+      "description": "项目名称",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.wangmeng.test.common.conf.V2Config",
+      "name": "fuce.profile",
+      "description": "上传路径",
+      "type": "java.lang.String"
+    },
+    {
+      "sourceType": "com.wangmeng.test.common.conf.V2Config",
+      "name": "fuce.version",
+      "description": "版本",
+      "type": "java.lang.String"
+    }
+  ]
+}

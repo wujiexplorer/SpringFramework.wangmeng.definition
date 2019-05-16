@@ -4,6 +4,7 @@
     <file type="web" url="file://$PROJECT_DIR$/extSpringBoot" />
     <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcat" />
     <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcatMaven" />
+    <file type="web" url="file://$PROJECT_DIR$/SpringBootScaffolding" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/springmvcannotation" />
   </component>
@@ -62,6 +63,7 @@
         <option value="$PROJECT_DIR$/springbootstartertest/pom.xml" />
         <option value="$PROJECT_DIR$/extTomcat/pom.xml" />
         <option value="$PROJECT_DIR$/extNettyServer/pom.xml" />
+        <option value="$PROJECT_DIR$/SpringBootScaffolding/pom.xml" />
       </list>
     </option>
   </component>
