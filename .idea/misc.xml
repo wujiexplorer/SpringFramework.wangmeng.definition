@@ -64,7 +64,9 @@
         <option value="$PROJECT_DIR$/extTomcat/pom.xml" />
         <option value="$PROJECT_DIR$/extNettyServer/pom.xml" />
         <option value="$PROJECT_DIR$/SpringBootScaffolding/pom.xml" />
+        <option value="$PROJECT_DIR$/mall/pom.xml" />
       </list>
     </option>
   </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="1.8.0_201" project-jdk-type="JavaSDK" />
 </project>

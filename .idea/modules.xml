@@ -58,6 +58,13 @@
       <module fileurl="file://$PROJECT_DIR$/extTomcat/extTomcat.iml" filepath="$PROJECT_DIR$/extTomcat/extTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/extarraylist/extarraylist.iml" filepath="$PROJECT_DIR$/extarraylist/extarraylist.iml" />
       <module fileurl="file://$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" filepath="$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall/mall.iml" filepath="$PROJECT_DIR$/mall/mall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall/mall-admin/mall-admin.iml" filepath="$PROJECT_DIR$/mall/mall-admin/mall-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall/mall-common/mall-common.iml" filepath="$PROJECT_DIR$/mall/mall-common/mall-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall/mall-demo/mall-demo.iml" filepath="$PROJECT_DIR$/mall/mall-demo/mall-demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall/mall-mbg/mall-mbg.iml" filepath="$PROJECT_DIR$/mall/mall-mbg/mall-mbg.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall/mall-portal/mall-portal.iml" filepath="$PROJECT_DIR$/mall/mall-portal/mall-portal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mall/mall-search/mall-search.iml" filepath="$PROJECT_DIR$/mall/mall-search/mall-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisorm/mybatisorm.iml" filepath="$PROJECT_DIR$/mybatisorm/mybatisorm.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" filepath="$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/springannotation/springannotation.iml" filepath="$PROJECT_DIR$/springannotation/springannotation.iml" />
