@@ -7,10 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringBootQuartz" />
+        <module name="SpringBootJWT" />
+        <module name="SpringCloud2Member2" />
         <module name="springbootstarter" />
         <module name="springcore" />
         <module name="AppServer" />
+        <module name="ace-common" />
         <module name="extarraylist" />
         <module name="SpringCloud2Pay" />
         <module name="springbootstarterconfigurer" />
@@ -20,6 +22,7 @@
         <module name="RpcClient" />
         <module name="extNettyServer" />
         <module name="extSpringBoot" />
+        <module name="ace-tool" />
         <module name="threadjdbc" />
         <module name="springioc" />
         <module name="springcloud20eurekaserver" />
@@ -28,11 +31,14 @@
         <module name="SpringCloud2wangmengCommon" />
         <module name="wangmengmemberpublicdubboapi" />
         <module name="SpringBoot2Swagger" />
+        <module name="ace-auth-client" />
         <module name="wangmengorderdubboservice" />
         <module name="springmvc" />
+        <module name="ace-generator" />
         <module name="SpringCloudZuulGateway" />
         <module name="springbootmail" />
         <module name="SpringCloud2ZookeeperMember" />
+        <module name="ace-sidecar-client-demo" />
         <module name="SpringBoot2EurekaMember" />
         <module name="DubboCommon" />
         <module name="AppClient" />
@@ -42,47 +48,70 @@
         <module name="SpringCloud2wangmengApiMemberServiceImpl" />
         <module name="SpringBootPayUnionWxAlipay" />
         <module name="DubboRegistry" />
+        <module name="SpringBootQuartz" />
         <module name="mall-demo" />
         <module name="SpringCloud2ConfigServer" />
         <module name="mybatisorm" />
         <module name="SpringCloud2ZookeeperOrder" />
         <module name="SpringCloudMember" />
-        <module name="mall-mbg" />
         <module name="SpringBootXunfeiMsi" />
         <module name="SpringCloud2wangmengApiOrderServiceImpl" />
-        <module name="SpringBootJWT" />
+        <module name="ace-interface" />
+        <module name="ace-admin" />
+        <module name="mall-mbg" />
+        <module name="ace-auth-common" />
         <module name="SpringCloud2EurekaServer9001" />
         <module name="SpringCloud2ConsulMember" />
         <module name="springannotation" />
         <module name="springmvcannotation" />
         <module name="SpringBootDoc" />
         <module name="mall-search" />
-        <module name="mall-portal" />
-        <module name="extHashMap" />
+        <module name="extTomcat" />
         <module name="SpringBoot2EurekaOrder" />
         <module name="SpringCloud2ZookeeperMember2" />
         <module name="RpcServer" />
         <module name="springaop" />
+        <module name="SpringBootElasticsearch" />
         <module name="SpringCloud2wangmengApiMemberService" />
+        <module name="ace-monitor" />
+        <module name="ace-gate" />
+        <module name="ace-sidecar-server" />
         <module name="SpringBoot2ElasticSearch" />
         <module name="extHttpServer" />
-        <module name="mall-common" />
         <module name="SpringCloud2ZuulGateway2" />
+        <module name="ace-auth-server" />
         <module name="SpringCloud20Order" />
         <module name="SpringBootSeckill" />
         <module name="mall-admin" />
         <module name="LicenseAppServer" />
         <module name="SpringCloud2wangmengApiOrderService" />
         <module name="springbootsqlite" />
-        <module name="SpringCloud2Member2" />
+        <module name="mall-common" />
         <module name="SpringBoot20EurekaServer" />
-        <module name="extTomcat" />
+        <module name="extHashMap" />
         <module name="extSpringBootJavaTomcat" />
         <module name="AppCommon" />
-        <module name="SpringBootElasticsearch" />
+        <module name="mall-portal" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ace-admin" target="1.8" />
+      <module name="ace-auth" target="1.8" />
+      <module name="ace-auth-client" target="1.8" />
+      <module name="ace-auth-common" target="1.8" />
+      <module name="ace-auth-server" target="1.8" />
+      <module name="ace-common" target="1.8" />
+      <module name="ace-control" target="1.8" />
+      <module name="ace-gate" target="1.8" />
+      <module name="ace-generator" target="1.7" />
+      <module name="ace-interface" target="1.8" />
+      <module name="ace-modules" target="1.8" />
+      <module name="ace-monitor" target="1.8" />
+      <module name="ace-security" target="1.8" />
+      <module name="ace-sidecar" target="1.8" />
+      <module name="ace-sidecar-client-demo" target="1.8" />
+      <module name="ace-sidecar-server" target="1.8" />
+      <module name="ace-tool" target="1.8" />
       <module name="AppClient" target="1.8" />
       <module name="AppCommon" target="1.8" />
       <module name="AppServer" target="1.8" />
@@ -196,6 +225,18 @@
       <module name="SpringCloud2wangmengCommon" options="-parameters" />
       <module name="SpringCloudMember" options="-parameters" />
       <module name="SpringCloudZuulGateway" options="-parameters" />
+      <module name="ace-admin" options="-parameters" />
+      <module name="ace-auth-client" options="-parameters" />
+      <module name="ace-auth-common" options="-parameters" />
+      <module name="ace-auth-server" options="-parameters" />
+      <module name="ace-common" options="-parameters" />
+      <module name="ace-gate" options="-parameters" />
+      <module name="ace-generator" options="-parameters" />
+      <module name="ace-interface" options="-parameters" />
+      <module name="ace-monitor" options="-parameters" />
+      <module name="ace-sidecar-client-demo" options="-parameters" />
+      <module name="ace-sidecar-server" options="-parameters" />
+      <module name="ace-tool" options="-parameters" />
       <module name="extSpringBoot" options="-parameters" />
       <module name="mall-admin" options="-parameters" />
       <module name="mall-demo" options="-parameters" />
