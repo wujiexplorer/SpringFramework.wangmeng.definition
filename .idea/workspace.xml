@@ -2,831 +2,135 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f18c59f8-fc8b-4f9a-a4c2-c62de22503fb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_annotation_aspectj_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_cluster_client_default_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_cluster_common_default_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_cluster_server_default_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_core_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_datasource_extension_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_dubbo_adapter_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_parameter_flow_control_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_transport_common_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_transport_simple_http_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_csp_sentinel_web_servlet_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_28.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_31.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_33.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_nacos_nacos_api_0_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_nacos_nacos_client_0_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_nacos_nacos_common_0_6_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ecwid_consul_consul_api_1_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_kryo_shaded_3_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_esotericsoftware_minlog_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_afterburner_2_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_drtrang_druid_spring_boot2_autoconfigure_1_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_drtrang_druid_spring_boot2_starter_1_1_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_jsqlparser_jsqlparser_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_0_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_5_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_autoconfigure_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_pagehelper_pagehelper_spring_boot_starter_1_2_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_wxiaoqi_ace_cache_0_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_gson_gson_2_8_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_15_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_16_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_19_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_concurrentlinkedhashmap_concurrentlinkedhashmap_lru_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_googlecode_json_simple_json_simple_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_janeluo_ikanalyzer_2012_u6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jcraft_jzlib_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_archaius_archaius_core_0_7_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_eureka_eureka_client_1_9_8.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_core_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_javanica_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_metrics_event_stream_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_hystrix_hystrix_serialization_1_5_18.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_netflix_commons_netflix_commons_util_0_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_core_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_eureka_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_httpclient_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_loadbalancer_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_ribbon_ribbon_transport_2_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_netflix_servo_servo_core_0_12_21.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qcloud_cos_api_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_20.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_spring4all_swagger_spring_boot_starter_1_6_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okhttp3_okhttp_3_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_squareup_okio_okio_1_13_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_thoughtworks_xstream_xstream_1_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_1_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_client_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_client_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_server_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_server_cloud_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_server_ui_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_starter_client_2_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_starter_client_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__de_codecentric_spring_boot_admin_starter_server_2_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_10_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_hystrix_10_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_okhttp_10_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_10_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_3_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_form_feign_form_spring_3_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_jsonwebtoken_jjwt_0_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_micrometer_micrometer_core_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_31_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_addons_reactor_extra_3_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_0_8_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_test_3_2_5_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_springfox_springfox_bean_validators_2_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_core_2_0_16_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_servlet_2_0_16_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_undertow_undertow_websockets_jsr_2_0_16_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_context_log4j2_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_http_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpasyncclient_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_httpclient_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_jms_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_kafka_clients_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_servlet_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_rabbit_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_web_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_brave_brave_instrumentation_spring_webmvc_5_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_reporter_2_7_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_amqp_client_2_7_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_reporter2_zipkin_sender_kafka11_2_7_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_zipkin_zipkin2_zipkin_2_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_persistence_api_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__joda_time_joda_time_2_9_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_38.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_9_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_3_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_8_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpmime_4_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_analyzers_common_7_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_core_7_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_highlighter_7_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_join_7_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_memory_7_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queries_7_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_queryparser_7_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_lucene_lucene_sandbox_7_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_14.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_60.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_60.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_core_lgpl_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_codehaus_jackson_jackson_mapper_lgpl_1_9_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_5_1_3_201810200350_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_eclipse_jgit_org_eclipse_jgit_http_apache_5_1_3_201810200350_r.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_isomorphism_token_bucket_1_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_annotation_jboss_annotations_api_1_2_spec_1_0_2_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_websocket_jboss_websocket_api_1_1_spec_1_1_3_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_api_3_3_8_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_xnio_xnio_nio_3_3_8_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_reflect_1_1_51.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_kotlin_kotlin_stdlib_1_1_51.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jolokia_jolokia_core_1_6_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_3_4_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_mybatis_spring_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_actuator_autoconfigure_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_actuator_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_thymeleaf_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_undertow_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_alibaba_nacos_discovery_0_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_alibaba_sentinel_0_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_alibaba_sentinel_datasource_0_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_bus_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_client_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_config_server_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_consul_binder_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_consul_config_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_consul_core_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_consul_discovery_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_context_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_function_core_2_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_core_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_archaius_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_core_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_eureka_client_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_hystrix_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_ribbon_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_sidecar_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_netflix_zuul_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_core_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_sleuth_zipkin_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_alibaba_nacos_discovery_0_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_alibaba_sentinel_0_2_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_config_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_consul_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_consul_all_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_consul_bus_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_consul_config_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_consul_discovery_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_archaius_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_hystrix_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_netflix_ribbon_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_stream_2_1_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_core_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_jmx_5_1_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_integration_spring_integration_tuple_1_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tuple_1_0_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_4_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_multipart_parser_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_thymeleaf_extras_thymeleaf_extras_java8time_3_0_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_3_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_autoconfigure_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__tk_mybatis_mapper_spring_boot_starter_1_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/EnableAceAuthClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/annotation/IgnoreClientToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/annotation/IgnoreUserToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/config/FeignOkHttpConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/config/ServiceAuthConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/config/UserAuthConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/configuration/AutoConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/exception/JwtIllegalArgumentException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/exception/JwtSignatureException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/exception/JwtTokenExpiredException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/feign/ServiceAuthFeign.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/interceptor/OkHttpTokenInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/interceptor/ServiceAuthRestInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/interceptor/UserAuthRestInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/jwt/ServiceAuthUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/jwt/UserAuthUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/src/main/java/com/github/wxiaoqi/security/auth/client/runner/AuthClientRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-common/src/main/java/com/github/wxiaoqi/security/auth/common/constatns/CommonConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-common/src/main/java/com/github/wxiaoqi/security/auth/common/util/StringHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-common/src/main/java/com/github/wxiaoqi/security/auth/common/util/jwt/IJWTInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-common/src/main/java/com/github/wxiaoqi/security/auth/common/util/jwt/JWTHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-common/src/main/java/com/github/wxiaoqi/security/auth/common/util/jwt/JWTInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-common/src/main/java/com/github/wxiaoqi/security/auth/common/util/jwt/RsaKeyHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/db/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/AuthBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/bean/ClientInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/biz/ClientBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/biz/ClientServiceBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/configuration/ClientConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/configuration/FeignConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/configuration/KeyConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/configuration/RedisConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/configuration/UserConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/configuration/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/controller/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/controller/ClientController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/controller/ServiceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/entity/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/entity/ClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/feign/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/interceptor/ClientTokenInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/interceptor/ServiceAuthRestInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/interceptor/UserAuthRestInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/mapper/ClientMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/mapper/ClientServiceMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/runner/AuthServerRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/service/AuthClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/service/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/service/impl/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/service/impl/DBAuthClientService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/util/client/ClientTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/util/user/JwtAuthenticationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/util/user/JwtAuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/util/user/JwtTokenUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/vo/FrontUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/resources/mapper/ClientMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/resources/mapper/ClientServiceMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-auth/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/biz/BaseBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/constant/CommonConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/constant/RestCodeConstants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/constant/UserConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/context/BaseContextHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/exception/BaseException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/exception/auth/ClientForbiddenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/exception/auth/ClientInvalidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/exception/auth/ClientTokenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/exception/auth/UserInvalidException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/exception/auth/UserTokenException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/handler/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/msg/BaseResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/msg/ListRestResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/msg/ObjectRestResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/msg/TableResultResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/msg/auth/TokenErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/msg/auth/TokenForbiddenResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/rest/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/service/BaseService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/service/impl/BaseServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/util/ClientUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/util/EntityUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/util/Query.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/util/ReflectionUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/util/StringHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/util/TreeUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/util/UUIDUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/vo/TreeNode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-common/src/main/java/com/github/wxiaoqi/security/common/web/ParameterRequestWrapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-monitor/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-monitor/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-monitor/src/main/java/com/github/wxiaoqi/security/monitor/MonitorBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-monitor/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/db/init_nacos.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos-server-0.8.0.zip" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/NOTICE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/bin/shutdown.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/bin/shutdown.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/bin/startup.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/bin/startup.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/conf/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/conf/application.properties.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/conf/cluster.conf.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/conf/nacos-logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/conf/nacos-mysql.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/conf/schema.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-nacos/nacos/plugins/cmdb/nacos-cmdb-plugin-example.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/ace-sentinel/sentinel-dashboard.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-control/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/GatewayServerBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/config/GatewayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/fallback/UserServiceFallback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/feign/ILogService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/feign/IUserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/filter/AccessGatewayFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/handler/RequestBodyRoutePredicateFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/utils/DBLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-gate/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/db/init.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/docker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/docker/wait-for-it.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/AdminBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/biz/ElementBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/biz/GateLogBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/biz/GroupBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/biz/GroupTypeBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/biz/MenuBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/biz/ResourceAuthorityBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/biz/UserBiz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/config/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/constant/AdminCommonConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/entity/Element.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/entity/GateLog.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/entity/Group.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/entity/GroupType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/entity/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/entity/ResourceAuthority.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/mapper/ElementMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/mapper/GateLogMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/mapper/GroupMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/mapper/GroupTypeMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/mapper/MenuMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/mapper/ResourceAuthorityMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/rest/ElementController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/rest/GateLogController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/rest/GroupController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/rest/GroupTypeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/rest/MenuController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/rest/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/rpc/LogRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/rpc/UserRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/rpc/service/PermissionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/vo/AuthorityMenuTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/vo/FrontUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/vo/GroupTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/vo/GroupUsers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/vo/MenuTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/builder/generatorConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/logback.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/mapper/ElementMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/mapper/GateLogMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/mapper/GroupMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/mapper/GroupTypeMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/mapper/MenuMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/mapper/ResourceAuthorityMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/resources/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/GeneratorBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/controller/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/entity/ColumnEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/entity/TableEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/mapper/GeneratorMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/rest/GeneratorRest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/service/GeneratorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/java/com/github/wxiaoqi/security/generator/utils/GeneratorUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/generator.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/mapper/GeneratorMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/ag/generator/generator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/ag.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/begtable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/btable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/global.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/layout.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/layui.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/layui.mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/login.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/code.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/_all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/aero.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/aero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/aero@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/blue@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/flat.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/flat.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/flat@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/green@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/grey.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/grey@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/orange.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/orange@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/pink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/pink@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/purple@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/red.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/red@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/yellow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/flat/yellow@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/futurico/futurico.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/futurico/futurico.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/futurico/futurico@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/icheck.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/_all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/aero.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/grey.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/line.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/line.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/line@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/orange.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/pink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/red.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/line/yellow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/_all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/aero.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/aero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/aero@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/blue@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/green@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/grey.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/grey@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/minimal.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/minimal.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/minimal@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/orange.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/orange@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/pink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/pink@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/purple@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/red.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/red@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/yellow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/minimal/yellow@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/polaris/polaris.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/polaris/polaris.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/polaris/polaris@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/_all.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/aero.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/aero.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/aero@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/blue.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/blue.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/blue@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/green.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/green.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/green@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/grey.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/grey.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/grey@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/orange.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/orange.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/orange@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/pink.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/pink.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/pink@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/purple.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/purple.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/purple@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/red.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/red.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/red@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/square.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/square.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/square@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/yellow.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/yellow.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/icheck/square/yellow@2x.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/laydate/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/laydate/laydate.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/layer/default/icon-ext.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/layer/default/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/layer/default/layer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/layer/default/loading-0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/layer/default/loading-1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/modules/layer/default/loading-2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/css/table.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/datas/area_data.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/datas/btable_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/datas/laytpl_laypage_data.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/datas/nav.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/datas/nav.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/datas/nav_content.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/datas/nav_member.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/0.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/1.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/10.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/11.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/12.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/13.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/14.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/15.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/16.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/17.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/18.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/19.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/2.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/22.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/24.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/25.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/26.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/27.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/29.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/3.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/33.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/34.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/35.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/36.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/37.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/38.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/39.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/4.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/41.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/43.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/44.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/45.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/46.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/48.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/49.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/5.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/50.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/52.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/53.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/54.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/55.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/56.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/59.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/6.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/61.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/62.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/63.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/65.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/66.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/67.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/69.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/7.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/70.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/face/71.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/font/iconfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/font/iconfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/images/0.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/images/logo-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/images/xx.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/area.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/baajax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/begtable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/btable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/common.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/navbar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/paging.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/tab.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/js/validator.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/dest/layui.all.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/dest/layui.mod.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/lib/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/code.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/element.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/flow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/form.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/laydate.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/layedit.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/layer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/laypage.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/laytpl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/mobile.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/tree.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/upload.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/lay/modules/util.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/layui.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/modules/icheck.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/modules/menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/modules/pjax.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/HyperDown/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/HyperDown/Parser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/bootstrap-table/bootstrap-table-mobile.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/bootstrap-table/bootstrap-table.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/bootstrap-table/css/bootstrap-table.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/bootstrap-table/locale/bootstrap-table-zh-CN.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/bootstrap-treeview/css/bootstrap-treeview.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/bootstrap-treeview/js/bootstrap-treeview.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/jquery-treegrid/css/jquery.treegrid.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/jquery-treegrid/extension/jquery.treegrid.extension.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/jquery-treegrid/img/collapse.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/jquery-treegrid/img/expand.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/jquery-treegrid/img/file.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/jquery-treegrid/img/folder.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/jquery-treegrid/js/jquery.treegrid.bootstrap3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/jquery-treegrid/js/jquery.treegrid.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/marked/marked.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/css/select2.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/css/select2.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/ar.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/az.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/bg.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/ca.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/cs.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/da.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/de.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/el.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/en.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/es.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/et.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/eu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/fa.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/fi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/fr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/gl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/he.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/hi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/hr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/hu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/id.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/is.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/it.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/ja.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/km.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/ko.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/lt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/lv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/mk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/ms.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/nb.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/nl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/pl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/pt-BR.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/pt.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/ro.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/ru.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/sk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/sr-Cyrl.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/sr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/sv.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/th.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/tr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/uk.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/vi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/zh-CN.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/i18n/zh-TW.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/select2.full.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/select2.full.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/select2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/static/plugins/select2/js/select2.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/template/biz.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/template/controller.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/template/entity.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/template/index.js.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/template/index.vue.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/template/mapper.java.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/template/mapper.xml.vm" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/templates/about.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/templates/generator/list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-interface/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-interface/src/main/java/com/github/wxiaoqi/security/api/vo/authority/PermissionInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-interface/src/main/java/com/github/wxiaoqi/security/api/vo/log/LogInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-interface/src/main/java/com/github/wxiaoqi/security/api/vo/search/IndexObject.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-interface/src/main/java/com/github/wxiaoqi/security/api/vo/user/UserInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/ToolBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/config/CloudStorageConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/config/LuceneConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/oss/cloud/AliyunCloudStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/oss/cloud/CloudStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/oss/cloud/OSSFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/oss/cloud/QcloudCloudStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/oss/cloud/QiniuCloudStorageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/oss/constants/OSSConstant.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/oss/controller/OssController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/search/controller/SearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/search/lucene/LuceneDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/search/lucene/util/DocumentUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/search/lucene/util/IKAnalyzer5x.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/search/lucene/util/IKTokenizer5x.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/search/lucene/util/QueryUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/search/service/LuceneService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/java/com/github/wxiaoqi/search/service/impl/LuceneServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/src/main/resources/bootstrap.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-modules/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/src/main/java/com/github/wxiaoqi/security/sidecarclient/PythonServerBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/src/main/java/com/github/wxiaoqi/security/sidecarclient/client/PythonFeignClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/src/main/java/com/github/wxiaoqi/security/sidecarclient/entity/Message.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/src/main/java/com/github/wxiaoqi/security/sidecarclient/rest/PythonController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server/readme.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server/src/main/java/com/github/wxiaoqi/security/sidecar/SidercarBootstrap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/ace-sidecar/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/alibaba-base/nacos.sql" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/cloud-platform/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_projectlombok_lombok_1_16_14.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/HrserverApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/ChatResp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/Hr.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/JobLevel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/Menu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/MenuMeta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/MsgContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/Nation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/PoliticsStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/RespBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/Salary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/SysMsg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/common/DateConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/common/EmailRunnable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/common/HrUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/common/poi/PoiUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/config/AuthenticationAccessDeniedHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/config/CustomMetadataSource.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/config/UrlAccessDecisionManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/config/WebMvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/config/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/ChatController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/ConfigController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/PersonnelController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/RegLoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/WsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/emp/EmpBasicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/salary/SalaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/salary/SalaryEmpController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/salary/SalaryTableController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/system/SystemBasicController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/controller/system/SystemHrController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/exception/CustomExceptionResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/DepartmentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/DepartmentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/EmpMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/EmpMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/HrMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/HrMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/JobLevelMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/JobLevelMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/MenuMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/MenuMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/MenuRoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/MenuRoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/PositionMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/PositionMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/RoleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/RoleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/SalaryMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/SalaryMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/SysMsgMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/SysMsgMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/mapper/SystemMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/EmpService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/HrService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/JobLevelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/MenuRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/MenuService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/PositionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/SalaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/SysMsgService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/java/org/sang/service/SystemService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/mybatis-config.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/css/app.49f3b09b9044ff2bb59028a0c595498b.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/css/app.49f3b09b9044ff2bb59028a0c595498b.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/css/app.4b7d8f4ce6caf32a8228060bf23032ae.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/css/app.4b7d8f4ce6caf32a8228060bf23032ae.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/fonts/element-icons.6f0a763.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/fonts/fontawesome-webfont.674f50d.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/fonts/fontawesome-webfont.af7ae50.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/fonts/fontawesome-webfont.b06871f.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/fonts/fontawesome-webfont.fee66e7.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/img/fontawesome-webfont.912ec66.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/0.35624cca2791df8b4b91.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/0.35624cca2791df8b4b91.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/0.99d9925e20b3bdd4f9fe.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/0.99d9925e20b3bdd4f9fe.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/1.684e7cd018b419023dea.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/1.684e7cd018b419023dea.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/1.f2dbcf1fea4fd33c4ba0.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/1.f2dbcf1fea4fd33c4ba0.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/2.14c5e132f1d43c005075.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/2.14c5e132f1d43c005075.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/2.630db73e9961e3e74165.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/2.630db73e9961e3e74165.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/3.f005d3d1f94072277c82.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/3.f005d3d1f94072277c82.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/3.f2af1e5f79c4750ed876.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/3.f2af1e5f79c4750ed876.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/4.1a590e21825d3917c4c6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/4.1a590e21825d3917c4c6.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/4.b25d67ddc90d6ac44980.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/4.b25d67ddc90d6ac44980.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/5.00192f6b258763152047.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/5.00192f6b258763152047.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/5.20b9d7b66b2dcf1d0f9b.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/5.20b9d7b66b2dcf1d0f9b.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/app.3ebb2e8e7f4aacd6bc3d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/app.3ebb2e8e7f4aacd6bc3d.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/app.a57c9a5cc2cb20a5c6f7.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/app.a57c9a5cc2cb20a5c6f7.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/manifest.77a8347c841f03d14a2f.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/manifest.77a8347c841f03d14a2f.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/manifest.a73163dfe24ce636c6d6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/manifest.a73163dfe24ce636c6d6.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/vendor.2855e9a84c2c26b4fa45.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/vendor.2855e9a84c2c26b4fa45.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/vendor.b6f6d144b8ab8460c96d.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/static/static/js/vendor.b6f6d144b8ab8460c96d.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/templates/email.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hrserver/src/main/resources/vhr.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/extHttpServer/target/" />
@@ -919,6 +223,7 @@
     <ignored path="$PROJECT_DIR$/cloud-platform/ace-modules/target/" />
     <ignored path="$PROJECT_DIR$/cloud-platform/ace-control/target/" />
     <ignored path="$PROJECT_DIR$/cloud-platform/ace-control/ace-monitor/target/" />
+    <ignored path="$PROJECT_DIR$/hrserver/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -930,20 +235,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server/src/main/java/com/github/wxiaoqi/security/auth/AuthBootstrap.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/GatewayServerBootstrap.java">
+        <entry file="file://$PROJECT_DIR$/hrserver/src/main/java/org/sang/HrserverApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+            <state relative-caret-position="330">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
             </state>
           </provider>
         </entry>
@@ -1038,10 +334,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="-8" />
-    <option name="width" value="1346" />
-    <option name="height" value="688" />
+    <option name="x" value="240" />
+    <option name="y" value="130" />
+    <option name="width" value="1440" />
+    <option name="height" value="786" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -1061,88 +357,28 @@
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
+              <item name="hrserver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-gate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-gate" type="462c0819:PsiDirectoryNode" />
+              <item name="hrserver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-gate" type="462c0819:PsiDirectoryNode" />
+              <item name="hrserver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-gate" type="462c0819:PsiDirectoryNode" />
+              <item name="hrserver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-gate" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="gate" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-admin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="mall" type="462c0819:PsiDirectoryNode" />
-              <item name="mall-admin" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -1159,7 +395,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/cloud-platform/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/hrserver/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -1188,7 +424,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AdminBootstrap">
+  <component name="RunManager" selected="Spring Boot.HrserverApplication">
     <configuration name="AdminBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ace-admin" />
       <extension name="coverage">
@@ -1256,6 +492,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="HrserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="hrserver" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.sang.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="org.sang.HrserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MallPortalApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="mall-portal" />
       <extension name="coverage">
@@ -1265,19 +514,6 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.mall.portal.MallPortalApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MallSearchApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="mall-search" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.macro.mall.search.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.macro.mall.search.MallSearchApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -1295,19 +531,19 @@
       <item itemvalue="Spring Boot.Application (2)" />
       <item itemvalue="Spring Boot.Application (3)" />
       <item itemvalue="Spring Boot.UsersApplication" />
-      <item itemvalue="Spring Boot.MallSearchApplication" />
       <item itemvalue="Spring Boot.MallPortalApplication" />
       <item itemvalue="Spring Boot.AuthBootstrap" />
       <item itemvalue="Spring Boot.GatewayServerBootstrap" />
       <item itemvalue="Spring Boot.AdminBootstrap" />
+      <item itemvalue="Spring Boot.HrserverApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.HrserverApplication" />
         <item itemvalue="Spring Boot.AdminBootstrap" />
         <item itemvalue="Spring Boot.GatewayServerBootstrap" />
         <item itemvalue="Spring Boot.AuthBootstrap" />
         <item itemvalue="Spring Boot.MallPortalApplication" />
-        <item itemvalue="Spring Boot.MallSearchApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -1346,7 +582,7 @@
       <workItem from="1558577809936" duration="597000" />
       <workItem from="1558687029196" duration="1795000" />
       <workItem from="1559180881066" duration="4014000" />
-      <workItem from="1559524938302" duration="2878000" />
+      <workItem from="1559524938302" duration="4275000" />
     </task>
     <task id="LOCAL-00003" summary="sprig boot 自定义starter，enableAutoConfigurer,自动配置，starter去引进，starter其实就是引入包的作用，自动配置，主要是配置，java config，以注解的形式表现">
       <created>1557803385807</created>
@@ -1383,22 +619,28 @@
       <option name="project" value="LOCAL" />
       <updated>1559294263609</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="foeign client uri 可以找到相应的实现的">
+      <created>1559552749007</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1559552749007</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46885000" />
+    <option name="totallyTimeSpent" value="48282000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1062" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Image Layers" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.15343347" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.15343347" />
       <window_info id="Structure" order="6" sideWeight="0.5954198" side_tool="true" weight="0.39788198" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="0" />
@@ -1413,7 +655,7 @@
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Run" order="11" weight="0.32560706" />
-      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" visible="true" weight="0.36313465" />
+      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" weight="0.36313465" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.3289689" />
@@ -1432,7 +674,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="7" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="8" sideWeight="0.49747476" weight="0.24886535" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="9" weight="0.24962178" />
-      <window_info anchor="right" id="Maven" order="10" weight="0.32886267" />
+      <window_info active="true" anchor="right" id="Maven" order="10" visible="true" weight="0.32886267" />
       <window_info anchor="right" id="Bean Validation" order="11" />
       <window_info anchor="right" id="RestServices" order="12" weight="0.20171674" />
     </layout>
@@ -1509,7 +751,8 @@
     <MESSAGE value="手动写一个netty，netty server启动后，在某个端口监听，比如说8080，可以用Telnet终端，浏览器终端，都可以测试。telnet 127.0.0.1 8080;localhost:8080" />
     <MESSAGE value="spring framework,有文件上传功能，mybatis的插件对于定位问题还是非常好的，尤其是mapper文件" />
     <MESSAGE value="server:&#10;  port: 8443 #开发环境会开启https&#10;  ssl:&#10;    key-store: keystore.p12&#10;    keystore.p12文件要放在父目录下，不要放在子目录下&#10;    &#10;    es mysql要导入到es中，然后es搜索" />
-    <option name="LAST_COMMIT_MESSAGE" value="server:&#10;  port: 8443 #开发环境会开启https&#10;  ssl:&#10;    key-store: keystore.p12&#10;    keystore.p12文件要放在父目录下，不要放在子目录下&#10;    &#10;    es mysql要导入到es中，然后es搜索" />
+    <MESSAGE value="foeign client uri 可以找到相应的实现的" />
+    <option name="LAST_COMMIT_MESSAGE" value="foeign client uri 可以找到相应的实现的" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1524,69 +767,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/controller/admin/GeneratorController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1847">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2086#2098#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/controller/admin/LogController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1799#1812#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/controller/admin/PremissionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1693#1709#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/controller/admin/RoleController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1676#1686#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.4.0/shiro-core-1.4.0.jar!/org/apache/shiro/SecurityUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/shiro/util/ShiroUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="282">
-          <caret line="40" column="29" lean-forward="true" selection-start-line="40" selection-start-column="29" selection-end-line="40" selection-end-column="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#617#618#0" expanded="true" />
-            <element signature="e#666#667#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/common/log/LogAspect.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -1923,7 +1103,43 @@
     <entry file="file://$PROJECT_DIR$/cloud-platform/ace-gate/src/main/java/com/github/wxiaoqi/security/gate/GatewayServerBootstrap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/src/main/java/com/github/wxiaoqi/security/admin/AdminBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/cloud/spring-cloud-netflix-sidecar/2.1.0.RELEASE/spring-cloud-netflix-sidecar-2.1.0.RELEASE.jar!/org/springframework/cloud/netflix/sidecar/EnableSidecar.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="22" column="18" selection-start-line="22" selection-start-column="18" selection-end-line="22" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server/src/main/java/com/github/wxiaoqi/security/sidecar/SidercarBootstrap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="9" column="7" lean-forward="true" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrserver/src/main/java/org/sang/bean/Hr.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrserver/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-329" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/hrserver/src/main/java/org/sang/HrserverApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
         </state>
       </provider>
     </entry>

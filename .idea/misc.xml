@@ -66,6 +66,7 @@
         <option value="$PROJECT_DIR$/SpringBootScaffolding/pom.xml" />
         <option value="$PROJECT_DIR$/mall/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-platform/pom.xml" />
+        <option value="$PROJECT_DIR$/hrserver/pom.xml" />
       </list>
     </option>
   </component>
