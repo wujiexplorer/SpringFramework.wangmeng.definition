@@ -70,6 +70,7 @@
         <option value="$PROJECT_DIR$/hrserver/pom.xml" />
         <option value="$PROJECT_DIR$/agile-bpm-basic/pom.xml" />
         <option value="$PROJECT_DIR$/agilebpm-base-spring-boot/pom.xml" />
+        <option value="$PROJECT_DIR$/blogserver/pom.xml" />
       </list>
     </option>
   </component>

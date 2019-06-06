@@ -86,6 +86,7 @@
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-core/base-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-core/base-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-db/base-db.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-db/base-db.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-rest/base-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-rest/base-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blogserver/blogserver.iml" filepath="$PROJECT_DIR$/blogserver/blogserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-api/bus-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-api/bus-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-core/bus-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-core/bus-core.iml" />
