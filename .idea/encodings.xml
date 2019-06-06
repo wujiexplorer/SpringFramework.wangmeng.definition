@@ -38,6 +38,46 @@
     <file url="file://$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengCommon" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudMember" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCloudZuulGateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/base" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/base/base-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/base/base-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/base/base-db" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/base/base-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/bus-form" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/demo" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform/auth" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform/auth/ab-spring-security" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform/org" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/ab-org-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/org-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-rest" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agile-bpm-basic/web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-autoconfigure" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-security-autoconfigure" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-security-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-spring-boot-samples" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-sys-autoconfigure" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-sys-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-ui" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-wf-autoconfigure" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-wf-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-platform" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-platform/ace-auth" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client" charset="UTF-8" />

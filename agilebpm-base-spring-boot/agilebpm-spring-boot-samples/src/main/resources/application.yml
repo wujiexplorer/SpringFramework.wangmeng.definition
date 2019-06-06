@@ -1,0 +1,50 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/new_?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true&useSSL=false&serverTimezone=Asia/Shanghai
+    username: root
+    password: 123456
+    dbType: mysql
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    in-memory: false
+    packages:
+      trust-all: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 9
+
+
+logging:
+  level:
+    root: INFO
+server:
+  servlet:
+    context-path: /
+
+## security:
+##  ignored:  [/agilebpm-ui/** ,/css/**, /js/**,/images/**,/webjars/**,/**/favicon.ico]
+## /swagger-*,/v2/api-docs*,   swagger 免登陆
+
+ab:
+  jwt:
+    enabled: false
+  security:
+    auth-ingores: /login.*,/agilebpm-ui*,/index.html,/swagger-*,/v2/api-docs*,
+  redis:
+    use-redis-cache: false
+  mail:
+    mail-address: agileBpm@qq.com
+    nick-name: AgileBPM
+    password: fywouffpohiibdee
+    send-host: smtp.qq.com
+    send-port: 465
+  simple-mq:
+    message-queue-type: synchronous
+
+
+## 上传配置 db 存数据库 ，具体请看 IUploader 实现类
+uploader:
+  default: db

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/agile-bpm-basic/web" />
     <file type="web" url="file://$PROJECT_DIR$/extSpringBoot" />
     <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcat" />
     <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcatMaven" />
@@ -67,6 +68,8 @@
         <option value="$PROJECT_DIR$/mall/pom.xml" />
         <option value="$PROJECT_DIR$/cloud-platform/pom.xml" />
         <option value="$PROJECT_DIR$/hrserver/pom.xml" />
+        <option value="$PROJECT_DIR$/agile-bpm-basic/pom.xml" />
+        <option value="$PROJECT_DIR$/agilebpm-base-spring-boot/pom.xml" />
       </list>
     </option>
   </component>

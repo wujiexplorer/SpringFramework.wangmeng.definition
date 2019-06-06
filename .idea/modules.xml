@@ -49,6 +49,8 @@
       <module fileurl="file://$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" filepath="$PROJECT_DIR$/SpringCloudMember/SpringCloudMember.iml" />
       <module fileurl="file://$PROJECT_DIR$/SpringCloudZuulGateway/SpringCloudZuulGateway.iml" filepath="$PROJECT_DIR$/SpringCloudZuulGateway/SpringCloudZuulGateway.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" filepath="$PROJECT_DIR$/.idea/SpringFramework.wangmeng.definition.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/ab-org-core/ab-org-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/org/ab-org-core/ab-org-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/auth/ab-spring-security/ab-spring-security.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/auth/ab-spring-security/ab-spring-security.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/ace-admin.iml" filepath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin/ace-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth.iml" filepath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/ace-auth-client.iml" filepath="$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client/ace-auth-client.iml" />
@@ -66,6 +68,32 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/ace-sidecar-client-demo.iml" filepath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/ace-sidecar-client-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server/ace-sidecar-server.iml" filepath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server/ace-sidecar-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/ace-tool.iml" filepath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/ace-tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/agile-bpm.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/agile-bpm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-autoconfigure/agilebpm-base-autoconfigure.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-autoconfigure/agilebpm-base-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-starter/agilebpm-base-starter.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-starter/agilebpm-base-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-security-autoconfigure/agilebpm-security-autoconfigure.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-security-autoconfigure/agilebpm-security-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-security-starter/agilebpm-security-starter.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-security-starter/agilebpm-security-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-spring-boot.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-spring-boot.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-spring-boot-samples/agilebpm-spring-boot-samples.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-spring-boot-samples/agilebpm-spring-boot-samples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-sys-autoconfigure/agilebpm-sys-autoconfigure.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-sys-autoconfigure/agilebpm-sys-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-sys-starter/agilebpm-sys-starter.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-sys-starter/agilebpm-sys-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-ui/agilebpm-ui.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-ui/agilebpm-ui.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-wf-autoconfigure/agilebpm-wf-autoconfigure.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-wf-autoconfigure/agilebpm-wf-autoconfigure.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-wf-starter/agilebpm-wf-starter.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-wf-starter/agilebpm-wf-starter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/auth/auth.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/auth/auth.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-api/base-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-api/base-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-core/base-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-core/base-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-db/base-db.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-db/base-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-rest/base-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-rest/base-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-api/bus-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-api/bus-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-core/bus-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-core/bus-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus-form.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus-form.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-rest/bus-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-rest/bus-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/demo/demo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo-api/demo-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/demo/demo-api/demo-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo-core/demo-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/demo/demo-core/demo-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/extDubbo/extDubbo.iml" filepath="$PROJECT_DIR$/extDubbo/extDubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHashMap/extHashMap.iml" filepath="$PROJECT_DIR$/extHashMap/extHashMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHttpServer/extHttpServer.iml" filepath="$PROJECT_DIR$/extHttpServer/extHttpServer.iml" />
@@ -75,6 +103,10 @@
       <module fileurl="file://$PROJECT_DIR$/extTomcat/extTomcat.iml" filepath="$PROJECT_DIR$/extTomcat/extTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/extarraylist/extarraylist.iml" filepath="$PROJECT_DIR$/extarraylist/extarraylist.iml" />
       <module fileurl="file://$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" filepath="$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-api/form-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-api/form-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-core/form-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-core/form-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-rest/form-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-rest/form-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrserver/hrserver.iml" filepath="$PROJECT_DIR$/hrserver/hrserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall/mall.iml" filepath="$PROJECT_DIR$/mall/mall.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall/mall-admin/mall-admin.iml" filepath="$PROJECT_DIR$/mall/mall-admin/mall-admin.iml" />
@@ -84,6 +116,9 @@
       <module fileurl="file://$PROJECT_DIR$/mall/mall-portal/mall-portal.iml" filepath="$PROJECT_DIR$/mall/mall-portal/mall-portal.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall/mall-search/mall-search.iml" filepath="$PROJECT_DIR$/mall/mall-search/mall-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisorm/mybatisorm.iml" filepath="$PROJECT_DIR$/mybatisorm/mybatisorm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/org.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/org/org.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/org-api/org-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/org/org-api/org-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/platform.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/platform.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" filepath="$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" />
       <module fileurl="file://$PROJECT_DIR$/springannotation/springannotation.iml" filepath="$PROJECT_DIR$/springannotation/springannotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/springaop/springaop.iml" filepath="$PROJECT_DIR$/springaop/springaop.iml" />
@@ -97,10 +132,15 @@
       <module fileurl="file://$PROJECT_DIR$/springioc/springioc.iml" filepath="$PROJECT_DIR$/springioc/springioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/springmvc/springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvcannotation/springmvcannotation.iml" filepath="$PROJECT_DIR$/springmvcannotation/springmvcannotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-api/sys-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-api/sys-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-core/sys-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-core/sys-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-rest/sys-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-rest/sys-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadjdbc/threadjdbc.iml" filepath="$PROJECT_DIR$/threadjdbc/threadjdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangmengmemberdubboapiservice/wangmengmemberdubboapiservice.iml" filepath="$PROJECT_DIR$/wangmengmemberdubboapiservice/wangmengmemberdubboapiservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangmengmemberpublicdubboapi/wangmengmemberpublicdubboapi.iml" filepath="$PROJECT_DIR$/wangmengmemberpublicdubboapi/wangmengmemberpublicdubboapi.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangmengorderdubboservice/wangmengorderdubboservice.iml" filepath="$PROJECT_DIR$/wangmengorderdubboservice/wangmengorderdubboservice.iml" />
+      <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/web/web.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/web/web.iml" />
     </modules>
   </component>
 </project>

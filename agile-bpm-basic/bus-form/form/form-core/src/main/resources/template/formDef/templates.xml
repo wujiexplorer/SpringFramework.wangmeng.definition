@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+	<!-- pc 端默认的所有模板  -->
+	<!-- 主表的模板-->
+	<template key="mainOneColumn" name="单列模板" desc="单列模板" type="main" dir="pc"/>
+	<template key="mainTwoColumn" name="两列模板" desc="两列模板" type="main" dir="pc"/>
+	<template key="mainThreeColumn" name="三列模板" desc="三列模板" type="main" dir="pc"/>
+	<template key="mainFourColumn" name="四列模板" desc="四列模板" type="main" dir="pc"/>
+	<!-- 子表的模板-->
+	<template key="subOneColumn" name="子表单列模板" desc="单列模板" type="subTable" dir="pc"/>
+	<template key="subTwoColumn" name="子表两列模板" desc="两列模板" type="subTable" dir="pc"/>
+	<template key="subThreeColumn" name="子表三列模板" desc="三列模板" type="subTable" dir="pc"/>
+	<template key="subOneline" name="子表单行模板" desc="单行模板，暂时不支持一对一" type="subTable" dir="pc"/>
+
+	<!-- pc 端vue默认的所有模板  -->
+	<!-- 主表的模板-->
+	<template key="vueMainOneColumn" name="vue单列模板" desc="单列模板" type="main" dir="vue"/>
+	<template key="vueMainTwoColumn" name="vue两列模板" desc="两列模板" type="main" dir="vue"/>
+	<template key="vueMainThreeColumn" name="vue三列模板" desc="三列模板" type="main" dir="vue"/>
+	<template key="vueMainFourColumn" name="vue四列模板" desc="四列模板" type="main" dir="vue"/>
+	<!-- 子表的模板-->
+	<template key="vueSubOneColumn" name="vue子表单列模板" desc="单列模板" type="subTable" dir="vue"/>
+	<template key="vueSubTwoColumn" name="vue子表两列模板" desc="两列模板" type="subTable" dir="vue"/>
+	<template key="vueSubThreeColumn" name="vue子表三列模板" desc="三列模板" type="subTable" dir="vue"/>
+	<template key="vueSubOneline" name="vue子表单行模板" desc="单行模板，暂时不支持一对一" type="subTable" dir="vue"/>
+
+	<!-- pc 端 iview 默认的所有模板  -->
+	<!-- 主表的模板 -->
+	<template key="iviewMainOneColumn" name="iview单列模板(Table)" desc="单列模板" type="main" dir="pc_iview"/>
+	<template key="iviewMainTwoColumn" name="iview两列模板(Table)" desc="两列模板" type="main" dir="pc_iview"/>
+	<template key="iviewMainThreeColumn" name="iview三列模板(Table)" desc="三列模板" type="main" dir="pc_iview"/>
+	<template key="iviewMainFourColumn" name="iview四列模板(Table)" desc="四列模板" type="main" dir="pc_iview"/>
+	<!-- 主表 DIV 的模板 -->
+	<template key="iviewRowMainTwoColumn" name="iview两列模板(ROW)" desc="两列模板" type="main" dir="pc_iview"/>
+	<template key="iviewRowMainThreeColumn" name="iview三列模板(ROW)" desc="三列模板" type="main" dir="pc_iview"/>
+	<template key="iviewRowMainOneColumn" name="iview单列模板(ROW)" desc="单列模板" type="main" dir="pc_iview"/>
+
+	<!-- 子表的模板 -->
+	<template key="iviewSubOneColumn" name="iview子表单列模板(Table)" desc="单列模板" type="subTable" dir="pc_iview"/>
+	<template key="iviewSubTwoColumn" name="iview子表两列模板(Table)" desc="两列模板" type="subTable" dir="pc_iview"/>
+	<template key="iviewSubThreeColumn" name="iview子表三列模板(Table)" desc="三列模板" type="subTable" dir="pc_iview"/>
+	<template key="iviewSubOneline" name="iview子表单行模板(Table)" desc="单行模板，暂时不支持一对一" type="subTable" dir="pc_iview"/>
+	<!-- 子表的 DIV 模板 -->
+	<template key="iviewRowSubOneColumn" name="iview子表单列模板(ROW)" desc="单列模板" type="subTable" dir="pc_iview"/>
+	<template key="iviewRowSubTwoColumn" name="iview子表两列模板(ROW)" desc="两列模板" type="subTable" dir="pc_iview"/>
+	<template key="iviewRowSubThreeColumn" name="iview子表三列模板(ROW)" desc="三列模板" type="subTable" dir="pc_iview"/>
+	
+	<!-- 移动 端默认的所有模板  -->
+	<template key="mobileMainTemplate" name="mobile主表模板" desc="mobile主表模板" type="main" dir="mobile"/>
+	<template key="mobileSubTemplate" name="mobile子表模板" desc="mobile子表模板" type="subTable" dir="mobile"/>
+
+</templates>

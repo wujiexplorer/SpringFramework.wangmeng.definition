@@ -1,0 +1,30 @@
+<!doctype html>
+<html ng-app="base">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<link href="../../build/common/base.css" rel="stylesheet">
+		<script type="text/javascript" src="../../build/common/base.js"></script>
+		<script type="text/javascript" src="../../build/common/ngEdit.js"></script>
+		<script type="text/javascript">
+			var controller = ['$scope','baseService',function(scope,baseService){
+                var instanceId, defId;
+			    try{
+					instanceId = window.passData.instanceId;
+					defId = window.passData.defId;
+                }catch (e) {
+                    instanceId = $.getParam('instanceId');
+                    defId = $.getParam('defId');
+                }
+                $("#test").attr("src", __ctx + "/bpm/instance/flowImage?instId=" + instanceId + "&defId=" + defId);
+			}];
+			
+			function isValidate(){
+				$.Dialog.close(window);
+				return false;
+			}
+		</script>
+	</head>
+	<body class="panel success" ng-controller="controller" style="overflow:auto;">
+		<img id="test"/>
+	</body>
+</html>

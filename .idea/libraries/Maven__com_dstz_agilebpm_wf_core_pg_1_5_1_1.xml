@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.dstz.agilebpm:wf-core:pg:1.5.1.1">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dstz/agilebpm/wf-core/1.5.1.1/wf-core-1.5.1.1-pg.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dstz/agilebpm/wf-core/1.5.1.1/wf-core-1.5.1.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/dstz/agilebpm/wf-core/1.5.1.1/wf-core-1.5.1.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -7,14 +7,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="form-rest" />
+        <module name="base-core" />
         <module name="SpringBootJWT" />
         <module name="SpringCloud2Member2" />
+        <module name="base-api" />
         <module name="springbootstarter" />
         <module name="springcore" />
         <module name="AppServer" />
         <module name="ace-common" />
         <module name="extarraylist" />
+        <module name="agilebpm-security-autoconfigure" />
         <module name="SpringCloud2Pay" />
+        <module name="base-rest" />
         <module name="springbootstarterconfigurer" />
         <module name="springbootstartertest" />
         <module name="SpringCLoud2ConfigClient" />
@@ -23,46 +28,63 @@
         <module name="extNettyServer" />
         <module name="extSpringBoot" />
         <module name="ace-tool" />
+        <module name="ab-spring-security" />
         <module name="threadjdbc" />
         <module name="hrserver" />
         <module name="springioc" />
         <module name="springcloud20eurekaserver" />
         <module name="SpringCloud2wangmengApiMemberServiceImpl2" />
         <module name="extlinkedlist" />
+        <module name="agilebpm-ui" />
         <module name="SpringCloud2wangmengCommon" />
         <module name="wangmengmemberpublicdubboapi" />
         <module name="SpringBoot2Swagger" />
+        <module name="org-api" />
         <module name="ace-auth-client" />
         <module name="wangmengorderdubboservice" />
         <module name="springmvc" />
         <module name="ace-generator" />
         <module name="SpringCloudZuulGateway" />
         <module name="springbootmail" />
+        <module name="bus-core" />
+        <module name="bus-rest" />
         <module name="SpringCloud2ZookeeperMember" />
+        <module name="sys-core" />
         <module name="ace-sidecar-client-demo" />
         <module name="SpringBoot2EurekaMember" />
         <module name="DubboCommon" />
+        <module name="ab-org-core" />
         <module name="AppClient" />
+        <module name="sys-api" />
         <module name="SpringBoot2EurekaMember2" />
         <module name="SpringBootScaffolding" />
         <module name="wangmengmemberdubboapiservice" />
+        <module name="agilebpm-sys-starter" />
         <module name="SpringCloud2wangmengApiMemberServiceImpl" />
         <module name="SpringBootPayUnionWxAlipay" />
+        <module name="agilebpm-base-starter" />
         <module name="DubboRegistry" />
         <module name="SpringBootQuartz" />
+        <module name="agilebpm-spring-boot-samples" />
         <module name="mall-demo" />
+        <module name="sys-rest" />
         <module name="SpringCloud2ConfigServer" />
         <module name="mybatisorm" />
         <module name="SpringCloud2ZookeeperOrder" />
+        <module name="web" />
         <module name="SpringCloudMember" />
         <module name="SpringBootXunfeiMsi" />
         <module name="SpringCloud2wangmengApiOrderServiceImpl" />
         <module name="ace-interface" />
         <module name="ace-admin" />
         <module name="mall-mbg" />
+        <module name="agilebpm-base-autoconfigure" />
         <module name="ace-auth-common" />
+        <module name="demo-api" />
         <module name="SpringCloud2EurekaServer9001" />
+        <module name="base-db" />
         <module name="SpringCloud2ConsulMember" />
+        <module name="agilebpm-sys-autoconfigure" />
         <module name="springannotation" />
         <module name="springmvcannotation" />
         <module name="SpringBootDoc" />
@@ -70,19 +92,24 @@
         <module name="extTomcat" />
         <module name="SpringBoot2EurekaOrder" />
         <module name="SpringCloud2ZookeeperMember2" />
+        <module name="form-api" />
         <module name="RpcServer" />
+        <module name="bus-api" />
         <module name="springaop" />
         <module name="SpringBootElasticsearch" />
         <module name="SpringCloud2wangmengApiMemberService" />
         <module name="ace-monitor" />
         <module name="ace-gate" />
         <module name="ace-sidecar-server" />
+        <module name="form-core" />
         <module name="SpringBoot2ElasticSearch" />
         <module name="extHttpServer" />
         <module name="SpringCloud2ZuulGateway2" />
         <module name="ace-auth-server" />
+        <module name="agilebpm-security-starter" />
         <module name="SpringCloud20Order" />
         <module name="SpringBootSeckill" />
+        <module name="demo-core" />
         <module name="mall-admin" />
         <module name="LicenseAppServer" />
         <module name="SpringCloud2wangmengApiOrderService" />
@@ -91,11 +118,15 @@
         <module name="SpringBoot20EurekaServer" />
         <module name="extHashMap" />
         <module name="extSpringBootJavaTomcat" />
+        <module name="agilebpm-wf-autoconfigure" />
         <module name="AppCommon" />
+        <module name="agilebpm-wf-starter" />
         <module name="mall-portal" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="ab-org-core" target="1.8" />
+      <module name="ab-spring-security" target="1.8" />
       <module name="ace-admin" target="1.8" />
       <module name="ace-auth" target="1.8" />
       <module name="ace-auth-client" target="1.8" />
@@ -113,9 +144,35 @@
       <module name="ace-sidecar-client-demo" target="1.8" />
       <module name="ace-sidecar-server" target="1.8" />
       <module name="ace-tool" target="1.8" />
+      <module name="agile-bpm" target="1.8" />
+      <module name="agilebpm-base-autoconfigure" target="1.8" />
+      <module name="agilebpm-base-starter" target="1.8" />
+      <module name="agilebpm-security-autoconfigure" target="1.8" />
+      <module name="agilebpm-security-starter" target="1.8" />
+      <module name="agilebpm-spring-boot" target="1.8" />
+      <module name="agilebpm-spring-boot-samples" target="1.8" />
+      <module name="agilebpm-sys-autoconfigure" target="1.8" />
+      <module name="agilebpm-sys-starter" target="1.8" />
+      <module name="agilebpm-ui" target="1.8" />
+      <module name="agilebpm-wf-autoconfigure" target="1.8" />
+      <module name="agilebpm-wf-starter" target="1.8" />
       <module name="AppClient" target="1.8" />
       <module name="AppCommon" target="1.8" />
       <module name="AppServer" target="1.8" />
+      <module name="auth" target="1.8" />
+      <module name="base" target="1.8" />
+      <module name="base-api" target="1.8" />
+      <module name="base-core" target="1.8" />
+      <module name="base-db" target="1.8" />
+      <module name="base-rest" target="1.8" />
+      <module name="bus" target="1.8" />
+      <module name="bus-api" target="1.8" />
+      <module name="bus-core" target="1.8" />
+      <module name="bus-form" target="1.8" />
+      <module name="bus-rest" target="1.8" />
+      <module name="demo" target="1.8" />
+      <module name="demo-api" target="1.8" />
+      <module name="demo-core" target="1.8" />
       <module name="DubboCommon" target="1.8" />
       <module name="DubboRegistry" target="1.8" />
       <module name="extarraylist" target="8" />
@@ -128,6 +185,10 @@
       <module name="extSpringBootJavaTomcat" target="1.7" />
       <module name="extSpringBootJavaTomcatMaven" target="1.7" />
       <module name="extTomcat" target="1.5" />
+      <module name="form" target="1.8" />
+      <module name="form-api" target="1.8" />
+      <module name="form-core" target="1.8" />
+      <module name="form-rest" target="1.8" />
       <module name="hrserver" target="1.8" />
       <module name="LicenseAppServer" target="1.8" />
       <module name="LicenseParent" target="1.8" />
@@ -140,6 +201,9 @@
       <module name="mall-portal" target="1.8" />
       <module name="mall-search" target="1.8" />
       <module name="mybatisorm" target="8" />
+      <module name="org" target="1.8" />
+      <module name="org-api" target="1.8" />
+      <module name="platform" target="1.8" />
       <module name="RpcClient" target="1.8" />
       <module name="RpcServer" target="1.8" />
       <module name="springannotation" target="1.5" />
@@ -190,11 +254,16 @@
       <module name="springioc" target="1.5" />
       <module name="springmvc" target="8" />
       <module name="springmvcannotation" target="1.7" />
+      <module name="sys" target="1.8" />
+      <module name="sys-api" target="1.8" />
+      <module name="sys-core" target="1.8" />
+      <module name="sys-rest" target="1.8" />
       <module name="threadjdbc" target="1.5" />
       <module name="wangmengmemberdubboapiservice" target="1.5" />
       <module name="wangmengMemberPublicDubboApi" target="1.5" />
       <module name="wangmengmemberpublicdubboapi" target="1.5" />
       <module name="wangmengorderdubboservice" target="1.5" />
+      <module name="web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
@@ -239,6 +308,16 @@
       <module name="ace-sidecar-client-demo" options="-parameters" />
       <module name="ace-sidecar-server" options="-parameters" />
       <module name="ace-tool" options="-parameters" />
+      <module name="agilebpm-base-autoconfigure" options="-parameters" />
+      <module name="agilebpm-base-starter" options="-parameters" />
+      <module name="agilebpm-security-autoconfigure" options="-parameters" />
+      <module name="agilebpm-security-starter" options="-parameters" />
+      <module name="agilebpm-spring-boot-samples" options="-parameters" />
+      <module name="agilebpm-sys-autoconfigure" options="-parameters" />
+      <module name="agilebpm-sys-starter" options="-parameters" />
+      <module name="agilebpm-ui" options="-parameters" />
+      <module name="agilebpm-wf-autoconfigure" options="-parameters" />
+      <module name="agilebpm-wf-starter" options="-parameters" />
       <module name="extSpringBoot" options="-parameters" />
       <module name="hrserver" options="-parameters" />
       <module name="mall-admin" options="-parameters" />
