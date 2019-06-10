@@ -44,6 +44,7 @@
         <module name="wangmengorderdubboservice" />
         <module name="ace-sidecar-client-demo" />
         <module name="ace-generator" />
+        <module name="admin-core" />
         <module name="SpringCloudZuulGateway" />
         <module name="springbootmail" />
         <module name="bus-core" />
@@ -105,6 +106,7 @@
         <module name="RpcClient" />
         <module name="ace-admin" />
         <module name="extHttpServer" />
+        <module name="admin-console" />
         <module name="SpringCloud2ZuulGateway2" />
         <module name="ace-auth-server" />
         <module name="agilebpm-security-starter" />
@@ -145,6 +147,9 @@
       <module name="ace-sidecar-client-demo" target="1.8" />
       <module name="ace-sidecar-server" target="1.8" />
       <module name="ace-tool" target="1.8" />
+      <module name="admin" target="1.8" />
+      <module name="admin-console" target="1.8" />
+      <module name="admin-core" target="1.8" />
       <module name="agile-bpm" target="1.8" />
       <module name="agilebpm-base-autoconfigure" target="1.8" />
       <module name="agilebpm-base-starter" target="1.8" />
@@ -310,6 +315,8 @@
       <module name="ace-sidecar-client-demo" options="-parameters" />
       <module name="ace-sidecar-server" options="-parameters" />
       <module name="ace-tool" options="-parameters" />
+      <module name="admin-console" options="-parameters" />
+      <module name="admin-core" options="-parameters" />
       <module name="agilebpm-base-autoconfigure" options="-parameters" />
       <module name="agilebpm-base-starter" options="-parameters" />
       <module name="agilebpm-security-autoconfigure" options="-parameters" />

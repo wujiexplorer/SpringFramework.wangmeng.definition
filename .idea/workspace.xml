@@ -1,74 +1,540 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f18c59f8-fc8b-4f9a-a4c2-c62de22503fb" name="Default Changelist" comment="敏捷流程开发平台，企业级流程解决方案， 前后端分离，模块化，超低耦合。 基于activiti5.22，零java代码即可做到复杂业务的流程实施">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_druid_1_0_29.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_autoconfigure_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_mybatis_spring_boot_mybatis_spring_boot_starter_1_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_security_1_5_9_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_2_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/BlogserverApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/bean/Article.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/bean/Category.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/bean/RespBean.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/bean/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/bean/Tags.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/bean/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/config/AuthenticationAccessDeniedHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/config/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/controller/ArticleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/controller/LoginRegController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/controller/admin/AdminController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/controller/admin/UserManaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/ArticleMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/ArticleMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/CategoryMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/CategoryMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/RolesMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/RolesMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/TagsMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/TagsMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/UserMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/mapper/UserMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/service/ArticleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/service/DataStatisticsComponent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/utils/DateTypeHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/java/org/sang/utils/Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/log4j.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/mybatis-config.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/css/app.bc863c01bd283b4b819e7aecef3aac7f.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/css/app.bc863c01bd283b4b819e7aecef3aac7f.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/fonts/element-icons.6f0a763.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/fonts/fontawesome-webfont.674f50d.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/fonts/fontawesome-webfont.af7ae50.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/fonts/fontawesome-webfont.b06871f.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/fonts/fontawesome-webfont.fee66e7.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/fonts/fontello.068ca2b.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/fonts/fontello.e73a064.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/img/fontawesome-webfont.912ec66.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/img/fontello.9354499.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/js/app.68f5c35407ca9cd40d8b.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/js/app.68f5c35407ca9cd40d8b.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/js/manifest.fc113b1d276302e2cab1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/js/manifest.fc113b1d276302e2cab1.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/js/vendor.dd31c3932b33cfeec940.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/static/static/js/vendor.dd31c3932b33cfeec940.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/templates/01.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blogserver/src/main/resources/vueblog.sql" afterDir="false" />
+    <list default="true" id="f18c59f8-fc8b-4f9a-a4c2-c62de22503fb" name="Default Changelist" comment="@EnableScheduling//开启定时任务支持">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__cglib_cglib_2_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_github_virtuald_curvesapi_1_04.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibeetl_beetl_3_0_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibeetl_beetl_framework_starter_1_2_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_ibeetl_beetlsql_2_12_0_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_9_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_36_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_2_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_6_0_5.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_8_0_16.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_digester3_with_deps_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_jexl_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_poi_poi_ooxml_schemas_3_17.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_19.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_xmlbeans_xmlbeans_2_6_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jxls_jxls_2_4_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jxls_jxls_poi_1_0_14.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jxls_jxls_reader_2_0_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_commons_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_tree_5_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_devtools_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_cache_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_1_8_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/CosonleApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/dao/AuditConsoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/dao/DictConsoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/dao/FunctionConsoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/dao/MenuConsoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/dao/OrgConsoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/dao/RoleConsoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/dao/RoleFunctionConsoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/dao/UserConsoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/exception/DeletedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/exception/NoResourceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/service/AuditConsoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/service/DictConsoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/service/FunctionConsoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/service/MenuConsoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/service/OrgConsoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/service/RoleConsoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/service/UserConsoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/AuditConsoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/DictConsoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/FunctionController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/MenuController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/OrgConsoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/RoleConsoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/UserConsoleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/dto/DictExcelImportData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/dto/RoleDataAccessFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/dto/UserExcelExportData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/AuditQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/CmsBlogQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/CoreDictQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/CoreFunctionQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/FunctionQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/MenuQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/OrgQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/OrgTreeQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/OrgUserQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/RoleQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/RoleUserQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/UserQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/UserRoleQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/web/query/WorkflowQuery.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/banner.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/beetl.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/btsql-ext.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/excelTemplates/admin/dict/dict_collection_template.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/excelTemplates/admin/dict/dict_mapping.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/excelTemplates/admin/dict/dict_upload_template.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/excelTemplates/admin/user/user_collection_template.xls" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/sql/console/audit.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/sql/console/console.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/sql/console/dict.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/sql/console/function.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/sql/console/menu.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/sql/console/org.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/sql/console/role.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/sql/console/roleFunction.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/sql/console/user.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/audit/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/dict/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/dict/del.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/dict/dictApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/dict/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/dict/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/function/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/function/del.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/function/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/function/functionApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/function/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/menu/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/menu/del.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/menu/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/menu/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/menu/menuApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/org/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/org/del.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/org/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/org/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/org/orgApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/org/orgUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/role/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/role/del.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/role/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/role/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/role/roleApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/role/roleData.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/role/roleFn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/role/roleUser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/user/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/user/changePassword.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/user/del.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/user/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/user/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/user/roleDel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/user/userApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/user/userRole.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/static/js/admin/user/userRoleAdd.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/audit/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/dict/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/dict/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/dict/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/function/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/function/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/function/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/menu/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/menu/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/menu/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/org/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/org/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/org/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/org/orgUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/role/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/role/data.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/role/dataConfigPart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/role/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/role/function.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/role/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/role/roleUser.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/user/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/user/changePassword.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/user/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/user/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/user/userRole.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-console/src/main/resources/templates/admin/user/userRoleAdd.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/annotation/Dict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/annotation/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/annotation/Query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/BeetlConf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/CacheConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/CustomErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/FileSystemConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/JasonConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/MVCConf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/PasswordConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/RbacAnnotationConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/conf/RbacDataAccessConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreAuditDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreDictDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreFileDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreFunctionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreMenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreOrgDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreRoleFunctionDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreRoleMenuDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreUserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreUserRoleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/dao/CoreWorkflowDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/BaseEntity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreAudit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreDict.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreOrg.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreRoleFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreRoleMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/entity/CoreUserRole.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/file/DBIndexHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/file/FileItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/file/FileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/file/FileTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/file/LocalFileItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/file/LocalFileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/file/PersistFileItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/AutoGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/BaseTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/ConsoleTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/HtmlGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/JSGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/JavaCodeGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/MavenProjectTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/MdGen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/Target.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/WebTarget.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/model/Attribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/model/Entity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/model/Verify.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/AccessType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/DataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/DataAccessFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/DataAccessResullt.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/UserLoginInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/da/AllGroupAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/da/DefaultDataAccessFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/da/GroupDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/da/GroupOnlyDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/da/OwnerDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/da/ParentCorpDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/da/SameCompanyAllDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/da/SameDeparmentAllDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/da/SameOrgDataAccess.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/tree/FunctionItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/tree/MenuItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/tree/OrgItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/tree/TreeItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/service/CoreAuditService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/service/CoreBaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/service/CoreCodeGenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/service/CoreDictService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/service/CorePlatformService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/service/CoreRoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/service/CoreUserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/AnnotationUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/ClassLoaderUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/ConvertUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/DateUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/ExcelError.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/FileDownloadUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/FileUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/FormFieldException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/FunctionBuildUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/FunctionLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/HttpRequestLocal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/MenuBuildUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/OrgBuildUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/PlatformException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/Tool.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/UUIDUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/ValidateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/DataAccessFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/DictQueryFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/FileFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/FunAccessUrlFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/FunFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/MenuFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/NextDayFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/OrgFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/RoleFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/SearchCondtionFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/SysFunctionTreeFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/UUIDFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/VerifyForamtFunction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/beetl/XXSDefenderFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/doc/BeetlExpressionEvaluator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/enums/CoreDictType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/enums/DelFlagEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/enums/GeneralStateEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/enums/RoleTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/CoreCodeGenController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/CoreDictController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/CoreUserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/FileSystemContorller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/JsonResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/JsonReturnCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/SimulateController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/dto/FunctionNodeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/dto/MenuNodeView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/dto/SystemMenuView.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/query/PageParam.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/query/QueryData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/query/QueryItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/web/query/QueryParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/html/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/html/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/html/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/java/controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/java/dao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/java/pojo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/java/query.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/java/service.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/js/add.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/js/del.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/js/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/js/entityApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/js/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/maven/main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/maven/pomTemplate.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/codeTemplate/md/entity.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreDict.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreFunction.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreMenu.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreOrg.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreRole.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreRoleFunction.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreRoleMenu.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreUser.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreUserRole.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/sql/core/coreWorkflow.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/css/cdn/font_520106_q8xykrwf86ywrk9.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/css/cdn/pace-theme-flash.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/css/fs.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/font/font_520106_q8xykrwf86ywrk9-iefix.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/font/font_520106_q8xykrwf86ywrk9.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/font/font_520106_q8xykrwf86ywrk9.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/font/font_520106_q8xykrwf86ywrk9.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/js/cdn/pace.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/js/common.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/js/core/codeGen/codeApi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/js/core/codeGen/edit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/js/core/codeGen/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/js/core/codeGen/project.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/js/lib.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/frame/js/fsTab.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/frame/js/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/frame/views/upload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/jquery/jquery.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/layui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/layui.mobile.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/modules/code.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/modules/laydate/default/laydate.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/modules/layer/default/icon-ext.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/modules/layer/default/icon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/modules/layer/default/layer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/modules/layer/default/loading-0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/modules/layer/default/loading-1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/css/modules/layer/default/loading-2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/font/iconfont.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/font/iconfont.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/font/iconfont.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/font/iconfont.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/0.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/1.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/10.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/11.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/12.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/13.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/14.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/15.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/16.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/17.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/18.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/19.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/2.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/20.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/21.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/22.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/23.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/24.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/25.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/26.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/27.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/28.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/29.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/3.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/30.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/31.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/32.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/33.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/34.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/35.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/36.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/37.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/38.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/39.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/4.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/40.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/41.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/42.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/43.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/44.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/45.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/46.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/47.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/48.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/49.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/5.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/50.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/51.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/52.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/53.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/54.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/55.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/56.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/57.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/58.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/59.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/6.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/60.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/61.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/62.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/63.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/64.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/65.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/66.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/67.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/68.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/69.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/7.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/70.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/71.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/8.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/images/face/9.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/carousel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/code.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/colorpicker.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/form.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/laydate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/layedit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/layer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/laypage.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/laytpl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/mobile.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/rate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/slider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/table.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/tree.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/treeGrid.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/upload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/lay/modules/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/layui.all.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/layui/layui.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/1_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/1_open.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/4.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/5.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/6.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/7.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/8.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/diy/9.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/line_conn.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/line_conn.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/metro.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/metro.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/zTreeStandard.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/img/zTreeStandard.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/metroStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/css/zTreeStyle.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/static/plugins/ztree/js/jquery.ztree.all.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/container.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/layout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/query/fun.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/query/menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/query/org.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/query/role.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/simpleUpload.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/accessButton.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/attachment.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/closeButton.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/functionInput.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/menuFunctionInput.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/menuInput.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/orgInput.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/roleInput.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/searchForm.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/simpleDataSelect.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/simpleDictSelect.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/common/tag/submitButtons.tag.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/core/codeGen/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/core/codeGen/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/core/codeGen/project.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/help.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/admin-core/src/main/resources/templates/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/codePorject.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/codeconfig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/codegen.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/codegen2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/codeoverview.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/core.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/data.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/design.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/excelExport.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/pay-install.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/role.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/readme/user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/starter-mysql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/starter-oracle.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/starter-postgresql.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/doc/starter-sqlserver.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/lib/mysql-connector-java-6.0.5.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/lib/ojdbc6-11.2.0.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/lib/readme.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/springboot-plus/sonar-project.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
@@ -207,6 +673,9 @@
     <ignored path="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-ui/target/" />
     <ignored path="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-security-autoconfigure/target/" />
     <ignored path="$PROJECT_DIR$/blogserver/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-plus/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-plus/admin-console/target/" />
+    <ignored path="$PROJECT_DIR$/springboot-plus/admin-core/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,10 +688,10 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/blogserver/src/main/java/org/sang/BlogserverApplication.java">
+        <entry file="file://$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/CosonleApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="27" />
+            <state relative-caret-position="60">
+              <caret line="6" column="58" lean-forward="true" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
             </state>
           </provider>
         </entry>
@@ -336,25 +805,34 @@
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="blogserver" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="blogserver" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-console" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-console" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="blogserver" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-console" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="blogserver" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-console" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -362,94 +840,132 @@
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="blogserver" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-console" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="sang" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="blogserver" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-console" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="blogserver" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-console" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="admin" type="462c0819:PsiDirectoryNode" />
+              <item name="console" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="blogserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="blogserver" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth-server" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth-server" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="cloud-platform" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth" type="462c0819:PsiDirectoryNode" />
-              <item name="ace-auth-server" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="gen" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="gen" type="462c0819:PsiDirectoryNode" />
+              <item name="JavaCodeGen.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="rbac" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="rbac" type="462c0819:PsiDirectoryNode" />
+              <item name="tree" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="springboot-plus" type="462c0819:PsiDirectoryNode" />
+              <item name="admin-core" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -462,13 +978,15 @@
   <component name="PropertiesComponent">
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelOrder2" value="2" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/blogserver/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/springboot-plus/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -497,7 +1015,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.BlogserverApplication">
+  <component name="RunManager" selected="Spring Boot.CosonleApplication">
     <configuration name="AdminBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ace-admin" />
       <extension name="coverage">
@@ -539,19 +1057,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AuthBootstrap" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ace-auth-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.github.wxiaoqi.security.auth.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.github.wxiaoqi.security.auth.AuthBootstrap" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="BlogserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="blogserver" />
       <extension name="coverage">
@@ -561,6 +1066,19 @@
         </pattern>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.sang.BlogserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CosonleApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="admin-console" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ibeetl.admin.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ibeetl.admin.CosonleApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -612,19 +1130,19 @@
       <item itemvalue="Spring Boot.Application (3)" />
       <item itemvalue="Spring Boot.UsersApplication" />
       <item itemvalue="Spring Boot.SamplesApplication" />
-      <item itemvalue="Spring Boot.AuthBootstrap" />
       <item itemvalue="Spring Boot.GatewayServerBootstrap" />
       <item itemvalue="Spring Boot.AdminBootstrap" />
       <item itemvalue="Spring Boot.HrserverApplication" />
       <item itemvalue="Spring Boot.BlogserverApplication" />
+      <item itemvalue="Spring Boot.CosonleApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.CosonleApplication" />
         <item itemvalue="Spring Boot.BlogserverApplication" />
         <item itemvalue="Spring Boot.HrserverApplication" />
         <item itemvalue="Spring Boot.AdminBootstrap" />
         <item itemvalue="Spring Boot.GatewayServerBootstrap" />
-        <item itemvalue="Spring Boot.AuthBootstrap" />
       </list>
     </recent_temporary>
   </component>
@@ -664,7 +1182,7 @@
       <workItem from="1558687029196" duration="1795000" />
       <workItem from="1559180881066" duration="4014000" />
       <workItem from="1559524938302" duration="13731000" />
-      <workItem from="1559809840269" duration="2240000" />
+      <workItem from="1559809840269" duration="4973000" />
     </task>
     <task id="LOCAL-00003" summary="sprig boot 自定义starter，enableAutoConfigurer,自动配置，starter去引进，starter其实就是引入包的作用，自动配置，主要是配置，java config，以注解的形式表现">
       <created>1557803385807</created>
@@ -722,11 +1240,18 @@
       <option name="project" value="LOCAL" />
       <updated>1559788557203</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="@EnableScheduling//开启定时任务支持">
+      <created>1559817170799</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1559817170799</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="59978000" />
+    <option name="totallyTimeSpent" value="62711000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1062" extended-state="6" />
@@ -736,7 +1261,7 @@
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Designer" order="4" />
-      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.19259657" />
+      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.40458015" visible="true" weight="0.19259657" />
       <window_info id="Structure" order="6" sideWeight="0.5954198" side_tool="true" weight="0.39788198" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="MyBatis Sql Log" order="0" />
@@ -751,7 +1276,7 @@
       <window_info anchor="bottom" id="Message" order="9" />
       <window_info anchor="bottom" id="Find" order="10" />
       <window_info anchor="bottom" id="Run" order="11" weight="0.32560706" />
-      <window_info anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" visible="true" weight="0.36644593" />
+      <window_info active="true" anchor="bottom" id="Debug" order="12" sideWeight="0.4977307" visible="true" weight="0.36644593" />
       <window_info anchor="bottom" id="Cvs" order="13" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="14" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="15" weight="0.3289689" />
@@ -760,7 +1285,7 @@
       <window_info anchor="bottom" id="Inspection Results" order="18" weight="0.3289689" />
       <window_info anchor="bottom" id="Database Console" order="19" weight="0.32967034" />
       <window_info anchor="bottom" id="Statistic" order="20" />
-      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.50252527" side_tool="true" weight="0.24886535" />
+      <window_info anchor="right" id="Coverage" order="0" sideWeight="0.50252527" side_tool="true" weight="0.24839056" />
       <window_info anchor="right" id="Palette" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
       <window_info anchor="right" id="Key Promoter X" order="3" weight="0.3290469" />
@@ -839,7 +1364,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <MESSAGE value="test repeate commit" />
     <MESSAGE value="test repeate" />
     <MESSAGE value="ext Httpserver，加载流文件时，config/itree-config.properties,一个项目可以，父类有个文件夹就不行，原因不明" />
@@ -851,7 +1375,8 @@
     <MESSAGE value="foeign client uri 可以找到相应的实现的" />
     <MESSAGE value="发邮件，可以做成一个任务，然后多个线程去执行 logImpl mybatis -config.xml&#10;也可以去执行" />
     <MESSAGE value="敏捷流程开发平台，企业级流程解决方案， 前后端分离，模块化，超低耦合。 基于activiti5.22，零java代码即可做到复杂业务的流程实施" />
-    <option name="LAST_COMMIT_MESSAGE" value="敏捷流程开发平台，企业级流程解决方案， 前后端分离，模块化，超低耦合。 基于activiti5.22，零java代码即可做到复杂业务的流程实施" />
+    <MESSAGE value="@EnableScheduling//开启定时任务支持" />
+    <option name="LAST_COMMIT_MESSAGE" value="@EnableScheduling//开启定时任务支持" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -865,143 +1390,12 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SpringFramework_wangmeng_definition$CosonleApplication.ic" NAME="CosonleApplication Coverage Results" MODIFIED="1560135380660" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.ibeetl.admin.*</FILTER>
+    </SUITE>
+  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/custom/TsysRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="11" column="76" selection-start-line="11" selection-start-column="76" selection-end-line="11" selection-end-column="76" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/custom/TsysPremissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="245">
-          <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/auto/TsysUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="174" column="61" selection-start-line="174" selection-start-column="61" selection-end-line="174" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/auto/TSysRoleUserMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="174" column="61" selection-start-line="174" selection-start-column="61" selection-end-line="174" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/auto/TsysRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="158" column="61" selection-start-line="158" selection-start-column="61" selection-end-line="158" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/auto/TsysPremissionMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-43">
-          <caret line="261" column="61" selection-start-line="261" selection-start-column="61" selection-end-line="261" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/auto/TsysOperLogMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="246" column="61" selection-start-line="246" selection-start-column="61" selection-end-line="246" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/auto/TsysFileMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13">
-          <caret line="247" column="61" selection-start-line="247" selection-start-column="61" selection-end-line="247" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/auto/TsysFileDataMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="174" column="61" selection-start-line="174" selection-start-column="61" selection-end-line="174" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/auto/TsysDatasMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-10">
-          <caret line="152" column="35" lean-forward="true" selection-start-line="152" selection-start-column="35" selection-end-line="152" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/auto/TsysPermissionRoleMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="174" column="61" selection-start-line="174" selection-start-column="61" selection-end-line="174" selection-end-column="61" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/common/support/KaptchaTextCreator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/common/conf/KaptchaConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="201">
-          <caret line="49" column="77" selection-start-line="49" selection-start-column="77" selection-end-line="49" selection-end-column="77" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/common/exception/GlobalExceptionResolver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-89">
-          <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/common/exception/file/InvalidExtensionException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-993">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/service/GeneratorService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="38" column="58" selection-start-line="38" selection-start-column="58" selection-end-line="38" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/mapper/auto/GeneratorMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="17" column="14" lean-forward="true" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/resources/mybatis/custom/GeneratorMapper.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-343">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="55" column="49" selection-start-line="55" selection-start-column="37" selection-end-line="55" selection-end-column="49" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SpringBootScaffolding/src/main/java/com/wangmeng/test/controller/admin/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -1190,8 +1584,145 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/blogserver/src/main/java/org/sang/BlogserverApplication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="27" />
+        <state relative-caret-position="150">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/PlatformException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/exception/NoResourceException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="9" column="51" selection-start-line="9" selection-start-column="51" selection-end-line="9" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/console/exception/DeletedException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/MavenProjectTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/AutoGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/BaseTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="12" column="22" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/Target.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/WebTarget.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/rbac/tree/FunctionItem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/FunctionLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-88">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/HttpRequestLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="74" column="48" lean-forward="true" selection-start-line="74" selection-start-column="48" selection-end-line="74" selection-end-column="48" />
+          <folding>
+            <element signature="e#483#647#0" expanded="true" />
+            <element signature="e#646#647#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/ExcelError.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/ConvertUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/ibeetl/beetl/3.0.0.RELEASE/beetl-3.0.0.RELEASE.jar!/org/beetl/core/GroupTemplate.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/ibeetl/beetl/3.0.0.RELEASE/beetl-3.0.0.RELEASE.jar!/org/beetl/core/Template.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-94">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/gen/JavaCodeGen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="29">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/ClassLoaderUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-core/src/main/java/com/ibeetl/admin/core/util/AnnotationUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="226">
+          <caret line="37" column="62" lean-forward="true" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springboot-plus/admin-console/src/main/java/com/ibeetl/admin/CosonleApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" column="58" lean-forward="true" selection-start-line="6" selection-start-column="58" selection-end-line="6" selection-end-column="58" />
         </state>
       </provider>
     </entry>
@@ -1245,7 +1776,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>blogserver</last-edited>
+          <last-edited>admin-core</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

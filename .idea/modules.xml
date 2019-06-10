@@ -68,6 +68,9 @@
       <module fileurl="file://$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/ace-sidecar-client-demo.iml" filepath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo/ace-sidecar-client-demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server/ace-sidecar-server.iml" filepath="$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server/ace-sidecar-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/ace-tool.iml" filepath="$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool/ace-tool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-plus/admin.iml" filepath="$PROJECT_DIR$/springboot-plus/admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-plus/admin-console/admin-console.iml" filepath="$PROJECT_DIR$/springboot-plus/admin-console/admin-console.iml" />
+      <module fileurl="file://$PROJECT_DIR$/springboot-plus/admin-core/admin-core.iml" filepath="$PROJECT_DIR$/springboot-plus/admin-core/admin-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/agile-bpm.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/agile-bpm.iml" />
       <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-autoconfigure/agilebpm-base-autoconfigure.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-autoconfigure/agilebpm-base-autoconfigure.iml" />
       <module fileurl="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-starter/agilebpm-base-starter.iml" filepath="$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-base-starter/agilebpm-base-starter.iml" />
