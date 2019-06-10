@@ -112,6 +112,12 @@
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-core/form-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-core/form-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-rest/form-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-rest/form-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrserver/hrserver.iml" filepath="$PROJECT_DIR$/hrserver/hrserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/litemall/litemall.iml" filepath="$PROJECT_DIR$/litemall/litemall.iml" />
+      <module fileurl="file://$PROJECT_DIR$/litemall/litemall-admin-api/litemall-admin-api.iml" filepath="$PROJECT_DIR$/litemall/litemall-admin-api/litemall-admin-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/litemall/litemall-all/litemall-all.iml" filepath="$PROJECT_DIR$/litemall/litemall-all/litemall-all.iml" />
+      <module fileurl="file://$PROJECT_DIR$/litemall/litemall-core/litemall-core.iml" filepath="$PROJECT_DIR$/litemall/litemall-core/litemall-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/litemall/litemall-db/litemall-db.iml" filepath="$PROJECT_DIR$/litemall/litemall-db/litemall-db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/litemall/litemall-wx-api/litemall-wx-api.iml" filepath="$PROJECT_DIR$/litemall/litemall-wx-api/litemall-wx-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall/mall.iml" filepath="$PROJECT_DIR$/mall/mall.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall/mall-admin/mall-admin.iml" filepath="$PROJECT_DIR$/mall/mall-admin/mall-admin.iml" />
       <module fileurl="file://$PROJECT_DIR$/mall/mall-common/mall-common.iml" filepath="$PROJECT_DIR$/mall/mall-common/mall-common.iml" />
