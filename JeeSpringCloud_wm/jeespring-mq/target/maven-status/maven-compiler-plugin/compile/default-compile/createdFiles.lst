@@ -1,0 +1,6 @@
+com\company\project\modules\activeMQ\CompanyProducer.class
+com\jeespring\modules\activeMQ\JeeSpringProducerRestController.class
+com\jeespring\modules\activeMQ\JeeSpringConsumer.class
+com\jeespring\modules\activeMQ\JeeSpringProducer.class
+com\company\project\modules\activeMQ\CompanyConsumer.class
+com\jeespring\modules\activeMQ\Email.class

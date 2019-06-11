@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jeespring-webDubboProvider:war">
+    <output-path>$PROJECT_DIR$/jeespring-webDubboProvider/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>jeespring-webDubboProvider</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="jeespring-webDubboProvider-3.0.0.war">
+      <element id="artifact" artifact-name="jeespring-webDubboProvider:war exploded" />
+    </root>
+  </artifact>
+</component>

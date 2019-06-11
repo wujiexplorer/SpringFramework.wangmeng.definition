@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="jeespring-mq" />
+        <module name="jeespring-webDubboProvider" />
+        <module name="jeespring-web" />
+        <module name="jeespring-company" />
+        <module name="jeespring-cms" />
+        <module name="jeespring-gencode" />
+        <module name="jeespring-act" />
+        <module name="jeespring-framework" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="jeespring" target="1.8" />
+      <module name="jeespring-act" target="1.8" />
+      <module name="jeespring-cms" target="1.8" />
+      <module name="jeespring-company" target="1.8" />
+      <module name="jeespring-framework" target="1.8" />
+      <module name="jeespring-gencode" target="1.8" />
+      <module name="jeespring-mq" target="1.8" />
+      <module name="jeespring-web" target="1.8" />
+      <module name="jeespring-webDubboProvider" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="jeespring-act" options="-parameters -verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_201/jre/lib/jce.jar&quot;" />
+      <module name="jeespring-cms" options="-parameters -verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_201/jre/lib/jce.jar&quot;" />
+      <module name="jeespring-company" options="-parameters -verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_201/jre/lib/jce.jar&quot;" />
+      <module name="jeespring-framework" options="-parameters -verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_201/jre/lib/jce.jar&quot;" />
+      <module name="jeespring-gencode" options="-parameters -verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_201/jre/lib/jce.jar&quot;" />
+      <module name="jeespring-mq" options="-parameters -verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_201/jre/lib/jce.jar&quot;" />
+      <module name="jeespring-web" options="-parameters -verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_201/jre/lib/jce.jar&quot;" />
+      <module name="jeespring-webDubboProvider" options="-parameters -verbose -bootclasspath &quot;C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar;C:/Program Files/Java/jdk1.8.0_201/jre/lib/jce.jar&quot;" />
+    </option>
+  </component>
+</project>
