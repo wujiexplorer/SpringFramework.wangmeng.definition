@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sw-portl:war">
+    <output-path>$PROJECT_DIR$/zscat_sw/sw_portl/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>sw-portl</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="sw-portl.war">
+      <element id="artifact" artifact-name="sw-portl:war exploded" />
+    </root>
+  </artifact>
+</component>

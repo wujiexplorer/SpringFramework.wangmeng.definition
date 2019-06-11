@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="blog-service:war">
+    <output-path>$PROJECT_DIR$/zscat_sw/sw-blog/blog-service/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>blog-service</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="blog-service.war">
+      <element id="artifact" artifact-name="blog-service:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jeespring-web:war">
+    <output-path>$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>jeespring-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="jeespring-web-3.0.0.war">
+      <element id="artifact" artifact-name="jeespring-web:war exploded" />
+    </root>
+  </artifact>
+</component>

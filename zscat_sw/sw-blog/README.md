@@ -1,0 +1,1 @@
+http://localhost:2001/front/blog/indexs
