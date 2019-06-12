@@ -89,15 +89,22 @@
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-core/base-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-core/base-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-db/base-db.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-db/base-db.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/base/base-rest/base-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/base/base-rest/base-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-api/blog-api.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-blog/blog-api/blog-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-service/blog-service.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-blog/blog-service/blog-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-web/blog-web.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-blog/blog-web/blog-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/blogserver/blogserver.iml" filepath="$PROJECT_DIR$/blogserver/blogserver.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-api/bus-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-api/bus-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-core/bus-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-core/bus-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus-form.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus-form.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-rest/bus-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/bus/bus-rest/bus-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-api/cms-api.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-cms/cms-api/cms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-service/cms-service.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-cms/cms-service/cms-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-web/cms-web.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-cms/cms-web/cms-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo-api/demo-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/demo/demo-api/demo-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo-core/demo-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/demo/demo-core/demo-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/dubbo-cache-starter/dubbo-cache-starter.iml" filepath="$PROJECT_DIR$/zscat_sw/dubbo-cache-starter/dubbo-cache-starter.iml" />
       <module fileurl="file://$PROJECT_DIR$/extDubbo/extDubbo.iml" filepath="$PROJECT_DIR$/extDubbo/extDubbo.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHashMap/extHashMap.iml" filepath="$PROJECT_DIR$/extHashMap/extHashMap.iml" />
       <module fileurl="file://$PROJECT_DIR$/extHttpServer/extHttpServer.iml" filepath="$PROJECT_DIR$/extHttpServer/extHttpServer.iml" />
@@ -112,6 +119,16 @@
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-core/form-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-core/form-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-rest/form-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-rest/form-rest.iml" />
       <module fileurl="file://$PROJECT_DIR$/hrserver/hrserver.iml" filepath="$PROJECT_DIR$/hrserver/hrserver.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring.iml" filepath="$PROJECT_DIR$/JeeSpringCloud_wm/jeespring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-act/jeespring-act.iml" filepath="$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-act/jeespring-act.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-cms/jeespring-cms.iml" filepath="$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-cms/jeespring-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-company/jeespring-company.iml" filepath="$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-company/jeespring-company.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-framework/jeespring-framework.iml" filepath="$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-framework/jeespring-framework.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-gencode/jeespring-gencode.iml" filepath="$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-gencode/jeespring-gencode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-mq/jeespring-mq.iml" filepath="$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-mq/jeespring-mq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-web/jeespring-web.iml" filepath="$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-web/jeespring-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-webDubboProvider/jeespring-webDubboProvider.iml" filepath="$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-webDubboProvider/jeespring-webDubboProvider.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JSH_ERP/jshERP.iml" filepath="$PROJECT_DIR$/JSH_ERP/jshERP.iml" />
       <module fileurl="file://$PROJECT_DIR$/litemall/litemall.iml" filepath="$PROJECT_DIR$/litemall/litemall.iml" />
       <module fileurl="file://$PROJECT_DIR$/litemall/litemall-admin-api/litemall-admin-api.iml" filepath="$PROJECT_DIR$/litemall/litemall-admin-api/litemall-admin-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/litemall/litemall-all/litemall-all.iml" filepath="$PROJECT_DIR$/litemall/litemall-all/litemall-all.iml" />
@@ -129,7 +146,15 @@
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/org.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/org/org.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/org-api/org-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/org/org-api/org-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/platform.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-search/search-api/search-api.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-search/search-api/search-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-search/search-elasticsearch/search-elasticsearch.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-search/search-elasticsearch/search-elasticsearch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-search/search-service/search-service.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-search/search-service/search-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-search/search-web/search-web.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-search/search-web/search-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" filepath="$PROJECT_DIR$/servlet 3.0/servlet 3.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-api/shop-api.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-shop/shop-api/shop-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-h5/shop-h5.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-shop/shop-h5/shop-h5.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-service/shop-service.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-shop/shop-service/shop-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-web/shop-web.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-shop/shop-web/shop-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/springannotation/springannotation.iml" filepath="$PROJECT_DIR$/springannotation/springannotation.iml" />
       <module fileurl="file://$PROJECT_DIR$/springaop/springaop.iml" filepath="$PROJECT_DIR$/springaop/springaop.iml" />
       <module fileurl="file://$PROJECT_DIR$/springbootmail/springbootmail.iml" filepath="$PROJECT_DIR$/springbootmail/springbootmail.iml" />
@@ -142,6 +167,14 @@
       <module fileurl="file://$PROJECT_DIR$/springioc/springioc.iml" filepath="$PROJECT_DIR$/springioc/springioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvc/springmvc.iml" filepath="$PROJECT_DIR$/springmvc/springmvc.iml" />
       <module fileurl="file://$PROJECT_DIR$/springmvcannotation/springmvcannotation.iml" filepath="$PROJECT_DIR$/springmvcannotation/springmvcannotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw.iml" filepath="$PROJECT_DIR$/zscat_sw/sw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-blog/sw-blog.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-blog/sw-blog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-cms/sw-cms.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-cms/sw-cms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-common/sw-common.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-common/sw-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw_portl/sw-portl.iml" filepath="$PROJECT_DIR$/zscat_sw/sw_portl/sw-portl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-search/sw-search.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-search/sw-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-shop/sw-shop.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-shop/sw-shop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw_manager/sw_manager.iml" filepath="$PROJECT_DIR$/zscat_sw/sw_manager/sw_manager.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-api/sys-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-api/sys-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-core/sys-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-core/sys-core.iml" />

@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="jshERP:war">
+    <output-path>$PROJECT_DIR$/JSH_ERP/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>jshERP</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="jshERP-2018.03.01.war">
+      <element id="artifact" artifact-name="jshERP:war exploded" />
+    </root>
+  </artifact>
+</component>

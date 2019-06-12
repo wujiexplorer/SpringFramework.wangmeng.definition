@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/JSH_ERP" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-act" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-cms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-company" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-framework" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-gencode" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-mq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-webDubboProvider" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/LicenseParent/LicenseAppServer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/LicenseParent/LicenseServer" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot20EurekaServer" charset="UTF-8" />
@@ -120,5 +130,28 @@
     <file url="file://$PROJECT_DIR$/springcloud20eurekaserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvcannotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/dubbo-cache-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-blog" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-cms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-common" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search/search-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search/search-elasticsearch" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search/search-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search/search-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-h5" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw_manager" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/zscat_sw/sw_portl" charset="UTF-8" />
   </component>
 </project>

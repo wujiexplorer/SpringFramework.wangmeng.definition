@@ -5,9 +5,20 @@
     <file type="web" url="file://$PROJECT_DIR$/extSpringBoot" />
     <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcat" />
     <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcatMaven" />
+    <file type="web" url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-web" />
+    <file type="web" url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-webDubboProvider" />
+    <file type="web" url="file://$PROJECT_DIR$/JSH_ERP" />
     <file type="web" url="file://$PROJECT_DIR$/SpringBootScaffolding" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/springmvcannotation" />
+    <file type="web" url="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-service" />
+    <file type="web" url="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-web" />
+    <file type="web" url="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-web" />
+    <file type="web" url="file://$PROJECT_DIR$/zscat_sw/sw-search/search-web" />
+    <file type="web" url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-h5" />
+    <file type="web" url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-service" />
+    <file type="web" url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-web" />
+    <file type="web" url="file://$PROJECT_DIR$/zscat_sw/sw_portl" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -73,6 +84,9 @@
         <option value="$PROJECT_DIR$/blogserver/pom.xml" />
         <option value="$PROJECT_DIR$/springboot-plus/pom.xml" />
         <option value="$PROJECT_DIR$/litemall/pom.xml" />
+        <option value="$PROJECT_DIR$/JeeSpringCloud_wm/pom.xml" />
+        <option value="$PROJECT_DIR$/zscat_sw/pom.xml" />
+        <option value="$PROJECT_DIR$/JSH_ERP/pom.xml" />
       </list>
     </option>
   </component>
