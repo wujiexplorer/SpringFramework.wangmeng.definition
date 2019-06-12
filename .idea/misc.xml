@@ -8,6 +8,8 @@
     <file type="web" url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-web" />
     <file type="web" url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-webDubboProvider" />
     <file type="web" url="file://$PROJECT_DIR$/JSH_ERP" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-package-war" />
+    <file type="web" url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-web" />
     <file type="web" url="file://$PROJECT_DIR$/SpringBootScaffolding" />
     <file type="web" url="file://$PROJECT_DIR$/springmvc" />
     <file type="web" url="file://$PROJECT_DIR$/springmvcannotation" />
@@ -87,6 +89,7 @@
         <option value="$PROJECT_DIR$/JeeSpringCloud_wm/pom.xml" />
         <option value="$PROJECT_DIR$/zscat_sw/pom.xml" />
         <option value="$PROJECT_DIR$/JSH_ERP/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-examples/pom.xml" />
       </list>
     </option>
   </component>

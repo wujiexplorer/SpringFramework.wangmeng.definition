@@ -120,6 +120,39 @@
     <file url="file://$PROJECT_DIR$/mall/mall-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall/mall-portal" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall/mall-search" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-actuator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-admin-simple" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-admin-simple/spring-boot-admin-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-admin-simple/spring-boot-admin-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-banner" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-commandLineRunner" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-docker" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-fastDFS" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-file-upload" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-hello" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-helloWorld" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-jpa-thymeleaf-curd" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-jpa/spring-boot-jpa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-jpa/spring-boot-multi-Jpa" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-mail" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-memcache-spymemcached" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-mongodb/spring-boot-mongodb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-mongodb/spring-boot-multi-mongodb" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-mybatis/spring-boot-mybatis-annotation" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-mybatis/spring-boot-mybatis-annotation-mulidatasource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-mybatis/spring-boot-mybatis-xml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-mybatis/spring-boot-mybatis-xml-mulidatasource" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-package" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-package-war" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-rabbitmq" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-scheduler" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-shiro" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-thymeleaf/spring-boot-thymeleaf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-thymeleaf/spring-boot-thymeleaf-layout" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-web" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-web-thymeleaf" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-webflux" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-plus" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-plus/admin-console" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springboot-plus/admin-core" charset="UTF-8" />
