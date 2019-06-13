@@ -90,6 +90,7 @@
         <option value="$PROJECT_DIR$/zscat_sw/pom.xml" />
         <option value="$PROJECT_DIR$/JSH_ERP/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-examples/pom.xml" />
+        <option value="$PROJECT_DIR$/app/pom.xml" />
       </list>
     </option>
   </component>

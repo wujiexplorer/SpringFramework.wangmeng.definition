@@ -88,6 +88,7 @@
     <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-ui" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-wf-autoconfigure" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-wf-starter" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/blogserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-platform" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-platform/ace-auth" charset="UTF-8" />

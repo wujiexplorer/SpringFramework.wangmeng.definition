@@ -114,6 +114,7 @@
       <module fileurl="file://$PROJECT_DIR$/extTomcat/extTomcat.iml" filepath="$PROJECT_DIR$/extTomcat/extTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/extarraylist/extarraylist.iml" filepath="$PROJECT_DIR$/extarraylist/extarraylist.iml" />
       <module fileurl="file://$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" filepath="$PROJECT_DIR$/extlinkedlist/extlinkedlist.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/favorites-web.iml" filepath="$PROJECT_DIR$/app/favorites-web.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-api/form-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-api/form-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-core/form-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/bus-form/form/form-core/form-core.iml" />

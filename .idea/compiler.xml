@@ -112,6 +112,7 @@
         <module name="SpringCloud2EurekaServer9001" />
         <module name="jeespring-act" />
         <module name="SpringCloud2wangmengApiMemberService" />
+        <module name="favorites-web" />
         <module name="ace-tool" />
         <module name="spring-boot-mybatis-xml-mulidatasource" />
         <module name="extarraylist" />
@@ -263,6 +264,7 @@
       <module name="extSpringBootJavaTomcat" target="1.7" />
       <module name="extSpringBootJavaTomcatMaven" target="1.7" />
       <module name="extTomcat" target="1.5" />
+      <module name="favorites-web" target="1.8" />
       <module name="form" target="1.8" />
       <module name="form-api" target="1.8" />
       <module name="form-core" target="1.8" />
@@ -465,6 +467,7 @@
       <module name="agilebpm-wf-autoconfigure" options="-parameters" />
       <module name="agilebpm-wf-starter" options="-parameters" />
       <module name="extSpringBoot" options="-parameters" />
+      <module name="favorites-web" options="-parameters" />
       <module name="hrserver" options="-parameters" />
       <module name="jeespring-act" options="-parameters -verbose -bootclasspath &quot;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1\jre64/lib/rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1\jre64/lib/jce.jar&quot;" />
       <module name="jeespring-cms" options="-parameters -verbose -bootclasspath &quot;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1\jre64/lib/rt.jar;C:\Program Files\JetBrains\IntelliJ IDEA 2019.1\jre64/lib/jce.jar&quot;" />
