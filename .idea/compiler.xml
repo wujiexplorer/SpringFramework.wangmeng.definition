@@ -79,6 +79,7 @@
         <module name="form-rest" />
         <module name="dubbo-cache-starter" />
         <module name="cms-service" />
+        <module name="cors" />
         <module name="agilebpm-wf-starter" />
         <module name="mall-search" />
         <module name="ace-sidecar-server" />
@@ -248,6 +249,7 @@
       <module name="cms-api" target="1.7" />
       <module name="cms-service" target="1.7" />
       <module name="cms-web" target="1.7" />
+      <module name="cors" target="1.5" />
       <module name="demo" target="1.8" />
       <module name="demo-api" target="1.8" />
       <module name="demo-core" target="1.8" />

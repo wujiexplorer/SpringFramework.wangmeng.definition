@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="cors:war">
+    <output-path>$PROJECT_DIR$/javaboy-code-samples/cors/cors/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>cors</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="cors-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="cors:war exploded" />
+    </root>
+  </artifact>
+</component>

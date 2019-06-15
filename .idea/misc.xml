@@ -5,6 +5,7 @@
     <file type="web" url="file://$PROJECT_DIR$/extSpringBoot" />
     <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcat" />
     <file type="web" url="file://$PROJECT_DIR$/extSpringBootJavaTomcatMaven" />
+    <file type="web" url="file://$PROJECT_DIR$/javaboy-code-samples/cors/cors" />
     <file type="web" url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-web" />
     <file type="web" url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-webDubboProvider" />
     <file type="web" url="file://$PROJECT_DIR$/JSH_ERP" />
@@ -91,6 +92,7 @@
         <option value="$PROJECT_DIR$/JSH_ERP/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-examples/pom.xml" />
         <option value="$PROJECT_DIR$/app/pom.xml" />
+        <option value="$PROJECT_DIR$/javaboy-code-samples/cors/cors/pom.xml" />
       </list>
     </option>
   </component>

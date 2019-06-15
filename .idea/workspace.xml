@@ -2,281 +2,210 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc6c3e4-33a3-4823-b4bc-e73fe0eab6c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/FavoritesApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/WebConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/cache/CacheService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/comm/Const.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/comm/aop/LoggerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/comm/aop/LoggerManage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/comm/config/MultipartConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/comm/config/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/comm/config/SessionConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/comm/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/comm/filter/SecurityFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Collect.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Comment.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Config.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Entitys.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Favorites.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Feedback.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Follow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Letter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/LookRecord.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Notice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/Praise.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/UrlLibrary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/UserIsFollow.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/enums/CollectType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/enums/FollowStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/enums/IsDelete.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/enums/LetterType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/result/ExceptionMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/result/Response.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/result/ResponseData.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/view/CollectSummary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/view/CollectView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/view/CollectorView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/view/CommentView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/view/IndexCollectorView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/view/LetterSummary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/domain/view/LetterView.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/BaseNativeSqlRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/CollectRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/CollectorRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/CommentRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/ConfigRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/FavoritesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/FeedbackRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/FollowRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/LetterRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/LookRecordRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/NoticeRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/PraiseRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/UrlLibraryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/repository/impl/CollectorRepositoryImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/schedule/ScheduledTasks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/CollectService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/CollectorService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/ConfigService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/FavoritesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/FeedbackService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/LetterService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/LookAroundService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/LookRecordService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/NoticeService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/CollectServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/CollectorServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/ConfigServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/FavoritesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/FeedbackServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/LetterServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/LookAroundServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/LookRecordServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/NoticeServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/service/impl/RedisServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/utils/Base64.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/utils/DateUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/utils/Des3EncryptionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/utils/FileUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/utils/HtmlUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/utils/MD5Util.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/utils/MessageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/utils/StringUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/utils/URLUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/BaseController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/CollectController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/CommentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/FavoritesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/FeedbackController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/FollowController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/HomeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/IndexController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/LetterController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/LookRecordController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/NoticeController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/favorites/web/WebJarController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application-dev.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application-docker.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/css/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/camera.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/cloud-error.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/dummy.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/empty_list.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/favicon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/icon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/icon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/loading.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/logo-block.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/logo-single.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/logo.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/profile-bg.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/img/useTool.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/css/freelancer.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/css/freelancer.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/img/portfolio/cabin.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/img/portfolio/cake.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/img/portfolio/circus.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/img/portfolio/game.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/img/portfolio/safe.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/img/portfolio/submarine.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/img/profile.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/js/contact_me.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/js/freelancer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/js/freelancer.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/js/jqBootstrapValidation.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/bootstrap/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/bootstrap/css/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/bootstrap/fonts/glyphicons-halflings-regular.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/bootstrap/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/bootstrap/js/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/css/font-awesome.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/animated.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/bordered-pulled.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/core.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/fixed-width.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/font-awesome.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/icons.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/larger.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/list.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/mixins.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/path.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/rotated-flipped.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/screen-reader.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/stacked.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/less/variables.less" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_animated.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_bordered-pulled.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_core.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_fixed-width.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_icons.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_larger.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_list.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_mixins.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_path.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_rotated-flipped.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_screen-reader.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_stacked.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/_variables.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/font-awesome/scss/font-awesome.scss" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/jquery/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/index/vendor/jquery/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/js/collect.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/js/comm.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/js/layout.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/js/letter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/js/lookAround.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/media/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/media/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/media/css/theme-i.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/media/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/animate.css/animate.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/animo.js/animo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/bootstrap/dist/css/bootstrap.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/bootstrap/dist/js/bootstrap.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/cropper/cropper.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/cropper/cropper.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/fontawesome/css/font-awesome.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/fontawesome/fonts/FontAwesome.otf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/fontawesome/fonts/fontawesome-webfont.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/fontawesome/fonts/fontawesome-webfont.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/fontawesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/fontawesome/fonts/fontawesome-webfont.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/fontawesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/jQuery-Storage-API/jquery.storageapi.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/jquery-localize-i18n/dist/jquery.localize.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/jquery.easing/js/jquery.easing.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/jquery.flexslider/jquery.flexslider.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/jquery.form/jquery.form.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/jquery/dist/jquery.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/magnific-popup/magnific-popup.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/magnific-popup/magnific-popup.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/modernizr/modernizr.custom.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/parsleyjs/dist/parsley.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/scrollable/scrollable.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/scrollable/scrollable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/scrollable/scrollable.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/scrollable/scrollable.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/simple-line-icons/css/simple-line-icons.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/simple-line-icons/fonts/Simple-Line-Icons.eot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/simple-line-icons/fonts/Simple-Line-Icons.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/simple-line-icons/fonts/Simple-Line-Icons.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/simple-line-icons/fonts/Simple-Line-Icons.woff2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/toastr/toastr.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/toastr/toastr.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/static/vendor/whirl/dist/whirl.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/collect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/collect/search.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/collect/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/collect/standard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/collector.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/error.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/favorites/export.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/favorites/feedback.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/favorites/import.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/favorites/newfavorites.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/alert.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/collect.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/footer.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/header.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/left.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/sidebar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/fragments/usercontent.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/home.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/layout.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/lookAround.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/lookAround/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/lookAround/standard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/lookRecord/simple.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/lookRecord/standard.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/mobile.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/notice/atme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/notice/commentme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/notice/letterme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/notice/praiseme.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/register.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/tool.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/user.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/user/forgotpassword.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/user/newpassword.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/user/uploadbackground.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/resources/templates/user/uploadheadportrait.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/FavoritesApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/controller/HelloWorldControlerTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/domain/CollectRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/domain/CollectorRepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/domain/RepositoryTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/domain/UserRepositoryTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/util/TestString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/util/html/HTMLParserExample1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/util/html/HTMLParserExample2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/util/html/HtmlUtilTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/favorites/util/redis/TestRedis.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/resources/application-scratch.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/api.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/java/org/sang/cors/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/resources/spring-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/webapp/01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/webapp/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors2/src/main/resources/applicationContext.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors2/src/main/resources/spring-servlet.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors2/src/main/webapp/01.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors2/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/cors/cors2/src/main/webapp/jquery.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/ehcache/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/ehcache/src/main/java/org/javaboy/ehcache/EhcacheApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/ehcache/src/main/java/org/javaboy/ehcache/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/ehcache/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/ehcache/src/main/resources/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/ehcache/src/test/java/org/javaboy/ehcache/EhcacheApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/java/org/javaboy/exception/ExceptionApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/java/org/javaboy/exception/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/java/org/javaboy/exception/MyErrorAttribute.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/java/org/javaboy/exception/MyErrorViewResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/resources/static/error/404.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/resources/static/error/4xx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/resources/static/error/5xx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/resources/templates/error/4xx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/resources/templates/error/5xx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/main/resources/templates/javaboy/5xx.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/exception/src/test/java/org/javaboy/exception/ExceptionApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/javassm/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/javassm/src/main/java/org/javaboy/config/SpringConfig.java.bak" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/javassm/src/main/java/org/javaboy/config/SpringMVCConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/javassm/src/main/java/org/javaboy/config/WebInit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/javassm/src/main/java/org/javaboy/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/javassm/src/main/java/org/javaboy/controller/HelloController2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/javassm/src/main/java/org/javaboy/service/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/javassm/src/main/resources/hello.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/javassm/src/main/webapp/jsp/hello.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbcmulti/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbcmulti/src/main/java/org/javaboy/jdbcmulti/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbcmulti/src/main/java/org/javaboy/jdbcmulti/JdbcTemplateConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbcmulti/src/main/java/org/javaboy/jdbcmulti/JdbcmultiApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbcmulti/src/main/java/org/javaboy/jdbcmulti/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbcmulti/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbcmulti/src/test/java/org/javaboy/jdbcmulti/JdbcmultiApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbctemplate/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbctemplate/src/main/java/org/javaboy/jdbctemplate/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbctemplate/src/main/java/org/javaboy/jdbctemplate/JdbctemplateApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbctemplate/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jdbctemplate/src/test/java/org/javaboy/jdbctemplate/JdbctemplateApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpa/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpa/src/main/java/org/javaboy/jpa/JpaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpa/src/main/java/org/javaboy/jpa/bean/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpa/src/main/java/org/javaboy/jpa/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpa/src/main/java/org/javaboy/jpa/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpa/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpa/src/test/java/org/javaboy/jpa/JpaApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/main/java/org/javaboy/jpa/JpaApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/main/java/org/javaboy/jpa/bean/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/main/java/org/javaboy/jpa/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/main/java/org/javaboy/jpa/config/JpaConfigOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/main/java/org/javaboy/jpa/config/JpaConfigTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/main/java/org/javaboy/jpa/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/main/java/org/javaboy/jpa/dao2/BookDao2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/main/java/org/javaboy/jpa/service/BookService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jpamulti/src/test/java/org/javaboy/jpa/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jwt/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jwt/src/main/java/org/sang/jwt/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jwt/src/main/java/org/sang/jwt/JwtApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jwt/src/main/java/org/sang/jwt/JwtFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jwt/src/main/java/org/sang/jwt/JwtLoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jwt/src/main/java/org/sang/jwt/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jwt/src/main/java/org/sang/jwt/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jwt/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/jwt/src/test/java/org/sang/jwt/JwtApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatis/src/main/java/org/javaboy/mybatis/MybatisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatis/src/main/java/org/javaboy/mybatis/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatis/src/main/java/org/javaboy/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatis/src/main/java/org/javaboy/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatis/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatis/src/test/java/org/javaboy/mybatis/MybatisApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/java/org/javaboy/mybatis/MybatisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/java/org/javaboy/mybatis/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/java/org/javaboy/mybatis/config/DataSourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/java/org/javaboy/mybatis/config/MyBatisConfigOne.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/java/org/javaboy/mybatis/config/MyBatisConfigTwo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/java/org/javaboy/mybatis/mapper1/UserMapper1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/java/org/javaboy/mybatis/mapper1/UserMapper1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/java/org/javaboy/mybatis/mapper2/UserMapper2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/java/org/javaboy/mybatis/mapper2/UserMapper2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/mybatismulti/src/test/java/org/javaboy/mybatis/MybatisApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/properties/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/properties/src/main/java/org/javaboy/properties/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/properties/src/main/java/org/javaboy/properties/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/properties/src/main/java/org/javaboy/properties/PropertiesApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/properties/src/main/resources/aa.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/properties/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/properties/src/main/resources/book.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/properties/src/test/java/org/javaboy/properties/PropertiesApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/quartz/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/quartz/src/main/java/org/javaboy/quartz/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/quartz/src/main/java/org/javaboy/quartz/MyJob1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/quartz/src/main/java/org/javaboy/quartz/MyJob2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/quartz/src/main/java/org/javaboy/quartz/QuartzApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/quartz/src/main/java/org/javaboy/quartz/QuartzConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/quartz/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/quartz/src/test/java/org/javaboy/quartz/QuartzApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/scheduled/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/scheduled/src/main/java/org/javaboy/scheduled/HelloComponent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/scheduled/src/main/java/org/javaboy/scheduled/ScheduledApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/scheduled/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/quartz/scheduled/src/test/java/org/javaboy/scheduled/ScheduledApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/redis/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/redis/src/main/java/org/javaboy/redis/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/redis/src/main/java/org/javaboy/redis/RedisApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/redis/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/redis/src/test/java/org/javaboy/redis/RedisApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/restful/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/restful/src/main/java/com/itbaizhan/restful/RestfulApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/restful/src/main/java/com/itbaizhan/restful/controller/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/restful/src/main/java/com/itbaizhan/restful/dao/BookDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/restful/src/main/java/com/itbaizhan/restful/model/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/restful/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/restful/src/main/resources/static/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/restful/src/test/java/com/itbaizhan/restful/RestfulApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/security_json/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/security_json/src/main/java/org/sang/security_demo_1/CustomAuthenticationFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/security_json/src/main/java/org/sang/security_demo_1/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/security_json/src/main/java/org/sang/security_demo_1/RespBean.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/security_json/src/main/java/org/sang/security_demo_1/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/security_json/src/main/java/org/sang/security_demo_1/SecurityDemo1Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/security_json/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/security_json/src/test/java/org/sang/security_demo_1/SecurityDemo1ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/sessionshare/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/sessionshare/src/main/java/org/javaboy/sessionshare/HelloController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/sessionshare/src/main/java/org/javaboy/sessionshare/SessionshareApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/sessionshare/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/sessionshare/src/test/java/org/javaboy/sessionshare/SessionshareApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-basic/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-basic/src/main/java/org/javaboy/shirobasic/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-basic/src/main/java/org/javaboy/shirobasic/MyRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-basic/src/main/java/org/javaboy/shirobasic/ShiroBasicApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-basic/src/main/java/org/javaboy/shirobasic/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-basic/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-basic/src/test/java/org/javaboy/shirobasic/ShiroBasicApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-starter/src/main/java/org/javaboy/shirostarter/LoginController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-starter/src/main/java/org/javaboy/shirostarter/MyRealm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-starter/src/main/java/org/javaboy/shirostarter/ShiroConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-starter/src/main/java/org/javaboy/shirostarter/ShiroStarterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-starter/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/shiro/shiro-starter/src/test/java/org/javaboy/shirostarter/ShiroStarterApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/src/main/java/org/javaboy/mystarter/HelloProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/src/main/java/org/javaboy/mystarter/HelloService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/src/main/java/org/javaboy/mystarter/HelloServiceAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/target/classes/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/target/classes/org/javaboy/mystarter/HelloProperties.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/target/classes/org/javaboy/mystarter/HelloService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/target/classes/org/javaboy/mystarter/HelloServiceAutoConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/mystarter/target/mystarter-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/src/main/java/org/javaboy/usemystarter/UsemystarterApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/src/test/java/org/javaboy/usemystarter/UsemystarterApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/target/classes/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/target/classes/org/javaboy/usemystarter/UsemystarterApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/spring-boot-starter-custom/usemystarter/target/test-classes/org/javaboy/usemystarter/UsemystarterApplicationTests.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/swagger2/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/swagger2/src/main/java/org/javaboy/swagger2/Swagger2Application.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/swagger2/src/main/java/org/javaboy/swagger2/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/swagger2/src/main/java/org/javaboy/swagger2/bean/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/swagger2/src/main/java/org/javaboy/swagger2/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/swagger2/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/swagger2/src/test/java/org/javaboy/swagger2/Swagger2ApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/thymeleaf/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/thymeleaf/src/main/java/org/javaboy/thymeleaf/IndexController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/thymeleaf/src/main/java/org/javaboy/thymeleaf/ThymeleafApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/thymeleaf/src/main/java/org/javaboy/thymeleaf/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/thymeleaf/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/thymeleaf/src/main/resources/templates/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/javaboy-code-samples/thymeleaf/src/test/java/org/javaboy/thymeleaf/ThymeleafApplicationTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/technology.docx" beforeDir="false" afterPath="$PROJECT_DIR$/doc/technology.docx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/LicenseParent/target/" />
     <ignored path="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/target/" />
@@ -486,6 +415,7 @@
     <ignored path="$PROJECT_DIR$/spring-boot-examples/spring-boot-package-war/target/" />
     <ignored path="$PROJECT_DIR$/spring-boot-examples/spring-boot-thymeleaf/spring-boot-thymeleaf/target/" />
     <ignored path="$PROJECT_DIR$/app/target/" />
+    <ignored path="$PROJECT_DIR$/javaboy-code-samples/cors/cors/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -496,7 +426,25 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/resources/spring-servlet.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-90" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/resources/applicationContext.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/java/org/sang/cors/HelloController.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <dirStrings>
@@ -531,7 +479,20 @@
             <path>
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy-code-samples" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy-code-samples" type="462c0819:PsiDirectoryNode" />
+              <item name="cors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="javaboy-code-samples" type="462c0819:PsiDirectoryNode" />
+              <item name="cors" type="462c0819:PsiDirectoryNode" />
+              <item name="cors" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -546,7 +507,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/javaboy-code-samples/cors/cors/pom.xml" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -555,6 +516,7 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\code\SpringFramework.wangmeng.definition" />
+      <recent name="D:\code\SpringFramework.wangmeng.definition\doc" />
     </key>
   </component>
   <component name="RestServicesNavigator">
@@ -774,7 +736,7 @@
       <option name="presentableId" value="Default" />
       <updated>1560227953814</updated>
       <workItem from="1560227956476" duration="2367000" />
-      <workItem from="1560241090797" duration="11359000" />
+      <workItem from="1560241090797" duration="15674000" />
     </task>
     <task id="LOCAL-00001" summary="structs 一个url 一个action">
       <created>1560305046735</created>
@@ -790,11 +752,18 @@
       <option name="project" value="LOCAL" />
       <updated>1560331461012</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="extends SpringBootServletInitializer 等同于 servletComponentScan 进行扫描 Servlet docker 部署需要映射">
+      <created>1560392914736</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1560392914736</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13726000" />
+    <option name="totallyTimeSpent" value="18041000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1062" extended-state="6" />
@@ -846,7 +815,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="structs 一个url 一个action" />
     <MESSAGE value="多个数据源，Spring 有个 抽象数据源  shiro ，多个example，值得学习" />
-    <option name="LAST_COMMIT_MESSAGE" value="多个数据源，Spring 有个 抽象数据源  shiro ，多个example，值得学习" />
+    <MESSAGE value="extends SpringBootServletInitializer 等同于 servletComponentScan 进行扫描 Servlet docker 部署需要映射" />
+    <option name="LAST_COMMIT_MESSAGE" value="extends SpringBootServletInitializer 等同于 servletComponentScan 进行扫描 Servlet docker 部署需要映射" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/JeeSpringCloud_wm/bin/run.bat">
@@ -874,6 +844,83 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/favorites/web/BaseController.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/favorites/FavoritesApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="8" column="70" lean-forward="true" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstarterconfigurer/src/main/resources/META-INF/spring.factories">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstartertest/src/main/java/com/wangmeng/controller/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstartertest/src/main/java/com/wangmeng/controller/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstarterconfigurer/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="30" column="21" lean-forward="true" selection-start-line="30" selection-start-column="21" selection-end-line="30" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstartertest/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstarterconfigurer/src/main/java/com/wangmeng/starter/HelloProperties.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="258">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstartertest/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstarterconfigurer/src/main/java/com/wangmeng/starter/HelloService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="11" column="4" lean-forward="true" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstarterconfigurer/src/main/java/com/wangmeng/starter/HelloAuto.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/springbootstarter/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaboy-code-samples/jpa/src/main/java/org/javaboy/jpa/dao/BookDao.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/resources/spring-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-90" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/resources/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/javaboy-code-samples/cors/cors/src/main/java/org/sang/cors/HelloController.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
@@ -926,7 +973,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>spring-boot-webflux</last-edited>
+          <last-edited>favorites-web</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

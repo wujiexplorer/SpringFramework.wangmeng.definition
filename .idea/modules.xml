@@ -101,6 +101,7 @@
       <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-api/cms-api.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-cms/cms-api/cms-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-service/cms-service.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-cms/cms-service/cms-service.iml" />
       <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-web/cms-web.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-cms/cms-web/cms-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/javaboy-code-samples/cors/cors/cors.iml" filepath="$PROJECT_DIR$/javaboy-code-samples/cors/cors/cors.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/demo/demo.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo-api/demo-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/demo/demo-api/demo-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/demo/demo-core/demo-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/demo/demo-core/demo-core.iml" />
