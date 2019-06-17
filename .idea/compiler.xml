@@ -185,6 +185,7 @@
         <module name="shop-web" />
         <module name="springmvc" />
         <module name="base-db" />
+        <module name="repeat-submit-intercept" />
         <module name="SpringCloud2ZookeeperMember" />
         <module name="AppCommon" />
         <module name="SpringCloud2wangmengApiOrderServiceImpl" />
@@ -302,6 +303,7 @@
       <module name="org" target="1.8" />
       <module name="org-api" target="1.8" />
       <module name="platform" target="1.8" />
+      <module name="repeat-submit-intercept" target="1.8" />
       <module name="RpcClient" target="1.8" />
       <module name="RpcServer" target="1.8" />
       <module name="search-api" target="1.7" />
@@ -488,6 +490,7 @@
       <module name="mall-demo" options="-parameters" />
       <module name="mall-portal" options="-parameters" />
       <module name="mall-search" options="-parameters" />
+      <module name="repeat-submit-intercept" options="-parameters" />
       <module name="spring-boot-Jpa" options="-parameters" />
       <module name="spring-boot-actuator" options="-parameters" />
       <module name="spring-boot-admin-client" options="-parameters" />

@@ -148,6 +148,7 @@
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/org.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/org/org.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/org-api/org-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/org/org-api/org-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/platform.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/platform.iml" />
+      <module fileurl="file://$PROJECT_DIR$/repeat-submit-intercept/repeat-submit-intercept.iml" filepath="$PROJECT_DIR$/repeat-submit-intercept/repeat-submit-intercept.iml" />
       <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-search/search-api/search-api.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-search/search-api/search-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-search/search-elasticsearch/search-elasticsearch.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-search/search-elasticsearch/search-elasticsearch.iml" />
       <module fileurl="file://$PROJECT_DIR$/zscat_sw/sw-search/search-service/search-service.iml" filepath="$PROJECT_DIR$/zscat_sw/sw-search/search-service/search-service.iml" />
