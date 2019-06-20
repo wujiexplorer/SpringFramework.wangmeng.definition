@@ -94,6 +94,7 @@
         <option value="$PROJECT_DIR$/app/pom.xml" />
         <option value="$PROJECT_DIR$/javaboy-code-samples/cors/cors/pom.xml" />
         <option value="$PROJECT_DIR$/repeat-submit-intercept/pom.xml" />
+        <option value="$PROJECT_DIR$/mybatis_generator/pom.xml" />
       </list>
     </option>
   </component>
