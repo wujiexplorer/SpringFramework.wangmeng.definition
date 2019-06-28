@@ -217,6 +217,7 @@
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-api/sys-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-api/sys-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-core/sys-core.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-core/sys-core.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-rest/sys-rest.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/sys/sys-rest/sys-rest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/thread-troubleshooting/thread-troubleshooting.iml" filepath="$PROJECT_DIR$/thread-troubleshooting/thread-troubleshooting.iml" />
       <module fileurl="file://$PROJECT_DIR$/threadjdbc/threadjdbc.iml" filepath="$PROJECT_DIR$/threadjdbc/threadjdbc.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangmengmemberdubboapiservice/wangmengmemberdubboapiservice.iml" filepath="$PROJECT_DIR$/wangmengmemberdubboapiservice/wangmengmemberdubboapiservice.iml" />
       <module fileurl="file://$PROJECT_DIR$/wangmengmemberpublicdubboapi/wangmengmemberpublicdubboapi.iml" filepath="$PROJECT_DIR$/wangmengmemberpublicdubboapi/wangmengmemberpublicdubboapi.iml" />

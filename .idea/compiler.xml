@@ -11,21 +11,23 @@
         <module name="ace-sidecar-client-demo" />
         <module name="base-core" />
         <module name="SpringBootElasticsearch" />
-        <module name="demo-api" />
+        <module name="springmvcannotation" />
         <module name="SpringCloud2ConsulMember" />
-        <module name="SpringCloud2Member2" />
         <module name="ab-org-core" />
         <module name="sys-api" />
         <module name="litemall-all" />
         <module name="spring-boot-mybatis-annotation" />
+        <module name="dubbo-cache-starter" />
         <module name="jeespring-mq" />
         <module name="spring-boot-package-war" />
         <module name="SpringBootScaffolding" />
-        <module name="SpringCloudZuulGateway" />
+        <module name="springcore" />
         <module name="SpringBootPayUnionWxAlipay" />
         <module name="bus-core" />
         <module name="extSpringBootJavaTomcat" />
         <module name="spring-boot-memcache-spymemcached" />
+        <module name="bus-api" />
+        <module name="bus-rest" />
         <module name="spring-boot-commandLineRunner" />
         <module name="spring-boot-Jpa" />
         <module name="spring-boot-file-upload" />
@@ -34,15 +36,17 @@
         <module name="spring-boot-rabbitmq" />
         <module name="spring-boot-redis" />
         <module name="search-elasticsearch" />
+        <module name="mall-portal" />
         <module name="agilebpm-security-starter" />
         <module name="SpringBoot2Swagger" />
         <module name="agilebpm-base-autoconfigure" />
         <module name="AppServer" />
+        <module name="SpringCloud2wangmengCommon" />
         <module name="sw_manager" />
         <module name="spring-boot-banner" />
         <module name="ace-auth-common" />
         <module name="mall-common" />
-        <module name="extlinkedlist" />
+        <module name="springioc" />
         <module name="mall-mbg" />
         <module name="SpringBootQuartz" />
         <module name="wangmengorderdubboservice" />
@@ -50,14 +54,12 @@
         <module name="extHashMap" />
         <module name="sys-rest" />
         <module name="wangmengmemberdubboapiservice" />
-        <module name="SpringCloud2Pay" />
         <module name="agilebpm-base-starter" />
-        <module name="springioc" />
+        <module name="SpringBoot2EurekaMember2" />
         <module name="SpringCloud2ConfigServer" />
         <module name="spring-boot-multi-mongodb" />
         <module name="SpringCloud2wangmengApiMemberServiceImpl" />
         <module name="ace-auth-server" />
-        <module name="SpringCloud2EurekaServer9001" />
         <module name="spring-boot-fastDFS" />
         <module name="spring-boot-multi-Jpa" />
         <module name="jeespring-company" />
@@ -70,9 +72,10 @@
         <module name="SpringCloud2ZuulGateway2" />
         <module name="SpringCloud2wangmengApiMemberServiceImpl2" />
         <module name="spring-boot-web-thymeleaf" />
-        <module name="SpringBoot2EurekaMember2" />
         <module name="SpringCLoud2ConfigClient" />
         <module name="agilebpm-ui" />
+        <module name="threadjdbc" />
+        <module name="agilebpm-sys-autoconfigure" />
         <module name="springaop" />
         <module name="form-rest" />
         <module name="spring-boot-mybatis-annotation-mulidatasource" />
@@ -84,30 +87,29 @@
         <module name="sys-core" />
         <module name="sw-portl" />
         <module name="admin-core" />
+        <module name="jshERP" />
+        <module name="SpringBoot2EurekaOrder" />
         <module name="base-api" />
-        <module name="LicenseAppServer" />
         <module name="spring-boot-mongodb" />
         <module name="ace-generator" />
         <module name="agilebpm-spring-boot-samples" />
         <module name="DubboCommon" />
         <module name="spring-boot-package" />
         <module name="spring-boot-jpa-thymeleaf-curd" />
-        <module name="SpringCloud2ZookeeperMember2" />
         <module name="spring-boot-thymeleaf" />
-        <module name="mall-portal" />
+        <module name="SpringCloud2ZookeeperMember2" />
         <module name="mybatis_generator" />
         <module name="springcloud20eurekaserver" />
         <module name="agilebpm-wf-autoconfigure" />
         <module name="litemall-wx-api" />
         <module name="SpringCloud2ZookeeperOrder" />
         <module name="search-api" />
-        <module name="demo-core" />
         <module name="springbootmail" />
         <module name="litemall-admin-api" />
         <module name="spring-boot-mail" />
-        <module name="bus-rest" />
+        <module name="SpringCloudZuulGateway" />
         <module name="jeespring-web" />
-        <module name="dubbo-cache-starter" />
+        <module name="SpringCloud2EurekaServer9001" />
         <module name="jeespring-act" />
         <module name="SpringCloud2wangmengApiMemberService" />
         <module name="favorites-web" />
@@ -117,11 +119,11 @@
         <module name="AppClient" />
         <module name="jeespring-framework" />
         <module name="extNettyServer" />
+        <module name="extlinkedlist" />
         <module name="ace-interface" />
         <module name="mall-demo" />
         <module name="SpringCloudMember" />
         <module name="jeespring-gencode" />
-        <module name="ace-common" />
         <module name="SpringBoot2EurekaMember" />
         <module name="spring-boot-scheduler" />
         <module name="LicenseServer" />
@@ -130,7 +132,6 @@
         <module name="spring-boot-webflux" />
         <module name="agilebpm-sys-starter" />
         <module name="form-core" />
-        <module name="base-db" />
         <module name="spring-boot-admin-client" />
         <module name="search-service" />
         <module name="spring-boot-web" />
@@ -144,7 +145,7 @@
         <module name="spring-boot-shiro" />
         <module name="web" />
         <module name="mybatisorm" />
-        <module name="threadjdbc" />
+        <module name="SpringCloud2Pay" />
         <module name="org-api" />
         <module name="springannotation" />
         <module name="litemall-core" />
@@ -163,36 +164,36 @@
         <module name="ace-admin" />
         <module name="ace-auth-client" />
         <module name="SpringBootDoc" />
-        <module name="agilebpm-security-autoconfigure" />
         <module name="admin-console" />
         <module name="spring-boot-docker" />
         <module name="wangmengmemberpublicdubboapi" />
         <module name="hrserver" />
-        <module name="spring-boot-admin-server" />
         <module name="springbootstartertest" />
         <module name="shop-api" />
         <module name="blog-api" />
-        <module name="springcore" />
+        <module name="extSpringBoot" />
+        <module name="ace-common" />
         <module name="spring-boot-hello" />
         <module name="spring-boot-thymeleaf-layout" />
-        <module name="springmvcannotation" />
-        <module name="blog-service" />
-        <module name="SpringCloud2wangmengCommon" />
-        <module name="jshERP" />
-        <module name="extSpringBoot" />
+        <module name="demo-api" />
+        <module name="spring-boot-admin-server" />
+        <module name="LicenseAppServer" />
+        <module name="demo-core" />
+        <module name="agilebpm-security-autoconfigure" />
         <module name="springbootstarter" />
         <module name="springbootsqlite" />
-        <module name="bus-api" />
+        <module name="SpringCloud2Member2" />
         <module name="shop-web" />
         <module name="springmvc" />
-        <module name="agilebpm-sys-autoconfigure" />
+        <module name="base-db" />
         <module name="repeat-submit-intercept" />
         <module name="SpringCloud2ZookeeperMember" />
         <module name="AppCommon" />
         <module name="SpringCloud2wangmengApiOrderServiceImpl" />
         <module name="base-rest" />
-        <module name="SpringBoot2EurekaOrder" />
+        <module name="blog-service" />
         <module name="RpcClient" />
+        <module name="thread-troubleshooting" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -410,6 +411,7 @@
       <module name="sys-api" target="1.8" />
       <module name="sys-core" target="1.8" />
       <module name="sys-rest" target="1.8" />
+      <module name="thread-troubleshooting" target="1.8" />
       <module name="threadjdbc" target="1.5" />
       <module name="wangmengmemberdubboapiservice" target="1.5" />
       <module name="wangmengMemberPublicDubboApi" target="1.5" />
@@ -528,6 +530,7 @@
       <module name="springbootstarterconfigurer" options="-parameters" />
       <module name="springbootstartertest" options="" />
       <module name="springcloud20eurekaserver" options="-parameters" />
+      <module name="thread-troubleshooting" options="-parameters" />
     </option>
   </component>
 </project>
