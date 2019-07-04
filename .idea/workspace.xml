@@ -2,15 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7fc6c3e4-33a3-4823-b4bc-e73fe0eab6c6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/thread-troubleshooting/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread-troubleshooting/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread-troubleshooting/src/main/java/com/shujie/threadtroubleshooting/ThreadTroubleshootingApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread-troubleshooting/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread-troubleshooting/src/test/java/com/shujie/threadtroubleshooting/ConcurrenceTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread-troubleshooting/src/test/java/com/shujie/threadtroubleshooting/ThreadTroubleshootingApplicationTests.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread-troubleshooting/thread.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/thread-troubleshooting/thread2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_8_RELEASE.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_qiniu_qiniu_java_sdk_7_2_23.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/doc/technology.docx" beforeDir="false" afterPath="$PROJECT_DIR$/doc/technology.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/springbootstartertest/springbootstartertest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/springbootstartertest/springbootstartertest.iml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/LicenseParent/target/" />
     <ignored path="$PROJECT_DIR$/SpringCloud2wangmengParent/SpringCloud2wangmengApiService/target/" />
@@ -234,7 +230,20 @@
     <option name="isMigrated" value="true" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/extarraylist/src/main/java/com/wangmeng/arraylist/ExtArrayList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1080" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/extarraylist/src/main/java/com/wangmeng/arraylist/ExtList.java">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <dirStrings>
@@ -266,12 +275,17 @@
               <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
               <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="SpringFramework.wangmeng.definition" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SpringFramework.wangmeng.definition" type="462c0819:PsiDirectoryNode" />
+              <item name="filesystem" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="CatdeaLogs" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -279,7 +293,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/thread-troubleshooting/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -387,9 +401,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="BlogServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zscat.BlogServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="BlogWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="blog-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zscat.BlogWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="BlogserverApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="blogserver" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="org.sang.BlogserverApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CmsServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cms-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zscat.CmsServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CmsWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="cms-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zscat.CmsWebApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -513,7 +555,8 @@
       <workItem from="1561019201402" duration="1675000" />
       <workItem from="1561513412054" duration="583000" />
       <workItem from="1561547415087" duration="848000" />
-      <workItem from="1561629171500" duration="661000" />
+      <workItem from="1561629171500" duration="2380000" />
+      <workItem from="1562030257198" duration="1897000" />
     </task>
     <task id="LOCAL-00001" summary="structs 一个url 一个action">
       <created>1560305046735</created>
@@ -557,16 +600,23 @@
       <option name="project" value="LOCAL" />
       <updated>1561022246115</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="http.maxConnections http 连接池中的连接太少 导致线程被打满 无法提供服务">
+      <created>1561685572756</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1561685572756</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29001000" />
+    <option name="totallyTimeSpent" value="32617000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1062" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19796138" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2725322" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -595,7 +645,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Maven" order="3" visible="true" weight="0.105150215" />
+      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.17650215" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Key Promoter X" order="6" />
@@ -617,7 +667,8 @@
     <MESSAGE value=" @CrossOrigin(&quot;http://localhost:8081&quot;)" />
     <MESSAGE value="@Aspect @Component @Before Spring boot 可以在不开启@enableAspectjAutoProxy 切面类起作用" />
     <MESSAGE value="mybatis-generator:generate -e command line 中填写，增删改查代码生成工具" />
-    <option name="LAST_COMMIT_MESSAGE" value="mybatis-generator:generate -e command line 中填写，增删改查代码生成工具" />
+    <MESSAGE value="http.maxConnections http 连接池中的连接太少 导致线程被打满 无法提供服务" />
+    <option name="LAST_COMMIT_MESSAGE" value="http.maxConnections http 连接池中的连接太少 导致线程被打满 无法提供服务" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/JeeSpringCloud_wm/bin/run.bat">
@@ -801,7 +852,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/thread-troubleshooting/src/test/java/com/shujie/threadtroubleshooting/ConcurrenceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="21">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/thread-troubleshooting/src/main/java/com/shujie/threadtroubleshooting/ThreadTroubleshootingApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/jenkins">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3150" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/benefits-mall-dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1727" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/doc/benefits-support-dev">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1727" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extarraylist/src/main/java/com/wangmeng/arraylist/ExtArrayList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1080" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/extarraylist/src/main/java/com/wangmeng/arraylist/ExtList.java">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
@@ -854,7 +939,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>mybatis_generator</last-edited>
+          <last-edited>thread-troubleshooting</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
