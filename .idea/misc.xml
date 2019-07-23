@@ -9,6 +9,9 @@
     <file type="web" url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-web" />
     <file type="web" url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-webDubboProvider" />
     <file type="web" url="file://$PROJECT_DIR$/JSH_ERP" />
+    <file type="web" url="file://$PROJECT_DIR$/ofcms/ofcms-admin" />
+    <file type="web" url="file://$PROJECT_DIR$/ofcms/ofcms-api" />
+    <file type="web" url="file://$PROJECT_DIR$/ofcms/ofcms-front" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-package-war" />
     <file type="web" url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-web" />
     <file type="web" url="file://$PROJECT_DIR$/SpringBootScaffolding" />
@@ -96,6 +99,7 @@
         <option value="$PROJECT_DIR$/repeat-submit-intercept/pom.xml" />
         <option value="$PROJECT_DIR$/mybatis_generator/pom.xml" />
         <option value="$PROJECT_DIR$/thread-troubleshooting/pom.xml" />
+        <option value="$PROJECT_DIR$/ofcms/pom.xml" />
       </list>
     </option>
   </component>

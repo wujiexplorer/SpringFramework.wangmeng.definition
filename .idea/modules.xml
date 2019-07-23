@@ -146,6 +146,12 @@
       <module fileurl="file://$PROJECT_DIR$/mall/mall-search/mall-search.iml" filepath="$PROJECT_DIR$/mall/mall-search/mall-search.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatis_generator/mybatis_generator.iml" filepath="$PROJECT_DIR$/mybatis_generator/mybatis_generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisorm/mybatisorm.iml" filepath="$PROJECT_DIR$/mybatisorm/mybatisorm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ofcms/ofcms.iml" filepath="$PROJECT_DIR$/ofcms/ofcms.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ofcms/ofcms-admin/ofcms-admin.iml" filepath="$PROJECT_DIR$/ofcms/ofcms-admin/ofcms-admin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ofcms/ofcms-api/ofcms-api.iml" filepath="$PROJECT_DIR$/ofcms/ofcms-api/ofcms-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ofcms/ofcms-core/ofcms-core.iml" filepath="$PROJECT_DIR$/ofcms/ofcms-core/ofcms-core.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ofcms/ofcms-front/ofcms-front.iml" filepath="$PROJECT_DIR$/ofcms/ofcms-front/ofcms-front.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ofcms/ofcms-model/ofcms-model.iml" filepath="$PROJECT_DIR$/ofcms/ofcms-model/ofcms-model.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/org.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/org/org.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/org/org-api/org-api.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/org/org-api/org-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/agile-bpm-basic/platform/platform.iml" filepath="$PROJECT_DIR$/agile-bpm-basic/platform/platform.iml" />

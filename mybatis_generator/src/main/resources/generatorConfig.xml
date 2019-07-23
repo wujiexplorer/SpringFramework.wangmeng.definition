@@ -41,7 +41,7 @@
 		</javaClientGenerator>
 		
 		<!-- 要生成哪些表 -->
-		<table tableName="card_sale_order_item" domainObjectName="cardSaleOrderItem"
+		<table tableName="agent_rebate_deploy" domainObjectName="AgentRebateDeploy"
 			enableCountByExample="true" enableUpdateByExample="true"
 			enableDeleteByExample="true" enableSelectByExample="true"
 			selectByExampleQueryId="true"></table>

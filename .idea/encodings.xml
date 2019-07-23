@@ -122,6 +122,12 @@
     <file url="file://$PROJECT_DIR$/mall/mall-portal" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall/mall-search" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatis_generator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ofcms" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ofcms/ofcms-admin" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ofcms/ofcms-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ofcms/ofcms-core" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ofcms/ofcms-front" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/ofcms/ofcms-model" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/repeat-submit-intercept" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-actuator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-admin-simple" charset="UTF-8" />
