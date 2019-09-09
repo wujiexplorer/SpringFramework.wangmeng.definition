@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.product.ProductMapper">
+	<sql id="Query_Param_Where_Clause">
+		<where>
+			<if test="queryParam.supplierId != null ">
+				and spu.supplier_id = #{queryParam.supplierId}
+			</if>
+			<if test="queryParam.spuCode != null ">
+				and spu.spu_code = #{queryParam.spuCode}
+			</if>
+			<if test="queryParam.goodsName != null  and queryParam.goodsName != '' ">
+				and spu.goods_name like concat('%',#{queryParam.goodsName},'%')
+			</if>
+			<if test="queryParam.goodsNameEn != null  and queryParam.goodsNameEn != '' ">
+				and spu.goods_name_en like concat('%',#{queryParam.goodsNameEn},'%')
+			</if>
+			<if test="queryParam.brandId != null ">
+				and spu.brand_id = #{queryParam.brandId}
+			</if>
+			<if test="queryParam.categoryId != null">
+				and spu.category_id = #{queryParam.categoryId}
+			</if>
+			<if test="queryParam.categoryId2 !=null">
+				and spu.category_id2 = #{queryParam.categoryId2}
+			</if>
+			<if test="queryParam.categoryId3 != null">
+				and spu.category_id3 = #{queryParam.categoryId3}
+			</if>
+			<if test="queryParam.goodsState != null">
+				and spu.goods_state = #{queryParam.goodsState}
+			</if>
+			<if test="queryParam.supplierId != null ">
+				and spu.supplier_id = #{queryParam.supplierId}
+			</if>
+			<if test="queryParam.isCross != null ">
+				and spu.is_cross = #{queryParam.isCross}
+			</if>
+			<if test="queryParam.goodsType != null">
+				and spu.goods_type = #{queryParam.goodsType}
+			</if>
+			<if test="queryParam.startTime != null ">
+				and spu.created_time >= #{queryParam.startTime}
+			</if>
+			<if test="queryParam.endTime != null ">
+				and spu.created_time &lt;= #{queryParam.endTime}
+			</if>
+			<if test="queryParam.sex != null">
+				and spu.sex = #{queryParam.sex}
+			</if>
+			<if test="queryParam.spuCodeList != null and queryParam.spuCodeList.size>0">
+				and spu.spu_code in
+				<foreach item="spuCode" collection="queryParam.spuCodeList" open="(" separator="," close=")">
+					#{spuCode}
+				</foreach>
+			</if>
+		</where>
+	</sql>
+	<sql id="SearchBean_Where_Clause">
+		<if test="searchBean.categoryId !=null">
+			and product.category_id=#{searchBean.categoryId}
+		</if>
+		<if test="searchBean.categoryId2 !=null">
+			and product.category_id2=#{searchBean.categoryId2}
+		</if>
+		<if test="searchBean.categoryId3 !=null">
+			and product.category_id3=#{searchBean.categoryId3}
+		</if>
+		<if test="searchBean.brandId !=null">
+			and product.brand_id= #{searchBean.brandId}
+		</if>
+		<if test="searchBean.countryId !=null">
+			and product.place_originId=#{searchBean.countryId}
+		</if>
+		<if test="searchBean.key !=null and searchBean.key !='' ">
+			 and product.goods_name like concat('%',#{searchBean.key},'%')
+		</if>
+		<if test="searchBean.spuCodes !=null and searchBean.spuCodes.size>0 ">
+			 and product.spu_code in 
+			 <foreach collection="searchBean.spuCodes" item="spuCode" open="(" close=")" separator=",">
+			 	#{spuCode}
+			 </foreach>
+		</if>
+		<if test="searchBean.excludeSupplierIds !=null and searchBean.excludeSupplierIds.size>0">
+			and product.supplier_id not in
+			<foreach collection="searchBean.excludeSupplierIds" item="exSupplierId" open="(" close=")" separator=",">
+				#{exSupplierId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeCategoryIds !=null and searchBean.excludeCategoryIds.size>0">
+			and product.category_id not in
+			<foreach collection="searchBean.excludeCategoryIds" item="exCategoryId" open="(" close=")" separator=",">
+				#{exCategoryId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeCategoryId2s !=null and searchBean.excludeCategoryId2s.size>0">
+			and product.category_id2 not in
+			<foreach collection="searchBean.excludeCategoryId2s" item="exCategoryId" open="(" close=")" separator=",">
+				#{exCategoryId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeCategoryId3s !=null and searchBean.excludeCategoryId3s.size>0">
+			and product.category_id3 not in
+			<foreach collection="searchBean.excludeCategoryId3s" item="exCategoryId" open="(" close=")" separator=",">
+				#{exCategoryId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeBrandIds !=null and searchBean.excludeBrandIds.size>0">
+			and product.brand_id not in
+			<foreach collection="searchBean.excludeBrandIds" item="exBrandId" open="(" close=")" separator=",">
+				#{exBrandId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeTopicIds !=null and searchBean.excludeTopicIds.size>0">
+			and product_topic.spu_code is null
+		</if>
+		<if test="searchBean.lowestPrice !=null">
+			and sku.goods_price >= #{searchBean.lowestPrice}
+		</if>
+		<if test="searchBean.startPrice !=null">
+			and sku.goods_price >= #{searchBean.startPrice}
+		</if>
+		<if test="searchBean.endPrice !=null">
+			and sku.goods_price &lt;= #{searchBean.endPrice}
+		</if>
+	</sql>
+
+	<sql id="SearchBean_In_Where_Clause">
+		<if test="searchBean.excludeSupplierIds !=null and searchBean.excludeSupplierIds.size>0">
+			and product.supplier_id  in
+			<foreach collection="searchBean.excludeSupplierIds" item="exSupplierId" open="(" close=")" separator=",">
+				#{exSupplierId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeCategoryIds !=null and searchBean.excludeCategoryIds.size>0">
+			and product.category_id  in
+			<foreach collection="searchBean.excludeCategoryIds" item="exCategoryId" open="(" close=")" separator=",">
+				#{exCategoryId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeCategoryId2s !=null and searchBean.excludeCategoryId2s.size>0">
+			and product.category_id2  in
+			<foreach collection="searchBean.excludeCategoryId2s" item="exCategoryId" open="(" close=")" separator=",">
+				#{exCategoryId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeCategoryId3s !=null and searchBean.excludeCategoryId3s.size>0">
+			and product.category_id3  in
+			<foreach collection="searchBean.excludeCategoryId3s" item="exCategoryId" open="(" close=")" separator=",">
+				#{exCategoryId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeBrandIds !=null and searchBean.excludeBrandIds.size>0">
+			and product.brand_id  in
+			<foreach collection="searchBean.excludeBrandIds" item="exBrandId" open="(" close=")" separator=",">
+				#{exBrandId}
+			</foreach>
+		</if>
+		<if test="searchBean.excludeTopicIds !=null and searchBean.excludeTopicIds.size>0">
+			and product_topic.topic_id in
+			<foreach collection="searchBean.excludeTopicIds" item="topicId" separator="," open="(" close=")">
+				#{topicId}
+			</foreach>
+		</if>
+	</sql>
+
+
+
+	<select id="selectCount" resultType="java.lang.Integer">
+		select count(*) from product spu
+		<include refid="Query_Param_Where_Clause" />
+	</select>
+	<select id="selectPage" resultMap="ProductResult">
+		select goods_image, goods_name, goods_name_en, brand_name, spu_code, supplier_name, goods_state, updated_time,
+		category_name, category_name2, category_name3, sex, is_cross, goods_type, updated_user
+		from product spu
+		<include refid="Query_Param_Where_Clause" />
+		order by 
+		<if test="queryParam.updatedTimeSort == 0 ">
+		updated_time desc,
+		</if>
+		spu_code desc
+		limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	<select id="getBasicInfo" resultMap="ProductResult">
+		select goods_image, goods_name, goods_name_en, brand_id, brand_name, spu_code, supplier_id, supplier_name, goods_state, updated_time,
+			category_name, category_name2, category_name3, sex, is_cross, goods_type, updated_user
+		from product spu
+		where spu_code=#{spuCode}
+	</select>
+	<select id="getProductIntruduction" resultType="java.lang.String">
+		select introduction 
+		from product
+		where spu_code=#{spuCode}
+	</select>
+	<update id="batchUpdateProductState">
+		update product set goods_state= #{product.goodsState}
+		<if test="product.updatedTime !=null">
+			,updated_time=#{product.updatedTime}
+		</if>
+		<if test="product.updatedUser !=null">
+			,updated_user=#{product.updatedUser}
+		</if>
+		<if test="product.statedTime !=null">
+			,stated_time=#{product.statedTime}
+		</if>
+		where spu_code in
+		<foreach collection="spuCodeList" item="spuCode" open="(" close=")" separator=",">
+			#{spuCode}
+		</foreach>
+	</update>
+
+	<select id="countProducts" resultType="java.lang.Integer">
+		select count(distinct product.spu_code)
+		from product inner join sku on product.spu_code=sku.spu_code 
+			and sku.`status`=1 and sku.goods_storge>0
+		<if test="searchBean.excludeTopicIds !=null and searchBean.excludeTopicIds.size>0">
+			left join product_topic on product.spu_code=product_topic.spu_code
+			and product_topic.topic_id in
+			<foreach collection="searchBean.excludeTopicIds" item="topiId" separator="," open="(" close=")">
+				#{topiId}
+			</foreach>
+		</if>
+		<choose>
+			<when test="searchBean.hot">
+				inner join product_topic product_topic2 on product.spu_code=product_topic2.spu_code
+				and product_topic2.topic_id in
+				<foreach collection="searchBean.hotGoodsIdList" item="hotId" open="(" close=")" separator=",">
+					#{hotId}
+				</foreach>
+			</when>
+			<when test="searchBean.topicId !=null">
+				inner join product_topic product_topic2 on product.spu_code=product_topic2.spu_code
+				and product_topic2.topic_id =#{searchBean.topicId}
+			</when>
+		</choose>
+		<where>
+			product.goods_state=1
+			<include refid="SearchBean_Where_Clause" />
+		</where>
+	</select>
+	<select id="getProductsByPage" resultMap="ProductResult">
+		select product.spu_code, product.goods_name, product.goods_name_en, product.goods_image, product.goods_name_en, min(sku.goods_markprice) as goods_markprice,
+			IFNULL(min(customPrice.goodsPrice),min(sku.goods_price)) as goods_price
+		from product 
+			inner join sku on product.spu_code=sku.spu_code and sku.`status`=1 and sku.goods_storge>0
+			left join enterpr_custom_price customPrice on sku.id=customPrice.goodsId and customPrice.enterprId=#{searchBean.enterprId}
+		<if test="searchBean.excludeTopicIds !=null and searchBean.excludeTopicIds.size>0">
+			left join product_topic on product.spu_code=product_topic.spu_code
+			and product_topic.topic_id in
+			<foreach collection="searchBean.excludeTopicIds" item="topiId" separator="," open="(" close=")">
+				#{topiId}
+			</foreach>
+		</if>
+		<choose>
+			<when test="searchBean.hot">
+				inner join product_topic product_topic2 on product.spu_code=product_topic2.spu_code
+				and product_topic2.topic_id in
+				<foreach collection="searchBean.hotGoodsIdList" item="hotId" open="(" close=")" separator=",">
+					#{hotId}
+				</foreach>
+			</when>
+			<when test="searchBean.topicId !=null">
+				inner join product_topic product_topic2 on product.spu_code=product_topic2.spu_code
+				and product_topic2.topic_id =#{searchBean.topicId}
+			</when>
+		</choose>
+		<where>
+			product.goods_state=1
+			<include refid="SearchBean_Where_Clause" />
+		</where>
+		group by product.spu_code
+		<choose>
+			<when test="searchBean.spuCodes !=null and searchBean.spuCodes.size>0 ">
+				order by FIELD(product.spu_code,
+				<foreach collection="searchBean.spuCodes" item="spuCode" close=")" separator=",">
+			 		#{spuCode}
+			 	</foreach>
+			 	, product.stated_time desc
+			</when>
+			<when test="searchBean.hot">
+				order by FIELD(product_topic2.topic_id, 
+				<foreach collection="searchBean.hotGoodsIdList" item="hotId" separator=",">
+					#{hotId}
+				</foreach>
+				), product_topic2.sort_num asc
+			</when>
+			<when test="searchBean.sort !=null">
+				<choose>
+					<when test="searchBean.sort==1">
+						order by goods_price desc
+					</when>
+					<when test="searchBean.sort==2">
+						order by goods_price asc
+					</when>
+					<when test="searchBean.sort==3">
+						order by product.stated_time desc
+					</when>
+				</choose>
+			</when>
+			<when test="searchBean.topicId !=null">
+				order by product_topic2.sort_num asc, product_topic2.id asc
+			</when>
+			<otherwise>
+				order by product.stated_time desc
+			</otherwise>
+		</choose>
+		limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	<select id="getBlackProducts" resultMap="ProductResult">
+		select  distinct sku.id as skuId,product.spu_code as spu_code
+		from product
+		inner join sku on product.spu_code=sku.spu_code
+		left join enterpr_custom_price customPrice on sku.id=customPrice.goodsId and customPrice.enterprId=#{searchBean.enterprId}
+		left join product_topic on product.spu_code=product_topic.spu_code
+		<where>
+			<include refid="SearchBean_In_Where_Clause" />
+		</where>
+	</select>
+	<update id="updateProductStateByQuery">
+		update product as spu set goods_state=#{product.goodsState}
+		<if test="product.updateduser!=null">
+			,updated_user=#{product.updatedUser}
+		</if>
+		<if test="product.updatedTime !=null">
+			,updated_time=#{product.updatedTime}
+		</if>
+		<if test="product.statedTime !=null">
+			,stated_time=#{product.statedTime}
+		</if>
+		<include refid="Query_Param_Where_Clause" />
+	</update>
+	<select id="selectGoodsStatus" resultType="java.lang.Integer">
+		select goods_state
+		from product spu
+		<include refid="Query_Param_Where_Clause" />
+	</select>
+	<select id="selectEsProductBeansByPage" resultType="com.lx.benefits.bean.bo.product.EsProductBean">
+		select product.spu_code as spuCode, product.goods_name as goodsName, product.brand_name as brandName,
+			product.category_id as categoryId, product.category_name as categoryName,
+			product.category_id2 as categoryId, product.category_name2 as categoryName2,
+			product.category_id3 as categoryId, product.category_name3 as categoryName3,
+			product.supplier_id as supplierId, product.supplier_name as supplierName,
+			IFNULL(GROUP_CONCAT(skuSpec.spec_value ORDER BY skuSpec.spec_id asc SEPARATOR '/'), sku.goods_spec) as goodsSpecname,
+			IFNULL(GROUP_CONCAT(sku.goods_name SEPARATOR '/'), "") as keywords,
+			min(sku.goods_price) as lowPrice
+		from product
+			inner join sku on product.spu_code=sku.spu_code
+			left join sku_spec_value skuSpec on sku.id=skuSpec.sku_id
+		where product.goods_state=1
+		group by product.spu_code
+		limit #{pageBean.offset},#{pageBean.pageSize} 
+	</select>
+	<select id="selectEsProductBeansByIds" resultType="com.lx.benefits.bean.bo.product.EsProductBean">
+		select product.spu_code as spuCode, product.goods_name as goodsName, product.brand_name as brandName,
+			product.category_id as categoryId, product.category_name as categoryName,
+			product.category_id2 as categoryId, product.category_name2 as categoryName2,
+			product.category_id3 as categoryId, product.category_name3 as categoryName3,
+			product.supplier_id as supplierId, product.supplier_name as supplierName,
+			IFNULL(GROUP_CONCAT(skuSpec.spec_value ORDER BY skuSpec.spec_id asc SEPARATOR '/'), sku.goods_spec) as goodsSpecname,
+			IFNULL(GROUP_CONCAT(sku.goods_name SEPARATOR '/'), "") as keywords,
+			min(sku.goods_price) as lowPrice, product.stated_time as statedTime
+		from product
+			inner join sku on product.spu_code=sku.spu_code
+			left join sku_spec_value skuSpec on sku.id=skuSpec.sku_id
+		where product.goods_state=1 and product.spu_code in 
+			<foreach collection="spuCodeList" item="spuCode" separator="," open="(" close=")">
+				#{spuCode}
+			</foreach>
+		group by product.spu_code
+	</select>
+</mapper>

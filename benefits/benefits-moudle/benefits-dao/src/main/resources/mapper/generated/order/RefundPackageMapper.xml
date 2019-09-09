@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.order.RefundPackageMapper">
+
+	<resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.order.RefundPackage">
+		<id property="id" column="ID" /><!--主键-->
+		<result property="refundApplyNumber" column="REFUND_APPLY_NUMBER" /><!--退款申请编号-->
+		<result property="productOrderNumber" column="PRODUCT_ORDER_NUMBER" /><!--商品级订单编号-->
+		<result property="sellerId" column="SELLER_ID" /><!--商家id-->
+		<result property="packageCode" column="PACKAGE_CODE" /><!--包裹编号-->
+		<result property="logisticsChannel" column="LOGISTICS_CHANNEL" /><!--物流公司-->
+		<result property="logisticsNumber" column="LOGISTICS_NUMBER" /><!--物流编号-->
+		<result property="status" column="STATUS" /><!--1初始 2首次揽件 3已签收-->
+		<result property="firstTime" column="FIRST_TIME" /><!--首次物流更新时间-->
+		<result property="takingTime" column="TAKING_TIME" /><!--揽件时间-->
+		<result property="confirmTime" column="CONFIRM_TIME" /><!--确认收货时间-->
+		<result property="extra" column="EXTRA" /><!--扩展信息字段-->
+		<result property="isDelete" column="IS_DELETE" /><!--0未删除 1已删除-->
+		<result property="createTime" column="CREATE_TIME" /><!--创建时间-->
+		<result property="updateTime" column="UPDATE_TIME" /><!--更新时间-->
+	</resultMap>
+
+	<sql id="Base_Column_List">
+            `ID` ,
+            `REFUND_APPLY_NUMBER` ,
+            `PRODUCT_ORDER_NUMBER` ,
+            `SELLER_ID` ,
+            `PACKAGE_CODE` ,
+            `LOGISTICS_CHANNEL` ,
+            `LOGISTICS_NUMBER` ,
+            `STATUS` ,
+            `FIRST_TIME` ,
+            `TAKING_TIME` ,
+            `CONFIRM_TIME` ,
+            `EXTRA` ,
+            `IS_DELETE` ,
+            `CREATE_TIME` ,
+            `UPDATE_TIME` 
+	</sql>
+	
+    <sql id="idCnd">
+        <where>
+            <if test="id!=null" >ID=#{id,jdbcType=BIGINT}</if>
+            <if test="id==null">1=0</if>
+        </where>
+    </sql>
+    
+	<insert id="insert" parameterType="com.lx.benefits.bean.entity.order.RefundPackage" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		refund_package
+		(
+		`ID`,
+		`REFUND_APPLY_NUMBER`,
+		`PRODUCT_ORDER_NUMBER`,
+		`SELLER_ID`,
+		`PACKAGE_CODE`,
+		`LOGISTICS_CHANNEL`,
+		`LOGISTICS_NUMBER`,
+		`STATUS`,
+		`FIRST_TIME`,
+		`TAKING_TIME`,
+		`CONFIRM_TIME`,
+		`EXTRA`,
+		`IS_DELETE`,
+		`CREATE_TIME`,
+		`UPDATE_TIME`
+		) VALUES 
+		(
+		#{id,jdbcType=BIGINT},
+		#{refundApplyNumber,jdbcType=BIGINT},
+		#{productOrderNumber,jdbcType=BIGINT},
+		#{sellerId,jdbcType=BIGINT},
+		#{packageCode,jdbcType=VARCHAR},
+		#{logisticsChannel,jdbcType=VARCHAR},
+		#{logisticsNumber,jdbcType=VARCHAR},
+		#{status,jdbcType=INTEGER},
+		#{firstTime,jdbcType=TIMESTAMP},
+		#{takingTime,jdbcType=TIMESTAMP},
+		#{confirmTime,jdbcType=TIMESTAMP},
+		#{extra,jdbcType=VARCHAR},
+		#{isDelete,jdbcType=INTEGER},
+		#{createTime,jdbcType=TIMESTAMP},
+		#{updateTime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+	
+	<insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.order.RefundPackage" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		refund_package
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >`ID`,</if>
+		<if test="refundApplyNumber!=null" >`REFUND_APPLY_NUMBER`,</if>
+		<if test="productOrderNumber!=null" >`PRODUCT_ORDER_NUMBER`,</if>
+		<if test="sellerId!=null" >`SELLER_ID`,</if>
+		<if test="packageCode!=null" >`PACKAGE_CODE`,</if>
+		<if test="logisticsChannel!=null" >`LOGISTICS_CHANNEL`,</if>
+		<if test="logisticsNumber!=null" >`LOGISTICS_NUMBER`,</if>
+		<if test="status!=null" >`STATUS`,</if>
+		<if test="firstTime!=null" >`FIRST_TIME`,</if>
+		<if test="takingTime!=null" >`TAKING_TIME`,</if>
+		<if test="confirmTime!=null" >`CONFIRM_TIME`,</if>
+		<if test="extra!=null" >`EXTRA`,</if>
+		<if test="isDelete!=null" >`IS_DELETE`,</if>
+		<if test="createTime!=null" >`CREATE_TIME`,</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >#{id,jdbcType=BIGINT},</if>
+		<if test="refundApplyNumber!=null" >#{refundApplyNumber,jdbcType=BIGINT},</if>
+		<if test="productOrderNumber!=null" >#{productOrderNumber,jdbcType=BIGINT},</if>
+		<if test="sellerId!=null" >#{sellerId,jdbcType=BIGINT},</if>
+		<if test="packageCode!=null" >#{packageCode,jdbcType=VARCHAR},</if>
+		<if test="logisticsChannel!=null" >#{logisticsChannel,jdbcType=VARCHAR},</if>
+		<if test="logisticsNumber!=null" >#{logisticsNumber,jdbcType=VARCHAR},</if>
+		<if test="status!=null" >#{status,jdbcType=INTEGER},</if>
+		<if test="firstTime!=null" >#{firstTime,jdbcType=TIMESTAMP},</if>
+		<if test="takingTime!=null" >#{takingTime,jdbcType=TIMESTAMP},</if>
+		<if test="confirmTime!=null" >#{confirmTime,jdbcType=TIMESTAMP},</if>
+		<if test="extra!=null" >#{extra,jdbcType=VARCHAR},</if>
+		<if test="isDelete!=null" >#{isDelete,jdbcType=INTEGER},</if>
+		<if test="createTime!=null" >#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >#{updateTime,jdbcType=TIMESTAMP}</if>
+		</trim>
+	</insert>
+	<delete id="deleteByPrimaryKey">
+		DELETE FROM refund_package
+		<include refid="idCnd" />
+	</delete>
+	
+	<update id="updateByPrimaryKeySelective">
+		UPDATE refund_package
+		<set>
+		<if test="id!=null" >`ID`=#{id,jdbcType=BIGINT},</if>
+		<if test="refundApplyNumber!=null" >`REFUND_APPLY_NUMBER`=#{refundApplyNumber,jdbcType=BIGINT},</if>
+		<if test="productOrderNumber!=null" >`PRODUCT_ORDER_NUMBER`=#{productOrderNumber,jdbcType=BIGINT},</if>
+		<if test="sellerId!=null" >`SELLER_ID`=#{sellerId,jdbcType=BIGINT},</if>
+		<if test="packageCode!=null" >`PACKAGE_CODE`=#{packageCode,jdbcType=VARCHAR},</if>
+		<if test="logisticsChannel!=null" >`LOGISTICS_CHANNEL`=#{logisticsChannel,jdbcType=VARCHAR},</if>
+		<if test="logisticsNumber!=null" >`LOGISTICS_NUMBER`=#{logisticsNumber,jdbcType=VARCHAR},</if>
+		<if test="status!=null" >`STATUS`=#{status,jdbcType=INTEGER},</if>
+		<if test="firstTime!=null" >`FIRST_TIME`=#{firstTime,jdbcType=TIMESTAMP},</if>
+		<if test="takingTime!=null" >`TAKING_TIME`=#{takingTime,jdbcType=TIMESTAMP},</if>
+		<if test="confirmTime!=null" >`CONFIRM_TIME`=#{confirmTime,jdbcType=TIMESTAMP},</if>
+		<if test="extra!=null" >`EXTRA`=#{extra,jdbcType=VARCHAR},</if>
+		<if test="isDelete!=null" >`IS_DELETE`=#{isDelete,jdbcType=INTEGER},</if>
+		<if test="createTime!=null" >`CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+		</set>
+		<include refid="idCnd" />
+	</update>
+	
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap">
+		SELECT
+			<include refid="Base_Column_List" />
+		FROM 
+			refund_package
+		<include refid="idCnd" />
+	</select>
+	
+	
+	<sql id="where_clause">
+    	<where>
+			<if test="id!=null" >`ID`=#{id,jdbcType=BIGINT}   </if>
+	        <if test="refundApplyNumber!=null" > AND `REFUND_APPLY_NUMBER`=#{refundApplyNumber,jdbcType=BIGINT}</if>
+	        <if test="productOrderNumber!=null" > AND `PRODUCT_ORDER_NUMBER`=#{productOrderNumber,jdbcType=BIGINT}</if>
+	        <if test="sellerId!=null" > AND `SELLER_ID`=#{sellerId,jdbcType=BIGINT}</if>
+	        <if test="packageCode!=null" > AND `PACKAGE_CODE`=#{packageCode,jdbcType=VARCHAR}</if>
+	        <if test="logisticsChannel!=null" > AND `LOGISTICS_CHANNEL`=#{logisticsChannel,jdbcType=VARCHAR}</if>
+	        <if test="logisticsNumber!=null" > AND `LOGISTICS_NUMBER`=#{logisticsNumber,jdbcType=VARCHAR}</if>
+	        <if test="status!=null" > AND `STATUS`=#{status,jdbcType=INTEGER}</if>
+	        <if test="firstTime!=null" > AND `FIRST_TIME`=#{firstTime,jdbcType=TIMESTAMP}</if>
+	        <if test="takingTime!=null" > AND `TAKING_TIME`=#{takingTime,jdbcType=TIMESTAMP}</if>
+	        <if test="confirmTime!=null" > AND `CONFIRM_TIME`=#{confirmTime,jdbcType=TIMESTAMP}</if>
+	        <if test="extra!=null" > AND `EXTRA`=#{extra,jdbcType=VARCHAR}</if>
+	        <if test="isDelete!=null" > AND `IS_DELETE`=#{isDelete,jdbcType=INTEGER}</if>
+	        <if test="createTime!=null" > AND `CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP}</if>
+	        <if test="updateTime!=null" > AND `UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+    	</where>
+    </sql>
+    
+	
+</mapper>
+

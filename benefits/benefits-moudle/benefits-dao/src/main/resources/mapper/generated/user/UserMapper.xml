@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.user.UserMapper">
+
+	<resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.user.User">
+		<id property="id" column="ID" /><!--主键-->
+		<result property="username" column="USERNAME" /><!--用户名-->
+		<result property="password" column="PASSWORD" /><!--密码-->
+		<result property="mobile" column="MOBILE" /><!--手机号-->
+		<result property="nickName" column="NICK_NAME" /><!--用户昵称-->
+		<result property="birthday" column="BIRTHDAY" /><!--出生日期-->
+		<result property="name" column="NAME" /><!--用户真实姓名-->
+		<result property="idcardNum" column="IDCARD_NUM" /><!--身份证号-->
+		<result property="status" column="STATUS" /><!--用户状态-->
+		<result property="isDelete" column="IS_DELETE" /><!--删除状态 0：未删除；1：已删除-->
+		<result property="createTime" column="CREATE_TIME" /><!--创建时间-->
+		<result property="updateTime" column="UPDATE_TIME" /><!--更新时间-->
+	</resultMap>
+
+	<sql id="Base_Column_List">
+            `ID` ,
+            `USERNAME` ,
+            `PASSWORD` ,
+            `MOBILE` ,
+            `NICK_NAME` ,
+            `BIRTHDAY` ,
+            `NAME` ,
+            `IDCARD_NUM` ,
+            `STATUS` ,
+            `IS_DELETE` ,
+            `CREATE_TIME` ,
+            `UPDATE_TIME` 
+	</sql>
+	
+    <sql id="idCnd">
+        <where>
+            <if test="id!=null" >ID=#{id,jdbcType=BIGINT}</if>
+            <if test="id==null">1=0</if>
+        </where>
+    </sql>
+    
+	<insert id="insert" parameterType="com.lx.benefits.bean.entity.user.User" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		user
+		(
+		`ID`,
+		`USERNAME`,
+		`PASSWORD`,
+		`MOBILE`,
+		`NICK_NAME`,
+		`BIRTHDAY`,
+		`NAME`,
+		`IDCARD_NUM`,
+		`STATUS`,
+		`IS_DELETE`,
+		`CREATE_TIME`,
+		`UPDATE_TIME`
+		) VALUES 
+		(
+		#{id,jdbcType=BIGINT},
+		#{username,jdbcType=VARCHAR},
+		#{password,jdbcType=VARCHAR},
+		#{mobile,jdbcType=VARCHAR},
+		#{nickName,jdbcType=VARCHAR},
+		#{birthday,jdbcType=DATE},
+		#{name,jdbcType=VARCHAR},
+		#{idcardNum,jdbcType=VARCHAR},
+		#{status,jdbcType=TINYINT},
+		#{isDelete,jdbcType=TINYINT},
+		#{createTime,jdbcType=TIMESTAMP},
+		#{updateTime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+	
+	<insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.user.User" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		user
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >`ID`,</if>
+		<if test="username!=null" >`USERNAME`,</if>
+		<if test="password!=null" >`PASSWORD`,</if>
+		<if test="mobile!=null" >`MOBILE`,</if>
+		<if test="nickName!=null" >`NICK_NAME`,</if>
+		<if test="birthday!=null" >`BIRTHDAY`,</if>
+		<if test="name!=null" >`NAME`,</if>
+		<if test="idcardNum!=null" >`IDCARD_NUM`,</if>
+		<if test="status!=null" >`STATUS`,</if>
+		<if test="isDelete!=null" >`IS_DELETE`,</if>
+		<if test="createTime!=null" >`CREATE_TIME`,</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >#{id,jdbcType=BIGINT},</if>
+		<if test="username!=null" >#{username,jdbcType=VARCHAR},</if>
+		<if test="password!=null" >#{password,jdbcType=VARCHAR},</if>
+		<if test="mobile!=null" >#{mobile,jdbcType=VARCHAR},</if>
+		<if test="nickName!=null" >#{nickName,jdbcType=VARCHAR},</if>
+		<if test="birthday!=null" >#{birthday,jdbcType=DATE},</if>
+		<if test="name!=null" >#{name,jdbcType=VARCHAR},</if>
+		<if test="idcardNum!=null" >#{idcardNum,jdbcType=VARCHAR},</if>
+		<if test="status!=null" >#{status,jdbcType=TINYINT},</if>
+		<if test="isDelete!=null" >#{isDelete,jdbcType=TINYINT},</if>
+		<if test="createTime!=null" >#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >#{updateTime,jdbcType=TIMESTAMP}</if>
+		</trim>
+	</insert>
+	<delete id="deleteByPrimaryKey">
+		DELETE FROM user
+		<include refid="idCnd" />
+	</delete>
+	
+	<update id="updateByPrimaryKeySelective">
+		UPDATE user
+		<set>
+		<if test="id!=null" >`ID`=#{id,jdbcType=BIGINT},</if>
+		<if test="username!=null" >`USERNAME`=#{username,jdbcType=VARCHAR},</if>
+		<if test="password!=null" >`PASSWORD`=#{password,jdbcType=VARCHAR},</if>
+		<if test="mobile!=null" >`MOBILE`=#{mobile,jdbcType=VARCHAR},</if>
+		<if test="nickName!=null" >`NICK_NAME`=#{nickName,jdbcType=VARCHAR},</if>
+		<if test="birthday!=null" >`BIRTHDAY`=#{birthday,jdbcType=DATE},</if>
+		<if test="name!=null" >`NAME`=#{name,jdbcType=VARCHAR},</if>
+		<if test="idcardNum!=null" >`IDCARD_NUM`=#{idcardNum,jdbcType=VARCHAR},</if>
+		<if test="status!=null" >`STATUS`=#{status,jdbcType=TINYINT},</if>
+		<if test="isDelete!=null" >`IS_DELETE`=#{isDelete,jdbcType=TINYINT},</if>
+		<if test="createTime!=null" >`CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+		</set>
+		<include refid="idCnd" />
+	</update>
+	
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap">
+		SELECT
+			<include refid="Base_Column_List" />
+		FROM 
+			user
+		<include refid="idCnd" />
+	</select>
+	
+	
+	<sql id="where_clause">
+    	<where>
+			<if test="id!=null" >`ID`=#{id,jdbcType=BIGINT}   </if>
+	        <if test="username!=null" > AND `USERNAME`=#{username,jdbcType=VARCHAR}</if>
+	        <if test="password!=null" > AND `PASSWORD`=#{password,jdbcType=VARCHAR}</if>
+	        <if test="mobile!=null" > AND `MOBILE`=#{mobile,jdbcType=VARCHAR}</if>
+	        <if test="nickName!=null" > AND `NICK_NAME`=#{nickName,jdbcType=VARCHAR}</if>
+	        <if test="birthday!=null" > AND `BIRTHDAY`=#{birthday,jdbcType=DATE}</if>
+	        <if test="name!=null" > AND `NAME`=#{name,jdbcType=VARCHAR}</if>
+	        <if test="idcardNum!=null" > AND `IDCARD_NUM`=#{idcardNum,jdbcType=VARCHAR}</if>
+	        <if test="status!=null" > AND `STATUS`=#{status,jdbcType=TINYINT}</if>
+	        <if test="isDelete!=null" > AND `IS_DELETE`=#{isDelete,jdbcType=TINYINT}</if>
+	        <if test="createTime!=null" > AND `CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP}</if>
+	        <if test="updateTime!=null" > AND `UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+    	</where>
+    </sql>
+    
+	
+</mapper>
+

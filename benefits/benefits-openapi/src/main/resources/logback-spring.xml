@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<springProperty scope="context" name="LOG_HOME" source="benefits.log.home"  defaultValue="/logs/benefits-openapi"/>
+	<springProperty scope="context" name="MAX_HISTORY" source="benefits.log.maxHistory" defaultValue="30"/>
+    
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%date [%level] [%X{traceId}] [%thread] %logger{36} %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 出错日志 appender  -->
+    <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_HOME}/error.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <FileNamePattern>${LOG_HOME}/error.%d{yyyy-MM-dd}.log.zip</FileNamePattern>
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%level] [%X{traceId}] [%thread] %logger{35} - %msg %n</Pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter"><!-- 只打印错误日志 -->
+            <level>ERROR</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+    <!-- 访问日志 appender  -->
+    <appender name="ACCESS" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_HOME}/access.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <FileNamePattern>/${LOG_HOME}/access.%d{yyyy-MM-dd}.log.zip</FileNamePattern>
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%level] [%X{traceId}] [%thread] %logger{35} - %msg %n</Pattern>
+        </encoder>
+    </appender>
+
+    <!-- info日志 appender  -->
+    <appender name="INFO" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <File>${LOG_HOME}/info.log</File>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <!-- daily rollover -->
+            <FileNamePattern>${LOG_HOME}/info.%d{yyyy-MM-dd}.log.zip</FileNamePattern>
+            <!-- keep 30 days' worth of history -->
+            <maxHistory>${MAX_HISTORY}</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <Pattern>[%d{yyyy-MM-dd HH:mm:ss}] [%level] [%X{traceId}] [%thread] %logger{35} - %msg %n</Pattern>
+        </encoder>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter"><!-- 只打印INFO日志 -->
+            <level>INFO</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+    </appender>
+
+
+
+    <!-- 测试环境+开发环境. 多个使用逗号隔开. -->
+    <springProfile name="test,dev,pre">
+        <logger name="com.lx.benefits" additivity="false" level="DEBUG">
+            <appender-ref ref="STDOUT"/>
+            <appender-ref ref="ERROR"/>
+            <appender-ref ref="ACCESS"/>
+        </logger>
+
+        <logger name="druid.sql.Statement" additivity="false" level="DEBUG">
+            <appender-ref ref="STDOUT" />
+            <appender-ref ref="ACCESS"/>
+        </logger>
+
+        <root level="INFO">
+            <appender-ref ref="STDOUT"/>
+            <appender-ref ref="ACCESS"/>
+        </root>
+    </springProfile>
+
+    <!-- 生产环境. -->
+    <springProfile name="prod">
+        <logger name="com.lx.benefits" additivity="false" level="INFO">
+            <appender-ref ref="ERROR"/>
+            <appender-ref ref="ACCESS"/>
+        </logger>
+
+        <logger name="druid.sql.Statement" additivity="false" level="INFO">
+            <appender-ref ref="STDOUT" />
+            <appender-ref ref="ACCESS"/>
+        </logger>
+
+        <root level="INFO">
+            <appender-ref ref="ERROR"/>
+            <appender-ref ref="ACCESS"/>
+        </root>
+    </springProfile>
+
+</configuration>

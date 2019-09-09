@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.agent.AgentLevelMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.agent.AgentLevel">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="profit_type" jdbcType="INTEGER" property="profitType" />
+    <result column="rebate_type" jdbcType="INTEGER" property="rebateType" />
+    <result column="profit_proportion" jdbcType="DECIMAL" property="profitProportion" />
+    <result column="brand_building_fee" jdbcType="DECIMAL" property="brandBuildingFee" />
+    <result column="market_fee" jdbcType="DECIMAL" property="marketFee" />
+    <result column="team_building_fee" jdbcType="DECIMAL" property="teamBuildingFee" />
+    <result column="introducer_award" jdbcType="DECIMAL" property="introducerAward" />
+    <result column="is_proxy_operative" jdbcType="INTEGER" property="isProxyOperative" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, name, profit_type, rebate_type, profit_proportion,brand_building_fee,market_fee,team_building_fee,introducer_award,is_proxy_operative
+  </sql>
+  <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.agent.AgentLevelCondition" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from agent_level
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from agent_level
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from agent_level
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.agent.AgentLevelCondition">
+    delete from agent_level
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.agent.AgentLevel">
+    insert into agent_level (id, name, profit_type, 
+      rebate_type, profit_proportion)
+    values (#{id,jdbcType=INTEGER}, #{name,jdbcType=VARCHAR}, #{profitType,jdbcType=INTEGER}, 
+      #{rebateType,jdbcType=INTEGER}, #{profitProportion,jdbcType=DECIMAL})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.agent.AgentLevel">
+    insert into agent_level
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="profitType != null">
+        profit_type,
+      </if>
+      <if test="rebateType != null">
+        rebate_type,
+      </if>
+      <if test="profitProportion != null">
+        profit_proportion,
+      </if>
+      <if test="brandBuildingFee != null">
+        brand_building_fee,
+      </if>
+      <if test="marketFee != null">
+        market_fee,
+      </if>
+      <if test="teamBuildingFee != null">
+        team_building_fee,
+      </if>
+      <if test="introducerAward != null">
+        introducer_award,
+      </if>
+      <if test="isProxyOperative != null">
+        is_proxy_operative,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="profitType != null">
+        #{profitType,jdbcType=INTEGER},
+      </if>
+      <if test="rebateType != null">
+        #{rebateType,jdbcType=INTEGER},
+      </if>
+      <if test="profitProportion != null">
+        #{profitProportion,jdbcType=DECIMAL},
+      </if>
+      <if test="brandBuildingFee != null">
+        #{brandBuildingFee,jdbcType=DECIMAL},
+      </if>
+      <if test="marketFee != null">
+        #{marketFee,jdbcType=DECIMAL},
+      </if>
+      <if test="teamBuildingFee != null">
+        #{teamBuildingFee,jdbcType=DECIMAL},
+      </if>
+      <if test="introducerAward != null">
+        #{introducerAward,jdbcType=DECIMAL},
+      </if>
+      <if test="isProxyOperative != null">
+        #{isProxyOperative,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lx.benefits.bean.entity.agent.AgentLevelCondition" resultType="java.lang.Long">
+    select count(*) from agent_level
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update agent_level
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.name != null">
+        name = #{record.name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.profitType != null">
+        profit_type = #{record.profitType,jdbcType=INTEGER},
+      </if>
+      <if test="record.rebateType != null">
+        rebate_type = #{record.rebateType,jdbcType=INTEGER},
+      </if>
+      <if test="record.profitProportion != null">
+        profit_proportion = #{record.profitProportion,jdbcType=DECIMAL},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update agent_level
+    set id = #{record.id,jdbcType=INTEGER},
+      name = #{record.name,jdbcType=VARCHAR},
+      profit_type = #{record.profitType,jdbcType=INTEGER},
+      rebate_type = #{record.rebateType,jdbcType=INTEGER},
+      profit_proportion = #{record.profitProportion,jdbcType=DECIMAL}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.agent.AgentLevel">
+    update agent_level
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="profitType != null">
+        profit_type = #{profitType,jdbcType=INTEGER},
+      </if>
+      <if test="rebateType != null">
+        rebate_type = #{rebateType,jdbcType=INTEGER},
+      </if>
+      <if test="profitProportion != null">
+        profit_proportion = #{profitProportion,jdbcType=DECIMAL},
+      </if>
+      <if test="brandBuildingFee != null">
+        brand_building_fee = #{brandBuildingFee,jdbcType=DECIMAL},
+      </if>
+      <if test="marketFee != null">
+        market_fee = #{marketFee,jdbcType=DECIMAL},
+      </if>
+      <if test="teamBuildingFee != null">
+        team_building_fee = #{teamBuildingFee,jdbcType=DECIMAL},
+      </if>
+      <if test="introducerAward != null">
+        introducer_award = #{introducerAward,jdbcType=DECIMAL},
+      </if>
+      <if test="isProxyOperative != null">
+        is_proxy_operative = #{isProxyOperative,jdbcType=INTEGER},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.agent.AgentLevel">
+    update agent_level
+    set name = #{name,jdbcType=VARCHAR},
+      profit_type = #{profitType,jdbcType=INTEGER},
+      rebate_type = #{rebateType,jdbcType=INTEGER},
+      profit_proportion = #{profitProportion,jdbcType=DECIMAL}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

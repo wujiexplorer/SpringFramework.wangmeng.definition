@@ -1,0 +1,744 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.product.ProductMapper">
+    <resultMap type="com.lx.benefits.bean.entity.product.ProductEntity" id="ProductResult">
+        <result property="spuCode" column="spu_code" />
+        <result property="skuCode" column="sku_code" />
+        <result property="brandId" column="brand_id" />
+        <result property="brandName" column="brand_name" />
+        <result property="categoryId" column="category_id" />
+        <result property="categoryName" column="category_name" />
+        <result property="categoryId2" column="category_id2" />
+        <result property="categoryName2" column="category_name2" />
+        <result property="categoryId3" column="category_id3" />
+        <result property="categoryName3" column="category_name3" />
+        <result property="goodsType" column="goods_type" />
+        <result property="isCross" column="is_cross" />
+        <result property="goodsAttr" column="goods_attr" />
+        <result property="color" column="color" />
+        <result property="supplierId" column="supplier_id" />
+        <result property="supplierName" column="supplier_name" />
+        <result property="goodsName" column="goods_name" />
+        <result property="goodsNameEn" column="goods_name_en" />
+        <result property="goodsBody" column="goods_body" />
+        <result property="goodsImage" column="goods_image" />
+        <result property="goodsImages" column="goods_images" />
+        <result property="goodsSpecname" column="goods_specname" />
+        <result property="placeOriginId" column="place_originId" />
+        <result property="placeOrigin" column="place_origin" />
+        <result property="goodsDiscount" column="goods_discount" />
+        <result property="skuDiscount" column="skuDiscount" />
+        <result property="itemNumber" column="item_number" />
+        <result property="seasonId" column="seasonId" />
+        <result property="season" column="season" />
+        <result property="goodsState" column="goods_state" />
+        <result property="goodsFreight" column="goods_freight" />
+        <result property="createdUser" column="created_user" />
+        <result property="createdTime" column="created_time" />
+        <result property="updatedUser" column="updated_user" />
+        <result property="updatedTime" column="updated_time" />
+        <result property="sex" column="sex" />
+        <result property="countrySize" column="countrySize" />
+        <result property="gjValidEndtime" column="gjValidEndtime" />
+        <result property="gjValidStarttime" column="gjValidStarttime" />
+        <result property="gjDiscount" column="gjDiscount" />
+        <result property="isEffect" column="isEffect" />
+        <result property="topicName" column="topicName" />
+        <result property="topicId" column="topic_id" />
+        <result property="skuId" column="skuId" />
+        <result property="sortNum" column="sort_num" />
+        <result property="goodsPrice" column="goods_price" />
+        <result property="goodsMarkprice" column="goods_markprice" />
+        <result property="goodsCostprice" column="goods_costprice" />
+        <result property="introduction" column="introduction" />
+        <result property="introductionEn" column="introductionEn" />
+        <result property="statedTime" column="stated_time" />
+        <result property="goodsStorge" column="goods_storge" />
+        <result property="skuImage" column="skuImage"/>
+        <result property="voucherIds" column="voucher_ids"></result>
+    </resultMap>
+
+	<sql id="selectProductVo">
+        select  * from product as spu
+    </sql>
+
+    <!--<sql id="ProductPage">-->
+        <!--select spu.*,sum(goods_storge)as stock,GROUP_CONCAT( distinct topic.name) as topicName,sku.goods_price,sku.goods_markprice,sku.goods_costprice,sku.goods_discount skuDiscount  from product as spu left join product_topic as pt on spu.spu_code = pt.spu_code left join sku as sku on spu.spu_code = sku.spu_code-->
+        <!--left join topic as topic on pt.topic_id= topic.id-->
+    <!--</sql>-->
+
+    <sql id="Example_Where_Clause">
+        <where>
+            <if test="spuCode != null "> and spu_code = #{spuCode}</if>
+            <if test="skuCode != null "> and sku_code = #{skuCode}</if>
+            <if test="brandId != null "> and brand_id = #{brandId}</if>
+            <if test="brandName != null  and brandName != '' "> and brand_name = #{brandName}</if>
+            <if test="categoryId != null "> and category_id = #{categoryId}</if>
+            <if test="categoryName != null  and categoryName != '' "> and category_name = #{categoryName}</if>
+            <if test="categoryId2 != null "> and category_id2 = #{categoryId2}</if>
+            <if test="categoryName2 != null  and categoryName2 != '' "> and category_name2 = #{categoryName2}</if>
+            <if test="categoryId3 != null "> and category_id3 = #{categoryId3}</if>
+            <if test="categoryName3 != null  and categoryName3 != '' "> and category_name3 = #{categoryName3}</if>
+            <if test="goodsType != null and goodsType !='' "> and goods_type = #{goodsType}</if>
+            <if test="isCross != null "> and is_cross = #{isCross}</if>
+            <if test="supplierId != null "> and supplier_id = #{supplierId}</if>
+            <if test="supplierName != null and supplierName != '' "> and supplier_name = #{supplierName}</if>
+            <if test="goodsName != null  and goodsName != '' "> and goods_name  like concat('%',#{goodsName},'%')</if>
+            <if test="placeOriginId != null"> and place_originId = #{placeOriginId}</if>
+            <if test="placeOrigin != null  and placeOrigin != '' "> and place_origin = #{placeOrigin}</if>
+            <if test="goodsDiscount != null "> and goods_discount = #{goodsDiscount}</if>
+            <if test="itemNumber != null  and itemNumber != '' "> and item_number = #{itemNumber}</if>
+            <if test="seasonId != null "> and seasonId = #{seasonId}</if>
+            <if test="season != null  and season != '' "> and season = #{season}</if>
+            <if test="goodsState != null "> and goods_state = #{goodsState}</if>
+            <if test="goodsFreight != null "> and goods_freight = #{goodsFreight}</if>
+            <if test="sex != null  and sex != '' "> and sex = #{sex}</if>
+            <if test="countrySize != null  and countrySize != '' "> and countrySize = #{countrySize}</if>
+            <if test="spuCodeList != null">
+                <foreach collection="spuCodeList" item="spuCode" open="spu_code in (" close=")" separator=",">
+                    #{spuCode}
+                </foreach>
+            </if>
+        </where>
+    </sql>
+
+    <sql id="Page_Where_Clause">
+        <where>
+            <if test="spuCode != null "> and spu.spu_code = #{spuCode}</if>
+            <if test="skuCode != null "> and spu.sku_code = #{skuCode}</if>
+            <if test="brandId != null "> and spu.brand_id = #{brandId}</if>
+            <if test="brandName != null  and brandName != '' "> and spu.brand_name = #{brandName}</if>
+            <if test="categoryId != null "> and spu.category_id = #{categoryId}</if>
+            <if test="categoryName != null  and categoryName != '' "> and spu.category_name = #{categoryName}</if>
+            <if test="categoryId2 != null "> and spu.category_id2 = #{categoryId2}</if>
+            <if test="categoryName2 != null  and categoryName2 != '' "> and spu.category_name2 = #{categoryName2}</if>
+            <if test="categoryId3 != null "> and spu.category_id3 = #{categoryId3}</if>
+            <if test="categoryName3 != null  and categoryName3 != '' "> and spu.category_name3 = #{categoryName3}</if>
+            <if test="goodsType != null and goodsType != '' "> and spu.goods_type = #{goodsType}</if>
+            <if test="isCross != null "> and spu.is_cross = #{isCross}</if>
+            <if test="supplierId != null "> and spu.supplier_id = #{supplierId}</if>
+            <if test="supplierName != null "> and spu.supplier_name = #{supplierName}</if>
+            <if test="goodsName != null  and goodsName != '' "> and spu.goods_name like concat('%',#{goodsName},'%')</if>
+            <if test="goodsNameEn != null  and goodsNameEn != '' "> and spu.goods_name_en like concat('%',#{goodsNameEn},'%')</if>
+            <if test="placeOriginId != null and  placeOriginId!= '' "> and spu.place_originId = #{placeOriginId}</if>
+            <if test="placeOrigin != null  and placeOrigin != '' "> and spu.place_origin = #{placeOrigin}</if>
+            <if test="itemNumber != null  and itemNumber != '' "> and spu.item_number = #{itemNumber}</if>
+            <if test="seasonId != null  "> and spu.seasonId = #{seasonId}</if>
+            <if test="season != null  and season != '' "> and spu.season = #{season}</if>
+            <if test="goodsState != null and goodsState!='' "> and spu.goods_state = #{goodsState}</if>
+            <if test="createdTime != null "> and spu.created_time = #{createdTime}</if>
+            <if test="sex != null  and sex != '' "> and spu.sex = #{sex}</if>
+            <if test="countrySize != null  and countrySize != '' "> and spu.countrySize = #{countrySize}</if>
+            <!--<if test="topicId != null and topicId != '' "> and pt.topic_id = #{topicId}</if>-->
+            <if test="startTime != null "> AND spu.created_time &gt;= #{startTime}</if>
+            <if test="endTime != null ">AND spu.created_time &lt;= #{endTime}</if>
+            <if test="discountStart != null "> AND spu.goods_discount &gt;= #{discountStart}</if>
+            <if test="discountEnd != null ">AND spu.goods_discount &lt;= #{discountEnd}</if>
+            <if test="isStock != null and isStock != '' and isStock == 1">and ((spu.supplier_id = 1 and (sku.goods_storge = 33 or sku.goods_storge = 39 or
+                sku.goods_storge = 40)) or (spu.supplier_id != 1 and sku.goods_storge>0))</if>
+            <if test="isStock != null and isStock != '' and isStock == 0">and ((spu.supplier_id = 1 and (sku.goods_storge = 34 or sku.goods_storge = 36)) or (spu.supplier_id != 1 and sku.goods_storge=0))</if>
+            <if test="spuCodeList != null">
+                sku.spu_code in
+                <foreach item="spuCode" collection="spuCodeList" open="(" separator="," close=")">
+                    #{spuCode}
+                </foreach>
+            </if>
+        </where>
+    </sql>
+	
+    <select id="selectList" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultMap="ProductResult">
+        <include refid="selectProductVo"/>
+        <include refid="Example_Where_Clause"/>
+    </select>
+    
+    <select id="selectById" parameterType="Long" resultMap="ProductResult">
+        select * from product
+        where spu_code = #{spuCode}
+    </select>
+
+    <insert id="insert" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" useGeneratedKeys="true" keyProperty="spuCode">
+        insert into product
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="brandId != null   ">brand_id,</if>
+            <if test="skuCode != null  and skuCode != ''">sku_code,</if>
+            <if test="brandName != null  and brandName != ''  ">brand_name,</if>
+            <if test="categoryId != null   ">category_id,</if>
+            <if test="categoryName != null  and categoryName != ''  ">category_name,</if>
+            <if test="categoryId2 != null   ">category_id2,</if>
+            <if test="categoryName2 != null  and categoryName2 != ''  ">category_name2,</if>
+            <if test="categoryId3 != null   ">category_id3,</if>
+            <if test="categoryName3 != null  and categoryName3 != ''  ">category_name3,</if>
+            <if test="goodsType != null  ">goods_type,</if>
+            <if test="isCross != null  ">is_cross,</if>
+            <if test="supplierId != null  ">supplier_id,</if>
+            <if test="supplierName != null and supplierName != '' ">supplier_name,</if>
+            <if test="goodsName != null  and goodsName != ''  ">goods_name,</if>
+            <if test="goodsNameEn != null  and goodsNameEn != ''  ">goods_name_en,</if>
+            <if test="goodsBody != null  and goodsBody != ''  ">goods_body,</if>
+            <if test="goodsImage != null  and goodsImage != ''  ">goods_image,</if>
+            <if test="goodsImages != null  and goodsImages != ''  ">goods_images,</if>
+            <if test="goodsSpecname != null  and goodsSpecname != ''  ">goods_specname,</if>
+            <if test="placeOriginId != null ">place_originId,</if>
+            <if test="placeOrigin != null  and placeOrigin != ''  ">place_origin,</if>
+            <if test="goodsDiscount != null and goodsDiscount != '' ">goods_discount,</if>
+            <if test="itemNumber != null  and itemNumber != ''  ">item_number,</if>
+            <if test="seasonId != null  ">seasonId,</if>
+            <if test="season != null  and season != ''  ">season,</if>
+            <if test="goodsState != null">goods_state,</if>
+            <if test="goodsFreight != null  and goodsFreight != ''">goods_freight,</if>
+            <if test="createdUser != null  and createdUser != ''  ">created_user,</if>
+            <if test="createdTime != null  ">created_time,</if>
+            <if test="updatedUser != null  and updatedUser != ''  ">updated_user,</if>
+            <if test="updatedTime != null   ">updated_time,</if>
+            <if test="sex != null  and sex != ''  ">sex,</if>
+            <if test="countrySize != null  and countrySize != ''  ">countrySize,</if>
+            <if test="gjValidStarttime != null  and gjValidStarttime != ''  ">gjValidStarttime,</if>
+            <if test="gjValidEndtime != null  and gjValidEndtime != ''  ">gjValidEndtime,</if>
+            <if test="gjDiscount != null  and gjDiscount != '' ">gjDiscount,</if>
+            <if test="isEffect != null  and isEffect != ''  ">isEffect,</if>
+            <if test="introduction != null  and introduction != ''  ">introduction,</if>
+            <if test="introductionEn != null  and introductionEn != ''  ">introductionEn,</if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="brandId != null  ">#{brandId},</if>
+            <if test="skuCode != null  and skuCode != ''"> #{skuCode},</if>
+            <if test="brandName != null  and brandName != ''  ">#{brandName},</if>
+            <if test="categoryId != null  ">#{categoryId},</if>
+            <if test="categoryName != null  and categoryName != ''  ">#{categoryName},</if>
+            <if test="categoryId2 != null   ">#{categoryId2},</if>
+            <if test="categoryName2 != null  and categoryName2 != ''  ">#{categoryName2},</if>
+            <if test="categoryId3 != null   ">#{categoryId3},</if>
+            <if test="categoryName3 != null  and categoryName3 != ''  ">#{categoryName3},</if>
+            <if test="goodsType != null   ">#{goodsType},</if>
+            <if test="isCross != null  ">#{isCross},</if>
+            <if test="supplierId != null  ">#{supplierId},</if>
+            <if test="supplierName != null and supplierName != ''  ">#{supplierName},</if>
+            <if test="goodsName != null  and goodsName != ''  ">#{goodsName},</if>
+            <if test="goodsNameEn != null  and goodsNameEn != ''  ">#{goodsNameEn},</if>
+            <if test="goodsBody != null  and goodsBody != ''  ">#{goodsBody},</if>
+            <if test="goodsImage != null  and goodsImage != ''  ">#{goodsImage},</if>
+            <if test="goodsImages != null  and goodsImages != ''  ">#{goodsImages},</if>
+            <if test="goodsSpecname != null  and goodsSpecname != ''  ">#{goodsSpecname},</if>
+            <if test="placeOriginId != null  ">#{placeOriginId},</if>
+            <if test="placeOrigin != null  and placeOrigin != ''  ">#{placeOrigin},</if>
+            <if test="goodsDiscount != null and goodsDiscount != '' ">#{goodsDiscount},</if>
+            <if test="itemNumber != null  and itemNumber != ''  ">#{itemNumber},</if>
+            <if test="seasonId != null  ">#{seasonId},</if>
+            <if test="season != null  and season != ''  ">#{season},</if>
+            <if test="goodsState != null">#{goodsState},</if>
+            <if test="goodsFreight != null and goodsFreight != ''  ">#{goodsFreight},</if>
+            <if test="createdUser != null  and createdUser != ''  ">#{createdUser},</if>
+            <if test="createdTime != null   ">#{createdTime},</if>
+            <if test="updatedUser != null  and updatedUser != ''  ">#{updatedUser},</if>
+            <if test="updatedTime != null   ">#{updatedTime},</if>
+            <if test="sex != null  and sex != ''  ">#{sex},</if>
+            <if test="countrySize != null  and countrySize != ''  ">#{countrySize},</if>
+            <if test="gjValidStarttime != null and gjValidStarttime != ''">#{gjValidStarttime},</if>
+            <if test="gjValidEndtime != null and gjValidEndtime != '' ">#{gjValidEndtime},</if>
+            <if test="gjDiscount != null and gjDiscount != ''  ">#{gjDiscount},</if>
+            <if test="isEffect != null and isEffect != '' ">#{isEffect},</if>
+            <if test="introduction != null  and introduction != ''  ">#{introduction},</if>
+            <if test="introductionEn != null  and introductionEn != ''  ">#{introductionEn},</if>
+        </trim>
+        <selectKey keyColumn="spu_code" resultType="long" keyProperty="spuCode" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+	 
+    <update id="update" parameterType="com.lx.benefits.bean.entity.product.ProductEntity">
+        update product
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="brandId != null  ">brand_id = #{brandId},</if>
+            <if test="skuCode != null ">  sku_code = #{skuCode},</if>
+            <if test="brandName != null  and brandName != ''  ">brand_name = #{brandName},</if>
+            <if test="categoryId != null  ">category_id = #{categoryId},</if>
+            <if test="categoryName != null  and categoryName != ''  ">category_name = #{categoryName},</if>
+            <if test="categoryId2 != null  ">category_id2 = #{categoryId2},</if>
+            <if test="categoryName2 != null  and categoryName2 != ''  ">category_name2 = #{categoryName2},</if>
+            <if test="categoryId3 != null  ">category_id3 = #{categoryId3},</if>
+            <if test="categoryName3 != null  and categoryName3 != ''  ">category_name3 = #{categoryName3},</if>
+            <if test="goodsType != null  ">goods_type = #{goodsType},</if>
+            <if test="isCross != null  ">is_cross = #{isCross},</if>
+            <if test="supplierId != null  ">supplier_id = #{supplierId},</if>
+            <if test="supplierName != null  ">supplier_name = #{supplierName},</if>
+            <if test="goodsName != null  and goodsName != ''  ">goods_name = #{goodsName},</if>
+            <if test="goodsNameEn != null  and goodsNameEn != ''  ">goods_name_en = #{goodsNameEn},</if>
+            <if test="goodsBody != null  and goodsBody != ''  ">goods_body = #{goodsBody},</if>
+            <if test="goodsImage != null  and goodsImage != ''  ">goods_image = #{goodsImage},</if>
+            <if test="goodsImages != null  and goodsImages != ''  ">goods_images = #{goodsImages},</if>
+            <if test="goodsSpecname != null  and goodsSpecname != ''  ">goods_specname = #{goodsSpecname},</if>
+            <if test="placeOriginId != null ">place_originId = #{placeOriginId},</if>
+            <if test="placeOrigin != null  and placeOrigin != ''  ">place_origin = #{placeOrigin},</if>
+            <if test="goodsDiscount != null  ">goods_discount = #{goodsDiscount},</if>
+            <if test="itemNumber != null  and itemNumber != ''  ">item_number = #{itemNumber},</if>
+            <if test="seasonId != null ">seasonId = #{seasonId},</if>
+            <if test="season != null  and season != ''  ">season = #{season},</if>
+            <if test="goodsState != null  ">goods_state = #{goodsState},</if>
+            <if test="goodsFreight != null  ">goods_freight = #{goodsFreight},</if>
+            <if test="createdUser != null  and createdUser != ''  ">created_user = #{createdUser},</if>
+            <if test="createdTime != null  ">created_time = #{createdTime},</if>
+            <if test="updatedUser != null  and updatedUser != ''  ">updated_user = #{updatedUser},</if>
+            <if test="updatedTime != null  ">updated_time = #{updatedTime},</if>
+            <if test="sex != null  and sex != ''  ">sex = #{sex},</if>
+            <if test="countrySize != null  and countrySize != ''  ">countrySize = #{countrySize},</if>
+            <if test="gjValidStarttime != null  ">gjValidStarttime = #{gjValidStarttime},</if>
+            <if test="gjValidEndtime != null  ">gjValidEndtime = #{gjValidEndtime},</if>
+            <if test="gjDiscount != null">gjDiscount = #{gjDiscount},</if>
+            <if test="isEffect != null   ">isEffect = #{isEffect},</if>
+            <if test="statedTime != null   ">stated_time = #{statedTime},</if>
+            <if test="introduction != null  and introduction != ''  ">introduction=#{introduction},</if>
+            <if test="introductionEn != null  and introductionEn != ''  ">introductionEn=#{introductionEn},</if>
+            <if test="voucherIds != null and voucherIds != ''">voucher_ids = #{voucherIds},</if>
+        </trim>
+        where spu_code = #{spuCode}
+    </update>
+
+    <update id="updateBatch" parameterType="java.util.Map">
+        update product
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="goodsState != null  ">goods_state = #{goodsState},</if>
+            <if test="gjValidStarttime != null  ">gjValidStarttime = #{gjValidStarttime},</if>
+            <if test="gjValidEndtime != null  ">gjValidEndtime = #{gjValidEndtime},</if>
+            <if test="gjDiscount != null  ">gjDiscount = #{gjDiscount},</if>
+            <if test="isEffect != null  ">isEffect = #{isEffect},</if>
+            <if test="statedTime != null  ">stated_time = #{statedTime},</if>
+            <if test="voucherIds != null">voucher_ids = #{voucherIds},</if>
+        </trim>
+        where spu_code in
+        <foreach item="spuCode" collection="spuCodes" open="(" separator="," close=")">
+            #{spuCode}
+        </foreach>
+    </update>
+
+	<delete id="deleteById" parameterType="Integer">
+        delete from product where spu_code = #{spuCode}
+    </delete>
+	
+    <delete id="deleteByIds" parameterType="String">
+        delete from product  where spu_code in
+        <foreach item="spuCode" collection="array" open="(" separator="," close=")">
+            #{spuCode}
+        </foreach>
+    </delete>
+
+    <select id="queryByParam" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultMap="ProductResult">
+        <include refid="selectProductVo"/>
+        <include refid="Example_Where_Clause" />
+    </select>
+
+    <select id="selectSpusByVoucherId" parameterType="java.util.Map"
+            resultMap="ProductResult">
+        select product.spu_code, product.goods_name, product.goods_name_en, product.goods_image, product.goods_name_en, min(sku.goods_markprice) as goods_markprice,
+        IFNULL(min(customPrice.goodsPrice),min(sku.goods_price)) as goods_price,product.voucher_ids
+        from product
+        inner join sku on product.spu_code=sku.spu_code and sku.`status`=1 and sku.goods_storge>0
+        left join enterpr_custom_price customPrice on sku.id=customPrice.goodsId and customPrice.enterprId=#{searchBean.enterprId}
+        left join product_topic on product.spu_code=product_topic.spu_code
+        <where>
+            (find_in_set(concat('[',#{voucherId}),product.voucher_ids) or find_in_set(#{voucherId},product.voucher_ids)
+            or find_in_set(concat(#{voucherId},']'),product.voucher_ids) or
+            find_in_set(concat('[',#{voucherId},']'),product.voucher_ids))
+            and product.goods_state=1
+            <include refid="SearchBean_Out_Where_Clause" />
+        </where>
+        group by product.spu_code
+        <choose>
+            <when test="sort !=null">
+                <choose>
+                    <when test="sort==1">
+                        order by goods_price desc
+                    </when>
+                    <when test="sort==2">
+                        order by goods_price asc
+                    </when>
+                    <when test="sort==3">
+                        order by product.stated_time desc
+                    </when>
+                </choose>
+            </when>
+        </choose>
+        LIMIT #{page}, #{pageSize}
+    </select>
+
+    <sql id="SearchBean_Out_Where_Clause">
+        <if test="searchBean.excludeSupplierIds !=null and searchBean.excludeSupplierIds.size>0">
+            and product.supplier_id not in
+            <foreach collection="searchBean.excludeSupplierIds" item="exSupplierId" open="(" close=")" separator=",">
+                #{exSupplierId}
+            </foreach>
+        </if>
+        <if test="searchBean.excludeCategoryIds !=null and searchBean.excludeCategoryIds.size>0">
+            and product.category_id not in
+            <foreach collection="searchBean.excludeCategoryIds" item="exCategoryId" open="(" close=")" separator=",">
+                #{exCategoryId}
+            </foreach>
+        </if>
+        <if test="searchBean.excludeCategoryId2s !=null and searchBean.excludeCategoryId2s.size>0">
+            and product.category_id2 not in
+            <foreach collection="searchBean.excludeCategoryId2s" item="exCategoryId" open="(" close=")" separator=",">
+                #{exCategoryId}
+            </foreach>
+        </if>
+        <if test="searchBean.excludeCategoryId3s !=null and searchBean.excludeCategoryId3s.size>0">
+            and product.category_id3 not in
+            <foreach collection="searchBean.excludeCategoryId3s" item="exCategoryId" open="(" close=")" separator=",">
+                #{exCategoryId}
+            </foreach>
+        </if>
+        <if test="searchBean.excludeBrandIds !=null and searchBean.excludeBrandIds.size>0">
+            and product.brand_id not in
+            <foreach collection="searchBean.excludeBrandIds" item="exBrandId" open="(" close=")" separator=",">
+                #{exBrandId}
+            </foreach>
+            and product.brand_id != 0
+        </if>
+        <if test="searchBean.excludeTopicIds !=null and searchBean.excludeTopicIds.size>0">
+            and product_topic.topic_id not in
+            <foreach collection="searchBean.excludeTopicIds" item="topicId" separator="," open="(" close=")">
+                #{topicId}
+            </foreach>
+            and product_topic.topic_id is not null
+        </if>
+    </sql>
+
+    <select id="countSpusByVoucherId" parameterType="java.util.Map" resultType="java.lang.Integer">
+        select count(t.counts)
+        from
+        (select count(*) counts
+        from product
+        inner join sku on product.spu_code=sku.spu_code and sku.`status`=1 and sku.goods_storge>0
+        left join enterpr_custom_price customPrice on sku.id=customPrice.goodsId and customPrice.enterprId=#{searchBean.enterprId}
+        left join product_topic on product.spu_code=product_topic.spu_code
+        <where>
+            (find_in_set(concat('[',#{voucherId}),product.voucher_ids) or find_in_set(#{voucherId},product.voucher_ids)
+            or find_in_set(concat(#{voucherId},']'),product.voucher_ids) or
+            find_in_set(concat('[',#{voucherId},']'),product.voucher_ids))
+            and product.goods_state=1
+            <include refid="SearchBean_Out_Where_Clause" />
+        </where>
+        GROUP BY
+        product.spu_code)t
+    </select>
+
+    <select id="selectBySpuCodeList" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultMap="ProductResult">
+        <include refid="selectProductVo"/>
+        where spu_code in 
+        <foreach collection="spuCodeList" item="spuCode" open="(" close=")" separator=",">
+           #{spuCode}
+        </foreach>
+    </select>
+
+    <select id="queryProductsByTopicIdCount" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultType="java.lang.Integer">
+        select count(*) from product_topic as pt LEFT JOIN product  as p on pt.spu_code = p.spu_code
+        <where>
+            <if test="topicId != null "> and pt.topic_id = #{topicId}</if>
+            <if test="goodsState != null ">and p.goods_state = #{goodsState}</if>
+            <if test="spuCodeNotIn != null ">
+                and p.spu_code not in
+                <foreach item="item" collection="spuCodeNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="supplierNotIn != null ">
+                and p.supplier_id not in
+                <foreach item="item" collection="supplierNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="topicIdNotIN != null ">
+                and pt.spu_code not in
+                <foreach item="item" collection="spuCodeNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="brandIdNotIn != null ">
+                and p.brand_id not in
+                <foreach item="item" collection="brandIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="categoryIdNotIn != null ">
+                and p.category_id not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id2 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id3 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <sql id="skuInfo">
+        p.spu_code,p.brand_id,p.brand_name,p.goods_type,p.supplier_id,p.supplier_name,p.goods_name,p.goods_name_en,p.goods_image,sku.goods_image as skuImage,sku.id as skuId,pt.topic_id,sku.goods_price,sku.goods_markprice
+    </sql>
+
+
+    <sql id="skuInfo_where">
+        <where>
+            <if test="topicId != null "> and pt.topic_id = #{topicId}</if>
+            <if test="goodsState != null ">and p.goods_state = #{goodsState}</if>
+            <if test="goodsId != null ">
+                and sku.id  in
+                <foreach item="item" collection="goodsId" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="spuCodeNotIn != null ">
+                and p.spu_code not in
+                <foreach item="item" collection="spuCodeNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="supplierNotIn != null ">
+                and p.supplier_id not in
+                <foreach item="item" collection="supplierNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="brandIdNotIn != null ">
+                and p.brand_id not in
+                <foreach item="item" collection="brandIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="categoryIdNotIn != null ">
+                and p.category_id not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id2 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id3 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </sql>
+
+    <select id="querySkuByTopicIdCount" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultType="java.lang.Integer">
+        select count(*)
+        from sku as sku  left join product_topic as pt on pt.skuId = sku.id left join product as p on p.spu_code = pt.spu_code
+        <include refid="skuInfo_where"/>
+    </select>
+
+    <select id="querySkuByTopicId" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultMap="ProductResult">
+        select
+        <include refid="skuInfo"/>
+        from sku as sku  left join product_topic as pt on pt.skuId = sku.id left join product as p on p.spu_code = pt.spu_code
+        <include refid="skuInfo_where"/>
+        group by sku.id
+        ORDER BY pt.sort_num asc
+        <if test=" page != null and pageSize != null" >
+            LIMIT #{page}, #{pageSize}
+        </if>
+    </select>
+
+    <select id="queryFeatureList" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultMap="ProductResult">
+        select p.*,sku.*,sku.goods_image as skuImage,sku.id as skuId 
+        from sku
+       		left join product as p on sku.spu_code = p.spu_code
+        <where>
+            <if test="goodsState != null ">and p.goods_state = #{goodsState}</if>
+            <if test="goodsId != null ">
+                and sku.id  in
+                <foreach item="item" collection="goodsId" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="spuCodeNotIn != null ">
+                and p.spu_code not in
+                <foreach item="item" collection="spuCodeNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="supplierNotIn != null ">
+                and p.supplier_id not in
+                <foreach item="item" collection="supplierNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="brandIdNotIn != null ">
+                and p.brand_id not in
+                <foreach item="item" collection="brandIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="categoryIdNotIn != null ">
+                and p.category_id not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id2 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id3 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+        <if test=" page != null and pageSize != null" >
+            LIMIT #{page}, #{pageSize}
+        </if>
+    </select>
+
+
+    <select id="queryProductsByTopicId" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultMap="ProductResult">
+        select * from product_topic as pt left join product as p on pt.spu_code = p.spu_code
+        <where>
+            <if test="topicId != null "> and pt.topic_id = #{topicId}</if>
+            <if test="goodsState != null ">and p.goods_state = #{goodsState}</if>
+            <if test="spuCodeNotIn != null ">
+                and p.spu_code not in
+                <foreach item="item" collection="spuCodeNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="supplierNotIn != null ">
+                and p.supplier_id not in
+                <foreach item="item" collection="supplierNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="topicIdNotIN != null ">
+                and p.spu_code not in
+                <foreach item="item" collection="spuCodeNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="brandIdNotIn != null ">
+                and p.brand_id not in
+                <foreach item="item" collection="brandIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="categoryIdNotIn != null ">
+                and p.category_id not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id2 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id3 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+        ORDER BY pt.sort_num asc
+        <if test=" page != null and pageSize != null" >
+            LIMIT #{page}, #{pageSize}
+        </if>
+    </select>
+
+    <select id="selectBrandByCategoryId" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultMap="ProductResult">
+        select brand_id,brand_name from  product inner join sku on product.spu_code=sku.spu_code and sku.`status`=1 and sku.goods_storge>0
+        <if test="categoryId != null "> and ( category_id = #{categoryId} or category_id2 = #{categoryId} or category_id3 = #{categoryId} )  </if>
+        <if test="goodsState != null "> and goods_state = #{goodsState}</if>
+        GROUP BY brand_name
+    </select>
+
+    <select id="selectPlaceOrginByCategoryId" parameterType="com.lx.benefits.bean.entity.product.ProductEntity" resultMap="ProductResult">
+        select place_originId,place_origin from  product
+        <where>
+            <if test="categoryId != null "> and ( category_id = #{categoryId} or category_id2 = #{categoryId} or category_id3 = #{categoryId} )  </if>
+            <if test="goodsState != null "> and goods_state = #{goodsState}</if>
+        </where>
+        GROUP BY place_origin
+    </select>
+
+    <select id="getProductBySkuCode" resultMap="ProductResult">
+        select  *
+         from product where sku_code = #{skuCode} and supplier_id = #{supplierId}
+    </select>
+
+    <select id="selectFilterCategory" resultMap="ProductResult">
+        select category_id3,category_id2,category_id from product where goods_state=1 group by category_id3
+    </select>
+
+    <select id="selectFilterYxCategory" resultMap="ProductResult">
+        select category_id3,category_id2,category_id from product where goods_state=1 and category_id3 = 0
+    </select>
+
+    <select id="selectContionCategory" resultMap="ProductResult">
+        select category_id3,category_id2,category_id from product where goods_state=1 and (category_id=#{categoryId} or  category_id2=#{categoryId} or  category_id3=#{categoryId})
+    </select>
+
+    <select id="selectContion" resultMap="ProductResult">
+        select * from product as p
+        <where>
+            and  p.goods_state=1
+            <if test="categoryId != null "> and (p.category_id = #{categoryId} or p.category_id2 =  #{categoryId} or  p.category_id3 =  #{categoryId}) </if>
+            <if test=" key != null and key !='' ">
+                and (p.goods_name like concat('%',#{key},'%') or p.brand_name like concat('%',#{key},'%') or
+                p.category_name like concat('%',#{key},'%') or p.category_name2 like concat('%',#{key},'%') or p.category_name3 like concat('%',#{key},'%'))
+            </if>
+            <if test="supplierNotIn != null ">
+                and p.supplier_id not in
+                <foreach item="item" collection="supplierNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="topicIdNotIN != null ">
+                and pt.spu_code not in
+                <foreach item="item" collection="spuCodeNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="brandIdNotIn != null ">
+                and p.brand_id not in
+                <foreach item="item" collection="brandIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+            <if test="categoryIdNotIn != null ">
+                and p.category_id not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id2 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+                and p.category_id3 not in
+                <foreach item="item" collection="categoryIdNotIn" open="(" separator="," close=")">
+                    #{item}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="selectSkuBySpuCode" resultMap="ProductResult">
+        select sku.spu_code,sku.id as skuId from sku as sku left join product as spu on sku.spu_code = spu.spu_code
+        <include refid="Page_Where_Clause"/>
+    </select>
+
+    <update id="updateProduct" parameterType="java.util.Map">
+        update product
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="brandName != null  ">brand_name = #{brandName},</if>
+            <if test="supplierName != null  ">supplier_name = #{supplierName},</if>
+            <if test="categoryName != null  ">category_name = #{categoryName},</if>
+            <if test="categoryName != null  ">category_name2 = #{categoryName},</if>
+            <if test="categoryName != null  ">category_name3 = #{categoryName},</if>
+        </trim>
+        <where>
+            <if test="brandId != null "> and brand_id = #{brandId}</if>
+            <if test="supplierId != null "> and supplier_id = #{supplierId}</if>
+        </where>
+    </update>
+</mapper>

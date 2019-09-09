@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.lx.benefits.mapper.seckill.SeckillOrderMapper" >
+    <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.seckill.SeckillOrder" >
+        <result column="employee_name" property="employeeName" jdbcType="VARCHAR" />
+        <result column="enterpr_id" property="enterprId" jdbcType="BIGINT" />
+        <result column="number" property="number" jdbcType="BIGINT" />
+        <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+        <result column="pay_time" property="payTime" jdbcType="TIMESTAMP" />
+    </resultMap>
+
+    <select id="selectOrderBySeckillId" resultMap="BaseResultMap" parameterType="com.lx.benefits.bean.entity.seckill.SeckillOrderReq" >
+        select o.number as number,o.create_time as create_time,o.pay_time as pay_time,
+        b.employeeName as employee_name,b.enterprId as enterpr_id
+        from `order` o
+        left join employee_user_info b
+        on o.buyer_user_id = b.employeeId
+        where 1=1
+        <if test="seckillId != null">
+            and o.seckill_id = #{seckillId,jdbcType=BIGINT}
+        </if>
+        <if test="number != null">
+            and o.number = #{number,jdbcType=BIGINT}
+        </if>
+        and o.status >= 2
+        and o.level = 3
+        order by o.number desc
+        limit #{offset},#{pageSize}
+    </select>
+
+    <select id="countOrderBySeckillId" resultType="java.lang.Integer" parameterType="com.lx.benefits.bean.entity.seckill.SeckillOrderReq" >
+    select count(*)
+    from `order` o
+    left join employee_user_info b
+    on o.buyer_user_id = b.employeeId
+    where 1=1
+    <if test="seckillId != null">
+        and o.seckill_id = #{seckillId,jdbcType=BIGINT}
+    </if>
+    <if test="number != null">
+        and o.number = #{number,jdbcType=BIGINT}
+    </if>
+        and o.status >= 2
+        and o.level = 3
+    </select>
+</mapper>

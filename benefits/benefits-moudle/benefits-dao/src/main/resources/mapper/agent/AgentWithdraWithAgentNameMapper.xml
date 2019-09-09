@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.agent.AgentWithdrawRecorderMapper">
+  <resultMap id="AgentWithdrawRecorderBeanMap" type="com.lx.benefits.bean.vo.agent.AgentWithdrawRecorderBean">
+    <id column="cash_number" jdbcType="VARCHAR" property="cashNumber" />
+    <result column="agent_id" jdbcType="INTEGER" property="agentId" />
+    <result column="cash_amount" jdbcType="DECIMAL" property="cashAmount" />
+    <result column="check_status" jdbcType="INTEGER" property="checkStatus" />
+    <result column="check_user" jdbcType="VARCHAR" property="checkUser" />
+    <result column="check_time" jdbcType="TIMESTAMP" property="checkTime" />
+    <result column="pay_voucher" jdbcType="VARCHAR" property="payVoucher" />
+    <result column="check_remark" jdbcType="VARCHAR" property="checkRemark" />
+    <result column="bank_name" jdbcType="VARCHAR" property="bankName" />
+    <result column="bank_card_number" jdbcType="VARCHAR" property="bankCardNumber" />
+    <result column="apply_time" jdbcType="TIMESTAMP" property="applyTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <select id="countByExampleWithAgentName" parameterType="com.lx.benefits.bean.vo.agent.AgentWithdrawSearchBean" resultType="java.lang.Integer">
+  	select count(*) 
+  	from agent_withdraw_recorder recorder left join agent_account_info account
+  	on recorder.agent_id=account.id
+  	<where>
+  		<if test="checkStatus!=null">
+  			and recorder.check_status=#{checkStatus}
+  		</if>
+  		<if test="agentName!=null">
+  			and account.agent_name like concat('%',#{agentName},'%')
+  		</if> 
+  		<if test="applyStartTime!=null">
+  			and apply_time >= #{applyStartTime}
+  		</if>
+  		<if test="applyEndTime!=null">
+  			and apply_time &lt;=#{applyEndTime}
+  		</if>
+  	</where>
+  </select>
+  <select id="selectByExampleWithAgentName" parameterType="com.lx.benefits.bean.vo.agent.AgentWithdrawSearchBean" resultMap="AgentWithdrawRecorderBeanMap">
+  	select recorder.*, account.agent_name as agentName 
+  	from agent_withdraw_recorder recorder left join agent_account_info account
+  	on recorder.agent_id=account.id
+  	<where>
+  		<if test="checkStatus!=null">
+  			and recorder.check_status=#{checkStatus}
+  		</if>
+  		<if test="agentName!=null">
+  			and account.agent_name like concat('%',#{agentName},'%')
+  		</if> 
+  		<if test="applyStartTime!=null">
+  			and apply_time >= #{applyStartTime}
+  		</if>
+  		<if test="applyEndTime!=null">
+  			and apply_time &lt;=#{applyEndTime}
+  		</if>
+  	</where>
+  	<if test="pageBean!=null">
+  		limit #{pageBean.offset},#{pageBean.pageSize}
+  	</if>
+  </select>
+</mapper>

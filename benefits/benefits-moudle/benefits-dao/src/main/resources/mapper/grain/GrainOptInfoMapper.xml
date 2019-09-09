@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.grain.GrainOptInfoMapper">
+    <resultMap id="BaseResultMap" type="com.lx.benefits.bean.dto.grain.GrainOptInfo">
+        <id column="opt_id" jdbcType="BIGINT" property="optId" />
+        <result column="parent_opt_id" jdbcType="BIGINT" property="parentOptId" />
+        <result column="grain_id" jdbcType="BIGINT" property="grainId" />
+        <result column="enterpr_id" jdbcType="BIGINT" property="enterprId" />
+        <result column="enterpr_name" jdbcType="VARCHAR" property="enterprName" />
+        <result column="receive_time" jdbcType="TIMESTAMP" property="receiveTime" />
+        <result column="receive_credit_value" jdbcType="DOUBLE" property="receiveCreditValue" />
+        <result column="created" jdbcType="INTEGER" property="created" />
+        <result column="updated" jdbcType="INTEGER" property="updated" />
+    </resultMap>
+    <sql id="Base_Column_List">
+    opt_id, parent_opt_id, grain_id, enterpr_id, enterpr_name, receive_time,receive_credit_value,
+    created,updated
+  </sql>
+
+    <select id="findGrainOptInfoList" parameterType="com.lx.benefits.bean.dto.grain.GrainOptInfo" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from grain_opt_info
+        where 1 = 1
+        <if test="optId != null">
+            and opt_id = #{optId}
+        </if>
+        <if test="parentOptId != null">
+            and parent_opt_id = #{parentOptId}
+        </if>
+        <if test="grainId != null">
+            and grain_id = #{grainId}
+        </if>
+        <if test="enterprId != null">
+            and enterpr_id = #{enterprId}
+        </if>
+        <if test="enterprName != null and enterprName != ''">
+            and enterpr_name = #{enterprName}
+        </if>
+        <if test="receiveTime != null">
+            and receive_time = #{receiveTime}
+        </if>
+        <if test="receiveCreditValue != null">
+            and receive_credit_value = #{receiveCreditValue}
+        </if>
+        <if test="created != null">
+            and created = #{created}
+        </if>
+        <if test="updated != null">
+            and updated = #{updated}
+        </if>
+        order by receive_time desc
+        LIMIT #{page}, #{pageSize}
+    </select>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List" />
+        from grain_opt_info
+        where opt_id = #{id,jdbcType=BIGINT}
+    </select>
+    <select id="countGrainOptInfoList" parameterType="com.lx.benefits.bean.dto.grain.GrainOptInfo" resultType="java.lang.Integer">
+        select
+        count(*)
+        from grain_opt_info
+        where 1 = 1
+        <if test="optId != null">
+            and opt_id = #{optId}
+        </if>
+        <if test="parentOptId != null">
+            and parent_opt_id = #{parentOptId}
+        </if>
+        <if test="grainId != null">
+            and grain_id = #{grainId}
+        </if>
+        <if test="enterprId != null">
+            and enterpr_id = #{enterprId}
+        </if>
+        <if test="enterprName != null and enterprName != ''">
+            and enterpr_name = #{enterprName}
+        </if>
+        <if test="receiveTime != null">
+            and receive_time = #{receiveTime}
+        </if>
+        <if test="receiveCreditValue != null">
+            and receive_credit_value = #{receiveCreditValue}
+        </if>
+        <if test="created != null">
+            and created = #{created}
+        </if>
+        <if test="updated != null">
+            and updated = #{updated}
+        </if>
+    </select>
+    <select id="countReceiveCreditValue" parameterType="java.util.Map" resultType="java.lang.Integer">
+        select
+        sum(receive_credit_value)
+        from grain_opt_info
+        where 1=1
+        <if test="grainId != null">
+            and grain_id = #{grainId}
+        </if>
+    </select>
+    <delete id="delete" parameterType="java.lang.Long">
+    delete from grain_opt_info
+    where opt_id = #{id,jdbcType=BIGINT}
+  </delete>
+
+    <insert id="insert" parameterType="com.lx.benefits.bean.dto.grain.GrainOptInfo" useGeneratedKeys="true" keyProperty="optId">
+    insert into grain_opt_info (opt_id, parent_opt_id, grain_id, enterpr_id, enterpr_name, receive_time,receive_credit_value,
+    created,updated)
+    values (#{optId,jdbcType=BIGINT}, #{parentOptId,jdbcType=BIGINT}, #{grainId,jdbcType=BIGINT},
+      #{enterprId,jdbcType=BIGINT}, #{enterprName,jdbcType=VARCHAR}, #{receiveTime,jdbcType=TIMESTAMP},#{receiveCreditValue,jdbcType=DOUBLE},
+      #{created,jdbcType=INTEGER}, #{updated,jdbcType=INTEGER})
+  </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.dto.grain.GrainOptInfo">
+        update grain_opt_info
+        <set>
+            <if test="parentOptId != null">
+                parent_opt_id = #{parentOptId,jdbcType=BIGINT},
+            </if>
+            <if test="grainId != null">
+                grainId = #{grainId,jdbcType=BIGINT},
+            </if>
+            <if test="enterprId != null">
+                enterpr_id = #{enterprId,jdbcType=BIGINT},
+            </if>
+            <if test="enterprName != null">
+                enterpr_name = #{enterprName,jdbcType=VARCHAR},
+            </if>
+            <if test="receiveTime != null">
+                receive_time = #{receiveTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="receive_credit_value != null">
+                receiveCreditValue = #{receiveCreditValue,jdbcType=DOUBLE},
+            </if>
+            <if test="created != null">
+                created = #{created,jdbcType=INTEGER},
+            </if>
+            <if test="updated != null">
+                updated = #{updated,jdbcType=INTEGER},
+            </if>
+        </set>
+        where opt_id = #{optId,jdbcType=BIGINT}
+    </update>
+</mapper>

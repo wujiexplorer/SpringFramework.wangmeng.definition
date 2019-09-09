@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.product.SkuMapper">
+	<select id="countByQueryParam" resultType="java.lang.Integer">
+		select count(*) from sku
+		<if test="supplierId !=null or goodsName !=null and goodsName !='' or  goodsNameEn !=null and goodsNameEn !='' 
+		or categoryId != null or categoryId2 !=null or categoryId3 != null or brandId != null or goodsType != null">
+			inner join product on sku.spu_code=product.spu_code
+			<if test="supplierId !=null">
+				and product.supplier_id= #{supplierId}
+			</if>
+			<if test="goodsName !=null and goodsName !=''">
+				and (product.goods_name like concat('%',#{goodsName},'%')
+				or sku.goods_name like concat('%',#{goodsName},'%') )
+			</if>
+			<if test="goodsNameEn !=null and goodsNameEn !=''">
+				and product.goods_name_en like concat('%',#{goodsNameEn},'%')
+			</if>
+			<if test="categoryId != null">
+				and product.category_id = #{categoryId}
+			</if>
+			<if test="categoryId2 !=null">
+				and product.category_id2 = #{categoryId2}
+			</if>
+			<if test="categoryId3 != null">
+				and product.category_id3 = #{categoryId3}
+			</if>
+			<if test="brandId != null ">
+				and product.brand_id = #{brandId}
+			</if>
+			<if test="goodsType != null">
+				and product.goods_type = #{goodsType}
+			</if>
+		</if>
+		<where>
+			<if test=" skuId !=null ">
+				and sku.id=#{skuId}
+			</if>
+			<if test=" spuCode !=null ">
+				and sku.spu_code=#{spuCode}
+			</if>
+			<if test=" status !=null ">
+				and sku.status=#{status}
+			</if>
+			<if test="itemNumber !=null and itemNumber !='' ">
+				and sku.item_number=#{itemNumber}
+			</if>
+			<if test="storageStatus!=null">
+				<choose>
+					<when test="storageStatus==0">
+						and sku.goods_storge &lt;= 0
+					</when>
+					<when test="storageStatus==1">
+						and sku.goods_storge > 0
+					</when>
+				</choose>
+			</if>
+			<if test="saleRateStatus!=null and goodsRate!=null">
+				<choose>
+					<when test="saleRateStatus==0">
+						and sku.goods_rate &lt; #{goodsRate}
+					</when>
+					<when test="saleRateStatus!=null==1">
+						and sku.goods_rate >= #{goodsRate}
+					</when>
+				</choose>
+			</if>
+		</where>
+	</select>
+
+
+	<select id="selectByQueryParam" resultMap="SkuResult">
+		select sku.id, sku.spu_code, sku.sku_code,sku.goods_price, sku.goods_costprice, sku.goods_markprice, sku.goods_rate, sku.goods_storge, sku.`status`,
+		product.goods_name_en, product.brand_name,
+		product.supplier_name, product.category_name, product.category_name2,
+		product.category_name3, product.is_cross, product.sex, product.goods_type, sku.updated_user, sku.updated_time,
+		IFNULL(sku.goods_name,product.goods_name) as goods_name, IFNULL(sku.goods_image,product.goods_image) as goods_image,
+		IFNULL(GROUP_CONCAT(skuSpec.spec_value ORDER BY skuSpec.spec_id asc SEPARATOR '/'), sku.goods_spec) as goods_spec, sku.item_number
+		from sku
+			inner join product on sku.spu_code=product.spu_code
+			left join sku_spec_value skuSpec on sku.id=skuSpec.sku_id
+		<where>
+			<if test="skuQueryParam.supplierId !=null">
+				and product.supplier_id=#{skuQueryParam.supplierId}
+			</if>
+			<if test="skuQueryParam.skuId !=null ">
+				and sku.id=#{skuQueryParam.skuId}
+			</if>
+			<if test="skuQueryParam.spuCode !=null ">
+				and sku.spu_code=#{skuQueryParam.spuCode}
+			</if>
+			<if test="skuQueryParam.skuCode !=null and skuQueryParam.skuCode !='' ">
+				and sku.sku_code=#{skuQueryParam.skuCode}
+			</if>
+			<if test="skuQueryParam.status !=null ">
+				and sku.status=#{skuQueryParam.status}
+			</if>
+			<if test="skuQueryParam.itemNumber !=null and skuQueryParam.itemNumber !='' ">
+				and sku.item_number=#{skuQueryParam.itemNumber}
+			</if>
+			<if test="skuQueryParam.goodsName !=null and skuQueryParam.goodsName !=''">
+				and (product.goods_name like concat('%',#{skuQueryParam.goodsName},'%')
+				or sku.goods_name like concat('%',#{skuQueryParam.goodsName},'%') )
+			</if>
+			<if test="skuQueryParam.goodsNameEn !=null and skuQueryParam.goodsNameEn !=''">
+				and product.goods_name_en like concat('%',#{skuQueryParam.goodsNameEn},'%')
+			</if>
+			<if test="skuQueryParam.storageStatus!=null">
+				<choose>
+					<when test="skuQueryParam.storageStatus==0">
+						and sku.goods_storge &lt;= 0
+					</when>
+					<when test="skuQueryParam.storageStatus==1">
+						and sku.goods_storge > 0
+					</when>
+				</choose>
+			</if>
+			<if test="skuQueryParam.saleRateStatus!=null and skuQueryParam.goodsRate!=null">
+				<choose>
+					<when test="skuQueryParam.saleRateStatus==0">
+						and sku.goods_rate &lt; #{skuQueryParam.goodsRate}
+					</when>
+					<when test="skuQueryParam.saleRateStatus!=null==1">
+						and sku.goods_rate >= #{skuQueryParam.goodsRate}
+					</when>
+				</choose>
+			</if>
+			<if test="skuQueryParam.categoryId != null">
+				and product.category_id = #{skuQueryParam.categoryId}
+			</if>
+			<if test="skuQueryParam.categoryId2 !=null">
+				and product.category_id2 = #{skuQueryParam.categoryId2}
+			</if>
+			<if test="skuQueryParam.categoryId3 != null">
+				and product.category_id3 = #{skuQueryParam.categoryId3}
+			</if>
+			<if test="skuQueryParam.brandId != null ">
+				and product.brand_id = #{skuQueryParam.brandId}
+			</if>
+			<if test="skuQueryParam.goodsType != null">
+				and product.goods_type = #{skuQueryParam.goodsType}
+			</if>
+		</where>
+		group by sku.id
+		<if test="skuQueryParam.goodsRateSort==0">
+			order by sku.goods_rate desc
+		</if>
+		<if test="skuQueryParam.goodsRateSort==1">
+			order by sku.goods_rate asc
+		</if>
+		<if test="skuQueryParam.goodsPriceSort==0">
+			order by sku.goods_price desc
+		</if>
+		<if test="skuQueryParam.goodsPriceSort==1">
+			order by sku.goods_price asc
+		</if>
+		<if test="skuQueryParam.goodsStorgeSort==0">
+			order by sku.goods_storge desc
+		</if>
+		<if test="skuQueryParam.goodsStorgeSort==1">
+			order by sku.goods_storge asc
+		</if>
+		<if test="skuQueryParam.goodsRateSort==null and skuQueryParam.goodsPriceSort==null and skuQueryParam.goodsStorgeSort==null">
+			order by sku.id desc
+		</if>
+		limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	<select id="selectSkuInfoById" resultMap="SkuResult">
+		select * from sku where id = #{id}
+	</select>
+	<update id="updateSkuStatusById">
+		update sku
+		<set>
+			status=#{status},
+			<if test="updatedUser !=null">
+				updated_user = #{updatedUser},
+			</if>
+			<if test="updatedTime !=null">
+				updated_time= #{updatedTime},
+			</if>
+		</set>
+		where id= #{id}
+	</update>
+	<update id="updateSkuStock">
+		update sku set goods_storge=IF(goods_storge + #{goodsStorge} &lt; 0, 0, goods_storge + #{goodsStorge})
+		<if test="updateUserInfo !=null">
+			<if test="updateUserInfo.updatedUser !=null">
+				,updated_user = #{updateUserInfo.updatedUser}
+			</if>
+			<if test="updateUserInfo.updatedTime !=null">
+				,updated_time= #{updateUserInfo.updatedTime}
+			</if>
+		</if>
+		where id = #{id}
+	</update>
+	<select id="getThirdSkuCodeWithPrice" resultType="com.lx.benefits.bean.entity.product.SkuEntity">
+		select sku.id, sku.sku_code as skuCode, sku.goods_price as goodsPrice, sku.status
+		from sku inner join product on sku.spu_code=product.spu_code and product.supplier_id=#{supplierId}
+		<if test="pageBean !=null">
+			limit #{pageBean.offset},#{pageBean.pageSize}
+		</if>
+	</select>
+	<select id="getSupplierSkuCodes" resultType="com.lx.benefits.bean.entity.product.SkuEntity">
+		select sku.id, sku.sku_code as skuCode, sku.spu_code as spuCode
+		from sku
+		inner join product on sku.spu_code=product.spu_code and
+			product.supplier_id=#{supplierId}
+		where sku.sku_code in
+		<foreach collection="skuCodes" item="skuCode" separator="," open="(" close=")">
+			#{skuCode}
+		</foreach>
+	</select>
+	<update id="updateSkuStatus">
+		update sku
+		<set>
+			status=#{status},
+			<if test="updateUser !=null">
+				updated_user = #{updateUser},
+			</if>
+			updated_time= now(),
+		</set>
+		where id in
+		<foreach collection="skuIds" item="item" open="(" close=")" separator=",">
+			#{item}
+		</foreach>
+	</update>
+</mapper>

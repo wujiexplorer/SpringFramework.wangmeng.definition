@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.sale.AdvanceSaleItemMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.sale.AdvanceSaleItem">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="campaignId" jdbcType="BIGINT" property="campaignId" />
+    <result column="userid" jdbcType="BIGINT" property="userid" />
+    <result column="tid" jdbcType="BIGINT" property="tid" />
+    <result column="sku" jdbcType="BIGINT" property="sku" />
+    <result column="campaignId" jdbcType="BIGINT" property="campaignId" />
+    <result column="count" jdbcType="BIGINT" property="count" />
+    <result column="isDeleted" jdbcType="INTEGER" property="isDeleted" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="orderMsg" jdbcType="VARCHAR" property="orderMsg" />
+    <result column="created" jdbcType="INTEGER" property="created" />
+    <result column="updated" jdbcType="INTEGER" property="updated" />
+    <result column="flag" jdbcType="INTEGER" property="flag" />
+    <result column="employeeName" jdbcType="VARCHAR" property="employeeName" />
+    <result column="employeeNo" jdbcType="VARCHAR" property="employeeNo" />
+    <result column="goods_price"  property="goodsPrice"/>
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, userid, tid, sku,`count`, isDeleted, status,orderMsg,campaignId,created, updated,flag,goods_price
+  </sql>
+  <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.sale.AdvanceSaleExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from advance_sale
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="start != null and pageSize != null">
+      LIMIT #{start}, #{pageSize}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from advance_sale
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from advance_sale
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.sale.AdvanceSaleExample">
+    delete from advance_sale
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.sale.AdvanceSaleItem" useGeneratedKeys="true" keyProperty="id">
+    insert into advance_sale (id, userid,
+       tid,sku,account, isDeleted,status,orderMsg,
+      created, updated,campaignId,flag,goods_price)
+    values (#{id,jdbcType=BIGINT}, #{userid,jdbcType=BIGINT},
+      #{tid,jdbcType=BIGINT},#{sku,jdbcType=BIGINT},#{account,jdbcType=BIGINT},
+      #{isDeleted,jdbcType=INTEGER},#{status,jdbcType=INTEGER},#{orderMsg,jdbcType=VARCHAR},#{campaignId,jdbcType=INTEGER}
+      UNIX_TIMESTAMP(NOW()), UNIX_TIMESTAMP(NOW()),#{flag,jdbcType=INTEGER},#{goodsPrice})
+  </insert>
+
+  <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.sale.AdvanceSaleItem" useGeneratedKeys="true" keyProperty="deteilId">
+    insert into advance_sale
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="userid != null">
+        userid,
+      </if>
+      <if test="tid != null">
+        tid,
+      </if>
+      <if test="sku != null">
+        sku,
+      </if>
+      <if test="count != null">
+        `count`,
+      </if>
+      <if test="isDeleted != null">
+        isDeleted,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="orderMsg != null">
+        orderMsg,
+      </if>
+      <if test="campaignId != null">
+        campaignId,
+      </if>
+      <if test="flag != null">
+        flag,
+      </if>
+      <if test="goodsPrice != null">
+        goods_price,
+      </if>
+      created,updated
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="userid != null">
+        #{userid,jdbcType=BIGINT},
+      </if>
+      <if test="tid != null">
+        #{tid,jdbcType=BIGINT},
+      </if>
+      <if test="sku != null">
+        #{sku,jdbcType=BIGINT},
+      </if>
+      <if test="count != null">
+        #{count,jdbcType=BIGINT},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="orderMsg != null">
+        #{orderMsg,jdbcType=VARCHAR},
+      </if>
+      <if test="campaignId != null">
+        #{campaignId,jdbcType=INTEGER},
+      </if>
+      <if test="flag != null">
+        #{flag,jdbcType=INTEGER},
+      </if>
+      <if test="goodsPrice != null">
+        #{goodsPrice},
+      </if>
+      UNIX_TIMESTAMP(NOW()), UNIX_TIMESTAMP(NOW())
+    </trim>
+  </insert>
+
+
+  <update id="updateSelective" parameterType="com.lx.benefits.bean.entity.sale.AdvanceSaleItem">
+    update advance_sale
+    <trim prefix="SET" suffixOverrides=",">
+      <if test="status != null  ">status = #{status},</if>
+      <if test="orderMsg != null  ">orderMsg = #{orderMsg},</if>
+      <if test="flag != null  and flag != ''  ">flag = #{flag},</if>
+    </trim>
+    <where>
+      <if test="campaignId != null ">
+        and  campaignId = #{campaignId}
+      </if>
+      <if test="sku != null">
+        and  sku = #{sku}
+      </if>
+      <if test="userid != null">
+        and  userid = #{userid}
+      </if>
+      <if test="id !=null">
+      	and id=#{id}
+      </if>
+    </where>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.sale.AdvanceSaleItem">
+    update advance_sale
+    <trim prefix="SET" suffixOverrides=",">
+      <if test="status != null  ">status = #{status},</if>
+      <if test="orderMsg != null  ">orderMsg = #{orderMsg},</if>
+      <if test="flag != null">flag = #{flag},</if>
+    </trim>
+    where id=#{id}
+  </update>
+
+  <select id="countByExample" parameterType="com.lx.benefits.bean.entity.sale.AdvanceSaleExample" resultType="java.lang.Integer">
+    select count(*) from advance_sale
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+
+  <select id="selectDownExcel" parameterType="com.lx.benefits.bean.entity.sale.AdvanceSaleItem" resultMap="BaseResultMap">
+      select ad.*,eu.employeeNo,eu.employeeName from advance_sale as ad left  join employee_user_info as eu on ad.userid = eu.employeeId
+      <where>
+        <if test="campaignId !=null">
+          ad.campaignId = #{campaignId}
+        </if>
+      </where>
+  </select>
+
+</mapper>

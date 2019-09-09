@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.order.RefundApplyProblemMapper">
+
+	<resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.order.RefundApplyProblem">
+		<id property="id" column="ID" /><!--主键-->
+		<result property="name" column="NAME" /><!--退款原因-->
+		<result property="type" column="TYPE" /><!--0：未知 1：退款 2：退货-->
+		<result property="isDetele" column="IS_DETELE" /><!--是否删除 0：未删除 1：删除-->
+		<result property="createTime" column="CREATE_TIME" /><!--创建时间-->
+		<result property="updateTime" column="UPDATE_TIME" /><!--更新时间-->
+	</resultMap>
+
+	<sql id="Base_Column_List">
+            `ID` ,
+            `NAME` ,
+            `TYPE` ,
+            `IS_DETELE` ,
+            `CREATE_TIME` ,
+            `UPDATE_TIME` 
+	</sql>
+	
+    <sql id="idCnd">
+        <where>
+            <if test="id!=null" >ID=#{id,jdbcType=INTEGER}</if>
+            <if test="id==null">1=0</if>
+        </where>
+    </sql>
+    
+	<insert id="insert" parameterType="com.lx.benefits.bean.entity.order.RefundApplyProblem" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		refund_apply_problem
+		(
+		`ID`,
+		`NAME`,
+		`TYPE`,
+		`IS_DETELE`,
+		`CREATE_TIME`,
+		`UPDATE_TIME`
+		) VALUES 
+		(
+		#{id,jdbcType=INTEGER},
+		#{name,jdbcType=VARCHAR},
+		#{type,jdbcType=TINYINT},
+		#{isDetele,jdbcType=TINYINT},
+		#{createTime,jdbcType=TIMESTAMP},
+		#{updateTime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+	
+	<insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.order.RefundApplyProblem" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		refund_apply_problem
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >`ID`,</if>
+		<if test="name!=null" >`NAME`,</if>
+		<if test="type!=null" >`TYPE`,</if>
+		<if test="isDetele!=null" >`IS_DETELE`,</if>
+		<if test="createTime!=null" >`CREATE_TIME`,</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >#{id,jdbcType=INTEGER},</if>
+		<if test="name!=null" >#{name,jdbcType=VARCHAR},</if>
+		<if test="type!=null" >#{type,jdbcType=TINYINT},</if>
+		<if test="isDetele!=null" >#{isDetele,jdbcType=TINYINT},</if>
+		<if test="createTime!=null" >#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >#{updateTime,jdbcType=TIMESTAMP}</if>
+		</trim>
+	</insert>
+	<delete id="deleteByPrimaryKey">
+		DELETE FROM refund_apply_problem
+		<include refid="idCnd" />
+	</delete>
+	
+	<update id="updateByPrimaryKeySelective">
+		UPDATE refund_apply_problem
+		<set>
+		<if test="id!=null" >`ID`=#{id,jdbcType=INTEGER},</if>
+		<if test="name!=null" >`NAME`=#{name,jdbcType=VARCHAR},</if>
+		<if test="type!=null" >`TYPE`=#{type,jdbcType=TINYINT},</if>
+		<if test="isDetele!=null" >`IS_DETELE`=#{isDetele,jdbcType=TINYINT},</if>
+		<if test="createTime!=null" >`CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+		</set>
+		<include refid="idCnd" />
+	</update>
+	
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap">
+		SELECT
+			<include refid="Base_Column_List" />
+		FROM 
+			refund_apply_problem
+		<include refid="idCnd" />
+	</select>
+	
+	
+	<sql id="where_clause">
+    	<where>
+			<if test="id!=null" >`ID`=#{id,jdbcType=INTEGER}   </if>
+	        <if test="name!=null" > AND `NAME`=#{name,jdbcType=VARCHAR}</if>
+	        <if test="type!=null" > AND `TYPE`=#{type,jdbcType=TINYINT}</if>
+	        <if test="isDetele!=null" > AND `IS_DETELE`=#{isDetele,jdbcType=TINYINT}</if>
+	        <if test="createTime!=null" > AND `CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP}</if>
+	        <if test="updateTime!=null" > AND `UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+    	</where>
+    </sql>
+    
+	
+</mapper>
+

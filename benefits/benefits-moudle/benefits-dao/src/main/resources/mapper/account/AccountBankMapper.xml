@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.account.AccountBankMapper">
+    <resultMap id="InfoAccountBankDetail" type="com.lx.benefits.bean.vo.account.AccountBankVO">
+        <result column="parent_number" jdbcType="BIGINT" property="parentNumber" />
+        <result column="number" jdbcType="BIGINT" property="number" />
+        <result column="third_order_number" jdbcType="VARCHAR" property="thirdOrderNumber" />
+        <result column="status" jdbcType="INTEGER" property="status" />
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+        <result column="enterpr_name" jdbcType="VARCHAR" property="enterprName" />
+        <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
+        <result column="quantity" jdbcType="INTEGER" property="quantity" />
+        <result column="supplier_name" jdbcType="VARCHAR" property="supplierName" />
+        <result column="category_name" jdbcType="VARCHAR" property="categoryName" />
+        <result column="employee_name" jdbcType="VARCHAR" property="employeeName" />
+        <result column="price" jdbcType="DECIMAL" property="price" />
+        <result column="goods_price" jdbcType="DECIMAL" property="goodsPrice" />
+        <result column="goods_costprice" jdbcType="DECIMAL" property="goodsCostprice" />
+        <result column="total_cost_price" jdbcType="DECIMAL" property="totalCostPrice" />
+        <result column="sku_code" jdbcType="INTEGER" property="skuCode" />
+        <result column="ship_expense" jdbcType="INTEGER" property="shipExpense" />
+        <result column="payable_sum" jdbcType="DECIMAL" property="payableSum" />
+        <result column="pay_number" jdbcType="BIGINT" property="payNumber" />
+        <result column="serial_number" jdbcType="VARCHAR" property="serialNumber" />
+        <result column="point_amount" jdbcType="DECIMAL" property="pointAmount" />
+        <result column="card_amount" jdbcType="DECIMAL" property="cardAmount" />
+        <result column="card_refund_amount" jdbcType="DECIMAL" property="cardRefundAmount" />
+        <result column="third_costprice" jdbcType="DECIMAL" property="thirdCostprice" />
+        <result column="channel" jdbcType="INTEGER" property="channel" />
+        <result column="settle_number" jdbcType="VARCHAR" property="settleNumber" />
+        <result column="reverse_status" jdbcType="INTEGER" property="reverseStatus" />
+        <result column="success_time" jdbcType="TIMESTAMP" property="successTime" />
+        <result column="real_money" jdbcType="BIGINT" property="realMoney" />
+        <result column="return_account_point" jdbcType="DECIMAL" property="returnAccountPoint" />
+        <result column="settle_number" jdbcType="BIGINT" property="settleNumber" />
+        <result column="agent_id" jdbcType="INTEGER" property="agentId" />
+        <result column="employeeNo" jdbcType="VARCHAR" property="employeeNo" />
+        <result column="voucher_benefit" jdbcType="DECIMAL" property="voucherBenefit" />
+    </resultMap>
+    <select id="getAccountBankDetail" parameterType="com.lx.benefits.bean.vo.account.AccountBankReq" resultMap="InfoAccountBankDetail">
+        select a.parent_number,a.number,a.third_order_number,a.ship_expense,a.`status`,a.create_time,a.enterpr_id,
+        a.goods_name,a.quantity,a.supplier_name,a.category_name
+        ,a.employee_name,a.price,goods_price,a.goods_costprice,a.total_cost_price,a.sku_code,
+        a.payable_sum,a.pay_number,a.point_amount,a.card_amount,a.third_costprice,a.channel,a.settle_number,a.reverse_status,a.success_time,a.real_money,a.return_account_point,a.serial_number,a.employeeNo,b.agent_id as agent_id,b.enterpr_name as enterpr_name,a.card_refund_amount,a.voucher_benefit
+        from
+        (select o.parent_number,o.number,o.third_order_number,o.`status`,o.create_time,employee_user_info.enterprId as
+        enterpr_id,o.ship_expense/100+o.ship_expense_point_amount/100 as ship_expense,
+        IFNULL(sku.goods_name,product.goods_name) as goods_name,o.quantity,product.supplier_name as
+        supplier_name,CONCAT(product.category_name,'/',product.category_name2,'/',product.category_name3) as
+        category_name
+        ,employee_user_info.employeeName as employee_name,product_order_ex.now_price/100 *o.quantity as price,product_order_ex.now_price/100 as goods_price,product_order_ex.cost_price/100 as goods_costprice,product_order_ex.cost_price/100 * o.quantity as total_cost_price,sku.id as sku_code
+        ,product_order_ex.now_price/100 *o.quantity+o.ship_expense/100+o.ship_expense_point_amount/100 as payable_sum,parent_order.parent_number as
+        pay_number,o.point_amount/100+o.ship_expense_point_amount/100 - if(o.card_amount,o.card_amount/100,0) as point_amount,o.card_amount/100 as card_amount,o.price/100 + o.ship_expense/100 as
+        third_costprice,order_pay.pay_channel as channel,order_pay.pay_mark as
+        settle_number,o.reverse_status,refund_apply.update_time as
+        success_time,(refund_apply.real_money+refund_apply.real_postage_money)/100 as real_money,refund_apply.return_account_point/100 - if(o.card_amount,o.card_amount/100,0) as return_account_point,refund_apply.order_pay_mark as serial_number,employee_user_info.employeeNo as employeeNo,IF((o.reverse_status - 2 != 0 and o.reverse_status - 4 != 0 and o.reverse_status - 1 != 0),0,o.card_amount/100) as card_refund_amount,o.voucher_benefit/100 as voucher_benefit from
+        `order` o
+        left join employee_user_info on employee_user_info.employeeId = o.buyer_user_id
+        left join order_pay on order_pay.id = o.pay_id
+        left join product on product.spu_code = o.spu_code
+        left join sku on sku.id = o.sku_id
+        left join `order` parent_order on parent_order.number = o.parent_number
+        left join refund_apply on refund_apply.product_order_number = o.number
+        left join product_order_ex on product_order_ex.order_number = o.number
+        <where>
+            o.level = 3
+            and o.status != 1
+            and o.status != 0
+            <if test="startDate!=null">
+                and o.create_time > #{startDate}
+            </if>
+            <if test="enterprId!=null">
+                and employee_user_info.enterprId = #{enterprId}
+            </if>
+            <if test="endDate!=null">
+                and o.create_time &lt; #{endDate}
+            </if>
+            <if test="number!=null">
+                and o.number = #{number}
+            </if>
+            <if test="status!=null">
+                and o.status = #{status}
+            </if>
+            <if test="parentNumber!=null">
+                and o.parent_number = #{parentNumber}
+            </if>
+            <if test="thirdOrderNumber!=null and thirdOrderNumber != ''">
+                and o.third_order_number like concat('%',#{thirdOrderNumber},'%')
+            </if>
+            <if test="supplierId!=null">
+                and product.supplier_id = #{supplierId}
+            </if>
+            <if test="goodsName!=null and goodsName != ''">
+                and sku.goods_name like concat('%',#{goodsName},'%')
+            </if>
+            <if test="skuCode!=null">
+                and sku.id = #{skuCode}
+            </if>
+            <if test="categoryId != null">
+                and product.category_id = #{categoryId}
+            </if>
+            <if test="categoryId2 != null">
+                and product.category_id2 = #{categoryId2}
+            </if>
+            <if test="categoryId3 != null">
+                and product.category_id3 = #{categoryId3}
+            </if>
+            <if test="enterprName!=null and enterprName != ''">
+                and enterpr_user_info.enterpr_name like concat('%',#{enterprName},'%')
+            </if>
+            <if test="employeeName!=null and employeeName != ''">
+                and employee_user_info.employeeName like concat('%',#{employeeName},'%')
+            </if>
+            <if test="employeeNo!=null and employeeNo != ''">
+                and employee_user_info.employeeNo like concat('%',#{employeeNo},'%')
+            </if>
+            <if test="payNumber!=null">
+                and parent_order.parent_number = #{payNumber}
+            </if>
+            <if test="settleNumber!=null and settleNumber != ''">
+                and order_pay.pay_mark = #{settleNumber}
+            </if>
+            <if test="channel!=null">
+                and order_pay.pay_channel = #{channel}
+            </if>
+            <if test="reverseStatus!=null">
+                and o.reverse_status = #{reverseStatus}
+            </if>
+        </where>
+        ) a
+        left join enterpr_user_info b on a.enterpr_id = b.enterpr_id
+        <where>
+            <if test="agentId!=null">
+                and b.agent_id = #{agentId}
+            </if>
+        </where>
+        order by a.parent_number desc
+        <if test="limit != null">
+            <if test="offset != null">
+                limit ${offset}, ${limit}
+            </if>
+            <if test="offset == null">
+                limit ${limit}
+            </if>
+        </if>
+  </select>
+
+    <select id="countAccountBank" parameterType="com.lx.benefits.bean.vo.account.AccountBankReq" resultType="java.lang.Integer">
+    select count(*)
+    from
+    (select o.parent_number,o.number,o.third_order_number,o.`status`,o.create_time,employee_user_info.enterprId as
+    enterpr_id,o.ship_expense/100 + o.ship_expense_point_amount/100,
+    IFNULL(sku.goods_name,product.goods_name) as goods_name,o.quantity,product.supplier_name as
+    supplier_name,CONCAT(product.category_name,'/',product.category_name2,'/',product.category_name3) as
+    category_name
+    ,employee_user_info.employeeName as employee_name,product_order_ex.now_price *o.quantity as price,product_order_ex.now_price as goods_price,product_order_ex.cost_price as goods_costprice,product_order_ex.cost_price * o.quantity as total_cost_price,sku.id as sku_code,
+        product_order_ex.now_price/100 *o.quantity+o.ship_expense/100+o.ship_expense_point_amount/100 as payable_sum,parent_order.parent_number as
+    pay_number,o.point_amount/100+o.ship_expense_point_amount/100 - if(o.card_amount,o.card_amount/100,0) as point_amount,o.card_amount/100 as card_amount,o.price/100 + o.ship_expense/100 as
+    third_costprice,order_pay.pay_channel as channel,order_pay.pay_tid as
+    settle_number,o.reverse_status,refund_apply.update_time as success_time,(refund_apply.real_money+refund_apply.real_postage_money)/100 as real_money,refund_apply.return_account_point/100 - if(o.card_amount,o.card_amount/100,0) as return_account_point,refund_apply.order_pay_mark as serial_number,employee_user_info.employeeNo as employeeNo,IF(o.reverse_status - 2 != 0,0,o.card_amount/100) as card_refund_amount from
+    `order` o
+    left join employee_user_info on employee_user_info.employeeId = o.buyer_user_id
+    left join order_pay on order_pay.id = o.pay_id
+    left join product on product.spu_code = o.spu_code
+    left join sku on sku.id = o.sku_id
+    left join `order` parent_order on parent_order.number = o.parent_number
+    left join refund_apply on refund_apply.product_order_number = o.number
+    left join product_order_ex on product_order_ex.order_number = o.number
+    <where>
+        o.level = 3
+        and o.status != 1
+        and o.status != 0
+        <if test="startDate!=null">
+            and o.create_time > #{startDate}
+        </if>
+        <if test="enterprId!=null">
+            and employee_user_info.enterprId = #{enterprId}
+        </if>
+        <if test="endDate!=null">
+            and o.create_time &lt; #{endDate}
+        </if>
+        <if test="number!=null">
+            and o.number = #{number}
+        </if>
+        <if test="status!=null">
+            and o.status = #{status}
+        </if>
+        <if test="parentNumber!=null">
+            and o.parent_number = #{parentNumber}
+        </if>
+        <if test="thirdOrderNumber!=null and thirdOrderNumber != ''">
+            and o.third_order_number like concat('%',#{thirdOrderNumber},'%')
+        </if>
+        <if test="supplierId!=null">
+            and product.supplier_id = #{supplierId}
+        </if>
+        <if test="goodsName!=null and goodsName != ''">
+            and sku.goods_name like concat('%',#{goodsName},'%')
+        </if>
+        <if test="skuCode!=null">
+            and sku.id = #{skuCode}
+        </if>
+        <if test="categoryId != null">
+            and product.category_id = #{categoryId}
+        </if>
+        <if test="categoryId2 != null">
+            and product.category_id2 = #{categoryId2}
+        </if>
+        <if test="categoryId3 != null">
+            and product.category_id3 = #{categoryId3}
+        </if>
+        <if test="enterprName!=null and enterprName != ''">
+            and enterpr_user_info.enterpr_name like concat('%',#{enterprName},'%')
+        </if>
+        <if test="employeeName!=null and employeeName != ''">
+            and employee_user_info.employeeName like concat('%',#{employeeName},'%')
+        </if>
+        <if test="employeeNo!=null and employeeNo != ''">
+            and employee_user_info.employeeNo like concat('%',#{employeeNo},'%')
+        </if>
+        <if test="payNumber!=null">
+            and parent_order.parent_number = #{payNumber}
+        </if>
+        <if test="settleNumber!=null and settleNumber != ''">
+            and order_pay.pay_mark = #{settleNumber}
+        </if>
+        <if test="channel!=null">
+            and order_pay.pay_channel = #{channel}
+        </if>
+        <if test="reverseStatus!=null">
+            and o.reverse_status = #{reverseStatus}
+        </if>
+    </where>
+    ) a
+    left join enterpr_user_info b on a.enterpr_id = b.enterpr_id
+    <where>
+        <if test="agentId!=null">
+            and b.agent_id = #{agentId}
+        </if>
+    </where>
+    </select>
+
+    <select id="listAccountBankDetail" parameterType="com.lx.benefits.bean.vo.account.AccountBankReq" resultMap="InfoAccountBankDetail">
+        select a.parent_number,a.number,a.third_order_number,a.ship_expense,a.`status`,a.create_time,a.enterpr_id,
+        a.goods_name,a.quantity,a.supplier_name,a.category_name
+        ,a.employee_name,a.price,goods_price,a.goods_costprice,a.total_cost_price,a.sku_code,
+        a.payable_sum,a.pay_number,a.point_amount,a.card_amount,a.third_costprice,a.channel,a.settle_number,a.reverse_status,a.success_time,a.real_money,a.return_account_point,a.serial_number,a.employeeNo,b.agent_id as agent_id,b.enterpr_name as enterpr_name,a.card_refund_amount
+        from
+        (select o.parent_number,o.number,o.third_order_number,o.`status`,o.create_time,employee_user_info.enterprId as
+        enterpr_id,o.ship_expense/100+o.ship_expense_point_amount/100 as ship_expense,
+        IFNULL(sku.goods_name,product.goods_name) as goods_name,o.quantity,product.supplier_name as
+        supplier_name,CONCAT(product.category_name,'/',product.category_name2,'/',product.category_name3) as
+        category_name
+        ,employee_user_info.employeeName as employee_name,product_order_ex.now_price *o.quantity as price,product_order_ex.now_price as goods_price,product_order_ex.cost_price as goods_costprice,product_order_ex.cost_price * o.quantity as total_cost_price,sku.id as sku_code
+        ,product_order_ex.now_price/100 * o.quantity+o.ship_expense/100+o.ship_expense_point_amount/100 as payable_sum,parent_order.parent_number as
+        pay_number,o.point_amount/100+o.ship_expense_point_amount/100 - if(o.card_amount,o.card_amount/100,0)  as point_amount,o.card_amount/100 as card_amount,o.price/100 + o.ship_expense/100 as
+        third_costprice,order_pay.pay_channel as channel,order_pay.pay_tid as
+        settle_number,o.reverse_status,refund_apply.update_time as success_time,(refund_apply.real_money+refund_apply.real_postage_money)/100 as real_money,refund_apply.return_account_point/100 - if(o.card_amount,o.card_amount/100,0) as return_account_point,refund_apply.order_pay_mark as serial_number,employee_user_info.employeeNo as employeeNo,IF(o.reverse_status - 2 != 0,0,o.card_amount/100) as card_refund_amount from
+        `order` o
+        left join employee_user_info on employee_user_info.employeeId = o.buyer_user_id
+        left join order_pay on order_pay.id = o.pay_id
+        left join product on product.spu_code = o.spu_code
+        left join sku on sku.id = o.sku_id
+        left join `order` parent_order on parent_order.number = o.parent_number
+        left join refund_apply on refund_apply.product_order_number = o.number
+        left join product_order_ex on product_order_ex.order_number = o.number
+        <where>
+            o.level = 3
+            and o.status != 1
+            <if test="startDate!=null">
+                and o.create_time > #{startDate}
+            </if>
+            <if test="enterprId!=null">
+                and employee_user_info.enterprId = #{enterprId}
+            </if>
+            <if test="endDate!=null">
+                and o.create_time &lt; #{endDate}
+            </if>
+            <if test="number!=null">
+                and o.number = #{number}
+            </if>
+            <if test="status!=null">
+                and o.status = #{status}
+            </if>
+            <if test="parentNumber!=null">
+                and o.parent_number = #{parentNumber}
+            </if>
+            <if test="thirdOrderNumber!=null and thirdOrderNumber != ''">
+                and o.third_order_number like concat('%',#{thirdOrderNumber},'%')
+            </if>
+            <if test="supplierId!=null">
+                and product.supplier_id = #{supplierId}
+            </if>
+            <if test="goodsName!=null and goodsName != ''">
+                and sku.goods_name like concat('%',#{goodsName},'%')
+            </if>
+            <if test="skuCode!=null">
+                and sku.id = #{skuCode}
+            </if>
+            <if test="categoryId != null">
+                and product.category_id = #{categoryId}
+            </if>
+            <if test="categoryId2 != null">
+                and product.category_id2 = #{categoryId2}
+            </if>
+            <if test="categoryId3 != null">
+                and product.category_id3 = #{categoryId3}
+            </if>
+            <if test="enterprName!=null and enterprName != ''">
+                and enterpr_user_info.enterpr_name like concat('%',#{enterprName},'%')
+            </if>
+            <if test="employeeName!=null and employeeName != ''">
+                and employee_user_info.employeeName like concat('%',#{employeeName},'%')
+            </if>
+            <if test="employeeNo!=null and employeeNo != ''">
+                and employee_user_info.employeeNo like concat('%',#{employeeNo},'%')
+            </if>
+            <if test="payNumber!=null">
+                and parent_order.parent_number = #{payNumber}
+            </if>
+            <if test="settleNumber!=null and settleNumber != ''">
+                and order_pay.pay_mark = #{settleNumber}
+            </if>
+            <if test="channel!=null">
+                and order_pay.pay_channel = #{channel}
+            </if>
+            <if test="reverseStatus!=null">
+                and o.reverse_status = #{reverseStatus}
+            </if>
+        </where>
+        ) a
+        left join enterpr_user_info b on a.enterpr_id = b.enterpr_id
+        <where>
+            <if test="agentId!=null">
+                and b.agent_id = #{agentId}
+            </if>
+        </where>
+        order by a.parent_number desc
+    </select>
+</mapper>

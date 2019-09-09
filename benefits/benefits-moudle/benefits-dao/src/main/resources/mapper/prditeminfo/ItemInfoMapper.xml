@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.prditeminfo.ItemInfoMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.prditeminfo.ItemInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="supplier_id" jdbcType="BIGINT" property="supplier_id" />
+    <result column="spu" jdbcType="VARCHAR" property="spu" />
+    <result column="main_title" jdbcType="VARCHAR" property="main_title" />
+    <result column="brand_id" jdbcType="INTEGER" property="brand_id" />
+    <result column="large_id" jdbcType="INTEGER" property="large_id" />
+    <result column="medium_id" jdbcType="INTEGER" property="medium_id" />
+    <result column="small_id" jdbcType="INTEGER" property="small_id" />
+    <result column="unit_id" jdbcType="INTEGER" property="unit_id" />
+    <result column="bind_level" jdbcType="VARCHAR" property="bind_level" />
+    <result column="remark" jdbcType="VARCHAR" property="remark" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="create_time" />
+    <result column="create_user" jdbcType="VARCHAR" property="create_user" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="update_time" />
+    <result column="update_user" jdbcType="VARCHAR" property="update_user" />
+    <result column="item_source" jdbcType="TINYINT" property="item_source" />
+    <result column="ref_id" jdbcType="VARCHAR" property="ref_id" />
+    <result column="item_style" jdbcType="INTEGER" property="item_style" />
+  </resultMap>
+  <resultMap extends="BaseResultMap" id="ResultMapWithBLOBs" type="com.lx.benefits.bean.entity.prditeminfo.ItemInfo">
+    <result column="service_description" jdbcType="LONGVARCHAR" property="service_description" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, supplier_id, spu, main_title, brand_id, large_id, medium_id, small_id, unit_id, 
+    bind_level, remark, create_time, create_user, update_time, update_user, item_source, 
+    ref_id, item_style
+  </sql>
+  <sql id="Blob_Column_List">
+    service_description
+  </sql>
+  <select id="selectByExampleWithBLOBs" parameterType="com.lx.benefits.bean.entity.prditeminfo.ItemInfoExample" resultMap="ResultMapWithBLOBs">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from prd_item_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.prditeminfo.ItemInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from prd_item_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="ResultMapWithBLOBs">
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from prd_item_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from prd_item_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.prditeminfo.ItemInfoExample">
+    delete from prd_item_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.prditeminfo.ItemInfo">
+    insert into prd_item_info (id, supplier_id, spu, 
+      main_title, brand_id, large_id, 
+      medium_id, small_id, unit_id, 
+      bind_level, remark, create_time, 
+      create_user, update_time, update_user, 
+      item_source, ref_id, item_style, 
+      service_description)
+    values (#{id,jdbcType=BIGINT}, #{supplier_id,jdbcType=BIGINT}, #{spu,jdbcType=VARCHAR}, 
+      #{main_title,jdbcType=VARCHAR}, #{brand_id,jdbcType=INTEGER}, #{large_id,jdbcType=INTEGER}, 
+      #{medium_id,jdbcType=INTEGER}, #{small_id,jdbcType=INTEGER}, #{unit_id,jdbcType=INTEGER}, 
+      #{bind_level,jdbcType=VARCHAR}, #{remark,jdbcType=VARCHAR}, #{create_time,jdbcType=TIMESTAMP}, 
+      #{create_user,jdbcType=VARCHAR}, #{update_time,jdbcType=TIMESTAMP}, #{update_user,jdbcType=VARCHAR}, 
+      #{item_source,jdbcType=TINYINT}, #{ref_id,jdbcType=VARCHAR}, #{item_style,jdbcType=INTEGER}, 
+      #{service_description,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.prditeminfo.ItemInfo">
+    insert into prd_item_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="supplier_id != null">
+        supplier_id,
+      </if>
+      <if test="spu != null">
+        spu,
+      </if>
+      <if test="main_title != null">
+        main_title,
+      </if>
+      <if test="brand_id != null">
+        brand_id,
+      </if>
+      <if test="large_id != null">
+        large_id,
+      </if>
+      <if test="medium_id != null">
+        medium_id,
+      </if>
+      <if test="small_id != null">
+        small_id,
+      </if>
+      <if test="unit_id != null">
+        unit_id,
+      </if>
+      <if test="bind_level != null">
+        bind_level,
+      </if>
+      <if test="remark != null">
+        remark,
+      </if>
+      <if test="create_time != null">
+        create_time,
+      </if>
+      <if test="create_user != null">
+        create_user,
+      </if>
+      <if test="update_time != null">
+        update_time,
+      </if>
+      <if test="update_user != null">
+        update_user,
+      </if>
+      <if test="item_source != null">
+        item_source,
+      </if>
+      <if test="ref_id != null">
+        ref_id,
+      </if>
+      <if test="item_style != null">
+        item_style,
+      </if>
+      <if test="service_description != null">
+        service_description,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="supplier_id != null">
+        #{supplier_id,jdbcType=BIGINT},
+      </if>
+      <if test="spu != null">
+        #{spu,jdbcType=VARCHAR},
+      </if>
+      <if test="main_title != null">
+        #{main_title,jdbcType=VARCHAR},
+      </if>
+      <if test="brand_id != null">
+        #{brand_id,jdbcType=INTEGER},
+      </if>
+      <if test="large_id != null">
+        #{large_id,jdbcType=INTEGER},
+      </if>
+      <if test="medium_id != null">
+        #{medium_id,jdbcType=INTEGER},
+      </if>
+      <if test="small_id != null">
+        #{small_id,jdbcType=INTEGER},
+      </if>
+      <if test="unit_id != null">
+        #{unit_id,jdbcType=INTEGER},
+      </if>
+      <if test="bind_level != null">
+        #{bind_level,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="create_time != null">
+        #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="create_user != null">
+        #{create_user,jdbcType=VARCHAR},
+      </if>
+      <if test="update_time != null">
+        #{update_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="update_user != null">
+        #{update_user,jdbcType=VARCHAR},
+      </if>
+      <if test="item_source != null">
+        #{item_source,jdbcType=TINYINT},
+      </if>
+      <if test="ref_id != null">
+        #{ref_id,jdbcType=VARCHAR},
+      </if>
+      <if test="item_style != null">
+        #{item_style,jdbcType=INTEGER},
+      </if>
+      <if test="service_description != null">
+        #{service_description,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lx.benefits.bean.entity.prditeminfo.ItemInfoExample" resultType="java.lang.Integer">
+    select count(*) from prd_item_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update prd_item_info
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.supplier_id != null">
+        supplier_id = #{record.supplier_id,jdbcType=BIGINT},
+      </if>
+      <if test="record.spu != null">
+        spu = #{record.spu,jdbcType=VARCHAR},
+      </if>
+      <if test="record.main_title != null">
+        main_title = #{record.main_title,jdbcType=VARCHAR},
+      </if>
+      <if test="record.brand_id != null">
+        brand_id = #{record.brand_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.large_id != null">
+        large_id = #{record.large_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.medium_id != null">
+        medium_id = #{record.medium_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.small_id != null">
+        small_id = #{record.small_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.unit_id != null">
+        unit_id = #{record.unit_id,jdbcType=INTEGER},
+      </if>
+      <if test="record.bind_level != null">
+        bind_level = #{record.bind_level,jdbcType=VARCHAR},
+      </if>
+      <if test="record.remark != null">
+        remark = #{record.remark,jdbcType=VARCHAR},
+      </if>
+      <if test="record.create_time != null">
+        create_time = #{record.create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.create_user != null">
+        create_user = #{record.create_user,jdbcType=VARCHAR},
+      </if>
+      <if test="record.update_time != null">
+        update_time = #{record.update_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.update_user != null">
+        update_user = #{record.update_user,jdbcType=VARCHAR},
+      </if>
+      <if test="record.item_source != null">
+        item_source = #{record.item_source,jdbcType=TINYINT},
+      </if>
+      <if test="record.ref_id != null">
+        ref_id = #{record.ref_id,jdbcType=VARCHAR},
+      </if>
+      <if test="record.item_style != null">
+        item_style = #{record.item_style,jdbcType=INTEGER},
+      </if>
+      <if test="record.service_description != null">
+        service_description = #{record.service_description,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExampleWithBLOBs" parameterType="map">
+    update prd_item_info
+    set id = #{record.id,jdbcType=BIGINT},
+      supplier_id = #{record.supplier_id,jdbcType=BIGINT},
+      spu = #{record.spu,jdbcType=VARCHAR},
+      main_title = #{record.main_title,jdbcType=VARCHAR},
+      brand_id = #{record.brand_id,jdbcType=INTEGER},
+      large_id = #{record.large_id,jdbcType=INTEGER},
+      medium_id = #{record.medium_id,jdbcType=INTEGER},
+      small_id = #{record.small_id,jdbcType=INTEGER},
+      unit_id = #{record.unit_id,jdbcType=INTEGER},
+      bind_level = #{record.bind_level,jdbcType=VARCHAR},
+      remark = #{record.remark,jdbcType=VARCHAR},
+      create_time = #{record.create_time,jdbcType=TIMESTAMP},
+      create_user = #{record.create_user,jdbcType=VARCHAR},
+      update_time = #{record.update_time,jdbcType=TIMESTAMP},
+      update_user = #{record.update_user,jdbcType=VARCHAR},
+      item_source = #{record.item_source,jdbcType=TINYINT},
+      ref_id = #{record.ref_id,jdbcType=VARCHAR},
+      item_style = #{record.item_style,jdbcType=INTEGER},
+      service_description = #{record.service_description,jdbcType=LONGVARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update prd_item_info
+    set id = #{record.id,jdbcType=BIGINT},
+      supplier_id = #{record.supplier_id,jdbcType=BIGINT},
+      spu = #{record.spu,jdbcType=VARCHAR},
+      main_title = #{record.main_title,jdbcType=VARCHAR},
+      brand_id = #{record.brand_id,jdbcType=INTEGER},
+      large_id = #{record.large_id,jdbcType=INTEGER},
+      medium_id = #{record.medium_id,jdbcType=INTEGER},
+      small_id = #{record.small_id,jdbcType=INTEGER},
+      unit_id = #{record.unit_id,jdbcType=INTEGER},
+      bind_level = #{record.bind_level,jdbcType=VARCHAR},
+      remark = #{record.remark,jdbcType=VARCHAR},
+      create_time = #{record.create_time,jdbcType=TIMESTAMP},
+      create_user = #{record.create_user,jdbcType=VARCHAR},
+      update_time = #{record.update_time,jdbcType=TIMESTAMP},
+      update_user = #{record.update_user,jdbcType=VARCHAR},
+      item_source = #{record.item_source,jdbcType=TINYINT},
+      ref_id = #{record.ref_id,jdbcType=VARCHAR},
+      item_style = #{record.item_style,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.prditeminfo.ItemInfo">
+    update prd_item_info
+    <set>
+      <if test="supplier_id != null">
+        supplier_id = #{supplier_id,jdbcType=BIGINT},
+      </if>
+      <if test="spu != null">
+        spu = #{spu,jdbcType=VARCHAR},
+      </if>
+      <if test="main_title != null">
+        main_title = #{main_title,jdbcType=VARCHAR},
+      </if>
+      <if test="brand_id != null">
+        brand_id = #{brand_id,jdbcType=INTEGER},
+      </if>
+      <if test="large_id != null">
+        large_id = #{large_id,jdbcType=INTEGER},
+      </if>
+      <if test="medium_id != null">
+        medium_id = #{medium_id,jdbcType=INTEGER},
+      </if>
+      <if test="small_id != null">
+        small_id = #{small_id,jdbcType=INTEGER},
+      </if>
+      <if test="unit_id != null">
+        unit_id = #{unit_id,jdbcType=INTEGER},
+      </if>
+      <if test="bind_level != null">
+        bind_level = #{bind_level,jdbcType=VARCHAR},
+      </if>
+      <if test="remark != null">
+        remark = #{remark,jdbcType=VARCHAR},
+      </if>
+      <if test="create_time != null">
+        create_time = #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="create_user != null">
+        create_user = #{create_user,jdbcType=VARCHAR},
+      </if>
+      <if test="update_time != null">
+        update_time = #{update_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="update_user != null">
+        update_user = #{update_user,jdbcType=VARCHAR},
+      </if>
+      <if test="item_source != null">
+        item_source = #{item_source,jdbcType=TINYINT},
+      </if>
+      <if test="ref_id != null">
+        ref_id = #{ref_id,jdbcType=VARCHAR},
+      </if>
+      <if test="item_style != null">
+        item_style = #{item_style,jdbcType=INTEGER},
+      </if>
+      <if test="service_description != null">
+        service_description = #{service_description,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.lx.benefits.bean.entity.prditeminfo.ItemInfo">
+    update prd_item_info
+    set supplier_id = #{supplier_id,jdbcType=BIGINT},
+      spu = #{spu,jdbcType=VARCHAR},
+      main_title = #{main_title,jdbcType=VARCHAR},
+      brand_id = #{brand_id,jdbcType=INTEGER},
+      large_id = #{large_id,jdbcType=INTEGER},
+      medium_id = #{medium_id,jdbcType=INTEGER},
+      small_id = #{small_id,jdbcType=INTEGER},
+      unit_id = #{unit_id,jdbcType=INTEGER},
+      bind_level = #{bind_level,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      create_time = #{create_time,jdbcType=TIMESTAMP},
+      create_user = #{create_user,jdbcType=VARCHAR},
+      update_time = #{update_time,jdbcType=TIMESTAMP},
+      update_user = #{update_user,jdbcType=VARCHAR},
+      item_source = #{item_source,jdbcType=TINYINT},
+      ref_id = #{ref_id,jdbcType=VARCHAR},
+      item_style = #{item_style,jdbcType=INTEGER},
+      service_description = #{service_description,jdbcType=LONGVARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.prditeminfo.ItemInfo">
+    update prd_item_info
+    set supplier_id = #{supplier_id,jdbcType=BIGINT},
+      spu = #{spu,jdbcType=VARCHAR},
+      main_title = #{main_title,jdbcType=VARCHAR},
+      brand_id = #{brand_id,jdbcType=INTEGER},
+      large_id = #{large_id,jdbcType=INTEGER},
+      medium_id = #{medium_id,jdbcType=INTEGER},
+      small_id = #{small_id,jdbcType=INTEGER},
+      unit_id = #{unit_id,jdbcType=INTEGER},
+      bind_level = #{bind_level,jdbcType=VARCHAR},
+      remark = #{remark,jdbcType=VARCHAR},
+      create_time = #{create_time,jdbcType=TIMESTAMP},
+      create_user = #{create_user,jdbcType=VARCHAR},
+      update_time = #{update_time,jdbcType=TIMESTAMP},
+      update_user = #{update_user,jdbcType=VARCHAR},
+      item_source = #{item_source,jdbcType=TINYINT},
+      ref_id = #{ref_id,jdbcType=VARCHAR},
+      item_style = #{item_style,jdbcType=INTEGER}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

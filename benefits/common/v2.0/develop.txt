@@ -1,0 +1,2 @@
+1.数据库中enterpr_festival_packet表格增加一个campaignThemeIdList字段,类型varchar(2048)
+2.将数据库中的enterpr_festival_packet表格的campaignThemeId字段值赋值给campaignThemeIdList字段

@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.jd.PrdJdBaseItemMapper">
+    <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.jd.PrdJdBaseItem">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="jd_sku" jdbcType="VARCHAR" property="jdSku"/>
+        <result column="jd_name" jdbcType="VARCHAR" property="jdName"/>
+        <result column="jd_category" jdbcType="VARCHAR" property="jdCategory"/>
+        <result column="jd_brand_name" jdbcType="VARCHAR" property="jdBrandName"/>
+        <result column="market_price" jdbcType="DOUBLE" property="marketPrice"/>
+        <result column="jd_price" jdbcType="DOUBLE" property="jdPrice"/>
+        <result column="jd_protocol_price" jdbcType="DOUBLE" property="jdProtocolPrice"/>
+        <result column="jd_rate" jdbcType="DOUBLE" property="jdRate"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="big_cat_id" jdbcType="BIGINT" property="bigCatId"/>
+        <result column="middle_cat_id" jdbcType="BIGINT" property="middleCatId"/>
+        <result column="small_cat_id" jdbcType="BIGINT" property="smallCatId"/>
+        <result column="big_cat_name" jdbcType="VARCHAR" property="bigCatName"/>
+        <result column="middle_cat_name" jdbcType="VARCHAR" property="middleCatName"/>
+        <result column="small_cat_name" jdbcType="VARCHAR" property="smallCatName"/>
+        <result column="cat_name" jdbcType="VARCHAR" property="catName"/>
+        <result column="barcode" jdbcType="VARCHAR" property="barcode"/>
+        <result column="isselect" jdbcType="VARCHAR" property="isselect"/>
+        <result column="inventory" jdbcType="INTEGER" property="inventory"/>
+        <result column="has_pic" jdbcType="TINYINT" property="hasPic"/>
+        <result column="inventory_desc" jdbcType="VARCHAR" property="inventoryDesc"/>
+        <result column="has_pic_desc" jdbcType="VARCHAR" property="hasPicDesc"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, jd_sku, jd_name, jd_category, jd_brand_name, market_price, jd_price, jd_protocol_price, 
+    jd_rate, status, big_cat_id, middle_cat_id, small_cat_id, big_cat_name, middle_cat_name, 
+    small_cat_name, cat_name, barcode, isselect, inventory, has_pic, inventory_desc, 
+    has_pic_desc
+  </sql>
+    <select id="getJdItemList" parameterType="com.lx.benefits.bean.dto.jd.PrdJdBaseItemReq" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from prd_jd_base_item it
+        where it.status=1
+        <if test="jdRate != null  and jdRate != '' ">AND it.jd_rate >=#{jdRate}</if>
+        <if test="jdSku != null  and jdSku != '' ">AND it.jd_sku = #{jdSku}</if>
+        <if test="jdBrandName != null  and jdBrandName != '' ">AND it.jd_brand_name LIKE CONCAT(#{jdBrandName},'%')</if>
+        limit #{page},#{pageSize}
+    </select>
+    <select id="queryByStatusAndRate" parameterType="java.util.Map" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM prd_jd_base_item
+        WHERE
+        status=1
+    </select>
+    <select id="getInfoBySku"  resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM prd_jd_base_item
+        WHERE
+        status=1
+        <if test="sku !=null">
+            and jd_sku in
+            <foreach collection="sku" item="item" index="index" open="(" close=")" separator=",">
+                #{item}
+            </foreach>
+        </if>
+    </select>
+    <select id="getJdItemListCount" parameterType="com.lx.benefits.bean.dto.jd.PrdJdBaseItemReq"
+            resultType="java.lang.Integer">
+        select
+        count(1)
+        from prd_jd_base_item it
+        where it.status=1
+        <if test="jdRate != null  and jdRate != '' ">AND it.jd_rate >=#{jdRate}</if>
+        <if test="jdSku != null  and jdSku != '' ">AND it.jd_sku LIKE CONCAT(#{jdSku},'%')</if>
+        <if test="jdBrandName != null  and jdBrandName != '' ">AND it.jd_brand_name LIKE CONCAT(#{jdBrandName},'%')</if>
+    </select>
+    <insert id="batchInsert">
+        insert into prd_jd_base_item (jd_sku, jd_name,
+        jd_category, jd_brand_name, market_price,
+        jd_price, jd_protocol_price, jd_rate,
+        status, big_cat_id, middle_cat_id,
+        small_cat_id, big_cat_name, middle_cat_name,
+        small_cat_name, cat_name, barcode,
+        isselect, inventory, has_pic,
+        inventory_desc, has_pic_desc)
+        values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.jdSku,jdbcType=VARCHAR}, #{item.jdName,jdbcType=VARCHAR},
+            #{item.jdCategory,jdbcType=VARCHAR}, #{item.jdBrandName,jdbcType=VARCHAR},
+            #{item.marketPrice,jdbcType=DOUBLE},
+            #{item.jdPrice,jdbcType=DOUBLE}, #{item.jdProtocolPrice,jdbcType=DOUBLE}, #{item.jdRate,jdbcType=DOUBLE},
+            #{item.status,jdbcType=INTEGER}, #{item.bigCatId,jdbcType=BIGINT}, #{item.middleCatId,jdbcType=BIGINT},
+            #{item.smallCatId,jdbcType=BIGINT}, #{item.bigCatName,jdbcType=VARCHAR},
+            #{item.middleCatName,jdbcType=VARCHAR},
+            #{item.smallCatName,jdbcType=VARCHAR}, #{item.catName,jdbcType=VARCHAR}, #{item.barcode,jdbcType=VARCHAR},
+            #{item.isselect,jdbcType=VARCHAR}, #{item.inventory,jdbcType=INTEGER}, #{item.hasPic,jdbcType=TINYINT},
+            #{item.inventoryDesc,jdbcType=VARCHAR}, #{item.hasPicDesc,jdbcType=VARCHAR})
+        </foreach>
+    </insert>
+    <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.jd.PrdJdBaseItem">
+        insert into prd_jd_base_item
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="jdSku != null">
+                jd_sku,
+            </if>
+            <if test="jdName != null">
+                jd_name,
+            </if>
+            <if test="jdCategory != null">
+                jd_category,
+            </if>
+            <if test="jdBrandName != null">
+                jd_brand_name,
+            </if>
+            <if test="marketPrice != null">
+                market_price,
+            </if>
+            <if test="jdPrice != null">
+                jd_price,
+            </if>
+            <if test="jdProtocolPrice != null">
+                jd_protocol_price,
+            </if>
+            <if test="jdRate != null">
+                jd_rate,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="bigCatId != null">
+                big_cat_id,
+            </if>
+            <if test="middleCatId != null">
+                middle_cat_id,
+            </if>
+            <if test="smallCatId != null">
+                small_cat_id,
+            </if>
+            <if test="bigCatName != null">
+                big_cat_name,
+            </if>
+            <if test="middleCatName != null">
+                middle_cat_name,
+            </if>
+            <if test="smallCatName != null">
+                small_cat_name,
+            </if>
+            <if test="catName != null">
+                cat_name,
+            </if>
+            <if test="barcode != null">
+                barcode,
+            </if>
+            <if test="isselect != null">
+                isselect,
+            </if>
+            <if test="inventory != null">
+                inventory,
+            </if>
+            <if test="hasPic != null">
+                has_pic,
+            </if>
+            <if test="inventoryDesc != null">
+                inventory_desc,
+            </if>
+            <if test="hasPicDesc != null">
+                has_pic_desc,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="jdSku != null">
+                #{jdSku,jdbcType=VARCHAR},
+            </if>
+            <if test="jdName != null">
+                #{jdName,jdbcType=VARCHAR},
+            </if>
+            <if test="jdCategory != null">
+                #{jdCategory,jdbcType=VARCHAR},
+            </if>
+            <if test="jdBrandName != null">
+                #{jdBrandName,jdbcType=VARCHAR},
+            </if>
+            <if test="marketPrice != null">
+                #{marketPrice,jdbcType=DOUBLE},
+            </if>
+            <if test="jdPrice != null">
+                #{jdPrice,jdbcType=DOUBLE},
+            </if>
+            <if test="jdProtocolPrice != null">
+                #{jdProtocolPrice,jdbcType=DOUBLE},
+            </if>
+            <if test="jdRate != null">
+                #{jdRate,jdbcType=DOUBLE},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=INTEGER},
+            </if>
+            <if test="bigCatId != null">
+                #{bigCatId,jdbcType=BIGINT},
+            </if>
+            <if test="middleCatId != null">
+                #{middleCatId,jdbcType=BIGINT},
+            </if>
+            <if test="smallCatId != null">
+                #{smallCatId,jdbcType=BIGINT},
+            </if>
+            <if test="bigCatName != null">
+                #{bigCatName,jdbcType=VARCHAR},
+            </if>
+            <if test="middleCatName != null">
+                #{middleCatName,jdbcType=VARCHAR},
+            </if>
+            <if test="smallCatName != null">
+                #{smallCatName,jdbcType=VARCHAR},
+            </if>
+            <if test="catName != null">
+                #{catName,jdbcType=VARCHAR},
+            </if>
+            <if test="barcode != null">
+                #{barcode,jdbcType=VARCHAR},
+            </if>
+            <if test="isselect != null">
+                #{isselect,jdbcType=VARCHAR},
+            </if>
+            <if test="inventory != null">
+                #{inventory,jdbcType=INTEGER},
+            </if>
+            <if test="hasPic != null">
+                #{hasPic,jdbcType=TINYINT},
+            </if>
+            <if test="inventoryDesc != null">
+                #{inventoryDesc,jdbcType=VARCHAR},
+            </if>
+            <if test="hasPicDesc != null">
+                #{hasPicDesc,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.jd.PrdJdBaseItem">
+        update prd_jd_base_item
+        <set>
+            <if test="jdSku != null">
+                jd_sku = #{jdSku,jdbcType=VARCHAR},
+            </if>
+            <if test="jdName != null">
+                jd_name = #{jdName,jdbcType=VARCHAR},
+            </if>
+            <if test="jdCategory != null">
+                jd_category = #{jdCategory,jdbcType=VARCHAR},
+            </if>
+            <if test="jdBrandName != null">
+                jd_brand_name = #{jdBrandName,jdbcType=VARCHAR},
+            </if>
+            <if test="marketPrice != null">
+                market_price = #{marketPrice,jdbcType=DOUBLE},
+            </if>
+            <if test="jdPrice != null">
+                jd_price = #{jdPrice,jdbcType=DOUBLE},
+            </if>
+            <if test="jdProtocolPrice != null">
+                jd_protocol_price = #{jdProtocolPrice,jdbcType=DOUBLE},
+            </if>
+            <if test="jdRate != null">
+                jd_rate = #{jdRate,jdbcType=DOUBLE},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=INTEGER},
+            </if>
+            <if test="bigCatId != null">
+                big_cat_id = #{bigCatId,jdbcType=BIGINT},
+            </if>
+            <if test="middleCatId != null">
+                middle_cat_id = #{middleCatId,jdbcType=BIGINT},
+            </if>
+            <if test="smallCatId != null">
+                small_cat_id = #{smallCatId,jdbcType=BIGINT},
+            </if>
+            <if test="bigCatName != null">
+                big_cat_name = #{bigCatName,jdbcType=VARCHAR},
+            </if>
+            <if test="middleCatName != null">
+                middle_cat_name = #{middleCatName,jdbcType=VARCHAR},
+            </if>
+            <if test="smallCatName != null">
+                small_cat_name = #{smallCatName,jdbcType=VARCHAR},
+            </if>
+            <if test="catName != null">
+                cat_name = #{catName,jdbcType=VARCHAR},
+            </if>
+            <if test="barcode != null">
+                barcode = #{barcode,jdbcType=VARCHAR},
+            </if>
+            <if test="isselect != null">
+                isselect = #{isselect,jdbcType=VARCHAR},
+            </if>
+            <if test="inventory != null">
+                inventory = #{inventory,jdbcType=INTEGER},
+            </if>
+            <if test="hasPic != null">
+                has_pic = #{hasPic,jdbcType=TINYINT},
+            </if>
+            <if test="inventoryDesc != null">
+                inventory_desc = #{inventoryDesc,jdbcType=VARCHAR},
+            </if>
+            <if test="hasPicDesc != null">
+                has_pic_desc = #{hasPicDesc,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.jd.PrdJdBaseItem">
+    update prd_jd_base_item
+    set jd_sku = #{jdSku,jdbcType=VARCHAR},
+      jd_name = #{jdName,jdbcType=VARCHAR},
+      jd_category = #{jdCategory,jdbcType=VARCHAR},
+      jd_brand_name = #{jdBrandName,jdbcType=VARCHAR},
+      market_price = #{marketPrice,jdbcType=DOUBLE},
+      jd_price = #{jdPrice,jdbcType=DOUBLE},
+      jd_protocol_price = #{jdProtocolPrice,jdbcType=DOUBLE},
+      jd_rate = #{jdRate,jdbcType=DOUBLE},
+      status = #{status,jdbcType=INTEGER},
+      big_cat_id = #{bigCatId,jdbcType=BIGINT},
+      middle_cat_id = #{middleCatId,jdbcType=BIGINT},
+      small_cat_id = #{smallCatId,jdbcType=BIGINT},
+      big_cat_name = #{bigCatName,jdbcType=VARCHAR},
+      middle_cat_name = #{middleCatName,jdbcType=VARCHAR},
+      small_cat_name = #{smallCatName,jdbcType=VARCHAR},
+      cat_name = #{catName,jdbcType=VARCHAR},
+      barcode = #{barcode,jdbcType=VARCHAR},
+      isselect = #{isselect,jdbcType=VARCHAR},
+      inventory = #{inventory,jdbcType=INTEGER},
+      has_pic = #{hasPic,jdbcType=TINYINT},
+      inventory_desc = #{inventoryDesc,jdbcType=VARCHAR},
+      has_pic_desc = #{hasPicDesc,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+    <delete id="delete">
+    delete from prd_jd_base_item
+  </delete>
+    <delete id="deleteBySku">
+        delete from prd_jd_base_item where jd_sku = #{sku}
+    </delete>
+
+</mapper>

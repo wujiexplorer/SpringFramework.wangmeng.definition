@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.jdPrice.JdPriceStrategyLineMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.jdPrice.JdPriceStrategyLine">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="strategy_id" jdbcType="BIGINT" property="strategyId" />
+    <result column="frome" jdbcType="DOUBLE" property="frome" />
+    <result column="toe" jdbcType="DOUBLE" property="toe" />
+    <result column="price_rate" jdbcType="DOUBLE" property="priceRate" />
+    <result column="offline" jdbcType="TINYINT" property="offline" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, strategy_id, frome, toe, price_rate, offline, create_user, create_time, update_user, 
+    update_time
+  </sql>
+  <select id="getStrategyLine" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ent_jd_price_strategy_line
+    where strategy_id = #{strategyId}
+  </select>
+  <select id="getIdList" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    id
+    from ent_jd_price_strategy_line
+    where strategy_id = #{strategyId}
+  </select>
+  <delete id="delete" parameterType="java.lang.Long">
+    delete from ent_jd_price_strategy_line where id = #{id}
+  </delete>
+  <delete id="deletes" parameterType="java.lang.Long">
+    delete from ent_jd_price_strategy_line where strategy_id = #{strategyId}
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.jdPrice.JdPriceStrategyLine">
+    insert into ent_jd_price_strategy_line
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="strategyId != null">
+        strategy_id,
+      </if>
+      <if test="frome != null">
+        frome,
+      </if>
+      <if test="toe != null">
+        toe,
+      </if>
+      <if test="priceRate != null">
+        price_rate,
+      </if>
+      <if test="offline != null">
+        offline,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="strategyId != null">
+        #{strategyId,jdbcType=BIGINT},
+      </if>
+      <if test="frome != null">
+        #{frome,jdbcType=DOUBLE},
+      </if>
+      <if test="toe != null">
+        #{toe,jdbcType=DOUBLE},
+      </if>
+      <if test="priceRate != null">
+        #{priceRate,jdbcType=DOUBLE},
+      </if>
+      <if test="offline != null">
+        #{offline,jdbcType=TINYINT},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+
+</mapper>

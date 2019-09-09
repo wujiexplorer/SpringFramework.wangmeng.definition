@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.user.UserCollectionMapper">
+  <select id="countProducts" resultType="int">
+  		select count(*)
+  		from user_collection
+  			inner join product on user_collection.spu_code=product.spu_code
+  		where user_id= #{userId}
+  </select>
+  <select id="selectProducts" resultType="com.lx.benefits.bean.entity.product.ProductEntity">
+  		select product.spu_code as spuCode, product.goods_name as goodsName, product.goods_image as goodsImage, 
+  			IFNULL(min(sku.goods_price),0) as goodsPrice
+		from user_collection
+  			inner join product on user_collection.spu_code=product.spu_code
+  			left join sku on sku.spu_code=product.spu_code and sku.status=1
+  		where  user_id= #{userId}
+  		group by user_collection.spu_code
+  		order by user_collection.id desc
+  		limit #{pageBean.offset},#{pageBean.pageSize} 
+  </select>
+</mapper>

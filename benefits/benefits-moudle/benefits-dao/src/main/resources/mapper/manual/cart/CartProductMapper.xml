@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.cart.CartProductMapper">
+
+
+	
+	<select id="selectCartListByAccountId" resultMap="BaseResultMap">
+		SELECT
+			<include refid="Base_Column_List" />
+		FROM 
+			cart_product
+		where `ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}
+		<if test="checked!=null" > AND `CHECKED`=#{checked,jdbcType=TINYINT}</if>
+		<if test="isDelete!=null" > AND `IS_DELETE`=#{isDelete,jdbcType=TINYINT}</if>
+	</select>
+
+	<select id="selectCartCountByAccountId" resultType="int">
+		SELECT
+			count(1)
+		FROM
+		cart_product
+		where `ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}
+		<if test="checked!=null" > AND `CHECKED`=#{checked,jdbcType=TINYINT}</if>
+		<if test="isDelete!=null" > AND `IS_DELETE`=#{isDelete,jdbcType=TINYINT}</if>
+	</select>
+
+	<select id="selectListByIdList" resultMap="BaseResultMap">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM
+		cart_product
+		where `ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}
+		<foreach collection="idList" item="id" open="and id in (" close=")" separator=",">
+			#{id}
+		</foreach>
+		<if test="isDelete!=null" > AND `IS_DELETE`=#{isDelete,jdbcType=TINYINT}</if>
+	</select>
+
+	<select id="selectUserCartListBySkuId" resultMap="BaseResultMap">
+		SELECT
+			<include refid="Base_Column_List" />
+		FROM
+			cart_product
+		where
+		    `ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}
+		AND	`SKU_ID`=#{skuId,jdbcType=BIGINT}
+		<if test="isDelete!=null" > AND `IS_DELETE`=#{isDelete,jdbcType=TINYINT}</if>
+	</select>
+
+	<delete id="deleteByIdList">
+		delete from cart_product
+		<where>
+			`ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}
+			<foreach collection="idList" item="id" open="and id in (" close=")" separator=",">
+				#{id}
+			</foreach>
+		</where>
+	</delete>
+
+	<update id="updateCountById">
+		UPDATE cart_product
+		<set>
+			`COUNT` = #{count,jdbcType=INTEGER}
+		</set>
+		<where>
+				`ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}
+		  	AND	`id`=#{id,jdbcType=BIGINT}
+		</where>
+	</update>
+
+	<update id="updateCheckedByIdList">
+		UPDATE cart_product
+		<set>
+			`CHECKED` = #{checked,jdbcType=TINYINT}
+		</set>
+		<where>
+			`ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}
+			<foreach collection="idList" item="id" open="and id in (" close=")" separator=",">
+				#{id}
+			</foreach>
+		</where>
+	</update>
+	
+	<select id="queryCartId" parameterType="java.util.Map" resultType="java.lang.Long">
+	select id from cart_product where account_id=#{accountId} and sku_id=#{cartId}
+	</select>
+</mapper>
+

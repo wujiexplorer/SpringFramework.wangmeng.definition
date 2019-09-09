@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.jdPrice.JdPriceStrategyMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.jdPrice.JdPriceStrategy">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="deleted" jdbcType="TINYINT" property="deleted" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, name, type, deleted, create_user, create_time, update_user, update_time
+  </sql>
+  <select id="getStrategyById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ent_jd_price_strategy
+    where id = #{id,jdbcType=BIGINT} and deleted = 0
+  </select>
+  <select id="getStrategyList" parameterType="com.lx.benefits.bean.dto.jdPrice.JdPriceStrategyReq" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from ent_jd_price_strategy
+    where  deleted = 0
+    <if test="name != null and name != ''">
+      and name = #{name}
+    </if>
+    <if test="type != null and type != ''">
+      and type = #{type}
+    </if>
+    limit #{page},#{pageSize}
+  </select>
+  <select id="getStrategyListCount" parameterType="com.lx.benefits.bean.dto.jdPrice.JdPriceStrategyReq" resultType="java.lang.Integer">
+    select
+    count(1)
+    from ent_jd_price_strategy
+    where  deleted = 0
+    <if test="name != null and name != ''">
+      and name = #{name}
+    </if>
+    <if test="type != null and type != ''">
+      and type = #{type}
+    </if>
+  </select>
+  <update id="delete" parameterType="java.lang.Long">
+    update ent_jd_price_strategy set deleted = 1
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.jdPrice.JdPriceStrategy" useGeneratedKeys="true" keyProperty="id">
+    insert into ent_jd_price_strategy
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="deleted != null">
+        deleted,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=TINYINT},
+      </if>
+      <if test="deleted != null">
+        #{deleted,jdbcType=TINYINT},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <update id="update" parameterType="com.lx.benefits.bean.entity.jdPrice.JdPriceStrategy">
+    update ent_jd_price_strategy
+    <set>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=TINYINT},
+      </if>
+      <if test="deleted != null">
+        deleted = #{deleted,jdbcType=TINYINT},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

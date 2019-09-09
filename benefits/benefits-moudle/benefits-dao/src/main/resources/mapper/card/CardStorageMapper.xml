@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.card.CardStorageMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.card.CardStorage">
+    <id column="card_number" jdbcType="CHAR" property="cardNumber" />
+    <result column="batch_id" jdbcType="INTEGER" property="batchId" />
+    <result column="amount" jdbcType="INTEGER" property="amount" />
+    <result column="verify_number" jdbcType="CHAR" property="verifyNumber" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="enterpr_id" jdbcType="BIGINT" property="enterprId" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="employee_id" jdbcType="BIGINT" property="employeeId" />
+    <result column="used_time" jdbcType="TIMESTAMP" property="usedTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    card_number, batch_id, amount, verify_number, status, enterpr_id, mobile, employee_id, 
+    used_time, create_time, update_time
+  </sql>
+  <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.card.CardStorageCondition" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from card_storage
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from card_storage
+    where card_number = #{cardNumber,jdbcType=CHAR}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.String">
+    delete from card_storage
+    where card_number = #{cardNumber,jdbcType=CHAR}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.card.CardStorageCondition">
+    delete from card_storage
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.card.CardStorage">
+    insert into card_storage (card_number, batch_id, amount, 
+      verify_number, status, enterpr_id, 
+      mobile, employee_id, used_time, 
+      create_time, update_time)
+    values (#{cardNumber,jdbcType=CHAR}, #{batchId,jdbcType=INTEGER}, #{amount,jdbcType=INTEGER}, 
+      #{verifyNumber,jdbcType=CHAR}, #{status,jdbcType=INTEGER}, #{enterprId,jdbcType=BIGINT}, 
+      #{mobile,jdbcType=VARCHAR}, #{employeeId,jdbcType=BIGINT}, #{usedTime,jdbcType=TIMESTAMP}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateTime,jdbcType=TIMESTAMP})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.card.CardStorage">
+    insert into card_storage
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="cardNumber != null">
+        card_number,
+      </if>
+      <if test="batchId != null">
+        batch_id,
+      </if>
+      <if test="amount != null">
+        amount,
+      </if>
+      <if test="verifyNumber != null">
+        verify_number,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="enterprId != null">
+        enterpr_id,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="employeeId != null">
+        employee_id,
+      </if>
+      <if test="usedTime != null">
+        used_time,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="cardNumber != null">
+        #{cardNumber,jdbcType=CHAR},
+      </if>
+      <if test="batchId != null">
+        #{batchId,jdbcType=INTEGER},
+      </if>
+      <if test="amount != null">
+        #{amount,jdbcType=INTEGER},
+      </if>
+      <if test="verifyNumber != null">
+        #{verifyNumber,jdbcType=CHAR},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="enterprId != null">
+        #{enterprId,jdbcType=BIGINT},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="employeeId != null">
+        #{employeeId,jdbcType=BIGINT},
+      </if>
+      <if test="usedTime != null">
+        #{usedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lx.benefits.bean.entity.card.CardStorageCondition" resultType="java.lang.Long">
+    select count(*) from card_storage
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update card_storage
+    <set>
+      <if test="record.cardNumber != null">
+        card_number = #{record.cardNumber,jdbcType=CHAR},
+      </if>
+      <if test="record.batchId != null">
+        batch_id = #{record.batchId,jdbcType=INTEGER},
+      </if>
+      <if test="record.amount != null">
+        amount = #{record.amount,jdbcType=INTEGER},
+      </if>
+      <if test="record.verifyNumber != null">
+        verify_number = #{record.verifyNumber,jdbcType=CHAR},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.enterprId != null">
+        enterpr_id = #{record.enterprId,jdbcType=BIGINT},
+      </if>
+      <if test="record.mobile != null">
+        mobile = #{record.mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.employeeId != null">
+        employee_id = #{record.employeeId,jdbcType=BIGINT},
+      </if>
+      <if test="record.usedTime != null">
+        used_time = #{record.usedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateTime != null">
+        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update card_storage
+    set card_number = #{record.cardNumber,jdbcType=CHAR},
+      batch_id = #{record.batchId,jdbcType=INTEGER},
+      amount = #{record.amount,jdbcType=INTEGER},
+      verify_number = #{record.verifyNumber,jdbcType=CHAR},
+      status = #{record.status,jdbcType=INTEGER},
+      enterpr_id = #{record.enterprId,jdbcType=BIGINT},
+      mobile = #{record.mobile,jdbcType=VARCHAR},
+      employee_id = #{record.employeeId,jdbcType=BIGINT},
+      used_time = #{record.usedTime,jdbcType=TIMESTAMP},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      update_time = #{record.updateTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.card.CardStorage">
+    update card_storage
+    <set>
+      <if test="batchId != null">
+        batch_id = #{batchId,jdbcType=INTEGER},
+      </if>
+      <if test="amount != null">
+        amount = #{amount,jdbcType=INTEGER},
+      </if>
+      <if test="verifyNumber != null">
+        verify_number = #{verifyNumber,jdbcType=CHAR},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="enterprId != null">
+        enterpr_id = #{enterprId,jdbcType=BIGINT},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="employeeId != null">
+        employee_id = #{employeeId,jdbcType=BIGINT},
+      </if>
+      <if test="usedTime != null">
+        used_time = #{usedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where card_number = #{cardNumber,jdbcType=CHAR}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.card.CardStorage">
+    update card_storage
+    set batch_id = #{batchId,jdbcType=INTEGER},
+      amount = #{amount,jdbcType=INTEGER},
+      verify_number = #{verifyNumber,jdbcType=CHAR},
+      status = #{status,jdbcType=INTEGER},
+      enterpr_id = #{enterprId,jdbcType=BIGINT},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      employee_id = #{employeeId,jdbcType=BIGINT},
+      used_time = #{usedTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where card_number = #{cardNumber,jdbcType=CHAR}
+  </update>
+</mapper>

@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.card.CardStorageMapper">
+  <insert id="batchInsert">
+		insert into card_storage (card_number, batch_id, amount,
+		verify_number, status, enterpr_id, create_time)
+		values
+		<foreach collection="records" item="record" separator=",">
+			(#{record.cardNumber}, #{record.batchId}, #{record.amount},
+			#{record.verifyNumber},
+			#{record.status}, #{record.enterprId}, NOW())
+		</foreach>
+  </insert>
+  <select id="selectBasicInfo" parameterType="map" resultType="com.lx.benefits.bean.vo.card.CardStorageBean">
+	select card_storage.card_number as cardNumber, card_storage.amount
+	<if test="withVerifyNumber">
+		,card_storage.verify_number as verifyNumber
+	</if>
+	from card_storage
+    <include refid="Update_By_Example_Where_Clause" />
+    <if test="example.orderByClause != null">
+      order by ${example.orderByClause}
+    </if>
+    <if test="example.limit != null">
+      <if test="example.offset != null">
+        limit ${example.offset}, ${example.limit}
+      </if>
+      <if test="example.offset == null">
+        limit ${example.limit}
+      </if>
+   	</if>
+  </select>
+  <select id="getStorageStatistics" resultType="com.lx.benefits.bean.vo.card.CardStorageStatistics">
+		select IFNULL(sum(amount), 0) as totalAmount, count(1) as totalCount
+		from card_storage
+		where status=#{status}
+  </select>
+  <select id="getCardStoreInfo" resultType="com.lx.benefits.bean.vo.card.CardAmountStorage">
+		select amount, count(1) as num
+		from card_storage
+		where status=#{status}
+		group by amount
+  </select>
+  <select id="getStoredCards" resultType="com.lx.benefits.bean.vo.card.CardStorageBean">
+  	select cardStorage.card_number as cardNumber, cardStorage.amount, cardStorage.create_time as createTime,
+  		batchRecorder.customer_id as customerId, batchRecorder.store_time as storeTime, batchRecorder.store_user as storeUser
+  	from card_storage cardStorage
+  		left join card_batch_recorder batchRecorder on cardStorage.batch_id=batchRecorder.batch_id
+  	where cardStorage.status=1
+  	<if test="startTime!=null">
+  		and cardStorage.create_time >= #{startTime}
+  	</if>
+  	<if test="endTime!=null">
+  		and cardStorage.create_time &lt;=#{endTime}
+  	</if>
+  	<if test="cardNumber!=null and cardNumber!=''">
+  		and cardStorage.card_number like CONCAT("%",#{cardNumber},"%")
+  	</if>
+  	limit #{pageBean.offset},#{pageBean.pageSize}
+  </select>
+  <select id="countCustomerCardUseInfo" resultType="int">
+  	select count(1)
+  	from card_storage cardStorage
+  		inner join card_batch_recorder batchRecorder on cardStorage.batch_id=batchRecorder.batch_id and batchRecorder.status=3
+  	where batchRecorder.customer_id=#{customerId}
+  	<if test="status!=null">
+  		and status=#{status}
+  	</if>
+  </select>
+  <select id="selectCustomerCardUseInfo" resultType="com.lx.benefits.bean.entity.card.CardStorage">
+ 	select cardStorage.card_number as cardNumber, cardStorage.status, cardStorage.used_time as usedTime
+  	from card_storage cardStorage
+  		inner join card_batch_recorder batchRecorder on cardStorage.batch_id=batchRecorder.batch_id and batchRecorder.status=3
+  	where batchRecorder.customer_id=#{customerId}
+  	<if test="status!=null">
+  		and status=#{status}
+  	</if>
+  	limit #{pageBean.offset},#{pageBean.pageSize}
+  </select>
+  <select id="statisticsCustomerStorage" resultType="com.lx.benefits.bean.vo.card.CardStorageStatistics">
+  	select IFNULL(sum(cardStorage.amount),0) as totalAmount, IFNULL(sum(IF(cardStorage.status=4,cardStorage.amount,0)),0) as usedAmount 
+  	from card_storage cardStorage
+  		inner join card_batch_recorder batchRecorder on cardStorage.batch_id=batchRecorder.batch_id and batchRecorder.status=3
+  	where batchRecorder.customer_id=#{customerId}
+  </select>
+  <select id="getCardStasticReportGropuByStatus" resultType="com.lx.benefits.bean.vo.card.CardStasticReport">
+  	select sum(card_storage.amount) as totalAmount, card_storage.status
+  	from card_storage
+  		inner join card_batch_recorder on card_batch_recorder.batch_id=card_storage.batch_id and card_batch_recorder.status!=0
+  	group by status
+  </select>
+  <select id="getUsedAmount" resultType="com.lx.benefits.bean.vo.card.CustomerOrderReport">
+  	select card_batch_recorder.customer_id as customerId, sum(card_storage.amount) as usedAmount
+  	from card_storage
+  	  inner join card_batch_recorder on card_batch_recorder.batch_id=card_storage.batch_id and
+  		card_batch_recorder.customer_id in
+  		<foreach collection="customerIds" item="customerId" separator="," open="(" close=")">
+  			#{customerId}
+  		</foreach>
+  	where card_storage.status=4
+  	group by card_batch_recorder.customer_id
+  </select>
+  <select id="countBySearchBean" resultType="int">
+  	select count(1)
+  	from card_storage cardStorage
+  		inner join card_batch_recorder batchRecorder on cardStorage.batch_id=batchRecorder.batch_id and batchRecorder.status=3
+  	<where>
+  		<if test="searchBean.deliverStartTime">
+  			and batchRecorder.deliver_time >= #{searchBean.deliverStartTime}
+  		</if>
+  		<if test="searchBean.deliverEndTime">
+  			and batchRecorder.deliver_time &lt;= #{searchBean.deliverEndTime}
+  		</if>
+  		<if test="searchBean.customerId!=null">
+  			and batchRecorder.customer_id=#{searchBean.customerId}
+  		</if>
+  		<if test="searchBean.cardNumber!=null and searchBean.cardNumber!='' ">
+  			and cardStorage.card_number like concat('%',#{searchBean.cardNumber},'%')
+  		</if>
+  		<if test="searchBean.enterprId!=null">
+  			and cardStorage.enterpr_id=#{searchBean.enterprId}
+  		</if>
+  		<if test="searchBean.usedStartTime!=null or searchBean.usedEndTime!=null">
+  			and cardStorage.status=4
+  			<if test="searchBean.usedStartTime!=null">
+  				and cardStorage.used_time>=#{searchBean.usedStartTime}
+  			</if>
+  			<if test="searchBean.usedEndTime!=null">
+  				and cardStorage.used_time &lt;=#{searchBean.usedEndTime} 
+  			</if>
+  		</if>
+  		<if test="searchBean.status!=null">
+  			and cardStorage.status=#{searchBean.status}
+  		</if>
+  	</where>
+  </select>
+  <select id="selectBySearchBean" resultType="com.lx.benefits.bean.vo.card.CardStorageBean">
+  	select batchRecorder.deliver_time as deliverTime, batchRecorder.customer_id as customerId, cardStorage.enterpr_id as enterprId,
+  		cardStorage.card_number as cardNumber,cardStorage.amount, employee.loginName as employeeLoginName, cardStorage.mobile, 
+  		cardStorage.used_time as usedTime, cardStorage.status
+  	from card_storage cardStorage
+  		inner join card_batch_recorder batchRecorder on cardStorage.batch_id=batchRecorder.batch_id and batchRecorder.status=3
+  		left join employee_user_info employee on employee.employeeId=cardStorage.employee_id
+  	<where>
+  		<if test="searchBean.deliverStartTime">
+  			and batchRecorder.deliver_time >= #{searchBean.deliverStartTime}
+  		</if>
+  		<if test="searchBean.deliverEndTime">
+  			and batchRecorder.deliver_time &lt;= #{searchBean.deliverEndTime}
+  		</if>
+  		<if test="searchBean.customerId!=null">
+  			and batchRecorder.customer_id=#{searchBean.customerId}
+  		</if>
+  		<if test="searchBean.cardNumber!=null and searchBean.cardNumber!='' ">
+  			and cardStorage.card_number like concat('%',#{searchBean.cardNumber},'%')
+  		</if>
+  		<if test="searchBean.enterprId!=null">
+  			and cardStorage.enterpr_id=#{searchBean.enterprId}
+  		</if>
+  		<if test="searchBean.usedStartTime!=null or searchBean.usedEndTime!=null">
+  			and cardStorage.status=4
+  			<if test="searchBean.usedStartTime!=null">
+  				and cardStorage.used_time>=#{searchBean.usedStartTime}
+  			</if>
+  			<if test="searchBean.usedEndTime!=null">
+  				and cardStorage.used_time &lt;=#{searchBean.usedEndTime} 
+  			</if>
+  		</if>
+  		<if test="searchBean.status!=null">
+  			and cardStorage.status=#{searchBean.status}
+  		</if>
+  	</where>
+  	limit #{pageBean.offset},#{pageBean.pageSize}
+  </select>
+</mapper>

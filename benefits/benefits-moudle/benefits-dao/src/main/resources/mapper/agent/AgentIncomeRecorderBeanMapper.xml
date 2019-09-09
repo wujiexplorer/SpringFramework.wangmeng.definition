@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.agent.AgentIncomeRecorderMapper">
+	<select id="sumCashIncomeTotal" resultType="java.math.BigDecimal">
+		select IFNULL(sum(cash_amount),0)
+		from agent_income_recorder
+		where agent_id=#{agentId}
+		<if test="startTime!=null">
+			and create_time >= #{startTime}
+		</if>
+		<if test="endTime!=null">
+			and create_time &lt; #{endTime}
+		</if>
+	</select>
+	<select id="getAgentRechargeProfitReport" resultType="com.lx.benefits.bean.vo.agent.AgentProfitReport">
+		select incomeRecorder.agent_id as agentId, COUNT(*) as rechargeCount,
+			IFNULL(SUM(creditRecorder.cash_amount),0) as totalRecharge, 
+			IFNULL(SUM(incomeRecorder.cash_amount),0) as totalIncome
+		from agent_income_recorder incomeRecorder, credit_cheking_recorder creditRecorder 
+		where incomeRecorder.voucher_number=creditRecorder.cash_number and incomeRecorder.type=3
+			  and agent_id=#{agentId}
+	</select>
+	<select id="getAgentOrderProfitReport" resultType="com.lx.benefits.bean.vo.agent.AgentProfitReport">
+		SELECT incomeRecorder.agent_id AS agentId, incomeRecorder.type, count(pay_order_number) as orderCount,
+			IFNULL(SUM(incomeRecorder.cash_amount),0) as totalIncome
+		FROM agent_income_recorder incomeRecorder
+		WHERE incomeRecorder.type IN (1,2,5,6) and incomeRecorder.agent_id=#{agentId}
+	</select>
+	<select id="getEnterpriseRechargeProfitsView" resultType="com.lx.benefits.bean.vo.agent.AgentEnterpriseProfitBean">
+		select enterpr.enterpr_id as enterprId,  enterpr.enterpr_name as enterprName, enterpr.employee_num as employeeCount, 
+			enterpr.create_time as createTime, COUNT(distinct incomeRecorder.voucher_number) as rechargeCount, 
+			IFNULL(SUM(creditRecorder.cash_amount),0) as totalRecharge, 
+			IFNULL(SUM(incomeRecorder.cash_amount),0) as totalIncome
+		from agent_income_recorder incomeRecorder
+			left join credit_cheking_recorder creditRecorder on incomeRecorder.voucher_number=creditRecorder.cash_number
+			right join enterpr_user_info enterpr  on enterpr.enterpr_id=creditRecorder.enterpr_id and incomeRecorder.type=3
+		where enterpr.agent_id=#{agentId}
+		<if test="enterprName!=null">
+			and enterpr.enterpr_name like concat('%',#{enterprName},'%')
+		</if>
+		<if test="createStartTime!=null">
+			and enterpr.create_time >= #{createStartTime}
+		</if>
+		<if test="createEndTime!=null">
+			and enterpr.create_time &lt; #{createEndTime}
+		</if>
+		group by enterpr.enterpr_id
+		order by enterpr.enterpr_id desc
+		<if test="pageBean!=null">
+			limit #{pageBean.offset},#{pageBean.pageSize} 
+		</if>
+	</select>
+	<select id="getEnterpriseOrderProfitsView" resultType="com.lx.benefits.bean.vo.agent.AgentEnterpriseProfitBean">
+		select enterpr.enterpr_id as enterprId,  enterpr.enterpr_name as enterprName, enterpr.employee_num as employeeCount, 
+			enterpr.create_time as createTime, COUNT(pay_order_number) as orderCount,
+			IFNULL(SUM(incomeRecorder.cash_amount),0) as totalIncome
+		from agent_income_recorder incomeRecorder
+			right join enterpr_user_info enterpr on enterpr.enterpr_id=incomeRecorder.enterpr_id 
+				and incomeRecorder.agent_id=#{agentId} and incomeRecorder.type in(1,2,5,6)
+		where enterpr.agent_id=#{agentId}
+		<if test="enterprName!=null">
+			and enterpr.enterpr_name like concat('%',#{enterprName},'%')
+		</if>
+		<if test="createStartTime!=null">
+			and enterpr.create_time >= #{createStartTime}
+		</if>
+		<if test="createEndTime!=null">
+			and enterpr.create_time &lt; #{createEndTime}
+		</if>
+		group by enterpr.enterpr_id
+		order by enterpr.enterpr_id desc
+		<if test="pageBean!=null">
+			limit #{pageBean.offset},#{pageBean.pageSize} 
+		</if>
+	</select>
+	<select id="getEnterpriseRechargeProfits" resultType="com.lx.benefits.bean.vo.agent.AgentRechargeProfitBean">
+		select enterpr.enterpr_id as enterprId, enterpr.enterpr_name as enterprName, creditRecorder.credit_type as creditType,
+			creditRecorder.cash_amount as cashAmount, incomeRecorder.cash_amount as incomeAmount,
+			creditRecorder.check_status as checkStatus,creditRecorder.apply_time as createTime
+		from agent_income_recorder incomeRecorder,credit_cheking_recorder creditRecorder, enterpr_user_info enterpr
+		where incomeRecorder.voucher_number=creditRecorder.cash_number and enterpr.enterpr_id=incomeRecorder.enterpr_id
+			and incomeRecorder.enterpr_id=#{enterprId} and incomeRecorder.agent_id=#{agentId}
+	</select>
+	<select id="countEnterpriseOrderProfits" resultType="java.lang.Integer">
+		select count(*)
+		from agent_income_recorder incomeRecorder
+			inner join `order` orderInfo on orderInfo.number=incomeRecorder.voucher_number
+			inner join employee_user_info employee on employee.employeeId=orderInfo.buyer_user_id
+		where incomeRecorder.enterpr_id=#{enterprId}
+			and incomeRecorder.agent_id=#{agentId}
+		<if test="orderNumber!=null">
+			and incomeRecorder.voucher_number=#{orderNumber}
+		</if>
+		<if test="employeeName!=null">
+			and employee.employeeName like concat('%',#{employeeName},'%')
+		</if>	
+		<if test="orderStartTime!=null">
+			and orderInfo.create_time >= #{orderStartTime}
+		</if>
+		<if test="orderEndTime!=null">
+			and orderInfo.create_time &lt; #{orderEndTime} 
+		</if>
+	</select>
+	<select id="getEnterpriseOrderProfits" resultType="com.lx.benefits.bean.vo.agent.AgentOrderProfitBean">
+		select incomeRecorder.voucher_number as orderNumber, employee.employeeName, employee.employeeNo,
+			product.title as productName, orderInfo.quantity, orderInfo.create_time as createTime, 
+			orderInfo.status as orderStatus, incomeRecorder.cash_amount as incomeAmount, product.now_price as price,
+			(orderInfo.price+orderInfo.point_amount)/100 as saleAmount,incomeRecorder.`type`
+		from agent_income_recorder incomeRecorder
+			inner join `order` orderInfo on orderInfo.number=incomeRecorder.voucher_number
+			inner join employee_user_info employee on employee.employeeId=orderInfo.buyer_user_id
+			left join product_order_ex product on product.order_number=orderInfo.number
+		where incomeRecorder.enterpr_id=#{enterprId}
+			and incomeRecorder.agent_id=#{agentId}
+		<if test="orderNumber!=null">
+			and incomeRecorder.voucher_number=#{orderNumber}
+		</if>
+		<if test="employeeName!=null">
+			and employee.employeeName like concat('%',#{employeeName},'%')
+		</if>	
+		<if test="orderStartTime!=null">
+			and orderInfo.create_time >= #{orderStartTime}
+		</if>
+		<if test="orderEndTime!=null">
+			and orderInfo.create_time &lt; #{orderEndTime} 
+		</if>
+		order by incomeRecorder.id desc
+		<if test="pageBean!=null">
+			limit #{pageBean.offset},#{pageBean.pageSize} 
+		</if>
+	</select>
+	<select id="sumCashIncomeByType" resultType="java.math.BigDecimal">
+		select IFNULL(sum(cash_amount),0)
+		from agent_income_recorder
+		where type=#{type}
+	</select>
+	<select id="sumTotalRecharge" resultType="com.lx.benefits.bean.vo.agent.AgentProfitReport">
+		select IFNULL(sum(incomeRecorder.cash_amount),0) as rechargeRebate, 
+			IFNULL(sum(creditRecorder.cash_amount),0) as totalRecharge
+		from agent_income_recorder incomeRecorder
+		left join credit_cheking_recorder creditRecorder on incomeRecorder.voucher_number=creditRecorder.cash_number
+		where incomeRecorder.type=3 and agent_id=#{agentId}
+	</select>
+	<select id="sumOrderCostAndSaleAmount" resultType="com.lx.benefits.bean.vo.agent.AgentProfitReport">
+		select (IFNULL(sum(orderInfo.price),0)+IFNULL(sum(orderInfo.point_amount),0))/100 as totalOrderSaleAmount,
+			IFNULL(sum(product.cost_price*orderInfo.quantity),0)/100 as totalOrderCostAmount
+		from agent_income_recorder incomeRecorder
+			left join agent_income_recorder  outcomeRecorder on  incomeRecorder.voucher_number=outcomeRecorder.voucher_number and outcomeRecorder.type=2
+			left join `order` orderInfo on incomeRecorder.voucher_number=orderInfo.number
+			left join product_order_ex product on incomeRecorder.voucher_number=product.order_number
+		where incomeRecorder.agent_id=#{agentId} and incomeRecorder.type in(1,5) and outcomeRecorder.voucher_number is null
+	</select>
+	<select id="sumCashIncomeTotalByType" resultType="java.math.BigDecimal">
+		select IFNULL(sum(recorder1.cash_amount),0) as totalIncome
+		from agent_income_recorder recorder1
+			left join agent_income_recorder recorder2 on recorder1.voucher_number=recorder2.voucher_number and recorder2.type=2
+		where recorder1.agent_id=#{agentId} and recorder1.type=#{type} and recorder2.voucher_number is null;
+	</select>
+</mapper>

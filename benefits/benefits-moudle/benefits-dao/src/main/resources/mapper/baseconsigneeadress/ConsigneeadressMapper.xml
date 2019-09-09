@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.memconsigneeaddress.ConsigneeAdressMapper">
+    <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.memconsigneeaddress.ConsigneeAdress">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="name" jdbcType="VARCHAR" property="name"/>
+        <result column="user_id" jdbcType="INTEGER" property="userid"/>
+        <result column="tel" jdbcType="VARCHAR" property="tel"/>
+        <result column="province_id" jdbcType="INTEGER" property="provinceid"/>
+        <result column="province" jdbcType="VARCHAR" property="province"/>
+        <result column="city_id" jdbcType="INTEGER" property="cityid"/>
+        <result column="city" jdbcType="VARCHAR" property="city"/>
+        <result column="county_id" jdbcType="INTEGER" property="districtid"/>
+        <result column="county" jdbcType="VARCHAR" property="district"/>
+        <result column="street_id" jdbcType="INTEGER" property="streetid"/>
+        <result column="street" jdbcType="VARCHAR" property="street"/>
+        <result column="info" jdbcType="VARCHAR" property="info"/>
+        <result column="identityCard" jdbcType="VARCHAR" property="identityCard"/>
+        <result column="is_default" jdbcType="INTEGER" property="isdefault"/>
+        <result column="isDeleted" jdbcType="INTEGER" property="isDeleted"/>
+        <result column="status" jdbcType="INTEGER" property="status"/>
+        <result column="created" jdbcType="INTEGER" property="created"/>
+        <result column="updated" jdbcType="INTEGER" property="updated"/>
+    </resultMap>
+    <sql id="Example_Where_Clause">
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+    <sql id="Update_By_Example_Where_Clause">
+        <where>
+            <foreach collection="example.oredCriteria" item="criteria" separator="and">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+
+    <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.memconsigneeaddress.ConsigneeAdress"
+            useGeneratedKeys="true" keyProperty="id">
+        insert into mem_consignee_address
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                name,
+            </if>
+            <if test="tel != null">
+                mobile,
+            </if>
+            <if test="userid != null">
+                user_id,
+            </if>
+            <if test="provinceid != null">
+                province_id,
+            </if>
+            <if test="province != null">
+                province,
+            </if>
+            <if test="cityid != null">
+                city_id,
+            </if>
+            <if test="city != null">
+                city,
+            </if>
+            <if test="districtid != null">
+                county_id,
+            </if>
+            <if test="district != null">
+                county,
+            </if>
+            <if test="streetid != null">
+                street_id,
+            </if>
+            <if test="street != null">
+                street,
+            </if>
+            <if test="info != null">
+                address,
+            </if>
+            <if test="identityCard != null">
+                identity_card,
+            </if>
+            <if test="isdefault != null">
+                is_default,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="name != null">
+                #{name,jdbcType=VARCHAR},
+            </if>
+            <if test="tel != null">
+                #{tel,jdbcType=VARCHAR},
+            </if>
+            <if test="userid != null">
+                #{userid,jdbcType=INTEGER},
+            </if>
+            <if test="provinceid != null">
+                #{provinceid,jdbcType=INTEGER},
+            </if>
+            <if test="province != null">
+                #{province,jdbcType=VARCHAR},
+            </if>
+            <if test="cityid != null">
+                #{cityid,jdbcType=INTEGER},
+            </if>
+            <if test="city != null">
+                #{city,jdbcType=VARCHAR},
+            </if>
+            <if test="districtid != null">
+                #{districtid,jdbcType=INTEGER},
+            </if>
+            <if test="district != null">
+                #{district,jdbcType=VARCHAR},
+            </if>
+
+            <if test="streetid != null">
+                #{streetid,jdbcType=VARCHAR},
+            </if>
+            <if test="street != null">
+                #{street,jdbcType=VARCHAR},
+            </if>
+            <if test="info != null">
+                #{info,jdbcType=VARCHAR},
+            </if>
+            <if test="identityCard != null">
+                #{identityCard,jdbcType=VARCHAR},
+            </if>
+            <if test="isdefault != null">
+              #{isdefault,jdbcType=INTEGER},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+
+        </trim>
+    </insert>
+
+    <update id="updateDefault" parameterType="map">
+        update mem_consignee_address
+        <set>
+            <if test="record.isdefault != null">
+            is_default = #{record.isdefault,jdbcType=VARCHAR},
+        </if>
+            <if test="record.updateTime != null">
+                update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+            </if>
+        </set>
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+
+    <update id="updateByExample" parameterType="com.lx.benefits.bean.entity.memconsigneeaddress.ConsigneeAdress" >
+        update mem_consignee_address
+        <set>
+            <if test="name != null">
+                name = #{name},
+            </if>
+            <if test="tel != null">
+                mobile = #{tel},
+            </if>
+            <if test="provinceid != null">
+                province_id = #{provinceid},
+            </if>
+            <if test="province != null">
+                province = #{province},
+            </if>
+            <if test="cityid != null">
+                city_id = #{cityid},
+            </if>
+            <if test="city != null">
+                city = #{city},
+            </if>
+            <if test="districtid != null">
+                county_id = #{districtid},
+            </if>
+            <if test="district != null">
+                county = #{district},
+            </if>
+            <if test="streetid != null">
+                street_id = #{streetid},
+            </if>
+            <if test="street != null">
+                street = #{street},
+            </if>
+            <if test="info != null">
+                address = #{info},
+            </if>
+            <if test="identityCard != null">
+                identity_card = #{identityCard},
+            </if>
+            <if test="isdefault != null">
+              is_default = #{isdefault},
+           </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime},
+            </if>
+        </set>
+        where id = #{id}
+    </update>
+
+    <select id="getAddressCount" parameterType="java.lang.Long" resultType="java.lang.Integer">
+     select
+     count(1)
+     from mem_consignee_address
+     where user_id = #{userid}
+    </select>
+
+    <select id="getAddressList" parameterType="java.lang.Long"
+            resultType="com.lx.benefits.bean.entity.memconsigneeaddress.ConsigneeAdress">
+        select
+          id ,name, mobile as tel,user_id as userid, province_id as provinceid,province,
+          city_id as cityid,city, county_id as districtid, county as district, street_id as streetid,
+          street, address as info,zip_code as zipCode, identity_card as identityCard, is_default as isdefault,create_time createTime
+        from mem_consignee_address
+        where user_id = #{userid} and state = 1 ORDER by is_default DESC
+    </select>
+
+    <select id="selectAddressById" parameterType="java.lang.Long" resultType="com.lx.benefits.bean.entity.memconsigneeaddress.ConsigneeAdress">
+        select
+            id ,name, mobile as tel,user_id as userid, province_id as provinceid,province,
+            city_id as cityid,city, county_id as districtid, county as district, street_id as streetid,
+            street, address as info,zip_code as zipCode, identity_card as identityCard, is_default as isdefault,create_time createTime
+        from mem_consignee_address
+        where id = #{id} and state = 1
+    </select>
+
+    <select id="getUserDefaultAddress" parameterType="java.lang.Long"
+            resultType="com.lx.benefits.bean.entity.memconsigneeaddress.ConsigneeAdress">
+        select
+            id ,`name`, mobile as tel,user_id as userid, province_id as provinceid,province,
+            city_id as cityid,city, county_id as districtid, county as district, street_id as streetid,
+            street, address as info,zip_code as zipCode, identity_card as identityCard, is_default as isdefault,create_time createTime
+        from mem_consignee_address
+        where user_id = #{userid} and state = 1
+        and is_default =1
+        limit 1
+    </select>
+
+    <update id="delAddressList" parameterType="java.lang.Long">
+        update mem_consignee_address set state = 0 , update_time = now()
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+
+</mapper>

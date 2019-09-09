@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+		"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.order.RefundApplyMapper">
+
+	<sql id="page_where">
+		<where>
+			ra.is_delete = 0
+			<if test="itemOrderNumber!=null">
+				and ra.product_order_number =#{itemOrderNumber}
+			</if>
+			<if test="applyCreateTimeStart != null">
+				and ra.create_time >= #{applyCreateTimeStart}
+			</if>
+			<if test="applyCreateTimeEnd != null">
+				<![CDATA[
+			 and ra.create_time <= #{applyCreateTimeEnd}
+			]]>
+			</if>
+			<if test="sellerId!=null">
+				and seller.id=#{sellerId}
+			</if>
+			<if test="status !=null">
+				and ra.status = status
+			</if>
+		</where>
+	</sql>
+
+	<select id="selectRefundList" resultType="com.lx.benefits.bean.vo.order.RefundApplyListVO">
+		select
+			ra.id,
+			ra.`number` as refundApplyNumber,
+			seller.name as sellerName,
+			ra.seller_order_number as sellerOrderNumber,
+			ra.product_order_number as itemOrderNumber,
+			rap.type,
+			rap.name as reason,
+			os.ship_to_name as shipToName,
+			os.ship_to_mobile as shipToMobile,
+			(ra.real_money+ra.real_postage_money+ra.return_account_point)/100 as refundMoney,
+			ra.create_time as createTime,
+			ra.status,
+		  	ra.pics
+		from refund_apply ra
+		inner join supplier_info seller on ra.seller_id = seller.id
+		inner join refund_apply_problem rap on ra.refund_apply_problem_id = rap.id
+		inner join order_ship os on ra.seller_order_number = os.order_number
+		<include refid="page_where"/>
+		order by ra.create_time desc
+		<include refid="common.Pagination_Limit"/>
+	</select>
+
+	<select id="selectRefundCount" resultType="int">
+		select
+		count(1)
+		from refund_apply ra
+		inner join supplier_info seller on ra.seller_id = seller.id
+		inner join refund_apply_problem rap on ra.refund_apply_problem_id = rap.id
+		inner join order_ship os on ra.seller_order_number = os.order_number
+		<include refid="page_where"/>
+	</select>
+
+	<select id="selectUserRefundList" resultMap="BaseResultMap">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM
+		refund_apply
+		<where>
+			`ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}
+			<if test="refundApplyProblemId!=null" > AND `REFUND_APPLY_PROBLEM_ID`=#{refundApplyProblemId,jdbcType=INTEGER}</if>
+			AND `IS_DELETE`= 0
+		</where>
+		<include refid="common.Pagination_Limit"/>
+	</select>
+
+	<select id="selectUserRefundCount" resultType="int">
+		SELECT
+			count(1)
+		FROM
+			refund_apply
+		<where>
+			`ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}
+			<if test="refundApplyProblemId!=null" > AND `REFUND_APPLY_PROBLEM_ID`=#{refundApplyProblemId,jdbcType=INTEGER}</if>
+			AND `IS_DELETE`= 0
+		</where>
+	</select>
+
+
+	<select id="selectValidByProductOrderNumber" resultMap="BaseResultMap">
+		SELECT
+		<include refid="Base_Column_List" />
+		FROM
+		refund_apply
+		<where>
+				`PRODUCT_ORDER_NUMBER`=#{productOrderNumber,jdbcType=BIGINT}
+			AND `STATUS` in (1,2,3,5)
+			AND `IS_DELETE`= 0
+		</where>
+	</select>
+
+	<update id="updateRefundStatus2Cancel" >
+		UPDATE refund_apply
+		<set>
+			`STATUS`= 6,
+			`SUCCESS_TIME`=NOW()
+		</set>
+		<where>
+				id = #{id}
+			and	status in (1)
+		</where>
+	</update>
+
+	<update id="updateReturnStatus2Refund" >
+		UPDATE refund_apply
+		<set>
+			`STATUS`= 3
+		</set>
+		<where>
+			id = #{id}
+			and	status in (2)
+		</where>
+	</update>
+
+	<update id="updateReturnStatus2Succ">
+		UPDATE refund_apply
+		<set>
+			`STATUS`= 5
+		</set>
+		<where>
+			id = #{id}
+			and	status in (1,2,3)
+		</where>
+	</update>
+
+</mapper>
+

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.product.CategoryMapper">
+    <resultMap type="com.lx.benefits.bean.entity.product.CategoryEntity" id="CategoryResult">
+        <result property="id" column="id" />
+        <result property="name" column="name" />
+        <result property="nameEn" column="nameEn" />
+        <result property="parentId" column="parent_id" />
+        <result property="status" column="status" />
+        <result property="createdUser" column="created_user" />
+        <result property="createdTime" column="created_time" />
+        <result property="updatedUser" column="updated_user" />
+        <result property="updatedTime" column="updated_time" />
+    </resultMap>
+	
+	<sql id="selectCategoryVo">
+        select id, name,nameEn, parent_id, status, created_user, created_time, updated_user, updated_time,type from category
+    </sql>
+
+    <sql id="Example_Where_Clause">
+        <where>
+            <if test="id != null "> and id = #{id}</if>
+            <if test="name != null  and name != '' "> and name = #{name}</if>
+            <if test="parentId != null "> and parent_id = #{parentId}</if>
+            <if test="status != null "> and status = #{status}</if>
+            <if test="createdUser != null  and createdUser != '' "> and created_user = #{createdUser}</if>
+            <if test="createdTime != null "> and created_time = #{createdTime}</if>
+            <if test="updatedUser != null  and updatedUser != '' "> and updated_user = #{updatedUser}</if>
+            <if test="updatedTime != null "> and updated_time = #{updatedTime}</if>
+            <if test="idList != null ">
+                and id in
+                <foreach item="id" collection="idList" open="(" separator="," close=")">
+                    #{id}
+                </foreach>
+            </if>
+            <if test="ids != null and ids.size>0 ">
+                and parent_id in
+                <foreach item="id" collection="ids" open="(" separator="," close=")">
+                    #{id}
+                </foreach>
+            </if>
+            <if test=" categoryIdsList != null and categoryIdsList.size>0">
+                and id not in
+                <foreach item="cId" collection="categoryIdsList" open="(" separator="," close=")">
+                    #{cId}
+                </foreach>
+            </if>
+        </where>
+    </sql>
+	
+    <select id="selectList" parameterType="com.lx.benefits.bean.entity.product.CategoryEntity" resultMap="CategoryResult">
+        <include refid="selectCategoryVo"/>
+        <include refid="Example_Where_Clause"/>
+    </select>
+    
+    <select id="selectById" parameterType="Long" resultMap="CategoryResult">
+        <include refid="selectCategoryVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insert" parameterType="com.lx.benefits.bean.entity.product.CategoryEntity" useGeneratedKeys="true" keyProperty="id">
+        insert into category
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="name != null  and name != ''  ">name,</if>
+            <if test="nameEn != null  and nameEn != ''  ">nameEn,</if>
+			<if test="parentId != null  ">parent_id,</if>
+			<if test="status != null  ">status,</if>
+			<if test="createdUser != null  and createdUser != ''  ">created_user,</if>
+			<if test="createdTime != null  ">created_time,</if>
+			<if test="updatedUser != null  and updatedUser != ''  ">updated_user,</if>
+			<if test="updatedTime != null  ">updated_time,</if>
+            <if test="type != null  ">type,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="name != null  and name != ''  ">#{name},</if>
+            <if test="nameEn != null  and nameEn != ''  ">#{nameEn},</if>
+			<if test="parentId != null  ">#{parentId},</if>
+			<if test="status != null  ">#{status},</if>
+			<if test="createdUser != null  and createdUser != ''  ">#{createdUser},</if>
+			<if test="createdTime != null  ">#{createdTime},</if>
+			<if test="updatedUser != null  and updatedUser != ''  ">#{updatedUser},</if>
+			<if test="updatedTime != null  ">#{updatedTime},</if>
+            <if test="type != null  ">#{type},</if>
+         </trim>
+    </insert>
+	 
+    <update id="update" parameterType="com.lx.benefits.bean.entity.product.CategoryEntity">
+        update category
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null  and name != ''  ">name = #{name},</if>
+            <if test="nameEn != null  and nameEn != ''  ">nameEn = #{nameEn},</if>
+            <if test="parentId != null  ">parent_id = #{parentId},</if>
+            <if test="status != null  ">status = #{status},</if>
+            <if test="createdUser != null  and createdUser != ''  ">created_user = #{createdUser},</if>
+            <if test="createdTime != null  ">created_time = #{createdTime},</if>
+            <if test="updatedUser != null  and updatedUser != ''  ">updated_user = #{updatedUser},</if>
+            <if test="updatedTime != null  ">updated_time = #{updatedTime},</if>
+            <if test="type != null  ">type = #{type},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+	<delete id="deleteById" parameterType="Long">
+        delete from category where id = #{id}
+    </delete>
+	
+    <delete id="deleteByIds" parameterType="String">
+        delete from category where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="queryByParam" parameterType="com.lx.benefits.bean.entity.product.CategoryEntity" resultMap="CategoryResult">
+        <include refid="selectCategoryVo"/>
+        <include refid="Example_Where_Clause" />
+    </select>
+
+    <select id="selectCount" parameterType="com.lx.benefits.bean.entity.product.CategoryEntity" resultType="java.lang.Integer">
+        select count(*) from category
+        <include refid="Example_Where_Clause" />
+    </select>
+
+    <select id="selectPageList" parameterType="com.lx.benefits.bean.entity.product.CategoryEntity" resultMap="CategoryResult">
+        <include refid="selectCategoryVo"/>
+        <include refid="Example_Where_Clause" />
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+        <if test="start != null and limit != null">
+            LIMIT #{start}, #{limit}
+        </if>
+    </select>
+
+    <select id="queryByName" parameterType="String" resultMap="CategoryResult">
+        select * from category where name = #{name} limit 1
+    </select>
+
+    <select id="queryByNameAndPid" resultMap="CategoryResult">
+        select * from category where name = #{name} and parent_id = #{parentId} limit 1
+    </select>
+
+    <select id="selectByCategoryId" parameterType="com.lx.benefits.bean.entity.product.CategoryEntity" resultMap="CategoryResult">
+        select id,name,nameEn from  category
+        <where>
+            <if test="categoryId != null "> and ( parent_id = #{categoryId} or id = #{categoryId} )  </if>
+        </where>
+        GROUP BY name
+    </select>
+    <select id="getNameByIds" resultMap="CategoryResult">
+	    select  id, name, nameEn from category  where id in
+        <foreach item="id" collection="list" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+    <select id="getThreaLevelCategory" resultType="com.lx.benefits.bean.dto.admin.category.ThreaLevelCategory">
+    	select 	category1.id as  categoryId, category1.name as categoryName,
+    			category2.id as  categoryId2, category2.name as categoryName2,
+    			category3.id as  categoryId3, category3.name as categoryName3
+    	from category category3 left join category category2 on category3.parent_id=category2.id
+    		left join category category1 on category2.parent_id=category1.id
+    	where category3.id=#{categoryId} and category1.parent_id=0
+    </select>
+    <select id="getThreaLevelCategoryByThirdCatId" resultType="com.lx.benefits.bean.dto.admin.category.ThreaLevelCategory">
+    	select 	category1.id as  categoryId, category1.name as categoryName,
+    			category2.id as  categoryId2, category2.name as categoryName2,
+    			category3.id as  categoryId3, category3.name as categoryName3
+    	from category_third
+    		inner join category category3 on category3.id=category_third.mapping_id
+    		inner join category category2 on category3.parent_id=category2.id
+    		inner join category category1 on category2.parent_id=category1.id
+    	where category_third.cat_id=#{catId} and supplier_id=#{supplierId}
+    </select>
+    <resultMap id="CategoryTreeMap" type="com.lx.benefits.bean.vo.product.CategoryTree">
+    	<result column="categoryId" property="categoryId"/>
+    	<result column="categoryName" property="categoryName"/>
+    	<result column="nameEn3" property="nameEn"/>
+    	<collection property="childs" ofType="com.lx.benefits.bean.vo.product.CategoryTree">
+    		<result column="categoryId2" property="categoryId"/>
+    		<result column="categoryName2" property="categoryName"/>
+    		<result column="nameEn3" property="nameEn"/>
+    		<result column="parentId" property="parentId"/>
+    		<result column="parentId2" property="parentId"/>
+    		<collection property="childs" ofType="com.lx.benefits.bean.vo.product.CategoryTree">
+    			<result column="categoryId3" property="categoryId"/>
+    			<result column="categoryName3" property="categoryName"/>
+    			<result column="nameEn3" property="nameEn"/>
+    			<result column="parentId3" property="parentId"/>
+    		</collection>
+    	</collection>
+    </resultMap>
+    <select id="getCategoryTrees" resultMap="CategoryTreeMap">
+    	select 	category1.id as  categoryId, category1.name as categoryName, category1.nameEn, category1.parent_id as parentId,
+    			category2.id as  categoryId2, category2.name as categoryName2, category1.nameEn as nameEn2, category2.parent_id as parentId2,
+    			category3.id as  categoryId3, category3.name as categoryName3, category1.nameEn as nameEn3, category3.parent_id as parentId3
+    	from category category1
+    		left join category category2 on category2.parent_id=category1.id
+    		left join category category3 on category3.parent_id=category2.id
+    	where category1.parent_id=0
+    </select>
+</mapper>

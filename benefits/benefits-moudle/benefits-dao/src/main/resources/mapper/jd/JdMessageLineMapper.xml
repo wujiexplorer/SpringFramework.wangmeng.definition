@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.jd.JdMessageLineMapper">
+    <resultMap type="com.lx.benefits.bean.dto.jd.JdMessageLine" id="jdMessageLine">
+        <id column="id" property="id"/>
+        <result column="message_id" property="messageId"/>
+        <result column="message_type" property="messageType"/>
+        <result column="message_time" property="messageTime"/>
+        <result column="message_content" property="messageContent"/>
+        <result column="status" property="status"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+        <result column="isDel" property="isDel"/>
+    </resultMap>
+
+    <sql id="columns">
+		id,message_id,message_type,message_time,message_content,status,create_time,update_time
+	</sql>
+
+    <insert id="batchInsert">
+        INSERT INTO ent_jd_message_line(
+        message_id,message_type,message_time,message_content,status,create_time,update_time,isDel
+        )values
+        <foreach collection="list" item="item" index="index" separator=",">
+            (
+            #{item.messageId},#{item.messageType},#{item.messageTime},#{item.messageContent},#{item.status},#{item.createTime},#{item.updateTime},0
+            )
+        </foreach>
+    </insert>
+
+    <update id="updateByJdMessageId" parameterType="com.lx.benefits.bean.dto.jd.JdMessageLine">
+     UPDATE ent_jd_message_line
+     SET status=#{status}
+     WHERE message_id=#{messageId}
+    </update>
+    <update id="deleteByObject" parameterType="com.lx.benefits.bean.dto.jd.JdMessageLine">
+        update ent_jd_message_line set isDel = 1
+        WHERE message_id=#{messageId}
+    </update>
+
+    <select id="getMessageList" parameterType="com.lx.benefits.bean.dto.jd.JdMessageLineReq" resultMap="jdMessageLine" >
+        select * from ent_jd_message_line
+        where isDel = 0
+        <if test="id != null">
+          id = #{id}
+        </if>
+        <if test="messageId != null">
+            message_id = #{messageId}
+        </if>
+        <if test="messageType != null">
+            message_type = #{messageType}
+        </if>
+        <if test="status != null">
+            status = #{status}
+        </if>
+        limit #{page},#{pageSize}
+    </select>
+    <select id="getMessageListCount" parameterType="com.lx.benefits.bean.dto.jd.JdMessageLineReq" resultType="java.lang.Integer" >
+        select count(1) from ent_jd_message_line
+        where isDel = 0
+        <if test="id != null">
+            id = #{id}
+        </if>
+        <if test="messageId != null">
+            message_id = #{messageId}
+        </if>
+        <if test="messageType != null">
+            message_type = #{messageType}
+        </if>
+        <if test="status != null">
+            status = #{status}
+        </if>
+    </select>
+
+    <select id="getMessage" resultMap="jdMessageLine" >
+        select * from ent_jd_message_line where  id = #{id}
+    </select>
+
+</mapper>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.agent.AgentAccountCheckingRecorderMapper">
+  <resultMap id="RecorderBeanMap" type="com.lx.benefits.bean.vo.agent.AgentCheckingBean">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="agent_type" jdbcType="INTEGER" property="agentType" />
+    <result column="agent_name" jdbcType="VARCHAR" property="agentName" />
+    <result column="agent_identity_id" jdbcType="VARCHAR" property="agentIdentityId" />
+    <result column="agent_register_address" jdbcType="VARCHAR" property="agentRegisterAddress" />
+    <result column="certify_image_urls" jdbcType="VARCHAR" property="certifyImageUrls" />
+    <result column="contact_user" jdbcType="VARCHAR" property="contactUser" />
+    <result column="contact_phone" jdbcType="VARCHAR" property="contactPhone" />
+    <result column="contact_email" jdbcType="VARCHAR" property="contactEmail" />
+    <result column="add_user" jdbcType="VARCHAR" property="addUser" />
+    <result column="add_time" jdbcType="TIMESTAMP" property="addTime" />
+    <result column="check_status" jdbcType="INTEGER" property="checkStatus" />
+    <result column="check_user" jdbcType="VARCHAR" property="checkUser" />
+    <result column="check_time" jdbcType="TIMESTAMP" property="checkTime" />
+    <result column="login_name" jdbcType="VARCHAR" property="loginName" />
+    <result column="check_remark" jdbcType="VARCHAR" property="checkRemark" />
+    <result column="contract_number" jdbcType="VARCHAR" property="contractNumber" />
+    <result column="parent_id" jdbcType="INTEGER" property="parentId" />
+    <result column="bind_time" jdbcType="TIMESTAMP" property="bindTime" />
+    <result column="registered_type" jdbcType="VARCHAR" property="registeredType" />
+  </resultMap>
+  <select id="selectAgentCheckingBean" resultMap="RecorderBeanMap">
+    select  recorder.id, recorder.agent_name, recorder.agent_type, recorder.contact_user, recorder.contact_phone, recorder.add_user,
+  	 		recorder.add_time, recorder.check_status, recorder.check_user, recorder.check_time, recorder.login_name,
+  	 		recorder.check_remark, recorder.contract_number, recorder.bind_time, recorder.registered_type,
+  	 		recorder.agent_identity_id, recorder.agent_register_address, recorder.certify_image_urls,recorder.contact_email,
+  	 		agentAccount.agent_name as parentAgentName, recorder.parent_id
+  	from agent_account_checking_recorder recorder
+  		 left join agent_account_info agentAccount on recorder.parent_id=agentAccount.id
+    where recorder.id=#{agentId}
+  </select>
+  <select id="selectWithParentAgentName" resultMap="RecorderBeanMap">
+  	select  recorder.id, recorder.agent_name, recorder.agent_type, recorder.contact_user, recorder.contact_phone, recorder.add_user,
+  	 		recorder.add_time, recorder.check_status, recorder.check_user, recorder.check_time, recorder.login_name,
+  	 		recorder.check_remark, recorder.contract_number, recorder.bind_time, recorder.registered_type, 
+  	 		agentAccount.agent_name as parentAgentName
+  	from agent_account_checking_recorder recorder
+  		 left join agent_account_info agentAccount on recorder.parent_id=agentAccount.id
+    <where>
+    	<if test="checked!=null and checked==0">
+    		and recorder.check_status=1
+   		</if>
+   		<if test="checked!=null and checked!=0">
+   			and recorder.check_status!=1
+    	</if>
+    	<if test="agentName!=null">
+    		and recorder.agent_name like concat('%',#{agentName},'%')
+    	</if>
+    	<if test="checkStatus!=null">
+    		and recorder.check_status=#{checkStatus}
+    	</if>
+    </where>
+    order by recorder.check_time desc, recorder.id desc
+    <if test="pageBean!=null">
+    	limit #{pageBean.offset},#{pageBean.pageSize} 
+    </if>
+  </select>
+</mapper>

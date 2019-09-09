@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.ent.YianOrderItemMapper">
+	<resultMap type="com.lx.benefits.bean.entity.ent.YianOrderItem" id="yianOrderItem">
+				<id column="id" property="id"/>
+				<result column="order_code" property="orderCode"/>
+				<result column="sku" property="sku"/>
+				<result column="item_name" property="itemName"/>
+				<result column="count" property="count"/>
+				<result column="price" property="price"/>
+				<result column="total" property="total"/>
+				<result column="sup_name" property="supName"/>
+				<result column="create_time" property="createTime"/>
+	</resultMap>
+	
+	<sql id="columns">
+		id,order_code,sku,item_name,count,price,total,sup_name,create_time
+	</sql>
+
+	<sql id="Example_Where_Clause">
+		<where>
+			<if test="orderCode != null  and orderCode != '' "> and order_code = #{orderCode}</if>
+			<if test="sku != null  and sku != '' "> and sku = #{sku}</if>
+			<if test="supName != null  and supName != '' "> and sup_name = #{supName}</if>
+			<if test="itemName != null  and itemName != '' "> and item_name = #{itemName}</if>
+		</where>
+	</sql>
+
+	<insert id="batchInsert" parameterType="java.util.List">
+		INSERT INTO ent_yian_order_item
+		(order_code,sku,item_name,count,price,total,sup_name,create_time)
+		VALUE
+		<foreach collection="list" separator="," item="item">
+			(
+			#{item.orderCode},
+			#{item.sku},
+			#{item.itemName},
+			#{item.count},
+			#{item.price},
+			#{item.total},
+			#{item.supName},
+			#{item.createTime}
+			)
+		</foreach>
+	</insert>
+
+	<delete id="deleteByParam" parameterType="java.util.Map">
+		delete from ent_yian_order_item
+		<where>
+			<if test=" orderCodes != null ">
+				order_code in
+				<foreach collection="orderCodes" item="orderCode" open="(" close=")" separator="," >
+					${orderCode}
+				</foreach>
+			</if>
+		</where>
+	</delete>
+
+	<select id="queryByObject" resultMap="yianOrderItem">
+		SELECT
+		<include refid="columns"/>
+		from ent_yian_order_item
+		<include refid="Example_Where_Clause"/>
+	</select>
+
+</mapper>

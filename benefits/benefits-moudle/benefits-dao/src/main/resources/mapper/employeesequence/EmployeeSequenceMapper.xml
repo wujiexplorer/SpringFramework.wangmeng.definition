@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.employeesequence.EmployeeSequenceMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.employeesequence.EmployeeSequence">
+    <id column="employeeId" jdbcType="BIGINT" property="employeeId" />
+  </resultMap>
+
+  <insert id="batchInsert" parameterType="java.util.List" useGeneratedKeys="true" keyProperty="employeeId">
+    INSERT INTO `employee_sequence` () VALUES
+    <foreach collection="employeeSequenceList" item="employeeSequence" index="index" separator=",">
+      ()
+    </foreach>
+  </insert>
+
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.employeesequence.EmployeeSequence" useGeneratedKeys="true" keyProperty="employeeId">
+    INSERT INTO `employee_sequence` () VALUES ()
+  </insert>
+  
+</mapper>

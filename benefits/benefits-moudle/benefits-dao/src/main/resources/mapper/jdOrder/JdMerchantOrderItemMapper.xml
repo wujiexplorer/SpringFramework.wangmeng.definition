@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.jdOrder.JdMerchantOrderItemMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.jdOrder.JdMerchantOrderItem">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="order_id" jdbcType="VARCHAR" property="orderId" />
+    <result column="sku" jdbcType="VARCHAR" property="sku" />
+    <result column="num" jdbcType="INTEGER" property="num" />
+    <result column="category" jdbcType="BIGINT" property="category" />
+    <result column="price" jdbcType="DOUBLE" property="price" />
+    <result column="name" jdbcType="VARCHAR" property="name" />
+    <result column="tax" jdbcType="DOUBLE" property="tax" />
+    <result column="tax_price" jdbcType="DOUBLE" property="taxPrice" />
+    <result column="naked_price" jdbcType="DOUBLE" property="nakedPrice" />
+    <result column="type" property="type" />
+    <result column="oid" jdbcType="BIGINT" property="oid" />
+    <result column="is_delete" jdbcType="BIT" property="isDelete" />
+    <result column="remote_region_freight" jdbcType="DOUBLE" property="remoteRegionFreight" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, order_id, sku, num, category, price, name, tax, tax_price, naked_price, type, 
+    oid, is_delete, remote_region_freight, create_time, create_user, update_time, update_user
+  </sql>
+  <select id="getOrderItemById" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from ent_jd_merchant_order_item
+    where order_id = #{orderId} and is_delete = 0
+  </select>
+  <update id="delete" parameterType="java.lang.Long">
+    update ent_jd_merchant_order_item set is_delete = 1
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.jdOrder.JdMerchantOrderItem">
+    insert into ent_jd_merchant_order_item
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="orderId != null">
+        order_id,
+      </if>
+      <if test="sku != null">
+        sku,
+      </if>
+      <if test="num != null">
+        num,
+      </if>
+      <if test="category != null">
+        category,
+      </if>
+      <if test="price != null">
+        price,
+      </if>
+      <if test="name != null">
+        name,
+      </if>
+      <if test="tax != null">
+        tax,
+      </if>
+      <if test="taxPrice != null">
+        tax_price,
+      </if>
+      <if test="nakedPrice != null">
+        naked_price,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="oid != null">
+        oid,
+      </if>
+      <if test="isDelete != null">
+        is_delete,
+      </if>
+      <if test="remoteRegionFreight != null">
+        remote_region_freight,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="createUser != null">
+        create_user,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="orderId != null">
+        #{orderId,jdbcType=VARCHAR},
+      </if>
+      <if test="sku != null">
+        #{sku,jdbcType=VARCHAR},
+      </if>
+      <if test="num != null">
+        #{num,jdbcType=INTEGER},
+      </if>
+      <if test="category != null">
+        #{category,jdbcType=BIGINT},
+      </if>
+      <if test="price != null">
+        #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="name != null">
+        #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="tax != null">
+        #{tax,jdbcType=DOUBLE},
+      </if>
+      <if test="taxPrice != null">
+        #{taxPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="nakedPrice != null">
+        #{nakedPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="type != null">
+        #{type},
+      </if>
+      <if test="oid != null">
+        #{oid,jdbcType=BIGINT},
+      </if>
+      <if test="isDelete != null">
+        #{isDelete,jdbcType=BIT},
+      </if>
+      <if test="remoteRegionFreight != null">
+        #{remoteRegionFreight,jdbcType=DOUBLE},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="update" parameterType="com.lx.benefits.bean.entity.jdOrder.JdMerchantOrderItem">
+    update ent_jd_merchant_order_item
+    <set>
+      <if test="orderId != null">
+        order_id = #{orderId,jdbcType=VARCHAR},
+      </if>
+      <if test="sku != null">
+        sku = #{sku,jdbcType=VARCHAR},
+      </if>
+      <if test="num != null">
+        num = #{num,jdbcType=INTEGER},
+      </if>
+      <if test="category != null">
+        category = #{category,jdbcType=BIGINT},
+      </if>
+      <if test="price != null">
+        price = #{price,jdbcType=DOUBLE},
+      </if>
+      <if test="name != null">
+        name = #{name,jdbcType=VARCHAR},
+      </if>
+      <if test="tax != null">
+        tax = #{tax,jdbcType=DOUBLE},
+      </if>
+      <if test="taxPrice != null">
+        tax_price = #{taxPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="nakedPrice != null">
+        naked_price = #{nakedPrice,jdbcType=DOUBLE},
+      </if>
+      <if test="type != null">
+        type = #{type},
+      </if>
+      <if test="oid != null">
+        oid = #{oid,jdbcType=BIGINT},
+      </if>
+      <if test="isDelete != null">
+        is_delete = #{isDelete,jdbcType=BIT},
+      </if>
+      <if test="remoteRegionFreight != null">
+        remote_region_freight = #{remoteRegionFreight,jdbcType=DOUBLE},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createUser != null">
+        create_user = #{createUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

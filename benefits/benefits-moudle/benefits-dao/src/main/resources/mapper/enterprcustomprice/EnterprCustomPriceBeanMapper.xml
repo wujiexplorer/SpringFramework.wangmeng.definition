@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.enterprcustomprice.EnterprCustomPriceMapper">
+	<select id="countPCFeatureList" resultType="int">
+		select count(*)
+		from enterpr_custom_price customPrice 
+			inner join sku on customPrice.goodsId=sku.id
+			inner join product on product.spu_code=sku.spu_code
+		where customPrice.enterprId=#{enterprId}
+	</select>
+	<select id="getPCFeatureListByPage" resultType="com.lx.benefits.bean.entity.product.SkuEntity">
+		select customPrice.goodsPrice as goodsPrice, product.spu_code as spuCode, customPrice.goodsId as id,
+			IFNULL(sku.goods_name,product.goods_name) as goodsName, product.goods_name_en as goodsNameEn,
+			IFNULL(sku.goods_image,product.goods_image) as goodsImage
+		from enterpr_custom_price customPrice
+			inner join sku on customPrice.goodsId=sku.id
+			inner join product on product.spu_code=sku.spu_code
+		where customPrice.enterprId=#{enterprId}
+		limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+</mapper>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.operation.TopicMapper">
+    <resultMap type="com.lx.benefits.bean.entity.operation.TopicEntity" id="TopicResult">
+        <result property="id" column="id" />
+        <result property="name" column="name" />
+        <result property="description" column="description" />
+        <result property="status" column="status" />
+        <result property="createdUser" column="created_user" />
+        <result property="createdTime" column="created_time" />
+        <result property="updateUser" column="update_user" />
+        <result property="updatedTime" column="updated_time" />
+        <result property="num" column="num" />
+        <result property="sortNum" column="sort_num" />
+    </resultMap>
+	
+	<sql id="selectTopicVo">
+        select id, name,sort_num, description, status, created_user, created_time, update_user, updated_time from topic
+    </sql>
+
+    <sql id="Example_Where_Clause">
+        <where>
+            <if test="id != null and id != ''"> and id = #{id,jdbcType=BIGINT}</if>
+            <if test="name != null  and name != '' "> and name like concat('%',#{name},'%')</if>
+            <if test="sortNum != null "> and sort_num = #{sortNum}</if>
+            <if test="description != null  and description != '' "> and description = #{description}</if>
+            <if test="status != null "> and status = #{status}</if>
+            <if test="createdUser != null  and createdUser != '' "> and created_user = #{createdUser}</if>
+            <if test="createdTime != null "> and created_time = #{createdTime}</if>
+            <if test="updateUser != null  and updateUser != '' "> and update_user = #{updateUser}</if>
+            <if test="updatedTime != null "> and updated_time = #{updatedTime}</if>
+        </where>
+    </sql>
+
+    <sql id="Page_Where_Clause">
+        <where>
+            <if test="id != null and id != ''"> and topic.id = #{id,jdbcType=BIGINT}</if>
+            <if test="name != null  and name != '' "> and topic.name like concat('%',#{name},'%')</if>
+            <if test="status != null "> and status = #{status}</if>
+        </where>
+    </sql>
+	
+    <select id="selectList" parameterType="com.lx.benefits.bean.entity.operation.TopicEntity" resultMap="TopicResult">
+        <include refid="selectTopicVo"/>
+        <include refid="Example_Where_Clause"/>
+    </select>
+
+    <select id="selectListBySpu" parameterType="java.lang.String" resultMap="TopicResult">
+        select DISTINCT a.id,a.name,a.sort_num,a.description from topic a,product_topic b
+        where a.status = 1 and a.id = b.topic_id and b.spu_code = #{spu}
+    </select>
+    
+    <select id="selectById" parameterType="Integer" resultMap="TopicResult">
+        <include refid="selectTopicVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insert" parameterType="com.lx.benefits.bean.entity.operation.TopicEntity" useGeneratedKeys="true" keyProperty="id">
+        insert into topic
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="name != null  and name != ''  ">name,</if>
+            <if test="sortNum != null  and sortNum != ''  ">sort_num,</if>
+			<if test="description != null  and description != ''  ">description,</if>
+			<if test="status != null  ">status,</if>
+			<if test="createdUser != null  and createdUser != ''  ">created_user,</if>
+			<if test="createdTime != null  ">created_time,</if>
+			<if test="updateUser != null  and updateUser != ''  ">update_user,</if>
+			<if test="updatedTime != null  ">updated_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="name != null  and name != ''  ">#{name},</if>
+            <if test="sortNum != null  and sortNum != ''  ">#{sortNum},</if>
+			<if test="description != null  and description != ''  ">#{description},</if>
+			<if test="status != null  ">#{status},</if>
+			<if test="createdUser != null  and createdUser != ''  ">#{createdUser},</if>
+			<if test="createdTime != null  ">#{createdTime},</if>
+			<if test="updateUser != null  and updateUser != ''  ">#{updateUser},</if>
+			<if test="updatedTime != null  ">#{updatedTime},</if>
+         </trim>
+    </insert>
+	 
+    <update id="update" parameterType="com.lx.benefits.bean.entity.operation.TopicEntity">
+        update topic
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="name != null  and name != ''  ">name = #{name},</if>
+            <if test="sortNum != null  and sortNum != ''  ">sort_num = #{sortNum},</if>
+            <if test="description != null  and description != ''  ">description = #{description},</if>
+            <if test="status != null  ">status = #{status},</if>
+            <if test="createdUser != null  and createdUser != ''  ">created_user = #{createdUser},</if>
+            <if test="createdTime != null  ">created_time = #{createdTime},</if>
+            <if test="updateUser != null  and updateUser != ''  ">update_user = #{updateUser},</if>
+            <if test="updatedTime != null  ">updated_time = #{updatedTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+	<delete id="deleteById" parameterType="Integer">
+        delete from topic where id = #{id}
+    </delete>
+	
+    <delete id="deleteByIds" parameterType="String">
+        delete from topic where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="queryByParam" parameterType="com.lx.benefits.bean.entity.operation.TopicEntity" resultMap="TopicResult">
+        <include refid="selectTopicVo"/>
+        <include refid="Example_Where_Clause" />
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+    </select>
+
+    <select id="selectCount" parameterType="com.lx.benefits.bean.entity.operation.TopicEntity" resultType="java.lang.Integer">
+        select count(*) from topic as topic
+        <include refid="Page_Where_Clause" />
+    </select>
+
+    <select id="selectPageList" parameterType="com.lx.benefits.bean.entity.operation.TopicEntity" resultMap="TopicResult">
+        select topic.id, topic.name, topic.description, count(pt.spu_code) as num 
+        from topic as topic 
+        	left join product_topic as pt on topic.id = pt.topic_id
+        <include refid="Page_Where_Clause" />
+        group by topic.id
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+        <if test="start != null and limit != null">
+            LIMIT #{start}, #{limit}
+        </if>
+    </select>
+    <select id="getNameByIds" resultMap="TopicResult">
+	    select  id, name from topic  where id in
+        <foreach item="id" collection="list" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </select>
+</mapper>

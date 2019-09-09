@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.order.RefundPackageMapper">
+
+
+
+	
+	<select id="selectLogisticsByRefundNumbers" resultMap="BaseResultMap">
+		SELECT
+			<include refid="Base_Column_List" />
+		FROM 
+			refund_package
+		<where>
+		  <foreach collection="refundApplyNumberList" item="refundApplyNumber" open=" REFUND_APPLY_NUMBER in (" close=")" separator=",">
+			  #{refundApplyNumber}
+		  </foreach>
+		  AND `IS_DELETE`= 0
+		</where>
+	</select>
+    
+	
+</mapper>
+

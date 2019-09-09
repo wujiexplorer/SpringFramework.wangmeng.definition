@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.ent.YianOrderInfoMapper">
+    <resultMap type="com.lx.benefits.bean.entity.ent.YianOrderInfo" id="yianOrderInfo">
+        <id column="id" property="id"/>
+        <result column="order_code" property="orderCode"/>
+        <result column="org_code" property="orgCode"/>
+        <result column="ee_no" property="eeNo"/>
+        <result column="ee_name" property="eeName"/>
+        <result column="receiver_name" property="receiverName"/>
+        <result column="receiver_address" property="receiverAddress"/>
+        <result column="receiver_mobile" property="receiverMobile"/>
+        <result column="post_code" property="postCode"/>
+        <result column="total" property="total"/>
+        <result column="order_type" property="orderType"/>
+        <result column="order_status" property="orderStatus"/>
+        <result column="delivery_company" property="deliveryCompany"/>
+        <result column="delivery_company_code" property="deliveryCompanyCode"/>
+        <result column="delivery_code" property="deliveryCode"/>
+        <result column="virtual_card_no" property="virtualCardNo"/>
+        <result column="virtual_password" property="virtualPassword"/>
+        <result column="virtual_intro" property="virtualIntro"/>
+        <result column="create_time" property="createTime"/>
+        <result column="update_time" property="updateTime"/>
+    </resultMap>
+
+    <sql id="columns">
+		id,order_code,org_code,ee_no,ee_name,receiver_name,receiver_address,receiver_mobile,post_code,total,order_type,order_status,delivery_company,delivery_company_code,delivery_code,virtual_card_no,virtual_password,virtual_intro,create_time,update_time
+	</sql>
+
+    <sql id="Example_Where_Clause">
+        <where>
+            <if test="orderCode != null  and orderCode != '' "> and order_code = #{orderCode}</if>
+            <if test="eeNo != null  and eeNo != '' "> and ee_no = #{eeNo}</if>
+            <if test="eeName != null  and eeName != '' "> and ee_name = #{eeName}</if>
+            <if test="receiverName != null  and receiverName != '' "> and receiver_name = #{receiverName}</if>
+            <if test="receiverMobile != null  and receiverMobile != '' "> and receiver_mobile = #{receiverMobile}</if>
+        </where>
+    </sql>
+
+    <insert id="batchInsert" parameterType="java.util.List">
+        INSERT INTO ent_yian_order_info
+        (order_code,org_code,ee_no,ee_name,receiver_name,receiver_address,receiver_mobile,post_code,total,order_type,order_status,delivery_company,delivery_company_code,delivery_code,virtual_card_no,virtual_password,virtual_intro,create_time,update_time)
+        VALUE
+        <foreach collection="list" separator="," item="item">
+            (
+            #{item.orderCode},
+            #{item.orgCode},
+            #{item.eeNo},
+            #{item.eeName},
+            #{item.receiverName},
+            #{item.receiverAddress},
+            #{item.receiverMobile},
+            #{item.postCode},
+            #{item.total},
+            #{item.orderType},
+            #{item.orderStatus},
+            #{item.deliveryCompany},
+            #{item.deliveryCompanyCode},
+            #{item.deliveryCode},
+            #{item.virtualCardNo},
+            #{item.virtualPassword},
+            #{item.virtualIntro},
+            #{item.createTime},
+            #{item.updateTime}
+            )
+        </foreach>
+
+
+    </insert>
+
+    <update id="batchUpdate" parameterType="java.util.List">
+
+        <foreach collection="list" item="item" index="index" open="" close="" separator=";">
+            update ent_yian_order_info
+            <set>
+                org_code= #{item.orgCode},
+                ee_no= #{item.eeNo},
+                ee_name= #{item.eeName},
+                receiver_name= #{item.receiverName},
+                receiver_address= #{item.receiverAddress},
+                receiver_mobile= #{item.receiverMobile},
+                post_code= #{item.postCode},
+                update_time = #{item.updateTime},
+                total=#{item.total}
+            </set>
+            where id = ${item.id}
+        </foreach>
+
+    </update>
+
+    <update id="batchDelivery" parameterType="java.util.List">
+
+        <foreach collection="list" item="item" index="index" open="" close="" separator=";">
+            update ent_yian_order_info
+            <set>
+                order_type= #{item.orderType},
+                order_status = #{item.orderStatus},
+                delivery_company= #{item.deliveryCompany},
+                delivery_company_code= #{item.deliveryCompanyCode},
+                delivery_code = #{item.deliveryCode},
+                virtual_card_no = #{item.virtualCardNo},
+                virtual_password = #{item.virtualPassword},
+                virtual_intro = #{item.virtualIntro},
+                update_time = #{item.updateTime}
+            </set>
+            where id = ${item.id}
+        </foreach>
+
+    </update>
+
+    <select id="selectCount" resultType="java.lang.Integer">
+        select count(*) from ent_yian_order_info
+        <include refid="Example_Where_Clause"/>
+    </select>
+
+    <select id="selectPageList" resultMap="yianOrderInfo">
+        select
+        <include refid="columns"/>
+        from ent_yian_order_info
+        <include refid="Example_Where_Clause"/>
+        <if test="start != null and pageSize != null">
+            LIMIT #{start}, #{pageSize}
+        </if>
+    </select>
+
+    <select id="queryByParam"  resultMap="yianOrderInfo">
+        select
+        <include refid="columns"/>
+        from ent_yian_order_info
+        <where>
+            <if test=" orderCodes != null ">
+                order_code in
+                <foreach collection="orderCodes" item="orderCode" open="(" close=")" separator="," >
+                    ${orderCode}
+                </foreach>
+            </if>
+        </where>
+    </select>
+
+    <select id="queryUniqueByObject"  resultMap="yianOrderInfo">
+        select
+        <include refid="columns"/>
+        from ent_yian_order_info
+        <include refid="Example_Where_Clause"/>
+    </select>
+
+</mapper>

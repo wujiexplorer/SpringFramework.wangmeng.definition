@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.employeeuserinfo.EmployeeUserInfoMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfo">
+    <id column="employeeId" jdbcType="BIGINT" property="employeeId" />
+    <result column="enterprId" jdbcType="BIGINT" property="enterprId" />
+    <result column="loginName" jdbcType="VARCHAR" property="loginName" />
+    <result column="password" jdbcType="CHAR" property="password" />
+    <result column="secret" jdbcType="CHAR" property="secret" />
+    <result column="employeeNo" jdbcType="VARCHAR" property="employeeNo" />
+    <result column="employeeName" jdbcType="VARCHAR" property="employeeName" />
+    <result column="leaveStatus" jdbcType="TINYINT" property="leaveStatus" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
+    <result column="inductionTime" jdbcType="INTEGER" property="inductionTime" />
+    <result column="position" jdbcType="VARCHAR" property="position" />
+    <result column="isDeleted" jdbcType="TINYINT" property="isDeleted" />
+    <result column="created" jdbcType="INTEGER" property="created" />
+    <result column="updated" jdbcType="INTEGER" property="updated" />
+    <result column="leaveTime" jdbcType="INTEGER" property="leaveTime" />
+    <result column="grain_id" jdbcType="BIGINT" property="grainId" />
+    <result column="vouchers_num" jdbcType="VARCHAR" property="vouchersNum" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="and">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    employeeId, enterprId, loginName, password, secret, employeeNo, employeeName, leaveStatus, sex, mobile, 
+    email, DATE_FORMAT(birthday,'%Y-%m-%d') as birthday, FROM_UNIXTIME(inductionTime,'%Y-%m-%d') as inductionTime, `position`, isDeleted, created, updated,leaveTime,grain_id,vouchers_num
+  </sql>
+  <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from  employee_user_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="start != null and pageSize != null">
+      LIMIT #{start}, #{pageSize}
+    </if>
+  </select>
+
+
+  <select id="selectByExampleList" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from  employee_user_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+  </select>
+
+
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from  employee_user_info
+    where employeeId = #{employeeId,jdbcType=BIGINT} LIMIT 1
+  </select>
+
+  <select id="findEmployeeUserInfosByEnterprId" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from  employee_user_info
+    where enterprId = #{enterprId,jdbcType=BIGINT}
+  </select>
+
+  <select id="findEmployeeUserInfosByName" parameterType="java.util.Map" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from  employee_user_info
+    where 1=1
+    <if test="enterprId != null">
+      and enterprId = #{enterprId,jdbcType=BIGINT}
+    </if>
+    <if test="employeeNo != null and employeeNo != ''">
+      and employeeNo = #{employeeNo,jdbcType=VARCHAR}
+    </if>
+  </select>
+
+  <select id="fetchOneByExample" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfoExample" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from employee_user_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    LIMIT 1
+  </select>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from  employee_user_info
+    where employeeId = #{employeeId,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfoExample">
+    delete from  employee_user_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfo" useGeneratedKeys="true" keyProperty="employeeId">
+    insert into  employee_user_info (employeeId, enterprId, loginName, password, secret, employeeNo, sex, employeeName, leaveStatus, mobile, email, birthday, inductionTime, `position`, created, updated,leaveTime)
+    VALUES (#{employeeId,jdbcType=BIGINT}, #{enterprId,jdbcType=BIGINT}, #{loginName,jdbcType=VARCHAR}, 
+      #{password,jdbcType=CHAR}, #{secret,jdbcType=CHAR}, #{employeeNo,jdbcType=VARCHAR}, #{sex,jdbcType=TINYINT}, #{employeeName,jdbcType=VARCHAR}, #{leaveStatus,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{birthday,jdbcType=VARCHAR}, #{inductionTime,jdbcType=INTEGER}, #{position,jdbcType=VARCHAR}, UNIX_TIMESTAMP(NOW()), UNIX_TIMESTAMP(NOW()),UNIX_TIMESTAMP(NOW())
+      )
+  </insert>
+
+
+
+  <!-- 批量插入员工信息 -->
+  <insert id="batchInsert" parameterType="java.util.List" useGeneratedKeys="true" keyProperty="employeeId">
+    INSERT INTO employee_user_info(employeeId, enterprId, loginName, password, secret, employeeNo, sex, employeeName, leaveStatus, mobile, email, birthday, inductionTime, `position`, created, updated,leaveTime) VALUES
+    <foreach collection="employeeUserInfoList" item="employeeUserInfo" index="index" separator=",">
+      (#{employeeUserInfo.employeeId}, #{employeeUserInfo.enterprId}, #{employeeUserInfo.loginName}, #{employeeUserInfo.password}, #{employeeUserInfo.secret}, #{employeeUserInfo.employeeNo}, #{employeeUserInfo.sex}, #{employeeUserInfo.employeeName}, #{employeeUserInfo.leaveStatus}, #{employeeUserInfo.mobile}, #{employeeUserInfo.email}, #{employeeUserInfo.birthday}, #{employeeUserInfo.inductionTime}, #{employeeUserInfo.position}, UNIX_TIMESTAMP(NOW()), UNIX_TIMESTAMP(NOW()),UNIX_TIMESTAMP(NOW()))
+    </foreach>
+  </insert>
+  
+  
+  <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfo">
+    insert into  employee_user_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="employeeId != null">
+        employeeId,
+      </if>
+      <if test="enterprId != null">
+        enterprId,
+      </if>
+      <if test="loginName != null">
+        loginName,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="secret != null">
+        secret,
+      </if>
+      <if test="employeeNo != null">
+        employeeNo,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="employeeName != null">
+        employeeName,
+      </if>
+      <if test="leaveStatus != null">
+        leaveStatus,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="birthday != null">
+        birthday,
+      </if>
+      <if test="inductionTime != null">
+        inductionTime,
+      </if>
+      <if test="position != null">
+        `position`,
+      </if>
+      <if test="isDeleted != null">
+        isDeleted,
+      </if>
+      created, updated,leaveTime
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="employeeId != null">
+        #{employeeId,jdbcType=BIGINT},
+      </if>
+      <if test="enterprId != null">
+        #{enterprId,jdbcType=BIGINT},
+      </if>
+      <if test="loginName != null">
+        #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=CHAR},
+      </if>
+      <if test="secret != null">
+        #{secret,jdbcType=CHAR},
+      </if>
+      <if test="employeeNo != null">
+        #{employeeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="employeeName != null">
+        #{employeeName,jdbcType=VARCHAR},
+      </if>
+      <if test="leaveStatus != null">
+        #{leaveStatus,jdbcType=TINYINT},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="inductionTime != null">
+        #{inductionTime,jdbcType=INTEGER},
+      </if>
+      <if test="position != null">
+        #{position,jdbcType=VARCHAR},
+      </if>
+      <if test="isDeleted != null">
+        #{isDeleted,jdbcType=TINYINT},
+      </if>
+      UNIX_TIMESTAMP(NOW()), UNIX_TIMESTAMP(NOW()),UNIX_TIMESTAMP(NOW())
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfoExample" resultType="java.lang.Integer">
+    select count(*) from  employee_user_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update  employee_user_info
+    <set>
+      <if test="record.employeeId != null">
+        employeeId = #{record.employeeId,jdbcType=BIGINT},
+      </if>
+      <if test="record.enterprId != null">
+        enterprId = #{record.enterprId,jdbcType=BIGINT},
+      </if>
+      <if test="record.loginName != null">
+        loginName = #{record.loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.password != null">
+        password = #{record.password,jdbcType=CHAR},
+      </if>
+      <if test="record.employeeNo != null">
+        employeeNo = #{record.employeeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="record.employeeName != null">
+        employeeName = #{record.employeeName,jdbcType=VARCHAR},
+      </if>
+      <if test="record.leaveStatus != null">
+        leaveStatus = #{record.leaveStatus,jdbcType=TINYINT},
+      </if>
+      <if test="record.mobile != null">
+        mobile = #{record.mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.email != null">
+        email = #{record.email,jdbcType=VARCHAR},
+      </if>
+      <if test="record.birthday != null">
+        birthday = #{record.birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="record.inductionTime != null">
+        inductionTime = #{record.inductionTime,jdbcType=INTEGER},
+      </if>
+      <if test="record.position != null">
+        position = #{record.position,jdbcType=VARCHAR},
+      </if>
+      <if test="record.isDeleted != null">
+        isDeleted = #{record.isDeleted,jdbcType=TINYINT},
+      </if>
+      <if test="record.created != null">
+        created = #{record.created,jdbcType=INTEGER},
+      </if>
+      <if test="record.updated != null">
+        updated = #{record.updated,jdbcType=INTEGER},
+      </if>
+      <if test="record.leaveTime != null">
+        leaveTime = #{record.leaveTime,jdbcType=INTEGER},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update  employee_user_info
+    set employeeId = #{record.employeeId,jdbcType=BIGINT},
+      enterprId = #{record.enterprId,jdbcType=BIGINT},
+      loginName = #{record.loginName,jdbcType=VARCHAR},
+      password = #{record.password,jdbcType=CHAR},
+      employeeNo = #{record.employeeNo,jdbcType=VARCHAR},
+      employeeName = #{record.employeeName,jdbcType=VARCHAR},
+      leaveStatus = #{record.leaveStatus,jdbcType=TINYINT},
+      mobile = #{record.mobile,jdbcType=VARCHAR},
+      email = #{record.email,jdbcType=VARCHAR},
+      birthday = #{record.birthday,jdbcType=VARCHAR},
+      inductionTime = #{record.inductionTime,jdbcType=INTEGER},
+      position = #{record.position,jdbcType=VARCHAR},
+      isDeleted = #{record.isDeleted,jdbcType=TINYINT},
+      created = #{record.created,jdbcType=INTEGER},
+      updated = #{record.updated,jdbcType=INTEGER},
+      leaveTime = #{record.leaveTime,jdbcType=INTEGER}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfo">
+    update  employee_user_info
+    <set>
+      <if test="enterprId != null">
+        enterprId = #{enterprId,jdbcType=BIGINT},
+      </if>
+      <if test="loginName != null">
+        loginName = #{loginName,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=CHAR},
+      </if>
+      <if test="secret != null">
+        secret = #{secret,jdbcType=CHAR},
+      </if>
+      <if test="employeeNo != null">
+        employeeNo = #{employeeNo,jdbcType=VARCHAR},
+      </if>
+      <if test="employeeName != null">
+        employeeName = #{employeeName,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="leaveStatus != null">
+        leaveStatus = #{leaveStatus,jdbcType=TINYINT},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="birthday != null">
+        birthday = #{birthday,jdbcType=VARCHAR},
+      </if>
+      <if test="inductionTime != null">
+        inductionTime = #{inductionTime,jdbcType=INTEGER},
+      </if>
+      <if test="position != null">
+        `position` = #{position,jdbcType=VARCHAR},
+      </if>
+      <if test="isDeleted != null">
+        isDeleted = #{isDeleted,jdbcType=TINYINT},
+      </if>
+      <if test="grainId != null">
+        grain_id = #{grainId,jdbcType=BIGINT},
+      </if>
+      <if test="vouchersNum != null and vouchersNum != ''">
+        vouchers_num = #{vouchersNum,jdbcType=VARCHAR},
+      </if>
+      updated = UNIX_TIMESTAMP(NOW()),leaveTime = UNIX_TIMESTAMP(NOW())
+    </set>
+    where employeeId = #{employeeId,jdbcType=BIGINT} LIMIT 1
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfo">
+    update  employee_user_info
+    set enterprId = #{enterprId,jdbcType=BIGINT},
+      loginName = #{loginName,jdbcType=VARCHAR},
+      password = #{password,jdbcType=CHAR},
+      employeeNo = #{employeeNo,jdbcType=VARCHAR},
+      employeeName = #{employeeName,jdbcType=VARCHAR},
+      leaveStatus = #{leaveStatus,jdbcType=TINYINT},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      birthday = #{birthday,jdbcType=VARCHAR},
+      inductionTime = #{inductionTime,jdbcType=INTEGER},
+      position = #{position,jdbcType=VARCHAR},
+      isDeleted = #{isDeleted,jdbcType=TINYINT},
+      created = #{created,jdbcType=INTEGER},
+      updated = #{updated,jdbcType=INTEGER},
+      leaveTime = #{leaveTime,jdbcType=INTEGER}
+    where employeeId = #{employeeId,jdbcType=BIGINT}
+  </update>
+
+  <select id="selectByParams" parameterType="java.util.Map" resultMap="BaseResultMap">
+    select
+    eu.employeeId,eu.enterprId,eu.employeeName,ec.creditType,ec.campaignId,ec.credit
+    from employee_user_info as eu
+    left join employee_credit_info as ec on eu.employeeId = ec.employeeId
+    where ec.credit > 0 and eu.isDeleted = 0 and eu.leaveStatus = 0
+    <if test="enterprId != null "> and eu.enterprId = #{enterprId}</if>
+  </select>
+
+  <select id="queryByParamCount" parameterType="com.lx.benefits.bean.entity.employeeuserinfo.EmployeeUserInfo" resultType="java.lang.Integer">
+    select count(*) from employee_user_info
+    <where>
+      <if test="employeeId != null">
+        and employeeId = #{employeeId}
+      </if>
+      <if test="isDeleted != null">
+        and isDeleted = #{isDeleted}
+      </if>
+    </where>
+  </select>
+
+</mapper>

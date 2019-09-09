@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.enterpruserinfo.EnterprBindRecorderMapper">
+  <resultMap id="BindRecorderBean" type="com.lx.benefits.bean.vo.enterpr.EnterprBindRecorderBean">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="enterpr_id" jdbcType="BIGINT" property="enterprId" />
+    <result column="agent_id" jdbcType="INTEGER" property="agentId" />
+    <result column="agent_name" jdbcType="VARCHAR" property="agentName" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="bind_remark" jdbcType="VARCHAR" property="bindRemark" />
+    <result column="bind_user" jdbcType="VARCHAR" property="bindUser" />
+    <result column="bind_time" jdbcType="TIMESTAMP" property="bindTime" />
+    <result column="unbind_remark" jdbcType="VARCHAR" property="unbindRemark" />
+    <result column="unbind_user" jdbcType="VARCHAR" property="unbindUser" />
+    <result column="unbind_time" jdbcType="TIMESTAMP" property="unbindTime" />
+  </resultMap>
+  <select id="countDistinctAgentUnbind" resultType="java.lang.Integer">
+  	select count(distinct enterpr_id)
+  	from enterpr_bind_recorder
+  	where agent_id=#{agentId} and status=0
+  </select>
+  <select id="getAgentEnterprisesBindhistory" resultMap="BindRecorderBean">
+  	select recorder1.bind_time as firstBindTime, enterpr.enterpr_name as enterprName, recorder1.unbind_user, recorder1.unbind_time, 
+  	recorder1.unbind_remark, recorder2.bind_user, recorder2.bind_time, recorder2.bind_remark, recorder2.agent_name,
+  	if(enterpr.agent_id!=0,1,0) as status
+  	from enterpr_bind_recorder recorder1
+  	     left join enterpr_bind_recorder recorder2 on recorder1.enterpr_id=recorder2.enterpr_id and recorder2.`status`=1
+  	     left join enterpr_user_info enterpr on enterpr.enterpr_id=recorder1.enterpr_id 
+  	where recorder1.agent_id=#{agentId} and recorder1.status=0
+  	group by recorder1.enterpr_id
+  	order by recorder1.bind_time ASC
+  	<if test="pageBean!=null">
+    	limit #{pageBean.offset},#{pageBean.pageSize}
+    </if>
+  </select>
+</mapper>

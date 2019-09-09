@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.cart.CartProductArchiveMapper">
+
+	<insert id="insertBatch">
+		INSERT INTO
+		cart_product_archive
+		(
+		`SOURCE_ID`,
+		`ACCOUNT_ID`,
+		`TYPE`,
+		`SKU_ID`,
+		`SELLER_ID`,
+		`COUNT`,
+		`CHANNEL`,
+		`CHECKED`,
+		`DELETED_TYPE`,
+		`ACTIVITY_ID`,
+		`IS_DELETE`,
+		`CREATE_TIME`,
+		`UPDATE_TIME`
+		) VALUES
+		<foreach collection="list" item="item" separator=",">
+			(
+			#{item.sourceId,jdbcType=BIGINT},
+			#{item.accountId,jdbcType=BIGINT},
+			#{item.type,jdbcType=TINYINT},
+			#{item.skuId,jdbcType=BIGINT},
+			#{item.sellerId,jdbcType=BIGINT},
+			#{item.count,jdbcType=INTEGER},
+			#{item.channel,jdbcType=INTEGER},
+			#{item.checked,jdbcType=TINYINT},
+			#{item.deletedType,jdbcType=TINYINT},
+			#{item.activityId,jdbcType=BIGINT},
+			#{item.isDelete,jdbcType=TINYINT},
+			#{item.createTime,jdbcType=TIMESTAMP},
+			#{item.updateTime,jdbcType=TIMESTAMP}
+			)
+		</foreach>
+	</insert>
+
+</mapper>
+

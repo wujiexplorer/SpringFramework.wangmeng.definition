@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.yxOrder.YxOrderInfoMapper">
+    <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.yxOrder.YxOrderInfo">
+        <id column="id" jdbcType="BIGINT" property="id"/>
+        <result column="sub_order_code" jdbcType="BIGINT" property="subOrderCode"/>
+        <result column="yx_order_status" jdbcType="VARCHAR" property="yxOrderStatus"/>
+        <result column="yx_package_id" jdbcType="VARCHAR" property="yxPackageId"/>
+        <result column="real_price" jdbcType="DOUBLE" property="realPrice"/>
+        <result column="exp_fee" jdbcType="DOUBLE" property="expFee"/>
+        <result column="user_id" jdbcType="BIGINT" property="userId"/>
+        <result column="user_name" jdbcType="VARCHAR" property="userName"/>
+        <result column="order_time" jdbcType="TIMESTAMP" property="orderTime"/>
+        <result column="create_time" jdbcType="TIMESTAMP" property="createTime"/>
+        <result column="create_user" jdbcType="VARCHAR" property="createUser"/>
+        <result column="update_time" jdbcType="TIMESTAMP" property="updateTime"/>
+        <result column="update_user" jdbcType="VARCHAR" property="updateUser"/>
+    </resultMap>
+    <sql id="Base_Column_List">
+    id, sub_order_code, yx_order_status, yx_package_id, real_price, exp_fee, user_id, 
+    user_name, order_time, create_time, create_user, update_time, update_user
+  </sql>
+    <select id="gerOrderById" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ent_yx_order_info
+        where id = #{id,jdbcType=BIGINT}
+    </select>
+    <select id="gerOrderByOrderCode" parameterType="java.lang.String" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ent_yx_order_info
+        where sub_order_code = #{orderCode}
+    </select>
+    <select id="getOrderList" parameterType="com.lx.benefits.bean.dto.yxOrder.YxOrderInfoReq" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from ent_yx_order_info
+        where 1 = 1
+        <if test="subOrderCode != null">
+            and sub_order_code = #{subOrderCode}
+        </if>
+        <if test="yxOrderStatus != null and yxOrderStatus != ''">
+            and yx_order_status = #{yxOrderStatus}
+        </if>
+        <if test="userId != null">
+            and user_id = #{userId}
+        </if>
+        limit #{page},#{pageSize}
+    </select>
+    <select id="getOrderListCount" parameterType="com.lx.benefits.bean.dto.yxOrder.YxOrderInfoReq"
+            resultType="java.lang.Integer">
+        select
+        count(1)
+        from ent_yx_order_info
+        where 1 = 1
+        <if test="subOrderCode != null">
+            and sub_order_code = #{subOrderCode}
+        </if>
+        <if test="yxOrderStatus != null and yxOrderStatus != ''">
+            and yx_order_status = #{yxOrderStatus}
+        </if>
+        <if test="userId != null">
+            and user_id = #{userId}
+        </if>
+    </select>
+
+    <insert id="insert" parameterType="com.lx.benefits.bean.entity.yxOrder.YxOrderInfo">
+        insert into ent_yx_order_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                id,
+            </if>
+            <if test="subOrderCode != null">
+                sub_order_code,
+            </if>
+            <if test="yxOrderStatus != null">
+                yx_order_status,
+            </if>
+            <if test="yxPackageId != null">
+                yx_package_id,
+            </if>
+            <if test="realPrice != null">
+                real_price,
+            </if>
+            <if test="expFee != null">
+                exp_fee,
+            </if>
+            <if test="userId != null">
+                user_id,
+            </if>
+            <if test="userName != null">
+                user_name,
+            </if>
+            <if test="orderTime != null">
+                order_time,
+            </if>
+            <if test="createTime != null">
+                create_time,
+            </if>
+            <if test="createUser != null">
+                create_user,
+            </if>
+            <if test="updateTime != null">
+                update_time,
+            </if>
+            <if test="updateUser != null">
+                update_user,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="id != null">
+                #{id,jdbcType=BIGINT},
+            </if>
+            <if test="subOrderCode != null">
+                #{subOrderCode,jdbcType=BIGINT},
+            </if>
+            <if test="yxOrderStatus != null">
+                #{yxOrderStatus,jdbcType=VARCHAR},
+            </if>
+            <if test="yxPackageId != null">
+                #{yxPackageId,jdbcType=VARCHAR},
+            </if>
+            <if test="realPrice != null">
+                #{realPrice,jdbcType=DOUBLE},
+            </if>
+            <if test="expFee != null">
+                #{expFee,jdbcType=DOUBLE},
+            </if>
+            <if test="userId != null">
+                #{userId,jdbcType=BIGINT},
+            </if>
+            <if test="userName != null">
+                #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="orderTime != null">
+                #{orderTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createTime != null">
+                #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createUser != null">
+                #{createUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUser != null">
+                #{updateUser,jdbcType=VARCHAR},
+            </if>
+        </trim>
+    </insert>
+    <update id="update" parameterType="com.lx.benefits.bean.entity.yxOrder.YxOrderInfo">
+        update ent_yx_order_info
+        <set>
+            <if test="subOrderCode != null">
+                sub_order_code = #{subOrderCode,jdbcType=BIGINT},
+            </if>
+            <if test="yxOrderStatus != null">
+                yx_order_status = #{yxOrderStatus,jdbcType=VARCHAR},
+            </if>
+            <if test="yxPackageId != null">
+                yx_package_id = #{yxPackageId,jdbcType=VARCHAR},
+            </if>
+            <if test="realPrice != null">
+                real_price = #{realPrice,jdbcType=DOUBLE},
+            </if>
+            <if test="expFee != null">
+                exp_fee = #{expFee,jdbcType=DOUBLE},
+            </if>
+            <if test="userId != null">
+                user_id = #{userId,jdbcType=BIGINT},
+            </if>
+            <if test="userName != null">
+                user_name = #{userName,jdbcType=VARCHAR},
+            </if>
+            <if test="orderTime != null">
+                order_time = #{orderTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createTime != null">
+                create_time = #{createTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="createUser != null">
+                create_user = #{createUser,jdbcType=VARCHAR},
+            </if>
+            <if test="updateTime != null">
+                update_time = #{updateTime,jdbcType=TIMESTAMP},
+            </if>
+            <if test="updateUser != null">
+                update_user = #{updateUser,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where id = #{id,jdbcType=BIGINT}
+    </update>
+</mapper>

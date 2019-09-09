@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.cardkey.CardKeyStorageMapper">
+	<insert id="insertRecord">
+		insert into card_key_storage(sku,store_time,card_number,password,dead_time,goods_costprice,status) values
+		<foreach collection="record" item="item" separator=",">
+			(#{item.sku,jdbcType=INTEGER},
+			now(),
+			#{item.cardNumber,jdbcType=VARCHAR},
+			#{item.password,jdbcType=VARCHAR},
+			#{item.deadTime,jdbcType=TIMESTAMP},
+			#{item.goodsCostprice,jdbcType=DECIMAL},
+			#{item.status,jdbcType=INTEGER})
+		</foreach>
+	</insert>
+	
+	<select id="selectSkuNum" resultType="com.lx.benefits.bean.vo.cardkey.CardKeyInfo">
+		SELECT sku,count(id) as count FROM card_key_storage 
+		where dead_time &lt; #{currentDate} and status = 1 GROUP BY sku
+	</select>
+	
+	<update id="updateStatusBySkuAndNum">
+		<foreach collection="virtualOrders" item="order" separator=";">
+			UPDATE card_key_storage 
+			set status = #{record.status},
+			deliver_time = now(),
+			order_number = #{order.number},
+			parent_order_number = #{order.parentNumber},
+			buyer_user_id = #{order.buyerUserId}
+			where dead_time >= #{record.deadTime} 
+			and status = 1 
+			and sku = #{order.skuId} 
+			ORDER BY dead_time
+			LIMIT #{order.quantity}
+		</foreach>
+	</update>
+	
+	<select id="listItemOrderNumbers" resultType="java.lang.Long">
+		SELECT DISTINCT order_number from card_key_storage 
+		WHERE buyer_user_id = #{buyerUserId} LIMIT #{startRecord},#{pageSize}
+	</select>
+	
+	<select id="countOrderNumber" resultType="java.lang.Integer">
+		select count(DISTINCT parent_order_number) from card_key_storage 
+		WHERE buyer_user_id = #{buyerUserId}
+	</select>
+	
+	<update id="updateBySellerOrderNumber">
+		UPDATE card_key_storage 
+		set status = 3
+		WHERE buyer_user_id = #{buyerUserId}
+		and parent_order_number = #{sellerOrderNumber} 
+	</update>
+	
+	<select id="getItemOrderNumbers" resultType="java.lang.Long">
+		select order_number FROM card_key_storage WHERE parent_order_number 
+		<foreach collection="sellerOrders" item="sellerOrder" open=" in (" close=")" separator=",">
+			  #{sellerOrder}
+		</foreach>
+	</select>
+</mapper>

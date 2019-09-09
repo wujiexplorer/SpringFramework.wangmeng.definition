@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.client.ClientMessageMapper">
+	<update id="udateMessageStatus"
+		parameterType="com.lx.benefits.bean.entity.client.ClientMessage">
+		update client_message
+		set send_count=send_count+1
+		<if test="isSuccess!=null and isSuccess">
+			,is_success=#{isSuccess}
+		</if>
+		where message_id=#{messageId}
+	</update>
+</mapper>

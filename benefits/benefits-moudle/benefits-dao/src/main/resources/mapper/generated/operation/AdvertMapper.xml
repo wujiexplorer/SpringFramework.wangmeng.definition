@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.operation.AdvertMapper">
+    <resultMap type="com.lx.benefits.bean.entity.operation.AdvertEntity" id="AdvertResult">
+        <result property="id" column="id" />
+        <result property="advertName" column="advert_name" />
+        <result property="position" column="position" />
+        <result property="beginTime" column="begin_time" />
+        <result property="endTime" column="end_time" />
+        <result property="advertImage" column="advert_image" />
+        <result property="advertLink" column="advert_link" />
+        <result property="status" column="status" />
+        <result property="createdUser" column="created_user" />
+        <result property="createdTime" column="created_time" />
+        <result property="updateUser" column="update_user" />
+        <result property="updatedTime" column="updated_time" />
+    </resultMap>
+	
+	<sql id="selectAdvertVo">
+        select id, advert_name, position, begin_time, end_time, advert_image, advert_link, status, created_user, created_time, update_user, updated_time from advert
+    </sql>
+
+    <sql id="Example_Where_Clause">
+        <where>
+            <if test="id != null "> and id = #{id}</if>
+            <if test="advertName != null  and advertName != '' "> and advert_name = #{advertName}</if>
+            <if test="position != null "> and position = #{position}</if>
+            <if test="beginTime != null "> and begin_time = #{beginTime}</if>
+            <if test="endTime != null "> and end_time = #{endTime}</if>
+            <if test="advertImage != null  and advertImage != '' "> and advert_image = #{advertImage}</if>
+            <if test="advertLink != null  and advertLink != '' "> and advert_link = #{advertLink}</if>
+            <if test="status != null "> and status = #{status}</if>
+            <if test="createdUser != null  and createdUser != '' "> and created_user = #{createdUser}</if>
+            <if test="createdTime != null "> and created_time = #{createdTime}</if>
+            <if test="updateUser != null  and updateUser != '' "> and update_user = #{updateUser}</if>
+            <if test="updatedTime != null "> and updated_time = #{updatedTime}</if>
+        </where>
+    </sql>
+	
+    <select id="selectList" parameterType="com.lx.benefits.bean.entity.operation.AdvertEntity" resultMap="AdvertResult">
+        <include refid="selectAdvertVo"/>
+        <include refid="Example_Where_Clause"/>
+    </select>
+    
+    <select id="selectById" parameterType="Integer" resultMap="AdvertResult">
+        <include refid="selectAdvertVo"/>
+        where id = #{id}
+    </select>
+        
+    <insert id="insert" parameterType="com.lx.benefits.bean.entity.operation.AdvertEntity" useGeneratedKeys="true" keyProperty="id">
+        insert into advert
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+			<if test="advertName != null  and advertName != ''  ">advert_name,</if>
+			<if test="position != null  ">position,</if>
+			<if test="beginTime != null  ">begin_time,</if>
+			<if test="endTime != null  ">end_time,</if>
+			<if test="advertImage != null  and advertImage != ''  ">advert_image,</if>
+			<if test="advertLink != null  and advertLink != ''  ">advert_link,</if>
+			<if test="status != null  ">status,</if>
+			<if test="createdUser != null  and createdUser != ''  ">created_user,</if>
+			<if test="createdTime != null  ">created_time,</if>
+			<if test="updateUser != null  and updateUser != ''  ">update_user,</if>
+			<if test="updatedTime != null  ">updated_time,</if>
+         </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+			<if test="advertName != null  and advertName != ''  ">#{advertName},</if>
+			<if test="position != null  ">#{position},</if>
+			<if test="beginTime != null  ">#{beginTime},</if>
+			<if test="endTime != null  ">#{endTime},</if>
+			<if test="advertImage != null  and advertImage != ''  ">#{advertImage},</if>
+			<if test="advertLink != null  and advertLink != ''  ">#{advertLink},</if>
+			<if test="status != null  ">#{status},</if>
+			<if test="createdUser != null  and createdUser != ''  ">#{createdUser},</if>
+			<if test="createdTime != null  ">#{createdTime},</if>
+			<if test="updateUser != null  and updateUser != ''  ">#{updateUser},</if>
+			<if test="updatedTime != null  ">#{updatedTime},</if>
+         </trim>
+    </insert>
+	 
+    <update id="update" parameterType="com.lx.benefits.bean.entity.operation.AdvertEntity">
+        update advert
+        <trim prefix="SET" suffixOverrides=",">
+            <if test="advertName != null  and advertName != ''  ">advert_name = #{advertName},</if>
+            <if test="position != null  ">position = #{position},</if>
+            <if test="beginTime != null  ">begin_time = #{beginTime},</if>
+            <if test="endTime != null  ">end_time = #{endTime},</if>
+            <if test="advertImage != null  and advertImage != ''  ">advert_image = #{advertImage},</if>
+            <if test="advertLink != null  and advertLink != ''  ">advert_link = #{advertLink},</if>
+            <if test="status != null  ">status = #{status},</if>
+            <if test="createdUser != null  and createdUser != ''  ">created_user = #{createdUser},</if>
+            <if test="createdTime != null  ">created_time = #{createdTime},</if>
+            <if test="updateUser != null  and updateUser != ''  ">update_user = #{updateUser},</if>
+            <if test="updatedTime != null  ">updated_time = #{updatedTime},</if>
+        </trim>
+        where id = #{id}
+    </update>
+
+	<delete id="deleteById" parameterType="Integer">
+        delete from advert where id = #{id}
+    </delete>
+	
+    <delete id="deleteByIds" parameterType="String">
+        delete from advert where id in
+        <foreach item="id" collection="array" open="(" separator="," close=")">
+            #{id}
+        </foreach>
+    </delete>
+
+    <select id="queryByParam" parameterType="com.lx.benefits.bean.entity.operation.AdvertEntity" resultMap="AdvertResult">
+        <include refid="selectAdvertVo"/>
+        <include refid="Example_Where_Clause" />
+    </select>
+
+    <select id="selectCount" parameterType="com.lx.benefits.bean.entity.operation.AdvertEntity" resultType="java.lang.Integer">
+        select count(*) from advert
+        <include refid="Example_Where_Clause" />
+    </select>
+
+    <select id="selectPageList" parameterType="com.lx.benefits.bean.entity.operation.AdvertEntity" resultMap="AdvertResult">
+        <include refid="selectAdvertVo"/>
+        <include refid="Example_Where_Clause" />
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+        <if test="start != null and limit != null">
+            LIMIT #{start}, #{limit}
+        </if>
+    </select>
+    
+</mapper>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.card.CardSaleOrderMapper">
+	<resultMap id="saleOrderDetail_map" type="com.lx.benefits.bean.vo.card.CardSaleOrderDetail">
+	    <id column="sale_order_id" property="saleOrderId"/>
+		<result column="customer_id" property="customerId"/>
+		<result column="bind_enterpr_id" property="bindEnterprId"/>
+		<result column="is_custom_card" property="isCustomCard"/>
+		<result column="pay_type" property="payType"/>
+		<result column="discount_on_sale" property="discountOnSale"/>
+		<result column="sum_payable" property="sumPayable"/>
+		<collection property="cards" javaType="List" ofType="com.lx.benefits.bean.entity.card.CardSaleOrderItem">
+			<result column="amount" property="amount"/>
+			<result column="num" property="num"/>
+		</collection>
+	</resultMap>
+	
+	<select id="getSaleOrderDetail" resultMap="saleOrderDetail_map">
+		select saleOrder.sale_order_id, saleOrder.customer_id, saleOrder.bind_enterpr_id, saleOrder.is_custom_card, 
+			saleOrder.pay_type, saleOrder.discount_on_sale, saleOrder.sum_payable,orderItem.amount, orderItem.num
+		from card_sale_order saleOrder 
+			inner join card_sale_order_item orderItem on saleOrder.sale_order_id=orderItem.sale_order_id
+		where saleOrder.sale_order_id=#{saleOrderId}
+	</select>
+	<select id="getSaleOrdersByPage" resultType="com.lx.benefits.bean.vo.card.CardSaleOrderDetail">
+		select saleOrder.sale_order_id as saleOrderId, saleOrder.create_time as createTime, saleOrder.customer_id as customerId, 
+			saleOrder.discount_on_sale as discountOnSale, saleOrder.sum_payable as sumPayable, saleOrder.create_user as createUser, 
+			saleOrder.`status`, saleOrder.is_custom_card as isCustomCard, saleOrder.verify_info as verifyInfo, 
+			sum(orderItem.num*orderItem.amount) as totalAmount, sum(orderItem.num) as totalCount
+		from card_sale_order saleOrder 
+			inner join card_sale_order_item orderItem on saleOrder.sale_order_id=orderItem.sale_order_id
+		where deleted=0
+		<if test="startTime !=null">
+			and saleOrder.create_time>= #{startTime}
+		</if>
+		<if test="endTime !=null">
+			and saleOrder.create_time &lt;= #{endTime}
+		</if>
+		<if test="customerId !=null">
+			and saleOrder.customer_id = #{customerId}
+		</if>
+		<if test="customerId !=null">
+			and saleOrder.customer_id = #{customerId}
+		</if>
+		<if test="status !=null">
+			and saleOrder.status = #{status}
+		</if>
+		group by saleOrder.sale_order_id
+		order by saleOrder.sale_order_id desc
+		limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	<select id="getVerifyOrdersByPage" resultType="com.lx.benefits.bean.vo.card.CardSaleOrderDetail">
+		select saleOrder.sale_order_id as saleOrderId, saleOrder.create_time as createTime, saleOrder.customer_id as customerId, batchRecorder.status as batchStatus,
+			saleOrder.discount_on_sale as discountOnSale, saleOrder.sum_payable as sumPayable, saleOrder.create_user as createUser, 
+			saleOrder.`status`, saleOrder.is_custom_card as isCustomCard, saleOrder.verify_info as verifyInfo, sum(orderItem.num*orderItem.amount) as totalAmount,
+			saleOrder.verify_user as verifyUser, (saleOrder.sum_payable-saleOrder.paid_amount) as unpaidAmount, sum(orderItem.num) as totalCount
+		from card_sale_order saleOrder 
+			inner join card_sale_order_item orderItem on saleOrder.sale_order_id=orderItem.sale_order_id
+			left join card_batch_recorder batchRecorder on saleOrder.sale_order_id=batchRecorder.sale_order_id
+		where saleOrder.deleted=0 and saleOrder.status!=1
+		<if test="startTime !=null">
+			and saleOrder.create_time>= #{startTime}
+		</if>
+		<if test="endTime !=null">
+			and saleOrder.create_time &lt;= #{endTime}
+		</if>
+		<if test="customerId !=null">
+			and saleOrder.customer_id = #{customerId}
+		</if>
+		<if test="customerId !=null">
+			and saleOrder.customer_id = #{customerId}
+		</if>
+		<if test="status !=null">
+			and saleOrder.status = #{status}
+		</if>
+		group by saleOrder.sale_order_id
+		order by saleOrder.sale_order_id desc
+		limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	<select id="getCustomerOrderReports" resultType="com.lx.benefits.bean.vo.card.CustomerOrderReport">
+		select customer_id as customerId, sum(sum_payable) as sumPayable, sum(paid_amount) as paidAmount,
+			sum(IF(sum_payable-paid_amount &lt;=0,0,sum_payable-paid_amount)) as unpaidAmount
+		from card_sale_order
+		where status=3
+		<if test="customerId !=null">
+			and customer_id=#{customerId}
+		</if>
+		group by customer_id
+		limit #{pageBean.offset}, #{pageBean.pageSize}
+	</select>
+	<select id="countOrderCustomers" resultType="int">
+		select count(distinct customer_id)
+		from card_sale_order
+		where card_sale_order.status=3
+		<if test="customerId !=null">
+			and customer_id=#{customerId}
+		</if>
+	</select>
+	<select id="getCustomerCompleteOrderInfos" resultType="com.lx.benefits.bean.vo.card.CardSaleOrderDetail">
+		select card_sale_order.sale_order_id as saleOrderId, sum_payable as sumPayable, discount_on_sale as discountOnSale,
+			paid_amount as paidAmount, if(sum_payable-paid_amount &lt;=0,0,sum_payable-paid_amount) as unpaidAmount, 
+			sum(amount*num) as totalAmount, sum(num) as totalCount, card_sale_order.create_time as createTime
+		from card_sale_order
+			inner join card_sale_order_item on card_sale_order.sale_order_id=card_sale_order_item.sale_order_id
+		where card_sale_order.status=3 and customer_id = #{customerId}
+		group by card_sale_order.sale_order_id
+		limit #{pageBean.offset}, #{pageBean.pageSize}
+	</select>
+</mapper>

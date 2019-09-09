@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.entercreditinfo.EnterprCreditInfoMapper">
+    <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.entercreditinfo.EnterprCreditInfo">
+        <id column="creditId" jdbcType="BIGINT" property="creditId"/>
+        <result column="enterprId" jdbcType="BIGINT" property="enterprId"/>
+        <result column="creditType" jdbcType="TINYINT" property="creditType"/>
+        <result column="status" jdbcType="TINYINT" property="status"/>
+        <result column="validCredit" jdbcType="DECIMAL" property="validCredit"/>
+        <result column="invalidCredit" jdbcType="DECIMAL" property="invalidCredit"/>
+        <result column="lockCredit" jdbcType="DECIMAL" property="lockCredit"/>
+        <result column="isDeleted" jdbcType="TINYINT" property="isDeleted"/>
+        <result column="created" jdbcType="INTEGER" property="created"/>
+        <result column="updated" jdbcType="INTEGER" property="updated"/>
+    </resultMap>
+    <sql id="Example_Where_Clause">
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+    <sql id="Update_By_Example_Where_Clause">
+        <where>
+            <foreach collection="example.oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+    <sql id="Base_Column_List">
+    creditId, enterprId, creditType, status, validCredit, invalidCredit, lockCredit, 
+    isDeleted, created, updated
+  </sql>
+    <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.entercreditinfo.EnterprCreditInfoExample"
+            resultMap="BaseResultMap">
+        select
+        <if test="distinct">
+            distinct
+        </if>
+        <include refid="Base_Column_List"/>
+        from enterpr_credit_info
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+        <if test="page != null and pageSize != null">
+            LIMIT #{page}, #{pageSize}
+        </if>
+    </select>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from enterpr_credit_info
+        where creditId = #{creditId,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from enterpr_credit_info
+    where creditId = #{creditId,jdbcType=BIGINT}
+  </delete>
+    <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.entercreditinfo.EnterprCreditInfoExample">
+        delete from enterpr_credit_info
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </delete>
+    <insert id="insert" parameterType="com.lx.benefits.bean.entity.entercreditinfo.EnterprCreditInfo">
+    insert into enterpr_credit_info (creditId, enterprId, creditType, 
+      status, validCredit, invalidCredit, 
+      lockCredit, isDeleted, created, 
+      updated)
+    values (#{creditId,jdbcType=BIGINT}, #{enterprId,jdbcType=BIGINT}, #{creditType,jdbcType=TINYINT}, 
+      #{status,jdbcType=TINYINT}, #{validCredit,jdbcType=DECIMAL}, #{invalidCredit,jdbcType=DECIMAL},
+      #{lockCredit,jdbcType=DECIMAL}, #{isDeleted,jdbcType=TINYINT}, UNIX_TIMESTAMP(NOW()),
+      UNIX_TIMESTAMP(NOW()))
+  </insert>
+    <insert id="insertSelective" useGeneratedKeys="true" keyProperty="creditId"
+            parameterType="com.lx.benefits.bean.entity.entercreditinfo.EnterprCreditInfo">
+        insert into enterpr_credit_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="creditId != null">
+                creditId,
+            </if>
+            <if test="enterprId != null">
+                enterprId,
+            </if>
+            <if test="creditType != null">
+                creditType,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="validCredit != null">
+                validCredit,
+            </if>
+            <if test="invalidCredit != null">
+                invalidCredit,
+            </if>
+            <if test="lockCredit != null">
+                lockCredit,
+            </if>
+            <if test="isDeleted != null">
+                isDeleted,
+            </if>
+            created,updated
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="creditId != null">
+                #{creditId,jdbcType=BIGINT},
+            </if>
+            <if test="enterprId != null">
+                #{enterprId,jdbcType=BIGINT},
+            </if>
+            <if test="creditType != null">
+                #{creditType,jdbcType=TINYINT},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=TINYINT},
+            </if>
+            <if test="validCredit != null">
+                #{validCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="invalidCredit != null">
+                #{invalidCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="lockCredit != null">
+                #{lockCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="isDeleted != null">
+                #{isDeleted,jdbcType=TINYINT},
+            </if>
+            UNIX_TIMESTAMP(NOW()), UNIX_TIMESTAMP(NOW())
+        </trim>
+    </insert>
+    <select id="countByExample" parameterType="com.lx.benefits.bean.entity.entercreditinfo.EnterprCreditInfoExample"
+            resultType="java.lang.Integer">
+        select count(*) from enterpr_credit_info
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </select>
+    <update id="updateByExampleSelective" parameterType="map">
+        update enterpr_credit_info
+        <set>
+            <if test="record.creditId != null">
+                creditId = #{record.creditId,jdbcType=BIGINT},
+            </if>
+            <if test="record.enterprId != null">
+                enterprId = #{record.enterprId,jdbcType=BIGINT},
+            </if>
+            <if test="record.creditType != null">
+                creditType = #{record.creditType,jdbcType=TINYINT},
+            </if>
+            <if test="record.status != null">
+                status = #{record.status,jdbcType=TINYINT},
+            </if>
+            <if test="record.validCredit != null">
+                validCredit = #{record.validCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="record.invalidCredit != null">
+                invalidCredit = #{record.invalidCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="record.lockCredit != null">
+                lockCredit = #{record.lockCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="record.isDeleted != null">
+                isDeleted = #{record.isDeleted,jdbcType=TINYINT},
+            </if>
+            updated = UNIX_TIMESTAMP(NOW())
+        </set>
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateByExample" parameterType="map">
+        update enterpr_credit_info
+        set creditId = #{record.creditId,jdbcType=BIGINT},
+        enterprId = #{record.enterprId,jdbcType=BIGINT},
+        creditType = #{record.creditType,jdbcType=TINYINT},
+        status = #{record.status,jdbcType=TINYINT},
+        validCredit = #{record.validCredit,jdbcType=DECIMAL},
+        invalidCredit = #{record.invalidCredit,jdbcType=DECIMAL},
+        lockCredit = #{record.lockCredit,jdbcType=DECIMAL},
+        isDeleted = #{record.isDeleted,jdbcType=TINYINT},
+        updated = UNIX_TIMESTAMP(NOW())
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.entercreditinfo.EnterprCreditInfo">
+        update enterpr_credit_info
+        <set>
+            <if test="enterprId != null">
+                enterprId = #{enterprId,jdbcType=BIGINT},
+            </if>
+            <if test="creditType != null">
+                creditType = #{creditType,jdbcType=TINYINT},
+            </if>
+            <if test="status != null">
+                status = #{status,jdbcType=TINYINT},
+            </if>
+            <if test="validCredit != null">
+                validCredit = #{validCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="invalidCredit != null">
+                invalidCredit = #{invalidCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="lockCredit != null">
+                lockCredit = #{lockCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="isDeleted != null">
+                isDeleted = #{isDeleted,jdbcType=TINYINT},
+            </if>
+            updated = UNIX_TIMESTAMP(NOW())
+        </set>
+        where creditId = #{creditId,jdbcType=BIGINT}
+    </update>
+    <update id="updateValidCreditByEnterprId" parameterType="java.util.Map">
+        update enterpr_credit_info
+        <set>
+            <if test="receiveValue != null">
+                validCredit = validCredit - #{receiveValue,jdbcType=DOUBLE},
+            </if>
+        </set>
+        where enterprId = #{enterprId,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.entercreditinfo.EnterprCreditInfo">
+    update enterpr_credit_info
+    set enterprId = #{enterprId,jdbcType=BIGINT},
+      creditType = #{creditType,jdbcType=TINYINT},
+      status = #{status,jdbcType=TINYINT},
+      validCredit = #{validCredit,jdbcType=DECIMAL},
+      invalidCredit = #{invalidCredit,jdbcType=DECIMAL},
+      lockCredit = #{lockCredit,jdbcType=DECIMAL},
+      isDeleted = #{isDeleted,jdbcType=TINYINT},
+      updated = UNIX_TIMESTAMP(NOW())
+    where creditId = #{creditId,jdbcType=BIGINT}
+  </update>
+
+    <update id="updateEmployeeCreditInfoReduceCredit">
+          update enterpr_credit_info
+          set validCredit = validCredit - #{validCredit},updated = UNIX_TIMESTAMP(NOW())
+          where enterprId = #{enterprId} and creditType = #{creditType} and validCredit - #{validCredit}>=0
+    </update>
+    <update id="updateEmployeeCreditInfoAddCredit">
+        update enterpr_credit_info
+          set validCredit = validCredit + #{validCredit},updated = UNIX_TIMESTAMP(NOW())
+          where enterprId = #{enterprId} and creditType = #{creditType}
+    </update>
+</mapper>

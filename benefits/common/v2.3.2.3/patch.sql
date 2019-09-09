@@ -1,0 +1,1 @@
+alter table enterpr_welcome_info add wx_acode int(1) default NULL COMMENT '小程序码开关';

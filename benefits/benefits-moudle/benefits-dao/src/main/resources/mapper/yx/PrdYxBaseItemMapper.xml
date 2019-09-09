@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.yx.PrdYxBaseItemMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.yx.PrdYxBaseItem">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="sku_code" jdbcType="VARCHAR" property="skuCode" />
+    <result column="brand_id" jdbcType="INTEGER" property="brandId" />
+    <result column="brand_name" jdbcType="VARCHAR" property="brandName" />
+    <result column="category_id" jdbcType="INTEGER" property="categoryId" />
+    <result column="category_name" jdbcType="VARCHAR" property="categoryName" />
+    <result column="category_id2" jdbcType="INTEGER" property="categoryId2" />
+    <result column="category_name2" jdbcType="VARCHAR" property="categoryName2" />
+    <result column="category_id3" jdbcType="INTEGER" property="categoryId3" />
+    <result column="category_name3" jdbcType="VARCHAR" property="categoryName3" />
+    <result column="goods_type" jdbcType="INTEGER" property="goodsType" />
+    <result column="is_cross" jdbcType="INTEGER" property="isCross" />
+    <result column="supplier_id" jdbcType="INTEGER" property="supplierId" />
+    <result column="supplier_name" jdbcType="VARCHAR" property="supplierName" />
+    <result column="goods_name" jdbcType="VARCHAR" property="goodsName" />
+    <result column="goods_name_en" jdbcType="VARCHAR" property="goodsNameEn" />
+    <result column="goods_body" jdbcType="VARCHAR" property="goodsBody" />
+    <result column="goods_image" jdbcType="VARCHAR" property="goodsImage" />
+    <result column="goods_images" jdbcType="VARCHAR" property="goodsImages" />
+    <result column="goods_specname" jdbcType="VARCHAR" property="goodsSpecname" />
+    <result column="place_originId" jdbcType="INTEGER" property="placeOriginid" />
+    <result column="place_origin" jdbcType="VARCHAR" property="placeOrigin" />
+    <result column="goods_freight" jdbcType="DECIMAL" property="goodsFreight" />
+    <result column="created_user" jdbcType="VARCHAR" property="createdUser" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="updated_user" jdbcType="VARCHAR" property="updatedUser" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+    <result column="sex" jdbcType="BIT" property="sex" />
+    <result column="countrySize" jdbcType="VARCHAR" property="countrysize" />
+    <result column="gjValidEndtime" jdbcType="TIMESTAMP" property="gjvalidendtime" />
+    <result column="gjValidStarttime" jdbcType="TIMESTAMP" property="gjvalidstarttime" />
+    <result column="gjDiscount" jdbcType="DECIMAL" property="gjdiscount" />
+    <result column="isEffect" jdbcType="TINYINT" property="iseffect" />
+    <result column="detailHtml" jdbcType="VARCHAR" property="detailHtml" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, sku_code, brand_id, brand_name, category_id, category_name, category_id2, category_name2, 
+    category_id3, category_name3, goods_type, is_cross, supplier_id, supplier_name, goods_name, 
+    goods_name_en, goods_body, goods_image, goods_images, goods_specname, place_originId, place_origin,
+    goods_freight, created_user, created_time, updated_user, updated_time, sex, countrySize, 
+    gjValidEndtime, gjValidStarttime, gjDiscount, isEffect, detailHtml
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from prd_yx_base_item
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <select id="getYxItemList" parameterType="com.lx.benefits.bean.dto.yx.PrdYxBaseItemReq" resultMap="BaseResultMap">
+  select
+  <include refid="Base_Column_List" />
+  from prd_yx_base_item
+  where 1=1
+  <if test="skuCode != null and skuCode != ''">
+    and sku_code = #{skuCode},
+  </if>
+  <if test="brandName != null and brandName != ''">
+    brand_name = #{brandName},
+  </if>
+  <if test="goodsName != null and goodsName != ''">
+    goods_name = #{goodsName},
+  </if>
+  limit #{page},#{pageSize}
+</select>
+
+  <select id="getInfoBySku"  resultMap="BaseResultMap">
+    SELECT
+    <include refid="Base_Column_List"/>
+    FROM prd_yx_base_item
+    WHERE
+    1=1
+    <if test="sku !=null">
+      and sku_code in
+      <foreach collection="sku" item="item" index="index" open="(" close=")" separator=",">
+        #{item}
+      </foreach>
+    </if>
+  </select>
+
+
+  <select id="getYxItemListCount" parameterType="com.lx.benefits.bean.dto.yx.PrdYxBaseItemReq" resultType="java.lang.Integer">
+    select
+    count(1)
+    from prd_yx_base_item
+    where 1=1
+    <if test="skuCode != null and skuCode != ''">
+      and sku_code = #{skuCode},
+    </if>
+    <if test="brandName != null and brandName != ''">
+      brand_name = #{brandName},
+    </if>
+    <if test="goodsName != null and goodsName != ''">
+      goods_name = #{goodsName},
+    </if>
+  </select>
+  <delete id="delete" parameterType="java.lang.Long">
+    delete from prd_yx_base_item
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.yx.PrdYxBaseItem">
+    insert into prd_yx_base_item (id, sku_code, brand_id, 
+      brand_name, category_id, category_name, 
+      category_id2, category_name2, category_id3, 
+      category_name3, goods_type, is_cross, 
+      supplier_id, supplier_name, goods_name, 
+      goods_name_en, goods_body, goods_image,goods_images,
+      goods_specname, place_originId, place_origin, 
+      goods_freight, created_user, created_time, 
+      updated_user, updated_time, sex, 
+      countrySize, gjValidEndtime, gjValidStarttime, 
+      gjDiscount, isEffect, detailHtml)
+    values (#{id,jdbcType=BIGINT}, #{skuCode,jdbcType=VARCHAR}, #{brandId,jdbcType=INTEGER}, 
+      #{brandName,jdbcType=VARCHAR}, #{categoryId,jdbcType=INTEGER}, #{categoryName,jdbcType=VARCHAR}, 
+      #{categoryId2,jdbcType=INTEGER}, #{categoryName2,jdbcType=VARCHAR}, #{categoryId3,jdbcType=INTEGER}, 
+      #{categoryName3,jdbcType=VARCHAR}, #{goodsType,jdbcType=INTEGER}, #{isCross,jdbcType=INTEGER}, 
+      #{supplierId,jdbcType=INTEGER}, #{supplierName,jdbcType=VARCHAR}, #{goodsName,jdbcType=VARCHAR}, 
+      #{goodsNameEn,jdbcType=VARCHAR}, #{goodsBody,jdbcType=VARCHAR}, #{goodsImage,jdbcType=VARCHAR}, #{goodsImages,jdbcType=VARCHAR},
+      #{goodsSpecname,jdbcType=VARCHAR}, #{placeOriginid,jdbcType=INTEGER}, #{placeOrigin,jdbcType=VARCHAR}, 
+      #{goodsFreight,jdbcType=DECIMAL}, #{createdUser,jdbcType=VARCHAR}, #{createdTime,jdbcType=TIMESTAMP}, 
+      #{updatedUser,jdbcType=VARCHAR}, #{updatedTime,jdbcType=TIMESTAMP}, #{sex,jdbcType=BIT}, 
+      #{countrysize,jdbcType=VARCHAR}, #{gjvalidendtime,jdbcType=TIMESTAMP}, #{gjvalidstarttime,jdbcType=TIMESTAMP}, 
+      #{gjdiscount,jdbcType=DECIMAL}, #{iseffect,jdbcType=TINYINT}, #{detailHtml,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.yx.PrdYxBaseItem"  useGeneratedKeys="true" keyProperty="id">
+    insert into prd_yx_base_item
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="skuCode != null">
+        sku_code,
+      </if>
+      <if test="brandId != null">
+        brand_id,
+      </if>
+      <if test="brandName != null">
+        brand_name,
+      </if>
+      <if test="categoryId != null">
+        category_id,
+      </if>
+      <if test="categoryName != null">
+        category_name,
+      </if>
+      <if test="categoryId2 != null">
+        category_id2,
+      </if>
+      <if test="categoryName2 != null">
+        category_name2,
+      </if>
+      <if test="categoryId3 != null">
+        category_id3,
+      </if>
+      <if test="categoryName3 != null">
+        category_name3,
+      </if>
+      <if test="goodsType != null">
+        goods_type,
+      </if>
+      <if test="isCross != null">
+        is_cross,
+      </if>
+      <if test="supplierId != null">
+        supplier_id,
+      </if>
+      <if test="supplierName != null">
+        supplier_name,
+      </if>
+      <if test="goodsName != null">
+        goods_name,
+      </if>
+      <if test="goodsNameEn != null">
+        goods_name_en,
+      </if>
+      <if test="goodsBody != null">
+        goods_body,
+      </if>
+      <if test="goodsImage != null">
+        goods_image,
+      </if>
+      <if test="goodsImages != null">
+        goods_images,
+      </if>
+      <if test="goodsSpecname != null">
+        goods_specname,
+      </if>
+      <if test="placeOriginid != null">
+        place_originId,
+      </if>
+      <if test="placeOrigin != null">
+        place_origin,
+      </if>
+      <if test="goodsFreight != null">
+        goods_freight,
+      </if>
+      <if test="createdUser != null">
+        created_user,
+      </if>
+      <if test="createdTime != null">
+        created_time,
+      </if>
+      <if test="updatedUser != null">
+        updated_user,
+      </if>
+      <if test="updatedTime != null">
+        updated_time,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="countrysize != null">
+        countrySize,
+      </if>
+      <if test="gjvalidendtime != null">
+        gjValidEndtime,
+      </if>
+      <if test="gjvalidstarttime != null">
+        gjValidStarttime,
+      </if>
+      <if test="gjdiscount != null">
+        gjDiscount,
+      </if>
+      <if test="iseffect != null">
+        isEffect,
+      </if>
+      <if test="detailHtml != null">
+        detailHtml,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="skuCode != null">
+        #{skuCode,jdbcType=VARCHAR},
+      </if>
+      <if test="brandId != null">
+        #{brandId,jdbcType=INTEGER},
+      </if>
+      <if test="brandName != null">
+        #{brandName,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId != null">
+        #{categoryId,jdbcType=INTEGER},
+      </if>
+      <if test="categoryName != null">
+        #{categoryName,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId2 != null">
+        #{categoryId2,jdbcType=INTEGER},
+      </if>
+      <if test="categoryName2 != null">
+        #{categoryName2,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId3 != null">
+        #{categoryId3,jdbcType=INTEGER},
+      </if>
+      <if test="categoryName3 != null">
+        #{categoryName3,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsType != null">
+        #{goodsType,jdbcType=INTEGER},
+      </if>
+      <if test="isCross != null">
+        #{isCross,jdbcType=INTEGER},
+      </if>
+      <if test="supplierId != null">
+        #{supplierId,jdbcType=INTEGER},
+      </if>
+      <if test="supplierName != null">
+        #{supplierName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsName != null">
+        #{goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsNameEn != null">
+        #{goodsNameEn,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsBody != null">
+        #{goodsBody,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsImage != null">
+        #{goodsImage,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsImages != null">
+        #{goodsImages,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsSpecname != null">
+        #{goodsSpecname,jdbcType=VARCHAR},
+      </if>
+      <if test="placeOriginid != null">
+        #{placeOriginid,jdbcType=INTEGER},
+      </if>
+      <if test="placeOrigin != null">
+        #{placeOrigin,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsFreight != null">
+        #{goodsFreight,jdbcType=DECIMAL},
+      </if>
+      <if test="createdUser != null">
+        #{createdUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null">
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedUser != null">
+        #{updatedUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedTime != null">
+        #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=BIT},
+      </if>
+      <if test="countrysize != null">
+        #{countrysize,jdbcType=VARCHAR},
+      </if>
+      <if test="gjvalidendtime != null">
+        #{gjvalidendtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gjvalidstarttime != null">
+        #{gjvalidstarttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gjdiscount != null">
+        #{gjdiscount,jdbcType=DECIMAL},
+      </if>
+      <if test="iseffect != null">
+        #{iseffect,jdbcType=TINYINT},
+      </if>
+      <if test="detailHtml != null">
+        #{detailHtml},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.yx.PrdYxBaseItem">
+    update prd_yx_base_item
+    <set>
+      <if test="skuCode != null">
+        sku_code = #{skuCode,jdbcType=VARCHAR},
+      </if>
+      <if test="brandId != null">
+        brand_id = #{brandId,jdbcType=INTEGER},
+      </if>
+      <if test="brandName != null">
+        brand_name = #{brandName,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId != null">
+        category_id = #{categoryId,jdbcType=INTEGER},
+      </if>
+      <if test="categoryName != null">
+        category_name = #{categoryName,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId2 != null">
+        category_id2 = #{categoryId2,jdbcType=INTEGER},
+      </if>
+      <if test="categoryName2 != null">
+        category_name2 = #{categoryName2,jdbcType=VARCHAR},
+      </if>
+      <if test="categoryId3 != null">
+        category_id3 = #{categoryId3,jdbcType=INTEGER},
+      </if>
+      <if test="categoryName3 != null">
+        category_name3 = #{categoryName3,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsType != null">
+        goods_type = #{goodsType,jdbcType=INTEGER},
+      </if>
+      <if test="isCross != null">
+        is_cross = #{isCross,jdbcType=INTEGER},
+      </if>
+      <if test="supplierId != null">
+        supplier_id = #{supplierId,jdbcType=INTEGER},
+      </if>
+      <if test="supplierName != null">
+        supplier_name = #{supplierName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsName != null">
+        goods_name = #{goodsName,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsNameEn != null">
+        goods_name_en = #{goodsNameEn,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsBody != null">
+        goods_body = #{goodsBody,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsImage != null">
+        goods_image = #{goodsImage,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsImages != null">
+        goods_images = #{goodsImages,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsSpecname != null">
+        goods_specname = #{goodsSpecname,jdbcType=VARCHAR},
+      </if>
+      <if test="placeOriginid != null">
+        place_originId = #{placeOriginid,jdbcType=INTEGER},
+      </if>
+      <if test="placeOrigin != null">
+        place_origin = #{placeOrigin,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsFreight != null">
+        goods_freight = #{goodsFreight,jdbcType=DECIMAL},
+      </if>
+      <if test="createdUser != null">
+        created_user = #{createdUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null">
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedUser != null">
+        updated_user = #{updatedUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedTime != null">
+        updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=BIT},
+      </if>
+      <if test="countrysize != null">
+        countrySize = #{countrysize,jdbcType=VARCHAR},
+      </if>
+      <if test="gjvalidendtime != null">
+        gjValidEndtime = #{gjvalidendtime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gjvalidstarttime != null">
+        gjValidStarttime = #{gjvalidstarttime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="gjdiscount != null">
+        gjDiscount = #{gjdiscount,jdbcType=DECIMAL},
+      </if>
+      <if test="iseffect != null">
+        isEffect = #{iseffect,jdbcType=TINYINT},
+      </if>
+      <if test="detailHtml != null">
+        detailHtml = #{detailHtml},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.yx.PrdYxBaseItem">
+    update prd_yx_base_item
+    set sku_code = #{skuCode,jdbcType=VARCHAR},
+      brand_id = #{brandId,jdbcType=INTEGER},
+      brand_name = #{brandName,jdbcType=VARCHAR},
+      category_id = #{categoryId,jdbcType=INTEGER},
+      category_name = #{categoryName,jdbcType=VARCHAR},
+      category_id2 = #{categoryId2,jdbcType=INTEGER},
+      category_name2 = #{categoryName2,jdbcType=VARCHAR},
+      category_id3 = #{categoryId3,jdbcType=INTEGER},
+      category_name3 = #{categoryName3,jdbcType=VARCHAR},
+      goods_type = #{goodsType,jdbcType=INTEGER},
+      is_cross = #{isCross,jdbcType=INTEGER},
+      supplier_id = #{supplierId,jdbcType=INTEGER},
+      supplier_name = #{supplierName,jdbcType=VARCHAR},
+      goods_name = #{goodsName,jdbcType=VARCHAR},
+      goods_name_en = #{goodsNameEn,jdbcType=VARCHAR},
+      goods_body = #{goodsBody,jdbcType=VARCHAR},
+      goods_image = #{goodsImage,jdbcType=VARCHAR},
+      goods_images = #{goodsImages,jdbcType=VARCHAR},
+      goods_specname = #{goodsSpecname,jdbcType=VARCHAR},
+      place_originId = #{placeOriginid,jdbcType=INTEGER},
+      place_origin = #{placeOrigin,jdbcType=VARCHAR},
+      goods_freight = #{goodsFreight,jdbcType=DECIMAL},
+      created_user = #{createdUser,jdbcType=VARCHAR},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      updated_user = #{updatedUser,jdbcType=VARCHAR},
+      updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+      sex = #{sex,jdbcType=BIT},
+      countrySize = #{countrysize,jdbcType=VARCHAR},
+      gjValidEndtime = #{gjvalidendtime,jdbcType=TIMESTAMP},
+      gjValidStarttime = #{gjvalidstarttime,jdbcType=TIMESTAMP},
+      gjDiscount = #{gjdiscount,jdbcType=DECIMAL},
+      isEffect = #{iseffect,jdbcType=TINYINT},
+      detailHtml = #{detailHtml,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

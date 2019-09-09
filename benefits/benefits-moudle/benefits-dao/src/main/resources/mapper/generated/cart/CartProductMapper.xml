@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.cart.CartProductMapper">
+
+	<resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.cart.CartProduct">
+		<id property="id" column="ID" /><!--主键-->
+		<result property="accountId" column="ACCOUNT_ID" /><!--用户id-->
+		<result property="type" column="TYPE" /><!--用户类型，1：正式用户，2：临时用户-->
+		<result property="skuId" column="SKU_ID" /><!--商品id-->
+		<result property="sellerId" column="SELLER_ID" /><!--卖家id-->
+		<result property="channel" column="CHANNEL" /><!--购物车渠道，0: 福粒-->
+		<result property="count" column="COUNT" /><!--购物车商品数量-->
+		<result property="checked" column="CHECKED" /><!--是否选中，0：未选中，1：选中-->
+		<result property="activityId" column="ACTIVITY_ID" /><!--活动ID-->
+		<result property="isDelete" column="IS_DELETE" /><!--是否逻辑删除-->
+		<result property="createTime" column="CREATE_TIME" /><!--创建时间-->
+		<result property="updateTime" column="UPDATE_TIME" /><!--最后更新时间-->
+	</resultMap>
+
+	<sql id="Base_Column_List">
+            `ID` ,
+            `ACCOUNT_ID` ,
+            `TYPE` ,
+            `SKU_ID` ,
+            `SELLER_ID` ,
+            `CHANNEL` ,
+            `COUNT` ,
+            `CHECKED` ,
+            `ACTIVITY_ID` ,
+            `IS_DELETE` ,
+            `CREATE_TIME` ,
+            `UPDATE_TIME` 
+	</sql>
+	
+    <sql id="idCnd">
+        <where>
+            <if test="id!=null" >ID=#{id,jdbcType=BIGINT}</if>
+            <if test="id==null">1=0</if>
+        </where>
+    </sql>
+    
+	<insert id="insert" parameterType="com.lx.benefits.bean.entity.cart.CartProduct" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		cart_product
+		(
+		`ID`,
+		`ACCOUNT_ID`,
+		`TYPE`,
+		`SKU_ID`,
+		`SELLER_ID`,
+		`CHANNEL`,
+		`COUNT`,
+		`CHECKED`,
+		`ACTIVITY_ID`,
+		`IS_DELETE`,
+		`CREATE_TIME`,
+		`UPDATE_TIME`
+		) VALUES 
+		(
+		#{id,jdbcType=BIGINT},
+		#{accountId,jdbcType=BIGINT},
+		#{type,jdbcType=TINYINT},
+		#{skuId,jdbcType=BIGINT},
+		#{sellerId,jdbcType=BIGINT},
+		#{channel,jdbcType=INTEGER},
+		#{count,jdbcType=INTEGER},
+		#{checked,jdbcType=TINYINT},
+		#{activityId,jdbcType=BIGINT},
+		#{isDelete,jdbcType=TINYINT},
+		#{createTime,jdbcType=TIMESTAMP},
+		#{updateTime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+	
+	<insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.cart.CartProduct" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		cart_product
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >`ID`,</if>
+		<if test="accountId!=null" >`ACCOUNT_ID`,</if>
+		<if test="type!=null" >`TYPE`,</if>
+		<if test="skuId!=null" >`SKU_ID`,</if>
+		<if test="sellerId!=null" >`SELLER_ID`,</if>
+		<if test="channel!=null" >`CHANNEL`,</if>
+		<if test="count!=null" >`COUNT`,</if>
+		<if test="checked!=null" >`CHECKED`,</if>
+		<if test="activityId!=null" >`ACTIVITY_ID`,</if>
+		<if test="isDelete!=null" >`IS_DELETE`,</if>
+		<if test="createTime!=null" >`CREATE_TIME`,</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >#{id,jdbcType=BIGINT},</if>
+		<if test="accountId!=null" >#{accountId,jdbcType=BIGINT},</if>
+		<if test="type!=null" >#{type,jdbcType=TINYINT},</if>
+		<if test="skuId!=null" >#{skuId,jdbcType=BIGINT},</if>
+		<if test="sellerId!=null" >#{sellerId,jdbcType=BIGINT},</if>
+		<if test="channel!=null" >#{channel,jdbcType=INTEGER},</if>
+		<if test="count!=null" >#{count,jdbcType=INTEGER},</if>
+		<if test="checked!=null" >#{checked,jdbcType=TINYINT},</if>
+		<if test="activityId!=null" >#{activityId,jdbcType=BIGINT},</if>
+		<if test="isDelete!=null" >#{isDelete,jdbcType=TINYINT},</if>
+		<if test="createTime!=null" >#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >#{updateTime,jdbcType=TIMESTAMP}</if>
+		</trim>
+	</insert>
+	<delete id="deleteByPrimaryKey">
+		DELETE FROM cart_product
+		<include refid="idCnd" />
+	</delete>
+	
+	<update id="updateByPrimaryKeySelective">
+		UPDATE cart_product
+		<set>
+		<if test="id!=null" >`ID`=#{id,jdbcType=BIGINT},</if>
+		<if test="accountId!=null" >`ACCOUNT_ID`=#{accountId,jdbcType=BIGINT},</if>
+		<if test="type!=null" >`TYPE`=#{type,jdbcType=TINYINT},</if>
+		<if test="skuId!=null" >`SKU_ID`=#{skuId,jdbcType=BIGINT},</if>
+		<if test="sellerId!=null" >`SELLER_ID`=#{sellerId,jdbcType=BIGINT},</if>
+		<if test="channel!=null" >`CHANNEL`=#{channel,jdbcType=INTEGER},</if>
+		<if test="count!=null" >`COUNT`=#{count,jdbcType=INTEGER},</if>
+		<if test="checked!=null" >`CHECKED`=#{checked,jdbcType=TINYINT},</if>
+		<if test="activityId!=null" >`ACTIVITY_ID`=#{activityId,jdbcType=BIGINT},</if>
+		<if test="isDelete!=null" >`IS_DELETE`=#{isDelete,jdbcType=TINYINT},</if>
+		<if test="createTime!=null" >`CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+		</set>
+		<include refid="idCnd" />
+	</update>
+	
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap">
+		SELECT
+			<include refid="Base_Column_List" />
+		FROM 
+			cart_product
+		<include refid="idCnd" />
+	</select>
+	
+	
+	<sql id="where_clause">
+    	<where>
+			<if test="id!=null" >`ID`=#{id,jdbcType=BIGINT}   </if>
+	        <if test="accountId!=null" > AND `ACCOUNT_ID`=#{accountId,jdbcType=BIGINT}</if>
+	        <if test="type!=null" > AND `TYPE`=#{type,jdbcType=TINYINT}</if>
+	        <if test="skuId!=null" > AND `SKU_ID`=#{skuId,jdbcType=BIGINT}</if>
+	        <if test="sellerId!=null" > AND `SELLER_ID`=#{sellerId,jdbcType=BIGINT}</if>
+	        <if test="channel!=null" > AND `CHANNEL`=#{channel,jdbcType=INTEGER}</if>
+	        <if test="count!=null" > AND `COUNT`=#{count,jdbcType=INTEGER}</if>
+	        <if test="checked!=null" > AND `CHECKED`=#{checked,jdbcType=TINYINT}</if>
+	        <if test="activityId!=null" > AND `ACTIVITY_ID`=#{activityId,jdbcType=BIGINT}</if>
+	        <if test="isDelete!=null" > AND `IS_DELETE`=#{isDelete,jdbcType=TINYINT}</if>
+	        <if test="createTime!=null" > AND `CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP}</if>
+	        <if test="updateTime!=null" > AND `UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+    	</where>
+    </sql>
+    
+	
+</mapper>
+

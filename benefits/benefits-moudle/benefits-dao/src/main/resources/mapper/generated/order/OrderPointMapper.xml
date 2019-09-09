@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.order.OrderPointMapper">
+
+	<resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.order.OrderPoint">
+		<id property="id" column="ID" /><!--主键ID-->
+		<result property="creditId" column="CREDIT_ID" /><!--积分账户ID-->
+		<result property="userId" column="USER_ID" /><!--用户ID-->
+		<result property="payOrderNumber" column="PAY_ORDER_NUMBER" /><!--支付级订单编号-->
+		<result property="usedPoint" column="USED_POINT" /><!--使用积分-->
+		<result property="isDelete" column="IS_DELETE" /><!--删除状态 0：未删除 1：已删除-->
+		<result property="createTime" column="CREATE_TIME" /><!--创建时间-->
+		<result property="updateTime" column="UPDATE_TIME" /><!--更新时间-->
+	</resultMap>
+
+	<sql id="Base_Column_List">
+            `ID` ,
+            `CREDIT_ID` ,
+            `USER_ID` ,
+            `PAY_ORDER_NUMBER` ,
+            `USED_POINT` ,
+            `IS_DELETE` ,
+            `CREATE_TIME` ,
+            `UPDATE_TIME` 
+	</sql>
+	
+    <sql id="idCnd">
+        <where>
+            <if test="id!=null" >ID=#{id,jdbcType=BIGINT}</if>
+            <if test="id==null">1=0</if>
+        </where>
+    </sql>
+    
+	<insert id="insert" parameterType="com.lx.benefits.bean.entity.order.OrderPoint" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		order_point
+		(
+		`ID`,
+		`CREDIT_ID`,
+		`USER_ID`,
+		`PAY_ORDER_NUMBER`,
+		`USED_POINT`,
+		`IS_DELETE`,
+		`CREATE_TIME`,
+		`UPDATE_TIME`
+		) VALUES 
+		(
+		#{id,jdbcType=BIGINT},
+		#{creditId,jdbcType=BIGINT},
+		#{userId,jdbcType=BIGINT},
+		#{payOrderNumber,jdbcType=BIGINT},
+		#{usedPoint,jdbcType=BIGINT},
+		#{isDelete,jdbcType=TINYINT},
+		#{createTime,jdbcType=TIMESTAMP},
+		#{updateTime,jdbcType=TIMESTAMP}
+		)
+	</insert>
+	
+	<insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.order.OrderPoint" keyProperty="id" useGeneratedKeys="true">
+		INSERT INTO 
+		order_point
+		<trim prefix="(" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >`ID`,</if>
+		<if test="creditId!=null" >`CREDIT_ID`,</if>
+		<if test="userId!=null" >`USER_ID`,</if>
+		<if test="payOrderNumber!=null" >`PAY_ORDER_NUMBER`,</if>
+		<if test="usedPoint!=null" >`USED_POINT`,</if>
+		<if test="isDelete!=null" >`IS_DELETE`,</if>
+		<if test="createTime!=null" >`CREATE_TIME`,</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`</if>
+		</trim>
+		<trim prefix="values (" suffix=")" suffixOverrides=",">
+		<if test="id!=null" >#{id,jdbcType=BIGINT},</if>
+		<if test="creditId!=null" >#{creditId,jdbcType=BIGINT},</if>
+		<if test="userId!=null" >#{userId,jdbcType=BIGINT},</if>
+		<if test="payOrderNumber!=null" >#{payOrderNumber,jdbcType=BIGINT},</if>
+		<if test="usedPoint!=null" >#{usedPoint,jdbcType=BIGINT},</if>
+		<if test="isDelete!=null" >#{isDelete,jdbcType=TINYINT},</if>
+		<if test="createTime!=null" >#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >#{updateTime,jdbcType=TIMESTAMP}</if>
+		</trim>
+	</insert>
+	<delete id="deleteByPrimaryKey">
+		DELETE FROM order_point
+		<include refid="idCnd" />
+	</delete>
+	
+	<update id="updateByPrimaryKeySelective">
+		UPDATE order_point
+		<set>
+		<if test="id!=null" >`ID`=#{id,jdbcType=BIGINT},</if>
+		<if test="creditId!=null" >`CREDIT_ID`=#{creditId,jdbcType=BIGINT},</if>
+		<if test="userId!=null" >`USER_ID`=#{userId,jdbcType=BIGINT},</if>
+		<if test="payOrderNumber!=null" >`PAY_ORDER_NUMBER`=#{payOrderNumber,jdbcType=BIGINT},</if>
+		<if test="usedPoint!=null" >`USED_POINT`=#{usedPoint,jdbcType=BIGINT},</if>
+		<if test="isDelete!=null" >`IS_DELETE`=#{isDelete,jdbcType=TINYINT},</if>
+		<if test="createTime!=null" >`CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP},</if>
+		<if test="updateTime!=null" >`UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+		</set>
+		<include refid="idCnd" />
+	</update>
+	
+	<select id="selectByPrimaryKey" resultMap="BaseResultMap">
+		SELECT
+			<include refid="Base_Column_List" />
+		FROM 
+			order_point
+		<include refid="idCnd" />
+	</select>
+	
+	
+	<sql id="where_clause">
+    	<where>
+			<if test="id!=null" >`ID`=#{id,jdbcType=BIGINT}   </if>
+	        <if test="creditId!=null" > AND `CREDIT_ID`=#{creditId,jdbcType=BIGINT}</if>
+	        <if test="userId!=null" > AND `USER_ID`=#{userId,jdbcType=BIGINT}</if>
+	        <if test="payOrderNumber!=null" > AND `PAY_ORDER_NUMBER`=#{payOrderNumber,jdbcType=BIGINT}</if>
+	        <if test="usedPoint!=null" > AND `USED_POINT`=#{usedPoint,jdbcType=BIGINT}</if>
+	        <if test="isDelete!=null" > AND `IS_DELETE`=#{isDelete,jdbcType=TINYINT}</if>
+	        <if test="createTime!=null" > AND `CREATE_TIME`=#{createTime,jdbcType=TIMESTAMP}</if>
+	        <if test="updateTime!=null" > AND `UPDATE_TIME`=#{updateTime,jdbcType=TIMESTAMP}</if>
+    	</where>
+    </sql>
+    
+	
+</mapper>
+

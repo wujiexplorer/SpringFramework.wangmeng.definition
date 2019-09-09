@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.memberinfo.MemberInfoMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.memberinfo.MemberInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="nick_name" jdbcType="VARCHAR" property="nick_name" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="salt" jdbcType="VARCHAR" property="salt" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="is_mobile_verified" jdbcType="TINYINT" property="is_mobile_verified" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="create_time" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="modify_time" jdbcType="TIMESTAMP" property="modify_time" />
+    <result column="plat_form" jdbcType="TINYINT" property="plat_form" />
+    <result column="state" jdbcType="TINYINT" property="state" />
+    <result column="promoter_id" jdbcType="BIGINT" property="promoter_id" />
+    <result column="shop_promoter_id" jdbcType="BIGINT" property="shop_promoter_id" />
+    <result column="scan_promoter_id" jdbcType="BIGINT" property="scan_promoter_id" />
+    <result column="source" jdbcType="TINYINT" property="source" />
+    <result column="user_name" jdbcType="VARCHAR" property="user_name" />
+    <result column="channel_code" jdbcType="VARCHAR" property="channel_code" />
+    <result column="tpin" jdbcType="VARCHAR" property="tpin" />
+    <result column="advert_from" jdbcType="VARCHAR" property="advert_from" />
+    <result column="term_of_validity" jdbcType="DATE" property="term_of_validity" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, nick_name, password, salt, mobile, email, sex, is_mobile_verified, create_time, 
+    ip, modify_time, plat_form, state, promoter_id, shop_promoter_id, scan_promoter_id, 
+    source, user_name, channel_code, tpin, advert_from, term_of_validity
+  </sql>
+  <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.memberinfo.MemberInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from mem_member_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="page != null and pageSize != null">
+      LIMIT #{page}, #{pageSize}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from mem_member_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from mem_member_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.memberinfo.MemberInfoExample">
+    delete from mem_member_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.memberinfo.MemberInfo">
+    insert into mem_member_info (id, nick_name, password, 
+      salt, mobile, email, 
+      sex, is_mobile_verified, create_time, 
+      ip, modify_time, plat_form, 
+      state, promoter_id, shop_promoter_id, 
+      scan_promoter_id, source, user_name, 
+      channel_code, tpin, advert_from, 
+      term_of_validity)
+    values (#{id,jdbcType=BIGINT}, #{nick_name,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{salt,jdbcType=VARCHAR}, #{mobile,jdbcType=VARCHAR}, #{email,jdbcType=VARCHAR}, 
+      #{sex,jdbcType=TINYINT}, #{is_mobile_verified,jdbcType=TINYINT}, #{create_time,jdbcType=TIMESTAMP}, 
+      #{ip,jdbcType=VARCHAR}, #{modify_time,jdbcType=TIMESTAMP}, #{plat_form,jdbcType=TINYINT}, 
+      #{state,jdbcType=TINYINT}, #{promoter_id,jdbcType=BIGINT}, #{shop_promoter_id,jdbcType=BIGINT}, 
+      #{scan_promoter_id,jdbcType=BIGINT}, #{source,jdbcType=TINYINT}, #{user_name,jdbcType=VARCHAR}, 
+      #{channel_code,jdbcType=VARCHAR}, #{tpin,jdbcType=VARCHAR}, #{advert_from,jdbcType=VARCHAR}, 
+      #{term_of_validity,jdbcType=DATE})
+  </insert>
+  <insert id="insertSelective" useGeneratedKeys="true" keyProperty="id" parameterType="com.lx.benefits.bean.entity.memberinfo.MemberInfo">
+    insert into mem_member_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="nick_name != null">
+        nick_name,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="salt != null">
+        salt,
+      </if>
+      <if test="mobile != null">
+        mobile,
+      </if>
+      <if test="email != null">
+        email,
+      </if>
+      <if test="sex != null">
+        sex,
+      </if>
+      <if test="is_mobile_verified != null">
+        is_mobile_verified,
+      </if>
+      <if test="create_time != null">
+        create_time,
+      </if>
+      <if test="ip != null">
+        ip,
+      </if>
+      <if test="modify_time != null">
+        modify_time,
+      </if>
+      <if test="plat_form != null">
+        plat_form,
+      </if>
+      <if test="state != null">
+        state,
+      </if>
+      <if test="promoter_id != null">
+        promoter_id,
+      </if>
+      <if test="shop_promoter_id != null">
+        shop_promoter_id,
+      </if>
+      <if test="scan_promoter_id != null">
+        scan_promoter_id,
+      </if>
+      <if test="source != null">
+        source,
+      </if>
+      <if test="user_name != null">
+        user_name,
+      </if>
+      <if test="channel_code != null">
+        channel_code,
+      </if>
+      <if test="tpin != null">
+        tpin,
+      </if>
+      <if test="advert_from != null">
+        advert_from,
+      </if>
+      <if test="term_of_validity != null">
+        term_of_validity,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="nick_name != null">
+        #{nick_name,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="salt != null">
+        #{salt,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="is_mobile_verified != null">
+        #{is_mobile_verified,jdbcType=TINYINT},
+      </if>
+      <if test="create_time != null">
+        #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="ip != null">
+        #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="modify_time != null">
+        #{modify_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="plat_form != null">
+        #{plat_form,jdbcType=TINYINT},
+      </if>
+      <if test="state != null">
+        #{state,jdbcType=TINYINT},
+      </if>
+      <if test="promoter_id != null">
+        #{promoter_id,jdbcType=BIGINT},
+      </if>
+      <if test="shop_promoter_id != null">
+        #{shop_promoter_id,jdbcType=BIGINT},
+      </if>
+      <if test="scan_promoter_id != null">
+        #{scan_promoter_id,jdbcType=BIGINT},
+      </if>
+      <if test="source != null">
+        #{source,jdbcType=TINYINT},
+      </if>
+      <if test="user_name != null">
+        #{user_name,jdbcType=VARCHAR},
+      </if>
+      <if test="channel_code != null">
+        #{channel_code,jdbcType=VARCHAR},
+      </if>
+      <if test="tpin != null">
+        #{tpin,jdbcType=VARCHAR},
+      </if>
+      <if test="advert_from != null">
+        #{advert_from,jdbcType=VARCHAR},
+      </if>
+      <if test="term_of_validity != null">
+        #{term_of_validity,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+
+
+  <!-- 批量插入员工信息 -->
+  <insert id="batchInsert" parameterType="java.util.List" useGeneratedKeys="true" keyProperty="id">
+    INSERT INTO mem_member_info(id, nick_name, mobile, email, password, plat_form, salt, user_name, state, term_of_validity, create_time, modify_time) VALUES
+    <foreach collection="memberInfoList" item="memberInfo" index="index" separator=",">
+      (#{memberInfo.id}, #{memberInfo.nick_name}, #{memberInfo.mobile}, #{memberInfo.email}, #{memberInfo.password}, 3, #{memberInfo.salt}, #{memberInfo.user_name}, 1, #{memberInfo.term_of_validity}, NOW(), NOW())
+    </foreach>
+  </insert>
+  
+  
+  
+  <select id="countByExample" parameterType="com.lx.benefits.bean.entity.memberinfo.MemberInfoExample" resultType="java.lang.Integer">
+    select count(*) from mem_member_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update mem_member_info
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.nick_name != null">
+        nick_name = #{record.nick_name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.password != null">
+        password = #{record.password,jdbcType=VARCHAR},
+      </if>
+      <if test="record.salt != null">
+        salt = #{record.salt,jdbcType=VARCHAR},
+      </if>
+      <if test="record.mobile != null">
+        mobile = #{record.mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="record.email != null">
+        email = #{record.email,jdbcType=VARCHAR},
+      </if>
+      <if test="record.sex != null">
+        sex = #{record.sex,jdbcType=TINYINT},
+      </if>
+      <if test="record.is_mobile_verified != null">
+        is_mobile_verified = #{record.is_mobile_verified,jdbcType=TINYINT},
+      </if>
+      <if test="record.create_time != null">
+        create_time = #{record.create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.ip != null">
+        ip = #{record.ip,jdbcType=VARCHAR},
+      </if>
+      <if test="record.modify_time != null">
+        modify_time = #{record.modify_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.plat_form != null">
+        plat_form = #{record.plat_form,jdbcType=TINYINT},
+      </if>
+      <if test="record.state != null">
+        state = #{record.state,jdbcType=TINYINT},
+      </if>
+      <if test="record.promoter_id != null">
+        promoter_id = #{record.promoter_id,jdbcType=BIGINT},
+      </if>
+      <if test="record.shop_promoter_id != null">
+        shop_promoter_id = #{record.shop_promoter_id,jdbcType=BIGINT},
+      </if>
+      <if test="record.scan_promoter_id != null">
+        scan_promoter_id = #{record.scan_promoter_id,jdbcType=BIGINT},
+      </if>
+      <if test="record.source != null">
+        source = #{record.source,jdbcType=TINYINT},
+      </if>
+      <if test="record.user_name != null">
+        user_name = #{record.user_name,jdbcType=VARCHAR},
+      </if>
+      <if test="record.channel_code != null">
+        channel_code = #{record.channel_code,jdbcType=VARCHAR},
+      </if>
+      <if test="record.tpin != null">
+        tpin = #{record.tpin,jdbcType=VARCHAR},
+      </if>
+      <if test="record.advert_from != null">
+        advert_from = #{record.advert_from,jdbcType=VARCHAR},
+      </if>
+      <if test="record.term_of_validity != null">
+        term_of_validity = #{record.term_of_validity,jdbcType=DATE},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update mem_member_info
+    set id = #{record.id,jdbcType=BIGINT},
+      nick_name = #{record.nick_name,jdbcType=VARCHAR},
+      password = #{record.password,jdbcType=VARCHAR},
+      salt = #{record.salt,jdbcType=VARCHAR},
+      mobile = #{record.mobile,jdbcType=VARCHAR},
+      email = #{record.email,jdbcType=VARCHAR},
+      sex = #{record.sex,jdbcType=TINYINT},
+      is_mobile_verified = #{record.is_mobile_verified,jdbcType=TINYINT},
+      create_time = #{record.create_time,jdbcType=TIMESTAMP},
+      ip = #{record.ip,jdbcType=VARCHAR},
+      modify_time = #{record.modify_time,jdbcType=TIMESTAMP},
+      plat_form = #{record.plat_form,jdbcType=TINYINT},
+      state = #{record.state,jdbcType=TINYINT},
+      promoter_id = #{record.promoter_id,jdbcType=BIGINT},
+      shop_promoter_id = #{record.shop_promoter_id,jdbcType=BIGINT},
+      scan_promoter_id = #{record.scan_promoter_id,jdbcType=BIGINT},
+      source = #{record.source,jdbcType=TINYINT},
+      user_name = #{record.user_name,jdbcType=VARCHAR},
+      channel_code = #{record.channel_code,jdbcType=VARCHAR},
+      tpin = #{record.tpin,jdbcType=VARCHAR},
+      advert_from = #{record.advert_from,jdbcType=VARCHAR},
+      term_of_validity = #{record.term_of_validity,jdbcType=DATE}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.memberinfo.MemberInfo">
+    update mem_member_info
+    <set>
+      <if test="nick_name != null">
+        nick_name = #{nick_name,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="salt != null">
+        salt = #{salt,jdbcType=VARCHAR},
+      </if>
+      <if test="mobile != null">
+        mobile = #{mobile,jdbcType=VARCHAR},
+      </if>
+      <if test="email != null">
+        email = #{email,jdbcType=VARCHAR},
+      </if>
+      <if test="sex != null">
+        sex = #{sex,jdbcType=TINYINT},
+      </if>
+      <if test="is_mobile_verified != null">
+        is_mobile_verified = #{is_mobile_verified,jdbcType=TINYINT},
+      </if>
+      <if test="create_time != null">
+        create_time = #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="ip != null">
+        ip = #{ip,jdbcType=VARCHAR},
+      </if>
+      <if test="modify_time != null">
+        modify_time = #{modify_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="plat_form != null">
+        plat_form = #{plat_form,jdbcType=TINYINT},
+      </if>
+      <if test="state != null">
+        state = #{state,jdbcType=TINYINT},
+      </if>
+      <if test="promoter_id != null">
+        promoter_id = #{promoter_id,jdbcType=BIGINT},
+      </if>
+      <if test="shop_promoter_id != null">
+        shop_promoter_id = #{shop_promoter_id,jdbcType=BIGINT},
+      </if>
+      <if test="scan_promoter_id != null">
+        scan_promoter_id = #{scan_promoter_id,jdbcType=BIGINT},
+      </if>
+      <if test="source != null">
+        source = #{source,jdbcType=TINYINT},
+      </if>
+      <if test="user_name != null">
+        user_name = #{user_name,jdbcType=VARCHAR},
+      </if>
+      <if test="channel_code != null">
+        channel_code = #{channel_code,jdbcType=VARCHAR},
+      </if>
+      <if test="tpin != null">
+        tpin = #{tpin,jdbcType=VARCHAR},
+      </if>
+      <if test="advert_from != null">
+        advert_from = #{advert_from,jdbcType=VARCHAR},
+      </if>
+      <if test="term_of_validity != null">
+        term_of_validity = #{term_of_validity,jdbcType=DATE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.memberinfo.MemberInfo">
+    update mem_member_info
+    set nick_name = #{nick_name,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      salt = #{salt,jdbcType=VARCHAR},
+      mobile = #{mobile,jdbcType=VARCHAR},
+      email = #{email,jdbcType=VARCHAR},
+      sex = #{sex,jdbcType=TINYINT},
+      is_mobile_verified = #{is_mobile_verified,jdbcType=TINYINT},
+      create_time = #{create_time,jdbcType=TIMESTAMP},
+      ip = #{ip,jdbcType=VARCHAR},
+      modify_time = #{modify_time,jdbcType=TIMESTAMP},
+      plat_form = #{plat_form,jdbcType=TINYINT},
+      state = #{state,jdbcType=TINYINT},
+      promoter_id = #{promoter_id,jdbcType=BIGINT},
+      shop_promoter_id = #{shop_promoter_id,jdbcType=BIGINT},
+      scan_promoter_id = #{scan_promoter_id,jdbcType=BIGINT},
+      source = #{source,jdbcType=TINYINT},
+      user_name = #{user_name,jdbcType=VARCHAR},
+      channel_code = #{channel_code,jdbcType=VARCHAR},
+      tpin = #{tpin,jdbcType=VARCHAR},
+      advert_from = #{advert_from,jdbcType=VARCHAR},
+      term_of_validity = #{term_of_validity,jdbcType=DATE}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

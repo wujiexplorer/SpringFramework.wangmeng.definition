@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.entercreditinfo.CreditChekingRecorderMapper">
+  <resultMap id="ChekingRecorderBeanMap" type="com.lx.benefits.bean.vo.entercreditinfo.CreditChekingRecorderBean">
+    <id column="cash_number" jdbcType="VARCHAR" property="cashNumber" />
+    <result column="enterpr_id" jdbcType="BIGINT" property="enterprId" />
+    <result column="credit_type" jdbcType="INTEGER" property="creditType" />
+    <result column="cash_amount" jdbcType="DECIMAL" property="cashAmount" />
+    <result column="apply_remark" jdbcType="VARCHAR" property="applyRemark" />
+    <result column="apply_type" jdbcType="INTEGER" property="applyType" />
+    <result column="apply_time" jdbcType="TIMESTAMP" property="applyTime" />
+    <result column="apply_user" jdbcType="VARCHAR" property="applyUser" />
+    <result column="check_time" jdbcType="TIMESTAMP" property="checkTime" />
+    <result column="check_user" jdbcType="VARCHAR" property="checkUser" />
+    <result column="check_status" jdbcType="INTEGER" property="checkStatus" />
+    <result column="check_remark" jdbcType="VARCHAR" property="checkRemark" />
+    <result column="pay_voucher" jdbcType="VARCHAR" property="payVoucher" />
+    <result column="pay_time" jdbcType="TIMESTAMP" property="payTime" />
+    <result column="pay_amount" jdbcType="VARCHAR" property="payAmount" />
+  </resultMap>
+  <select id="countWithEnterprName"  resultType="java.lang.Integer">
+  	select count(*)
+  	from credit_cheking_recorder recorder
+  		 left join enterpr_user_info enterpr on recorder.enterpr_id=enterpr.enterpr_id
+    <where>
+        <if test="applyType!=null">
+    		and recorder.apply_type=#{applyType}
+    	</if>
+    	<if test="enterprName!=null">
+    		and enterpr.enterpr_name like concat('%',#{enterprName},'%')
+    	</if>
+    	<if test="applyStartTime!=null">
+    		and recorder.apply_time > #{applyStartTime}
+    	</if>
+    	<if test="applyEndTime!=null">
+    		and recorder.apply_time &lt;= #{applyEndTime}
+    	</if>
+    </where>
+  </select>
+  <select id="selectWithAgentName" resultMap="ChekingRecorderBeanMap">
+  	select recorder.cash_number, recorder.enterpr_id, recorder.credit_type, recorder.cash_amount, recorder.apply_user, recorder.apply_time,
+  		   recorder.apply_type, recorder.apply_remark, enterpr.enterpr_name as enterprName, agent.agent_name as agentName
+  	from credit_cheking_recorder recorder
+  		 left join enterpr_user_info enterpr on recorder.enterpr_id=enterpr.enterpr_id
+  		 left join agent_account_info agent on enterpr.agent_id=agent.id
+    <where>
+    	<if test="applyType!=null">
+    		and recorder.apply_type=#{applyType}
+    	</if>
+    	<if test="enterprName!=null">
+    		and enterpr.enterpr_name like concat('%',#{enterprName},'%')
+    	</if>
+    	<if test="checkStatus!=null">
+    		and recorder.check_status=#{checkStatus}
+    	</if>
+    	<if test="applyStartTime!=null">
+    		and recorder.apply_time > #{applyStartTime}
+    	</if>
+    	<if test="applyEndTime!=null">
+    		and recorder.apply_time &lt;= #{applyEndTime}
+    	</if>
+    </where>
+        order by recorder.cash_number desc
+    <if test="pageBean!=null">
+    	limit #{pageBean.offset},#{pageBean.pageSize} 
+    </if>
+  </select>
+  <select id="sumRechargeAmount" resultType="java.math.BigDecimal">
+  		select IFNULL(sum(cash_amount),0)
+  		from credit_cheking_recorder recorder
+  		where recorder.check_status=2  and apply_type=#{applyType}
+  		<if test="enterprId!=null">
+  			and enterpr_id=#{enterprId}
+  		</if>
+  		<if test="creditType!=null">
+  			and credit_type=#{creditType}
+  		</if>
+  </select>
+  <select id="countCreditRecharge" resultType="java.lang.Integer">
+  		select count(*)
+  		from credit_cheking_recorder recorder
+  		<if test="enterprName!=null">
+  			left join enterpr_user_info enterpr on recorder.enterpr_id=enterpr.enterpr_id
+  		</if>
+  		<if test="agentName!=null">
+  			left join agent_income_recorder agentIncomeRecorder on agentIncomeRecorder.voucher_number=recorder.cash_number
+  			left join agent_account_info agent on agentIncomeRecorder.agent_id=agent.id
+  		</if>
+  		where recorder.check_status=2
+  		<if test="applyType!=null">
+  			and recorder.apply_type=#{applyType}
+  		</if>
+  		<if test="enterprName!=null">
+  			and enterpr.enterpr_name like concat('%',#{enterprName},'%')
+  		</if>
+  		<if test="agentName!=null">
+  			and agent.agent_name like concat('%',#{agentName},'%')
+  		</if>
+  		<if test="rechargeStartTime!=null">
+  			and recorder.check_time>=#{rechargeStartTime}
+  		</if>
+  		<if test="rechargeEndTime!=null">
+  			and recorder.check_time &lt; #{rechargeEndTime}
+  		</if>
+  		<if test="enterprId!=null">
+  			and recorder.enterpr_id = #{enterprId}
+  	</if>
+  </select>
+  
+  <select id="getCreditRechargeRecorders" resultType="com.lx.benefits.bean.vo.entercreditinfo.CreditRechargeRecorder">
+  	select recorder.cash_number as cashNumber, enterpr.enterpr_name as enterprName, recorder.credit_type as creditType,
+  		recorder.cash_amount as cashAmount, recorder.check_user as checkUser, recorder.check_time as checkTime,
+  		recorder.pay_voucher as payVoucher, agent.agent_name as agentName, agentIncomeRecorder.profit_proportion as profitProportion,
+  		agentIncomeRecorder.cash_amount as rebateAmount, recorder.pay_amount as payAmount, recorder.pay_time as payTime,
+		IF(recorder.apply_type=1,IF(agentIncomeRecorder.cash_amount  is null,recorder.cash_amount,recorder.cash_amount-agentIncomeRecorder.cash_amount),null) as actualReceiveAmount
+ 	from credit_cheking_recorder recorder
+  		left join enterpr_user_info enterpr on recorder.enterpr_id=enterpr.enterpr_id
+  		left join agent_income_recorder agentIncomeRecorder on agentIncomeRecorder.voucher_number=recorder.cash_number
+  		left join agent_account_info agent on agentIncomeRecorder.agent_id=agent.id
+  	where recorder.check_status=2
+  	<if test="applyType!=null">
+  		and recorder.apply_type=#{applyType}
+  	</if>
+  	<if test="enterprName!=null">
+  		and enterpr.enterpr_name like concat('%',#{enterprName},'%')
+  	</if>
+  	<if test="agentName!=null">
+  		and agent.agent_name like concat('%',#{agentName},'%')
+  	</if>
+  	<if test="rechargeStartTime!=null">
+  		and recorder.check_time>=#{rechargeStartTime}
+  	</if>
+  	<if test="rechargeEndTime!=null">
+  		and recorder.check_time &lt; #{rechargeEndTime}
+  	</if>
+  	<if test="enterprId!=null">
+  		and recorder.enterpr_id = #{enterprId}
+  	</if>
+ 	order by recorder.check_time desc
+  	<if test="pageBean!=null">
+    	limit #{pageBean.offset},#{pageBean.pageSize} 
+   	</if>
+  </select>
+  
+  <select id="countMoneyCreditinfo" resultType="java.math.BigDecimal">
+  	 select sum(ifnull(pay_amount,0)) from credit_cheking_recorder 
+  	 where enterpr_id = #{enterprId} and apply_type = 1
+  </select>
+  
+  <select id="countMoneyReturnedMoneyRecorder" resultType="java.math.BigDecimal">
+  	select IFNULL(sum(pay_amount),0) from returned_money_recorder 
+  	where cash_number in (select cash_number from credit_cheking_recorder where enterpr_id = #{enterprId} and apply_type= 1) 
+  </select>
+  
+  <insert id="insertReceipt" parameterType="com.lx.benefits.bean.vo.entercreditinfo.CreditRechargeRecorder">
+  	insert into  returned_money_recorder(cash_number,pay_voucher,pay_time,pay_amount,create_user,create_time) 
+  	values(#{cashNumber},#{payVoucher},#{payTime},#{payAmount},#{checkUser},now())
+  </insert>
+  
+  <select id="getMoneyDetailCreditCheck" resultMap="ChekingRecorderBeanMap">
+  	select cash_number,pay_voucher,pay_time,pay_amount from credit_cheking_recorder where cash_number = #{record.cashNumber}
+  </select>
+  
+  <select id="getMoneyDetailReturnedMoney" resultType="com.lx.benefits.bean.vo.entercreditinfo.CreditRechargeRecorder">
+  	select cash_number as cashNumber,pay_voucher as payVoucher,pay_time as payTime,pay_amount as payAmount from returned_money_recorder where cash_number = #{record.cashNumber} ORDER BY id DESC
+  </select>
+  
+  <select id="getMoneyTotal" resultType="com.lx.benefits.bean.vo.entercreditinfo.CreditRechargeRecorder">
+    select cash_number as cashNumber,IFNULL(sum(pay_amount),0) as payAmount,max(pay_time) as payTime
+    from returned_money_recorder 
+    where cash_number in
+    <foreach collection="cashNumbers" item="cashNumber" open="(" close=")" separator=",">
+    	#{cashNumber}
+    </foreach>
+    GROUP BY cash_number
+    order by create_time desc
+  </select>
+</mapper>

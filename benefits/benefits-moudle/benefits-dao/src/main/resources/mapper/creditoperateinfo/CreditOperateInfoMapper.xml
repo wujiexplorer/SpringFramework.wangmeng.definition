@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.creditoperateinfo.CreditOperateInfoMapper">
+    <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo">
+        <id column="optId" jdbcType="BIGINT" property="optId"/>
+        <id column="parentOptId" jdbcType="BIGINT" property="parentOptId"/>
+        <result column="ownerUserId" jdbcType="BIGINT" property="ownerUserId"/>
+        <result column="creditType" jdbcType="TINYINT" property="creditType"/>
+        <result column="campaignId" jdbcType="TINYINT" property="campaignId"/>
+        <result column="credit" jdbcType="DECIMAL" property="credit"/>
+        <result column="optUserId" jdbcType="BIGINT" property="optUserId"/>
+        <result column="optUserName" jdbcType="VARCHAR" property="optUserName"/>
+        <result column="optTime" jdbcType="INTEGER" property="optTime"/>
+        <result column="auditUserId" jdbcType="BIGINT" property="auditUserId"/>
+        <result column="auditTime" jdbcType="INTEGER" property="auditTime"/>
+        <result column="optType" jdbcType="TINYINT" property="optType"/>
+        <result column="auditStatus" jdbcType="TINYINT" property="auditStatus"/>
+        <result column="remark" jdbcType="VARCHAR" property="remark"/>
+        <result column="filePath" jdbcType="VARCHAR" property="filePath"/>
+        <result column="isDeleted" jdbcType="TINYINT" property="isDeleted"/>
+        <result column="created" jdbcType="INTEGER" property="created"/>
+        <result column="updated" jdbcType="INTEGER" property="updated"/>
+        <result column="financeNo" jdbcType="VARCHAR" property="financeNo"/>
+        <result column="employeeName" jdbcType="VARCHAR" property="employeeName"/>
+        <result column="employeeNo" jdbcType="VARCHAR" property="employeeNo"/>
+        <result column="employeeId" jdbcType="INTEGER" property="employeeId"/>
+    </resultMap>
+    <sql id="Example_Where_Clause">
+        <where>
+            <foreach collection="oredCriteria" item="criteria" separator="and">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+    <sql id="Update_By_Example_Where_Clause">
+        <where>
+            <foreach collection="example.oredCriteria" item="criteria" separator="or">
+                <if test="criteria.valid">
+                    <trim prefix="(" prefixOverrides="and" suffix=")">
+                        <foreach collection="criteria.criteria" item="criterion">
+                            <choose>
+                                <when test="criterion.noValue">
+                                    and ${criterion.condition}
+                                </when>
+                                <when test="criterion.singleValue">
+                                    and ${criterion.condition} #{criterion.value}
+                                </when>
+                                <when test="criterion.betweenValue">
+                                    and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                                </when>
+                                <when test="criterion.listValue">
+                                    and ${criterion.condition}
+                                    <foreach close=")" collection="criterion.value" item="listItem" open="("
+                                             separator=",">
+                                        #{listItem}
+                                    </foreach>
+                                </when>
+                            </choose>
+                        </foreach>
+                    </trim>
+                </if>
+            </foreach>
+        </where>
+    </sql>
+    <sql id="Base_Column_List">
+    optId, ownerUserId, creditType, campaignId,credit, optUserId,optUserName, optTime, auditUserId, auditTime,
+    optType, auditStatus, remark,filePath, isDeleted, created, updated,financeNo
+  </sql>
+    <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfoExample"
+            resultMap="BaseResultMap">
+        select
+        <if test="distinct">
+            distinct
+        </if>
+        <include refid="Base_Column_List"/>
+        from credit_operate_info
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+        <if test="orderByClause != null">
+            order by ${orderByClause}
+        </if>
+        <if test="page != null and pageSize != null">
+            LIMIT #{page}, #{pageSize}
+        </if>
+    </select>
+    <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select
+        <include refid="Base_Column_List"/>
+        from credit_operate_info
+        where optId = #{optId,jdbcType=BIGINT}
+    </select>
+    <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from  credit_operate_info
+    where optId = #{optId,jdbcType=BIGINT}
+  </delete>
+    <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfoExample">
+        delete from credit_operate_info
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </delete>
+    <insert id="insert" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo">
+    insert into  credit_operate_info (optId, ownerUserId, creditType, campaignId,
+      credit, optUserId,optUserName, optTime,
+      auditUserId, auditTime, optType, 
+      auditStatus, remark,filePath, isDeleted,
+      created, updated,financeNo)
+    values (#{optId,jdbcType=BIGINT}, #{ownerUserId,jdbcType=BIGINT}, #{creditType,jdbcType=TINYINT}, #{campaignId,jdbcType=TINYINT},
+      #{credit,jdbcType=DECIMAL}, #{optUserId,jdbcType=BIGINT},#{optUserName,jdbcType=VARCHAR}, #{optTime,jdbcType=INTEGER},
+      #{auditUserId,jdbcType=BIGINT}, #{auditTime,jdbcType=INTEGER}, #{optType,jdbcType=TINYINT}, 
+      #{auditStatus,jdbcType=TINYINT}, #{remark,jdbcType=VARCHAR},#{filePath,jdbcType=VARCHAR}, #{isDeleted,jdbcType=TINYINT},
+      #{created,jdbcType=INTEGER}, #{updated,jdbcType=INTEGER}, #{financeNo,jdbcType=VARCHAR})
+  </insert>
+    <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo" useGeneratedKeys="true" keyProperty="optId">
+        insert into credit_operate_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="parentOptId != null">
+                parentOptId,
+            </if>
+            <if test="ownerUserId != null">
+                ownerUserId,
+            </if>
+            <if test="creditType != null">
+                creditType,
+            </if>
+            <if test="campaignId != null">
+                campaignId,
+            </if>
+            <if test="credit != null">
+                credit,
+            </if>
+            <if test="optUserId != null">
+                optUserId,
+            </if>
+            <if test="optUserName != null">
+                optUserName,
+            </if>
+            <if test="optTime != null">
+                optTime,
+            </if>
+            <if test="auditUserId != null">
+                auditUserId,
+            </if>
+            <if test="auditTime != null">
+                auditTime,
+            </if>
+            <if test="optType != null">
+                optType,
+            </if>
+            <if test="auditStatus != null">
+                auditStatus,
+            </if>
+            <if test="remark != null">
+                remark,
+            </if>
+            <if test="filePath != null">
+                filePath,
+            </if>
+            <if test="isDeleted != null">
+                isDeleted,
+            </if>
+            <if test="created != null">
+                created,
+            </if>
+            <if test="updated != null">
+                updated,
+            </if>
+            <if test="financeNo != null">
+                financeNo,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="parentOptId != null">
+                #{parentOptId,jdbcType=BIGINT},
+            </if>
+            <if test="ownerUserId != null">
+                #{ownerUserId,jdbcType=BIGINT},
+            </if>
+            <if test="creditType != null">
+                #{creditType,jdbcType=TINYINT},
+            </if>
+            <if test="campaignId != null">
+                #{campaignId,jdbcType=TINYINT},
+            </if>
+            <if test="credit != null">
+                #{credit,jdbcType=DECIMAL},
+            </if>
+            <if test="optUserId != null">
+                #{optUserId,jdbcType=BIGINT},
+            </if>
+            <if test="optUserName != null">
+                #{optUserName,jdbcType=VARCHAR},
+            </if>
+            <if test="optTime != null">
+                #{optTime,jdbcType=INTEGER},
+            </if>
+            <if test="auditUserId != null">
+                #{auditUserId,jdbcType=BIGINT},
+            </if>
+            <if test="auditTime != null">
+                #{auditTime,jdbcType=INTEGER},
+            </if>
+            <if test="optType != null">
+                #{optType,jdbcType=TINYINT},
+            </if>
+            <if test="auditStatus != null">
+                #{auditStatus,jdbcType=TINYINT},
+            </if>
+            <if test="remark != null">
+                #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="filePath != null">
+                #{filePath,jdbcType=VARCHAR},
+            </if>
+            <if test="isDeleted != null">
+                #{isDeleted,jdbcType=TINYINT},
+            </if>
+            <if test="created != null">
+                #{created,jdbcType=INTEGER},
+            </if>
+            <if test="updated != null">
+                #{updated,jdbcType=INTEGER},
+            </if>
+            <if test="financeNo != null">
+                #{financeNo,jdbcType=VARCHAR},
+            </if>
+
+        </trim>
+    </insert>
+    <select id="countByExample" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfoExample"
+            resultType="java.lang.Integer">
+        select count(*) from credit_operate_info
+        <if test="_parameter != null">
+            <include refid="Example_Where_Clause"/>
+        </if>
+    </select>
+    <update id="updateByExampleSelective" parameterType="map">
+        update credit_operate_info
+        <set>
+            <if test="record.optId != null">
+                optId = #{record.optId,jdbcType=BIGINT},
+            </if>
+            <if test="record.parentOptId != null">
+                parentOptId = #{record.parentOptId,jdbcType=BIGINT},
+            </if>
+            <if test="record.ownerUserId != null">
+                ownerUserId = #{record.ownerUserId,jdbcType=BIGINT},
+            </if>
+            <if test="record.creditType != null">
+                creditType = #{record.creditType,jdbcType=TINYINT},
+            </if>
+            <if test="record.campaignId != null">
+                campaignId = #{record.campaignId,jdbcType=TINYINT},
+            </if>
+            <if test="record.credit != null">
+                credit = #{record.credit,jdbcType=DECIMAL},
+            </if>
+            <if test="record.optUserId != null">
+                optUserId = #{record.optUserId,jdbcType=BIGINT},
+            </if>
+            <if test="record.optUserName != null">
+                optUserName = #{record.optUserName,jdbcType=VARCHAR},
+            </if>
+            <if test="record.optTime != null">
+                optTime = #{record.optTime,jdbcType=INTEGER},
+            </if>
+            <if test="record.auditUserId != null">
+                auditUserId = #{record.auditUserId,jdbcType=BIGINT},
+            </if>
+            <if test="record.auditTime != null">
+                auditTime = #{record.auditTime,jdbcType=INTEGER},
+            </if>
+            <if test="record.optType != null">
+                optType = #{record.optType,jdbcType=TINYINT},
+            </if>
+            <if test="record.auditStatus != null">
+                auditStatus = #{record.auditStatus,jdbcType=TINYINT},
+            </if>
+            <if test="record.remark != null">
+                remark = #{record.remark,jdbcType=VARCHAR},
+            </if>
+            <if test="record.isDeleted != null">
+                isDeleted = #{record.isDeleted,jdbcType=TINYINT},
+            </if>
+            <if test="record.created != null">
+                created = #{record.created,jdbcType=INTEGER},
+            </if>
+            <if test="record.updated != null">
+                updated = #{record.updated,jdbcType=INTEGER},
+            </if>
+            <if test="record.financeNo != null">
+                financeNo = #{record.financeNo,jdbcType=VARCHAR},
+            </if>
+        </set>
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateByExample" parameterType="map">
+        update credit_operate_info
+        set optId = #{record.optId,jdbcType=BIGINT},
+        parentOptId = #{record.parentOptId,jdbcType=BIGINT},
+        ownerUserId = #{record.ownerUserId,jdbcType=BIGINT},
+        creditType = #{record.creditType,jdbcType=TINYINT},
+        campaignId = #{record.campaignId,jdbcType=TINYINT},
+        credit = #{record.credit,jdbcType=DECIMAL},
+        optUserId = #{record.optUserId,jdbcType=BIGINT},
+        optUserName = #{record.optUserName,jdbcType=VARCHAR},
+        optTime = #{record.optTime,jdbcType=INTEGER},
+        auditUserId = #{record.auditUserId,jdbcType=BIGINT},
+        auditTime = #{record.auditTime,jdbcType=INTEGER},
+        optType = #{record.optType,jdbcType=TINYINT},
+        auditStatus = #{record.auditStatus,jdbcType=TINYINT},
+        remark = #{record.remark,jdbcType=VARCHAR},
+        filePath = #{record.filePath,jdbcType=VARCHAR},
+        isDeleted = #{record.isDeleted,jdbcType=TINYINT},
+        created = #{record.created,jdbcType=INTEGER},
+        updated = #{record.updated,jdbcType=INTEGER},
+        financeNo = #{record.financeNo,jdbcType=VARCHAR}
+        <if test="_parameter != null">
+            <include refid="Update_By_Example_Where_Clause"/>
+        </if>
+    </update>
+    <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo">
+        update credit_operate_info
+        <set>
+            <if test="parentOptId != null">
+                parentOptId = #{parentOptId,jdbcType=BIGINT},
+            </if>
+            <if test="ownerUserId != null">
+                ownerUserId = #{ownerUserId,jdbcType=BIGINT},
+            </if>
+            <if test="creditType != null">
+                creditType = #{creditType,jdbcType=TINYINT},
+            </if>
+            <if test="campaignId != null">
+                campaignId = #{campaignId,jdbcType=TINYINT},
+            </if>
+            <if test="credit != null">
+                credit = #{credit,jdbcType=DECIMAL},
+            </if>
+            <if test="optUserId != null">
+                optUserId = #{optUserId,jdbcType=BIGINT},
+            </if>
+            <if test="optUserName != null">
+                optUserName = #{optUserName,jdbcType=VARCHAR},
+            </if>
+            <if test="optTime != null">
+                optTime = #{optTime,jdbcType=INTEGER},
+            </if>
+            <if test="auditUserId != null">
+                auditUserId = #{auditUserId,jdbcType=BIGINT},
+            </if>
+            <if test="auditTime != null">
+                auditTime = #{auditTime,jdbcType=INTEGER},
+            </if>
+            <if test="optType != null">
+                optType = #{optType,jdbcType=TINYINT},
+            </if>
+            <if test="auditStatus != null">
+                auditStatus = #{auditStatus,jdbcType=TINYINT},
+            </if>
+            <if test="remark != null">
+                remark = #{remark,jdbcType=VARCHAR},
+            </if>
+            <if test="isDeleted != null">
+                isDeleted = #{isDeleted,jdbcType=TINYINT},
+            </if>
+            <if test="created != null">
+                created = #{created,jdbcType=INTEGER},
+            </if>
+            <if test="updated != null">
+                updated = #{updated,jdbcType=INTEGER},
+            </if>
+            <if test="financeNo != null">
+                financeNo = #{financeNo,jdbcType=VARCHAR},
+            </if>
+        </set>
+        where optId = #{optId,jdbcType=BIGINT}
+    </update>
+    <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo">
+    update  credit_operate_info
+    set parentOptId = #{parentOptId,jdbcType=BIGINT},
+      ownerUserId = #{ownerUserId,jdbcType=BIGINT},
+      creditType = #{creditType,jdbcType=TINYINT},
+      credit = #{credit,jdbcType=DECIMAL},
+      optUserId = #{optUserId,jdbcType=BIGINT},
+      optUserName = #{optUserName,jdbcType=VARCHAR},
+      optTime = #{optTime,jdbcType=INTEGER},
+      auditUserId = #{auditUserId,jdbcType=BIGINT},
+      auditTime = #{auditTime,jdbcType=INTEGER},
+      optType = #{optType,jdbcType=TINYINT},
+      auditStatus = #{auditStatus,jdbcType=TINYINT},
+      remark = #{remark,jdbcType=VARCHAR},
+      filePath = #{filePath,jdbcType=VARCHAR},
+      isDeleted = #{isDeleted,jdbcType=TINYINT},
+      created = #{created,jdbcType=INTEGER},
+      updated = #{updated,jdbcType=INTEGER},
+      financeNo = #{financeNo,jdbcType=INTEGER}
+    where optId = #{optId,jdbcType=VARCHAR}
+  </update>
+
+    <select id="pageByMap" resultType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo">
+        select
+        <include refid="Base_Column_List"/>
+        from credit_operate_info
+        where isDeleted = 0
+        <if test="ownerUserId != null ">and ownerUserId = #{ownerUserId,jdbcType=BIGINT}</if>
+        <if test="creditType != null ">and creditType = #{creditType,jdbcType=VARCHAR}</if>
+        <if test="parentOptId != null ">and parentOptId = #{parentOptId,jdbcType=BIGINT}</if>
+        <if test="optType != null ">and optType in
+            <foreach collection="optType" item="item" open="(" close=")" separator=",">#{item}</foreach>
+        </if>
+        order by created desc
+        limit #{page},#{pageSize}
+    </select>
+    <select id="listByParentOptId" resultType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo">
+        select
+        <include refid="Base_Column_List"/>
+        from credit_operate_info
+        where isDeleted = 0 and parentOptId = #{parentOptId}
+    </select>
+
+
+    <select id="selectPage" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo" resultMap="BaseResultMap">
+        select co.creditType,co.credit,co.created,eu.employeeName,eu.employeeNo from credit_operate_info as co
+        LEFT JOIN employee_user_info as eu on co.ownerUserId = eu.employeeId
+        where co.isDeleted = 0
+        <if test="ownerUserId != null ">and ownerUserId = #{ownerUserId,jdbcType=BIGINT}</if>
+        <if test="creditType != null ">and creditType = #{creditType,jdbcType=VARCHAR}</if>
+        <if test="parentOptId != null ">and parentOptId = #{parentOptId,jdbcType=BIGINT}</if>
+        order by co.created desc
+        limit #{page},#{pageSize}
+    </select>
+
+    <select id="selectSumByCampaignId" resultType="java.lang.Double">
+        select IFNULL(sum(credit),0) from employee_credit_info where isDeleted = 0 and campaignId = #{campaignId} and creditType = #{creditType}
+    </select>
+
+    <!-- 节日礼金分配总积分 -->
+    <select id="selectTotalByCampaignId" resultType="java.lang.Double">
+        select IFNULL(sum(credit),0) from credit_operate_info where isDeleted = 0 and campaignId = #{campaignId} and parentOptId = 0 and optType = 9
+    </select>
+
+    <!--企业积分分配-->
+    <select id="selectTotalCredit" resultType="java.lang.Double" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo">
+        select IFNULL(sum(credit),0) as credit from credit_operate_info where isDeleted = 0 and
+        ownerUserId = #{ownerUserId} and parentOptId = 0 and creditType = #{creditType} and optType in (3,14);
+    </select>
+
+
+    <select id="creditOptInfo"  resultMap = "BaseResultMap">
+        select optId,ownerUserId,creditType,campaignId,credit,optTime,optType,remark from credit_operate_info
+        where
+        ownerUserId = #{ownerUserId} and credit > 0 and optType in
+         <foreach collection="optTypes" item="optType" open="(" separator="," close=")">
+             #{optType}
+         </foreach>
+        order BY created desc
+        <if test = " page != null and pageSize != null ">
+            limit #{page},#{pageSize}
+        </if>
+    </select>
+
+    <select id="creditOptInfocount" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo"  resultType="java.lang.Integer">
+        select count(*) from credit_operate_info
+        where
+        ownerUserId = #{ownerUserId} and credit > 0 and optType in
+        <foreach collection="optTypes" item="optType" open="(" separator="," close=")">
+            #{optType}
+        </foreach>
+        order BY created desc
+    </select>
+
+    <select id="selectOperateInfo" parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo" resultMap="BaseResultMap">
+        SELECT
+        <include refid="Base_Column_List"/>
+        FROM credit_operate_info
+        WHERE ownerUserId=#{ownerUserId}
+        AND isDeleted=0
+        AND financeNo=#{financeNo}
+        AND optType=#{optType}
+        AND  creditType=#{creditType}
+        AND  campaignId=#{campaignId}
+    </select>
+
+    <select id="festivalHistory"  parameterType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo" resultMap="BaseResultMap">
+        select * from credit_operate_info where campaignId = #{campaignId} and parentOptId = 0 and filePath != ''
+    </select>
+
+    <select id="selectDownExcel" parameterType="java.lang.Long" resultMap="BaseResultMap">
+        select co.creditType,IFNULL(sum(co.credit),0) as credit ,co.created,eu.employeeName,eu.employeeNo,eu.employeeId from credit_operate_info as co
+        LEFT JOIN employee_user_info as eu on co.ownerUserId = eu.employeeId
+        where co.isDeleted = 0 and parentOptId > 0 and campaignId = #{campaignId}
+        group by employeeId
+    </select>
+	
+	<select id="paymentCredit" resultType="java.math.BigDecimal">
+		select ifnull(sum(credit),0) from credit_operate_info 
+		where optType = 7 and ownerUserId in (select employeeId from employee_user_info where enterprId = #{enterprId})
+	</select>
+	
+	<select id="refundCredit" resultType="java.math.BigDecimal">
+		select ifnull(sum(credit),0) from credit_operate_info 
+		where optType = 8 and ownerUserId in (select employeeId from employee_user_info where enterprId = #{enterprId})
+	</select>
+	
+	<select id="recycleCredit" resultType="java.math.BigDecimal">
+		select ifnull(sum(credit),0) from credit_operate_info 
+		where isDeleted = 0 and ownerUserId = #{enterprId} and parentOptId = 0 and optType in ( 4 , 13 ) 
+	</select>
+	
+	<select id="getCreditInfoDetailPay" resultType="com.lx.benefits.bean.dto.enterprise.EnterprCreditDetailDto">
+		select FROM_UNIXTIME(optTime,'%Y-%m') as date,ifnull(sum(credit),0) as credit from credit_operate_info 
+		where optType = 7 and ownerUserId in (select employeeId from employee_user_info where enterprId = #{enterprId}) 
+		GROUP BY FROM_UNIXTIME(optTime,'%Y-%m') DESC limit  #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	
+	<select id="getCreditInfoDetailRefund" resultType="com.lx.benefits.bean.dto.enterprise.EnterprCreditDetailDto">
+		select FROM_UNIXTIME(optTime,'%Y-%m') as date,ifnull(sum(credit),0) as credit from credit_operate_info 
+		where optType = 8 and ownerUserId in (select employeeId from employee_user_info where enterprId = #{enterprId}) 
+		GROUP BY FROM_UNIXTIME(optTime,'%Y-%m') DESC limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	
+	<select id="creditCount" resultType="java.lang.Integer">
+		SELECT count(*) from 
+		(SELECT FROM_UNIXTIME(optTime,'%Y-%m') from credit_operate_info 
+		where optType in (7) and ownerUserId in 
+		(select employeeId from employee_user_info where enterprId = #{enterprId}) 
+		GROUP BY FROM_UNIXTIME(optTime,'%Y-%m')) temp
+	</select>
+	
+	<select id="recycleCreditRecord" resultType="com.lx.benefits.bean.entity.creditoperateinfo.CreditOperateInfo">
+		select co.creditType,co.credit,FROM_UNIXTIME(co.created,'%Y-%m-%d') as recycleCreditTime,eu.employeeName,eu.employeeNo 
+		from credit_operate_info as co 
+		LEFT JOIN employee_user_info as eu 
+		on co.ownerUserId = eu.employeeId where co.isDeleted = 0 
+		and parentOptId in (select optId from credit_operate_info WHERE ownerUserId = #{enterprId} and parentOptId = 0 and optType in ( 4 , 13 )) 
+		order by co.created desc limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	
+	<select id="creditRecordCount" resultType="java.lang.Integer">
+		select count(*) 
+		from credit_operate_info as co 
+		LEFT JOIN employee_user_info as eu 
+		on co.ownerUserId = eu.employeeId 
+		where co.isDeleted = 0 
+		and parentOptId in (select optId from credit_operate_info WHERE ownerUserId = #{enterprId} and parentOptId = 0 and optType in ( 4 , 13 ))
+	</select>
+	
+	<select id="countCreditDistribution" resultType="java.lang.Integer">
+		select count(1) from credit_operate_info where parentOptId = 0 and ownerUserId = #{enterprId} and isDeleted = 0 and optType in (3,9,14)
+	</select>
+	
+	<select id="queryCreditDistribution" resultType="com.lx.benefits.bean.vo.enterpr.EmployeeCreditDistributionBean">
+		select parentOptId,co.creditType,co.credit as creditCount,FROM_UNIXTIME(co.created,'%Y-%m-%d %H:%i:%s') as handleTime,eu.employeeName,eu.employeeNo 
+		from credit_operate_info as co 
+		INNER JOIN employee_user_info as eu on co.ownerUserId = eu.employeeId 
+		where co.isDeleted = 0 and parentOptId in (select optId from credit_operate_info WHERE ownerUserId=#{enterprId} and parentOptId = 0 and optType in (3,9,14)) 
+		order by co.created desc limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	
+	<select id="queryOptType" resultType="com.lx.benefits.bean.vo.enterpr.EmployeeCreditDistributionBean">
+		select optId,optType from credit_operate_info 
+		where parentOptId = 0 and ownerUserId = #{enterprId} and isDeleted = 0 
+		and optType in (3,9,14) order by created desc limit #{pageBean.offset},#{pageBean.pageSize}
+	</select>
+	<select id="isParticipate" resultType="boolean">
+		select EXISTS(
+			select * 
+			from credit_operate_info 
+			where campaignId=#{campaignId} and ownerUserId=#{employeeId} and isParticipate=1
+		)
+	</select>
+	<select id="isAuthority" resultType="boolean">
+		select EXISTS(
+			select * 
+			from credit_operate_info 
+			where campaignId=#{campaignId} and ownerUserId=#{employeeId}
+		)
+	</select>
+	<update id="updateParticipate">
+		update credit_operate_info set isParticipate=1
+		where campaignId=#{campaignId} and ownerUserId=#{employeeId} and optType=10 and isParticipate!=1
+	</update>
+</mapper>

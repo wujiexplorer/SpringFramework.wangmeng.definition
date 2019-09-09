@@ -1,0 +1,148 @@
+spring:
+  jackson:
+    #JsonInclude.Include.ALWAYS              默认
+    #JsonInclude.Include.NON_DEFAULT     属性为默认值不序列化
+    #JsonInclude.Include.NON_EMPTY         属性为 空（””） 或者为 NULL 都不序列化
+    #JsonInclude.Include.NON_NULL           属性为NULL   不序列化
+    default-property-inclusion: NON_NULL
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+# spring.mvc.view.prefix=classpath:/web/views/
+#  resources:
+#    static-locations: classpath:/META-INF/resources/,classpath:/resources/,classpath:/static/,classpath:/public/
+#  main:
+#    banner-mode: "off"
+
+  #数据源
+  datasource:
+    url: jdbc:mysql://rm-uf6i0q77mo39o5vs2ro.mysql.rds.aliyuncs.com:3306/fuli?useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&autoReconnect=true&allowMultiQueries=true&tinyInt1isBit=false&useSSL=false
+    username: admin_user
+    password: fuli2019*^&
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      # 下面为连接池的补充设置，应用到上面所有数据源中
+      # 初始化大小，最小，最大
+      initial-size: 5
+      min-idle: 5
+      max-active: 50
+      # 配置获取连接等待超时的时间
+      max-wait: 60000
+      # 配置间隔多久才进行一次检测，检测需要关闭的空闲连接，单位是毫秒
+      time-between-eviction-runs-millis: 60000
+      # 配置一个连接在池中最小生存的时间，单位是毫秒
+      min-evictable-idle-time-millis: 300000
+      validation-query-timeout: 900000
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      # 打开PSCache，并且指定每个连接上PSCache的大小
+      pool-prepared-statements: true
+      #   配置监控统计拦截的filters，去掉后监控界面sql无法统计，'wall'用于防火墙
+      max-pool-prepared-statement-per-connection-size: 20
+      filters: stat,wall
+      use-global-data-source-stat: true
+      # 通过connectProperties属性来打开mergeSql功能；慢SQL记录
+      connect-properties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+      # 配置监控服务器
+      stat-view-servlet:
+        login-username: admin
+        login-password: 123456
+        reset-enable: false
+        url-pattern: /druid/*
+        # 添加IP白名单
+        #allow:
+        # 添加IP黑名单，当白名单和黑名单重复时，黑名单优先级更高
+        #deny:
+      web-stat-filter:
+        # 添加过滤规则
+        url-pattern: /*
+        # 忽略过滤格式
+        exclusions: "*.js,*.gif,*.jpg,*.png,*.css,*.ico,/druid/*"
+
+  #redis
+  redis:
+    jedis:
+      pool:
+        max-active: 200 # 连接池最大连接数（使用负值表示没有限制）默认 8
+        max-idle: 200 # 连接池中的最大空闲连接  默认 8
+        min-idle: 10 # 连接池中的最小空闲连接 默认 0
+        max-wait: 6000ms # 连接池最大阻塞等待时间（使用负值表示没有限制）默认 -1
+    timeout: 6000ms # 连接超时时间（毫秒）
+    host: r-uf6992b98a86f264.redis.rds.aliyuncs.com
+    port: 6379
+    password: Fuli2019#*@&^
+
+  session:
+    store-type: none
+  #  data:
+  #    elasticsearch:
+  #      cluster-name: *
+  #      cluster-nodes: *
+  #    redis:
+  #      repositories:
+  #        enabled: false
+
+
+wx:
+  appId: wx8d51c0c883fd3c9a
+  appSecret: 7010fca094f7441176a636655ee44357
+
+pay:
+  alipay:
+    appId: 2019022863399539
+    sellerPayId: 1   # pay_account表对应支付账号ID
+    partner: 2088431562188037
+    privateKey: MIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCtN+MEnoSunLJ8TCzfT9RBxQ9TnPI6L+Js1bJSWS1SoWcj2VbswijNbu03cy+2M8SNNtQiYrEtukPcakdJrdkGO5dAp/j3YctYu7QHiN7jmplv2t8RS2nLjYEkeyZYkt/FrkmmMf0ompPwfmn+1tfnkGqo+R4WZpEJxT732m2IsqAP8rFfYSJtLK24jRyGrw4dZrS+Tgs1BA2D7Q3eWkfOKVXMfGZJdAJAKD3BJaspCJOaWvICXN6lQrLDhEzid1wsP3c1FHfRD0Iv1iGN2EMyRs+r2lcZ1utqcRiIgpw/j/XKHOCKyjctPgzdOSaaUPtv/kDb9yAiMzBCATJiv/5/AgMBAAECggEAToHA44wQ6K7eelVwFPoyYmi07Jl6c4LWZato+cevMf8zJt1Pd1j8czduTi5nlnXaBIKwHLGMSgRc015b1vnzHc8OW2CGB2EMb7gK/Us8cf3Uwwx5A3ahiX8l4+no1EYlI4w9lxSa/7cni91Pnw+ypSIgJVtbFp3/6GS8iEs4T7aetyjorJikazZabc9MaFJNm42QHr1tsm7EfRsUuV4/1M0QeRm6c9YCA73DS/Hhfy7nO5ccrAQvCRptZuAXG5ASLrZkPjSDvYf9cS+bKnhJThqXwP6Gb9vg0uX4J4IJX/FnBikVAKT9bGLkbC9HyXF+jUf3cRvjsi/CpusAknUCSQKBgQDZiAbYVjlTwrx2TP8TrZWyMwQEseDDLNgEh5RSY3TJz4sZ8trLRfAT+HjGfeF+1qyOpUljsSTss1Pb7wQ+KKHy2tb0Y/Nz7YRUYvPXQd0ok5Z47caNjOnNMEdnwuD6Kw/VbNke79WNmux+dgvoq7/1uZ23cF4CzXR9NeydP4aGLQKBgQDL2b3O8F/G116PWKXYljq49IlsOcg69We6hcZawfLrFtH4H4+zJlStDCztZrabnShHKV0WbAhM+0Ed/eH90bBEZcTpeis2JwdzlhPV+o53vbm5zN+FIdzQdoVmtS9yDp2psGzZP6ZTqojHFCN1weBXAWpQD/8DwA1JJNYPAF/O2wKBgEsEfx/SNHjvWmEN0pWtskc/Eq6vzUxhxaliPENhayBBw73SI6QgXVf1w2jodoBwdhfHZpTLvWknus7JEdSB3L/Mun6TjZy4F3+mlGLyottgcm8HyQZ9xw9tC+L7sOx1N0OqAwKJQUNRXyeJfDfkKxIJzhs51CHxSq/3jb747mKNAoGBALMrRFsYhvX74c7YOZxuHlrmA8st1kGL5InafobSpTHfstkE1Ia/j/kxFGPsvV90+CvjvT+x4HHY/FjiBrnSjbzwPeyARm6oSzJanECcoo+4H/+ghG09YBmRspqdcYAsPIMi3+jqusQaxXFE0A32Q7n1Mn4AMUIYkRTS3Zn92De1AoGBAIrnrCZxrcmshgsZNP2pfWy10Whrz6wjYlt9q+xiVGrFINAslDR21nFu2ctqgvfvJUqmuTGMzAQONoPSz8+jDOX+Zoxy2slSyBPBB9b9SlIWT3u7n8JuxCq4KU7NiXKXdPCCqu699YacrjTbl6QP5i/fSmwUR78I3S2PqdOjHCgF
+    publicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEArTfjBJ6ErpyyfEws30/UQcUPU5zyOi/ibNWyUlktUqFnI9lW7MIozW7tN3MvtjPEjTbUImKxLbpD3GpHSa3ZBjuXQKf492HLWLu0B4je45qZb9rfEUtpy42BJHsmWJLfxa5JpjH9KJqT8H5p/tbX55BqqPkeFmaRCcU+99ptiLKgD/KxX2EibSytuI0chq8OHWa0vk4LNQQNg+0N3lpHzilVzHxmSXQCQCg9wSWrKQiTmlryAlzepUKyw4RM4ndcLD93NRR30Q9CL9YhjdhDMkbPq9pXGdbranEYiIKcP4/1yhzgiso3LT4M3TkmmlD7b/5A2/cgIjMwQgEyYr/+fwIDAQAB
+    alipayPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEApXf+68t237GuJ8ZbqCsnUjhZ9DrsoorhlYOvxh29PPrqjdXDGPXQwPxTc90xyzdZlCMHDK37v34wG/ilq497vtXJ0g3nwzwhkT4/VmJptwxLVd3Ez3ZpoDszMowML8r8Gg7B8Zgu7DSDtAOvgwMc47mwYrBa69RlREPFtScAakGForiRMC1RYZjmFCsgiQYYjyAm6J8ZEJKj9j12CKPv/4otWpNr3tCrh5crJg1l+2iVlWHQ5NQ6mLYBPbFk52uaKvdlqJ2Xq/nEcB2m+BR2lQTgFBjLW3XmF/KrbqNXpHEz2O7BepQntSvGrPeQqnijFEHpREKAgiGggZu7EbbDNwIDAQAB
+    notifyUrl: https://server.lixiangshop.com/pay/alipayCallback
+    returnUrl: http://fuli.lixiangshop.com/my/orders
+    logPath: /logs
+    inputCharset: GBK
+    signType: RSA2
+  wxPay:
+    sellerPayId: 2   # pay_account表对应支付账号ID
+    appId: wx8d51c0c883fd3c9a
+    mchId: 1491498832
+    mchKey: thisisxigouguojimiyao12333333333
+    notifyUrl: https://server.lixiangshop.com/pay/wxPayCallback
+    keyPath: /opt/cert/wechat/apiclient_cert.p12
+
+qiniu:
+  access:
+    key: r_CJpAAHWFa1vE0hi-ap9PpxCDfNefJnODso0WJC
+  bucket: supplier
+  path: http://supplier.qn.seagoor.com/
+  secret:
+    key: 0a_gpdprqDGFUEU4xYgvNmJO_ipRdqgG_iJcQ7s8
+
+third:
+  platform:
+    seller:
+      jd:
+        id: 1
+        name: 京东
+      yx:
+        id: 3
+        name: 网易严选
+
+yx:
+  apiHost: http://openapi.you.163.com
+  apiUrl: /channel/api.json
+  apiKey: c853c67dcafa428a8cb03bc0681e48f1
+  apiSecret: f5efd642139448189f7acdab9dfffb2a
+
+yian:
+  apiHost: https://bizapi.yianyouxuan.com
+  clientId: iGJcuOa5cyps1UT7RQqKnDkYwNO9sG0t6vfaeBUg
+  clientSecret: JMvQx9PrK900712aA1AhGFpzB3nDRBKBnbJVjvOF9LhwoWxislSDj2PnXArx0t4YkpY8e11tWkFTW7Mt5wxvc9OasxyhMVDanupcvLK8Y4vBsJ3NG3Z7NmKPYoOf9G9g
+
+yibao:
+  apiUrl: https://openapi.smartebao.com:57276/gateway/receive
+  appId: FULI0001
+  appKey: abcdefghij1234567890abcdefghij1234567890
+  platformId: APP_FULI
+  orgCode: smartebao
+  enterprId: 200
+  

@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.yx.PrdYxBaseItemSkuMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.yx.PrdYxBaseItemSku">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="spu_code" jdbcType="BIGINT" property="spuCode" />
+    <result column="sku_code" jdbcType="VARCHAR" property="skuCode" />
+    <result column="goods_spec" jdbcType="VARCHAR" property="goodsSpec" />
+    <result column="goods_storge" jdbcType="INTEGER" property="goodsStorge" />
+    <result column="goods_image" jdbcType="VARCHAR" property="goodsImage" />
+    <result column="created_user" jdbcType="VARCHAR" property="createdUser" />
+    <result column="created_time" jdbcType="TIMESTAMP" property="createdTime" />
+    <result column="updated_user" jdbcType="VARCHAR" property="updatedUser" />
+    <result column="updated_time" jdbcType="TIMESTAMP" property="updatedTime" />
+    <result column="pay_storge" jdbcType="INTEGER" property="payStorge" />
+    <result column="goods_costprice" jdbcType="DECIMAL" property="goodsCostprice" />
+    <result column="goods_markprice" jdbcType="DECIMAL" property="goodsMarkprice" />
+    <result column="goods_price" jdbcType="DECIMAL" property="goodsPrice" />
+    <result column="goods_discount" jdbcType="DECIMAL" property="goodsDiscount" />
+    <result column="item_number" jdbcType="VARCHAR" property="itemNumber" />
+    <result column="seasonId" jdbcType="INTEGER" property="seasonid" />
+    <result column="season" jdbcType="VARCHAR" property="season" />
+    <result column="goods_attr" jdbcType="VARCHAR" property="goodsAttr" />
+    <result column="color" jdbcType="VARCHAR" property="color" />
+    <result column="length" jdbcType="DECIMAL" property="length" />
+    <result column="width" jdbcType="DECIMAL" property="width" />
+    <result column="height" jdbcType="DECIMAL" property="height" />
+    <result column="itemSkuSpecValueList" jdbcType="VARCHAR" property="itemSkuSpecValueList" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    id, spu_code, sku_code, goods_spec, goods_storge, goods_image, created_user, created_time, 
+    updated_user, updated_time, pay_storge, goods_costprice, goods_markprice, goods_price, 
+    goods_discount, item_number, seasonId, season, goods_attr, color, length, width, 
+    height, itemSkuSpecValueList
+  </sql>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from prd_yx_base_item_sku
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <select id="getSku" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from prd_yx_base_item_sku
+    where spu_code = #{spu}
+  </select>
+
+  <delete id="delete" parameterType="java.lang.Integer">
+    delete from prd_yx_base_item_sku
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.yx.PrdYxBaseItemSku">
+    insert into prd_yx_base_item_sku (id, spu_code, sku_code, 
+      goods_spec, goods_storge, goods_image, 
+      created_user, created_time, updated_user, 
+      updated_time, pay_storge, goods_costprice, 
+      goods_markprice, goods_price, goods_discount, 
+      item_number, seasonId, season, 
+      goods_attr, color, length, 
+      width, height,itemSkuSpecValueList)
+    values (#{id,jdbcType=INTEGER}, #{spuCode,jdbcType=BIGINT}, #{skuCode,jdbcType=VARCHAR}, 
+      #{goodsSpec,jdbcType=VARCHAR}, #{goodsStorge,jdbcType=INTEGER}, #{goodsImage,jdbcType=VARCHAR}, 
+      #{createdUser,jdbcType=VARCHAR}, #{createdTime,jdbcType=TIMESTAMP}, #{updatedUser,jdbcType=VARCHAR}, 
+      #{updatedTime,jdbcType=TIMESTAMP}, #{payStorge,jdbcType=INTEGER}, #{goodsCostprice,jdbcType=DECIMAL}, 
+      #{goodsMarkprice,jdbcType=DECIMAL}, #{goodsPrice,jdbcType=DECIMAL}, #{goodsDiscount,jdbcType=DECIMAL}, 
+      #{itemNumber,jdbcType=VARCHAR}, #{seasonid,jdbcType=INTEGER}, #{season,jdbcType=VARCHAR}, 
+      #{goodsAttr,jdbcType=VARCHAR}, #{color,jdbcType=VARCHAR}, #{length,jdbcType=DECIMAL}, 
+      #{width,jdbcType=DECIMAL}, #{height,jdbcType=DECIMAL}, #{itemSkuSpecValueList,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.yx.PrdYxBaseItemSku">
+    insert into prd_yx_base_item_sku
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="spuCode != null">
+        spu_code,
+      </if>
+      <if test="skuCode != null">
+        sku_code,
+      </if>
+      <if test="goodsSpec != null">
+        goods_spec,
+      </if>
+      <if test="goodsStorge != null">
+        goods_storge,
+      </if>
+      <if test="goodsImage != null">
+        goods_image,
+      </if>
+      <if test="createdUser != null">
+        created_user,
+      </if>
+      <if test="createdTime != null">
+        created_time,
+      </if>
+      <if test="updatedUser != null">
+        updated_user,
+      </if>
+      <if test="updatedTime != null">
+        updated_time,
+      </if>
+      <if test="payStorge != null">
+        pay_storge,
+      </if>
+      <if test="goodsCostprice != null">
+        goods_costprice,
+      </if>
+      <if test="goodsMarkprice != null">
+        goods_markprice,
+      </if>
+      <if test="goodsPrice != null">
+        goods_price,
+      </if>
+      <if test="goodsDiscount != null">
+        goods_discount,
+      </if>
+      <if test="itemNumber != null">
+        item_number,
+      </if>
+      <if test="seasonid != null">
+        seasonId,
+      </if>
+      <if test="season != null">
+        season,
+      </if>
+      <if test="goodsAttr != null">
+        goods_attr,
+      </if>
+      <if test="color != null">
+        color,
+      </if>
+      <if test="length != null">
+        length,
+      </if>
+      <if test="width != null">
+        width,
+      </if>
+      <if test="height != null">
+        height,
+      </if>
+      <if test="itemSkuSpecValueList != null">
+        itemSkuSpecValueList,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="spuCode != null">
+        #{spuCode,jdbcType=BIGINT},
+      </if>
+      <if test="skuCode != null">
+        #{skuCode,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsSpec != null">
+        #{goodsSpec,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsStorge != null">
+        #{goodsStorge,jdbcType=INTEGER},
+      </if>
+      <if test="goodsImage != null">
+        #{goodsImage,jdbcType=VARCHAR},
+      </if>
+      <if test="createdUser != null">
+        #{createdUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null">
+        #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedUser != null">
+        #{updatedUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedTime != null">
+        #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payStorge != null">
+        #{payStorge,jdbcType=INTEGER},
+      </if>
+      <if test="goodsCostprice != null">
+        #{goodsCostprice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsMarkprice != null">
+        #{goodsMarkprice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsPrice != null">
+        #{goodsPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsDiscount != null">
+        #{goodsDiscount,jdbcType=DECIMAL},
+      </if>
+      <if test="itemNumber != null">
+        #{itemNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="seasonid != null">
+        #{seasonid,jdbcType=INTEGER},
+      </if>
+      <if test="season != null">
+        #{season,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsAttr != null">
+        #{goodsAttr,jdbcType=VARCHAR},
+      </if>
+      <if test="color != null">
+        #{color,jdbcType=VARCHAR},
+      </if>
+      <if test="length != null">
+        #{length,jdbcType=DECIMAL},
+      </if>
+      <if test="width != null">
+        #{width,jdbcType=DECIMAL},
+      </if>
+      <if test="height != null">
+        #{height,jdbcType=DECIMAL},
+      </if>
+      <if test="itemSkuSpecValueList != null">
+        #{itemSkuSpecValueList,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.yx.PrdYxBaseItemSku">
+    update prd_yx_base_item_sku
+    <set>
+      <if test="spuCode != null">
+        spu_code = #{spuCode,jdbcType=BIGINT},
+      </if>
+      <if test="skuCode != null">
+        sku_code = #{skuCode,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsSpec != null">
+        goods_spec = #{goodsSpec,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsStorge != null">
+        goods_storge = #{goodsStorge,jdbcType=INTEGER},
+      </if>
+      <if test="goodsImage != null">
+        goods_image = #{goodsImage,jdbcType=VARCHAR},
+      </if>
+      <if test="createdUser != null">
+        created_user = #{createdUser,jdbcType=VARCHAR},
+      </if>
+      <if test="createdTime != null">
+        created_time = #{createdTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updatedUser != null">
+        updated_user = #{updatedUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updatedTime != null">
+        updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="payStorge != null">
+        pay_storge = #{payStorge,jdbcType=INTEGER},
+      </if>
+      <if test="goodsCostprice != null">
+        goods_costprice = #{goodsCostprice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsMarkprice != null">
+        goods_markprice = #{goodsMarkprice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsPrice != null">
+        goods_price = #{goodsPrice,jdbcType=DECIMAL},
+      </if>
+      <if test="goodsDiscount != null">
+        goods_discount = #{goodsDiscount,jdbcType=DECIMAL},
+      </if>
+      <if test="itemNumber != null">
+        item_number = #{itemNumber,jdbcType=VARCHAR},
+      </if>
+      <if test="seasonid != null">
+        seasonId = #{seasonid,jdbcType=INTEGER},
+      </if>
+      <if test="season != null">
+        season = #{season,jdbcType=VARCHAR},
+      </if>
+      <if test="goodsAttr != null">
+        goods_attr = #{goodsAttr,jdbcType=VARCHAR},
+      </if>
+      <if test="color != null">
+        color = #{color,jdbcType=VARCHAR},
+      </if>
+      <if test="length != null">
+        length = #{length,jdbcType=DECIMAL},
+      </if>
+      <if test="width != null">
+        width = #{width,jdbcType=DECIMAL},
+      </if>
+      <if test="height != null">
+        height = #{height,jdbcType=DECIMAL},
+      </if>
+      <if test="itemSkuSpecValueList != null">
+        itemSkuSpecValueList = #{itemSkuSpecValueList,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.yx.PrdYxBaseItemSku">
+    update prd_yx_base_item_sku
+    set spu_code = #{spuCode,jdbcType=BIGINT},
+      sku_code = #{skuCode,jdbcType=VARCHAR},
+      goods_spec = #{goodsSpec,jdbcType=VARCHAR},
+      goods_storge = #{goodsStorge,jdbcType=INTEGER},
+      goods_image = #{goodsImage,jdbcType=VARCHAR},
+      created_user = #{createdUser,jdbcType=VARCHAR},
+      created_time = #{createdTime,jdbcType=TIMESTAMP},
+      updated_user = #{updatedUser,jdbcType=VARCHAR},
+      updated_time = #{updatedTime,jdbcType=TIMESTAMP},
+      pay_storge = #{payStorge,jdbcType=INTEGER},
+      goods_costprice = #{goodsCostprice,jdbcType=DECIMAL},
+      goods_markprice = #{goodsMarkprice,jdbcType=DECIMAL},
+      goods_price = #{goodsPrice,jdbcType=DECIMAL},
+      goods_discount = #{goodsDiscount,jdbcType=DECIMAL},
+      item_number = #{itemNumber,jdbcType=VARCHAR},
+      seasonId = #{seasonid,jdbcType=INTEGER},
+      season = #{season,jdbcType=VARCHAR},
+      goods_attr = #{goodsAttr,jdbcType=VARCHAR},
+      color = #{color,jdbcType=VARCHAR},
+      length = #{length,jdbcType=DECIMAL},
+      width = #{width,jdbcType=DECIMAL},
+      height = #{height,jdbcType=DECIMAL},
+      itemSkuSpecValueList = #{itemSkuSpecValueList,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

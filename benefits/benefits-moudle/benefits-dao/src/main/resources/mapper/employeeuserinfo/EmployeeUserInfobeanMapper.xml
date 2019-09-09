@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.employeeuserinfo.EmployeeUserInfoMapper">
+  <resultMap id="RecorderBeanMap" type="com.lx.benefits.bean.param.employee.EmployeeUserInfoParam">
+    <id column="employeeId" jdbcType="BIGINT" property="employeeId" />
+    <result column="enterprId" jdbcType="BIGINT" property="enterprId" />
+    <result column="loginName" jdbcType="VARCHAR" property="loginName" />
+    <result column="password" jdbcType="CHAR" property="password" />
+    <result column="secret" jdbcType="CHAR" property="secret" />
+    <result column="employeeNo" jdbcType="VARCHAR" property="employeeNo" />
+    <result column="employeeName" jdbcType="VARCHAR" property="employeeName" />
+    <result column="leaveStatus" jdbcType="TINYINT" property="leaveStatus" />
+    <result column="sex" jdbcType="TINYINT" property="sex" />
+    <result column="mobile" jdbcType="VARCHAR" property="mobile" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="birthday" jdbcType="VARCHAR" property="birthday" />
+    <result column="birthdayRemind" jdbcType="TINYINT" property="birthdayRemind"/>
+    <result column="inductionTime" jdbcType="INTEGER" property="inductionTime" />
+    <result column="position" jdbcType="VARCHAR" property="position" />
+    <result column="isDeleted" jdbcType="TINYINT" property="isDeleted" />
+    <result column="created" jdbcType="INTEGER" property="created" />
+    <result column="updated" jdbcType="INTEGER" property="updated" />
+    <result column="leaveTime" jdbcType="INTEGER" property="leaveTime" />
+    <result column="credit" jdbcType="DECIMAL" property="credit" />
+  </resultMap>
+  <select id="selectEmployeeId" parameterType="com.lx.benefits.bean.dto.enterpriseadmin.employee.EmployeeQueryBirthday" resultType="java.lang.Long">
+  	select employeeId from employee_user_info where isDeleted = 0 and leaveStatus = 0 and enterprId = #{enterprId}
+  </select>
+	<select id="selectEmployeeIds" parameterType="com.lx.benefits.bean.dto.enterpriseadmin.employee.EmployeeQueryBirthday" resultType="java.lang.Long">
+  	select
+		eu.employeeId
+    from employee_user_info as eu
+    	left join employee_credit_info as ec on eu.employeeId = ec.employeeId
+    where eu.isDeleted = 0 and eu.leaveStatus = 0 and campaignId = 0
+    	and eu.enterprId = #{enterprId}
+  </select>
+	<select id="selectBirthdayList" parameterType="com.lx.benefits.bean.dto.enterpriseadmin.employee.EmployeeQueryBirthday" resultMap="RecorderBeanMap">
+    select
+		eu.employeeId, eu.enterprId, eu.loginName, eu.employeeName, eu.employeeNo, eu.leaveStatus,DATE_FORMAT(eu.birthday,'%Y-%m-%d') as birthday, eu.sex, eu.email, eu.mobile, birthdayRemind,ifnull(ec.birthdayCredit,0) as credit
+    from employee_user_info as eu
+    	left join employee_credit_info as ec on eu.employeeId = ec.employeeId
+    where eu.isDeleted = 0 and eu.leaveStatus = 0 and campaignId = 0
+    <if test="enterprId != null and enterprId !='' ">
+    	and eu.enterprId = #{enterprId}
+    </if>
+    <if test="birthdayRemind != null">
+    	and birthdayRemind = #{birthdayRemind}
+    </if>	
+    <if test="employeeName != null and employeeName !='' ">
+    	and employeeName like concat('%',#{employeeName},'%')
+    </if>
+    <if test="employeeNo != null and employeeNo != '' ">
+    	and employeeNo like concat('%',#{employeeNo},'%')
+    </if>
+    <if test="startTime != null and startTime != '' ">
+    	and DATE_FORMAT(birthday,'%m-%d') >= #{startTime}
+    </if>
+    <!-- <if test="startTime == null or startTime == '' ">
+    	and DATE_FORMAT(birthday,'%m-%d') >= DATE_FORMAT(now(),'%m-%d')
+    </if> -->
+    <if test="endTime != null and endTime != '' ">
+    	and <![CDATA[ DATE_FORMAT(birthday,'%m-%d') <= #{endTime} ]]> 
+    </if>
+      order by DATE_FORMAT(birthday,'%m-%d'),birthday
+
+    <if test="page != null and pageSize != null">
+    
+      LIMIT #{page}, #{pageSize}
+    </if>
+  </select>
+ <select id="birthdayListCount" parameterType="com.lx.benefits.bean.dto.enterpriseadmin.employee.EmployeeQueryBirthday" resultType="java.lang.Integer">
+ select count(*) from employee_user_info where isDeleted = 0 and leaveStatus = 0
+ <if test="enterprId != null and enterprId !='' ">
+    	and enterprId = #{enterprId}
+    </if>
+    <if test="birthdayRemind != null">
+    	and birthdayRemind = #{birthdayRemind}
+    </if>
+    <if test="employeeName != null and employeeName !='' ">
+    	and employeeName like concat('%',#{employeeName},'%')
+    </if>
+    <if test="employeeNo != null and employeeNo != '' ">
+    	and employeeNo like concat('%',#{employeeNo},'%')
+    </if>
+    <if test="startTime != null and startTime != '' ">
+    	and DATE_FORMAT(birthday,'%m-%d') >= #{startTime}
+    </if>
+    <!-- <if test="startTime == null or startTime == '' ">
+    	and DATE_FORMAT(birthday,'%m-%d') >= DATE_FORMAT(now(),'%m-%d')
+    </if> -->
+    <if test="endTime != null and endTime != '' ">
+    	and <![CDATA[ DATE_FORMAT(birthday,'%m-%d') <= #{endTime} ]]> 
+    </if>
+ </select>
+	<update id="employeeStatusSet" parameterType="com.lx.benefits.bean.entity.employeecreditinfo.EmployeeBirthdayCredit">
+	update employee_user_info set birthdayRemind = #{status} where employeeId = #{employeeId}
+	</update>
+	
+	<update id="employeeBirthdayRemindStatusBatchSet" >
+		<foreach collection="employeeBirthdayList" item="bean" index="index" separator=";">
+			update employee_user_info 
+			set birthdayRemind = #{bean.status} 
+			where employeeId = #{bean.employeeId}
+		</foreach>
+	</update>
+	
+	<update id="employeeBirthdayCreditSet" parameterType="com.lx.benefits.bean.entity.employeecreditinfo.EmployeeBirthdayCredit">
+	update employee_credit_info set birthdayCredit = #{credit} where campaignId = 0 and employeeId = #{employeeId}
+	</update>
+	
+	<update id="employeeBirthdayCreditBatchSet" >
+		<foreach collection="employeeBirthdayList" item="bean" index="index" separator=";">
+			update employee_credit_info 
+			set birthdayCredit = #{bean.credit} 
+			where campaignId = 0 and employeeId = #{bean.employeeId}
+		</foreach>
+	</update>
+	
+	<insert id="insertEmployeeCreditInfo" useGeneratedKeys="true" keyProperty="creditId"
+            parameterType="com.lx.benefits.bean.entity.employeecreditinfo.EmployeeCreditInfo">
+        insert into employee_credit_info
+        <trim prefix="(" suffix=")" suffixOverrides=",">
+            <if test="creditId != null">
+                creditId,
+            </if>
+            <if test="employeeId != null">
+                employeeId,
+            </if>
+            <if test="creditType != null">
+                creditType,
+            </if>
+            <if test="campaignId != null">
+                campaignId,
+            </if>
+            <if test="credit != null">
+                credit,
+            </if>
+            <if test="birthdayCredit != null">
+                birthdayCredit,
+            </if>
+            <if test="status != null">
+                status,
+            </if>
+            <if test="isDeleted != null">
+                isDeleted,
+            </if>
+            <if test="created != null">
+                created,
+            </if>
+            <if test="updated != null">
+                updated,
+            </if>
+        </trim>
+        <trim prefix="values (" suffix=")" suffixOverrides=",">
+            <if test="creditId != null">
+                #{creditId,jdbcType=BIGINT},
+            </if>
+            <if test="employeeId != null">
+                #{employeeId,jdbcType=BIGINT},
+            </if>
+            <if test="creditType != null">
+                #{creditType,jdbcType=TINYINT},
+            </if>
+            <if test="campaignId != null">
+                #{campaignId,jdbcType=BIGINT},
+            </if>
+            <if test="credit != null">
+                #{credit,jdbcType=DECIMAL},
+            </if>
+            <if test="birthdayCredit != null">
+                #{birthdayCredit,jdbcType=DECIMAL},
+            </if>
+            <if test="status != null">
+                #{status,jdbcType=TINYINT},
+            </if>
+            <if test="isDeleted != null">
+                #{isDeleted,jdbcType=TINYINT},
+            </if>
+            <if test="created != null">
+                #{created,jdbcType=INTEGER},
+            </if>
+            <if test="updated != null">
+                #{updated,jdbcType=INTEGER},
+            </if>
+        </trim>
+    </insert>
+    
+    <select id="selectCurrentTimeBirthdayList" parameterType="com.lx.benefits.bean.dto.enterpriseadmin.employee.EmployeeQueryBirthday" resultMap="RecorderBeanMap">
+    select
+		eu.employeeId, eu.enterprId, eu.loginName, eu.employeeName, eu.employeeNo, eu.leaveStatus,eu.birthday, eu.sex, eu.email, eu.mobile, birthdayRemind,ifnull(ec.birthdayCredit,0) as credit
+    from employee_user_info as eu
+    	left join employee_credit_info as ec on eu.employeeId = ec.employeeId
+    where eu.isDeleted = 0 and eu.leaveStatus = 0 and campaignId = 0
+    <if test="currentTime != null and currentTime != '' ">
+    	and DATE_FORMAT(birthday,'%m-%d') = #{currentTime} 
+    </if>
+    <if test="birthdayRemind != null and birthdayRemind != '' ">
+    	and birthdayRemind = #{birthdayRemind}
+    </if>
+	ORDER BY enterprId,birthdayCredit
+  </select>
+  
+  <update id="updateEmployeeInfo" parameterType="java.util.List">
+  update employee_user_info set birthdayRemind = 0
+  where employeeId in
+  <foreach collection="employeeIdList" index="index" item="item" separator="," open="(" close=")">
+  #{item,jdbcType=BIGINT}
+  </foreach>
+  </update>
+  
+  <update id="updateEmployeeCredit" parameterType="java.util.Map">
+  update employee_credit_info 
+  set credit = credit + #{birthdayCredit}
+  where employeeId = #{employeeId} and campaignId = 0
+  
+  </update>
+  
+  <update id="updateEnterprCredit" parameterType="java.util.Map">
+  update enterpr_credit_info 
+  set validCredit = validCredit - #{birthdayCredit}
+  where enterprId = #{enterprId}
+  
+  </update>
+  <select id="selectValidCredit" parameterType="java.util.Map" resultType="java.math.BigDecimal">
+  select validCredit from enterpr_credit_info where enterprId = #{enterprId}
+  </select>
+  
+  <insert id="insertBirthdayCreditRecord">
+  insert into 
+  employee_birthday_credit_record(employeeId,credit,birthday_credit_status,credit_type,create_time,update_time)
+  values(#{employeeId},#{birthdayCredit},#{status},#{creditType},#{createTime},#{updateTime})
+  </insert>
+  
+  <update id="updateBirthdayCreditRecord" parameterType="java.util.Map">
+  update employee_birthday_credit_record set birthday_credit_status = #{status}, update_time = #{updateTime}
+  where employeeId = #{employeeId} and birthday_credit_status = 0 
+  and YEAR(create_time) = YEAR(now())
+  </update>
+  
+  <select id="employeeBirthdayDistRecord" parameterType="java.util.Map"  resultType="com.lx.benefits.bean.entity.employeecreditinfo.EmployeeBirthdayRecordDto">
+  select id, employeeId, credit, birthday_credit_status as status,credit_type as creditType,update_time as updateTime
+  from employee_birthday_credit_record 
+  where employeeId = #{employeeId} 
+  order by create_time desc
+  limit #{page}, #{pageSize}
+  </select>
+  <select id="birthdayDistRecordCount" parameterType="java.util.Map" resultType="java.lang.Integer">
+  select count(*) from employee_birthday_credit_record where employeeId = #{employeeId}
+  </select>
+  <select id="selectEmailContent" parameterType="java.math.BigInteger" resultType="com.lx.benefits.bean.dto.admin.customized.EnterprNoticeReqDto">
+  select title as emailTitle,content as emailContent from enterpr_email where enterprId = #{enterprId} and is_Birthday_Email_Remind =1 
+  </select>
+  
+  <select id="selectEmployeeBirthdayHangUp" parameterType="java.math.BigInteger" resultMap="RecorderBeanMap">
+  select eb.credit,eu.employeeId, eu.enterprId, eu.loginName, eu.employeeName, eu.employeeNo, eu.leaveStatus,eu.birthday, eu.sex, eu.email, eu.mobile, birthdayRemind 
+  from employee_birthday_credit_record eb ,employee_user_info eu 
+  where eb.employeeId = eu.employeeId and  enterprId = #{enterprId} and leaveStatus = 0 
+  and birthdayRemind = 1 and birthday_credit_status = 0 and YEAR(eb.create_time) = YEAR(now())
+  ORDER BY credit
+  </select>
+  
+  <select id="selectEmployeeBirthdayRecord" parameterType="java.math.BigInteger" resultType="com.lx.benefits.bean.entity.employeecreditinfo.EmployeeBirthdayRecordDto">
+  select id, employeeId, credit, birthday_credit_status as status,credit_type as creditType,update_time as updateTime 
+  from employee_birthday_credit_record where employeeId = #{employeeId} and YEAR(create_time) = YEAR(now())
+  </select>
+  
+  <select id="queryEnterprInfo" resultMap="RecorderBeanMap">
+	select employeeId,employeeName,employeeNo from employee_user_info 
+	where enterprId = #{enterprId} limit #{pageBean.offset},#{pageBean.pageSize} 
+  </select>
+  
+  <select id="countEmployeeInfo" resultType="java.lang.Integer">
+  	select count(employeeId) from employee_user_info where enterprId = #{enterprId}
+  </select>
+</mapper>
+
+
+
+
+

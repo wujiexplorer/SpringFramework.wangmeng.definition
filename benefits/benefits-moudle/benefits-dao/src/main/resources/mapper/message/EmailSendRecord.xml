@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.message.EmailSendRecordMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.message.EmailSendRecord">
+    <id column="id" jdbcType="INTEGER" property="id" />
+    <result column="email" jdbcType="VARCHAR" property="email" />
+    <result column="content" jdbcType="VARCHAR" property="content" />
+    <result column="send_time" jdbcType="TIMESTAMP" property="sendTime" />
+    <result column="rsp_code" jdbcType="VARCHAR" property="rspCode" />
+    <result column="rsp_info" jdbcType="VARCHAR" property="rspInfo" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="create_user" jdbcType="VARCHAR" property="createUser" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+  </resultMap>
+
+  <sql id="cloumn">
+    id, email, content, send_time, rsp_code, rsp_info, create_time, create_user, update_time,
+    update_user
+  </sql>
+
+</mapper>

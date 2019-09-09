@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.memunioninfo.MemUnionInfoMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="mem_id" jdbcType="BIGINT" property="mem_id" />
+    <result column="union_val" jdbcType="VARCHAR" property="union_val" />
+    <result column="type" jdbcType="TINYINT" property="type" />
+    <result column="is_deleted" jdbcType="TINYINT" property="is_deleted" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="create_time" />
+    <result column="union_data" jdbcType="VARCHAR" property="union_data" />
+    <result column="org_code" jdbcType="VARCHAR" property="org_code" />
+    <result column="ee_no" jdbcType="VARCHAR" property="ee_no" />
+    <result column="union_user_id" jdbcType="VARCHAR" property="union_user_id" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    id, mem_id, union_val, type, is_deleted, create_time, union_data, org_code, ee_no, 
+    union_user_id
+  </sql>
+  <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfoExample" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from mem_union_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="page != null and pageSize != null">
+      LIMIT #{page}, #{pageSize}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from mem_union_info
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from mem_union_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfoExample">
+    delete from mem_union_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfo">
+    insert into mem_union_info (id, mem_id, union_val, 
+      type, is_deleted, create_time, 
+      union_data, org_code, ee_no, 
+      union_user_id)
+    values (#{id,jdbcType=BIGINT}, #{mem_id,jdbcType=BIGINT}, #{union_val,jdbcType=VARCHAR}, 
+      #{type,jdbcType=TINYINT}, #{is_deleted,jdbcType=TINYINT}, NOW(), 
+      #{union_data,jdbcType=VARCHAR}, #{org_code,jdbcType=VARCHAR}, #{ee_no,jdbcType=VARCHAR}, 
+      #{union_user_id,jdbcType=VARCHAR})
+  </insert>
+
+  <!-- 批量插入员工信息 -->
+  <insert id="batchInsert" parameterType="java.util.List" useGeneratedKeys="true" keyProperty="id">
+    INSERT INTO mem_union_info(mem_id, union_val, `type`, is_deleted, create_time, union_data, org_code, ee_no) VALUES
+    <foreach collection="memUnionInfoList" item="memUnionInfo" index="index" separator=",">
+      (#{memUnionInfo.mem_id}, #{memUnionInfo.union_val}, 5, 0, NOW(), #{memUnionInfo.union_data}, #{memUnionInfo.org_code}, #{memUnionInfo.ee_no})
+    </foreach>
+  </insert>
+  
+  
+  <insert id="insertSelective" useGeneratedKeys="true" keyProperty="id" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfo">
+    insert into mem_union_info
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        id,
+      </if>
+      <if test="mem_id != null">
+        mem_id,
+      </if>
+      <if test="union_val != null">
+        union_val,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="is_deleted != null">
+        is_deleted,
+      </if>
+      create_time,
+      <if test="union_data != null">
+        union_data,
+      </if>
+      <if test="org_code != null">
+        org_code,
+      </if>
+      <if test="ee_no != null">
+        ee_no,
+      </if>
+      <if test="union_user_id != null">
+        union_user_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="id != null">
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="mem_id != null">
+        #{mem_id,jdbcType=BIGINT},
+      </if>
+      <if test="union_val != null">
+        #{union_val,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=TINYINT},
+      </if>
+      <if test="is_deleted != null">
+        #{is_deleted,jdbcType=TINYINT},
+      </if>
+      NOW(),
+      <if test="union_data != null">
+        #{union_data,jdbcType=VARCHAR},
+      </if>
+      <if test="org_code != null">
+        #{org_code,jdbcType=VARCHAR},
+      </if>
+      <if test="ee_no != null">
+        #{ee_no,jdbcType=VARCHAR},
+      </if>
+      <if test="union_user_id != null">
+        #{union_user_id,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfoExample" resultType="java.lang.Integer">
+    select count(*) from mem_union_info
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update mem_union_info
+    <set>
+      <if test="record.id != null">
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.mem_id != null">
+        mem_id = #{record.mem_id,jdbcType=BIGINT},
+      </if>
+      <if test="record.union_val != null">
+        union_val = #{record.union_val,jdbcType=VARCHAR},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=TINYINT},
+      </if>
+      <if test="record.is_deleted != null">
+        is_deleted = #{record.is_deleted,jdbcType=TINYINT},
+      </if>
+      <if test="record.create_time != null">
+        create_time = #{record.create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.union_data != null">
+        union_data = #{record.union_data,jdbcType=VARCHAR},
+      </if>
+      <if test="record.org_code != null">
+        org_code = #{record.org_code,jdbcType=VARCHAR},
+      </if>
+      <if test="record.ee_no != null">
+        ee_no = #{record.ee_no,jdbcType=VARCHAR},
+      </if>
+      <if test="record.union_user_id != null">
+        union_user_id = #{record.union_user_id,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update mem_union_info
+    set id = #{record.id,jdbcType=BIGINT},
+      mem_id = #{record.mem_id,jdbcType=BIGINT},
+      union_val = #{record.union_val,jdbcType=VARCHAR},
+      type = #{record.type,jdbcType=TINYINT},
+      is_deleted = #{record.is_deleted,jdbcType=TINYINT},
+      create_time = #{record.create_time,jdbcType=TIMESTAMP},
+      union_data = #{record.union_data,jdbcType=VARCHAR},
+      org_code = #{record.org_code,jdbcType=VARCHAR},
+      ee_no = #{record.ee_no,jdbcType=VARCHAR},
+      union_user_id = #{record.union_user_id,jdbcType=VARCHAR}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfo">
+    update mem_union_info
+    <set>
+      <if test="mem_id != null">
+        mem_id = #{mem_id,jdbcType=BIGINT},
+      </if>
+      <if test="union_val != null">
+        union_val = #{union_val,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=TINYINT},
+      </if>
+      <if test="is_deleted != null">
+        is_deleted = #{is_deleted,jdbcType=TINYINT},
+      </if>
+      <if test="create_time != null">
+        create_time = #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="union_data != null">
+        union_data = #{union_data,jdbcType=VARCHAR},
+      </if>
+      <if test="org_code != null">
+        org_code = #{org_code,jdbcType=VARCHAR},
+      </if>
+      <if test="ee_no != null">
+        ee_no = #{ee_no,jdbcType=VARCHAR},
+      </if>
+      <if test="union_user_id != null">
+        union_user_id = #{union_user_id,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+  <update id="updateByMemId" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfo">
+    update mem_union_info
+    <set>
+      <if test="mem_id != null">
+        mem_id = #{mem_id,jdbcType=BIGINT},
+      </if>
+      <if test="union_val != null">
+        union_val = #{union_val,jdbcType=VARCHAR},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=TINYINT},
+      </if>
+      <if test="is_deleted != null">
+        is_deleted = #{is_deleted,jdbcType=TINYINT},
+      </if>
+      <if test="create_time != null">
+        create_time = #{create_time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="union_data != null">
+        union_data = #{union_data,jdbcType=VARCHAR},
+      </if>
+      <if test="org_code != null">
+        org_code = #{org_code,jdbcType=VARCHAR},
+      </if>
+      <if test="ee_no != null">
+        ee_no = #{ee_no,jdbcType=VARCHAR},
+      </if>
+      <if test="union_user_id != null">
+        union_user_id = #{union_user_id,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where mem_id = #{mem_id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfo">
+    update mem_union_info
+    set mem_id = #{mem_id,jdbcType=BIGINT},
+      union_val = #{union_val,jdbcType=VARCHAR},
+      type = #{type,jdbcType=TINYINT},
+      is_deleted = #{is_deleted,jdbcType=TINYINT},
+      create_time = #{create_time,jdbcType=TIMESTAMP},
+      union_data = #{union_data,jdbcType=VARCHAR},
+      org_code = #{org_code,jdbcType=VARCHAR},
+      ee_no = #{ee_no,jdbcType=VARCHAR},
+      union_user_id = #{union_user_id,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+
+  <sql id="Yian_where_Clause">
+    <where>
+      <if test="type != null">
+        and type = #{type}
+      </if>
+      <if test="mem_id != null">
+        and mem_id = #{mem_id}
+      </if>
+      <if test="org_code != null">
+        and org_code = #{org_code}
+      </if>
+      <if test="ee_no != null">
+        and ee_no = #{ee_no}
+      </if>
+      <if test="union_user_id != null">
+        and union_user_id = #{union_user_id}
+      </if>
+    </where>
+  </sql>
+
+  <select id="queryUniqueByObject" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfo" resultMap="BaseResultMap">
+    select * from mem_union_info
+    <include refid="Yian_where_Clause"/>
+  </select>
+
+  <select id="queryByParam" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfo" resultMap="BaseResultMap">
+    select * from mem_union_info
+    <where>
+      <if test="type != null">
+        and type = #{type}
+      </if>
+      <if test="memId != null">
+        and mem_id = #{memId}
+      </if>
+      <if test="orgCode != null">
+        and org_code = #{orgCode}
+      </if>
+      <if test="eeNo != null">
+        and ee_no = #{eeNo}
+      </if>
+      <if test="LIKE != null">
+        and ${LIKE}
+      </if>
+    </where>
+  </select>
+
+  <select id="queryCountByUnionInfo" parameterType="com.lx.benefits.bean.entity.memunioninfo.MemUnionInfoExample" resultType="java.lang.Integer">
+    select count(*) from mem_union_info
+    <include refid="Yian_where_Clause"/>
+  </select>
+
+  <select id="queryCountByParams" parameterType="java.util.Map" resultType="java.lang.Integer">
+    select count(*) from mem_union_info
+    <include refid="Yian_where_Clause"/>
+    <if test="WHERE != null">
+      AND
+      <foreach item="orgCode" collection="WHERE"  open="(" separator="," close=")">
+        ${orgCode}
+      </foreach>
+    </if>
+  </select>
+
+  <select id="queryPageByParam" parameterType="java.util.Map" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from mem_union_info
+    <include refid="Yian_where_Clause"/>
+    <if test="WHERE != null">
+      AND
+      <foreach item="orgCode" collection="WHERE"  open="(" separator="," close=")">
+        ${orgCode}
+      </foreach>
+    </if>
+    <if test="ORDER_BY != null">
+      order by ${ORDER_BY}
+    </if>
+    <if test="LIMIT != null ">
+      LIMIT ${LIMIT}
+    </if>
+  </select>
+
+</mapper>

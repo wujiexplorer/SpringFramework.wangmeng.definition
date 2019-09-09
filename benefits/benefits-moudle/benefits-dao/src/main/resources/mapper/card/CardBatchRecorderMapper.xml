@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lx.benefits.mapper.card.CardBatchRecorderMapper">
+  <resultMap id="BaseResultMap" type="com.lx.benefits.bean.entity.card.CardBatchRecorder">
+    <id column="batch_id" jdbcType="INTEGER" property="batchId" />
+    <result column="customer_batch_id" jdbcType="INTEGER" property="customerBatchId" />
+    <result column="customer_id" jdbcType="BIGINT" property="customerId" />
+    <result column="type" jdbcType="INTEGER" property="type" />
+    <result column="status" jdbcType="INTEGER" property="status" />
+    <result column="sale_order_id" jdbcType="INTEGER" property="saleOrderId" />
+    <result column="make_user" jdbcType="VARCHAR" property="makeUser" />
+    <result column="make_time" jdbcType="TIMESTAMP" property="makeTime" />
+    <result column="store_user" jdbcType="VARCHAR" property="storeUser" />
+    <result column="store_time" jdbcType="TIMESTAMP" property="storeTime" />
+    <result column="deliver_user" jdbcType="VARCHAR" property="deliverUser" />
+    <result column="deliver_time" jdbcType="TIMESTAMP" property="deliverTime" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+    <result column="update_user" jdbcType="VARCHAR" property="updateUser" />
+    <result column="update_time" jdbcType="TIMESTAMP" property="updateTime" />
+  </resultMap>
+  <sql id="Example_Where_Clause">
+    <where>
+      <foreach collection="oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause">
+    <where>
+      <foreach collection="example.oredCriteria" item="criteria" separator="or">
+        <if test="criteria.valid">
+          <trim prefix="(" prefixOverrides="and" suffix=")">
+            <foreach collection="criteria.criteria" item="criterion">
+              <choose>
+                <when test="criterion.noValue">
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue">
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue">
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue">
+                  and ${criterion.condition}
+                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List">
+    batch_id, customer_batch_id, customer_id, type, status, sale_order_id, make_user, 
+    make_time, store_user, store_time, deliver_user, deliver_time, create_time, update_user, 
+    update_time
+  </sql>
+  <select id="selectByExample" parameterType="com.lx.benefits.bean.entity.card.CardBatchRecorderCondition" resultMap="BaseResultMap">
+    select
+    <if test="distinct">
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from card_batch_recorder
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null">
+      order by ${orderByClause}
+    </if>
+    <if test="limit != null">
+      <if test="offset != null">
+        limit ${offset}, ${limit}
+      </if>
+      <if test="offset == null">
+        limit ${limit}
+      </if>
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from card_batch_recorder
+    where batch_id = #{batchId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer">
+    delete from card_batch_recorder
+    where batch_id = #{batchId,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.lx.benefits.bean.entity.card.CardBatchRecorderCondition">
+    delete from card_batch_recorder
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.lx.benefits.bean.entity.card.CardBatchRecorder" useGeneratedKeys="true" keyProperty="batchId">
+    insert into card_batch_recorder (batch_id, customer_batch_id, customer_id, 
+      type, status, sale_order_id, 
+      make_user, make_time, store_user, 
+      store_time, deliver_user, deliver_time, 
+      create_time, update_user, update_time
+      )
+    values (#{batchId,jdbcType=INTEGER}, #{customerBatchId,jdbcType=INTEGER}, #{customerId,jdbcType=BIGINT}, 
+      #{type,jdbcType=INTEGER}, #{status,jdbcType=INTEGER}, #{saleOrderId,jdbcType=INTEGER}, 
+      #{makeUser,jdbcType=VARCHAR}, #{makeTime,jdbcType=TIMESTAMP}, #{storeUser,jdbcType=VARCHAR}, 
+      #{storeTime,jdbcType=TIMESTAMP}, #{deliverUser,jdbcType=VARCHAR}, #{deliverTime,jdbcType=TIMESTAMP}, 
+      #{createTime,jdbcType=TIMESTAMP}, #{updateUser,jdbcType=VARCHAR}, #{updateTime,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.lx.benefits.bean.entity.card.CardBatchRecorder" useGeneratedKeys="true" keyProperty="batchId">
+    insert into card_batch_recorder
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="batchId != null">
+        batch_id,
+      </if>
+      <if test="customerBatchId != null">
+        customer_batch_id,
+      </if>
+      <if test="customerId != null">
+        customer_id,
+      </if>
+      <if test="type != null">
+        type,
+      </if>
+      <if test="status != null">
+        status,
+      </if>
+      <if test="saleOrderId != null">
+        sale_order_id,
+      </if>
+      <if test="makeUser != null">
+        make_user,
+      </if>
+      <if test="makeTime != null">
+        make_time,
+      </if>
+      <if test="storeUser != null">
+        store_user,
+      </if>
+      <if test="storeTime != null">
+        store_time,
+      </if>
+      <if test="deliverUser != null">
+        deliver_user,
+      </if>
+      <if test="deliverTime != null">
+        deliver_time,
+      </if>
+      <if test="createTime != null">
+        create_time,
+      </if>
+      <if test="updateUser != null">
+        update_user,
+      </if>
+      <if test="updateTime != null">
+        update_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="batchId != null">
+        #{batchId,jdbcType=INTEGER},
+      </if>
+      <if test="customerBatchId != null">
+        #{customerBatchId,jdbcType=INTEGER},
+      </if>
+      <if test="customerId != null">
+        #{customerId,jdbcType=BIGINT},
+      </if>
+      <if test="type != null">
+        #{type,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        #{status,jdbcType=INTEGER},
+      </if>
+      <if test="saleOrderId != null">
+        #{saleOrderId,jdbcType=INTEGER},
+      </if>
+      <if test="makeUser != null">
+        #{makeUser,jdbcType=VARCHAR},
+      </if>
+      <if test="makeTime != null">
+        #{makeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="storeUser != null">
+        #{storeUser,jdbcType=VARCHAR},
+      </if>
+      <if test="storeTime != null">
+        #{storeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deliverUser != null">
+        #{deliverUser,jdbcType=VARCHAR},
+      </if>
+      <if test="deliverTime != null">
+        #{deliverTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.lx.benefits.bean.entity.card.CardBatchRecorderCondition" resultType="java.lang.Long">
+    select count(*) from card_batch_recorder
+    <if test="_parameter != null">
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map">
+    update card_batch_recorder
+    <set>
+      <if test="record.batchId != null">
+        batch_id = #{record.batchId,jdbcType=INTEGER},
+      </if>
+      <if test="record.customerBatchId != null">
+        customer_batch_id = #{record.customerBatchId,jdbcType=INTEGER},
+      </if>
+      <if test="record.customerId != null">
+        customer_id = #{record.customerId,jdbcType=BIGINT},
+      </if>
+      <if test="record.type != null">
+        type = #{record.type,jdbcType=INTEGER},
+      </if>
+      <if test="record.status != null">
+        status = #{record.status,jdbcType=INTEGER},
+      </if>
+      <if test="record.saleOrderId != null">
+        sale_order_id = #{record.saleOrderId,jdbcType=INTEGER},
+      </if>
+      <if test="record.makeUser != null">
+        make_user = #{record.makeUser,jdbcType=VARCHAR},
+      </if>
+      <if test="record.makeTime != null">
+        make_time = #{record.makeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.storeUser != null">
+        store_user = #{record.storeUser,jdbcType=VARCHAR},
+      </if>
+      <if test="record.storeTime != null">
+        store_time = #{record.storeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.deliverUser != null">
+        deliver_user = #{record.deliverUser,jdbcType=VARCHAR},
+      </if>
+      <if test="record.deliverTime != null">
+        deliver_time = #{record.deliverTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.createTime != null">
+        create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.updateUser != null">
+        update_user = #{record.updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="record.updateTime != null">
+        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map">
+    update card_batch_recorder
+    set batch_id = #{record.batchId,jdbcType=INTEGER},
+      customer_batch_id = #{record.customerBatchId,jdbcType=INTEGER},
+      customer_id = #{record.customerId,jdbcType=BIGINT},
+      type = #{record.type,jdbcType=INTEGER},
+      status = #{record.status,jdbcType=INTEGER},
+      sale_order_id = #{record.saleOrderId,jdbcType=INTEGER},
+      make_user = #{record.makeUser,jdbcType=VARCHAR},
+      make_time = #{record.makeTime,jdbcType=TIMESTAMP},
+      store_user = #{record.storeUser,jdbcType=VARCHAR},
+      store_time = #{record.storeTime,jdbcType=TIMESTAMP},
+      deliver_user = #{record.deliverUser,jdbcType=VARCHAR},
+      deliver_time = #{record.deliverTime,jdbcType=TIMESTAMP},
+      create_time = #{record.createTime,jdbcType=TIMESTAMP},
+      update_user = #{record.updateUser,jdbcType=VARCHAR},
+      update_time = #{record.updateTime,jdbcType=TIMESTAMP}
+    <if test="_parameter != null">
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.lx.benefits.bean.entity.card.CardBatchRecorder">
+    update card_batch_recorder
+    <set>
+      <if test="customerBatchId != null">
+        customer_batch_id = #{customerBatchId,jdbcType=INTEGER},
+      </if>
+      <if test="customerId != null">
+        customer_id = #{customerId,jdbcType=BIGINT},
+      </if>
+      <if test="type != null">
+        type = #{type,jdbcType=INTEGER},
+      </if>
+      <if test="status != null">
+        status = #{status,jdbcType=INTEGER},
+      </if>
+      <if test="saleOrderId != null">
+        sale_order_id = #{saleOrderId,jdbcType=INTEGER},
+      </if>
+      <if test="makeUser != null">
+        make_user = #{makeUser,jdbcType=VARCHAR},
+      </if>
+      <if test="makeTime != null">
+        make_time = #{makeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="storeUser != null">
+        store_user = #{storeUser,jdbcType=VARCHAR},
+      </if>
+      <if test="storeTime != null">
+        store_time = #{storeTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="deliverUser != null">
+        deliver_user = #{deliverUser,jdbcType=VARCHAR},
+      </if>
+      <if test="deliverTime != null">
+        deliver_time = #{deliverTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createTime != null">
+        create_time = #{createTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="updateUser != null">
+        update_user = #{updateUser,jdbcType=VARCHAR},
+      </if>
+      <if test="updateTime != null">
+        update_time = #{updateTime,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where batch_id = #{batchId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.lx.benefits.bean.entity.card.CardBatchRecorder">
+    update card_batch_recorder
+    set customer_batch_id = #{customerBatchId,jdbcType=INTEGER},
+      customer_id = #{customerId,jdbcType=BIGINT},
+      type = #{type,jdbcType=INTEGER},
+      status = #{status,jdbcType=INTEGER},
+      sale_order_id = #{saleOrderId,jdbcType=INTEGER},
+      make_user = #{makeUser,jdbcType=VARCHAR},
+      make_time = #{makeTime,jdbcType=TIMESTAMP},
+      store_user = #{storeUser,jdbcType=VARCHAR},
+      store_time = #{storeTime,jdbcType=TIMESTAMP},
+      deliver_user = #{deliverUser,jdbcType=VARCHAR},
+      deliver_time = #{deliverTime,jdbcType=TIMESTAMP},
+      create_time = #{createTime,jdbcType=TIMESTAMP},
+      update_user = #{updateUser,jdbcType=VARCHAR},
+      update_time = #{updateTime,jdbcType=TIMESTAMP}
+    where batch_id = #{batchId,jdbcType=INTEGER}
+  </update>
+</mapper>
