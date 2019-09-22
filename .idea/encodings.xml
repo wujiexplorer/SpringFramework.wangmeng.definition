@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
     <file url="file://$PROJECT_DIR$/JSH_ERP" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/JeeSpringCloud_wm/jeespring-act" charset="UTF-8" />
@@ -19,12 +19,9 @@
     <file url="file://$PROJECT_DIR$/SpringBoot2EurekaMember2" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot2EurekaOrder" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBoot2Swagger" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringBootDoc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBootElasticsearch" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringBootFastdfs" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBootJWT" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBootPayUnionWxAlipay" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/SpringBootQuartz" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBootScaffolding" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringBootSeckill" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/SpringCLoud2ConfigClient" charset="UTF-8" />
@@ -90,23 +87,7 @@
     <file url="file://$PROJECT_DIR$/agilebpm-base-spring-boot/agilebpm-wf-starter" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/blogserver" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-auth" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-client" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-auth/ace-auth-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-control" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-control/ace-monitor" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-platform/ace-gate" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-modules" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-modules/ace-admin" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-modules/ace-generator" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-modules/ace-interface" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-modules/ace-tool" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-sidecar" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-client-demo" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/cloud-platform/ace-sidecar/ace-sidecar-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extSpringBoot" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/extSpringBootJavaTomcat" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/hrserver" charset="UTF-8" />
@@ -116,7 +97,6 @@
     <file url="file://$PROJECT_DIR$/litemall/litemall-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/litemall/litemall-db" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/litemall/litemall-wx-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/mall" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall/mall-admin" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall/mall-demo" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mall/mall-portal" charset="UTF-8" />
@@ -128,7 +108,6 @@
     <file url="file://$PROJECT_DIR$/ofcms/ofcms-core" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ofcms/ofcms-front" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/ofcms/ofcms-model" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/repeat-submit-intercept" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-actuator" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-admin-simple" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-admin-simple/spring-boot-admin-client" charset="UTF-8" />
@@ -136,11 +115,8 @@
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-banner" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-commandLineRunner" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-docker" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-fastDFS" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-file-upload" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-hello" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-helloWorld" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-jpa-thymeleaf-curd" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-jpa/spring-boot-jpa" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-jpa/spring-boot-multi-Jpa" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-examples/spring-boot-mail" charset="UTF-8" />
@@ -168,33 +144,9 @@
     <file url="file://$PROJECT_DIR$/springbootmail" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springbootsqlite" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springbootstarterconfigurer" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/springbootstartertest" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springcloud20eurekaserver" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvc" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/springmvcannotation" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/thread-troubleshooting" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/dubbo-cache-starter" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-blog" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-blog/blog-web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-cms" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-cms/cms-web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-common" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search/search-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search/search-elasticsearch" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search/search-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-search/search-web" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-api" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-h5" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-service" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw-shop/shop-web" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zscat_sw/sw_manager" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zscat_sw/sw_portl" charset="UTF-8" />
   </component>
 </project>

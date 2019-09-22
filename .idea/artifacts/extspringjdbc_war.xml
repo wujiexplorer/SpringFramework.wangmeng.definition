@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="extspringjdbc:war">
+    <output-path>$PROJECT_DIR$/extspringjdbc/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>extspringjdbc</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ext-spring-jdbc.war">
+      <element id="artifact" artifact-name="extspringjdbc:war exploded" />
+    </root>
+  </artifact>
+</component>
