@@ -172,6 +172,7 @@
       <module fileurl="file://$PROJECT_DIR$/extNettyServer/extNettyServer.iml" filepath="$PROJECT_DIR$/extNettyServer/extNettyServer.iml" />
       <module fileurl="file://$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" filepath="$PROJECT_DIR$/extSpringBoot/extSpringBoot.iml" />
       <module fileurl="file://$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" filepath="$PROJECT_DIR$/extSpringBootJavaTomcat/extSpringBootJavaTomcat.iml" />
+      <module fileurl="file://$PROJECT_DIR$/extSpringMvcV20/extSpringMvcV20.iml" filepath="$PROJECT_DIR$/extSpringMvcV20/extSpringMvcV20.iml" />
       <module fileurl="file://$PROJECT_DIR$/extTomcat/extTomcat.iml" filepath="$PROJECT_DIR$/extTomcat/extTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/extTomcat/extTomcat.iml" filepath="$PROJECT_DIR$/extTomcat/extTomcat.iml" />
       <module fileurl="file://$PROJECT_DIR$/extarraylist/extarraylist.iml" filepath="$PROJECT_DIR$/extarraylist/extarraylist.iml" />
