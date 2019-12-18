@@ -1,4 +1,0 @@
-1、执行patch.sql文件
-2、备份enterpr_user_info数据表，将其命名为enterpr_user_info_copy
-3、将enterpr_user_info_new重命名为enterpr_user_info
-4、处理代理商服务的静态文件和服务

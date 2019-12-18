@@ -1,4 +1,0 @@
-1、执行patch.sql文件
-	主要添加内容为：商品规格相关的表
-2、处理主题商品，通过spu关联专题，整理product_topic表
-3、整理user_collection，将sku转化为spu

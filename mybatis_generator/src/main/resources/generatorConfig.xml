@@ -16,7 +16,7 @@
 		</commentGenerator>
 		<!--数据库链接URL，用户名、密码 -->
 		<jdbcConnection driverClass="com.mysql.jdbc.Driver"
-			connectionURL="jdbc:mysql://rm-bp15gcnn3iflm801l6o.mysql.rds.aliyuncs.com:3306/xigoudev" userId="xigoudev" password="1qaz@WSX">
+			connectionURL="jdbc:mysql://121.43.177.132:3306/xiaozhan" userId="root" password="xiaozhan!@#$">
 			</jdbcConnection>
 		<javaTypeResolver>
 			<!-- This property is used to specify whether MyBatis Generator should 
@@ -24,26 +24,75 @@
 			<property name="forceBigDecimals" value="false" />
 		</javaTypeResolver>
 		<!-- 生成模型的包名和位置 -->
-		<javaModelGenerator targetPackage="com.test.pojo"
+		<javaModelGenerator targetPackage="com.xiaozhan.entity.yd"
 			targetProject="target">
 			<property name="enableSubPackages" value="true" />
 			<property name="trimStrings" value="true" />
 		</javaModelGenerator>
 		<!-- 生成映射文件的包名和位置 -->
-		<sqlMapGenerator targetPackage="com.test.mapping"
+		<sqlMapGenerator targetPackage="mapper.jd"
 			targetProject="target">
 			<property name="enableSubPackages" value="true" />
 		</sqlMapGenerator>
 		<!-- 生成DAO的包名和位置 -->
 		<javaClientGenerator type="XMLMAPPER"
-			targetPackage="com.test.dao" implementationPackage="com.test.dao.impl"  targetProject="target">
+			targetPackage="com.xiaozhan.mapper.yd" implementationPackage="com.xiaozhan.mapper.yd.impl"  targetProject="target">
 			<property name="enableSubPackages" value="true" />
 		</javaClientGenerator>
 		
 		<!-- 要生成哪些表 -->
-		<table tableName="agent_rebate_deploy" domainObjectName="AgentRebateDeploy"
+		<table tableName="account_detail_log" domainObjectName="AccountDetailLog"
 			enableCountByExample="true" enableUpdateByExample="true"
 			enableDeleteByExample="true" enableSelectByExample="true"
 			selectByExampleQueryId="true"></table>
+		<table tableName="agent_main_amount" domainObjectName="AgentMainAccount"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="agent_sub_amount" domainObjectName="AgentSubAmount"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="device" domainObjectName="Device"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="device_devide" domainObjectName="DeviceDevide"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="shop" domainObjectName="Shop"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="yd_order" domainObjectName="YdOrder"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="yd_user" domainObjectName="YdUser"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="district" domainObjectName="District"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="shop_package" domainObjectName="ShopPackage"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="yd_user_shop" domainObjectName="YdUserShop"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="yd_order_devide" domainObjectName="YdOrderDevide"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+		<table tableName="device_os_upgrade" domainObjectName="DeviceOsUpgrade"
+			   enableCountByExample="true" enableUpdateByExample="true"
+			   enableDeleteByExample="true" enableSelectByExample="true"
+			   selectByExampleQueryId="true"></table>
+
 	</context>
 </generatorConfiguration>

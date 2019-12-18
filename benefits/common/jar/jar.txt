@@ -1,1 +1,0 @@
-mvn deploy:deploy-file -Dfile=alipay-sdk-java20170324180803.jar -DgroupId=com.alipay.api -DartifactId=alipay-sdk-java -Dversion=1.0.0-SNAPSHOT -Dpackaging=jar -DrepositoryId=nexus-snapshots -Durl=http://47.98.112.181:8081/repository/maven-snapshots/
